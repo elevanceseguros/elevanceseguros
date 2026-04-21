@@ -64,9 +64,12 @@ const AppContent = () => {
     window.location.reload();
   }, []);
 
+  // Detecta subdomínio saude
+  const isSaudeSubdomain = typeof window !== 'undefined' && window.location.hostname.startsWith('saude.');
+
   // Routes where header/footer should not be shown
   const noHeaderFooterRoutes = ['/uniplan', '/obrigado', '/admin-login', '/admin-dashboard', '/sagrada-familia', '/sagrada-familia/thank-you', '/cassi-thank-you', '/saude'];
-  const showHeaderFooter = !noHeaderFooterRoutes.some(path => location.pathname === path || (path !== '/' && location.pathname.startsWith(path + '/')));
+  const showHeaderFooter = !isSaudeSubdomain && !noHeaderFooterRoutes.some(path => location.pathname === path || (path !== '/' && location.pathname.startsWith(path + '/')));
 
   return (
     <>
@@ -83,7 +86,7 @@ const AppContent = () => {
             <Suspense fallback={<LoadingFallback />}>
               <Routes>
                 {/* Main Elevance Route */}
-                <Route path="/" element={<HomePage />} />
+                <Route path="/" element={isSaudeSubdomain ? <SaudeLanding /> : <HomePage />} />
                 
                 {/* Saúde Landing Route */}
                 <Route path="/saude" element={<SaudeLanding />} />
