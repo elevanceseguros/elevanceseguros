@@ -1,473 +1,313 @@
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Shield, CheckCircle, Phone, MessageCircle, ChevronRight, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet';
-import { Check, Phone, Mail, MapPin, ArrowRight, Users, Heart, Shield, Star, Award, Clock } from 'lucide-react';
+const WEBHOOK_URL = "https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead";
 
-const SaudeLanding = () => {
-  const [formData, setFormData] = useState({
-    nome: '',
-    email: '',
-    telefone: '',
-    cidade: '',
-    tipoPlano: '',
-    quantidadeVidas: ''
-  });
+const LOGO_URL = "https://horizons-cdn.hostinger.com/31b5dfa3-4e40-4378-96a9-7dc0284f5b4c/e18073f9377f3b37fca5a56ae103bbd5.png";
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
+const operadoras = [
+  "Amil", "Bradesco Saúde", "SulAmérica", "Hapvida",
+  "NotreDame", "Unimed", "Porto Seguro", "Alice"
+];
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
+const beneficios = [
+  { icon: "🏥", titulo: "Rede credenciada ampla", desc: "Hospitais e clínicas em São Paulo e em todo Brasil" },
+  { icon: "⚡", titulo: "Cotação em minutos", desc: "Você recebe opções no WhatsApp sem burocracia" },
+  { icon: "🤝", titulo: "Atendimento humano", desc: "Fala direto com o corretor, sem call center" },
+  { icon: "💰", titulo: "Melhor custo-benefício", desc: "Comparamos várias operadoras para você economizar" },
+];
+
+const faq = [
+  { q: "Quanto tempo leva para receber minha cotação?", r: "Em até 2 horas úteis você já recebe opções personalizadas no seu WhatsApp." },
+  { q: "Preciso pagar alguma coisa para cotar?", r: "Não. A cotação é 100% gratuita e sem compromisso." },
+  { q: "Quais operadoras vocês trabalham?", r: "Trabalhamos com as principais do mercado: Amil, Bradesco, SulAmérica, Hapvida, NotreDame, Unimed, Alice e outras." },
+  { q: "Posso cotar para minha empresa?", r: "Sim! Atendemos pessoa física, família e PME — incluindo MEI." },
+];
+
+export default function SaudeLanding() {
+  const [nome, setNome] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
+  const [enviado, setEnviado] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [erro, setErro] = useState("");
+  const [faqAberto, setFaqAberto] = useState(null);
+
+  const formatWhatsapp = (v) => {
+    const nums = v.replace(/\D/g, "").slice(0, 11);
+    if (nums.length <= 2) return nums;
+    if (nums.length <= 7) return `(${nums.slice(0, 2)}) ${nums.slice(2)}`;
+    return `(${nums.slice(0, 2)}) ${nums.slice(2, 7)}-${nums.slice(7)}`;
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
+  const handleSubmit = async () => {
+    if (!nome.trim()) { setErro("Por favor informe seu nome."); return; }
+    const nums = whatsapp.replace(/\D/g, "");
+    if (nums.length < 10) { setErro("WhatsApp inválido. Inclua DDD."); return; }
+    setErro("");
+    setLoading(true);
     try {
-      const webhookUrl = import.meta.env.VITE_N8N_WEBHOOK_URL || 'https://your-n8n-webhook-url.com';
-      
-      const response = await fetch(webhookUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
+      await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nome: nome.trim(), whatsapp: nums, origem: "saude.elevanceseguros.com", produto: "Plano de Saúde" }),
       });
-
-      if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({
-          nome: '',
-          email: '',
-          telefone: '',
-          cidade: '',
-          tipoPlano: '',
-          quantidadeVidas: ''
-        });
-      } else {
-        setSubmitStatus('error');
-      }
-    } catch (error) {
-      console.error('Erro ao enviar formulário:', error);
-      setSubmitStatus('error');
+      setEnviado(true);
+    } catch {
+      setErro("Erro ao enviar. Tente novamente ou chame no WhatsApp.");
     } finally {
-      setIsSubmitting(false);
+      setLoading(false);
     }
   };
-
-  const beneficios = [
-    { icon: Shield, text: 'Cobertura completa e abrangente' },
-    { icon: Users, text: 'Planos individuais, familiares e empresariais' },
-    { icon: Heart, text: 'Rede credenciada de qualidade' },
-    { icon: Clock, text: 'Atendimento 24h' },
-    { icon: Award, text: 'Melhor custo-benefício do mercado' },
-    { icon: Star, text: 'Atendimento personalizado' }
-  ];
-
-  const depoimentos = [
-    {
-      nome: 'Maria Silva',
-      cargo: 'Empresária',
-      texto: 'Contratei o plano para minha empresa e todos ficaram muito satisfeitos com a qualidade do atendimento.',
-      rating: 5
-    },
-    {
-      nome: 'João Santos',
-      cargo: 'Autônomo',
-      texto: 'Excelente relação custo-benefício. Recomendo para todos que procuram um bom plano de saúde.',
-      rating: 5
-    },
-    {
-      nome: 'Ana Paula',
-      cargo: 'Professora',
-      texto: 'O atendimento é impecável e a rede credenciada é muito boa. Estou muito satisfeita!',
-      rating: 5
-    }
-  ];
 
   return (
-    <>
-      <Helmet>
-        <title>Planos de Saúde - Proteção Completa para Você e Sua Família</title>
-        <meta name="description" content="Encontre o plano de saúde ideal com cobertura completa, rede credenciada de qualidade e atendimento personalizado. Solicite sua cotação agora!" />
-      </Helmet>
+    <div className="min-h-screen bg-white font-sans">
 
-      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-        {/* Hero Section */}
-        <section className="relative py-20 lg:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-90"></div>
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}></div>
-          
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="text-white"
-              >
-                <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                  Cuide da Sua Saúde com Tranquilidade
-                </h1>
-                <p className="text-xl lg:text-2xl mb-8 text-blue-100">
-                  Planos de saúde completos com a melhor rede credenciada e atendimento humanizado
-                </p>
-                <ul className="space-y-4 mb-8">
-                  {beneficios.slice(0, 3).map((beneficio, index) => (
-                    <motion.li
-                      key={index}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.3 + (index * 0.1) }}
-                      className="flex items-center text-lg"
-                    >
-                      <Check className="w-6 h-6 mr-3 text-green-400" />
-                      <span>{beneficio.text}</span>
-                    </motion.li>
-                  ))}
-                </ul>
-                <motion.a
-                  href="#formulario"
-                  initial={{ opacity: 0, y: 20 }}
+      {/* TOP BAR */}
+      <div className="hidden lg:block bg-[#1a3a52] text-white py-2">
+        <div className="container mx-auto px-4 flex justify-end gap-6 text-sm font-medium">
+          <a href="tel:5511920144864" className="flex items-center gap-1 hover:text-blue-200 transition-colors">
+            <Phone className="w-4 h-4" /> (11) 92014-4864
+          </a>
+          <a href="https://wa.me/5511920144864" target="_blank" rel="noreferrer" className="flex items-center gap-1 hover:text-green-300 transition-colors">
+            <MessageCircle className="w-4 h-4" /> WhatsApp
+          </a>
+        </div>
+      </div>
+
+      {/* HEADER */}
+      <header className="bg-white shadow-sm border-b border-slate-100 sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+          <Link to="/">
+            <img src={LOGO_URL} alt="Elevance Seguros" className="w-12 h-auto object-contain" />
+          </Link>
+          <a
+            href="https://wa.me/5511920144864"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+          >
+            <MessageCircle className="w-4 h-4" /> WhatsApp
+          </a>
+        </div>
+      </header>
+
+      {/* HERO */}
+      <section className="bg-gradient-to-br from-[#1a3a52] via-[#244b6a] to-[#0f2333] pt-16 pb-24 px-4 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400 rounded-full filter blur-3xl opacity-10 pointer-events-none" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600 rounded-full filter blur-3xl opacity-10 pointer-events-none" />
+
+        <div className="container mx-auto relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-2xl mx-auto"
+          >
+            <div className="inline-flex items-center gap-2 bg-blue-500/20 border border-blue-400/30 rounded-full px-4 py-2 mb-6">
+              <Shield className="w-4 h-4 text-blue-300" />
+              <span className="text-blue-100 text-sm font-medium">Planos de Saúde em São Paulo</span>
+            </div>
+
+            <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-4">
+              Plano de saúde que cabe no seu bolso,{" "}
+              <span className="text-blue-300">sem enrolação</span>
+            </h1>
+
+            <p className="text-slate-300 text-lg mb-8 leading-relaxed">
+              Informe seu nome e WhatsApp. Em minutos você recebe opções personalizadas direto no seu celular.
+            </p>
+
+            {/* APRESENTAÇÃO */}
+            <div className="flex items-center justify-center gap-3 mb-8">
+              <img
+                src="/preview.webp"
+                alt="Rodrigo Farias"
+                className="w-14 h-14 rounded-full object-cover object-top border-2 border-blue-400"
+                onError={(e) => { e.target.style.display = "none"; }}
+              />
+              <div className="text-left">
+                <div className="text-white font-semibold">Rodrigo Farias</div>
+                <div className="text-slate-400 text-sm">Corretor de Seguros · São Paulo</div>
+                <div className="flex gap-0.5 mt-0.5">
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-3 h-3 fill-yellow-400 text-yellow-400" />)}
+                </div>
+              </div>
+            </div>
+
+            {/* FORMULÁRIO */}
+            <AnimatePresence mode="wait">
+              {!enviado ? (
+                <motion.div
+                  key="form"
+                  initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.6 }}
-                  className="inline-flex items-center px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg text-lg transition-all transform hover:scale-105 shadow-xl"
+                  exit={{ opacity: 0, y: -16 }}
+                  className="bg-white rounded-2xl shadow-2xl p-6 max-w-md mx-auto"
                 >
-                  Solicitar Cotação Grátis
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </motion.a>
-              </motion.div>
+                  <h2 className="text-[#1a3a52] font-bold text-xl mb-5 text-left">Receba sua cotação gratuita</h2>
 
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="hidden lg:block"
-              >
-                <img 
-                  src="/rodrigo.jpg" 
-                  alt="Rodrigo - Consultor de Planos de Saúde"
-                  className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
-                  style={{ border: '4px solid white' }}
-                />
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Benefícios Section */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                Por Que Escolher Nossos Planos?
-              </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Oferecemos as melhores soluções em saúde com atendimento personalizado e rede credenciada de excelência
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {beneficios.map((beneficio, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2"
-                >
-                  <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                    <beneficio.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    {beneficio.text}
-                  </h3>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Depoimentos Section */}
-        <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-                O Que Nossos Clientes Dizem
-              </h2>
-              <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-                Veja a experiência de quem já confia em nossos serviços
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {depoimentos.map((depoimento, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="bg-white p-8 rounded-xl shadow-xl"
-                >
-                  <div className="flex mb-4">
-                    {[...Array(depoimento.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-gray-700 mb-6 italic">"{depoimento.texto}"</p>
-                  <div className="border-t pt-4">
-                    <p className="font-bold text-gray-900">{depoimento.nome}</p>
-                    <p className="text-gray-600 text-sm">{depoimento.cargo}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Formulário Section */}
-        <section id="formulario" className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-2xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="text-center mb-12"
-              >
-                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                  Solicite Sua Cotação
-                </h2>
-                <p className="text-xl text-gray-600">
-                  Preencha o formulário e receba uma proposta personalizada em minutos
-                </p>
-              </motion.div>
-
-              <motion.form
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                onSubmit={handleSubmit}
-                className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-2xl"
-              >
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-gray-700 font-semibold mb-2">
-                      Nome Completo *
-                    </label>
+                  <div className="mb-4">
+                    <label className="block text-sm font-medium text-slate-700 mb-1.5 text-left">Seu nome</label>
                     <input
                       type="text"
-                      name="nome"
-                      value={formData.nome}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                      placeholder="Seu nome completo"
+                      value={nome}
+                      onChange={e => setNome(e.target.value)}
+                      placeholder="Como posso te chamar?"
+                      className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-slate-900 text-sm outline-none transition-all"
                     />
                   </div>
 
-                  <div>
-                    <label className="block text-gray-700 font-semibold mb-2">
-                      E-mail *
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                      placeholder="seu@email.com"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-gray-700 font-semibold mb-2">
-                      Telefone *
-                    </label>
+                  <div className="mb-5">
+                    <label className="block text-sm font-medium text-slate-700 mb-1.5 text-left">Seu WhatsApp</label>
                     <input
                       type="tel"
-                      name="telefone"
-                      value={formData.telefone}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
+                      value={whatsapp}
+                      onChange={e => setWhatsapp(formatWhatsapp(e.target.value))}
                       placeholder="(11) 99999-9999"
+                      className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-slate-900 text-sm outline-none transition-all"
                     />
                   </div>
 
-                  <div>
-                    <label className="block text-gray-700 font-semibold mb-2">
-                      Cidade *
-                    </label>
-                    <input
-                      type="text"
-                      name="cidade"
-                      value={formData.cidade}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                      placeholder="Sua cidade"
-                    />
-                  </div>
+                  {erro && <p className="text-red-500 text-sm mb-3 text-left">{erro}</p>}
 
-                  <div>
-                    <label className="block text-gray-700 font-semibold mb-2">
-                      Tipo de Plano *
-                    </label>
-                    <select
-                      name="tipoPlano"
-                      value={formData.tipoPlano}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 bg-white"
-                    >
-                      <option value="">Selecione...</option>
-                      <option value="Individual">Individual</option>
-                      <option value="Familiar">Familiar</option>
-                      <option value="Empresarial">Empresarial</option>
-                      <option value="MEI">MEI</option>
-                    </select>
-                  </div>
+                  <button
+                    onClick={handleSubmit}
+                    disabled={loading}
+                    className="w-full bg-[#1a3a52] hover:bg-[#132b3d] disabled:bg-slate-300 text-white font-semibold py-3.5 rounded-lg flex items-center justify-center gap-2 transition-colors text-sm"
+                  >
+                    {loading ? "Enviando..." : <>Quero minha cotação gratuita <ChevronRight className="w-4 h-4" /></>}
+                  </button>
 
-                  <div>
-                    <label className="block text-gray-700 font-semibold mb-2">
-                      Quantidade de Vidas *
-                    </label>
-                    <input
-                      type="number"
-                      name="quantidadeVidas"
-                      value={formData.quantidadeVidas}
-                      onChange={handleInputChange}
-                      required
-                      min="1"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                      placeholder="1"
-                    />
-                  </div>
-                </div>
-
-                {submitStatus === 'success' && (
-                  <div className="mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-                    Formulário enviado com sucesso! Entraremos em contato em breve.
-                  </div>
-                )}
-
-                {submitStatus === 'error' && (
-                  <div className="mt-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
-                    Erro ao enviar formulário. Por favor, tente novamente.
-                  </div>
-                )}
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="mt-8 w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                  <p className="text-slate-400 text-xs mt-3 text-center">🔒 Seus dados são confidenciais. Sem spam.</p>
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="success"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="bg-white rounded-2xl shadow-2xl p-8 max-w-md mx-auto"
                 >
-                  {isSubmitting ? (
-                    <>
-                      <div className="w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin mr-3"></div>
-                      Enviando...
-                    </>
-                  ) : (
-                    <>
-                      Solicitar Cotação Grátis
-                      <ArrowRight className="ml-2 w-5 h-5" />
-                    </>
-                  )}
+                  <CheckCircle className="w-14 h-14 text-green-500 mx-auto mb-4" />
+                  <h3 className="text-[#1a3a52] text-2xl font-bold mb-2">Perfeito, {nome.split(" ")[0]}!</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">Em instantes você vai receber uma mensagem no WhatsApp. Fique de olho!</p>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* OPERADORAS */}
+      <section className="bg-slate-50 py-8 px-4 border-b border-slate-100">
+        <p className="text-center text-slate-400 text-xs font-semibold uppercase tracking-widest mb-5">Operadoras que trabalhamos</p>
+        <div className="flex flex-wrap justify-center gap-2 max-w-2xl mx-auto">
+          {operadoras.map(op => (
+            <span key={op} className="bg-white border border-slate-200 text-slate-600 text-sm font-medium px-4 py-2 rounded-full shadow-sm">{op}</span>
+          ))}
+        </div>
+      </section>
+
+      {/* BENEFÍCIOS */}
+      <section className="py-16 px-4">
+        <div className="max-w-2xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#1a3a52] text-center mb-2">Por que escolher a Elevance?</h2>
+            <p className="text-slate-500 text-center mb-10">Atendimento de corretor de verdade, não de plataforma</p>
+          </motion.div>
+          <div className="grid grid-cols-2 gap-4">
+            {beneficios.map((b, i) => (
+              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
+                className="bg-white border border-slate-100 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+                <div className="text-3xl mb-3">{b.icon}</div>
+                <div className="font-bold text-[#1a3a52] text-sm mb-1">{b.titulo}</div>
+                <div className="text-slate-500 text-xs leading-relaxed">{b.desc}</div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* COMO FUNCIONA */}
+      <section className="bg-[#1a3a52] py-16 px-4">
+        <div className="max-w-lg mx-auto">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-2">Como funciona</h2>
+            <p className="text-slate-400 text-center mb-10">Simples assim</p>
+          </motion.div>
+          <div className="space-y-6">
+            {[
+              { n: "1", titulo: "Preencha o formulário", desc: "Só nome e WhatsApp. Leva 10 segundos." },
+              { n: "2", titulo: "Receba a mensagem", desc: "Nosso assistente te manda uma mensagem e entende o que você precisa." },
+              { n: "3", titulo: "Escolha seu plano", desc: "Rodrigo apresenta as melhores opções e te ajuda a decidir." },
+            ].map((p, i) => (
+              <motion.div key={i} initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.15 }}
+                className="flex items-start gap-4">
+                <div className="min-w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">{p.n}</div>
+                <div>
+                  <div className="text-white font-semibold mb-1">{p.titulo}</div>
+                  <div className="text-slate-400 text-sm leading-relaxed">{p.desc}</div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-4">
+        <div className="max-w-xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#1a3a52] text-center mb-10">Dúvidas frequentes</h2>
+          <div className="space-y-3">
+            {faq.map((item, i) => (
+              <div key={i} className="border border-slate-200 rounded-xl overflow-hidden">
+                <button onClick={() => setFaqAberto(faqAberto === i ? null : i)}
+                  className="w-full px-5 py-4 flex justify-between items-center text-left bg-white hover:bg-slate-50 transition-colors">
+                  <span className="font-semibold text-[#1a3a52] text-sm pr-4">{item.q}</span>
+                  <span className="text-blue-500 text-xl flex-shrink-0">{faqAberto === i ? "−" : "+"}</span>
                 </button>
-
-                <p className="text-center text-gray-600 text-sm mt-4">
-                  Ao enviar, você concorda com nossa política de privacidade
-                </p>
-              </motion.form>
-            </div>
+                <AnimatePresence>
+                  {faqAberto === i && (
+                    <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.2 }} style={{ overflow: "hidden" }}>
+                      <p className="px-5 pb-4 text-slate-500 text-sm leading-relaxed">{item.r}</p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Contato Section */}
-        <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-                Fale Conosco
-              </h2>
-              <p className="text-xl text-blue-100">
-                Estamos prontos para atendê-lo
-              </p>
-            </div>
+      {/* CTA FINAL */}
+      <section className="bg-gradient-to-br from-[#1a3a52] to-[#0f2333] py-16 px-4 text-center">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Ainda tem dúvidas?</h2>
+          <p className="text-slate-400 mb-8">Fale diretamente com o Rodrigo no WhatsApp</p>
+          <a href="https://wa.me/5511920144864?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20plano%20de%20sa%C3%BAde"
+            target="_blank" rel="noreferrer"
+            className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-base transition-colors shadow-lg">
+            <MessageCircle className="w-5 h-5" /> Chamar no WhatsApp
+          </a>
+        </motion.div>
+      </section>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Phone className="w-8 h-8" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Telefone</h3>
-                <p className="text-blue-100">(11) 92014-4864</p>
-              </motion.div>
+      {/* FOOTER */}
+      <footer className="bg-[#0f1f2e] py-8 px-4 text-center">
+        <img src={LOGO_URL} alt="Elevance Seguros" className="w-10 h-auto mx-auto mb-3 opacity-70" />
+        <p className="text-slate-500 text-xs">© 2026 Elevance Seguros · São Paulo, SP</p>
+        <p className="text-slate-600 text-xs mt-1">
+          <a href="https://elevanceseguros.com" className="hover:text-slate-400 transition-colors">elevanceseguros.com</a>
+        </p>
+      </footer>
 
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 }}
-                className="text-center"
-              >
-                <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="w-8 h-8" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">E-mail</h3>
-                <p className="text-blue-100">contato@elevanceseguros.com</p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-                className="text-center"
-              >
-                <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-8 h-8" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Localização</h3>
-                <p className="text-blue-100">São Paulo, SP</p>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </>
+      {/* BOTÃO FLUTUANTE */}
+      <a href="https://wa.me/5511920144864" target="_blank" rel="noreferrer"
+        className="fixed bottom-6 right-5 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg z-50 transition-colors"
+        aria-label="WhatsApp">
+        <MessageCircle className="w-7 h-7 text-white" />
+      </a>
+    </div>
   );
-};
-
-export default SaudeLanding;
+}
