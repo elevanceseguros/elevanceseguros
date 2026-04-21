@@ -302,12 +302,6 @@ export default function SaudeLanding() {
         </p>
       </footer>
 
-      {/* BOTÃO FLUTUANTE */}
-      <a href="https://wa.me/5511920144864" target="_blank" rel="noreferrer"
-        className="fixed bottom-6 right-5 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg z-50 transition-colors"
-        aria-label="WhatsApp">
-        <MessageCircle className="w-7 h-7 text-white" />
-      </a>
     </div>
   );
 }
