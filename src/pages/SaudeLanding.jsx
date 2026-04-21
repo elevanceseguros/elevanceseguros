@@ -124,7 +124,7 @@ export default function SaudeLanding() {
               <img
                 src="/preview.webp"
                 alt="Rodrigo Farias"
-                className="w-14 h-14 rounded-full object-cover object-top border-2 border-blue-400"
+                className="w-14 h-14 rounded-full object-cover object-center border-2 border-blue-400"
                 onError={(e) => { e.target.style.display = "none"; }}
               />
               <div className="text-left">
