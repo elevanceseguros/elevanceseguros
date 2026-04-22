@@ -13,7 +13,7 @@ import { getMetaTags } from '@/lib/seoConfig';
 const HomePage = () => {
   const meta = getMetaTags({
     title: 'Elevance Seguros | Seguro Auto, Saúde e Consórcios',
-    description: 'Encontre o melhor Seguro Auto, Plano de Saúde e Consórcios em São Paulo. Cotação online, rápida e sem compromisso. Proteção completa para você.'
+    description: 'Encontre o melhor Seguro Auto, Plano de Saúde e Consórcios em São Paulo. Cotação online, rápida e sem compromisso.'
   });
 
   return (
@@ -22,23 +22,13 @@ const HomePage = () => {
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
         <meta name="keywords" content={meta.keywords} />
-        {/* Open Graph */}
-        <meta property="og:title" content={meta['og:title']} />
-        <meta property="og:description" content={meta['og:description']} />
-        <meta property="og:image" content={meta['og:image']} />
-        <meta property="og:url" content={meta['og:url']} />
-        <meta property="og:type" content={meta['og:type']} />
-        {/* Twitter */}
-        <meta name="twitter:card" content={meta['twitter:card']} />
-        <meta name="twitter:title" content={meta['twitter:title']} />
-        <meta name="twitter:description" content={meta['twitter:description']} />
-        
         <link rel="canonical" href="https://elevanceseguros.com/" />
       </Helmet>
 
       <SchemaMarkup />
 
       <Hero />
+      
       <div className="-mt-10 md:-mt-16 px-4 relative z-20">
         <TopQuoteForm />
       </div>
@@ -46,6 +36,7 @@ const HomePage = () => {
       <div className="pt-8">
         <InsuranceTypes />
       </div>
+
       <HealthPlans />
       <VehicleProtection />
       <Consortiums />
