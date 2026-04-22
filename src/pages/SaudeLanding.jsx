@@ -14,7 +14,7 @@ const operadoras = [
   { nome: "SulAmérica",    logo: "/logos/sulamerica.png" },
   { nome: "Hapvida",       logo: "/logos/hapvida.png" },
   { nome: "NotreDame",     logo: "/logos/notredame.png" },
-  { nome: "Unimed",        logo: "/logos/unimed.webp" },
+  { nome: "Unimed",        logo: "/logos/unimed.png" },
   { nome: "Porto Seguro",  logo: "/logos/portoseguro.svg" },
   { nome: "Alice",         logo: "/logos/alice.webp" },
 ];
@@ -219,21 +219,21 @@ export default function SaudeLanding() {
       </section>
 
       {/* OPERADORAS */}
-      <section className="bg-slate-50 py-8 px-4 border-b border-slate-100">
-        <p className="text-center text-slate-400 text-xs font-semibold uppercase tracking-widest mb-5">Algumas das operadoras que trabalhamos</p>
-        <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto items-center">
+      <section className="bg-slate-50 py-10 px-4 border-b border-slate-100">
+        <p className="text-center text-slate-400 text-xs font-semibold uppercase tracking-widest mb-6">Algumas das operadoras que trabalhamos</p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
           {operadoras.map(op => (
-            <div key={op.nome} className="border border-slate-100 rounded-xl shadow-sm flex items-center justify-center" style={{width:"140px", height:"64px", padding:"12px 16px", backgroundColor:"#ffffff"}}>
+            <div key={op.nome} className="border border-slate-100 rounded-xl shadow-sm flex items-center justify-center" style={{height:"80px", padding:"12px 20px", backgroundColor:"#ffffff"}}>
               <img
                 src={op.logo}
                 alt={op.nome}
-                style={{maxHeight:"40px", maxWidth:"116px", width:"100%", objectFit:"contain"}}
+                style={{maxHeight:"48px", maxWidth:"100%", width:"auto", objectFit:"contain"}}
                 onError={(e) => {
                   e.target.style.display = "none";
                   e.target.nextSibling.style.display = "block";
                 }}
               />
-              <span style={{display:"none"}} className="text-slate-600 text-sm font-semibold">{op.nome}</span>
+              <span style={{display:"none"}} className="text-slate-600 text-sm font-semibold text-center">{op.nome}</span>
             </div>
           ))}
         </div>
