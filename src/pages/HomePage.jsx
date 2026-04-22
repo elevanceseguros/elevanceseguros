@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Hero from '@/components/Hero';
-import TopQuoteForm from '@/components/TopQuoteForm';
+import LeadFormSincero from '@/components/LeadFormSincero';
 import InsuranceTypes from '@/components/InsuranceTypes';
 import HealthPlans from '@/components/HealthPlans';
 import VehicleProtection from '@/components/VehicleProtection';
