@@ -1,97 +1,62 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Home, Car, Briefcase, TrendingUp } from 'lucide-react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Home, Car, Building2, CheckCircle, Send } from 'lucide-react';
+
+const WEBHOOK_URL = "https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead";
 
 const Consortiums = () => {
-  const options = [
-    {
-      icon: Home,
-      title: 'Consórcio Imóvel',
-      description: 'Realize o sonho da casa própria com planejamento inteligente'
-    },
-    {
-      icon: Car,
-      title: 'Consórcio Veículo',
-      description: 'Adquira seu carro ou moto novo de forma planejada'
-    },
-    {
-      icon: Briefcase,
-      title: 'Consórcio Serviços',
-      description: 'Financie reformas, viagens, festas e muito mais'
-    }
-  ];
+  const [nome, setNome] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
+  const [enviado, setEnviado] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ 
+          nome, 
+          whatsapp: whatsapp.replace(/\D/g, ""), 
+          origem: "elevanceseguros.com",
+          produto: "Consórcio (Imóvel/Auto)" 
+        }),
+      });
+      setEnviado(true);
+    } catch (err) { alert("Erro ao enviar."); }
+  };
 
   return (
-    <section id="consorcios" className="py-20 bg-gradient-to-b from-white to-blue-50">
-      <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <div className="flex items-center justify-center gap-2 mb-6">
-            <TrendingUp className="w-8 h-8 text-blue-600" aria-hidden="true" />
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            <span className="text-blue-600">Consórcios Brasil</span>
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Planeje suas conquistas de forma inteligente e sem juros com os melhores consórcios do mercado.
-          </p>
-        </motion.div>
-
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {options.map((option, index) => (
-            <motion.article
-              key={option.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 group"
-            >
-              <div className="bg-gradient-to-br from-blue-500 to-blue-700 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <option.icon className="w-8 h-8 text-white" aria-hidden="true" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-                {option.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {option.description}
-              </p>
-            </motion.article>
-          ))}
+    <section className="py-20 bg-white">
+      <div className="container mx-auto px-4 max-w-5xl">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a52] mb-4">Realize Seus Sonhos com Consórcio</h2>
+          <p className="text-gray-500 text-lg">A forma mais inteligente de planejar a compra do seu imóvel ou veículo sem pagar juros abusivos.</p>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 md:p-12 text-white text-center"
-        >
-          <h3 className="text-3xl font-bold mb-4">Vantagens do Consórcio</h3>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Sem juros, com planejamento e a possibilidade de ser contemplado a qualquer momento. 
-            A forma mais inteligente de realizar seus sonhos.
-          </p>
-          <div className="grid sm:grid-cols-3 gap-6 text-center">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-              <p className="text-4xl font-bold mb-2">0%</p>
-              <p className="text-blue-100">Juros</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-              <p className="text-4xl font-bold mb-2">100%</p>
-              <p className="text-blue-100">Seguro</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-              <p className="text-4xl font-bold mb-2">24/7</p>
-              <p className="text-blue-100">Atendimento</p>
-            </div>
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-2 gap-4">
+             <div className="p-6 bg-blue-50 rounded-2xl text-center"><Home className="w-8 h-8 text-blue-600 mx-auto mb-2" /><span className="font-bold text-[#1a3a52]">Imóveis</span></div>
+             <div className="p-6 bg-blue-50 rounded-2xl text-center"><Car className="w-8 h-8 text-blue-600 mx-auto mb-2" /><span className="font-bold text-[#1a3a52]">Automóveis</span></div>
+             <div className="p-6 bg-blue-50 rounded-2xl text-center"><Building2 className="w-8 h-8 text-blue-600 mx-auto mb-2" /><span className="font-bold text-[#1a3a52]">Pesados</span></div>
+             <div className="p-6 bg-blue-50 rounded-2xl text-center"><CheckCircle className="w-8 h-8 text-blue-600 mx-auto mb-2" /><span className="font-bold text-[#1a3a52]">Menor Taxa</span></div>
           </div>
-        </motion.div>
+
+          <AnimatePresence mode="wait">
+            {!enviado ? (
+              <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                <h3 className="text-xl font-bold mb-6 text-[#1a3a52]">Simule agora sem compromisso</h3>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <input type="text" required placeholder="Seu Nome" value={nome} onChange={e => setNome(e.target.value)} className="w-full p-4 rounded-xl border border-slate-200 outline-none focus:ring-2 focus:ring-blue-500" />
+                  <input type="tel" required placeholder="Seu WhatsApp" value={whatsapp} onChange={e => setWhatsapp(e.target.value)} className="w-full p-4 rounded-xl border border-slate-200 outline-none focus:ring-2 focus:ring-blue-500" />
+                  <button type="submit" className="w-full bg-[#1a3a52] text-white font-bold py-4 rounded-xl hover:bg-black transition-all flex items-center justify-center gap-2">SOLICITAR SIMULAÇÃO <Send className="w-4 h-4" /></button>
+                </form>
+              </div>
+            ) : (
+              <div className="text-center p-12 bg-green-50 rounded-3xl"><CheckCircle className="w-12 h-12 text-green-500 mx-auto mb-4" /><h3 className="text-green-800 font-bold">Pedido Enviado!</h3><p className="text-green-600">Aguarde o contato no Zap.</p></div>
+            )}
+          </AnimatePresence>
+        </div>
       </div>
     </section>
   );
