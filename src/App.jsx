@@ -1,4 +1,3 @@
-
 import React, { useCallback, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
@@ -64,12 +63,27 @@ const AppContent = () => {
     window.location.reload();
   }, []);
 
-  // Detecta subdomínio saude
-  const isSaudeSubdomain = typeof window !== 'undefined' && window.location.hostname.startsWith('saude.');
+  // Detecção de subdomínios
+  const hostname = typeof window !== 'undefined' ? window.location.hostname : '';
+  const isSaudeSubdomain = hostname.startsWith('saude.');
+  const isSagradaSubdomain = hostname.startsWith('sagradafamilia.');
 
-  // Routes where header/footer should not be shown
-  const noHeaderFooterRoutes = ['/uniplan', '/obrigado', '/admin-login', '/admin-dashboard', '/sagrada-familia', '/sagrada-familia/thank-you', '/cassi-thank-you', '/saude'];
-  const showHeaderFooter = !isSaudeSubdomain && !noHeaderFooterRoutes.some(path => location.pathname === path || (path !== '/' && location.pathname.startsWith(path + '/')));
+  // Rotas onde Header e Footer não devem aparecer (LPs e Admin)
+  const noHeaderFooterRoutes = [
+    '/uniplan', 
+    '/obrigado', 
+    '/admin-login', 
+    '/admin-dashboard', 
+    '/sagrada-familia', 
+    '/sagrada-familia/thank-you', 
+    '/cassi-thank-you', 
+    '/saude'
+  ];
+
+  // Regra para mostrar Header/Footer: não mostrar se for subdomínio ou se estiver em rota de LP
+  const showHeaderFooter = !isSaudeSubdomain && !isSagradaSubdomain && !noHeaderFooterRoutes.some(path => 
+    location.pathname === path || (path !== '/' && location.pathname.startsWith(path + '/'))
+  );
 
   return (
     <>
@@ -85,13 +99,18 @@ const AppContent = () => {
           <main className="flex-grow">
             <Suspense fallback={<LoadingFallback />}>
               <Routes>
-                {/* Main Elevance Route */}
-                <Route path="/" element={isSaudeSubdomain ? <SaudeLanding /> : <HomePage />} />
+                {/* Lógica de Rota Raiz (Trata subdomínios) */}
+                <Route 
+                  path="/" 
+                  element={
+                    isSaudeSubdomain ? <SaudeLanding /> : 
+                    isSagradaSubdomain ? <SagradaFamiliaHomePage /> : 
+                    <HomePage />
+                  } 
+                />
                 
-                {/* Saúde Landing Route */}
+                {/* Rotas Explícitas (Para acesso via elevanceseguros.com/caminho) */}
                 <Route path="/saude" element={<SaudeLanding />} />
-                
-                {/* Sagrada Familia Routes */}
                 <Route path="/sagrada-familia" element={<SagradaFamiliaHomePage />} />
                 <Route path="/sagrada-familia/thank-you" element={<SagradaFamiliaThankYouPage />} />
                 
