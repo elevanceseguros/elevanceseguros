@@ -2,20 +2,15 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Shield, CheckCircle, Phone, MessageCircle, ChevronRight, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const WEBHOOK_URL = "https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead";
 
 const LOGO_URL = "https://horizons-cdn.hostinger.com/31b5dfa3-4e40-4378-96a9-7dc0284f5b4c/e18073f9377f3b37fca5a56ae103bbd5.png";
 
 const operadoras = [
-  { nome: "Amil", logo: "https://logo.clearbit.com/amil.com.br" },
-  { nome: "Bradesco Saúde", logo: "https://logo.clearbit.com/bradescosaude.com.br" },
-  { nome: "SulAmérica", logo: "https://logo.clearbit.com/sulamerica.com.br" },
-  { nome: "Hapvida", logo: "https://logo.clearbit.com/hapvida.com.br" },
-  { nome: "NotreDame", logo: "https://logo.clearbit.com/notredameintermedica.com.br" },
-  { nome: "Unimed", logo: "https://logo.clearbit.com/unimed.com.br" },
-  { nome: "Porto Seguro", logo: "https://logo.clearbit.com/portoseguro.com.br" },
-  { nome: "Alice", logo: "https://logo.clearbit.com/alice.com.br" },
+  "Amil", "Bradesco Saúde", "SulAmérica", "Hapvida",
+  "NotreDame", "Unimed", "Porto Seguro", "Alice"
 ];
 
 const beneficios = [
@@ -69,6 +64,18 @@ export default function SaudeLanding() {
 
   return (
     <div className="min-h-screen bg-white font-sans">
+
+      <Helmet>
+        <title>Plano de Saúde em São Paulo | Cotação Gratuita - Elevance Seguros</title>
+        <meta name="description" content="Compare planos de saúde em São Paulo com a Elevance Seguros. Cotação gratuita e personalizada em minutos via WhatsApp. Amil, Bradesco, SulAmérica, Unimed e mais." />
+        <meta name="keywords" content="plano de saúde São Paulo, cotação plano de saúde, plano de saúde barato SP, plano de saúde individual SP, plano de saúde familiar SP" />
+        <meta property="og:title" content="Plano de Saúde em São Paulo | Cotação Gratuita - Elevance Seguros" />
+        <meta property="og:description" content="Compare planos de saúde em São Paulo. Cotação gratuita em minutos via WhatsApp. Sem burocracia." />
+        <meta property="og:url" content="https://saude.elevanceseguros.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://saude.elevanceseguros.com/preview.webp" />
+        <link rel="canonical" href="https://saude.elevanceseguros.com" />
+      </Helmet>
 
       {/* TOP BAR */}
       <div className="hidden lg:block bg-[#1a3a52] text-white py-2">
@@ -208,17 +215,9 @@ export default function SaudeLanding() {
       {/* OPERADORAS */}
       <section className="bg-slate-50 py-8 px-4 border-b border-slate-100">
         <p className="text-center text-slate-400 text-xs font-semibold uppercase tracking-widest mb-5">Operadoras que trabalhamos</p>
-        <div className="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto items-center">
+        <div className="flex flex-wrap justify-center gap-2 max-w-2xl mx-auto">
           {operadoras.map(op => (
-            <div key={op.nome} className="bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-sm flex items-center gap-2 h-14">
-              <img
-                src={op.logo}
-                alt={op.nome}
-                className="h-7 w-auto object-contain"
-                onError={(e) => { e.target.style.display="none"; e.target.nextSibling.style.display="block"; }}
-              />
-              <span className="text-slate-600 text-sm font-medium hidden">{op.nome}</span>
-            </div>
+            <span key={op} className="bg-white border border-slate-200 text-slate-700 text-sm font-semibold px-5 py-2.5 rounded-full shadow-sm">{op}</span>
           ))}
         </div>
       </section>
