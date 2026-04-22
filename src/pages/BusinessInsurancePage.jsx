@@ -1,89 +1,73 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { motion } from 'framer-motion';
-import { Building2, ShieldCheck, Users, Truck } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Building2, ShieldCheck, PieChart, Users, Send, CheckCircle2, Loader2 } from 'lucide-react';
 import Hero from '@/components/Hero';
-import TopQuoteForm from '@/components/TopQuoteForm';
+import LeadFormSincero from '@/components/LeadFormSincero';
 import ContactForm from '@/components/ContactForm';
-import Breadcrumb from '@/components/Breadcrumb';
-import { getMetaTags } from '@/lib/seoConfig';
+
+const WEBHOOK_URL = "https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead";
 
 const BusinessInsurancePage = () => {
+  const [nome, setNome] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
+  const [enviado, setEnviado] = useState(false);
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const meta = getMetaTags({
-    title: 'Seguro Empresarial | Proteção para seu Negócio',
-    description: 'Seguro completo para empresas de todos os portes. Proteção patrimonial, responsabilidade civil e benefícios para funcionários.',
-    url: '/business-insurance',
-    keywords: 'seguro empresarial, seguro empresa, responsabilidade civil, seguro patrimonial'
-  });
-
-  const benefits = [
-    {
-      icon: <Building2 className="w-10 h-10 text-blue-600" />,
-      title: "Proteção Patrimonial",
-      description: "Cobertura contra incêndio, roubo, danos elétricos e vendaval para seu imóvel e equipamentos."
-    },
-    {
-      icon: <ShieldCheck className="w-10 h-10 text-blue-600" />,
-      title: "Responsabilidade Civil",
-      description: "Amparo para danos causados a terceiros, garantindo a segurança jurídica do seu negócio."
-    },
-    {
-      icon: <Users className="w-10 h-10 text-blue-600" />,
-      title: "Vida em Grupo",
-      description: "Seguro de vida para sócios e funcionários, com coberturas flexíveis e custos acessíveis."
-    },
-    {
-      icon: <Truck className="w-10 h-10 text-blue-600" />,
-      title: "Frotas",
-      description: "Condições especiais para seguro de frotas de veículos comerciais e de passeio."
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ 
+          nome, 
+          whatsapp: whatsapp.replace(/\D/g, ""), 
+          origem: "elevanceseguros.com/business",
+          produto: "Seguro Empresarial" 
+        }),
+      });
+      setEnviado(true);
+    } catch (err) {
+      alert("Erro ao enviar.");
+    } finally {
+      setLoading(false);
     }
-  ];
+  };
 
   return (
     <>
       <Helmet>
-        <title>{meta.title}</title>
-        <meta name="description" content={meta.description} />
-        <meta name="keywords" content={meta.keywords} />
-        <link rel="canonical" href={meta['og:url']} />
+        <title>Seguro Empresarial | Proteja seu Negócio - Elevance Seguros</title>
       </Helmet>
 
       <Hero customTitle="Seguro Empresarial" />
-      <Breadcrumb items={[{ name: 'Seguro Empresarial', path: '/business-insurance' }]} />
       
-      <TopQuoteForm />
-
-      <section className="py-16 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Por que contratar um Seguro Empresarial?
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Garanta a continuidade dos seus negócios com coberturas que se adaptam às necessidades da sua empresa.
-            </p>
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold text-[#1a3a52] mb-4">Sua empresa em boas mãos</h2>
+            <p className="text-gray-600">Proteção contra incêndio, roubo, danos elétricos e responsabilidade civil.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition-all text-center"
-              >
-                <div className="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
-                  {item.icon}
-                </div>
-                <h3 className="text-xl font-bold text-[#1a3a52] mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
-              </motion.div>
+          <LeadFormSincero />
+
+          <div className="grid md:grid-cols-3 gap-8 mt-20">
+            {[
+              { icon: <Building2 />, title: "Patrimonial", desc: "Cobre a estrutura física e equipamentos." },
+              { icon: <ShieldCheck />, title: "Responsabilidade Civil", desc: "Proteção contra danos a terceiros." },
+              { icon: <PieChart />, title: "Lucros Cessantes", desc: "Garante a renda se o negócio parar." }
+            ].map((item, i) => (
+              <div key={i} className="p-8 bg-slate-50 rounded-2xl border border-slate-100 text-center">
+                <div className="text-blue-600 mb-4 flex justify-center">{item.icon}</div>
+                <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-500">{item.desc}</p>
+              </div>
             ))}
           </div>
         </div>
