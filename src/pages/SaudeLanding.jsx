@@ -14,9 +14,9 @@ const operadoras = [
   { nome: "SulAmérica",    logo: "/logos/sulamerica.png" },
   { nome: "Hapvida",       logo: "/logos/hapvida.png" },
   { nome: "NotreDame",     logo: "/logos/notredame.png" },
-  { nome: "Unimed",        logo: "/logos/unimed.png" },
-  { nome: "Porto Seguro",  logo: "/logos/portoseguro.png" },
-  { nome: "Alice",         logo: "/logos/alice.png" },
+  { nome: "Unimed",        logo: "/logos/unimed.webp" },
+  { nome: "Porto Seguro",  logo: "/logos/portoseguro.svg" },
+  { nome: "Alice",         logo: "/logos/alice.webp" },
 ];
 
 const beneficios = [
