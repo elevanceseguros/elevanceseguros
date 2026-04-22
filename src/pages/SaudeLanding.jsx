@@ -9,8 +9,14 @@ const WEBHOOK_URL = "https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-le
 const LOGO_URL = "https://horizons-cdn.hostinger.com/31b5dfa3-4e40-4378-96a9-7dc0284f5b4c/e18073f9377f3b37fca5a56ae103bbd5.png";
 
 const operadoras = [
-  "Amil", "Bradesco Saúde", "SulAmérica", "Hapvida",
-  "NotreDame", "Unimed", "Porto Seguro", "Alice"
+  { nome: "Amil",          logo: "/logos/amil.png" },
+  { nome: "Bradesco Saúde", logo: "/logos/bradesco.png" },
+  { nome: "SulAmérica",    logo: "/logos/sulamerica.png" },
+  { nome: "Hapvida",       logo: "/logos/hapvida.png" },
+  { nome: "NotreDame",     logo: "/logos/notredame.png" },
+  { nome: "Unimed",        logo: "/logos/unimed.png" },
+  { nome: "Porto Seguro",  logo: "/logos/portoseguro.png" },
+  { nome: "Alice",         logo: "/logos/alice.png" },
 ];
 
 const beneficios = [
@@ -214,10 +220,21 @@ export default function SaudeLanding() {
 
       {/* OPERADORAS */}
       <section className="bg-slate-50 py-8 px-4 border-b border-slate-100">
-        <p className="text-center text-slate-400 text-xs font-semibold uppercase tracking-widest mb-5">Operadoras que trabalhamos</p>
-        <div className="flex flex-wrap justify-center gap-2 max-w-2xl mx-auto">
+        <p className="text-center text-slate-400 text-xs font-semibold uppercase tracking-widest mb-5">Algumas das operadoras que trabalhamos</p>
+        <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto items-center">
           {operadoras.map(op => (
-            <span key={op} className="bg-white border border-slate-200 text-slate-700 text-sm font-semibold px-5 py-2.5 rounded-full shadow-sm">{op}</span>
+            <div key={op.nome} className="bg-white border border-slate-100 rounded-xl px-5 py-3 shadow-sm flex items-center justify-center h-14 min-w-[100px]">
+              <img
+                src={op.logo}
+                alt={op.nome}
+                className="max-h-7 max-w-[90px] w-auto object-contain"
+                onError={(e) => {
+                  e.target.style.display = "none";
+                  e.target.nextSibling.style.display = "block";
+                }}
+              />
+              <span style={{display:"none"}} className="text-slate-600 text-sm font-semibold">{op.nome}</span>
+            </div>
           ))}
         </div>
       </section>
