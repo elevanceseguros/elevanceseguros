@@ -1,76 +1,75 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Shield, Clock, DollarSign, PhoneCall } from 'lucide-react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ShieldCheck, Zap, Phone, CheckCircle, Send } from 'lucide-react';
+
+const WEBHOOK_URL = "https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead";
 
 const VehicleProtection = () => {
-  const benefits = [
-    {
-      icon: Shield,
-      title: 'Proteção Total',
-      description: 'Cobertura completa contra roubo, furto e colisão'
-    },
-    {
-      icon: Clock,
-      title: 'Socorro 24h',
-      description: 'Assistência imediata em qualquer situação'
-    },
-    {
-      icon: DollarSign,
-      title: 'Economia',
-      description: 'Mensalidades mais acessíveis que seguros tradicionais'
-    },
-    {
-      icon: PhoneCall,
-      title: 'Atendimento Rápido',
-      description: 'Suporte especializado sempre que precisar'
+  const [nome, setNome] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
+  const [enviado, setEnviado] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const formatWhatsapp = (v) => {
+    const nums = v.replace(/\D/g, "").slice(0, 11);
+    if (nums.length <= 2) return nums;
+    if (nums.length <= 7) return `(${nums.slice(0, 2)}) ${nums.slice(2)}`;
+    return `(${nums.slice(0, 2)}) ${nums.slice(2, 7)}-${nums.slice(7)}`;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ 
+          nome, 
+          whatsapp: whatsapp.replace(/\D/g, ""), 
+          origem: "elevanceseguros.com",
+          produto: "Proteção Veicular APVS" 
+        }),
+      });
+      setEnviado(true);
+    } catch (err) {
+      alert("Erro ao enviar. Tente novamente.");
+    } finally {
+      setLoading(false);
     }
-  ];
+  };
 
   return (
-    <section id="protecao" className="py-20 bg-gradient-to-b from-blue-50 to-white">
+    <section className="py-20 bg-[#1a3a52] text-white overflow-hidden">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Proteção <span className="text-blue-600">Veicular</span>
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            A melhor alternativa em proteção veicular com custo-benefício incomparável
-          </p>
-        </motion.div>
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="lg:w-1/2">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Proteção Veicular <span className="text-blue-400 text-5xl">APVS</span></h2>
+            <p className="text-blue-100 text-lg mb-8">A proteção que seu veículo precisa com o custo que você pode pagar. Roubo, furto, colisão e assistência 24h em todo Brasil.</p>
+            <div className="space-y-4 mb-8">
+              {["Sem análise de perfil/condutor", "Sem consulta SPC/Serasa", "Assistência 24h completa"].map((t, i) => (
+                <div key={i} className="flex items-center gap-3"><CheckCircle className="text-blue-400 w-5 h-5" /> <span>{t}</span></div>
+              ))}
+            </div>
+          </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center mb-16">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <img alt="Carro moderno protegido" className="rounded-2xl shadow-xl" src="https://images.unsplash.com/photo-1674816567986-602363692599" />
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 gap-6">
-            {benefits.map((benefit, index) => (
-              <motion.div
-                key={benefit.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-2"
-              >
-                <div className="bg-gradient-to-br from-blue-500 to-blue-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <benefit.icon className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{benefit.title}</h3>
-                <p className="text-gray-600 text-sm">{benefit.description}</p>
-              </motion.div>
-            ))}
+          <div className="lg:w-1/2 w-full">
+            <AnimatePresence mode="wait">
+              {!enviado ? (
+                <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="bg-white p-8 rounded-3xl shadow-2xl">
+                  <h3 className="text-[#1a3a52] text-2xl font-bold mb-6 text-center">Cotação APVS em 1 minuto</h3>
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    <input type="text" required placeholder="Seu Nome" value={nome} onChange={e => setNome(e.target.value)} className="w-full p-4 rounded-xl border border-gray-200 text-gray-900 outline-none focus:ring-2 focus:ring-blue-500" />
+                    <input type="tel" required placeholder="WhatsApp (DDD)" value={whatsapp} onChange={e => setWhatsapp(formatWhatsapp(e.target.value))} className="w-full p-4 rounded-xl border border-gray-200 text-gray-900 outline-none focus:ring-2 focus:ring-blue-500" />
+                    <button type="submit" disabled={loading} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all">
+                      {loading ? "Enviando..." : "SOLICITAR PREÇO APVS"} <Send className="w-4 h-4" />
+                    </button>
+                  </form>
+                </motion.div>
+              ) : (
+                <div className="bg-white p-12 rounded-3xl text-center"><CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" /><h3 className="text-gray-900 font-bold text-xl">Solicitado!</h3><p className="text-gray-500">Nossa IA já te chamará no Zap.</p></div>
+              )}
+            </AnimatePresence>
           </div>
         </div>
       </div>
