@@ -40,65 +40,75 @@ const LeadFormSincero = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 relative z-30">
+    <div className="max-w-5xl mx-auto px-4 relative z-30">
       <AnimatePresence mode="wait">
         {!enviado ? (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-white rounded-3xl shadow-2xl p-6 md:p-10 border border-slate-100"
+            className="bg-white rounded-2xl md:rounded-[40px] shadow-2xl p-6 md:p-8 border border-slate-100"
           >
-            <div className="flex flex-col lg:flex-row items-center gap-6">
-              <div className="flex-grow text-center lg:text-left">
-                <h3 className="text-[#1a3a52] font-bold text-2xl mb-1">Cotação Rápida</h3>
-                <p className="text-slate-500 text-sm">Receba as melhores opções no seu WhatsApp.</p>
+            <form onSubmit={handleSubmit} className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+              {/* Texto Lateral - Escondido no mobile para ganhar espaço, ou pequeno */}
+              <div className="w-full md:w-auto md:min-w-[150px] text-center md:text-left mb-2 md:mb-0">
+                <h3 className="text-[#1a3a52] font-bold text-xl md:text-lg leading-tight">Cotação Rápida</h3>
+                <p className="text-slate-500 text-xs hidden md:block">Receba no WhatsApp</p>
               </div>
 
-              <form onSubmit={handleSubmit} className="w-full lg:w-auto flex flex-col md:flex-row gap-4 items-end">
-                <div className="w-full md:w-64 text-left">
-                  <label className="block text-xs font-bold text-slate-400 mb-1 uppercase ml-1">Nome</label>
-                  <input
-                    type="text"
-                    required
-                    value={nome}
-                    onChange={e => setNome(e.target.value)}
-                    placeholder="Seu nome"
-                    className="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none transition-all text-slate-800"
-                  />
-                </div>
-                
-                <div className="w-full md:w-64 text-left">
-                  <label className="block text-xs font-bold text-slate-400 mb-1 uppercase ml-1">WhatsApp</label>
-                  <input
-                    type="tel"
-                    required
-                    value={whatsapp}
-                    onChange={e => setWhatsapp(formatWhatsapp(e.target.value))}
-                    placeholder="(11) 99999-9999"
-                    className="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none transition-all text-slate-800"
-                  />
-                </div>
+              {/* Input Nome */}
+              <div className="w-full flex-1">
+                <label className="block text-[10px] font-bold text-slate-400 mb-1 uppercase ml-1">Nome</label>
+                <input
+                  type="text"
+                  required
+                  value={nome}
+                  onChange={e => setNome(e.target.value)}
+                  placeholder="Seu nome"
+                  className="w-full px-5 py-3 md:py-4 bg-slate-50 border border-slate-200 rounded-xl md:rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none transition-all text-slate-800 text-sm"
+                />
+              </div>
+              
+              {/* Input WhatsApp */}
+              <div className="w-full flex-1">
+                <label className="block text-[10px] font-bold text-slate-400 mb-1 uppercase ml-1">WhatsApp</label>
+                <input
+                  type="tel"
+                  required
+                  value={whatsapp}
+                  onChange={e => setWhatsapp(formatWhatsapp(e.target.value))}
+                  placeholder="(11) 99999-9999"
+                  className="w-full px-5 py-3 md:py-4 bg-slate-50 border border-slate-200 rounded-xl md:rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none transition-all text-slate-800 text-sm"
+                />
+              </div>
 
+              {/* Botão */}
+              <div className="w-full md:w-auto pt-2 md:pt-4">
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full md:w-auto bg-[#1a3a52] hover:bg-blue-600 text-white font-bold px-8 py-4 rounded-2xl flex items-center justify-center gap-2 transition-all shadow-lg"
+                  className="w-full md:w-[180px] bg-[#1a3a52] hover:bg-[#244b69] text-white font-bold h-[52px] md:h-[60px] rounded-xl md:rounded-2xl flex items-center justify-center gap-2 transition-all shadow-lg active:scale-95"
                 >
-                  {loading ? <Loader2 className="animate-spin w-5 h-5" /> : "COTAR AGORA"}
-                  {!loading && <ChevronRight className="w-5 h-5" />}
+                  {loading ? (
+                    <Loader2 className="animate-spin w-5 h-5" />
+                  ) : (
+                    <>
+                      <span className="text-sm md:text-base">COTAR AGORA</span>
+                      <ChevronRight className="w-4 h-4 md:w-5 h-5" />
+                    </>
+                  )}
                 </button>
-              </form>
-            </div>
+              </div>
+            </form>
           </motion.div>
         ) : (
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="bg-white rounded-3xl shadow-2xl p-10 text-center border-2 border-green-100"
+            className="bg-white rounded-[40px] shadow-2xl p-8 text-center border-2 border-green-100"
           >
-            <CheckCircle className="w-12 h-12 text-green-500 mx-auto mb-4" />
-            <h3 className="text-[#1a3a52] text-2xl font-bold mb-2">Solicitação Enviada!</h3>
-            <p className="text-slate-500">Nossa equipe entrará em contato via WhatsApp em instantes.</p>
+            <CheckCircle className="w-10 h-10 text-green-500 mx-auto mb-3" />
+            <h3 className="text-[#1a3a52] text-xl font-bold">Solicitação Enviada!</h3>
+            <p className="text-slate-500 text-sm">Chamaremos você no WhatsApp em instantes.</p>
           </motion.div>
         )}
       </AnimatePresence>
