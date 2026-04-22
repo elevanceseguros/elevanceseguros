@@ -46,13 +46,23 @@ const SagradaFamiliaHomePage = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
+      {/* Header com os caminhos de imagem corrigidos */}
       <nav className="bg-white border-b sticky top-0 z-50 py-3 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-          <img src="/logos/elevance-logo.png" alt="Elevance Seguros" className="h-10 md:h-14 object-contain" />
-          <img src="/logos/sagrada-familia.png" alt="Sagrada Família" className="h-8 md:h-12 object-contain" />
+          <img 
+            src="/logos/Sem%20nome%20(680%20x%20680%20px).png" 
+            alt="Elevance Seguros" 
+            className="h-12 md:h-16 object-contain"
+          />
+          <img 
+            src="/logos/sagrada-familia.png" 
+            alt="Sagrada Família" 
+            className="h-8 md:h-12 object-contain"
+          />
         </div>
       </nav>
 
+      {/* Hero Section */}
       <section className="pt-10 pb-16 px-4 bg-gradient-to-b from-white to-slate-50">
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6 shadow-lg shadow-blue-200">
@@ -70,8 +80,11 @@ const SagradaFamiliaHomePage = () => {
         </div>
       </section>
 
+      {/* Conteúdo Principal */}
       <section className="max-w-7xl mx-auto px-4 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+          
+          {/* Tabela de Preços */}
           <div className="bg-white rounded-[40px] shadow-2xl overflow-hidden border border-slate-100">
             <div className="bg-[#1a3a52] p-8 text-white">
               <div className="flex items-center gap-3">
@@ -101,20 +114,22 @@ const SagradaFamiliaHomePage = () => {
             </div>
           </div>
 
+          {/* Unidades Oficiais */}
           <div className="space-y-8">
             <div className="bg-white p-8 md:p-10 rounded-[40px] shadow-xl border border-slate-100">
               <div className="flex items-center gap-3 mb-10">
-                <div className="p-3 bg-blue-50 rounded-2xl text-blue-600">
-                  <Building2 className="w-8 h-8" />
+                <div className="p-3 bg-blue-50 rounded-2xl text-blue-600 shadow-inner">
+                  <Activity className="w-8 h-8" />
                 </div>
                 <h2 className="text-2xl font-black text-[#1a3a52] uppercase tracking-tight">Rede Própria</h2>
               </div>
+              
               <div className="space-y-4">
                 {unidadesOficiais.map((unidade, i) => (
                   <div key={i} className="p-6 bg-slate-50 rounded-[30px] border border-transparent hover:border-blue-100 transition-all group">
                     <div className="flex justify-between items-start mb-2">
                        <p className="font-black text-[#1a3a52] text-md group-hover:text-blue-700 transition-colors">{unidade.nome}</p>
-                       <span className="text-[9px] bg-white px-2 py-1 rounded-md font-black text-slate-400 uppercase">{unidade.regiao}</span>
+                       <span className="text-[9px] bg-white px-2 py-1 rounded-md font-black text-slate-400 uppercase tracking-tighter">{unidade.regiao}</span>
                     </div>
                     <p className="text-xs text-slate-500 leading-relaxed font-medium">{unidade.desc}</p>
                   </div>
@@ -122,19 +137,21 @@ const SagradaFamiliaHomePage = () => {
               </div>
             </div>
 
+            {/* Chamada MEI */}
             <div className="bg-gradient-to-br from-blue-700 to-blue-900 rounded-[40px] p-10 text-white relative overflow-hidden shadow-2xl">
               <div className="relative z-10">
                 <h3 className="text-3xl font-black mb-4">Possui CNPJ?</h3>
-                <p className="text-blue-100 mb-8 text-lg opacity-90">
-                  Descontos exclusivos de até <span className="text-white font-black underline decoration-green-400 decoration-4 underline-offset-4">30%</span> para MEI e PME.
+                <p className="text-blue-100 mb-8 text-lg opacity-90 font-medium">
+                  Até <span className="text-white font-black underline decoration-green-400 decoration-4 underline-offset-4">30% de desconto</span> para MEI e PME.
                 </p>
-                <button className="w-full bg-white text-blue-900 py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-blue-50 transition-all">
+                <button className="w-full bg-white text-blue-900 py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-blue-50 transition-all shadow-xl">
                    Quero Tabela Empresarial
                 </button>
               </div>
               <Users className="absolute -right-12 -bottom-12 w-64 h-64 opacity-10 rotate-12" />
             </div>
           </div>
+
         </div>
       </section>
 
