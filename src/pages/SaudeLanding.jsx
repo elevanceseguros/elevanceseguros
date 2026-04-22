@@ -8,8 +8,14 @@ const WEBHOOK_URL = "https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-le
 const LOGO_URL = "https://horizons-cdn.hostinger.com/31b5dfa3-4e40-4378-96a9-7dc0284f5b4c/e18073f9377f3b37fca5a56ae103bbd5.png";
 
 const operadoras = [
-  "Amil", "Bradesco Saúde", "SulAmérica", "Hapvida",
-  "NotreDame", "Unimed", "Porto Seguro", "Alice"
+  { nome: "Amil", logo: "https://logo.clearbit.com/amil.com.br" },
+  { nome: "Bradesco Saúde", logo: "https://logo.clearbit.com/bradescosaude.com.br" },
+  { nome: "SulAmérica", logo: "https://logo.clearbit.com/sulamerica.com.br" },
+  { nome: "Hapvida", logo: "https://logo.clearbit.com/hapvida.com.br" },
+  { nome: "NotreDame", logo: "https://logo.clearbit.com/notredameintermedica.com.br" },
+  { nome: "Unimed", logo: "https://logo.clearbit.com/unimed.com.br" },
+  { nome: "Porto Seguro", logo: "https://logo.clearbit.com/portoseguro.com.br" },
+  { nome: "Alice", logo: "https://logo.clearbit.com/alice.com.br" },
 ];
 
 const beneficios = [
@@ -202,9 +208,17 @@ export default function SaudeLanding() {
       {/* OPERADORAS */}
       <section className="bg-slate-50 py-8 px-4 border-b border-slate-100">
         <p className="text-center text-slate-400 text-xs font-semibold uppercase tracking-widest mb-5">Operadoras que trabalhamos</p>
-        <div className="flex flex-wrap justify-center gap-2 max-w-2xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto items-center">
           {operadoras.map(op => (
-            <span key={op} className="bg-white border border-slate-200 text-slate-600 text-sm font-medium px-4 py-2 rounded-full shadow-sm">{op}</span>
+            <div key={op.nome} className="bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-sm flex items-center gap-2 h-14">
+              <img
+                src={op.logo}
+                alt={op.nome}
+                className="h-7 w-auto object-contain"
+                onError={(e) => { e.target.style.display="none"; e.target.nextSibling.style.display="block"; }}
+              />
+              <span className="text-slate-600 text-sm font-medium hidden">{op.nome}</span>
+            </div>
           ))}
         </div>
       </section>
