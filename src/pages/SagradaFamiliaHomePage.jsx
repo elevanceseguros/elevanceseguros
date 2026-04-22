@@ -1,6 +1,6 @@
 import React from 'react';
 import LeadFormSincero from '@/components/LeadFormSincero';
-import { ShieldCheck, Clock, MapPin, Users, CheckCircle2, Building2, Table, Heart Pulse } from 'lucide-react';
+import { ShieldCheck, Clock, MapPin, Users, CheckCircle2, Building2, Table, Activity } from 'lucide-react';
 
 const SagradaFamiliaHomePage = () => {
   const tabelaPrecos = [
@@ -46,23 +46,13 @@ const SagradaFamiliaHomePage = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
-      {/* Header com Logos Oficiais */}
       <nav className="bg-white border-b sticky top-0 z-50 py-3 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-          <img 
-            src="/logos/elevance-logo.png" 
-            alt="Elevance Seguros" 
-            className="h-10 md:h-14 object-contain"
-          />
-          <img 
-            src="/logos/sagrada-familia.png" 
-            alt="Sagrada Família" 
-            className="h-8 md:h-12 object-contain"
-          />
+          <img src="/logos/elevance-logo.png" alt="Elevance Seguros" className="h-10 md:h-14 object-contain" />
+          <img src="/logos/sagrada-familia.png" alt="Sagrada Família" className="h-8 md:h-12 object-contain" />
         </div>
       </nav>
 
-      {/* Hero Section */}
       <section className="pt-10 pb-16 px-4 bg-gradient-to-b from-white to-slate-50">
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6 shadow-lg shadow-blue-200">
@@ -74,18 +64,14 @@ const SagradaFamiliaHomePage = () => {
           <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
             Atendimento completo em São Paulo, ABC e Região. O plano que cuida da sua família com preço de tabela direto.
           </p>
-          
           <div className="relative z-20">
             <LeadFormSincero />
           </div>
         </div>
       </section>
 
-      {/* Conteúdo Principal */}
       <section className="max-w-7xl mx-auto px-4 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-          
-          {/* Tabela de Preços */}
           <div className="bg-white rounded-[40px] shadow-2xl overflow-hidden border border-slate-100">
             <div className="bg-[#1a3a52] p-8 text-white">
               <div className="flex items-center gap-3">
@@ -112,34 +98,23 @@ const SagradaFamiliaHomePage = () => {
                   ))}
                 </tbody>
               </table>
-              <div className="mt-8 p-5 bg-slate-50 rounded-3xl border border-slate-200">
-                <p className="text-[10px] text-slate-500 text-center leading-relaxed font-semibold uppercase tracking-wider">
-                  Valores para contratação individual. <br/>
-                  Consulte nossa equipe para tabelas MEI e PME com descontos exclusivos.
-                </p>
-              </div>
             </div>
           </div>
 
-          {/* Rede de Hospitais Oficiais */}
           <div className="space-y-8">
             <div className="bg-white p-8 md:p-10 rounded-[40px] shadow-xl border border-slate-100">
               <div className="flex items-center gap-3 mb-10">
-                <div className="p-3 bg-blue-50 rounded-2xl text-blue-600 shadow-inner">
+                <div className="p-3 bg-blue-50 rounded-2xl text-blue-600">
                   <Building2 className="w-8 h-8" />
                 </div>
-                <div>
-                  <h2 className="text-2xl font-black text-[#1a3a52] uppercase tracking-tight">Rede Própria</h2>
-                  <p className="text-blue-600 text-sm font-bold">Unidades de Atendimento Oficial</p>
-                </div>
+                <h2 className="text-2xl font-black text-[#1a3a52] uppercase tracking-tight">Rede Própria</h2>
               </div>
-              
               <div className="space-y-4">
                 {unidadesOficiais.map((unidade, i) => (
-                  <div key={i} className="p-6 bg-slate-50 rounded-[30px] border border-transparent hover:border-blue-100 hover:bg-white hover:shadow-lg transition-all group">
+                  <div key={i} className="p-6 bg-slate-50 rounded-[30px] border border-transparent hover:border-blue-100 transition-all group">
                     <div className="flex justify-between items-start mb-2">
-                       <p className="font-black text-[#1a3a52] text-md leading-tight group-hover:text-blue-700 transition-colors">{unidade.nome}</p>
-                       <span className="text-[9px] bg-white px-2 py-1 rounded-md shadow-sm font-black text-slate-400 uppercase tracking-tighter">{unidade.regiao}</span>
+                       <p className="font-black text-[#1a3a52] text-md group-hover:text-blue-700 transition-colors">{unidade.nome}</p>
+                       <span className="text-[9px] bg-white px-2 py-1 rounded-md font-black text-slate-400 uppercase">{unidade.regiao}</span>
                     </div>
                     <p className="text-xs text-slate-500 leading-relaxed font-medium">{unidade.desc}</p>
                   </div>
@@ -147,34 +122,26 @@ const SagradaFamiliaHomePage = () => {
               </div>
             </div>
 
-            {/* Chamada para Ação MEI */}
             <div className="bg-gradient-to-br from-blue-700 to-blue-900 rounded-[40px] p-10 text-white relative overflow-hidden shadow-2xl">
               <div className="relative z-10">
-                <div className="bg-white/20 w-12 h-12 rounded-2xl flex items-center justify-center mb-6 backdrop-blur-sm">
-                  <Users className="w-6 h-6" />
-                </div>
-                <h3 className="text-3xl font-black mb-4 leading-tight">Possui CNPJ?</h3>
-                <p className="text-blue-100 mb-8 text-lg opacity-90 font-medium">
-                  Microempreendedores e empresas têm acesso a uma redução de custo de até <span className="text-white font-black underline decoration-green-400 decoration-4 underline-offset-4">30%</span>.
+                <h3 className="text-3xl font-black mb-4">Possui CNPJ?</h3>
+                <p className="text-blue-100 mb-8 text-lg opacity-90">
+                  Descontos exclusivos de até <span className="text-white font-black underline decoration-green-400 decoration-4 underline-offset-4">30%</span> para MEI e PME.
                 </p>
-                <button className="w-full bg-white text-blue-900 py-4 rounded-2xl font-black text-sm uppercase tracking-[0.15em] hover:bg-blue-50 transition-all shadow-xl hover:-translate-y-1 active:translate-y-0">
+                <button className="w-full bg-white text-blue-900 py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-blue-50 transition-all">
                    Quero Tabela Empresarial
                 </button>
               </div>
+              <Users className="absolute -right-12 -bottom-12 w-64 h-64 opacity-10 rotate-12" />
             </div>
           </div>
-
         </div>
       </section>
 
-      {/* Footer Final */}
       <footer className="bg-white border-t py-12 text-center">
-         <div className="max-w-7xl mx-auto px-4">
-           <img src="/logos/elevance-logo.png" alt="Elevance" className="h-8 mx-auto mb-6 opacity-30 grayscale" />
-           <p className="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em]">
-             © 2026 Elevance Seguros • Consultoria Especializada Sagrada Família Saúde
-           </p>
-         </div>
+         <p className="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em]">
+           © 2026 Elevance Seguros • Sagrada Família Saúde
+         </p>
       </footer>
     </div>
   );
