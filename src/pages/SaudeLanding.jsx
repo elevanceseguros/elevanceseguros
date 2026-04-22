@@ -9,14 +9,14 @@ const WEBHOOK_URL = "https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-le
 const LOGO_URL = "https://horizons-cdn.hostinger.com/31b5dfa3-4e40-4378-96a9-7dc0284f5b4c/e18073f9377f3b37fca5a56ae103bbd5.png";
 
 const operadoras = [
-  { nome: "Amil",          logo: "/logos/amil.png" },
+  { nome: "Amil", logo: "/logos/amil.png" },
   { nome: "Bradesco Saúde", logo: "/logos/bradesco.png" },
-  { nome: "SulAmérica",    logo: "/logos/sulamerica.png" },
-  { nome: "Hapvida",       logo: "/logos/hapvida.png" },
-  { nome: "NotreDame",     logo: "/logos/notredame.png" },
-  { nome: "Unimed",        logo: "/logos/unimed.png" },
-  { nome: "Porto Seguro",  logo: "/logos/portoseguro.svg" },
-  { nome: "Alice",         logo: "/logos/alice.webp" },
+  { nome: "SulAmérica", logo: "/logos/sulamerica.png" },
+  { nome: "Hapvida", logo: "/logos/hapvida.png" },
+  { nome: "NotreDame", logo: "/logos/notredame.png" },
+  { nome: "Unimed", logo: "/logos/unimed.png" },
+  { nome: "Porto Seguro", logo: "/logos/portoseguro.svg" },
+  { nome: "Alice", logo: "/logos/alice.webp", special: "alice" }, // Adicionei 'special' para identificar a Alice
 ];
 
 const beneficios = [
@@ -210,7 +210,7 @@ export default function SaudeLanding() {
                 >
                   <CheckCircle className="w-14 h-14 text-green-500 mx-auto mb-4" />
                   <h3 className="text-[#1a3a52] text-2xl font-bold mb-2">Perfeito, {nome.split(" ")[0]}!</h3>
-                  <p className="text-slate-500 text-sm leading-relaxed">Em instantes você vai receber uma mensagem no WhatsApp. Fique de olho!</p>
+                  <p className="text-slate-500 text-sm leading-relaxed">Em instantes você va recebe uma mensagem no WhatsApp. Fique de olho!</p>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -218,24 +218,47 @@ export default function SaudeLanding() {
         </div>
       </section>
 
-      {/* OPERADORAS */}
+      {/* OPERADORAS - SEÇÃO CORRIGIDA */}
       <section className="bg-slate-50 py-10 px-4 border-b border-slate-100">
         <p className="text-center text-slate-400 text-xs font-semibold uppercase tracking-widest mb-6">Algumas das operadoras que trabalhamos</p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-          {operadoras.map(op => (
-            <div key={op.nome} className="border border-slate-100 rounded-xl shadow-sm flex items-center justify-center" style={{height:"80px", padding:"12px 20px", backgroundColor:"#ffffff"}}>
-              <img
-                src={op.logo}
-                alt={op.nome}
-                style={{maxHeight:"48px", maxWidth:"100%", width:"auto", objectFit:"contain"}}
-                onError={(e) => {
-                  e.target.style.display = "none";
-                  e.target.nextSibling.style.display = "block";
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          {operadoras.map(op => {
+            const isAlice = op.special === "alice";
+            return (
+              <div
+                key={op.nome}
+                className={`border border-slate-100 rounded-xl shadow-sm flex items-center justify-center overflow-hidden transition-all`}
+                style={{
+                  height: "90px",
+                  // Alice preenche tudo com o rosa dela. Outras ficam em branco.
+                  backgroundColor: isAlice ? "#f33291" : "#ffffff",
+                  // Dá um respiro interno para os logos normais, mas não para a Alice.
+                  padding: isAlice ? "0" : "12px 20px"
                 }}
-              />
-              <span style={{display:"none"}} className="text-slate-600 text-sm font-semibold text-center">{op.nome}</span>
-            </div>
-          ))}
+              >
+                <img
+                  src={op.logo}
+                  alt={op.nome}
+                  style={{
+                    // Configuração geral responsiva
+                    width: "auto",
+                    maxWidth: "100%",
+                    // Ajuste de preenchimento
+                    height: isAlice ? "100%" : "auto",
+                    maxHeight: isAlice ? "100%" : "48px",
+                    objectFit: isAlice ? "cover" : "contain", // Alice preenche todo o box
+                    width: isAlice ? "100%" : "auto", // Alice preenche toda a largura
+                  }}
+                  onError={(e) => {
+                    e.target.style.display = "none";
+                    e.target.nextSibling.style.display = "block";
+                  }}
+                
+                />
+                <span style={{ display: "none" }} className="text-slate-600 text-sm font-semibold text-center">{op.nome}</span>
+              </div>
+            );
+          })}
         </div>
       </section>
 
