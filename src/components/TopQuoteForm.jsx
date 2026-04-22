@@ -1,261 +1,119 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Send, Loader2 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { useToast } from '@/components/ui/use-toast';
-import { useNavigate } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronRight, CheckCircle, MessageCircle } from 'lucide-react';
+
+const WEBHOOK_URL = "https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead";
 
 const TopQuoteForm = () => {
-  const { toast } = useToast();
-  const navigate = useNavigate();
-  const [isLoading, setIsLoading] = useState(false);
+  const [nome, setNome] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
+  const [enviado, setEnviado] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [erro, setErro] = useState("");
 
-  const [insuranceType, setInsuranceType] = useState('Saúde');
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-    cpf: '',
-    plate: '',
-    vehicle_model: '',
-    vehicle_year: '',
-    vehicle_usage: '',
-    plan_type: 'Individual',
-    lives: '',
-    ages: '',
-    has_cnpj: '',
-    is_mei: '',
-    profession: '',
-    city: '', 
-  });
-
-  const insuranceOptions = [
-    'Saúde', 'Auto', 'Moto', 'Caminhão', 'Empresa', 'Vida',
-    'Proteção Veicular', 'Consórcio'
-  ];
-  const planTypes = ['Individual', 'Familiar', 'PME', 'Adesão'];
-  const professionOptions = [
-    'Médico', 'Engenheiro', 'Professor', 'Advogado', 'Empresário', 'Autônomo', 'Outro'
-  ];
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleTypeChange = (e) => {
-    setInsuranceType(e.target.value);
-    setFormData(prev => ({
-      ...prev,
-      cpf: '', plate: '', vehicle_model: '', vehicle_year: '', vehicle_usage: '',
-      plan_type: 'Individual', lives: '', ages: '', has_cnpj: '', is_mei: '', profession: ''
-    }));
+  const formatWhatsapp = (v) => {
+    const nums = v.replace(/\D/g, "").slice(0, 11);
+    if (nums.length <= 2) return nums;
+    if (nums.length <= 7) return `(${nums.slice(0, 2)}) ${nums.slice(2)}`;
+    return `(${nums.slice(0, 2)}) ${nums.slice(2, 7)}-${nums.slice(7)}`;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (isLoading) return;
-
-    if (!formData.name || !formData.email || !formData.phone) {
-      toast({
-        variant: "destructive",
-        title: "Dados obrigatórios",
-        description: "Por favor preencha Nome, Email e Telefone."
-      });
-      return;
-    }
-
-    if (insuranceType === 'Saúde' && (!formData.lives || !formData.ages || !formData.has_cnpj)) {
-      toast({
-        variant: "destructive",
-        title: "Dados obrigatórios",
-        description: "Por favor preencha Vidas, Idades e se possui CNPJ."
-      });
-      return;
-    }
-
-    setIsLoading(true);
-
+    if (!nome.trim()) { setErro("Por favor, informe seu nome."); return; }
+    const nums = whatsapp.replace(/\D/g, "");
+    if (nums.length < 10) { setErro("WhatsApp inválido. Inclua DDD."); return; }
+    
+    setErro("");
+    setLoading(true);
+    
     try {
-      let msg = `Nome: ${formData.name}\nEmail: ${formData.email}\nTelefone: ${formData.phone}\nPlano de Interesse: ${insuranceType}\nMensagem: ${formData.message || 'Solicitação de Cotação'}\n`;
-      
-      if (formData.city) msg += `\nCidade: ${formData.city}`;
-
-      if (['Auto', 'Moto', 'Caminhão', 'Proteção Veicular'].includes(insuranceType)) {
-        if (formData.plate) msg += `\nPlaca: ${formData.plate}`;
-        if (formData.cpf) msg += `\nCPF: ${formData.cpf}`;
-        if (formData.vehicle_model) msg += `\nModelo: ${formData.vehicle_model}`;
-        if (formData.vehicle_year) msg += `\nAno: ${formData.vehicle_year}`;
-        if (formData.vehicle_usage) msg += `\nUso: ${formData.vehicle_usage}`;
-      }
-
-      if (insuranceType === 'Saúde') {
-        msg += `\nTipo de Plano: ${formData.plan_type}`;
-        msg += `\nVidas: ${formData.lives}`;
-        msg += `\nIdades: ${formData.ages}`;
-        msg += `\nPossui CNPJ: ${formData.has_cnpj}`;
-        if (formData.has_cnpj === 'Sim' && formData.is_mei) msg += `\nÉ MEI: ${formData.is_mei}`;
-        if (formData.profession) msg += `\nProfissão: ${formData.profession}`;
-      }
-
-      const encodedMessage = encodeURIComponent(msg);
-      const whatsappUrl = `https://wa.me/5511920144864?text=${encodedMessage}`;
-      
-      window.open(whatsappUrl, '_blank');
-
-      toast({
-        title: "Sucesso!",
-        description: "Sua solicitação está sendo redirecionada para o WhatsApp."
+      await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ 
+          nome: nome.trim(), 
+          whatsapp: nums, 
+          origem: "elevanceseguros.com", // Identifica que veio da Home principal
+          produto: "Geral / Multi-produto" // A IA do WhatsApp faz a triagem
+        }),
       });
-      
-      navigate('/thank-you');
-    } catch (error) {
-      toast({
-        variant: "destructive",
-        title: "Erro",
-        description: "Ocorreu um erro ao gerar a mensagem. Tente novamente."
-      });
+      setEnviado(true);
+    } catch {
+      setErro("Erro ao enviar. Tente novamente ou chame no WhatsApp.");
     } finally {
-      setIsLoading(false);
+      setLoading(false);
     }
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="w-full max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg relative z-20"
-    >
-      <h2 className="text-2xl font-bold mb-6 text-gray-800">Solicitar Cotação</h2>
-      
-      <form onSubmit={handleSubmit} className="space-y-6">
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Tipo de Seguro</label>
-          <select value={insuranceType} onChange={handleTypeChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 bg-white">
-            {insuranceOptions.map(option => <option key={option} value={option}>{option}</option>)}
-          </select>
-        </div>
+    <div className="max-w-4xl mx-auto">
+      <AnimatePresence mode="wait">
+        {!enviado ? (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-slate-100"
+          >
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <div className="flex-grow text-center md:text-left">
+                <h3 className="text-[#1a3a52] font-bold text-xl md:text-2xl mb-2">
+                  Cotação rápida e sem compromisso
+                </h3>
+                <p className="text-slate-500 text-sm">
+                  Receba opções personalizadas no seu WhatsApp em instantes.
+                </p>
+              </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Nome *</label>
-            <input type="text" name="name" value={formData.name} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900" placeholder="Seu nome" required />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Email *</label>
-            <input type="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900" placeholder="seu@email.com" required />
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Telefone *</label>
-            <input type="tel" name="phone" value={formData.phone} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900" placeholder="(11) 99999-9999" required />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Cidade</label>
-            <input type="text" name="city" value={formData.city} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900" placeholder="Sua cidade"/>
-          </div>
-        </div>
-        
-        {['Auto', 'Moto', 'Caminhão', 'Proteção Veicular'].includes(insuranceType) && (
-          <>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Placa do Veículo</label>
-                <input type="text" name="plate" value={formData.plate} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900" placeholder="ABC-1234" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">CPF</label>
-                <input type="text" name="cpf" value={formData.cpf} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900" placeholder="000.000.000-00"/>
-              </div>
-            </div>
-             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Modelo do Veículo</label>
-                <input type="text" name="vehicle_model" value={formData.vehicle_model} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900" placeholder="Ex: Honda Civic"/>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Ano do Veículo</label>
-                <input type="text" name="vehicle_year" value={formData.vehicle_year} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900" placeholder="2023"/>
-              </div>
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Uso do Veículo</label>
-              <select name="vehicle_usage" value={formData.vehicle_usage} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 bg-white">
-                <option value="">Selecione</option>
-                <option value="Particular">Particular</option>
-                <option value="Comercial">Comercial</option>
-                <option value="Aluguel">Aluguel</option>
-              </select>
-            </div>
-          </>
-        )}
-
-        {insuranceType === 'Saúde' && (
-          <>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Tipo de Plano</label>
-                <select name="plan_type" value={formData.plan_type} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 bg-white">
-                  {planTypes.map(type => <option key={type} value={type}>{type}</option>)}
-                </select>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Número de Vidas *</label>
-                <input type="number" name="lives" value={formData.lives} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900" placeholder="1" min="1" required/>
-              </div>
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Idades (Ex: 30, 28, 5) *</label>
-              <input type="text" name="ages" value={formData.ages} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900" placeholder="30, 28, 5" required/>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Possui CNPJ? *</label>
-                <select name="has_cnpj" value={formData.has_cnpj} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 bg-white" required>
-                  <option value="">Selecione</option>
-                  <option value="Sim">Sim</option>
-                  <option value="Não">Não</option>
-                </select>
-              </div>
-              {formData.has_cnpj === 'Sim' && (
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">É MEI?</label>
-                  <select name="is_mei" value={formData.is_mei} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 bg-white">
-                    <option value="">Selecione</option>
-                    <option value="Sim">Sim</option>
-                    <option value="Não">Não</option>
-                  </select>
+              <form onSubmit={handleSubmit} className="w-full md:w-auto flex flex-col md:flex-row gap-4 items-end">
+                <div className="w-full md:w-56">
+                  <label className="block text-xs font-semibold text-slate-700 mb-1 uppercase tracking-wider text-left">Seu nome</label>
+                  <input
+                    type="text"
+                    value={nome}
+                    onChange={e => setNome(e.target.value)}
+                    placeholder="Nome completo"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-sm transition-all"
+                  />
                 </div>
-              )}
-            </div>
+                
+                <div className="w-full md:w-56">
+                  <label className="block text-xs font-semibold text-slate-700 mb-1 uppercase tracking-wider text-left">WhatsApp</label>
+                  <input
+                    type="tel"
+                    value={whatsapp}
+                    onChange={e => setWhatsapp(formatWhatsapp(e.target.value))}
+                    placeholder="(11) 99999-9999"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-sm transition-all"
+                  />
+                </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Profissão (opcional)</label>
-              <select name="profession" value={formData.profession} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 bg-white">
-                <option value="">Selecione sua profissão</option>
-                {professionOptions.map(option => (
-                  <option key={option} value={option}>{option}</option>
-                ))}
-              </select>
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 disabled:bg-slate-300 text-white font-bold px-6 py-3.5 rounded-lg flex items-center justify-center gap-2 transition-all shadow-lg hover:shadow-blue-200 text-sm"
+                >
+                  {loading ? "..." : "COTAR AGORA"}
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </form>
             </div>
-          </>
+            {erro && <p className="text-red-500 text-xs mt-3 text-left font-medium">{erro}</p>}
+          </motion.div>
+        ) : (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="bg-white rounded-2xl shadow-xl p-8 text-center border border-green-100"
+          >
+            <CheckCircle className="w-12 h-12 text-green-500 mx-auto mb-4" />
+            <h3 className="text-[#1a3a52] text-xl font-bold mb-2">Solicitação enviada!</h3>
+            <p className="text-slate-500 text-sm">Fique atento ao seu WhatsApp, nossa IA entrará em contato agora.</p>
+          </motion.div>
         )}
-
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Mensagem Adicional</label>
-          <textarea name="message" value={formData.message} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900" placeholder="Deixe sua mensagem aqui..." rows="4"/>
-        </div>
-
-        <Button type="submit" disabled={isLoading} className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg flex items-center justify-center gap-2">
-          {isLoading ? (<><Loader2 className="w-5 h-5 animate-spin" /> Enviando...</>) : (<><Send className="w-5 h-5" /> Solicitar Cotação</>)}
-        </Button>
-      </form>
-    </motion.div>
+      </AnimatePresence>
+    </div>
   );
 };
 
