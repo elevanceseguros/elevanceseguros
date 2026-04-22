@@ -16,121 +16,146 @@ const SagradaFamiliaHomePage = () => {
     { idade: "59 ou +", enf: "R$ 1.280,06", apto: "R$ 1.723,54" },
   ];
 
-  const hospitais = [
+  const hospitaisOficiais = [
     { nome: "Hospital Ipiranga", cidade: "Arujá" },
     { nome: "Hospital Ipiranga", cidade: "Mogi das Cruzes" },
     { nome: "Hospital Santa Maria", cidade: "Suzano" },
-    { nome: "Hospital 8 de Maio", cidade: "São Paulo (Leste)" },
+    { nome: "Hospital 8 de Maio", cidade: "São Paulo" },
     { nome: "Hospital e Mat. Master Clin", cidade: "São Mateus" },
     { nome: "Hospital Coração de Jesus", cidade: "Santo André" },
   ];
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
-      {/* Header com Logo */}
-      <nav className="bg-white border-b sticky top-0 z-50 py-4 shadow-sm">
+      {/* Header Profissional */}
+      <nav className="bg-white border-b sticky top-0 z-50 py-3 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-          <img src="/logos/elevance-logo.png" alt="Elevance Seguros" className="h-10 md:h-12 object-contain" />
-          <div className="flex items-center gap-2">
-             <img src="/logos/sagrada-familia.png" alt="Sagrada Família" className="h-8 md:h-10" />
-          </div>
+          <img 
+            src="/logos/elevance-logo.png" 
+            alt="Elevance Seguros" 
+            className="h-10 md:h-14 object-contain"
+            onError={(e) => { e.target.src = "https://via.placeholder.com/200x60?text=Elevance+Seguros"; }} 
+          />
+          <img 
+            src="/logos/sagrada-familia.png" 
+            alt="Sagrada Família" 
+            className="h-8 md:h-12 object-contain"
+            onError={(e) => { e.target.src = "https://via.placeholder.com/150x50?text=Sagrada+Familia"; }}
+          />
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-12 pb-20 px-4">
+      <section className="pt-10 pb-16 px-4 bg-gradient-to-b from-white to-slate-50">
         <div className="max-w-5xl mx-auto text-center">
-          <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block">
-            Tabela Promocional 2026
-          </span>
-          <h1 className="text-4xl md:text-6xl font-black text-[#1a3a52] mb-6">
+          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
+            <span className="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
+            Tabela Oficial 2026
+          </div>
+          <h1 className="text-4xl md:text-6xl font-black text-[#1a3a52] mb-6 leading-tight">
             Sagrada Família Saúde
           </h1>
           <p className="text-slate-600 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            O melhor custo-benefício de São Paulo e ABC. Planos individuais e empresariais com ampla rede própria.
+            A melhor rede de atendimento em São Paulo e Grande ABC. Qualidade hospitalar com o preço que você procura.
           </p>
           
-          <LeadFormSincero />
+          <div className="relative z-20">
+            <LeadFormSincero />
+          </div>
         </div>
       </section>
 
-      {/* Seção Tabela e Hospitais - Grid Duplo */}
-      <section className="max-w-7xl mx-auto px-4 pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      {/* Conteúdo: Tabela e Rede */}
+      <section className="max-w-7xl mx-auto px-4 pb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           
-          {/* Coluna 1: Tabela de Preços */}
-          <div className="bg-white rounded-[32px] shadow-xl overflow-hidden border border-slate-100">
-            <div className="bg-[#1a3a52] p-6 text-white flex items-center gap-3">
-              <Table className="w-6 h-6" />
-              <h2 className="text-xl font-bold">Simulação de Preços</h2>
+          {/* Tabela de Preços */}
+          <div className="bg-white rounded-[40px] shadow-2xl overflow-hidden border border-slate-100">
+            <div className="bg-[#1a3a52] p-7 text-white">
+              <div className="flex items-center gap-3">
+                <Table className="w-6 h-6 text-blue-400" />
+                <h2 className="text-2xl font-bold italic">Simule seu Plano</h2>
+              </div>
             </div>
-            <div className="overflow-x-auto p-4 md:p-8">
-              <table className="w-full text-left">
+            <div className="p-4 md:p-8">
+              <table className="w-full">
                 <thead>
-                  <tr className="border-b-2 border-slate-50">
-                    <th className="py-4 font-bold text-slate-400 uppercase text-xs">Idade</th>
-                    <th className="py-4 font-bold text-[#1a3a52] uppercase text-xs">Enfermaria</th>
-                    <th className="py-4 font-bold text-blue-600 uppercase text-xs">Apartamento</th>
+                  <tr className="border-b-2 border-slate-50 text-left">
+                    <th className="py-4 font-bold text-slate-400 text-xs uppercase">Idade</th>
+                    <th className="py-4 font-bold text-[#1a3a52] text-xs uppercase">Enfermaria</th>
+                    <th className="py-4 font-bold text-blue-600 text-xs uppercase">Apartamento</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody className="divide-y divide-slate-50">
                   {tabelaPrecos.map((item, index) => (
-                    <tr key={index} className="border-b border-slate-50 hover:bg-slate-50 transition-colors">
-                      <td className="py-4 font-bold text-slate-700">{item.idade}</td>
-                      <td className="py-4 text-[#1a3a52] font-medium">{item.enf}</td>
-                      <td className="py-4 text-blue-600 font-bold">{item.apto}</td>
+                    <tr key={index} className="hover:bg-slate-50 transition-colors">
+                      <td className="py-3.5 font-bold text-slate-700">{item.idade}</td>
+                      <td className="py-3.5 text-[#1a3a52] font-semibold">{item.enf}</td>
+                      <td className="py-3.5 text-blue-600 font-extrabold">{item.apto}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
-              <p className="mt-6 text-xs text-slate-400 italic text-center">
-                *Valores sujeitos a alteração de acordo com a categoria e modalidade de contratação.
-              </p>
+              <div className="mt-8 p-4 bg-blue-50 rounded-2xl border border-blue-100">
+                <p className="text-[11px] text-blue-800 text-center leading-snug">
+                  <strong>Nota:</strong> Valores referentes ao plano individual. <br/>
+                  Para <strong>CNPJ ou MEI</strong>, solicite a tabela com descontos especiais.
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* Coluna 2: Hospitais em Destaque */}
+          {/* Rede Hospitalar Oficial */}
           <div className="space-y-8">
-            <div className="bg-white p-8 rounded-[32px] shadow-lg border border-slate-100">
-              <div className="flex items-center gap-3 mb-8">
-                <Building2 className="text-blue-600 w-8 h-8" />
-                <h2 className="text-2xl font-bold text-[#1a3a52]">Rede de Destaque</h2>
+            <div className="bg-white p-8 md:p-10 rounded-[40px] shadow-xl border border-slate-100">
+              <div className="flex items-center gap-3 mb-10">
+                <div className="p-3 bg-blue-50 rounded-2xl text-blue-600">
+                  <Building2 className="w-8 h-8" />
+                </div>
+                <div>
+                  <h2 className="text-2xl font-bold text-[#1a3a52]">Rede de Destaque</h2>
+                  <p className="text-slate-400 text-sm italic">Principais hospitais credenciados</p>
+                </div>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {hospitais.map((hosp, i) => (
-                  <div key={i} className="flex items-start gap-3 p-4 bg-slate-50 rounded-2xl hover:bg-blue-50 transition-colors border border-transparent hover:border-blue-100">
-                    <CheckCircle2 className="text-green-500 w-5 h-5 mt-1 shrink-0" />
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {hospitaisOficiais.map((hosp, i) => (
+                  <div key={i} className="flex items-center gap-4 p-5 bg-slate-50 rounded-3xl border border-transparent hover:border-blue-100 hover:bg-white hover:shadow-md transition-all group">
+                    <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center text-green-500 shadow-sm group-hover:bg-green-500 group-hover:text-white transition-colors">
+                      <CheckCircle2 className="w-5 h-5" />
+                    </div>
                     <div>
                       <p className="font-bold text-[#1a3a52] leading-tight">{hosp.nome}</p>
-                      <p className="text-xs text-slate-500 uppercase font-semibold tracking-wider mt-1">{hosp.cidade}</p>
+                      <p className="text-[10px] text-slate-500 uppercase font-bold tracking-widest mt-1">{hosp.cidade}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Banner de Gatilho para WhatsApp */}
-            <div className="bg-blue-600 rounded-[32px] p-8 text-white relative overflow-hidden group shadow-2xl">
+            {/* Banner Especial MEI */}
+            <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-[40px] p-10 text-white relative overflow-hidden shadow-2xl">
               <div className="relative z-10">
-                <h3 className="text-2xl font-bold mb-4">Tem CNPJ ou MEI?</h3>
-                <p className="opacity-90 mb-6 text-lg">
-                  Consulte nossa tabela exclusiva para empresas com descontos de até <span className="font-black">30%</span>.
+                <h3 className="text-3xl font-black mb-4">Possui CNPJ?</h3>
+                <p className="text-blue-50 mb-8 text-lg opacity-90 leading-relaxed">
+                  Planos empresariais possuem <span className="underline decoration-blue-300 underline-offset-4">preços até 30% menores</span> que o individual.
                 </p>
-                <div className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-2xl font-bold transition-transform group-hover:scale-105">
-                   Falar com Consultor agora
-                </div>
+                <button className="w-full bg-white text-blue-700 py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-blue-50 transition-all shadow-xl active:scale-95">
+                   Consultar Tabela PME
+                </button>
               </div>
-              <Users className="absolute -right-10 -bottom-10 w-48 h-48 opacity-10 rotate-12" />
+              <Users className="absolute -right-12 -bottom-12 w-64 h-64 opacity-10 rotate-12" />
             </div>
           </div>
 
         </div>
       </section>
 
-      {/* Footer Minimalista */}
-      <footer className="bg-[#1a3a52] py-12 text-center text-white opacity-90">
-         <p className="text-sm">© 2026 Elevance Seguros - Especialistas em Sagrada Família Saúde</p>
-         <p className="text-[10px] mt-2 opacity-50 px-4">Imagens meramente ilustrativas. Os preços e a rede credenciada podem sofrer alterações sem aviso prévio conforme as normas da ANS.</p>
+      {/* Rodapé */}
+      <footer className="bg-white border-t py-12 text-center">
+         <p className="text-slate-400 text-xs font-medium italic">
+           © 2026 Elevance Seguros - Consultoria Autorizada Sagrada Família Saúde
+         </p>
       </footer>
     </div>
   );
