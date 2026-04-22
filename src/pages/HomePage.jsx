@@ -30,7 +30,7 @@ const HomePage = () => {
       <Hero />
       
       <div className="-mt-10 md:-mt-16 px-4 relative z-20">
-        <TopQuoteForm />
+        <LeadFormSincero />
       </div>
       
       <div className="pt-8">
