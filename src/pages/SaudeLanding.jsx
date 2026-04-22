@@ -223,11 +223,11 @@ export default function SaudeLanding() {
         <p className="text-center text-slate-400 text-xs font-semibold uppercase tracking-widest mb-5">Algumas das operadoras que trabalhamos</p>
         <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto items-center">
           {operadoras.map(op => (
-            <div key={op.nome} className="bg-white border border-slate-100 rounded-xl px-5 py-3 shadow-sm flex items-center justify-center h-14 min-w-[100px]">
+            <div key={op.nome} className="bg-white border border-slate-100 rounded-xl shadow-sm flex items-center justify-center" style={{width:"140px", height:"64px", padding:"12px 16px"}}>
               <img
                 src={op.logo}
                 alt={op.nome}
-                className="max-h-7 max-w-[90px] w-auto object-contain"
+                style={{maxHeight:"36px", maxWidth:"110px", width:"auto", objectFit:"contain", mixBlendMode:"multiply"}}
                 onError={(e) => {
                   e.target.style.display = "none";
                   e.target.nextSibling.style.display = "block";
