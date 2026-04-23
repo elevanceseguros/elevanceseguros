@@ -1,215 +1,121 @@
 import React from 'react';
-import { Instagram, Mail, Phone, MapPin } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { 
+  Instagram, 
+  Mail, 
+  Phone, 
+  ArrowUpRight, 
+  ShieldCheck,
+  Globe
+} from 'lucide-react';
 
 const Footer = () => {
-  const location = useLocation();
-  const isSagradaFamiliaPage = location.pathname.startsWith('/sagrada-familia');
+  const currentYear = new Date().getFullYear();
+  const whatsappNumber = "5511920144864";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Olá Rodrigo, vi seu site e gostaria de uma cotação!`;
+  const instagramUrl = "https://www.instagram.com/elevanceseguros";
 
-  if (isSagradaFamiliaPage) {
-    return (
-      <footer className="bg-white border-t border-gray-100 text-gray-700 pt-16 pb-8">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 mb-12 max-w-4xl mx-auto">
-            <div>
-              <div className="mb-6 inline-block w-32 overflow-hidden">
-                <img
-                  src="https://horizons-cdn.hostinger.com/31b5dfa3-4e40-4378-96a9-7dc0284f5b4c/c7cb817ad8d8c9af1226b5466e1b2264.png"
-                  alt="Sagrada Família"
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-              <p className="text-gray-500 mb-6 leading-relaxed text-sm">
-                Cuidando da saúde da sua família com dedicação, respeito e excelência. A proteção que você confia.
-              </p>
-              <div className="flex gap-4">
-                <a href="https://www.instagram.com/elevanceseguros" target="_blank" rel="noopener noreferrer" className="bg-blue-50 text-blue-600 hover:bg-blue-100 p-2 rounded-lg transition-all" aria-label="Instagram">
-                  <Instagram className="w-5 h-5" />
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <span className="font-bold text-lg mb-6 block text-gray-900 border-b-2 border-blue-500 w-fit pb-1">Contato</span>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3 group">
-                  <Phone className="w-5 h-5 text-blue-500 flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold text-gray-900 text-sm">Telefone / WhatsApp</p>
-                    <a href="tel:5511920144864" className="hover:text-blue-600 transition-colors text-sm block">
-                      (11) 92014-4864
-                    </a>
-                    <a href="https://wa.me/5511920144864" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 text-xs mt-1 inline-flex items-center gap-1 transition-colors font-medium">
-                      Chamar no WhatsApp
-                    </a>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3 group">
-                  <Mail className="w-5 h-5 text-blue-500 flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold text-gray-900 text-sm">E-mail</p>
-                    <a href="mailto:contato@elevanceseguros.com" className="hover:text-blue-600 transition-colors text-sm block break-all">
-                      contato@elevanceseguros.com
-                    </a>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3 group">
-                  <MapPin className="w-5 h-5 text-blue-500 flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold text-gray-900 text-sm">Atendimento</p>
-                    <p className="text-sm text-gray-500">São Paulo, SP - Brasil</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-100 pt-8 mt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-gray-400 text-sm text-center md:text-left">
-                © {new Date().getFullYear()} Sagrada Família. Todos os direitos reservados.
-              </p>
-              <div className="flex gap-6 text-sm">
-                <Link to="/sagrada-familia" className="text-gray-400 hover:text-gray-600 transition-colors">
-                  Política de Privacidade
-                </Link>
-                <Link to="/sagrada-familia" className="text-gray-400 hover:text-gray-600 transition-colors">
-                  Termos de Uso
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    );
-  }
+  const linksUteis = [
+    { name: 'Seguro Auto', href: '/seguro-auto' },
+    { name: 'Planos de Saúde', href: '/health-plans' },
+    { name: 'Seguro Empresa', href: '/business-insurance' },
+    { name: 'Consórcios', href: '/consorcios' },
+    { name: 'Blog', href: '/blog' },
+  ];
 
   return (
-    <footer className="bg-[#1a3a52] text-white pt-16 pb-8 border-t border-[#2a4a62]">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          <div>
-            <div className="mb-6 inline-block w-40 overflow-hidden">
-              <img
-                src="https://horizons-cdn.hostinger.com/31b5dfa3-4e40-4378-96a9-7dc0284f5b4c/e18073f9377f3b37fca5a56ae103bbd5.png"
-                alt="Elevance Seguros"
-                className="w-full h-auto object-contain scale-110 origin-left"
-              />
-            </div>
-            <p className="text-slate-300 mb-6 leading-relaxed text-sm">
-              Proteção e tranquilidade para o que mais importa. Soluções personalizadas em seguros com excelência e confiança.
+    <footer className="bg-[#1a3a52] text-white pt-20 pb-10">
+      <div className="max-w-7xl mx-auto px-4">
+        
+        {/* Grid Principal */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          
+          {/* Coluna 1: Sobre a Empresa */}
+          <div className="space-y-6">
+            <img 
+              src="/logos/elevance-logo.png" 
+              alt="Elevance Seguros" 
+              className="h-12 brightness-0 invert opacity-90" 
+            />
+            <p className="text-blue-100/70 text-sm leading-relaxed">
+              Consultoria de seguros 100% digital. 
+              Levamos a melhor proteção até você, onde quer que esteja, com a agilidade que o mundo moderno exige.
             </p>
             <div className="flex gap-4">
-              <a href="https://www.instagram.com/elevanceseguros" target="_blank" rel="noopener noreferrer" className="bg-[#2a4a62] hover:bg-white hover:text-[#1a3a52] p-2 rounded-lg transition-all" aria-label="Instagram">
-                <Instagram className="w-5 h-5" />
+              <a 
+                href={instagramUrl} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="p-3 bg-white/5 hover:bg-pink-600 rounded-xl transition-all shadow-sm"
+              >
+                <Instagram size={20} />
               </a>
             </div>
           </div>
 
+          {/* Coluna 2: Links Rápidos */}
           <div>
-            <span className="font-bold text-lg mb-6 block text-white border-b-2 border-blue-500 w-fit pb-1">Seguros e Planos</span>
-            <ul className="space-y-3">
-              {[
-                { name: 'Seguro Auto', path: '/seguro-auto' },
-                { name: 'Seguro Saúde', path: '/planos-de-saude' },
-                { name: 'Sagrada Família', path: '/sagrada-familia' },
-                { name: 'Seguro Empresa', path: '/business-insurance' },
-                { name: 'Consórcios', path: '/consorcios' }
-              ].map((item) => (
-                <li key={item.name}>
-                  <Link
-                    to={item.path}
-                    className="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block text-sm"
+            <h4 className="font-black text-lg mb-6 uppercase tracking-widest text-blue-400">Nossas Soluções</h4>
+            <ul className="space-y-4">
+              {linksUteis.map((link) => (
+                <li key={link.name}>
+                  <a 
+                    href={link.href} 
+                    className="text-blue-100/70 hover:text-white hover:translate-x-1 flex items-center gap-2 transition-all text-sm font-bold"
                   >
-                    {item.name}
-                  </Link>
+                    <ArrowUpRight size={14} className="text-blue-500" />
+                    {link.name}
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
 
+          {/* Coluna 3: Atendimento Digital */}
           <div>
-            <span className="font-bold text-lg mb-6 block text-white border-b-2 border-blue-500 w-fit pb-1">Serviços</span>
-            <ul className="space-y-3">
-              <li>
-                <Link to="/seguro-auto" className="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block text-sm">
-                  Cotação Auto
-                </Link>
+            <h4 className="font-black text-lg mb-6 uppercase tracking-widest text-blue-400">Atendimento</h4>
+            <ul className="space-y-4 text-sm font-medium text-blue-100/70">
+              <li className="flex items-center gap-3">
+                <Globe className="text-blue-500 shrink-0" size={18} />
+                <span>Atendimento em todo o Brasil</span>
               </li>
-              <li>
-                <Link to="/planos-de-saude" className="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block text-sm">
-                  Cotação Saúde
-                </Link>
+              <li className="flex items-center gap-3">
+                <Phone className="text-blue-500 shrink-0" size={18} />
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  (11) 92014-4864
+                </a>
               </li>
-              <li>
-                <Link to="/online-quote" className="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block text-sm">
-                  Cotação Online Geral
-                </Link>
-              </li>
-              <li>
-                <Link to="/customer-support#contact-form" className="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block text-sm">
-                  Suporte ao Cliente
-                </Link>
-              </li>
-              {/* ── BLOG ── */}
-              <li>
-                <Link to="/blog" className="text-blue-300 hover:text-white hover:translate-x-1 transition-all inline-block text-sm font-semibold">
-                  📝 Dicas & Blog
-                </Link>
+              <li className="flex items-center gap-3">
+                <Mail className="text-blue-500 shrink-0" size={18} />
+                <a href="mailto:contato@elevanceseguros.com" className="hover:text-white transition-colors">
+                  contato@elevanceseguros.com
+                </a>
               </li>
             </ul>
           </div>
 
-          <div>
-            <span className="font-bold text-lg mb-6 block text-white border-b-2 border-blue-500 w-fit pb-1">Contato</span>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-slate-300 group">
-                <Phone className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1 group-hover:text-white transition-colors" />
-                <div>
-                  <p className="font-semibold text-white text-sm">Telefone / WhatsApp</p>
-                  <a href="tel:5511920144864" className="hover:text-white transition-colors text-sm block">
-                    (11) 92014-4864
-                  </a>
-                  <a href="https://wa.me/5511920144864" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 text-xs text-green-300 mt-1 inline-flex items-center gap-1 transition-colors">
-                    Chamar no WhatsApp
-                  </a>
-                </div>
-              </li>
-              <li className="flex items-start gap-3 text-slate-300 group">
-                <Mail className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1 group-hover:text-white transition-colors" />
-                <div>
-                  <p className="font-semibold text-white text-sm">E-mail</p>
-                  <a href="mailto:contato@elevanceseguros.com" className="hover:text-white transition-colors text-sm block break-all">
-                    contato@elevanceseguros.com
-                  </a>
-                </div>
-              </li>
-              <li className="flex items-start gap-3 text-slate-300 group">
-                <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1 group-hover:text-white transition-colors" />
-                <div>
-                  <p className="font-semibold text-white text-sm">Atendimento</p>
-                  <p className="text-sm">São Paulo, SP - Brasil</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="border-t border-[#2a4a62] pt-8 mt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-slate-400 text-sm text-center md:text-left">
-              © {new Date().getFullYear()} Elevance Seguros. Todos os direitos reservados.
+          {/* Coluna 4: Credibilidade */}
+          <div className="bg-white/5 p-8 rounded-[40px] border border-white/10 text-center flex flex-col justify-center">
+            <ShieldCheck size={48} className="text-blue-400 mx-auto mb-4" />
+            <h4 className="font-black text-sm mb-2">Segurança Garantida</h4>
+            <p className="text-[10px] text-blue-100/50 leading-tight">
+              Parceiro Oficial APVS Brasil e as maiores seguradoras do mercado.
             </p>
-            <div className="flex gap-6 text-sm">
-              <Link to="/" className="text-slate-400 hover:text-white transition-colors">
-                Política de Privacidade
-              </Link>
-              <Link to="/" className="text-slate-400 hover:text-white transition-colors">
-                Termos de Uso
-              </Link>
+            <div className="mt-6 pt-6 border-t border-white/10">
+               <span className="text-[10px] font-black bg-blue-600 px-4 py-1.5 rounded-full uppercase tracking-tighter">Susep Autorizada</span>
             </div>
           </div>
+
         </div>
+
+        {/* Linha Final */}
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-blue-100/30">
+          <p>© {currentYear} Elevance Seguros • Rodrigo e Equipe</p>
+          <div className="flex gap-8">
+            <a href="/privacidade" className="hover:text-white transition-colors">Privacidade</a>
+            <a href="/termos" className="hover:text-white transition-colors">Termos</a>
+          </div>
+        </div>
+
       </div>
     </footer>
   );
