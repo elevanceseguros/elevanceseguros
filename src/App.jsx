@@ -9,6 +9,7 @@ import { useGoogleAnalytics } from '@/hooks/useGoogleAnalytics';
 import PullToRefreshContainer from '@/components/PullToRefreshContainer';
 import { SagradaFamiliaAuthProvider } from '@/contexts/SagradaFamiliaContext';
 import ProtectedRoute from '@/components/ProtectedRoute';
+import PostDetail from './pages/PostDetail';
 
 // Lazy load pages for better performance
 const HomePage = lazy(() => import('@/pages/HomePage'));
@@ -143,6 +144,7 @@ const AppContent = () => {
                 <Route path="/thank-you" element={<ThankYouPage />} />
                 <Route path="/obrigado" element={<ThankYouPage />} />
                 <Route path="/blog" element={<BlogPage />} />
+                <Route path="/blog/seguro-auto-vs-protecao-veicular" element={<PostDetail />} />
                 
                 {/* Fallback to main home */}
                 <Route path="*" element={<HomePage />} />
