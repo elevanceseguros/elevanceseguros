@@ -10,25 +10,26 @@ import { Star, ShieldCheck } from 'lucide-react';
 const HomePage = () => {
   return (
     <>
-      {/* Reduzi o pb-20 para pb-12 no mobile para eliminar o espaço sobrando abaixo do form */}
-      <section className="bg-[#1a3a52] pt-10 md:pt-16 pb-12 md:pb-24 px-4 text-center relative overflow-hidden">
+      {/* Reduzi o padding do topo para dar altura ao site */}
+      <section className="bg-[#1a3a52] pt-8 md:pt-16 pb-16 md:pb-24 px-4 text-center relative overflow-hidden">
         <div className="max-w-4xl mx-auto">
           
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-blue-200 px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-wider mb-6 md:mb-8">
+          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-blue-200 px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-wider mb-6">
             <ShieldCheck className="w-4 h-4" />
             <span>Sua corretora de confiança em SP</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
             Seguro que cabe no seu bolso, <span className="text-blue-400">sem enrolação</span>
           </h1>
 
-          <p className="text-blue-100/80 text-sm md:text-xl mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
+          {/* max-w-xs faz o texto quebrar em mais linhas e ocupar menos largura, centralizando melhor */}
+          <p className="text-blue-100/80 text-sm md:text-xl mb-8 max-w-xs md:max-w-2xl mx-auto leading-relaxed">
             Informe o seu nome e WhatsApp. Em minutos recebe as melhores opções direto no seu telemóvel.
           </p>
 
-          {/* Devolvi o tamanho w-20 para a foto não ficar pequena demais */}
-          <div className="flex flex-col items-center mb-0 md:mb-10">
+          {/* Card do Corretor com margem inferior (mb-12) para descolar do formulário */}
+          <div className="flex flex-col items-center mb-12 md:mb-16">
             <div className="relative">
               <img 
                 src="/preview.webp" 
@@ -51,8 +52,8 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Margem negativa menor (-mt-12) para não encavalar na sua descrição */}
-      <div className="-mt-12 md:-mt-16 px-4 relative z-20 max-w-md mx-auto">
+      {/* Margem negativa reduzida (-mt-8) para não grudar nas estrelas e manter a estética premium */}
+      <div className="-mt-8 md:-mt-16 px-4 relative z-20 max-w-md mx-auto">
         <div className="bg-white rounded-[32px] p-1.5 shadow-2xl">
           <LeadFormSincero />
         </div>
