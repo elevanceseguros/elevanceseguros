@@ -10,26 +10,26 @@ import { Star, ShieldCheck } from 'lucide-react';
 const HomePage = () => {
   return (
     <>
-      {/* Reduzi o padding do topo para dar altura ao site */}
-      <section className="bg-[#1a3a52] pt-8 md:pt-16 pb-16 md:pb-24 px-4 text-center relative overflow-hidden">
+      {/* Ajustei o PB para 24 para dar o espaço correto entre estrelas e formulário */}
+      <section className="bg-[#1a3a52] pt-12 md:pt-16 pb-24 md:pb-32 px-4 text-center relative overflow-hidden">
         <div className="max-w-4xl mx-auto">
           
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-blue-200 px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-wider mb-6">
+          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-blue-200 px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-wider mb-8">
             <ShieldCheck className="w-4 h-4" />
             <span>Sua corretora de confiança em SP</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
             Seguro que cabe no seu bolso, <span className="text-blue-400">sem enrolação</span>
           </h1>
 
-          {/* max-w-xs faz o texto quebrar em mais linhas e ocupar menos largura, centralizando melhor */}
-          <p className="text-blue-100/80 text-sm md:text-xl mb-8 max-w-xs md:max-w-2xl mx-auto leading-relaxed">
-            Informe o seu nome e WhatsApp. Em minutos recebe as melhores opções direto no seu telemóvel.
+          {/* Ajustei o MB para 12 para desgrudar do seu nome */}
+          <p className="text-blue-100/80 text-sm md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
+            Informe o seu nome e WhatsApp. Em minutos recebe as melhores opções de seguro e saúde direto no seu telemóvel.
           </p>
 
-          {/* Card do Corretor com margem inferior (mb-12) para descolar do formulário */}
-          <div className="flex flex-col items-center mb-12 md:mb-16">
+          {/* Card do Corretor com espaçamento original */}
+          <div className="flex flex-col items-center">
             <div className="relative">
               <img 
                 src="/preview.webp" 
@@ -52,9 +52,9 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Margem negativa reduzida (-mt-8) para não grudar nas estrelas e manter a estética premium */}
-      <div className="-mt-8 md:-mt-16 px-4 relative z-20 max-w-md mx-auto">
-        <div className="bg-white rounded-[32px] p-1.5 shadow-2xl">
+      {/* Margem negativa suave (-mt-16) para o formulário aparecer sem cobrir as estrelas */}
+      <div className="-mt-16 md:-mt-20 px-4 relative z-20 max-w-md mx-auto">
+        <div className="bg-white rounded-[32px] p-2 shadow-2xl">
           <LeadFormSincero />
         </div>
       </div>
