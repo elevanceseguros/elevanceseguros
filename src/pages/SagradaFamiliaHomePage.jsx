@@ -3,8 +3,8 @@ import LeadFormSincero from '@/components/LeadFormSincero';
 import { ShieldCheck, Clock, MapPin, Users, CheckCircle2, Building2, Table, Activity, ArrowRight } from 'lucide-react';
 
 const SagradaFamiliaHomePage = () => {
-  // ATENÇÃO: Coloque seu número de WhatsApp aqui (apenas números com DDD)
-  const whatsappNumber = "5511971485643"; 
+  // NÚMERO CORRIGIDO: 5511920144864
+  const whatsappNumber = "5511920144864"; 
   
   const tabelaPrecos = [
     { idade: "00 a 18", enf: "R$ 213,28", apto: "R$ 287,13" },
@@ -89,7 +89,6 @@ const SagradaFamiliaHomePage = () => {
       <section className="max-w-7xl mx-auto px-4 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           
-          {/* Tabela com Botão Atualizado */}
           <div className="bg-white rounded-[40px] shadow-2xl overflow-hidden border border-slate-100">
             <div className="bg-[#1a3a52] p-8 text-white">
               <div className="flex items-center gap-3">
@@ -148,7 +147,6 @@ const SagradaFamiliaHomePage = () => {
               </div>
             </div>
 
-            {/* Box CNPJ */}
             <div className="bg-gradient-to-br from-blue-700 to-blue-900 rounded-[40px] p-10 text-white relative overflow-hidden shadow-2xl">
               <div className="relative z-10">
                 <h3 className="text-3xl font-black mb-4 leading-tight">Possui CNPJ?</h3>
