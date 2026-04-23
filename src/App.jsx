@@ -145,6 +145,7 @@ const AppContent = () => {
                 <Route path="/obrigado" element={<ThankYouPage />} />
                 <Route path="/blog" element={<BlogPage />} />
                 <Route path="/blog/seguro-auto-vs-protecao-veicular" element={<PostDetail />} />
+                <Route path="/blog/:slug" element={<PostDetail />} />
                 
                 {/* Fallback to main home */}
                 <Route path="*" element={<HomePage />} />
