@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Efeito para mudar o estilo do menu ao rolar a página
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -25,24 +24,30 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 inset-x-0 z-[100] transition-all duration-300 ${
+      className={`fixed top-0 inset-x-0 z-[100] transition-all duration-500 ${
         scrolled 
-          ? 'bg-white/80 backdrop-blur-md border-b border-slate-200 py-2 shadow-lg' 
-          : 'bg-transparent py-4'
+          ? 'bg-white/90 backdrop-blur-md border-b border-slate-200 py-3 shadow-lg' 
+          : 'bg-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
         
-        {/* Logo com animação simples */}
+        {/* LOGO - Ajustada para visibilidade */}
         <motion.div 
-          whileHover={{ scale: 1.02 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           className="flex-shrink-0"
         >
-          <a href="/">
+          <a href="/" className="flex items-center">
             <img 
               src="/logos/elevance-logo.png" 
               alt="Elevance Seguros" 
-              className="h-10 md:h-12 object-contain" 
+              className={`transition-all duration-300 object-contain ${
+                scrolled ? 'h-10 md:h-12' : 'h-12 md:h-14'
+              }`}
+              // Se a logo for escura e o fundo do topo for escuro, 
+              // podes adicionar um filtro de brilho quando scrolled for false:
+              // style={{ filter: !scrolled ? 'brightness(1.2)' : 'none' }}
             />
           </a>
         </motion.div>
@@ -53,27 +58,27 @@ const Header = () => {
             <a 
               key={item.name} 
               href={item.href} 
-              className="relative text-[#1a3a52] font-bold text-xs uppercase tracking-[0.15em] group"
+              className={`relative font-bold text-xs uppercase tracking-[0.15em] group transition-colors ${
+                scrolled ? 'text-[#1a3a52]' : 'text-[#1a3a52]' 
+              }`}
             >
               {item.name}
-              {/* Linha animada no hover */}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
           
-          {/* Botão Principal com pulso sutil */}
           <a 
             href="/contato" 
-            className="flex items-center gap-2 bg-[#1a3a52] text-white px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-200 transition-all active:scale-95"
+            className="flex items-center gap-2 bg-[#1a3a52] text-white px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-700 hover:shadow-xl transition-all active:scale-95 shadow-md"
           >
-            <Phone size={14} className="animate-bounce" />
+            <Phone size={14} className="animate-pulse" />
             Falar com Rodrigo
           </a>
         </nav>
 
         {/* Botão Mobile */}
         <button 
-          className="lg:hidden p-2 bg-white rounded-xl shadow-sm border border-slate-100 text-[#1a3a52]"
+          className="lg:hidden p-2 bg-white/50 backdrop-blur-sm rounded-xl border border-slate-200 text-[#1a3a52]"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -84,17 +89,17 @@ const Header = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-b overflow-hidden shadow-2xl"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="lg:hidden absolute top-full inset-x-0 bg-white border-b shadow-2xl overflow-hidden"
           >
             <div className="p-6 flex flex-col gap-5">
               {menuItems.map((item) => (
                 <a 
                   key={item.name} 
                   href={item.href} 
-                  className="text-lg font-black text-[#1a3a52] flex justify-between items-center"
+                  className="text-lg font-black text-[#1a3a52] flex justify-between items-center border-b border-slate-50 pb-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
@@ -103,7 +108,7 @@ const Header = () => {
               ))}
               <a 
                 href="/contato" 
-                className="bg-blue-600 text-white p-5 rounded-[20px] text-center font-black uppercase tracking-widest text-sm shadow-lg shadow-blue-100"
+                className="bg-blue-600 text-white p-5 rounded-[20px] text-center font-black uppercase tracking-widest text-sm"
                 onClick={() => setIsOpen(false)}
               >
                 Falar com Rodrigo agora
@@ -115,10 +120,5 @@ const Header = () => {
     </header>
   );
 };
-
-// Pequeno ícone auxiliar para o mobile
-const ChevronRight = ({ size, className }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="m9 18 6-6-6-6"/></svg>
-);
 
 export default Header;
