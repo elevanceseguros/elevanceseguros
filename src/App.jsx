@@ -142,6 +142,7 @@ const AppContent = () => {
                 <Route path="/customer-support" element={<CustomerSupportPage />} />
                 <Route path="/thank-you" element={<ThankYouPage />} />
                 <Route path="/obrigado" element={<ThankYouPage />} />
+                <Route path="/blog" element={<BlogPage />} />
                 
                 {/* Fallback to main home */}
                 <Route path="*" element={<HomePage />} />
