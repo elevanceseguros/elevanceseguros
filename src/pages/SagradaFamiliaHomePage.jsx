@@ -1,8 +1,10 @@
 import React from 'react';
 import LeadFormSincero from '@/components/LeadFormSincero';
-import { ShieldCheck, Clock, MapPin, Users, CheckCircle2, Building2, Table, Activity } from 'lucide-react';
+import { ShieldCheck, Clock, MapPin, Users, CheckCircle2, Building2, Table, Activity, ArrowRight } from 'lucide-react';
 
 const SagradaFamiliaHomePage = () => {
+  const whatsappNumber = "55119XXXXXXXX"; // COLOQUE SEU NÚMERO AQUI (com DDD e sem espaços)
+  
   const tabelaPrecos = [
     { idade: "00 a 18", enf: "R$ 213,28", apto: "R$ 287,13" },
     { idade: "19 a 23", enf: "R$ 253,50", apto: "R$ 341,29" },
@@ -44,9 +46,13 @@ const SagradaFamiliaHomePage = () => {
     }
   ];
 
+  const handleWhatsApp = (mensagem) => {
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
-      {/* Header com os caminhos de imagem corrigidos */}
       <nav className="bg-white border-b sticky top-0 z-50 py-3 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <img 
@@ -62,17 +68,16 @@ const SagradaFamiliaHomePage = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-10 pb-16 px-4 bg-gradient-to-b from-white to-slate-50">
+      <section className="pt-10 pb-16 px-4">
         <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6 shadow-lg shadow-blue-200">
+          <div className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6">
             Tabela Atualizada 2026
           </div>
           <h1 className="text-4xl md:text-6xl font-black text-[#1a3a52] mb-6 leading-tight">
             Sagrada Família Saúde
           </h1>
-          <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-            Atendimento completo em São Paulo, ABC e Região. O plano que cuida da sua família com preço de tabela direto.
+          <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-medium">
+            Atendimento completo em São Paulo e Região. O plano que cuida da sua família com preço direto da Elevance.
           </p>
           <div className="relative z-20">
             <LeadFormSincero />
@@ -80,11 +85,10 @@ const SagradaFamiliaHomePage = () => {
         </div>
       </section>
 
-      {/* Conteúdo Principal */}
       <section className="max-w-7xl mx-auto px-4 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           
-          {/* Tabela de Preços */}
+          {/* Tabela com Botão de Desconto */}
           <div className="bg-white rounded-[40px] shadow-2xl overflow-hidden border border-slate-100">
             <div className="bg-[#1a3a52] p-8 text-white">
               <div className="flex items-center gap-3">
@@ -111,19 +115,25 @@ const SagradaFamiliaHomePage = () => {
                   ))}
                 </tbody>
               </table>
+              
+              <button 
+                onClick={() => handleWhatsApp("Olá, quero o plano sagrada família com desconto pois vi que consigo valores menores que o da tabela.")}
+                className="w-full mt-8 bg-green-500 hover:bg-green-600 text-white py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-3 group"
+              >
+                Quero Plano com Desconto
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
           </div>
 
-          {/* Unidades Oficiais */}
           <div className="space-y-8">
             <div className="bg-white p-8 md:p-10 rounded-[40px] shadow-xl border border-slate-100">
               <div className="flex items-center gap-3 mb-10">
-                <div className="p-3 bg-blue-50 rounded-2xl text-blue-600 shadow-inner">
+                <div className="p-3 bg-blue-50 rounded-2xl text-blue-600">
                   <Activity className="w-8 h-8" />
                 </div>
                 <h2 className="text-2xl font-black text-[#1a3a52] uppercase tracking-tight">Rede Própria</h2>
               </div>
-              
               <div className="space-y-4">
                 {unidadesOficiais.map((unidade, i) => (
                   <div key={i} className="p-6 bg-slate-50 rounded-[30px] border border-transparent hover:border-blue-100 transition-all group">
@@ -137,21 +147,24 @@ const SagradaFamiliaHomePage = () => {
               </div>
             </div>
 
-            {/* Chamada MEI */}
+            {/* Box CNPJ com link para WhatsApp */}
             <div className="bg-gradient-to-br from-blue-700 to-blue-900 rounded-[40px] p-10 text-white relative overflow-hidden shadow-2xl">
               <div className="relative z-10">
-                <h3 className="text-3xl font-black mb-4">Possui CNPJ?</h3>
-                <p className="text-blue-100 mb-8 text-lg opacity-90 font-medium">
-                  Até <span className="text-white font-black underline decoration-green-400 decoration-4 underline-offset-4">30% de desconto</span> para MEI e PME.
+                <h3 className="text-3xl font-black mb-4 leading-tight">Possui CNPJ?</h3>
+                <p className="text-blue-100 mb-8 text-lg opacity-90 font-medium leading-relaxed">
+                  Microempreendedores (MEI) e empresas têm acesso a descontos de até <span className="text-white font-black underline decoration-green-400 decoration-4 underline-offset-4">30%</span>.
                 </p>
-                <button className="w-full bg-white text-blue-900 py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-blue-50 transition-all shadow-xl">
+                <button 
+                  onClick={() => handleWhatsApp("Olá, quero saber o valor do plano empresarial sagrada família.")}
+                  className="w-full bg-white text-blue-900 py-5 rounded-2xl font-black text-sm uppercase tracking-[0.15em] hover:bg-blue-50 transition-all shadow-xl flex items-center justify-center gap-3"
+                >
                    Quero Tabela Empresarial
+                   <ArrowRight className="w-5 h-5" />
                 </button>
               </div>
               <Users className="absolute -right-12 -bottom-12 w-64 h-64 opacity-10 rotate-12" />
             </div>
           </div>
-
         </div>
       </section>
 
