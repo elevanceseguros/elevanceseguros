@@ -3,7 +3,8 @@ import LeadFormSincero from '@/components/LeadFormSincero';
 import { ShieldCheck, Clock, MapPin, Users, CheckCircle2, Building2, Table, Activity, ArrowRight } from 'lucide-react';
 
 const SagradaFamiliaHomePage = () => {
-  const whatsappNumber = "55119XXXXXXXX"; // COLOQUE SEU NÚMERO AQUI (com DDD e sem espaços)
+  // ATENÇÃO: Coloque seu número de WhatsApp aqui (apenas números com DDD)
+  const whatsappNumber = "5511971485643"; 
   
   const tabelaPrecos = [
     { idade: "00 a 18", enf: "R$ 213,28", apto: "R$ 287,13" },
@@ -88,7 +89,7 @@ const SagradaFamiliaHomePage = () => {
       <section className="max-w-7xl mx-auto px-4 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           
-          {/* Tabela com Botão de Desconto */}
+          {/* Tabela com Botão Atualizado */}
           <div className="bg-white rounded-[40px] shadow-2xl overflow-hidden border border-slate-100">
             <div className="bg-[#1a3a52] p-8 text-white">
               <div className="flex items-center gap-3">
@@ -117,10 +118,10 @@ const SagradaFamiliaHomePage = () => {
               </table>
               
               <button 
-                onClick={() => handleWhatsApp("Olá, quero o plano sagrada família com desconto pois vi que consigo valores menores que o da tabela.")}
+                onClick={() => handleWhatsApp("Olá, quero saber quanto sai o plano sagrada família.")}
                 className="w-full mt-8 bg-green-500 hover:bg-green-600 text-white py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-3 group"
               >
-                Quero Plano com Desconto
+                Quero saber quanto sai o plano
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -147,12 +148,12 @@ const SagradaFamiliaHomePage = () => {
               </div>
             </div>
 
-            {/* Box CNPJ com link para WhatsApp */}
+            {/* Box CNPJ */}
             <div className="bg-gradient-to-br from-blue-700 to-blue-900 rounded-[40px] p-10 text-white relative overflow-hidden shadow-2xl">
               <div className="relative z-10">
                 <h3 className="text-3xl font-black mb-4 leading-tight">Possui CNPJ?</h3>
                 <p className="text-blue-100 mb-8 text-lg opacity-90 font-medium leading-relaxed">
-                  Microempreendedores (MEI) e empresas têm acesso a descontos de até <span className="text-white font-black underline decoration-green-400 decoration-4 underline-offset-4">30%</span>.
+                  MEI e empresas têm acesso a descontos de até <span className="text-white font-black underline decoration-green-400 decoration-4 underline-offset-4">30%</span>.
                 </p>
                 <button 
                   onClick={() => handleWhatsApp("Olá, quero saber o valor do plano empresarial sagrada família.")}
