@@ -9,6 +9,9 @@ import { useGoogleAnalytics } from '@/hooks/useGoogleAnalytics';
 import PullToRefreshContainer from '@/components/PullToRefreshContainer';
 import { SagradaFamiliaAuthProvider } from '@/contexts/SagradaFamiliaContext';
 import ProtectedRoute from '@/components/ProtectedRoute';
+
+// Importação das páginas do Blog (Sem lazy load para evitar conflitos iniciais)
+import BlogPage from './pages/BlogPage';
 import PostDetail from './pages/PostDetail';
 
 // Lazy load pages for better performance
@@ -81,7 +84,7 @@ const AppContent = () => {
     '/saude'
   ];
 
-  // Regra para mostrar Header/Footer: não mostrar se for subdomínio ou se estiver em rota de LP
+  // Regra para mostrar Header/Footer
   const showHeaderFooter = !isSaudeSubdomain && !isSagradaSubdomain && !noHeaderFooterRoutes.some(path => 
     location.pathname === path || (path !== '/' && location.pathname.startsWith(path + '/'))
   );
@@ -100,7 +103,7 @@ const AppContent = () => {
           <main className="flex-grow">
             <Suspense fallback={<LoadingFallback />}>
               <Routes>
-                {/* Lógica de Rota Raiz (Trata subdomínios) */}
+                {/* Lógica de Rota Raiz */}
                 <Route 
                   path="/" 
                   element={
@@ -110,7 +113,7 @@ const AppContent = () => {
                   } 
                 />
                 
-                {/* Rotas Explícitas (Para acesso via elevanceseguros.com/caminho) */}
+                {/* Rotas Explícitas */}
                 <Route path="/saude" element={<SaudeLanding />} />
                 <Route path="/sagrada-familia" element={<SagradaFamiliaHomePage />} />
                 <Route path="/sagrada-familia/thank-you" element={<SagradaFamiliaThankYouPage />} />
@@ -143,8 +146,9 @@ const AppContent = () => {
                 <Route path="/customer-support" element={<CustomerSupportPage />} />
                 <Route path="/thank-you" element={<ThankYouPage />} />
                 <Route path="/obrigado" element={<ThankYouPage />} />
+
+                {/* BLOCO DO BLOG - CENTRALIZADO */}
                 <Route path="/blog" element={<BlogPage />} />
-                <Route path="/blog/seguro-auto-vs-protecao-veicular" element={<PostDetail />} />
                 <Route path="/blog/:slug" element={<PostDetail />} />
                 
                 {/* Fallback to main home */}
