@@ -10,12 +10,10 @@ import PullToRefreshContainer from '@/components/PullToRefreshContainer';
 import { SagradaFamiliaAuthProvider } from '@/contexts/SagradaFamiliaContext';
 import ProtectedRoute from '@/components/ProtectedRoute';
 
-// Importação das páginas do Blog (Sem lazy load para evitar conflitos iniciais)
-import BlogPage from './pages/BlogPage';
-import PostDetail from './pages/PostDetail';
-
-// Lazy load pages for better performance
+// Lazy load pages for better performance (Incluindo o Blog no padrão do projeto)
 const HomePage = lazy(() => import('@/pages/HomePage'));
+const BlogPage = lazy(() => import('@/pages/BlogPage'));
+const PostDetail = lazy(() => import('@/pages/PostDetail'));
 const ServicePage = lazy(() => import('@/pages/ServicePage'));
 const ThankYouPage = lazy(() => import('@/pages/ThankYouPage'));
 const BusinessInsurancePage = lazy(() => import('@/pages/BusinessInsurancePage'));
@@ -72,7 +70,7 @@ const AppContent = () => {
   const isSaudeSubdomain = hostname.startsWith('saude.');
   const isSagradaSubdomain = hostname.startsWith('sagradafamilia.');
 
-  // Rotas onde Header e Footer não devem aparecer (LPs e Admin)
+  // Rotas onde Header e Footer não devem aparecer
   const noHeaderFooterRoutes = [
     '/uniplan', 
     '/obrigado', 
@@ -84,7 +82,6 @@ const AppContent = () => {
     '/saude'
   ];
 
-  // Regra para mostrar Header/Footer
   const showHeaderFooter = !isSaudeSubdomain && !isSagradaSubdomain && !noHeaderFooterRoutes.some(path => 
     location.pathname === path || (path !== '/' && location.pathname.startsWith(path + '/'))
   );
@@ -147,7 +144,7 @@ const AppContent = () => {
                 <Route path="/thank-you" element={<ThankYouPage />} />
                 <Route path="/obrigado" element={<ThankYouPage />} />
 
-                {/* BLOCO DO BLOG - CENTRALIZADO */}
+                {/* BLOCO DO BLOG */}
                 <Route path="/blog" element={<BlogPage />} />
                 <Route path="/blog/:slug" element={<PostDetail />} />
                 
