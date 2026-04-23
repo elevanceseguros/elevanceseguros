@@ -10,7 +10,7 @@ import { Star, ShieldCheck } from 'lucide-react';
 const HomePage = () => {
   return (
     <>
-      {/* NOVO TOPO ESTILO SAUDE.ELEVANCE */}
+      {/* NOVO TOPO ESTILO SAUDE.ELEVANCE - PERSONALIZADO */}
       <section className="bg-[#1a3a52] pt-16 pb-24 px-4 text-center relative overflow-hidden">
         <div className="max-w-4xl mx-auto">
           {/* Badge de Confiança */}
@@ -24,14 +24,14 @@ const HomePage = () => {
           </h1>
 
           <p className="text-blue-100/80 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
-            Informe seu nome e WhatsApp. Em minutos você recebe as melhores opções de seguro e saúde direto no seu celular.
+            Informe o seu nome e WhatsApp. Em minutos recebe as melhores opções de seguro e saúde direto no seu telemóvel.
           </p>
 
           {/* Card do Corretor Rodrigo */}
           <div className="flex flex-col items-center mb-10">
             <div className="relative">
               <img 
-                src="/rodrigo-perfil.png" 
+                src="/preview.webp" 
                 alt="Rodrigo Farias" 
                 className="w-20 h-20 rounded-full border-4 border-white/10 mb-3 object-cover shadow-2xl"
                 onError={(e) => { e.target.src = "https://via.placeholder.com/80?text=RF"; }}
@@ -51,14 +51,14 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* FORMULÁRIO SOBREPOSTO (Igual ao padrão que você gosta) */}
+      {/* FORMULÁRIO SOBREPOSTO */}
       <div className="-mt-16 px-4 relative z-20 max-w-md mx-auto">
         <div className="bg-white rounded-[32px] p-2 shadow-2xl">
           <LeadFormSincero />
         </div>
       </div>
 
-      {/* TODAS AS SUAS SEÇÕES ANTIGAS MANTIDAS AQUI ABAIXO */}
+      {/* TODAS AS SUAS SECÇÕES ORIGINAIS MANTIDAS ABAIXO */}
       <div className="pt-12">
         <InsuranceTypes />
       </div>
