@@ -116,11 +116,12 @@ const SagradaFamiliaHomePage = () => {
                 </tbody>
               </table>
               
+              {/* Texto do botão mantido, apenas a mensagem handleWhatsApp foi alterada */}
               <button 
                 onClick={() => handleWhatsApp("Olá, quero saber quanto sai o plano sagrada família.")}
                 className="w-full mt-8 bg-green-500 hover:bg-green-600 text-white py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-3 group"
               >
-                Quero saber quanto sai o plano
+                Quero Plano com Desconto
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
