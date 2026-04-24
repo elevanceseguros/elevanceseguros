@@ -185,11 +185,11 @@ const HomePage = () => {
       </section>
       
       {/* DEPOIMENTOS */}
-      <section className="py-20 bg-[#114d8e]">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-white italic mb-2">O que dizem nossos clientes</h2>
-            <p className="text-blue-100/70 font-medium">Pessoas reais, resultados reais</p>
+            <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic mb-2">O que dizem nossos clientes</h2>
+            <p className="text-slate-500 font-medium">Pessoas reais, resultados reais</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {[
@@ -215,7 +215,7 @@ const HomePage = () => {
       </section>
 
       {/* CTA FINAL */}
-      <section className="pb-20 bg-[#114d8e] text-white text-center">
+      <section className="py-20 bg-[#114d8e] text-white text-center">
         <div className="max-w-4xl mx-auto px-4 space-y-6">
           <span className="inline-block bg-white/10 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Atendimento 100% Digital</span>
           <h2 className="text-3xl md:text-5xl font-black leading-tight italic">Sua segurança <br className="hidden md:block"/>não pode esperar.</h2>
