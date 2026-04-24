@@ -38,7 +38,7 @@ const Header = () => {
   const saudeRef = useRef(null);
   const autoRef = useRef(null);
   const segurosRef = useRef(null);
-  const logo = "/logo.png";
+  const logo = "/logo-white.png";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -70,7 +70,7 @@ const Header = () => {
           <div ref={saudeRef} className="relative">
             <button
               onClick={() => { setSaudeOpen(!saudeOpen); setAutoOpen(false); }}
-              className="flex items-center gap-1 text-[11px] font-black uppercase tracking-widest text-[#1a3a52] hover:text-blue-600 transition-colors"
+              className="flex items-center gap-1 text-[11px] font-black uppercase tracking-widest text-white hover:text-blue-200 transition-colors"
             >
               <Heart size={13} /> Saúde <ChevronDown size={13} className={`transition-transform ${saudeOpen ? 'rotate-180' : ''}`} />
             </button>
@@ -91,7 +91,7 @@ const Header = () => {
           <div ref={autoRef} className="relative">
             <button
               onClick={() => { setAutoOpen(!autoOpen); setSaudeOpen(false); }}
-              className="flex items-center gap-1 text-[11px] font-black uppercase tracking-widest text-[#1a3a52] hover:text-blue-600 transition-colors"
+              className="flex items-center gap-1 text-[11px] font-black uppercase tracking-widest text-white hover:text-blue-200 transition-colors"
             >
               <Car size={13} /> Auto <ChevronDown size={13} className={`transition-transform ${autoOpen ? 'rotate-180' : ''}`} />
             </button>
@@ -113,7 +113,7 @@ const Header = () => {
           <div ref={segurosRef} className="relative">
             <button
               onClick={() => { setSegurosOpen(!segurosOpen); setSaudeOpen(false); setAutoOpen(false); }}
-              className="flex items-center gap-1 text-[11px] font-black uppercase tracking-widest text-[#1a3a52] hover:text-blue-600 transition-colors"
+              className="flex items-center gap-1 text-[11px] font-black uppercase tracking-widest text-white hover:text-blue-200 transition-colors"
             >
               <Shield size={13} /> Seguros <ChevronDown size={13} className={`transition-transform ${segurosOpen ? 'rotate-180' : ''}`} />
             </button>
@@ -130,27 +130,27 @@ const Header = () => {
             )}
           </div>
 
-          <Link to="/consorcios" className="text-[11px] font-black uppercase tracking-widest text-[#1a3a52] hover:text-blue-600 transition-colors">Consórcios</Link>
-          <Link to="/blog" className="text-[11px] font-black uppercase tracking-widest text-[#1a3a52] hover:text-blue-600 transition-colors">Blog</Link>
+          <Link to="/consorcios" className="text-[11px] font-black uppercase tracking-widest text-white hover:text-blue-200 transition-colors">Consórcios</Link>
+          <Link to="/blog" className="text-[11px] font-black uppercase tracking-widest text-white hover:text-blue-200 transition-colors">Blog</Link>
 
           <a href="https://wa.me/5511920144864" target="_blank" rel="noreferrer"
-            className="flex items-center gap-2 bg-[#1a3a52] text-white px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-700 transition-all shadow-md">
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-md">
             <Phone size={14} /> Falar com Rodrigo
           </a>
         </nav>
 
-        <button className="lg:hidden text-[#1a3a52] p-2" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
+        <button className="lg:hidden text-white p-2" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
       {/* Menu Mobile */}
-      <div className={`lg:hidden absolute top-full left-0 w-full bg-white border-t border-slate-100 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[700px] opacity-100 shadow-2xl' : 'max-h-0 opacity-0'}`}>
+      <div className={`lg:hidden absolute top-full left-0 w-full bg-[#114d8e] border-t border-blue-400/30 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[700px] opacity-100 shadow-2xl' : 'max-h-0 opacity-0'}`}>
         <div className="flex flex-col p-6 gap-2">
 
           {/* Saúde mobile */}
           <button onClick={() => setMobileSaudeOpen(!mobileSaudeOpen)}
-            className="flex items-center justify-between text-sm font-black uppercase tracking-widest text-[#1a3a52] border-b border-slate-100 pb-3">
+            className="flex items-center justify-between text-sm font-black uppercase tracking-widest text-white border-b border-blue-400/30 pb-3">
             <span className="flex items-center gap-2"><Heart size={14} /> Saúde</span>
             <ChevronDown size={16} className={`transition-transform ${mobileSaudeOpen ? 'rotate-180' : ''}`} />
           </button>
@@ -167,7 +167,7 @@ const Header = () => {
 
           {/* Auto mobile */}
           <button onClick={() => setMobileAutoOpen(!mobileAutoOpen)}
-            className="flex items-center justify-between text-sm font-black uppercase tracking-widest text-[#1a3a52] border-b border-slate-100 pb-3">
+            className="flex items-center justify-between text-sm font-black uppercase tracking-widest text-white border-b border-blue-400/30 pb-3">
             <span className="flex items-center gap-2"><Car size={14} /> Auto</span>
             <ChevronDown size={16} className={`transition-transform ${mobileAutoOpen ? 'rotate-180' : ''}`} />
           </button>
@@ -175,7 +175,7 @@ const Header = () => {
             <div className="flex flex-col gap-1 pl-4 mb-2">
               {autoSubmenu.map((item) => (
                 <Link key={item.path} to={item.path} onClick={() => setIsOpen(false)}
-                  className="text-xs font-black uppercase tracking-wide text-slate-600 py-2 border-b border-slate-50">
+                  className="text-xs font-black uppercase tracking-wide text-blue-100 py-2 border-b border-blue-400/20">
                   {item.name}
                 </Link>
               ))}
@@ -185,7 +185,7 @@ const Header = () => {
 
           {/* Seguros mobile */}
           <button onClick={() => setMobileSegurosOpen(!mobileSegurosOpen)}
-            className="flex items-center justify-between text-sm font-black uppercase tracking-widest text-[#1a3a52] border-b border-slate-100 pb-3">
+            className="flex items-center justify-between text-sm font-black uppercase tracking-widest text-white border-b border-blue-400/30 pb-3">
             <span className="flex items-center gap-2"><Shield size={14} /> Seguros</span>
             <ChevronDown size={16} className={`transition-transform ${mobileSegurosOpen ? 'rotate-180' : ''}`} />
           </button>
@@ -193,18 +193,18 @@ const Header = () => {
             <div className="flex flex-col gap-1 pl-4 mb-2">
               {segurosSubmenu.map((item) => (
                 <Link key={item.path} to={item.path} onClick={() => setIsOpen(false)}
-                  className="text-xs font-black uppercase tracking-wide text-slate-600 py-2 border-b border-slate-50">
+                  className="text-xs font-black uppercase tracking-wide text-blue-100 py-2 border-b border-blue-400/20">
                   {item.name}
                 </Link>
               ))}
             </div>
           )}
 
-          <Link to="/consorcios" onClick={() => setIsOpen(false)} className="text-sm font-black uppercase tracking-widest text-[#1a3a52] border-b border-slate-100 pb-3">Consórcios</Link>
-          <Link to="/blog" onClick={() => setIsOpen(false)} className="text-sm font-black uppercase tracking-widest text-[#1a3a52] border-b border-slate-100 pb-3">Blog</Link>
+          <Link to="/consorcios" onClick={() => setIsOpen(false)} className="text-sm font-black uppercase tracking-widest text-white border-b border-blue-400/30 pb-3">Consórcios</Link>
+          <Link to="/blog" onClick={() => setIsOpen(false)} className="text-sm font-black uppercase tracking-widest text-white border-b border-blue-400/30 pb-3">Blog</Link>
 
           <a href="https://wa.me/5511920144864"
-            className="flex items-center justify-center gap-2 bg-[#1a3a52] text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest shadow-lg mt-2">
+            className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-400 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest shadow-lg mt-2">
             <Phone size={16} /> Falar com Rodrigo
           </a>
         </div>
