@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
-import HealthOperatorForm from '@/components/HealthOperatorForm';
+import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
 const AmilPage = () => {
@@ -66,7 +66,7 @@ const AmilPage = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <HealthOperatorForm operatorName="Amil" />
+              <OperatorQuoteForm operatorName="Amil" />
             </motion.div>
           </div>
         </div>

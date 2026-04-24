@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { CheckCircle2, Smartphone } from 'lucide-react';
-import HealthOperatorForm from '@/components/HealthOperatorForm';
+import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
 const AlicePage = () => {
@@ -72,7 +72,7 @@ const AlicePage = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <HealthOperatorForm operatorName="Alice" />
+              <OperatorQuoteForm operatorName="Alice" />
             </motion.div>
           </div>
         </div>

@@ -77,14 +77,12 @@ const AppContent = () => {
 
   // Rotas onde Header e Footer não devem aparecer
   const noHeaderFooterRoutes = [
-    '/uniplan', 
-    '/obrigado', 
+        '/obrigado', 
     '/admin-login', 
     '/admin-dashboard', 
     '/sagrada-familia', 
     '/sagrada-familia/thank-you', 
-    '/cassi-thank-you', 
-    '/saude'
+        '/saude'
   ];
 
   const showHeaderFooter = !isSaudeSubdomain && !isSagradaSubdomain && !noHeaderFooterRoutes.some(path => 
@@ -125,24 +123,17 @@ const AppContent = () => {
                 <Route path="/admin-dashboard" element={<ProtectedRoute><AdminDashboardPage /></ProtectedRoute>} />
 
                 {/* Generic Routes */}
-                <Route path="/encontre-seu-plano" element={<GenericHealthPlanPage />} />
                 <Route path="/sulamerica" element={<SulamericaPage />} />
 
                 {/* Legacy & Other Routes */}
                 <Route path="/seguro-auto" element={<CarInsurancePage />} />
                 <Route path="/planos-de-saude" element={<HealthInsurancePage />} />
-                <Route path="/mediservice" element={<PortoPage />} />
                 <Route path="/porto" element={<PortoPage />} />
                 <Route path="/medsenior" element={<MedSeniorPage />} />
-                <Route path="/cassi" element={<HapvidaPage />} />
                 <Route path="/hapvida" element={<HapvidaPage />} />
-                <Route path="/cassi-thank-you" element={<CassiThankYouPage />} />
                 <Route path="/alice" element={<AlicePage />} />
-                <Route path="/saofrancisco" element={<AmilPage />} />
                 <Route path="/amil" element={<AmilPage />} />
-                <Route path="/usisaude" element={<BradescosaudePage />} />
                 <Route path="/bradescosaude" element={<BradescosaudePage />} />
-                <Route path="/uniplan" element={<UnimeduniplanPage />} />
                 <Route path="/unimed" element={<UnimeduniplanPage />} />
                 <Route path="/seguros-auto" element={<ServicePage type="auto" />} />
                 <Route path="/planos-saude" element={<ServicePage type="health" />} />
