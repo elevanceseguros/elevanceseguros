@@ -333,6 +333,51 @@ export default function SaudeLanding() {
         </div>
       </section>
 
+
+      {/* DEPOIMENTOS */}
+      <section className="bg-slate-50 py-16 px-4">
+        <div className="max-w-2xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#1a3a52] text-center mb-2">O que dizem nossos clientes</h2>
+            <p className="text-slate-500 text-center mb-10">Pessoas reais, resultados reais</p>
+          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
+              className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+              <div className="flex gap-0.5 mb-4">
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed mb-5 italic">
+                &ldquo;Agradeço de coração todo seu empenho. Precisando, logicamente vou te procurar novamente.&rdquo;
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-[#1a3a52] font-bold text-sm">S</div>
+                <div>
+                  <div className="font-semibold text-[#1a3a52] text-sm">Simone</div>
+                  <div className="text-slate-400 text-xs">São Roque, SP · Plano de Saúde</div>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
+              className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+              <div className="flex gap-0.5 mb-4">
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed mb-5 italic">
+                &ldquo;Agradeço pela atenção! Pelas dúvidas sanadas e por conseguir o melhor preço.&rdquo;
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-[#1a3a52] font-bold text-sm">W</div>
+                <div>
+                  <div className="font-semibold text-[#1a3a52] text-sm">Warlei</div>
+                  <div className="text-slate-400 text-xs">Ouro Fino, MG · Seguro Auto</div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA FINAL */}
       <section className="bg-gradient-to-br from-[#1a3a52] to-[#0f2333] py-16 px-4 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
