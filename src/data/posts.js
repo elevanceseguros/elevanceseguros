@@ -188,7 +188,7 @@ export const postsData = [
     date: "26 Abr, 2026",
     category: "Seguro de Vida",
     readTime: "6 min",
-    image: "https://images.unsplash.com/photo-1511895426328-dc8714191011?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
     excerpt: "Descubra quanto custa um seguro de vida em 2026, quais coberturas existem e se vale a pena para o seu momento de vida.",
     content: `
       <p class="mb-4">O seguro de vida ainda é um dos produtos financeiros mais incompreendidos no Brasil. Muita gente acha que é caro, que é "coisa de velho" ou que só vale para quem tem família. Neste artigo, vou desmistificar tudo isso com dados reais de 2026.</p>
