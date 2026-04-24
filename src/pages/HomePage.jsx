@@ -215,15 +215,17 @@ const HomePage = () => {
       </section>
 
       {/* CTA FINAL */}
-      <section className="py-20 bg-[#114d8e] text-white text-center">
-        <div className="max-w-4xl mx-auto px-4 space-y-6">
-          <span className="inline-block bg-white/10 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Atendimento 100% Digital</span>
-          <h2 className="text-3xl md:text-5xl font-black leading-tight italic">Sua segurança <br className="hidden md:block"/>não pode esperar.</h2>
-          <p className="text-slate-300 font-medium text-base max-w-xl mx-auto">Fale com o Rodrigo agora e receba uma cotação personalizada em minutos.</p>
-          <a href={`https://wa.me/${meuNumero}`} target="_blank" rel="noreferrer"
-            className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-2xl hover:scale-105">
-            <MessageCircle size={20}/> Chamar no WhatsApp
-          </a>
+      <section className="py-12 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-[#114d8e] rounded-[50px] py-16 px-8 text-white text-center space-y-6">
+            <span className="inline-block bg-white/10 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Atendimento 100% Digital</span>
+            <h2 className="text-3xl md:text-5xl font-black leading-tight italic">Sua segurança <br className="hidden md:block"/>não pode esperar.</h2>
+            <p className="text-blue-100 font-medium text-base max-w-xl mx-auto">Fale com o Rodrigo agora e receba uma cotação personalizada em minutos.</p>
+            <a href={`https://wa.me/${meuNumero}`} target="_blank" rel="noreferrer"
+              className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-2xl hover:scale-105">
+              <MessageCircle size={20}/> Chamar no WhatsApp
+            </a>
+          </div>
         </div>
       </section>
 
