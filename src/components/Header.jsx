@@ -158,7 +158,7 @@ const Header = () => {
             <div className="flex flex-col gap-1 pl-4 mb-2">
               {saudeSubmenu.map((item, i) => (
                 <Link key={item.path} to={item.path} onClick={() => setIsOpen(false)}
-                  className={`text-xs font-black uppercase tracking-wide py-2 border-b border-slate-50 ${i === 0 ? 'text-blue-600' : 'text-slate-600'}`}>
+                  className={`text-xs font-black uppercase tracking-wide py-2 border-b border-white/20 ${i === 0 ? 'text-yellow-300' : 'text-white'}`}>
                   {i === 0 ? '⭐ ' + item.name : item.name}
                 </Link>
               ))}
