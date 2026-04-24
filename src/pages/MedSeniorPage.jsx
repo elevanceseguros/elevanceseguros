@@ -19,6 +19,7 @@ const MedSeniorPage = () => {
         <title>Plano de Saúde MedSênior | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Plano de saúde MedSênior especialmente desenvolvido para a melhor idade. Cobertura completa com foco no cuidado do idoso." />
         <meta name="keywords" content="MedSênior plano de saúde, plano saúde idoso, plano terceira idade" />
+              <link rel="canonical" href="https://elevanceseguros.com/medsenior" />
       </Helmet>
 
       <CorretorHero operadora="MedSênior" />

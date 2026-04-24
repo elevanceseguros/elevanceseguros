@@ -19,7 +19,7 @@ const BlogPage = () => {
 
             {/* IMAGEM com badge de tempo sobreposto */}
             <div className="relative">
-              <img src={post.image} alt={post.title} className="w-full h-64 object-cover" />
+              <img src={post.image} alt={post.title} className="w-full h-64 object-cover" loading="lazy" decoding="async" />
               <div className="absolute bottom-4 left-4 flex gap-2">
                 {post.readTime && (
                   <span className="flex items-center gap-1.5 bg-[#1a3a52]/90 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-wide">

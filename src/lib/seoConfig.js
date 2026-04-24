@@ -56,10 +56,8 @@ export const businessSchema = {
   "email": SEO_CONFIG.email,
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Av. Paulista, 1000", // Placeholder
     "addressLocality": "São Paulo",
     "addressRegion": "SP",
-    "postalCode": "01310-100", // Placeholder
     "addressCountry": "BR"
   },
   "areaServed": {

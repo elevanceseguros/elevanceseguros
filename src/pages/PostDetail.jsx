@@ -18,8 +18,33 @@ const PostDetail = () => {
     </div>
   );
 
+  const blogSchema = post ? {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt || post.title,
+    "image": post.image,
+    "datePublished": post.date,
+    "author": {
+      "@type": "Person",
+      "name": "Rodrigo Farias",
+      "jobTitle": "Corretor de Seguros"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Elevance Seguros",
+      "url": "https://elevanceseguros.com"
+    }
+  } : null;
+
   return (
     <div className="min-h-screen bg-white pb-20 pt-24">
+      {blogSchema && (
+        <Helmet>
+          <script type="application/ld+json">{JSON.stringify(blogSchema)}</script>
+          <link rel="canonical" href={`https://elevanceseguros.com/blog/${post.slug}`} />
+        </Helmet>
+      )}
       <article className="max-w-3xl mx-auto px-4">
 
         {/* HEADER */}
@@ -51,7 +76,7 @@ const PostDetail = () => {
         <h1 className="text-3xl md:text-5xl font-black text-[#1a3a52] leading-tight mb-8 italic">{post.title}</h1>
 
         {/* IMAGEM */}
-        <img src={post.image} className="w-full h-80 md:h-96 object-cover rounded-[40px] mb-12 shadow-2xl" alt={post.title} />
+        <img src={post.image} className="w-full h-80 md:h-96 object-cover rounded-[40px] mb-12 shadow-2xl" alt={post.title} loading="eager" decoding="async" />
 
         {/* CONTEÚDO */}
         <div

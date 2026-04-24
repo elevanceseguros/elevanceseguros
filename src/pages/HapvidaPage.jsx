@@ -19,6 +19,9 @@ const HapvidaPage = () => {
         <title>Plano de Saúde Hapvida em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Hapvida NotreDame Intermédica: plano de saúde acessível com rede própria. Cotação gratuita em São Paulo." />
         <meta name="keywords" content="Hapvida plano saúde SP, NotreDame Intermédica, cotação Hapvida" />
+              <link rel="canonical" href="https://elevanceseguros.com/hapvida" />
+      
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Plano de Saúde Hapvida","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Plano de Saúde Hapvida"}</script>
       </Helmet>
 
       <CorretorHero operadora="Hapvida" />

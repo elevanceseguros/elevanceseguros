@@ -32,6 +32,7 @@ export default function OdontologicoPage() {
         <title>Plano Odontológico em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Planos odontológicos individuais e familiares em São Paulo. Consultas, tratamentos e urgências com a melhor rede credenciada. Cotação gratuita." />
         <meta name="keywords" content="plano odontológico SP, plano dental São Paulo, cotação plano odontológico" />
+              <link rel="canonical" href="https://elevanceseguros.com/odontologico" />
       </Helmet>
 
       <CorretorHero operadora="um Plano Odontológico" />
