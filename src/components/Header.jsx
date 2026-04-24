@@ -108,7 +108,28 @@ const Header = () => {
             )}
           </div>
 
-          <Link to="/seguro-empresa" className="text-[11px] font-black uppercase tracking-widest text-[#1a3a52] hover:text-blue-600 transition-colors">Empresa</Link>
+
+          {/* Seguros com submenu */}
+          <div ref={segurosRef} className="relative">
+            <button
+              onClick={() => { setSegurosOpen(!segurosOpen); setSaudeOpen(false); setAutoOpen(false); }}
+              className="flex items-center gap-1 text-[11px] font-black uppercase tracking-widest text-[#1a3a52] hover:text-blue-600 transition-colors"
+            >
+              <Shield size={13} /> Seguros <ChevronDown size={13} className={`transition-transform ${segurosOpen ? 'rotate-180' : ''}`} />
+            </button>
+            {segurosOpen && (
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-2xl shadow-xl border border-slate-100 py-2 z-50">
+                {segurosSubmenu.map((item) => (
+                  <Link key={item.path} to={item.path}
+                    onClick={() => setSegurosOpen(false)}
+                    className="block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#1a3a52] hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
           <Link to="/consorcios" className="text-[11px] font-black uppercase tracking-widest text-[#1a3a52] hover:text-blue-600 transition-colors">Consórcios</Link>
           <Link to="/blog" className="text-[11px] font-black uppercase tracking-widest text-[#1a3a52] hover:text-blue-600 transition-colors">Blog</Link>
 
@@ -161,7 +182,24 @@ const Header = () => {
             </div>
           )}
 
-          <Link to="/seguro-empresa" onClick={() => setIsOpen(false)} className="text-sm font-black uppercase tracking-widest text-[#1a3a52] border-b border-slate-100 pb-3">Empresa</Link>
+
+          {/* Seguros mobile */}
+          <button onClick={() => setMobileSegurosOpen(!mobileSegurosOpen)}
+            className="flex items-center justify-between text-sm font-black uppercase tracking-widest text-[#1a3a52] border-b border-slate-100 pb-3">
+            <span className="flex items-center gap-2"><Shield size={14} /> Seguros</span>
+            <ChevronDown size={16} className={`transition-transform ${mobileSegurosOpen ? 'rotate-180' : ''}`} />
+          </button>
+          {mobileSegurosOpen && (
+            <div className="flex flex-col gap-1 pl-4 mb-2">
+              {segurosSubmenu.map((item) => (
+                <Link key={item.path} to={item.path} onClick={() => setIsOpen(false)}
+                  className="text-xs font-black uppercase tracking-wide text-slate-600 py-2 border-b border-slate-50">
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          )}
+
           <Link to="/consorcios" onClick={() => setIsOpen(false)} className="text-sm font-black uppercase tracking-widest text-[#1a3a52] border-b border-slate-100 pb-3">Consórcios</Link>
           <Link to="/blog" onClick={() => setIsOpen(false)} className="text-sm font-black uppercase tracking-widest text-[#1a3a52] border-b border-slate-100 pb-3">Blog</Link>
 
