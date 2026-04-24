@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import CorretorHero from '@/components/CorretorHero';
 
 const BradescosaudePage = () => {
   useEffect(() => {
@@ -19,6 +20,8 @@ const BradescosaudePage = () => {
         <meta name="description" content="Bradesco Saúde: um dos maiores planos de saúde do Brasil. Ampla rede credenciada, cobertura completa em São Paulo." />
         <meta name="keywords" content="Bradesco Saúde SP, plano Bradesco São Paulo, cotação Bradesco saúde" />
       </Helmet>
+
+      <CorretorHero operadora="Bradesco Saúde" />
 
       {/* Logo Section */}
       <div className="pt-28 pb-6 md:pt-32 md:pb-8 flex justify-center items-center bg-white">

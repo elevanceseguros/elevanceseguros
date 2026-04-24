@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import CorretorHero from '@/components/CorretorHero';
 
 const PortoPage = () => {
   useEffect(() => {
@@ -19,6 +20,8 @@ const PortoPage = () => {
         <meta name="description" content="Porto Saúde: plano de saúde com ampla cobertura, rede credenciada de qualidade e atendimento 24h em São Paulo." />
         <meta name="keywords" content="Porto Saúde plano, Porto Seguro saúde SP, cotação Porto saúde" />
       </Helmet>
+
+      <CorretorHero operadora="Porto Saúde" />
 
       {/* Logo Section */}
       <div className="pt-28 pb-6 md:pt-32 md:pb-8 flex justify-center items-center bg-white">

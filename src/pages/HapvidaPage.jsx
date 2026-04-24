@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import CorretorHero from '@/components/CorretorHero';
 
 const HapvidaPage = () => {
   useEffect(() => {
@@ -19,6 +20,8 @@ const HapvidaPage = () => {
         <meta name="description" content="Hapvida NotreDame Intermédica: plano de saúde acessível com rede própria. Cotação gratuita em São Paulo." />
         <meta name="keywords" content="Hapvida plano saúde SP, NotreDame Intermédica, cotação Hapvida" />
       </Helmet>
+
+      <CorretorHero operadora="Hapvida" />
 
       {/* Logo Section */}
       <div className="pt-28 pb-6 md:pt-32 md:pb-8 flex justify-center items-center bg-white">

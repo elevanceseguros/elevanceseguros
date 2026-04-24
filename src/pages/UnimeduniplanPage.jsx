@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import CorretorHero from '@/components/CorretorHero';
 
 const UnimeduniplanPage = () => {
   useEffect(() => {
@@ -19,6 +20,8 @@ const UnimeduniplanPage = () => {
         <meta name="description" content="Planos Unimed em São Paulo com ampla rede de médicos cooperados. Cotação gratuita e personalizada via WhatsApp." />
         <meta name="keywords" content="Unimed plano saúde SP, Unimed São Paulo, cotação Unimed" />
       </Helmet>
+
+      <CorretorHero operadora="Unimed" />
 
       {/* Logo Section */}
       <div className="pt-28 pb-6 md:pt-32 md:pb-8 flex justify-center items-center bg-white">

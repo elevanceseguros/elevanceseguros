@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import CorretorHero from '@/components/CorretorHero';
 
 const AmilPage = () => {
   useEffect(() => {
@@ -19,6 +20,8 @@ const AmilPage = () => {
         <meta name="description" content="Conheça os planos de saúde Amil em São Paulo. Ampla rede credenciada, cobertura completa. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="plano Amil São Paulo, Amil saúde SP, cotação Amil" />
       </Helmet>
+
+      <CorretorHero operadora="Amil" />
 
       {/* Logo Section */}
       <div className="pt-28 pb-6 md:pt-32 md:pb-8 flex justify-center items-center bg-white">

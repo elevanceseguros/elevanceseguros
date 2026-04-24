@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, Smartphone } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import CorretorHero from '@/components/CorretorHero';
 
 const AlicePage = () => {
   useEffect(() => {
@@ -25,6 +26,8 @@ const AlicePage = () => {
         <meta name="description" content="Conheça a Alice, a gestora de saúde que conecta você aos melhores hospitais e médicos. Tecnologia, sem burocracia e foco na sua saúde." />
         <meta name="keywords" content="Alice saúde, plano Alice, gestora de saúde, plano premium, hospitais de ponta" />
       </Helmet>
+
+      <CorretorHero operadora="Alice" />
 
       {/* Logo Section */}
       <div className="pt-28 pb-6 md:pt-32 md:pb-8 flex justify-center items-center bg-white">

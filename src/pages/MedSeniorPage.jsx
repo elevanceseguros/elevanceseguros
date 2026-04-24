@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import CorretorHero from '@/components/CorretorHero';
 
 const MedSeniorPage = () => {
   useEffect(() => {
@@ -19,6 +20,8 @@ const MedSeniorPage = () => {
         <meta name="description" content="Plano de saúde MedSênior especialmente desenvolvido para a melhor idade. Cobertura completa com foco no cuidado do idoso." />
         <meta name="keywords" content="MedSênior plano de saúde, plano saúde idoso, plano terceira idade" />
       </Helmet>
+
+      <CorretorHero operadora="MedSênior" />
 
       {/* Logo Section */}
       <div className="pt-28 pb-6 md:pt-32 md:pb-8 flex justify-center items-center bg-white">

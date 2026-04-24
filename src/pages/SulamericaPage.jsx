@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import CorretorHero from '@/components/CorretorHero';
 
 const SulamericaPage = () => {
   useEffect(() => {
@@ -19,6 +20,8 @@ const SulamericaPage = () => {
         <meta name="description" content="SulAmérica Saúde em São Paulo: planos completos, ampla rede credenciada e atendimento personalizado. Cotação gratuita." />
         <meta name="keywords" content="SulAmérica saúde SP, plano SulAmérica São Paulo, cotação SulAmérica" />
       </Helmet>
+
+      <CorretorHero operadora="SulAmérica" />
 
       {/* Logo Section */}
       <div className="pt-28 pb-6 md:pt-32 md:pb-8 flex justify-center items-center bg-white">
