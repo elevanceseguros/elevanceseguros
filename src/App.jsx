@@ -1,3 +1,4 @@
+import ErrorBoundary from '@/components/ErrorBoundary';
 import React, { useCallback, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
@@ -106,7 +107,8 @@ const AppContent = () => {
         <PullToRefreshContainer onRefresh={handleRefresh}>
           {showHeaderFooter && <Header />}
           <main className="flex-grow">
-            <Suspense fallback={<LoadingFallback />}>
+            <ErrorBoundary>
+    <Suspense fallback={<LoadingFallback />}>
               <Routes>
                 {/* Lógica de Rota Raiz */}
                 <Route 
@@ -162,6 +164,7 @@ const AppContent = () => {
                 <Route path="*" element={<HomePage />} />
               </Routes>
             </Suspense>
+    </ErrorBoundary>
           </main>
           {showHeaderFooter && <Footer />}
         </PullToRefreshContainer>
