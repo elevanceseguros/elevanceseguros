@@ -12,6 +12,7 @@ const saudeSubmenu = [
   { name: 'Porto Saúde', path: '/porto' },
   { name: 'Alice', path: '/alice' },
   { name: 'MedSênior', path: '/medsenior' },
+  { name: 'Odontológico', path: '/odontologico' },
 ];
 
 const autoSubmenu = [

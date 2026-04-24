@@ -1,3 +1,4 @@
+import CorretorHero from '@/components/CorretorHero';
 import React from 'react';
 import LeadFormSincero from '@/components/LeadFormSincero';
 import { ShieldCheck, Clock, MapPin, Users, CheckCircle2, Building2, Table, Activity, ArrowRight } from 'lucide-react';

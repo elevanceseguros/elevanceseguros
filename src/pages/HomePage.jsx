@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Star, ShieldCheck, Zap, Car, Heart, 
   Building2, Wallet, CheckCircle2, Bike, 
@@ -32,7 +33,7 @@ const HomePage = () => {
       {/* 1. HERO - DIRETO PARA WHATSAPP */}
       <section className="relative pt-24 pb-12 sm:pt-32 md:pt-44 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
             <div className="w-full lg:w-3/5 space-y-8 text-center lg:text-left">
               <div className="flex flex-col md:flex-row items-center lg:items-start gap-6">
                 <div className="relative shrink-0">
@@ -147,18 +148,28 @@ const HomePage = () => {
 
       {/* 4. CARDS SERVIÇOS */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 italic">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-black text-[#1a3a52] italic text-center mb-3">O que podemos fazer por você</h2>
+          <p className="text-slate-500 text-center font-medium mb-12">Clique para conhecer cada solução</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: <Heart size={40}/>, title: "Planos Saúde", bg: "bg-blue-50", btn: "Ver Tabelas", link: "Saúde" },
-              { icon: <Smile size={40}/>, title: "Odontológico", bg: "bg-slate-50", btn: "Ver Planos", link: "Odonto" },
-              { icon: <Users size={40}/>, title: "Seguro Vida", bg: "bg-blue-50", btn: "Simular", link: "Seguro de Vida" },
-              { icon: <Building2 size={40}/>, title: "Empresarial", bg: "bg-slate-50", btn: "Cotar", link: "Seguro Empresa" }
+              { icon: <Heart size={36}/>, title: "Planos de Saúde", desc: "Individuais, familiares e PME. Compare as melhores operadoras.", btn: "Ver Planos", path: "/encontre-seu-plano", bg: "bg-blue-50", cor: "text-blue-600" },
+              { icon: <Smile size={36}/>, title: "Plano Odontológico", desc: "Sorria com tranquilidade. Planos acessíveis para toda a família.", btn: "Ver Planos", path: "/odontologico", bg: "bg-sky-50", cor: "text-sky-600" },
+              { icon: <Users size={36}/>, title: "Seguro de Vida", desc: "Proteja o futuro da sua família com coberturas completas.", btn: "Simular", path: "/seguro-empresa", bg: "bg-indigo-50", cor: "text-indigo-600" },
+              { icon: <Building2 size={36}/>, title: "Seguro Empresarial", desc: "Patrimônio, PME, responsabilidade civil e vida em grupo.", btn: "Cotar", path: "/seguro-empresa", bg: "bg-slate-50", cor: "text-slate-600" }
             ].map((item, i) => (
-              <div key={i} className={`p-10 ${item.bg} rounded-[50px] border border-slate-100 group hover:bg-[#1a3a52] transition-all duration-500`}>
-                 <div className="text-blue-600 mb-6 group-hover:text-blue-400">{item.icon}</div>
-                 <h3 className="text-2xl font-black mb-4 group-hover:text-white italic">{item.title}</h3>
-                 <a href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero saber sobre ${item.link}`} className="block text-center bg-white text-[#1a3a52] font-black py-4 rounded-xl text-xs uppercase tracking-widest group-hover:bg-blue-600 group-hover:text-white transition-all">{item.btn}</a>
+              <div key={i} className={`${item.bg} rounded-[40px] p-8 border border-slate-100 group hover:bg-[#1a3a52] transition-all duration-500 flex flex-col`}>
+                <div className={`${item.cor} mb-5 group-hover:text-blue-400 transition-colors`}>{item.icon}</div>
+                <h3 className="text-xl font-black text-[#1a3a52] group-hover:text-white italic mb-2 transition-colors">{item.title}</h3>
+                <p className="text-slate-500 text-sm font-medium leading-relaxed group-hover:text-slate-300 transition-colors mb-6 flex-1">{item.desc}</p>
+                <div className="flex items-center justify-between">
+                  <Link to={item.path} className="bg-white text-[#1a3a52] font-black py-3 px-5 rounded-2xl text-[10px] uppercase tracking-widest group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm">
+                    {item.btn}
+                  </Link>
+                  <Link to={item.path} className="text-slate-400 group-hover:text-blue-300 transition-colors">
+                    <ArrowRight size={18} />
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
