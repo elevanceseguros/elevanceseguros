@@ -6,16 +6,19 @@ const Footer = () => {
   const logo = "/logo.png";
   const currentYear = new Date().getFullYear();
 
-  const saudeLinks = [
+  const saudeLinks1 = [
     { name: 'Encontre seu Plano', path: '/encontre-seu-plano' },
     { name: 'Amil', path: '/amil' },
     { name: 'Bradesco Saúde', path: '/bradescosaude' },
     { name: 'SulAmérica', path: '/sulamerica' },
     { name: 'Hapvida', path: '/hapvida' },
+  ];
+  const saudeLinks2 = [
     { name: 'Unimed', path: '/unimed' },
     { name: 'Porto Saúde', path: '/porto' },
     { name: 'Alice', path: '/alice' },
     { name: 'MedSênior', path: '/medsenior' },
+    { name: 'Odontológico', path: '/odontologico' },
   ];
 
   const autoLinks = [
@@ -34,7 +37,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4">
 
         {/* GRID PRINCIPAL */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
 
           {/* Coluna 1: Logo + sobre */}
           <div className="space-y-5">
@@ -63,21 +66,33 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Coluna 2: Planos de Saúde */}
-          <div>
+          {/* Coluna 2: Planos de Saúde - 2 subcolunas */}
+          <div className="md:col-span-1 lg:col-span-2">
             <h4 className="flex items-center gap-2 font-black text-white uppercase text-[10px] tracking-[0.2em] mb-5">
               <Heart size={13} className="text-blue-400" /> Planos de Saúde
             </h4>
-            <ul className="space-y-2.5">
-              {saudeLinks.map((item, i) => (
-                <li key={item.path}>
-                  <Link to={item.path}
-                    className={`flex items-center gap-1.5 text-xs font-bold tracking-wide transition-colors hover:text-white ${i === 0 ? 'text-blue-400 hover:text-blue-300' : 'text-slate-400'}`}>
-                    <ChevronRight size={11} className="shrink-0" /> {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className="grid grid-cols-2 gap-x-4">
+              <ul className="space-y-2">
+                {saudeLinks1.map((item, i) => (
+                  <li key={item.path}>
+                    <Link to={item.path}
+                      className={`flex items-center gap-1 text-[11px] font-bold tracking-wide transition-colors hover:text-white ${i === 0 ? 'text-blue-400 hover:text-blue-300' : 'text-slate-400'}`}>
+                      <ChevronRight size={10} className="shrink-0" /> {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <ul className="space-y-2">
+                {saudeLinks2.map((item) => (
+                  <li key={item.path}>
+                    <Link to={item.path}
+                      className="flex items-center gap-1 text-[11px] font-bold text-slate-400 tracking-wide transition-colors hover:text-white">
+                      <ChevronRight size={10} className="shrink-0" /> {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Coluna 3: Auto */}
@@ -90,7 +105,7 @@ const Footer = () => {
                 {autoLinks.map((item) => (
                   <li key={item.path}>
                     <Link to={item.path}
-                      className="flex items-center gap-1.5 text-xs font-bold text-slate-400 tracking-wide transition-colors hover:text-white">
+                      className="flex items-center gap-1 text-[11px] font-bold text-slate-400 tracking-wide transition-colors hover:text-white">
                       <ChevronRight size={11} className="shrink-0" /> {item.name}
                     </Link>
                   </li>
@@ -104,7 +119,7 @@ const Footer = () => {
                 {outrosLinks.map((item) => (
                   <li key={item.path}>
                     <Link to={item.path}
-                      className="flex items-center gap-1.5 text-xs font-bold text-slate-400 tracking-wide transition-colors hover:text-white">
+                      className="flex items-center gap-1 text-[11px] font-bold text-slate-400 tracking-wide transition-colors hover:text-white">
                       <ChevronRight size={11} className="shrink-0" /> {item.name}
                     </Link>
                   </li>

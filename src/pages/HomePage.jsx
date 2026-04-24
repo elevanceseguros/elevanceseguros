@@ -33,7 +33,7 @@ const HomePage = () => {
       {/* 1. HERO - DIRETO PARA WHATSAPP */}
       <section className="relative pt-24 pb-12 sm:pt-32 md:pt-44 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="w-full lg:w-3/5 space-y-8 text-center lg:text-left">
               <div className="flex flex-col md:flex-row items-center lg:items-start gap-6">
                 <div className="relative shrink-0">
