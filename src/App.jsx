@@ -28,6 +28,11 @@ const AlicePage = lazy(() => import('@/pages/AlicePage'));
 const SaoFranciscoPage = lazy(() => import('@/pages/SaoFranciscoPage'));
 const UsisaudePage = lazy(() => import('@/pages/UsisaudePage'));
 const UnimeduniplanPage = lazy(() => import('@/pages/UnimeduniplanPage'));
+const AmilPage = lazy(() => import('@/pages/AmilPage'));
+const PortoPage = lazy(() => import('@/pages/PortoPage'));
+const BradescosaudePage = lazy(() => import('@/pages/BradescosaudePage'));
+const HapvidaPage = lazy(() => import('@/pages/HapvidaPage'));
+const SulamericaPage = lazy(() => import('@/pages/SulamericaPage'));
 
 // Generic Pages
 const GenericHealthPlanPage = lazy(() => import('@/pages/GenericHealthPlanPage'));
@@ -121,18 +126,24 @@ const AppContent = () => {
 
                 {/* Generic Routes */}
                 <Route path="/encontre-seu-plano" element={<GenericHealthPlanPage />} />
+                <Route path="/sulamerica" element={<SulamericaPage />} />
 
                 {/* Legacy & Other Routes */}
                 <Route path="/seguro-auto" element={<CarInsurancePage />} />
                 <Route path="/planos-de-saude" element={<HealthInsurancePage />} />
-                <Route path="/mediservice" element={<MediservicePage />} />
+                <Route path="/mediservice" element={<PortoPage />} />
+                <Route path="/porto" element={<PortoPage />} />
                 <Route path="/medsenior" element={<MedSeniorPage />} />
-                <Route path="/cassi" element={<CassiHomePage />} />
+                <Route path="/cassi" element={<HapvidaPage />} />
+                <Route path="/hapvida" element={<HapvidaPage />} />
                 <Route path="/cassi-thank-you" element={<CassiThankYouPage />} />
                 <Route path="/alice" element={<AlicePage />} />
-                <Route path="/saofrancisco" element={<SaoFranciscoPage />} />
-                <Route path="/usisaude" element={<UsisaudePage />} />
+                <Route path="/saofrancisco" element={<AmilPage />} />
+                <Route path="/amil" element={<AmilPage />} />
+                <Route path="/usisaude" element={<BradescosaudePage />} />
+                <Route path="/bradescosaude" element={<BradescosaudePage />} />
                 <Route path="/uniplan" element={<UnimeduniplanPage />} />
+                <Route path="/unimed" element={<UnimeduniplanPage />} />
                 <Route path="/seguros-auto" element={<ServicePage type="auto" />} />
                 <Route path="/planos-saude" element={<ServicePage type="health" />} />
                 <Route path="/consorcios" element={<ServicePage type="consortium" />} />
