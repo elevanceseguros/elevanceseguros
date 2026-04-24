@@ -67,7 +67,11 @@ const AppContent = () => {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Garante scroll no topo após lazy load completar
+    const timer = setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }, 0);
+    return () => clearTimeout(timer);
   }, [location.pathname]);
 
   useGoogleAnalytics();
