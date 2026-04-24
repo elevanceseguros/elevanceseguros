@@ -29,13 +29,13 @@ const ThankYouPage = () => {
           className="max-w-2xl w-full bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-100"
         >
           {/* Header Section */}
-          <div className="bg-[#1a3a52] p-8 text-center relative overflow-hidden">
+          <div className="bg-[#114d8e] p-8 text-center relative overflow-hidden">
              <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
             <motion.div 
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ type: "spring", stiffness: 200, delay: 0.2 }}
-              className="relative z-10 w-24 h-24 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-[#1a3a52]"
+              className="relative z-10 w-24 h-24 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-[#114d8e]"
             >
               <CheckCircle2 className="w-12 h-12 text-white" />
             </motion.div>
@@ -66,7 +66,7 @@ const ThankYouPage = () => {
             >
                <div className="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-green-200 rounded-full blur-2xl opacity-50"></div>
               
-              <h3 className="text-xl font-bold text-[#1a3a52] mb-3 relative z-10">
+              <h3 className="text-xl font-bold text-[#114d8e] mb-3 relative z-10">
                 Quer agilizar seu atendimento?
               </h3>
               <p className="text-slate-700 mb-6 relative z-10">
@@ -105,7 +105,7 @@ const ThankYouPage = () => {
               <Button 
                 asChild 
                 variant="ghost" 
-                className="text-slate-600 hover:text-[#1a3a52] hover:bg-blue-50 mt-4"
+                className="text-slate-600 hover:text-[#114d8e] hover:bg-blue-50 mt-4"
               >
                 <Link to="/">
                   <Home className="w-4 h-4 mr-2" />

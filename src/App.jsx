@@ -107,7 +107,7 @@ const AppContent = () => {
       <Helmet>
         <html lang="pt-br" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#1a3a52" />
+        <meta name="theme-color" content="#114d8e" />
       </Helmet>
       
       <div className="min-h-screen bg-white font-sans text-slate-900 flex flex-col">

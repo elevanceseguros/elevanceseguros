@@ -51,7 +51,7 @@ const BusinessInsurancePage = () => {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a3a52] mb-4">Sua empresa em boas mãos</h2>
+            <h2 className="text-3xl font-bold text-[#114d8e] mb-4">Sua empresa em boas mãos</h2>
             <p className="text-gray-600">Proteção contra incêndio, roubo, danos elétricos e responsabilidade civil.</p>
           </div>
 

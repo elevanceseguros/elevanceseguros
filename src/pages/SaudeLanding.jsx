@@ -115,7 +115,7 @@ export default function SaudeLanding() {
                 </div>
                 <div className="space-y-3">
                   <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Consultoria Especializada</span>
-                  <h1 className="text-3xl md:text-5xl font-black text-[#1a3a52] leading-tight italic">
+                  <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight italic">
                     Plano de saúde do jeito certo, <br className="hidden md:block" /> sem enrolação.
                   </h1>
                 </div>
@@ -141,7 +141,7 @@ export default function SaudeLanding() {
                 <AnimatePresence mode="wait">
                   {!enviado ? (
                     <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#1a3a52] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
                         <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
@@ -157,7 +157,7 @@ export default function SaudeLanding() {
                         />
                         {erro && <p className="text-red-500 text-xs px-2">{erro}</p>}
                         <button type="submit" disabled={loading}
-                          className="w-full bg-[#1a3a52] hover:bg-blue-700 disabled:bg-slate-300 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                          className="w-full bg-[#114d8e] hover:bg-blue-700 disabled:bg-slate-300 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
                           {loading ? "Enviando..." : <><MessageCircle size={16} /> Quero minha cotação</>}
                         </button>
                         <p className="text-[9px] text-center text-slate-400 font-bold uppercase italic">Você receberá uma mensagem no WhatsApp</p>
@@ -170,7 +170,7 @@ export default function SaudeLanding() {
                         <PartyPopper size={40} />
                       </div>
                       <div className="space-y-2">
-                        <h3 className="text-2xl font-black text-[#1a3a52] italic">Perfeito, {nome.split(" ")[0]}!</h3>
+                        <h3 className="text-2xl font-black text-[#114d8e] italic">Perfeito, {nome.split(" ")[0]}!</h3>
                         <p className="text-slate-500 font-medium text-sm leading-relaxed">
                           Em instantes você vai receber uma mensagem no WhatsApp. Fique de olho!
                         </p>
@@ -206,7 +206,7 @@ export default function SaudeLanding() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-[#1a3a52] italic mb-2">Por que escolher a Elevance?</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic mb-2">Por que escolher a Elevance?</h2>
             <p className="text-slate-500 font-medium">Atendimento de corretor de verdade, não de plataforma</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -214,7 +214,7 @@ export default function SaudeLanding() {
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
                 className="bg-white rounded-[30px] p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                 <div className="mb-4">{b.icon}</div>
-                <div className="font-black text-[#1a3a52] text-sm uppercase tracking-wide mb-2 italic">{b.titulo}</div>
+                <div className="font-black text-[#114d8e] text-sm uppercase tracking-wide mb-2 italic">{b.titulo}</div>
                 <div className="text-slate-500 text-sm leading-relaxed font-medium">{b.desc}</div>
               </motion.div>
             ))}
@@ -264,7 +264,7 @@ export default function SaudeLanding() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-[#1a3a52] italic mb-2">O que dizem nossos clientes</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic mb-2">O que dizem nossos clientes</h2>
             <p className="text-slate-500 font-medium">Pessoas reais, resultados reais</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -279,9 +279,9 @@ export default function SaudeLanding() {
                 </div>
                 <p className="text-slate-600 text-sm leading-relaxed mb-6 italic font-medium">&ldquo;{d.texto}&rdquo;</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-blue-100 flex items-center justify-center text-[#1a3a52] font-black text-sm">{d.inicial}</div>
+                  <div className="w-10 h-10 rounded-2xl bg-blue-100 flex items-center justify-center text-[#114d8e] font-black text-sm">{d.inicial}</div>
                   <div>
-                    <div className="font-black text-[#1a3a52] text-sm">{d.nome}</div>
+                    <div className="font-black text-[#114d8e] text-sm">{d.nome}</div>
                     <div className="text-slate-400 text-xs font-medium">{d.local} · {d.produto}</div>
                   </div>
                 </div>
@@ -294,13 +294,13 @@ export default function SaudeLanding() {
       {/* FAQ */}
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-black text-[#1a3a52] italic text-center mb-12">Dúvidas frequentes</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic text-center mb-12">Dúvidas frequentes</h2>
           <div className="space-y-3">
             {faq.map((item, i) => (
               <div key={i} className="border border-slate-200 rounded-2xl overflow-hidden">
                 <button onClick={() => setFaqAberto(faqAberto === i ? null : i)}
                   className="w-full px-6 py-5 flex justify-between items-center text-left bg-white hover:bg-slate-50 transition-colors">
-                  <span className="font-black text-[#1a3a52] text-sm uppercase tracking-wide pr-4 italic">{item.q}</span>
+                  <span className="font-black text-[#114d8e] text-sm uppercase tracking-wide pr-4 italic">{item.q}</span>
                   <span className="text-blue-600 text-xl flex-shrink-0 font-black">{faqAberto === i ? "−" : "+"}</span>
                 </button>
                 <AnimatePresence>
@@ -319,7 +319,7 @@ export default function SaudeLanding() {
       {/* CTA FINAL */}
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-[#1a3a52] rounded-[50px] p-12 md:p-16 text-center relative overflow-hidden">
+          <div className="bg-[#114d8e] rounded-[50px] p-12 md:p-16 text-center relative overflow-hidden">
             <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400 rounded-full filter blur-3xl opacity-10 pointer-events-none" />
             <div className="relative z-10 space-y-6">
               <h2 className="text-3xl md:text-4xl font-black text-white italic">Ainda tem dúvidas?</h2>

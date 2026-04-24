@@ -6,7 +6,7 @@ const Hero = ({
   customTitle
 }) => {
   return (
-    <section id="hero" className="relative pt-28 pb-20 md:pb-28 bg-gradient-to-br from-[#1a3a52] via-[#244b6a] to-[#0f2333] overflow-hidden">
+    <section id="hero" className="relative pt-28 pb-20 md:pb-28 bg-gradient-to-br from-[#114d8e] via-[#244b6a] to-[#0f2333] overflow-hidden">
       {/* Abstract Background Elements */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400 rounded-full filter blur-3xl animate-pulse"></div>

@@ -8,7 +8,7 @@ const BlogPage = () => {
     <div className="min-h-screen bg-slate-50 pt-32 pb-20">
       <div className="max-w-7xl mx-auto px-4 text-center mb-16">
         <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-4">Conteúdo Especializado</span>
-        <h1 className="text-4xl md:text-5xl font-black text-[#1a3a52] italic">Blog Elevance</h1>
+        <h1 className="text-4xl md:text-5xl font-black text-[#114d8e] italic">Blog Elevance</h1>
         <p className="text-slate-500 font-medium mt-3 text-base">Dicas, guias e informações sobre seguros e planos de saúde</p>
       </div>
 
@@ -22,7 +22,7 @@ const BlogPage = () => {
               <img src={post.image} alt={post.title} className="w-full h-64 object-cover" loading="lazy" decoding="async" />
               <div className="absolute bottom-4 left-4 flex gap-2">
                 {post.readTime && (
-                  <span className="flex items-center gap-1.5 bg-[#1a3a52]/90 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-wide">
+                  <span className="flex items-center gap-1.5 bg-[#114d8e]/90 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-wide">
                     <Clock size={11} /> {post.readTime}
                   </span>
                 )}
@@ -38,7 +38,7 @@ const BlogPage = () => {
               {post.date && (
                 <p className="text-slate-400 text-xs font-bold mb-2">{post.date}</p>
               )}
-              <h2 className="text-xl font-black text-[#1a3a52] mt-1 group-hover:text-blue-600 transition-colors leading-snug italic">{post.title}</h2>
+              <h2 className="text-xl font-black text-[#114d8e] mt-1 group-hover:text-blue-600 transition-colors leading-snug italic">{post.title}</h2>
               {post.excerpt && (
                 <p className="text-slate-500 text-sm font-medium mt-3 leading-relaxed line-clamp-2">{post.excerpt}</p>
               )}

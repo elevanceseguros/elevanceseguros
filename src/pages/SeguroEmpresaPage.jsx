@@ -44,7 +44,7 @@ export default function SeguroEmpresaPage() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
               <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Soluções Corporativas</span>
-              <h1 className="text-3xl md:text-5xl font-black text-[#1a3a52] leading-tight italic">
+              <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight italic">
                 Proteja sua empresa <br className="hidden md:block" />
                 <span className="text-blue-600">do jeito certo.</span>
               </h1>
@@ -73,13 +73,13 @@ export default function SeguroEmpresaPage() {
                 <AnimatePresence mode="wait">
                   {!sent ? (
                     <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#1a3a52] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
                         <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
                         <input name="nome" type="text" required placeholder="Seu Nome" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
                         <input name="whatsapp" type="tel" required placeholder="WhatsApp (DDD)" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
-                        <button type="submit" className="w-full bg-[#1a3a52] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                        <button type="submit" className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
                           SOLICITAR VIA WHATSAPP <MessageCircle size={16} />
                         </button>
                         <p className="text-[9px] text-center text-slate-400 font-bold uppercase italic">Você será direcionado para o WhatsApp do Rodrigo</p>
@@ -88,7 +88,7 @@ export default function SeguroEmpresaPage() {
                   ) : (
                     <motion.div key="success" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="text-center space-y-6">
                       <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto"><PartyPopper size={40} /></div>
-                      <h3 className="text-2xl font-black text-[#1a3a52] italic">Encaminhando...</h3>
+                      <h3 className="text-2xl font-black text-[#114d8e] italic">Encaminhando...</h3>
                       <p className="text-slate-500 text-sm">Se não abrir, <a href={`https://wa.me/${MEU_NUMERO}`} className="text-blue-600 font-bold underline">clique aqui</a>.</p>
                     </motion.div>
                   )}
@@ -101,13 +101,13 @@ export default function SeguroEmpresaPage() {
 
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-black text-[#1a3a52] italic text-center mb-12">Produtos para sua empresa</h2>
+          <h2 className="text-3xl font-black text-[#114d8e] italic text-center mb-12">Produtos para sua empresa</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {produtos.map((p, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
                 className="bg-white rounded-[30px] p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                 <div className="mb-4">{p.icon}</div>
-                <div className="font-black text-[#1a3a52] text-sm uppercase tracking-wide mb-2 italic">{p.titulo}</div>
+                <div className="font-black text-[#114d8e] text-sm uppercase tracking-wide mb-2 italic">{p.titulo}</div>
                 <div className="text-slate-500 text-sm font-medium leading-relaxed">{p.desc}</div>
               </motion.div>
             ))}
@@ -117,7 +117,7 @@ export default function SeguroEmpresaPage() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-[#1a3a52] rounded-[50px] p-12 text-center">
+          <div className="bg-[#114d8e] rounded-[50px] p-12 text-center">
             <h2 className="text-3xl font-black text-white italic mb-3">Proteja seu negócio agora</h2>
             <p className="text-slate-300 font-medium mb-8">Consultoria gratuita para empresas de todos os tamanhos</p>
             <a href={`https://wa.me/${MEU_NUMERO}?text=Olá, quero cotar seguro para minha empresa`} target="_blank" rel="noreferrer"

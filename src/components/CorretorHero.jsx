@@ -13,7 +13,7 @@ const CorretorHero = ({ operadora = "" }) => {
             <div className="absolute -bottom-0.5 -right-0.5 bg-green-500 w-3 h-3 rounded-full border-2 border-white animate-pulse"></div>
           </div>
           <div>
-            <div className="font-black text-[#1a3a52] text-sm leading-tight">Rodrigo Farias</div>
+            <div className="font-black text-[#114d8e] text-sm leading-tight">Rodrigo Farias</div>
             <div className="text-slate-400 text-xs font-medium">Corretor de Seguros · São Paulo</div>
             <div className="flex gap-0.5 mt-0.5">
               {[...Array(5)].map((_, i) => <Star key={i} size={9} className="text-yellow-400 fill-yellow-400" />)}

@@ -40,7 +40,7 @@ const VehicleProtection = () => {
   };
 
   return (
-    <section className="py-20 bg-[#1a3a52] text-white overflow-hidden">
+    <section className="py-20 bg-[#114d8e] text-white overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
@@ -57,7 +57,7 @@ const VehicleProtection = () => {
             <AnimatePresence mode="wait">
               {!enviado ? (
                 <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="bg-white p-8 rounded-3xl shadow-2xl">
-                  <h3 className="text-[#1a3a52] text-2xl font-bold mb-6 text-center">Cotação APVS em 1 minuto</h3>
+                  <h3 className="text-[#114d8e] text-2xl font-bold mb-6 text-center">Cotação APVS em 1 minuto</h3>
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <input type="text" required placeholder="Seu Nome" value={nome} onChange={e => setNome(e.target.value)} className="w-full p-4 rounded-xl border border-gray-200 text-gray-900 outline-none focus:ring-2 focus:ring-blue-500" />
                     <input type="tel" required placeholder="WhatsApp (DDD)" value={whatsapp} onChange={e => setWhatsapp(formatWhatsapp(e.target.value))} className="w-full p-4 rounded-xl border border-gray-200 text-gray-900 outline-none focus:ring-2 focus:ring-blue-500" />

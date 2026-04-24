@@ -75,7 +75,7 @@ const SagradaFamiliaHomePage = () => {
           <div className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6">
             Tabela Atualizada 2026
           </div>
-          <h1 className="text-4xl md:text-6xl font-black text-[#1a3a52] mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-black text-[#114d8e] mb-6 leading-tight">
             Sagrada Família Saúde
           </h1>
           <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-medium">
@@ -91,7 +91,7 @@ const SagradaFamiliaHomePage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           
           <div className="bg-white rounded-[40px] shadow-2xl overflow-hidden border border-slate-100">
-            <div className="bg-[#1a3a52] p-8 text-white">
+            <div className="bg-[#114d8e] p-8 text-white">
               <div className="flex items-center gap-3">
                 <Table className="w-6 h-6 text-blue-400" />
                 <h2 className="text-2xl font-bold uppercase tracking-tight">Valores do Plano</h2>
@@ -102,7 +102,7 @@ const SagradaFamiliaHomePage = () => {
                 <thead>
                   <tr className="border-b-2 border-slate-50 text-left">
                     <th className="py-4 font-bold text-slate-400 text-xs uppercase">Idade</th>
-                    <th className="py-4 font-bold text-[#1a3a52] text-xs uppercase">Enfermaria</th>
+                    <th className="py-4 font-bold text-[#114d8e] text-xs uppercase">Enfermaria</th>
                     <th className="py-4 font-bold text-blue-600 text-xs uppercase">Apartamento</th>
                   </tr>
                 </thead>
@@ -110,7 +110,7 @@ const SagradaFamiliaHomePage = () => {
                   {tabelaPrecos.map((item, index) => (
                     <tr key={index} className="hover:bg-slate-50 transition-colors">
                       <td className="py-3.5 font-bold text-slate-600">{item.idade}</td>
-                      <td className="py-3.5 text-[#1a3a52] font-semibold">{item.enf}</td>
+                      <td className="py-3.5 text-[#114d8e] font-semibold">{item.enf}</td>
                       <td className="py-3.5 text-blue-600 font-black">{item.apto}</td>
                     </tr>
                   ))}
@@ -134,13 +134,13 @@ const SagradaFamiliaHomePage = () => {
                 <div className="p-3 bg-blue-50 rounded-2xl text-blue-600">
                   <Activity className="w-8 h-8" />
                 </div>
-                <h2 className="text-2xl font-black text-[#1a3a52] uppercase tracking-tight">Rede Própria</h2>
+                <h2 className="text-2xl font-black text-[#114d8e] uppercase tracking-tight">Rede Própria</h2>
               </div>
               <div className="space-y-4">
                 {unidadesOficiais.map((unidade, i) => (
                   <div key={i} className="p-6 bg-slate-50 rounded-[30px] border border-transparent hover:border-blue-100 transition-all group">
                     <div className="flex justify-between items-start mb-2">
-                       <p className="font-black text-[#1a3a52] text-md group-hover:text-blue-700 transition-colors">{unidade.nome}</p>
+                       <p className="font-black text-[#114d8e] text-md group-hover:text-blue-700 transition-colors">{unidade.nome}</p>
                        <span className="text-[9px] bg-white px-2 py-1 rounded-md font-black text-slate-400 uppercase tracking-tighter">{unidade.regiao}</span>
                     </div>
                     <p className="text-xs text-slate-500 leading-relaxed font-medium">{unidade.desc}</p>

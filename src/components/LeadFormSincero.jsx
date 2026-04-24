@@ -51,7 +51,7 @@ const LeadFormSincero = () => {
             <form onSubmit={handleSubmit} className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
               {/* Texto Lateral - Escondido no mobile para ganhar espaço, ou pequeno */}
               <div className="w-full md:w-auto md:min-w-[150px] text-center md:text-left mb-2 md:mb-0">
-                <h3 className="text-[#1a3a52] font-bold text-xl md:text-lg leading-tight">Cotação Rápida</h3>
+                <h3 className="text-[#114d8e] font-bold text-xl md:text-lg leading-tight">Cotação Rápida</h3>
                 <p className="text-slate-500 text-xs hidden md:block">Receba no WhatsApp</p>
               </div>
 
@@ -86,7 +86,7 @@ const LeadFormSincero = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full md:w-[180px] bg-[#1a3a52] hover:bg-[#244b69] text-white font-bold h-[52px] md:h-[60px] rounded-xl md:rounded-2xl flex items-center justify-center gap-2 transition-all shadow-lg active:scale-95"
+                  className="w-full md:w-[180px] bg-[#114d8e] hover:bg-[#244b69] text-white font-bold h-[52px] md:h-[60px] rounded-xl md:rounded-2xl flex items-center justify-center gap-2 transition-all shadow-lg active:scale-95"
                 >
                   {loading ? (
                     <Loader2 className="animate-spin w-5 h-5" />
@@ -107,7 +107,7 @@ const LeadFormSincero = () => {
             className="bg-white rounded-[40px] shadow-2xl p-8 text-center border-2 border-green-100"
           >
             <CheckCircle className="w-10 h-10 text-green-500 mx-auto mb-3" />
-            <h3 className="text-[#1a3a52] text-xl font-bold">Solicitação Enviada!</h3>
+            <h3 className="text-[#114d8e] text-xl font-bold">Solicitação Enviada!</h3>
             <p className="text-slate-500 text-sm">Chamaremos você no WhatsApp em instantes.</p>
           </motion.div>
         )}

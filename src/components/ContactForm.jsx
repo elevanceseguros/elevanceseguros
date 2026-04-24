@@ -52,7 +52,7 @@ const ContactForm = () => {
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row">
           
           {/* Lado Esquerdo - Info */}
-          <div className="bg-[#1a3a52] p-8 md:p-12 text-white md:w-2/5">
+          <div className="bg-[#114d8e] p-8 md:p-12 text-white md:w-2/5">
             <h2 className="text-3xl font-bold mb-6 text-white">Ainda tem dúvidas?</h2>
             <p className="text-blue-100 mb-8 leading-relaxed">
               Deixe os seus dados e a nossa consultoria inteligente entrará em contacto consigo em minutos.
@@ -119,7 +119,7 @@ const ContactForm = () => {
                   className="text-center py-8"
                 >
                   <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                  <h3 className="text-[#1a3a52] text-2xl font-bold mb-2">Mensagem Recebida!</h3>
+                  <h3 className="text-[#114d8e] text-2xl font-bold mb-2">Mensagem Recebida!</h3>
                   <p className="text-slate-500">A nossa IA já foi notificada. Fique atento ao seu WhatsApp.</p>
                 </motion.div>
               )}

@@ -79,7 +79,7 @@ const Header = () => {
                 {saudeSubmenu.map((item, i) => (
                   <Link key={item.path} to={item.path}
                     onClick={() => setSaudeOpen(false)}
-                    className={`block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#1a3a52] hover:bg-blue-50 hover:text-blue-600 transition-colors ${i === 0 ? 'border-b border-slate-100 mb-1 text-blue-600' : ''}`}>
+                    className={`block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#114d8e] hover:bg-blue-50 hover:text-blue-600 transition-colors ${i === 0 ? 'border-b border-slate-100 mb-1 text-blue-600' : ''}`}>
                     {i === 0 ? '⭐ ' + item.name : item.name}
                   </Link>
                 ))}
@@ -100,7 +100,7 @@ const Header = () => {
                 {autoSubmenu.map((item) => (
                   <Link key={item.path} to={item.path}
                     onClick={() => setAutoOpen(false)}
-                    className="block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#1a3a52] hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    className="block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#114d8e] hover:bg-blue-50 hover:text-blue-600 transition-colors">
                     {item.name}
                   </Link>
                 ))}
@@ -122,7 +122,7 @@ const Header = () => {
                 {segurosSubmenu.map((item) => (
                   <Link key={item.path} to={item.path}
                     onClick={() => setSegurosOpen(false)}
-                    className="block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#1a3a52] hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    className="block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#114d8e] hover:bg-blue-50 hover:text-blue-600 transition-colors">
                     {item.name}
                   </Link>
                 ))}

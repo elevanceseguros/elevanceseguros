@@ -51,7 +51,7 @@ const HomePage = () => {
                 </div>
                 <div className="space-y-3">
                   <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Consultoria Especializada</span>
-                  <h1 className="text-3xl md:text-5xl font-black text-[#1a3a52] leading-tight italic">Sua tranquilidade é <br className="hidden md:block"/> nosso maior seguro.</h1>
+                  <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight italic">Sua tranquilidade é <br className="hidden md:block"/> nosso maior seguro.</h1>
                 </div>
               </div>
 
@@ -74,13 +74,13 @@ const HomePage = () => {
                 
                 {!sent ? (
                   <>
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#1a3a52] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
                       <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Iniciar Atendimento
                     </div>
                     <form onSubmit={handleSubmit} className="space-y-4">
                       <input name="nome" type="text" required placeholder="Seu Nome" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
                       <input name="whatsapp" type="tel" required placeholder="WhatsApp (DDD)" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
-                      <button className="w-full bg-[#1a3a52] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                      <button className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
                         SOLICITAR VIA WHATSAPP <MessageCircle size={16}/>
                       </button>
                       <p className="text-[9px] text-center text-slate-400 font-bold uppercase italic">Você será direcionado para o WhatsApp do Rodrigo</p>
@@ -92,7 +92,7 @@ const HomePage = () => {
                       <PartyPopper size={40} />
                     </div>
                     <div className="space-y-2">
-                      <h3 className="text-2xl font-black text-[#1a3a52] italic">Encaminhando...</h3>
+                      <h3 className="text-2xl font-black text-[#114d8e] italic">Encaminhando...</h3>
                       <p className="text-slate-500 font-medium text-sm leading-relaxed">
                         Estamos abrindo o WhatsApp. Se não abrir automaticamente, <a href={`https://wa.me/${meuNumero}`} className="text-blue-600 font-bold underline">clique aqui</a>.
                       </p>
@@ -137,16 +137,16 @@ const HomePage = () => {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12 italic">
             <div className="lg:w-1/2 space-y-6 text-center lg:text-left">
               <Wallet size={48} className="text-blue-600 mx-auto lg:mx-0" />
-              <Link to="/consorcios" className="text-3xl md:text-4xl font-black text-[#1a3a52] hover:text-blue-600 transition-colors underline-offset-4 hover:underline">Consórcio Elevance</Link>
+              <Link to="/consorcios" className="text-3xl md:text-4xl font-black text-[#114d8e] hover:text-blue-600 transition-colors underline-offset-4 hover:underline">Consórcio Elevance</Link>
               <p className="text-slate-500 font-medium">Compre seu imóvel ou veículo sem juros abusivos.</p>
               <div className="pt-6">
-                <a href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero simular um Consórcio`} className="inline-flex items-center gap-3 bg-[#1a3a52] text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-105 transition-all">Simular Agora <ArrowRight size={16}/></a>
+                <a href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero simular um Consórcio`} className="inline-flex items-center gap-3 bg-[#114d8e] text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-105 transition-all">Simular Agora <ArrowRight size={16}/></a>
               </div>
             </div>
             <div className="lg:w-1/2 w-full">
                <div className="bg-white rounded-[50px] p-12 shadow-xl border border-slate-100 flex flex-col items-center">
                   <div className="text-7xl font-black text-blue-600 mb-2">0%</div>
-                  <div className="text-lg font-black text-[#1a3a52] uppercase tracking-widest mb-6">De Juros Reais</div>
+                  <div className="text-lg font-black text-[#114d8e] uppercase tracking-widest mb-6">De Juros Reais</div>
                </div>
             </div>
           </div>
@@ -156,7 +156,7 @@ const HomePage = () => {
       {/* 4. CARDS SERVIÇOS */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-black text-[#1a3a52] italic text-center mb-3">O que podemos fazer por você</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic text-center mb-3">O que podemos fazer por você</h2>
           <p className="text-slate-500 text-center font-medium mb-12">Clique para conhecer cada solução</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {[
@@ -166,12 +166,12 @@ const HomePage = () => {
               { icon: <Building2 size={36}/>, title: "Seguro Empresarial", desc: "Patrimônio, PME, responsabilidade civil e vida em grupo.", btn: "Cotar", path: "/seguro-empresa", bg: "bg-slate-50", cor: "text-slate-600" },
               { icon: <ShieldCheck size={36}/>, title: "Responsabilidade Civil", desc: "RC Geral, Profissional, Produtos e D&O para sua empresa.", btn: "Cotar", path: "/responsabilidade-civil", bg: "bg-violet-50", cor: "text-violet-600" }
             ].map((item, i) => (
-              <div key={i} className={`${item.bg} rounded-[40px] p-8 border border-slate-100 group hover:bg-[#1a3a52] transition-all duration-500 flex flex-col`}>
+              <div key={i} className={`${item.bg} rounded-[40px] p-8 border border-slate-100 group hover:bg-[#114d8e] transition-all duration-500 flex flex-col`}>
                 <div className={`${item.cor} mb-5 group-hover:text-blue-400 transition-colors`}>{item.icon}</div>
-                <h3 className="text-xl font-black text-[#1a3a52] group-hover:text-white italic mb-2 transition-colors">{item.title}</h3>
+                <h3 className="text-xl font-black text-[#114d8e] group-hover:text-white italic mb-2 transition-colors">{item.title}</h3>
                 <p className="text-slate-500 text-sm font-medium leading-relaxed group-hover:text-slate-300 transition-colors mb-6 flex-1">{item.desc}</p>
                 <div className="flex items-center justify-between">
-                  <Link to={item.path} className="bg-white text-[#1a3a52] font-black py-3 px-5 rounded-2xl text-[10px] uppercase tracking-widest group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm">
+                  <Link to={item.path} className="bg-white text-[#114d8e] font-black py-3 px-5 rounded-2xl text-[10px] uppercase tracking-widest group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm">
                     {item.btn}
                   </Link>
                   <Link to={item.path} className="text-slate-400 group-hover:text-blue-300 transition-colors">
@@ -188,7 +188,7 @@ const HomePage = () => {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-[#1a3a52] italic mb-2">O que dizem nossos clientes</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic mb-2">O que dizem nossos clientes</h2>
             <p className="text-slate-500 font-medium">Pessoas reais, resultados reais</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -202,9 +202,9 @@ const HomePage = () => {
                 </div>
                 <p className="text-slate-600 text-sm leading-relaxed mb-6 italic font-medium">&ldquo;{d.texto}&rdquo;</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-blue-100 flex items-center justify-center text-[#1a3a52] font-black text-sm">{d.inicial}</div>
+                  <div className="w-10 h-10 rounded-2xl bg-blue-100 flex items-center justify-center text-[#114d8e] font-black text-sm">{d.inicial}</div>
                   <div>
-                    <div className="font-black text-[#1a3a52] text-sm">{d.nome}</div>
+                    <div className="font-black text-[#114d8e] text-sm">{d.nome}</div>
                     <div className="text-slate-400 text-xs font-medium">{d.local} · {d.produto}</div>
                   </div>
                 </div>
@@ -215,7 +215,7 @@ const HomePage = () => {
       </section>
 
       {/* CTA FINAL */}
-      <section className="py-20 bg-[#1a3a52] text-white text-center">
+      <section className="py-20 bg-[#114d8e] text-white text-center">
         <div className="max-w-4xl mx-auto px-4 space-y-6">
           <span className="inline-block bg-white/10 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Atendimento 100% Digital</span>
           <h2 className="text-3xl md:text-5xl font-black leading-tight italic">Sua segurança <br className="hidden md:block"/>não pode esperar.</h2>

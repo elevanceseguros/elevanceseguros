@@ -88,7 +88,7 @@ const MedSeniorPage = () => {
           <div className="mt-10">
             <a href="https://wa.me/5511920144864?text=Olá Rodrigo, quero cotar um plano MedSênior"
               target="_blank" rel="noreferrer"
-              className="inline-flex items-center gap-3 bg-[#1a3a52] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
+              className="inline-flex items-center gap-3 bg-[#114d8e] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
               <MessageCircle size={16} /> Cotar via WhatsApp <ArrowRight size={16} />
             </a>
           </div>
