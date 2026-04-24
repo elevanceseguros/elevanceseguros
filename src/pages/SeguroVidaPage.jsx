@@ -32,9 +32,9 @@ export default function SeguroVidaPage() {
         <title>Seguro de Vida em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Seguro de vida com cobertura completa para você e sua família. Morte, invalidez, doenças graves e diária hospitalar. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="seguro de vida SP, seguro vida São Paulo, cotação seguro vida, seguro vida família" />
-              <link rel="canonical" href="https://elevanceseguros.com/seguro-vida" />
       
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Seguro de Vida","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Seguro de Vida"}</script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{"@context":"https://schema.org","@type":"Service","serviceType":"Seguro de Vida","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Seguro de Vida"}`}} />
+        <link rel="canonical" href="https://elevanceseguros.com/seguro-vida" />
       </Helmet>
 
       <CorretorHero operadora="um Seguro de Vida" />

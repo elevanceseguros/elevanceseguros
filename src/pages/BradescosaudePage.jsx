@@ -19,9 +19,9 @@ const BradescosaudePage = () => {
         <title>Plano de Saúde Bradesco em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Bradesco Saúde: um dos maiores planos de saúde do Brasil. Ampla rede credenciada, cobertura completa em São Paulo." />
         <meta name="keywords" content="Bradesco Saúde SP, plano Bradesco São Paulo, cotação Bradesco saúde" />
-              <link rel="canonical" href="https://elevanceseguros.com/bradescosaude" />
       
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Plano de Saúde Bradesco Saúde","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Plano de Saúde Bradesco Saúde"}</script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{"@context":"https://schema.org","@type":"Service","serviceType":"Plano de Saúde Bradesco Saúde","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Plano de Saúde Bradesco Saúde"}`}} />
+        <link rel="canonical" href="https://elevanceseguros.com/bradescosaude" />
       </Helmet>
 
       <CorretorHero operadora="Bradesco Saúde" />

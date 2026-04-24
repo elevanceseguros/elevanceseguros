@@ -19,9 +19,9 @@ const PortoPage = () => {
         <title>Plano de Saúde Porto em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Porto Saúde: plano de saúde com ampla cobertura, rede credenciada de qualidade e atendimento 24h em São Paulo." />
         <meta name="keywords" content="Porto Saúde plano, Porto Seguro saúde SP, cotação Porto saúde" />
-              <link rel="canonical" href="https://elevanceseguros.com/porto" />
       
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Plano de Saúde Porto","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Plano de Saúde Porto"}</script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{"@context":"https://schema.org","@type":"Service","serviceType":"Plano de Saúde Porto","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Plano de Saúde Porto"}`}} />
+        <link rel="canonical" href="https://elevanceseguros.com/porto" />
       </Helmet>
 
       <CorretorHero operadora="Porto Saúde" />

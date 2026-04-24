@@ -19,9 +19,9 @@ const SulamericaPage = () => {
         <title>Plano de Saúde SulAmérica em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="SulAmérica Saúde em São Paulo: planos completos, ampla rede credenciada e atendimento personalizado. Cotação gratuita." />
         <meta name="keywords" content="SulAmérica saúde SP, plano SulAmérica São Paulo, cotação SulAmérica" />
-              <link rel="canonical" href="https://elevanceseguros.com/sulamerica" />
       
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Plano de Saúde SulAmérica","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Plano de Saúde SulAmérica"}</script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{"@context":"https://schema.org","@type":"Service","serviceType":"Plano de Saúde SulAmérica","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Plano de Saúde SulAmérica"}`}} />
+        <link rel="canonical" href="https://elevanceseguros.com/sulamerica" />
       </Helmet>
 
       <CorretorHero operadora="SulAmérica" />

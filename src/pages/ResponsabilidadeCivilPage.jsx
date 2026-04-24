@@ -32,9 +32,9 @@ export default function ResponsabilidadeCivilPage() {
         <title>Seguro de Responsabilidade Civil | RC - Elevance Seguros</title>
         <meta name="description" content="Seguro de Responsabilidade Civil para empresas e profissionais em SP. RC Geral, RC Profissional, RC Produtos e D&O. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="seguro responsabilidade civil SP, RC profissional São Paulo, seguro RC empresa, D&O seguro" />
-              <link rel="canonical" href="https://elevanceseguros.com/responsabilidade-civil" />
       
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Seguro Responsabilidade Civil","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Seguro Responsabilidade Civil"}</script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{"@context":"https://schema.org","@type":"Service","serviceType":"Seguro Responsabilidade Civil","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Seguro Responsabilidade Civil"}`}} />
+        <link rel="canonical" href="https://elevanceseguros.com/responsabilidade-civil" />
       </Helmet>
 
       <CorretorHero operadora="Seguro de Responsabilidade Civil" />
