@@ -97,7 +97,7 @@ const Header = () => {
             )}
           </div>
 
-          <Link to="/business-insurance" className="text-[11px] font-black uppercase tracking-widest text-[#1a3a52] hover:text-blue-600 transition-colors">Empresa</Link>
+          <Link to="/seguro-empresa" className="text-[11px] font-black uppercase tracking-widest text-[#1a3a52] hover:text-blue-600 transition-colors">Empresa</Link>
           <Link to="/consorcios" className="text-[11px] font-black uppercase tracking-widest text-[#1a3a52] hover:text-blue-600 transition-colors">Consórcios</Link>
           <Link to="/blog" className="text-[11px] font-black uppercase tracking-widest text-[#1a3a52] hover:text-blue-600 transition-colors">Blog</Link>
 
@@ -150,7 +150,7 @@ const Header = () => {
             </div>
           )}
 
-          <Link to="/business-insurance" onClick={() => setIsOpen(false)} className="text-sm font-black uppercase tracking-widest text-[#1a3a52] border-b border-slate-100 pb-3">Empresa</Link>
+          <Link to="/seguro-empresa" onClick={() => setIsOpen(false)} className="text-sm font-black uppercase tracking-widest text-[#1a3a52] border-b border-slate-100 pb-3">Empresa</Link>
           <Link to="/consorcios" onClick={() => setIsOpen(false)} className="text-sm font-black uppercase tracking-widest text-[#1a3a52] border-b border-slate-100 pb-3">Consórcios</Link>
           <Link to="/blog" onClick={() => setIsOpen(false)} className="text-sm font-black uppercase tracking-widest text-[#1a3a52] border-b border-slate-100 pb-3">Blog</Link>
 

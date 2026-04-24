@@ -24,14 +24,14 @@ const UnimeduniplanPage = () => {
       <CorretorHero operadora="Unimed" />
 
       {/* Logo Section */}
-      <div className="pt-28 pb-6 md:pt-32 md:pb-8 flex justify-center items-center bg-white">
+      <div className="pt-6 pb-4 flex justify-center items-center bg-white">
         <motion.img 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           src="/logos/unimed.png" 
           alt="Logo Unimed" 
-          className="w-full max-w-[150px] md:max-w-[200px] h-auto object-contain"
+          className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}}
         />
       </div>
 

@@ -30,14 +30,14 @@ const AlicePage = () => {
       <CorretorHero operadora="Alice" />
 
       {/* Logo Section */}
-      <div className="pt-28 pb-6 md:pt-32 md:pb-8 flex justify-center items-center bg-white">
+      <div className="pt-6 pb-4 flex justify-center items-center bg-white">
         <motion.img 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           src="https://horizons-cdn.hostinger.com/31b5dfa3-4e40-4378-96a9-7dc0284f5b4c/d99e1d08bfc2df463658d326c4aafc4d.jpg" 
           alt="Logo Alice" 
-          className="w-full max-w-[150px] md:max-w-[200px] h-auto object-contain"
+          className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}}
         />
       </div>
 

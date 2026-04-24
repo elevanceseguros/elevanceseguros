@@ -1,0 +1,129 @@
+import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Building2, ShieldCheck, Zap, Users, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Briefcase, Star } from 'lucide-react';
+import CorretorHero from '@/components/CorretorHero';
+
+const MEU_NUMERO = "5511920144864";
+
+const produtos = [
+  { icon: <Users size={28} className="text-blue-600" />, titulo: "Plano de Saúde PME", desc: "Planos corporativos para empresas de 2 a 99 vidas. Benefício que atrai e retém talentos." },
+  { icon: <Building2 size={28} className="text-blue-600" />, titulo: "Seguro Patrimonial", desc: "Proteção completa para o patrimônio da sua empresa contra incêndio, roubo e danos." },
+  { icon: <ShieldCheck size={28} className="text-blue-600" />, titulo: "Seguro de Responsabilidade Civil", desc: "Proteção contra danos causados a terceiros no exercício da atividade empresarial." },
+  { icon: <Briefcase size={28} className="text-blue-600" />, titulo: "Seguro de Vida em Grupo", desc: "Cobertura para os colaboradores em caso de falecimento ou invalidez." },
+];
+
+export default function SeguroEmpresaPage() {
+  const [sent, setSent] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const nome = formData.get('nome');
+    const whatsapp = formData.get('whatsapp');
+    const mensagem = encodeURIComponent(`Olá Rodrigo! Me chamo ${nome}. Vi o site da Elevance Seguros e gostaria de cotar Seguro Empresarial. Meu WhatsApp é: ${whatsapp}`);
+    window.open(`https://wa.me/${MEU_NUMERO}?text=${mensagem}`, '_blank');
+    setSent(true);
+  };
+
+  return (
+    <>
+      <Helmet>
+        <title>Seguro Empresarial em São Paulo | Elevance Seguros</title>
+        <meta name="description" content="Soluções completas de seguro para empresas em São Paulo. Plano de saúde PME, seguro patrimonial, responsabilidade civil e vida em grupo." />
+        <meta name="keywords" content="seguro empresarial SP, plano saúde PME, seguro empresa São Paulo" />
+      </Helmet>
+
+      <CorretorHero operadora="Seguro Empresarial" />
+
+      <section className="relative pt-16 pb-12 md:pt-20 md:pb-16 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
+              <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Soluções Corporativas</span>
+              <h1 className="text-3xl md:text-5xl font-black text-[#1a3a52] leading-tight italic">
+                Proteja sua empresa <br className="hidden md:block" />
+                <span className="text-blue-600">do jeito certo.</span>
+              </h1>
+              <p className="text-slate-600 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
+                Soluções completas de seguro para <span className="text-blue-600 font-black uppercase">proteger seu negócio</span>, seu patrimônio e seus colaboradores.
+              </p>
+              <ul className="space-y-3 text-left max-w-xl mx-auto lg:mx-0">
+                {["Planos de saúde PME a partir de 2 vidas", "Seguro patrimonial completo", "Responsabilidade civil empresarial", "Seguro de vida em grupo para colaboradores", "Atendimento especializado para empresas"].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-slate-700 font-medium text-sm">
+                    <CheckCircle2 className="w-5 h-5 text-blue-500 flex-shrink-0" /> {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-row justify-center lg:justify-start gap-4">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                  <Star size={14} className="text-yellow-500 fill-yellow-500" /> Consultoria especializada
+                </div>
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                  <ShieldCheck size={14} className="text-blue-600" /> Cotação gratuita
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full lg:w-2/5">
+              <div className="bg-white rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 p-8 md:p-10 relative min-h-[320px] flex flex-col justify-center">
+                <AnimatePresence mode="wait">
+                  {!sent ? (
+                    <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#1a3a52] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                        <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
+                      </div>
+                      <form onSubmit={handleSubmit} className="space-y-4 mt-4">
+                        <input name="nome" type="text" required placeholder="Seu Nome" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
+                        <input name="whatsapp" type="tel" required placeholder="WhatsApp (DDD)" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
+                        <button type="submit" className="w-full bg-[#1a3a52] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                          SOLICITAR VIA WHATSAPP <MessageCircle size={16} />
+                        </button>
+                        <p className="text-[9px] text-center text-slate-400 font-bold uppercase italic">Você será direcionado para o WhatsApp do Rodrigo</p>
+                      </form>
+                    </motion.div>
+                  ) : (
+                    <motion.div key="success" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="text-center space-y-6">
+                      <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto"><PartyPopper size={40} /></div>
+                      <h3 className="text-2xl font-black text-[#1a3a52] italic">Encaminhando...</h3>
+                      <p className="text-slate-500 text-sm">Se não abrir, <a href={`https://wa.me/${MEU_NUMERO}`} className="text-blue-600 font-bold underline">clique aqui</a>.</p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-black text-[#1a3a52] italic text-center mb-12">Produtos para sua empresa</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {produtos.map((p, i) => (
+              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
+                className="bg-white rounded-[30px] p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <div className="mb-4">{p.icon}</div>
+                <div className="font-black text-[#1a3a52] text-sm uppercase tracking-wide mb-2 italic">{p.titulo}</div>
+                <div className="text-slate-500 text-sm font-medium leading-relaxed">{p.desc}</div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="bg-[#1a3a52] rounded-[50px] p-12 text-center">
+            <h2 className="text-3xl font-black text-white italic mb-3">Proteja seu negócio agora</h2>
+            <p className="text-slate-300 font-medium mb-8">Consultoria gratuita para empresas de todos os tamanhos</p>
+            <a href={`https://wa.me/${MEU_NUMERO}?text=Olá, quero cotar seguro para minha empresa`} target="_blank" rel="noreferrer"
+              className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg hover:scale-105">
+              <MessageCircle size={18} /> Chamar no WhatsApp <ArrowRight size={16} />
+            </a>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
