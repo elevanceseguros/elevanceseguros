@@ -27,8 +27,13 @@ const Footer = () => {
     { name: 'Proteção Veicular', path: '/protecao-veicular' },
   ];
 
+  const segurosLinks = [
+    { name: 'Seguro de Vida', path: '/seguro-vida' },
+    { name: 'Seguro Empresarial', path: '/seguro-empresa' },
+    { name: 'Responsab. Civil', path: '/responsabilidade-civil' },
+  ];
+
   const outrosLinks = [
-    { name: 'Seguro Empresa', path: '/seguro-empresa' },
     { name: 'Consórcios', path: '/consorcios' },
     { name: 'Blog', path: '/blog' },
   ];
@@ -90,6 +95,18 @@ const Footer = () => {
               </h4>
               <ul className="space-y-2">
                 {autoLinks.map((item) => (
+                  <li key={item.path}>
+                    <Link to={item.path} className="flex items-center gap-1 text-[11px] font-bold text-slate-400 tracking-wide transition-colors hover:text-white">
+                      <ChevronRight size={10} className="shrink-0" /> {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-black text-white uppercase text-[10px] tracking-[0.2em] mb-4">Seguros</h4>
+              <ul className="space-y-2">
+                {segurosLinks.map((item) => (
                   <li key={item.path}>
                     <Link to={item.path} className="flex items-center gap-1 text-[11px] font-bold text-slate-400 tracking-wide transition-colors hover:text-white">
                       <ChevronRight size={10} className="shrink-0" /> {item.name}

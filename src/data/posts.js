@@ -109,5 +109,258 @@ export const postsData = [
       <p class="mt-8 font-bold text-blue-600">Quer uma cotação personalizada para autônomo em São Paulo? Me chame no WhatsApp — é rápido e gratuito.</p>
     `
   }
+
+  ,
+  {
+    id: 3,
+    slug: "o-que-e-coparticipacao-plano-de-saude",
+    title: "O que é Coparticipação no Plano de Saúde? Vale a Pena?",
+    date: "25 Abr, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Entenda de uma vez por todas o que é coparticipação, como ela funciona e se vale a pena para o seu perfil.",
+    content: `
+      <p class="mb-4">Se você já cotou um plano de saúde, certamente deparou com essa palavra: <strong>coparticipação</strong>. Ela aparece sempre acompanhada de um preço mais baixo de mensalidade, o que gera a dúvida clássica: "vale a pena pagar menos por mês e pagar a mais quando usar?"</p>
+
+      <h2 class="text-[#1a3a52] font-black mt-8 mb-4 text-2xl">O que é coparticipação?</h2>
+      <p class="mb-4">Coparticipação é um valor adicional que o beneficiário paga <strong>no momento em que utiliza</strong> o plano — em consultas, exames, terapias ou internações. Ela funciona como um "compartilhamento de custo" entre você e a operadora.</p>
+      <p class="mb-4">Existem dois tipos principais:</p>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Valor fixo:</strong> você paga R$ 20, R$ 30 ou R$ 50 por consulta, independente do valor total.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Percentual:</strong> você paga 20%, 30% ou 40% do custo do procedimento.</span></li>
+      </ul>
+
+      <h2 class="text-[#1a3a52] font-black mt-8 mb-4 text-2xl">Com coparticipação vs. sem coparticipação</h2>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#1a3a52] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Característica</th>
+              <th class="p-3 text-left">Com Coparticipação</th>
+              <th class="p-3 text-left rounded-tr-xl">Sem Coparticipação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Mensalidade</td>
+              <td class="p-3 text-green-600 font-bold">Mais barata</td>
+              <td class="p-3 text-red-500 font-bold">Mais cara</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Custo ao usar</td>
+              <td class="p-3 text-red-500 font-bold">Paga por uso</td>
+              <td class="p-3 text-green-600 font-bold">Sem custo adicional</td>
+            </tr>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Ideal para</td>
+              <td class="p-3">Quem usa pouco o plano</td>
+              <td class="p-3">Quem usa com frequência</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="p-3 font-medium">Internações</td>
+              <td class="p-3">Pode ter limite de coparticipação</td>
+              <td class="p-3">Totalmente coberta</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#1a3a52]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Se você é jovem, saudável e vai ao médico no máximo 2 ou 3 vezes por ano, o plano com coparticipação quase sempre compensa. Agora, se você tem filhos pequenos, doenças crônicas ou usa o plano com frequência, o plano sem coparticipação tende a sair mais barato no total.</p>
+      </div>
+
+      <h2 class="text-[#1a3a52] font-black mt-8 mb-4 text-2xl">Coparticipação em internações: cuidado!</h2>
+      <p class="mb-4">Um ponto muito importante: a ANS determina que planos com coparticipação em internações devem ter um <strong>teto de coparticipação</strong> — ou seja, um limite máximo que você paga por evento. Sempre verifique esse valor antes de assinar.</p>
+
+      <h2 class="text-[#1a3a52] font-black mt-8 mb-4 text-2xl">Como escolher?</h2>
+      <p class="mb-4">A decisão depende do seu perfil de uso. Faça as contas: some os valores de coparticipação que você pagaria em um ano com base no seu histórico de consultas e exames, e compare com a diferença de mensalidade entre os planos. O resultado costuma surpreender.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Ainda com dúvida sobre qual plano escolher? Me chame no WhatsApp — faço uma análise gratuita do seu perfil!</p>
+    `
+  }
+  ,
+  {
+    id: 4,
+    slug: "seguro-de-vida-quanto-custa-e-para-quem-vale",
+    title: "Seguro de Vida: Quanto Custa e Para Quem Vale a Pena em 2026?",
+    date: "26 Abr, 2026",
+    category: "Seguro de Vida",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1511895426328-dc8714191011?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Descubra quanto custa um seguro de vida em 2026, quais coberturas existem e se vale a pena para o seu momento de vida.",
+    content: `
+      <p class="mb-4">O seguro de vida ainda é um dos produtos financeiros mais incompreendidos no Brasil. Muita gente acha que é caro, que é "coisa de velho" ou que só vale para quem tem família. Neste artigo, vou desmistificar tudo isso com dados reais de 2026.</p>
+
+      <h2 class="text-[#1a3a52] font-black mt-8 mb-4 text-2xl">O que cobre um seguro de vida?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Morte (qualquer causa):</strong> capital pago aos beneficiários indicados.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Invalidez permanente total ou parcial:</strong> indenização caso você perca a capacidade de trabalhar.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Doenças graves:</strong> câncer, infarto, AVC — cobertura para tratamento ou complemento de renda.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Diária por internação (DIT):</strong> valor diário enquanto estiver internado.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Funeral:</strong> cobertura para despesas funerárias.</span></li>
+      </ul>
+
+      <h2 class="text-[#1a3a52] font-black mt-8 mb-4 text-2xl">Quanto custa em 2026?</h2>
+      <p class="mb-4">Os valores variam muito conforme idade, capital segurado e coberturas escolhidas:</p>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#1a3a52] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Perfil</th>
+              <th class="p-3 text-left">Capital Segurado</th>
+              <th class="p-3 text-left rounded-tr-xl">Mensalidade aprox.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">25 anos</td>
+              <td class="p-3">R$ 100.000</td>
+              <td class="p-3 font-bold text-blue-600">R$ 30 – R$ 60</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">35 anos</td>
+              <td class="p-3">R$ 200.000</td>
+              <td class="p-3 font-bold text-blue-600">R$ 80 – R$ 150</td>
+            </tr>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">45 anos</td>
+              <td class="p-3">R$ 300.000</td>
+              <td class="p-3 font-bold text-blue-600">R$ 180 – R$ 350</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="p-3 font-medium">55 anos</td>
+              <td class="p-3">R$ 200.000</td>
+              <td class="p-3 font-bold text-blue-600">R$ 280 – R$ 500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">*Valores aproximados para 2026. Variam conforme seguradora e coberturas.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#1a3a52]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Quanto mais cedo você contrata, mais barato fica e por mais tempo. Um jovem de 25 anos pode travar uma mensalidade baixíssima por décadas. Esperar até os 45 para contratar significa pagar 3x a 5x mais pelo mesmo capital.</p>
+      </div>
+
+      <h2 class="text-[#1a3a52] font-black mt-8 mb-4 text-2xl">Para quem vale a pena?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Quem tem dependentes financeiros (cônjuge, filhos, pais)</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Autônomos e MEI — sem FGTS ou benefícios de empregador</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Quem tem dívidas (financiamento, consórcio)</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Sócios de empresa — protege o negócio em caso de falecimento</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Qualquer pessoa que queira deixar algo para quem ama</span></li>
+      </ul>
+
+      <p class="mt-8 font-bold text-blue-600">Quer uma simulação personalizada de seguro de vida? Me chame no WhatsApp — é rápido e gratuito.</p>
+    `
+  }
+  ,
+  {
+    id: 5,
+    slug: "reajuste-plano-de-saude-2026",
+    title: "Reajuste do Plano de Saúde 2026: O Que Mudou e Como Se Proteger",
+    date: "27 Abr, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?auto=format&fit=crop&q=80&w=800",
+    excerpt: "A ANS definiu os tetos de reajuste para 2026. Entenda o que mudou, quanto seu plano pode subir e o que você pode fazer.",
+    content: `
+      <p class="mb-4">Todo ano a mesma angústia: a carta de reajuste do plano de saúde chega e o valor parece absurdo. Em 2026 não foi diferente — e entender as regras pode te poupar dinheiro ou até evitar que você cancele um plano que ainda vale a pena.</p>
+
+      <h2 class="text-[#1a3a52] font-black mt-8 mb-4 text-2xl">Qual é o teto de reajuste em 2026?</h2>
+      <p class="mb-4">A ANS (Agência Nacional de Saúde Suplementar) define anualmente o percentual máximo de reajuste para planos <strong>individuais e familiares</strong>. Para 2026, o índice autorizado ficou em torno de <strong>6,5% a 8,5%</strong> dependendo da modalidade — valores que refletem a inflação médica, que historicamente supera o IPCA.</p>
+      <p class="mb-4">Já os planos <strong>coletivos empresariais</strong> (PME e grandes empresas) não têm teto definido pela ANS — a negociação é livre entre empresa, corretora e operadora, o que significa que podem subir mais ou menos dependendo da sinistralidade do grupo.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#1a3a52]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Planos coletivos por adesão (ligados a sindicatos e associações) também têm reajuste livre. Mas por serem grupos maiores, o impacto costuma ser diluído. Vale sempre comparar com o mercado antes de renovar.</p>
+      </div>
+
+      <h2 class="text-[#1a3a52] font-black mt-8 mb-4 text-2xl">Por que os planos reajustam tanto?</h2>
+      <p class="mb-4">A inflação médica é estruturalmente maior que a inflação geral por três razões principais:</p>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">1.</span><span><strong>Envelhecimento da carteira:</strong> beneficiários mais velhos usam mais o plano.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">2.</span><span><strong>Incorporação tecnológica:</strong> novos procedimentos obrigatórios pela ANS encarecem os custos.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">3.</span><span><strong>Alta sinistralidade pós-pandemia:</strong> o represamento de procedimentos gerou um aumento de uso que ainda não foi totalmente absorvido.</span></li>
+      </ul>
+
+      <h2 class="text-[#1a3a52] font-black mt-8 mb-4 text-2xl">O que você pode fazer?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span><strong>Portabilidade:</strong> se seu plano individual reajustou muito, você pode migrar para outra operadora sem cumprir novas carências — desde que o plano seja compatível.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span><strong>Migração para PME:</strong> se você tem MEI ou CNPJ, pode acessar planos coletivos que costumam ser mais competitivos.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span><strong>Revisão de cobertura:</strong> avaliar se o tipo de acomodação (enfermaria x apartamento) e a rede ainda fazem sentido para o seu perfil.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span><strong>Consultar um corretor:</strong> um correto especializado compara opções do mercado e pode encontrar planos equivalentes com preço melhor.</span></li>
+      </ul>
+
+      <p class="mt-8 font-bold text-blue-600">Seu plano reajustou muito em 2026? Me manda uma mensagem no WhatsApp — avalio se existe uma opção melhor para você, sem custo!</p>
+    `
+  }
+  ,
+  {
+    id: 6,
+    slug: "mei-pode-ter-plano-de-saude-empresarial",
+    title: "MEI Pode Ter Plano de Saúde Empresarial? Tudo que Você Precisa Saber",
+    date: "28 Abr, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1664575602554-2087b04935a5?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Sim, MEI pode ter plano de saúde empresarial! Entenda como funciona, quais operadoras aceitam e quanto você economiza.",
+    content: `
+      <p class="mb-4">Essa é uma das perguntas que mais recebo aqui na Elevance Seguros: <strong>"Sou MEI, posso ter plano de saúde empresarial?"</strong>. A resposta é sim — e pode ser a melhor decisão financeira que você toma este ano.</p>
+
+      <h2 class="text-[#1a3a52] font-black mt-8 mb-4 text-2xl">Por que MEI tem acesso a planos empresariais?</h2>
+      <p class="mb-4">O MEI (Microempreendedor Individual) é, juridicamente, uma pessoa jurídica — tem CNPJ, pode emitir nota fiscal e, sim, pode contratar produtos destinados a empresas, incluindo planos de saúde coletivos por adesão ou PME.</p>
+
+      <h2 class="text-[#1a3a52] font-black mt-8 mb-4 text-2xl">Qual a diferença na prática?</h2>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#1a3a52] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Critério</th>
+              <th class="p-3 text-left">Plano Individual</th>
+              <th class="p-3 text-left rounded-tr-xl">Plano PME (MEI)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Preço médio</td>
+              <td class="p-3 text-red-500 font-bold">Mais caro</td>
+              <td class="p-3 text-green-600 font-bold">20% a 40% mais barato</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Reajuste</td>
+              <td class="p-3">Teto ANS (~6-8%)</td>
+              <td class="p-3">Negociado (pode ser menor)</td>
+            </tr>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Cancelamento</td>
+              <td class="p-3">Livre a qualquer momento</td>
+              <td class="p-3">12 meses de fidelidade</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="p-3 font-medium">Cobertura</td>
+              <td class="p-3">Igual</td>
+              <td class="p-3">Igual (seguem rol ANS)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#1a3a52] font-black mt-8 mb-4 text-2xl">Quais operadoras aceitam MEI em SP?</h2>
+      <p class="mb-4">Em São Paulo, as principais operadoras que aceitam MEI como titular de plano PME são: <strong>Amil, Bradesco Saúde, SulAmérica, Hapvida, Sagrada Família</strong> e algumas regionais. A Alice, por exemplo, é 100% PME e aceita MEI desde 1 vida.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#1a3a52]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Se você ainda não tem MEI mas quer acessar um plano empresarial, a abertura do MEI é gratuita e leva menos de 10 minutos no portal do governo. Com o CNPJ em mãos, já é possível contratar imediatamente em algumas operadoras.</p>
+      </div>
+
+      <h2 class="text-[#1a3a52] font-black mt-8 mb-4 text-2xl">Como contratar?</h2>
+      <p class="mb-4">O processo é simples: você me passa seu CNPJ MEI, eu verifico a elegibilidade nas operadoras parceiras e apresento as opções disponíveis com preços e coberturas. Sem burocracia, sem custo de consultoria.</p>
+
+      <p class="mt-8 font-bold text-blue-600">É MEI e quer economizar no plano de saúde? Me chame no WhatsApp agora — cotação gratuita!</p>
+    `
+  }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Phone, ChevronDown, Heart, Car } from 'lucide-react';
+import { Menu, X, Phone, ChevronDown, Heart, Car, Shield } from 'lucide-react';
 
 const saudeSubmenu = [
   { name: 'Encontre seu Plano', path: '/encontre-seu-plano' },
@@ -20,15 +20,24 @@ const autoSubmenu = [
   { name: 'Proteção Veicular', path: '/protecao-veicular' },
 ];
 
+const segurosSubmenu = [
+  { name: 'Seguro de Vida', path: '/seguro-vida' },
+  { name: 'Seguro Empresarial', path: '/seguro-empresa' },
+  { name: 'Responsabilidade Civil', path: '/responsabilidade-civil' },
+];
+
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [saudeOpen, setSaudeOpen] = useState(false);
   const [autoOpen, setAutoOpen] = useState(false);
+  const [segurosOpen, setSegurosOpen] = useState(false);
   const [mobileSaudeOpen, setMobileSaudeOpen] = useState(false);
   const [mobileAutoOpen, setMobileAutoOpen] = useState(false);
+  const [mobileSegurosOpen, setMobileSegurosOpen] = useState(false);
   const saudeRef = useRef(null);
   const autoRef = useRef(null);
+  const segurosRef = useRef(null);
   const logo = "/logo.png";
 
   useEffect(() => {
@@ -41,6 +50,7 @@ const Header = () => {
     const handleClick = (e) => {
       if (saudeRef.current && !saudeRef.current.contains(e.target)) setSaudeOpen(false);
       if (autoRef.current && !autoRef.current.contains(e.target)) setAutoOpen(false);
+      if (segurosRef.current && !segurosRef.current.contains(e.target)) setSegurosOpen(false);
     };
     document.addEventListener('mousedown', handleClick);
     return () => document.removeEventListener('mousedown', handleClick);
