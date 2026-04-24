@@ -183,21 +183,49 @@ const HomePage = () => {
         </div>
       </section>
       
-      {/* CTA FINAL */}
-      <section className="py-20 bg-[#1a3a52] text-white text-center italic">
-         <div className="max-w-4xl mx-auto px-4 space-y-8">
-            <h2 className="text-3xl md:text-5xl font-black leading-tight">Sua segurança não pode esperar.</h2>
-            <a href={`https://wa.me/${meuNumero}`} className="inline-flex items-center gap-4 bg-green-500 hover:bg-green-600 px-10 py-6 rounded-full font-black text-xs uppercase tracking-[0.2em] transition-all shadow-2xl">
-               <MessageCircle size={24}/> Chamar no WhatsApp
-            </a>
-         </div>
+      {/* DEPOIMENTOS */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-black text-[#1a3a52] italic mb-2">O que dizem nossos clientes</h2>
+            <p className="text-slate-500 font-medium">Pessoas reais, resultados reais</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            {[
+              { inicial: "S", nome: "Simone", local: "São Roque, SP", produto: "Plano de Saúde", texto: "Agradeço de coração todo seu empenho. Precisando, logicamente vou te procurar novamente." },
+              { inicial: "W", nome: "Warlei", local: "Ouro Fino, MG", produto: "Seguro Auto", texto: "Agradeço pela atenção! Pelas dúvidas sanadas e por conseguir o melhor preço." },
+            ].map((d, i) => (
+              <div key={i} className="bg-white rounded-[30px] p-8 shadow-sm border border-slate-100">
+                <div className="flex gap-0.5 mb-4">
+                  {[...Array(5)].map((_, j) => <Star key={j} size={16} className="text-yellow-400 fill-yellow-400" />)}
+                </div>
+                <p className="text-slate-600 text-sm leading-relaxed mb-6 italic font-medium">&ldquo;{d.texto}&rdquo;</p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-2xl bg-blue-100 flex items-center justify-center text-[#1a3a52] font-black text-sm">{d.inicial}</div>
+                  <div>
+                    <div className="font-black text-[#1a3a52] text-sm">{d.nome}</div>
+                    <div className="text-slate-400 text-xs font-medium">{d.local} · {d.produto}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
-    </div>
-  );
-};
+      {/* CTA FINAL */}
+      <section className="py-20 bg-[#1a3a52] text-white text-center">
+        <div className="max-w-4xl mx-auto px-4 space-y-6">
+          <span className="inline-block bg-white/10 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Atendimento 100% Digital</span>
+          <h2 className="text-3xl md:text-5xl font-black leading-tight italic">Sua segurança <br className="hidden md:block"/>não pode esperar.</h2>
+          <p className="text-slate-300 font-medium text-base max-w-xl mx-auto">Fale com o Rodrigo agora e receba uma cotação personalizada em minutos.</p>
+          <a href={`https://wa.me/${meuNumero}`} target="_blank" rel="noreferrer"
+            className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-2xl hover:scale-105">
+            <MessageCircle size={20}/> Chamar no WhatsApp
+          </a>
+        </div>
+      </section>
 
-export default Hom
     </>
   );
 };
