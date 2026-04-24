@@ -147,7 +147,6 @@ const AppContent = () => {
                 <Route path="/planos-saude" element={<ServicePage type="health" />} />
                 <Route path="/consorcios" element={<ConsorciосPage />} />
                 <Route path="/contato" element={<ServicePage type="contact" />} />
-                <Route path="/business-insurance" element={<SeguroEmpresaPage />} />
                 <Route path="/seguro-empresa" element={<SeguroEmpresaPage />} />
                 <Route path="/health-plans" element={<HealthPlansPage />} />
                 <Route path="/online-quote" element={<OnlineQuotePage />} />
