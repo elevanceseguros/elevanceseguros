@@ -47,9 +47,7 @@ const Footer = () => {
 
           {/* Coluna 1: Logo + info — 3 cols */}
           <div className="lg:col-span-3 space-y-4">
-            <div className="bg-white p-2 rounded-xl inline-block shadow-lg">
-              <img src={logo} alt="Elevance Seguros" className="h-8 w-auto object-contain" />
-            </div>
+            <img src={logo} alt="Elevance Seguros" className="h-8 w-auto object-contain" />
             <p className="text-blue-100/70 text-xs leading-relaxed font-medium">
               Consultoria de seguros 100% digital. Especialistas em proteger o que é mais importante, em todo o Brasil.
             </p>
