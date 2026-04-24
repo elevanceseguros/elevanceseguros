@@ -107,7 +107,7 @@ const HomePage = () => {
                 <div className="p-4 bg-blue-600 rounded-2xl"><Car size={32}/></div>
                 <div className="p-4 bg-blue-600 rounded-2xl"><Bike size={32}/></div>
               </div>
-              <h2 className="text-3xl md:text-4xl font-black">Proteção Veicular APVS</h2>
+              <Link to="/protecao-veicular" className="text-3xl md:text-4xl font-black hover:text-blue-300 transition-colors underline-offset-4 hover:underline">Proteção Veicular APVS</Link>
               <p className="text-blue-100/70 font-medium">A maior da América Latina no seu carro ou moto, sem análise de perfil.</p>
               <div className="flex flex-wrap gap-4 pt-2">
                 <span className="flex items-center gap-2 text-[10px] font-bold uppercase"><CheckCircle2 size={14} className="text-green-400"/> Sem consulta SPC/Serasa</span>
@@ -130,7 +130,7 @@ const HomePage = () => {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12 italic">
             <div className="lg:w-1/2 space-y-6 text-center lg:text-left">
               <Wallet size={48} className="text-blue-600 mx-auto lg:mx-0" />
-              <h2 className="text-3xl md:text-4xl font-black text-[#1a3a52]">Consórcio Elevance</h2>
+              <Link to="/consorcios" className="text-3xl md:text-4xl font-black text-[#1a3a52] hover:text-blue-600 transition-colors underline-offset-4 hover:underline">Consórcio Elevance</Link>
               <p className="text-slate-500 font-medium">Compre seu imóvel ou veículo sem juros abusivos.</p>
               <div className="pt-6">
                 <a href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero simular um Consórcio`} className="inline-flex items-center gap-3 bg-[#1a3a52] text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-105 transition-all">Simular Agora <ArrowRight size={16}/></a>
