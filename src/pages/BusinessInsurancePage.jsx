@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Building2, ShieldCheck, PieChart, Users, Send, CheckCircle2, Loader2 } from 'lucide-react';
 import Hero from '@/components/Hero';

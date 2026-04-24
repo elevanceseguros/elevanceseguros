@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { 
   Star, ShieldCheck, Zap, Car, Heart, 
@@ -28,7 +29,13 @@ const HomePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <>
+      <Helmet>
+        <title>Elevance Seguros | Planos de Saúde, Seguro Auto e Consórcios em SP</title>
+        <meta name="description" content="Elevance Seguros: consultoria 100% digital em planos de saúde, seguro auto, proteção veicular e consórcios em São Paulo e todo o Brasil. Cotação gratuita via WhatsApp." />
+        <link rel="canonical" href="https://elevanceseguros.com" />
+      </Helmet>
+      <div className="min-h-screen bg-white font-sans">
       
       {/* 1. HERO - DIRETO PARA WHATSAPP */}
       <section className="relative pt-24 pb-12 sm:pt-32 md:pt-44 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
@@ -187,6 +194,11 @@ const HomePage = () => {
       </section>
 
     </div>
+  );
+};
+
+export default Hom
+    </>
   );
 };
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, ShieldCheck, Zap, Car, CheckCircle2, MessageCircle, PartyPopper, ArrowRight } from 'lucide-react';
 import CorretorHero from '@/components/CorretorHero';

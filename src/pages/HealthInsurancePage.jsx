@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HeartPulse, Users, Building, CheckCircle2, Loader2, Baby, Activity, Stethoscope, Send, ChevronRight } from 'lucide-react';
 import FAQItem from '@/components/FAQItem';
