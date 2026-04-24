@@ -57,7 +57,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 inset-x-0 z-[100] transition-all duration-500 ${scrolled || isOpen ? 'bg-white shadow-lg py-3' : 'bg-transparent py-5'}`}>
+    <header className="fixed top-0 inset-x-0 z-[100] bg-[#114d8e] shadow-lg py-3">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
         <Link to="/" onClick={() => setIsOpen(false)}>
           <img src={logo} alt="Elevance Seguros" className="h-10 md:h-12 w-auto object-contain" />
