@@ -39,7 +39,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#114d8e] text-white pt-14 pb-8">
+    <footer className="bg-[#114d8e] text-white pt-14 pb-8 border-t-4 border-white/20">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* GRID PRINCIPAL — 12 colunas no desktop */}
