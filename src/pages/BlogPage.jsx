@@ -13,7 +13,7 @@ const BlogPage = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-        {postsData.map((post) => (
+        {[...postsData].reverse().map((post) => (
           <Link to={`/blog/${post.slug}`} key={post.id}
             className="group bg-white rounded-[40px] overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
 
