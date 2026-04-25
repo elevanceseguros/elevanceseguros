@@ -41,7 +41,7 @@ const PostDetail = () => {
     <div className="min-h-screen bg-white pb-20 pt-24">
       {blogSchema && (
         <Helmet>
-          <script type="application/ld+json">{JSON.stringify(blogSchema)}</script>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(blogSchema)}} />
           <link rel="canonical" href={`https://elevanceseguros.com/blog/${post.slug}`} />
         </Helmet>
       )}
