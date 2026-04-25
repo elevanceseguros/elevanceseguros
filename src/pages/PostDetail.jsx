@@ -39,12 +39,11 @@ const PostDetail = () => {
 
   return (
     <div className="min-h-screen bg-white pb-20 pt-24">
-      {blogSchema && (
-        <Helmet>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(blogSchema)}} />
-          <link rel="canonical" href={`https://elevanceseguros.com/blog/${post.slug}`} />
-        </Helmet>
-      )}
+      <Helmet>
+        <title>{post.title} | Blog Elevance Seguros</title>
+        <meta name="description" content={post.excerpt || post.title} />
+        <link rel="canonical" href={`https://elevanceseguros.com/blog/${post.slug}`} />
+      </Helmet>
       <article className="max-w-3xl mx-auto px-4">
 
         {/* HEADER */}
