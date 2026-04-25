@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { postsData } from '@/data/posts';
 import { ArrowLeft, MessageCircle, Clock, Tag } from 'lucide-react';
 
@@ -17,25 +18,6 @@ const PostDetail = () => {
       <Link to="/blog" className="text-blue-600 font-bold underline">Voltar ao Blog</Link>
     </div>
   );
-
-  const blogSchema = post ? {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": post.title,
-    "description": post.excerpt || post.title,
-    "image": post.image,
-    "datePublished": post.date,
-    "author": {
-      "@type": "Person",
-      "name": "Rodrigo Farias",
-      "jobTitle": "Corretor de Seguros"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Elevance Seguros",
-      "url": "https://elevanceseguros.com"
-    }
-  } : null;
 
   return (
     <div className="min-h-screen bg-white pb-20 pt-24">
