@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { 
   Star, ShieldCheck, Zap, Car, Heart, 
   Building2, Wallet, CheckCircle2, Bike, 
-  Users, ArrowRight, MessageCircle, Smile, PartyPopper 
+  Users, ArrowRight, MessageCircle, Smile, PartyPopper, Home
 } from 'lucide-react';
 
 const HomePage = () => {
