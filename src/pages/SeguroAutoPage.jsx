@@ -32,8 +32,6 @@ export default function SeguroAutoPage() {
         <title>Seguro Auto em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Seguro auto em São Paulo com as melhores seguradoras. Cobertura completa, melhor preço. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="seguro auto SP, seguro carro São Paulo, cotação seguro auto" />
-      
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{"@context":"https://schema.org","@type":"Service","serviceType":"Seguro Auto","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Seguro Auto"}`}} />
         <link rel="canonical" href="https://elevanceseguros.com/seguro-auto" />
       </Helmet>
 

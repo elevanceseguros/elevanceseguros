@@ -32,8 +32,6 @@ export default function SeguroEmpresaPage() {
         <title>Seguro Empresarial em São Paulo | Elevance Seguros</title>
         <meta name="description" content="Soluções completas de seguro para empresas em São Paulo. Plano de saúde PME, seguro patrimonial, responsabilidade civil e vida em grupo." />
         <meta name="keywords" content="seguro empresarial SP, plano saúde PME, seguro empresa São Paulo" />
-      
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{"@context":"https://schema.org","@type":"Service","serviceType":"Seguro Empresarial","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Seguro Empresarial"}`}} />
         <link rel="canonical" href="https://elevanceseguros.com/seguro-empresa" />
       </Helmet>
 

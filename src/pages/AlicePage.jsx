@@ -25,8 +25,6 @@ const AlicePage = () => {
         <title>Plano de Saúde Alice | Gestora de Saúde - Elevance Seguros</title>
         <meta name="description" content="Conheça a Alice, a gestora de saúde que conecta você aos melhores hospitais e médicos. Tecnologia, sem burocracia e foco na sua saúde." />
         <meta name="keywords" content="Alice saúde, plano Alice, gestora de saúde, plano premium, hospitais de ponta" />
-      
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{"@context":"https://schema.org","@type":"Service","serviceType":"Plano de Saúde Alice","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Plano de Saúde Alice"}`}} />
         <link rel="canonical" href="https://elevanceseguros.com/alice" />
       </Helmet>
 

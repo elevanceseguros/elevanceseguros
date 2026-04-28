@@ -19,8 +19,6 @@ const UnimeduniplanPage = () => {
         <title>Plano de Saúde Unimed em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Planos Unimed em São Paulo com ampla rede de médicos cooperados. Cotação gratuita e personalizada via WhatsApp." />
         <meta name="keywords" content="Unimed plano saúde SP, Unimed São Paulo, cotação Unimed" />
-      
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{"@context":"https://schema.org","@type":"Service","serviceType":"Plano de Saúde Unimed","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Plano de Saúde Unimed"}`}} />
         <link rel="canonical" href="https://elevanceseguros.com/unimed" />
       </Helmet>
 

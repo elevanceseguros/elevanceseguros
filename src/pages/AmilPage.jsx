@@ -19,8 +19,6 @@ const AmilPage = () => {
         <title>Plano de Saúde Amil em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Conheça os planos de saúde Amil em São Paulo. Ampla rede credenciada, cobertura completa. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="plano Amil São Paulo, Amil saúde SP, cotação Amil" />
-      
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{"@context":"https://schema.org","@type":"Service","serviceType":"Plano de Saúde Amil","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Plano de Saúde Amil"}`}} />
         <link rel="canonical" href="https://elevanceseguros.com/amil" />
       </Helmet>
 

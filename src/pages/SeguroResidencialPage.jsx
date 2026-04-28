@@ -33,7 +33,6 @@ export default function SeguroResidencialPage() {
         <meta name="description" content="Seguro residencial para sua casa ou apartamento em SP. Cobertura contra incêndio, roubo, danos elétricos e assistência 24h. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="seguro residencial SP, seguro casa São Paulo, seguro apartamento SP, cotação seguro residencial" />
         <link rel="canonical" href="https://elevanceseguros.com/seguro-residencial" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{"@context":"https://schema.org","@type":"Service","serviceType":"Seguro Residencial","provider":{"@type":"InsuranceAgency","name":"Elevance Seguros","telephone":"(11) 92014-4864","url":"https://elevanceseguros.com"},"areaServed":{"@type":"Country","name":"Brasil"},"name":"Seguro Residencial"}`}} />
       </Helmet>
 
       <CorretorHero operadora="um Seguro Residencial" />
