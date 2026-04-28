@@ -158,13 +158,14 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic text-center mb-3">O que podemos fazer por você</h2>
           <p className="text-slate-500 text-center font-medium mb-12">Clique para conhecer cada solução</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { icon: <Heart size={36}/>, title: "Planos de Saúde", desc: "Individuais, familiares e PME. Compare as melhores operadoras.", btn: "Ver Planos", path: "/encontre-seu-plano", bg: "bg-blue-50", cor: "text-blue-600" },
               { icon: <Smile size={36}/>, title: "Plano Odontológico", desc: "Sorria com tranquilidade. Planos acessíveis para toda a família.", btn: "Ver Planos", path: "/odontologico", bg: "bg-sky-50", cor: "text-sky-600" },
               { icon: <Users size={36}/>, title: "Seguro de Vida", desc: "Proteja o futuro da sua família com coberturas completas.", btn: "Simular", path: "/seguro-vida", bg: "bg-rose-50", cor: "text-rose-600" },
               { icon: <Building2 size={36}/>, title: "Seguro Empresarial", desc: "Patrimônio, PME, responsabilidade civil e vida em grupo.", btn: "Cotar", path: "/seguro-empresa", bg: "bg-slate-50", cor: "text-slate-600" },
-              { icon: <ShieldCheck size={36}/>, title: "Responsabilidade Civil", desc: "RC Geral, Profissional, Produtos e D&O para sua empresa.", btn: "Cotar", path: "/responsabilidade-civil", bg: "bg-violet-50", cor: "text-violet-600" }
+              { icon: <ShieldCheck size={36}/>, title: "Responsabilidade Civil", desc: "RC Geral, Profissional, Produtos e D&O para sua empresa.", btn: "Cotar", path: "/responsabilidade-civil", bg: "bg-violet-50", cor: "text-violet-600" },
+              { icon: <Home size={36}/>, title: "Seguro Residencial", desc: "Proteja sua casa ou apartamento contra incêndio, roubo e danos.", btn: "Cotar", path: "/seguro-residencial", bg: "bg-amber-50", cor: "text-amber-600" }
             ].map((item, i) => (
               <div key={i} className={`${item.bg} rounded-[40px] p-8 border border-slate-100 group hover:bg-[#114d8e] transition-all duration-500 flex flex-col`}>
                 <div className={`${item.cor} mb-5 group-hover:text-blue-400 transition-colors`}>{item.icon}</div>

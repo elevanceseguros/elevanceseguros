@@ -29,6 +29,7 @@ const Footer = () => {
 
   const segurosLinks = [
     { name: 'Seguro de Vida', path: '/seguro-vida' },
+    { name: 'Seguro Residencial', path: '/seguro-residencial' },
     { name: 'Seguro Empresarial', path: '/seguro-empresa' },
     { name: 'Responsab. Civil', path: '/responsabilidade-civil' },
   ];
