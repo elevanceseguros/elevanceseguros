@@ -362,5 +362,162 @@ export const postsData = [
       <p class="mt-8 font-bold text-blue-600">É MEI e quer economizar no plano de saúde? Me chame no WhatsApp agora — cotação gratuita!</p>
     `
   }
+
+  ,
+  {
+    id: 7,
+    slug: "o-que-e-franquia-no-seguro-auto",
+    title: "O que é Franquia no Seguro Auto? Guia Completo 2026",
+    date: "29 Abr, 2026",
+    category: "Seguro Auto",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Entenda de vez o que é franquia no seguro auto, como ela funciona, quais os tipos e se vale a pena escolher franquia reduzida ou normal.",
+    content: `
+      <p class="mb-4">Se você já cotou um seguro auto, certamente deparou com a palavra <strong>franquia</strong>. Ela aparece sempre junto de uma dúvida clássica: "franquia reduzida ou normal?" Neste guia vou explicar tudo de forma simples.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que é franquia no seguro auto?</h2>
+      <p class="mb-4">Franquia é o valor que você, segurado, paga do próprio bolso em caso de sinistro (acidente ou dano). É sua "parte" no prejuízo — o restante é coberto pela seguradora.</p>
+      <p class="mb-4">Exemplo prático: seu carro sofreu um dano de <strong>R$ 8.000</strong>. Sua franquia é de <strong>R$ 3.000</strong>. Você paga R$ 3.000 e a seguradora cobre os R$ 5.000 restantes.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Tipos de franquia</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Franquia normal (obrigatória):</strong> valor padrão definido pela seguradora. Geralmente entre R$ 2.000 e R$ 4.000 dependendo do veículo.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Franquia reduzida:</strong> você paga um valor menor em caso de sinistro, mas a mensalidade do seguro é mais cara.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Franquia majorada:</strong> você aceita pagar mais em caso de sinistro para ter uma mensalidade menor.</span></li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Tipo</th>
+              <th class="p-3 text-left">Mensalidade</th>
+              <th class="p-3 text-left rounded-tr-xl">Valor no sinistro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Normal</td>
+              <td class="p-3">Intermediária</td>
+              <td class="p-3 font-bold">R$ 2.000 – R$ 4.000</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Reduzida</td>
+              <td class="p-3 text-red-500 font-bold">Mais cara</td>
+              <td class="p-3 text-green-600 font-bold">R$ 500 – R$ 1.500</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">Majorada</td>
+              <td class="p-3 text-green-600 font-bold">Mais barata</td>
+              <td class="p-3 text-red-500 font-bold">R$ 4.000 – R$ 7.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Franquia reduzida vale a pena?</h2>
+      <p class="mb-4">Depende do seu perfil. A franquia reduzida vale a pena se você:</p>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Dirige muito e está mais exposto a acidentes</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Não tem reserva financeira para arcar com a franquia normal</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Tem um carro de alto valor onde os reparos são caros</span></li>
+      </ul>
+      <p class="mb-4">Já a franquia normal ou majorada faz mais sentido se você dirige pouco, tem uma reserva financeira e quer pagar menos por mês.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Franquia não é cobrada em casos de roubo total, perda total por acidente ou quando o terceiro é o culpado e aciona o seguro dele. Muita gente não sabe disso! Ela só é cobrada quando você aciona o seu próprio seguro por danos parciais.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Franquia em roubo e furto</h2>
+      <p class="mb-4">No caso de roubo ou furto total do veículo, a maioria das seguradoras <strong>não cobra franquia</strong>. O valor indenizado é baseado na tabela FIPE, descontada apenas a depreciação contratual se houver. Sempre verifique sua apólice.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Quer comparar seguros com diferentes tipos de franquia? Me chame no WhatsApp — cotação gratuita!</p>
+    `
+  }
+  ,
+  {
+    id: 8,
+    slug: "consorcio-vs-financiamento-qual-vale-mais-a-pena",
+    title: "Consórcio vs Financiamento: Qual Vale Mais a Pena em 2026?",
+    date: "30 Abr, 2026",
+    category: "Consórcios",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1560472355-536de3962603?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Consórcio ou financiamento? Entenda as diferenças reais, quanto você paga a mais em cada modalidade e qual faz mais sentido para o seu objetivo.",
+    content: `
+      <p class="mb-4">Essa é uma das dúvidas mais frequentes de quem quer comprar um imóvel ou carro: <strong>consórcio ou financiamento?</strong> A resposta depende do seu momento de vida — e os números fazem toda a diferença.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Como funciona cada um?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Financiamento:</strong> o banco empresta o dinheiro agora, você usa o bem imediatamente e paga de volta com juros ao longo dos anos.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Consórcio:</strong> um grupo de pessoas se reúne, paga parcelas mensais e todo mês alguém é contemplado por sorteio ou lance. Sem juros, com taxa de administração.</span></li>
+      </ul>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Comparativo real: imóvel de R$ 400.000</h2>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Critério</th>
+              <th class="p-3 text-left">Financiamento</th>
+              <th class="p-3 text-left rounded-tr-xl">Consórcio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Valor do bem</td>
+              <td class="p-3">R$ 400.000</td>
+              <td class="p-3">R$ 400.000</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Juros/Taxa</td>
+              <td class="p-3 text-red-500 font-bold">~10-12% ao ano</td>
+              <td class="p-3 text-green-600 font-bold">~18% total (adm.)</td>
+            </tr>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Total pago (20 anos)</td>
+              <td class="p-3 text-red-500 font-bold">~R$ 900.000</td>
+              <td class="p-3 text-green-600 font-bold">~R$ 472.000</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Uso imediato</td>
+              <td class="p-3 text-green-600 font-bold">✓ Sim</td>
+              <td class="p-3 text-red-500 font-bold">✗ Aguarda contemplação</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">Parcela média</td>
+              <td class="p-3 text-red-500 font-bold">R$ 3.750/mês</td>
+              <td class="p-3 text-green-600 font-bold">R$ 1.967/mês</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">*Valores aproximados para 2026. Variam conforme banco, prazo e perfil de crédito.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">No consórcio você pode dar um lance para ser contemplado mais rápido. Em muitos grupos, lances de 20% a 30% do valor da carta já garantem contemplação. Isso muda completamente o jogo para quem tem uma reserva guardada.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Quando escolher financiamento?</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Você precisa do bem agora (mora de aluguel caro, negócio dependente do veículo)</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Tem entrada significativa (acima de 30%) para reduzir os juros</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Conseguiu uma taxa de juros muito boa (abaixo de 8% ao ano)</span></li>
+      </ul>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Quando escolher consórcio?</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Você pode planejar com antecedência — não precisa do bem imediatamente</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Quer pagar muito menos no total e tem disciplina financeira</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Tem reserva para dar um lance e acelerar a contemplação</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black mt-0.5">✓</span><span>Quer usar como investimento — consórcio protege contra inflação do bem</span></li>
+      </ul>
+
+      <p class="mt-8 font-bold text-blue-600">Quer simular um consórcio de imóvel ou veículo? Me chame no WhatsApp — simulação gratuita e sem compromisso!</p>
+    `
+  }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
