@@ -519,5 +519,83 @@ export const postsData = [
       <p class="mt-8 font-bold text-blue-600">Quer simular um consórcio de imóvel ou veículo? Me chame no WhatsApp — simulação gratuita e sem compromisso!</p>
     `
   }
+
+  ,
+  {
+    id: 9,
+    slug: "seguro-residencial-o-que-cobre-e-por-que-contratar",
+    title: "Seguro Residencial: O que Cobre e Por que Contratar em 2026",
+    date: "28 Abr, 2026",
+    category: "Seguro Residencial",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Descubra o que o seguro residencial cobre, quanto custa em 2026 e por que a maioria das pessoas só pensa nele depois que precisou.",
+    content: `
+      <p class="mb-4">A maioria das pessoas só descobre o valor do seguro residencial depois que passa por um susto: um curto-circuito que queimou os eletrodomésticos, um cano que estourou na madrugada ou um arrombamento. Neste artigo vou te mostrar o que o seguro cobre, quanto custa e por que vale muito a pena contratar.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que é seguro residencial?</h2>
+      <p class="mb-4">O seguro residencial é um produto que protege sua casa ou apartamento — e tudo dentro dele — contra uma série de imprevistos. Ele cobre tanto o imóvel em si quanto os bens móveis, e inclui coberturas que vão muito além do que a maioria imagina.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que o seguro residencial cobre?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Incêndio, explosão e queda de raio:</strong> cobertura básica e obrigatória em todos os planos. Cobre danos ao imóvel e ao conteúdo.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Roubo e furto qualificado:</strong> proteção para eletrodomésticos, eletrônicos, joias e outros bens em caso de invasão.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Danos elétricos:</strong> queima de equipamentos por variação de tensão, curto-circuito ou raio — um dos sinistros mais comuns no Brasil.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Danos por água (vazamentos):</strong> estouros de tubulação, infiltrações e danos causados por chuva intensa.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Responsabilidade civil familiar:</strong> protege você contra danos causados a terceiros — como uma infiltração que prejudica o vizinho de baixo.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Assistência 24h:</strong> eletricista, encanador, chaveiro, vidraceiro e até dedetização, sem custo adicional.</span></li>
+      </ul>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Quanto custa o seguro residencial em 2026?</h2>
+      <p class="mb-4">O valor depende do tipo de imóvel, localização, coberturas escolhidas e valor segurado. Em São Paulo, os valores aproximados são:</p>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Perfil</th>
+              <th class="p-3 text-left">Cobertura</th>
+              <th class="p-3 text-left rounded-tr-xl">Mensalidade aprox.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Apartamento pequeno</td>
+              <td class="p-3">Básica</td>
+              <td class="p-3 font-bold text-blue-600">R$ 25 – R$ 50</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Apartamento médio</td>
+              <td class="p-3">Completa</td>
+              <td class="p-3 font-bold text-blue-600">R$ 60 – R$ 120</td>
+            </tr>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Casa</td>
+              <td class="p-3">Completa + RC</td>
+              <td class="p-3 font-bold text-blue-600">R$ 80 – R$ 180</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="p-3 font-medium">Imóvel alugado</td>
+              <td class="p-3">Conteúdo</td>
+              <td class="p-3 font-bold text-blue-600">R$ 30 – R$ 70</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">*Valores aproximados para São Paulo em 2026. Variam conforme seguradora e coberturas contratadas.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Quem mora de aluguel também deve contratar seguro residencial — e muitas vezes o próprio contrato de locação exige. Nesse caso, o foco é proteger o conteúdo (seus móveis e eletrodomésticos), não a estrutura do imóvel, o que deixa o seguro bem mais barato.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Seguro residencial para quem mora de aluguel</h2>
+      <p class="mb-4">Sim, inquilinos também precisam de seguro residencial. Na maioria dos contratos de locação em SP, o locatário é responsável por danos causados ao imóvel durante sua ocupação. Além disso, seus bens pessoais não estão protegidos pelo seguro do proprietário.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Assistência 24h: o benefício mais subestimado</h2>
+      <p class="mb-4">A assistência residencial 24h está inclusa na maioria dos seguros e cobre chamados de emergência para eletricista, encanador, chaveiro e vidraceiro — serviços que numa emergência podem custar R$ 300 a R$ 800 sem o seguro. Muita gente usa mais esse benefício do que qualquer outra cobertura.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Quer cotar um seguro residencial para sua casa ou apartamento em SP? Me chame no WhatsApp — cotação gratuita!</p>
+    `
+  }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
