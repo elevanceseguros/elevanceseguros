@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ShieldCheck, Zap, Car, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star } from 'lucide-react';
+import { ShieldCheck, Zap, Car, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, Users, Table } from 'lucide-react';
 import CorretorHero from '@/components/CorretorHero';
 
 const MEU_NUMERO = "5511920144864";
@@ -12,6 +12,17 @@ const beneficios = [
   { icon: <Zap size={28} className="text-blue-600" />, titulo: "Socorro 24h", desc: "Assistência imediata em qualquer situação na estrada." },
   { icon: <Star size={28} className="text-blue-600" />, titulo: "Melhor Preço", desc: "Comparamos várias seguradoras para garantir o melhor custo." },
 ];
+
+const tabela = [
+  { perfil: "Veículo até R$ 40k · Motorista 30 anos", franquia: "R$ 2.800", mensalidade: "R$ 120 – R$ 180" },
+  { perfil: "Veículo até R$ 80k · Motorista 35 anos", franquia: "R$ 3.200", mensalidade: "R$ 200 – R$ 320" },
+  { perfil: "Veículo até R$ 150k · Motorista 40 anos", franquia: "R$ 4.500", mensalidade: "R$ 350 – R$ 520" },
+];
+
+const depoimento = {
+  inicial: "W", nome: "Warlei", local: "Ouro Fino, MG", produto: "Seguro Auto",
+  texto: "Agradeço pela atenção! Pelas dúvidas sanadas e por conseguir o melhor preço no meu seguro auto. Recomendo o Rodrigo sem hesitar."
+};
 
 export default function SeguroAutoPage() {
   const [sent, setSent] = useState(false);
@@ -36,6 +47,7 @@ export default function SeguroAutoPage() {
 
       <CorretorHero operadora="um Seguro Auto" />
 
+      {/* HERO */}
       <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -86,6 +98,7 @@ export default function SeguroAutoPage() {
         </div>
       </section>
 
+      {/* BENEFÍCIOS */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-black text-[#114d8e] italic text-center mb-12">O que está incluso?</h2>
@@ -102,7 +115,86 @@ export default function SeguroAutoPage() {
         </div>
       </section>
 
+      {/* TABELA + DEPOIMENTO */}
       <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+            {/* Tabela de preços */}
+            <div className="bg-white rounded-[40px] shadow-xl overflow-hidden border border-slate-100">
+              <div className="bg-[#114d8e] p-6 text-white flex items-center gap-3">
+                <Table className="w-5 h-5 opacity-80" />
+                <div>
+                  <h2 className="text-lg font-black uppercase tracking-tight">Valores Referenciais</h2>
+                  <p className="text-white/70 text-xs mt-0.5">SP 2026 · Varia por perfil e seguradora</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b-2 border-slate-50 text-left">
+                      <th className="py-3 font-bold text-slate-400 text-xs uppercase">Perfil</th>
+                      <th className="py-3 font-bold text-slate-600 text-xs uppercase">Franquia</th>
+                      <th className="py-3 font-bold text-[#114d8e] text-xs uppercase">Mensalidade</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-50">
+                    {tabela.map((item, i) => (
+                      <tr key={i} className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">{item.perfil}</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">{item.franquia}</td>
+                        <td className="py-3 font-black text-sm text-[#114d8e]">{item.mensalidade}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                <p className="text-[10px] text-slate-400 italic mt-3">*Valores referenciais. Variam por seguradora, perfil e cidade.</p>
+                <button
+                  onClick={() => window.open("https://wa.me/" + MEU_NUMERO + "?text=Ol%C3%A1+Rodrigo%2C+quero+cotar+Seguro+Auto", "_blank")}
+                  className="w-full mt-5 bg-[#114d8e] hover:bg-blue-700 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2">
+                  Cotar Meu Seguro <ArrowRight className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+
+            {/* Depoimento + seguradoras */}
+            <div className="flex flex-col gap-6">
+              {/* Depoimento */}
+              <div className="bg-white p-6 rounded-[30px] shadow-xl border border-slate-100 flex-1">
+                <div className="flex gap-0.5 mb-4">
+                  {[...Array(5)].map((_, i) => <Star key={i} size={14} className="text-yellow-400 fill-yellow-400" />)}
+                </div>
+                <p className="text-slate-600 text-sm leading-relaxed mb-5 italic font-medium">&ldquo;{depoimento.texto}&rdquo;</p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-2xl bg-[#114d8e] flex items-center justify-center text-white font-black text-sm shrink-0">
+                    {depoimento.inicial}
+                  </div>
+                  <div>
+                    <div className="font-black text-[#114d8e] text-sm">{depoimento.nome}</div>
+                    <div className="text-slate-400 text-xs font-medium">{depoimento.local} · {depoimento.produto}</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Seguradoras parceiras */}
+              <div className="bg-[#114d8e] rounded-[30px] p-6 text-white relative overflow-hidden shadow-xl">
+                <h3 className="text-xl font-black mb-2">Seguradoras Parceiras</h3>
+                <p className="text-blue-100 text-sm font-medium mb-5">Cotamos nas principais do mercado para você ter o melhor preço.</p>
+                <div className="grid grid-cols-3 gap-2">
+                  {["Porto Seguro","Tokio Marine","Allianz","Bradesco Auto","Suhai","HDI"].map((s, i) => (
+                    <div key={i} className="bg-white/10 rounded-xl py-2 px-3 text-center text-xs font-black text-white/90">{s}</div>
+                  ))}
+                </div>
+                <Users className="absolute -right-8 -bottom-8 w-40 h-40 opacity-10" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="bg-[#114d8e] rounded-[50px] p-12 text-center">
             <h2 className="text-3xl font-black text-white italic mb-3">Pronto para proteger seu carro?</h2>
