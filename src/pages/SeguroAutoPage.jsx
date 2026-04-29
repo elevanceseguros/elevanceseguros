@@ -182,10 +182,10 @@ export default function SeguroAutoPage() {
                 <p className="text-blue-100 text-sm font-medium mb-5">Cotamos nas principais do mercado para você ter o melhor preço.</p>
                 <div className="grid grid-cols-3 gap-2">
                   {[
-                    {nome: "Porto Seguro", logo: "/logos/portoseguro.svg"},
-                    {nome: "Tokio Marine", logo: "/logos/tokiomarine.png"},
+                    {nome: "Porto Seguro", logo: "/logos/portoauto.png"},
+                    {nome: "Tokio Marine", logo: "/logos/tokio.png"},
                     {nome: "Allianz", logo: "/logos/allianz.png"},
-                    {nome: "Bradesco Seguros", logo: "/logos/bradescoseguros.png"},
+                    {nome: "Bradesco Seguros", logo: "/logos/bradescoauto.png"},
                     {nome: "Suhai", logo: "/logos/suhai.png"},
                     {nome: "HDI", logo: "/logos/hdi.png"},
                   ].map((s, i) => (
