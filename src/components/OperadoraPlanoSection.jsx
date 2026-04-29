@@ -52,6 +52,7 @@ const OperadoraPlanoSection = ({ tabela, hospitais, depoimento, cor, whatsapp, o
 
           {/* HOSPITAIS + DEPOIMENTO */}
           <div className="space-y-6">
+            {/* Hospitais em cima, depoimento + MEI lado a lado embaixo no desktop */}
             {/* Hospitais */}
             <div className="bg-white p-8 rounded-[40px] shadow-xl border border-slate-100">
               <div className="flex items-center gap-3 mb-6">
@@ -73,14 +74,17 @@ const OperadoraPlanoSection = ({ tabela, hospitais, depoimento, cor, whatsapp, o
               </div>
             </div>
 
+            {/* Depoimento + CTA PME lado a lado no desktop */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
             {/* Depoimento */}
-            <div className="bg-white p-8 rounded-[40px] shadow-xl border border-slate-100">
+            <div className="bg-white p-6 rounded-[30px] shadow-xl border border-slate-100">
               <div className="flex gap-0.5 mb-4">
-                {[...Array(5)].map((_, i) => <Star key={i} size={16} className="text-yellow-400 fill-yellow-400" />)}
+                {[...Array(5)].map((_, i) => <Star key={i} size={14} className="text-yellow-400 fill-yellow-400" />)}
               </div>
               <p className="text-slate-600 text-sm leading-relaxed mb-5 italic font-medium">&ldquo;{depoimento.texto}&rdquo;</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-2xl flex items-center justify-center text-white font-black text-sm" style={{ background: cor }}>
+                <div className="w-10 h-10 rounded-2xl flex items-center justify-center text-white font-black text-sm shrink-0" style={{ background: cor }}>
                   {depoimento.inicial}
                 </div>
                 <div>
@@ -91,19 +95,23 @@ const OperadoraPlanoSection = ({ tabela, hospitais, depoimento, cor, whatsapp, o
             </div>
 
             {/* CTA PME */}
-            <div className="rounded-[40px] p-8 text-white relative overflow-hidden shadow-xl" style={{ background: `linear-gradient(135deg, ${cor}, ${cor}dd)` }}>
-              <h3 className="text-2xl font-black mb-3 leading-tight">Tem CNPJ ou MEI?</h3>
-              <p className="text-white/80 mb-6 text-sm font-medium leading-relaxed">
-                Acesse planos empresariais com valores até <span className="text-white font-black underline decoration-4 underline-offset-4">30% menores</span>.
-              </p>
+            <div className="rounded-[30px] p-6 text-white relative overflow-hidden shadow-xl flex flex-col justify-between" style={{ background: `linear-gradient(135deg, ${cor}, ${cor}dd)` }}>
+              <div>
+                <h3 className="text-xl font-black mb-2 leading-tight">Tem CNPJ ou MEI?</h3>
+                <p className="text-white/80 mb-5 text-sm font-medium leading-relaxed">
+                  Planos empresariais com até <span className="text-white font-black underline decoration-4 underline-offset-4">30% menos</span>.
+                </p>
+              </div>
               <button
                 onClick={() => handleWhatsApp(`Olá Rodrigo, quero saber sobre o plano empresarial ${operadora} para MEI/CNPJ.`)}
-                className="w-full bg-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl flex items-center justify-center gap-3"
+                className="w-full bg-white py-3 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-xl flex items-center justify-center gap-2"
                 style={{ color: cor }}
               >
-                Quero Tabela Empresarial <ArrowRight className="w-4 h-4" />
+                Tabela Empresarial <ArrowRight className="w-4 h-4" />
               </button>
-              <Users className="absolute -right-10 -bottom-10 w-52 h-52 opacity-10" />
+              <Users className="absolute -right-8 -bottom-8 w-40 h-40 opacity-10" />
+            </div>
+
             </div>
           </div>
 
