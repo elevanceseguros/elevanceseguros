@@ -32,7 +32,7 @@ const HapvidaPage = () => {
           transition={{ duration: 0.5 }}
           src="/logos/hapvida.png" 
           alt="Logo Hapvida" 
-          className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}}
+          className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}} loading="lazy" decoding="async"
         />
       </div>
 

@@ -298,13 +298,24 @@ export default defineConfig({
 		},
 	},
 	build: {
+		minify: 'esbuild',
+		cssMinify: true,
 		rollupOptions: {
 			external: [
 				'@babel/parser',
 				'@babel/traverse',
 				'@babel/generator',
 				'@babel/types'
-			]
+			],
+			output: {
+				manualChunks: {
+					'react-vendor': ['react', 'react-dom'],
+					'router': ['react-router-dom'],
+					'motion': ['framer-motion'],
+					'icons': ['lucide-react'],
+					'helmet': ['react-helmet-async'],
+				}
+			}
 		}
 	}
 });

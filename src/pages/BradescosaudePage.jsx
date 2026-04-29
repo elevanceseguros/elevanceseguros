@@ -32,7 +32,7 @@ const BradescosaudePage = () => {
           transition={{ duration: 0.5 }}
           src="/logos/bradesco.png" 
           alt="Logo Bradesco Saúde" 
-          className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}}
+          className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}} loading="lazy" decoding="async"
         />
       </div>
 

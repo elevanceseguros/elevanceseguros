@@ -8,7 +8,7 @@ const CorretorHero = ({ operadora = "" }) => {
         <div className="flex items-center gap-3">
           <div className="relative shrink-0">
             <div className="w-11 h-11 rounded-full border-2 border-white shadow-md overflow-hidden bg-slate-200">
-              <img src="/preview.webp" alt="Rodrigo Farias" className="w-full h-full object-cover object-center" />
+              <img src="/preview.webp" alt="Rodrigo Farias" className="w-full h-full object-cover object-center" loading="eager" decoding="async" fetchpriority="high" />
             </div>
             <div className="absolute -bottom-0.5 -right-0.5 bg-green-500 w-3 h-3 rounded-full border-2 border-white animate-pulse"></div>
           </div>

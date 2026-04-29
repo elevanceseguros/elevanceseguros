@@ -38,7 +38,7 @@ const AlicePage = () => {
           transition={{ duration: 0.5 }}
           src="https://horizons-cdn.hostinger.com/31b5dfa3-4e40-4378-96a9-7dc0284f5b4c/d99e1d08bfc2df463658d326c4aafc4d.jpg" 
           alt="Logo Alice" 
-          className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}}
+          className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}} loading="lazy" decoding="async"
         />
       </div>
 

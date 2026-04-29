@@ -61,8 +61,9 @@ const CassiThankYouPage = lazy(() => import('@/pages/CassiThankYouPage'));
 const SaudeLanding = lazy(() => import('@/pages/SaudeLanding'));
 
 const LoadingFallback = () => (
-  <div className="flex justify-center items-center h-screen w-full">
-    <div className="w-16 h-16 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
+  <div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh',width:'100%'}}>
+    <div style={{width:'40px',height:'40px',border:'3px solid #114d8e',borderTopColor:'transparent',borderRadius:'50%',animation:'spin 0.8s linear infinite'}} />
+    <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
   </div>
 );
 
