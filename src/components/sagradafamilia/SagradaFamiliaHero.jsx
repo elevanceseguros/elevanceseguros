@@ -69,26 +69,26 @@ const SagradaFamiliaHero = () => {
     setIsLoading(true);
 
     try {
-      let msg = `Quero uma cotação para o plano Sagrada Família\n`;
-      msg += `Nome: ${formData.name}\n`;
-      msg += `Email: ${formData.email}\n`;
-      msg += `Telefone: ${formData.phone}\n`;
-      if (formData.cpf) msg += `CPF: ${formData.cpf}\n`;
-      if (formData.birthDate) msg += `Data de Nascimento: ${formData.birthDate}\n`;
-      if (formData.gender) msg += `Gênero: ${formData.gender}\n`;
-      if (formData.plan_type) msg += `Interesse (Plano): ${formData.plan_type}\n`;
-      if (formData.city) msg += `Cidade: ${formData.city}\n`;
-      if (formData.state) msg += `Estado: ${formData.state}\n`;
-      msg += `Vidas: ${formData.lives}\n`;
-      msg += `Idades: ${formData.ages}\n`;
-      msg += `Possui CNPJ: ${formData.has_cnpj}\n`;
-      if (formData.has_cnpj === 'Sim' && formData.is_mei) msg += `É MEI: ${formData.is_mei}\n`;
-      if (formData.profession) msg += `Profissão: ${formData.profession}`;
-
-      const encodedMessage = encodeURIComponent(msg);
-      const whatsappUrl = `https://wa.me/5511920144864?text=${encodedMessage}`;
-      
-      window.open(whatsappUrl, '_blank');
+      await fetch('https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          nome: formData.name,
+          whatsapp: (formData.phone || '').replace(/[^0-9]/g, ''),
+          email: formData.email,
+          produto: 'Plano de Saúde Sagrada Família',
+          origem: window.location.pathname,
+          detalhes: {
+            plano: formData.plan_type,
+            vidas: formData.lives,
+            idades: formData.ages,
+            cidade: formData.city,
+            estado: formData.state,
+            cnpj: formData.has_cnpj,
+            mei: formData.is_mei,
+          }
+        }),
+      });
 
       toast({
         title: "Solicitação Enviada!",
