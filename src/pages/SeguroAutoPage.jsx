@@ -181,8 +181,19 @@ export default function SeguroAutoPage() {
                 <h3 className="text-xl font-black mb-2">Seguradoras Parceiras</h3>
                 <p className="text-blue-100 text-sm font-medium mb-5">Cotamos nas principais do mercado para você ter o melhor preço.</p>
                 <div className="grid grid-cols-3 gap-2">
-                  {["Porto Seguro","Tokio Marine","Allianz","Bradesco Auto","Suhai","HDI"].map((s, i) => (
-                    <div key={i} className="bg-white/10 rounded-xl py-2 px-3 text-center text-xs font-black text-white/90">{s}</div>
+                  {[
+                    {nome: "Porto Seguro", logo: "/logos/portoseguro.svg"},
+                    {nome: "Tokio Marine", logo: "/logos/tokiomarine.png"},
+                    {nome: "Allianz", logo: "/logos/allianz.png"},
+                    {nome: "Bradesco Seguros", logo: "/logos/bradescoseguros.png"},
+                    {nome: "Suhai", logo: "/logos/suhai.png"},
+                    {nome: "HDI", logo: "/logos/hdi.png"},
+                  ].map((s, i) => (
+                    <div key={i} className="bg-white rounded-xl py-2 px-2 flex items-center justify-center" style={{minHeight: 44}}>
+                      <img src={s.logo} alt={s.nome} className="max-h-7 max-w-full object-contain" loading="lazy"
+                        onError={(e) => { e.target.style.display="none"; e.target.nextSibling.style.display="block"; }} />
+                      <span style={{display:"none"}} className="text-[10px] font-black text-slate-700 text-center">{s.nome}</span>
+                    </div>
                   ))}
                 </div>
                 <Users className="absolute -right-8 -bottom-8 w-40 h-40 opacity-10" />
