@@ -107,7 +107,7 @@ const SulamericaPage = () => {
           {nome: 'Hospital Alemão Oswaldo Cruz', regiao: 'Bela Vista, SP', desc: 'Alta complexidade, oncologia e cardiologia.'},
           {nome: 'Hospital 9 de Julho', regiao: 'Jardins, SP', desc: 'Cirurgias, UTI e maternidade.'},
           {nome: 'Hospital São Camilo', regiao: 'Pompeia, SP', desc: 'Emergência 24h, internações e cirurgias.'},
-          {nome: 'Hospital São Luiz Morumbi', regiao: 'Morumbi, SP', desc: 'Rede D&#x27;Or — alta complexidade.'}
+          {nome: 'Hospital São Luiz Morumbi', regiao: 'Morumbi, SP', desc: 'Rede Rede D-Or — alta complexidade.'}
         ]}
         depoimento={{
           inicial: "F",
