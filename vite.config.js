@@ -309,22 +309,11 @@ export default defineConfig({
 				'@babel/types'
 			],
 			output: {
-				manualChunks(id) {
-					if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/')) {
-						return 'react-vendor';
-					}
-					if (id.includes('node_modules/react-router-dom/') || id.includes('node_modules/react-router/')) {
-						return 'router';
-					}
-					if (id.includes('node_modules/framer-motion/')) {
-						return 'motion';
-					}
-					if (id.includes('node_modules/lucide-react/')) {
-						return 'icons';
-					}
-					if (id.includes('node_modules/react-helmet-async/')) {
-						return 'helmet';
-					}
+				manualChunks: {
+					'react-vendor': ['react', 'react-dom'],
+					'router': ['react-router-dom'],
+					'motion': ['framer-motion'],
+					'icons': ['lucide-react'],
 				}
 			}
 		}
