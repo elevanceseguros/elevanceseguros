@@ -5,6 +5,7 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'luc
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
+import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
 const MedSeniorPage = () => {
   useEffect(() => {
@@ -94,6 +95,28 @@ const MedSeniorPage = () => {
           </div>
         </div>
       </section>
+      <OperadoraPlanoSection
+        operadora="MedSênior"
+        cor="#059669"
+        tabela={[
+          {idade: '44 a 48', enf: 'R$ 855,78', apto: 'R$ 1.198,10'},
+          {idade: '49 a 53', enf: 'R$ 1.026,93', apto: 'R$ 1.437,70'},
+          {idade: '54 a 58', enf: 'R$ 1.232,32', apto: 'R$ 1.725,25'}
+        ]}
+        hospitais={[
+          {nome: 'Hospital Santa Paula', regiao: 'Vila Clementino, SP', desc: 'Referência para idosos com UTI e cardiologia.'},
+          {nome: 'Hospital São Luiz Morumbi', regiao: 'Morumbi, SP', desc: 'Alta complexidade e neurologia.'},
+          {nome: 'Hospital Samaritano Paulista', regiao: 'Bela Vista, SP', desc: 'Cirurgias, UTI e oncologia.'},
+          {nome: 'Hospital Sancta Maggiore', regiao: 'Higienópolis, SP', desc: 'Geriatria, internações e consultas.'}
+        ]}
+        depoimento={{
+          inicial: "T",
+          nome: "Tereza",
+          local: "Moema, SP",
+          texto: "Minha mãe tinha dificuldades em encontrar um plano. O Rodrigo indicou o MedSênior e ela foi aceita sem problemas. Gratidão!"
+        }}
+      />
+
 
       <FloatingWhatsApp />
     </>

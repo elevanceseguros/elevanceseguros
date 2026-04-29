@@ -5,6 +5,7 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'luc
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
+import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
 const PortoPage = () => {
   useEffect(() => {
@@ -94,6 +95,28 @@ const PortoPage = () => {
           </div>
         </div>
       </section>
+      <OperadoraPlanoSection
+        operadora="Porto Saúde"
+        cor="#1d4ed8"
+        tabela={[
+          {idade: '00 a 18', enf: 'R$ 234,80', apto: 'R$ 328,70'},
+          {idade: '19 a 23', enf: 'R$ 279,00', apto: 'R$ 390,60'},
+          {idade: '24 a 28', enf: 'R$ 334,80', apto: 'R$ 468,70'}
+        ]}
+        hospitais={[
+          {nome: 'Hospital Santa Catarina', regiao: 'Paulista, SP', desc: 'Alta complexidade, UTI e maternidade.'},
+          {nome: 'Hospital São Luiz Alphaville', regiao: 'Barueri, SP', desc: 'Rede D'Or — UTI e cirurgias.'},
+          {nome: 'Hospital 9 de Julho', regiao: 'Jardins, SP', desc: 'Emergência 24h e internações.'},
+          {nome: 'Hospital Vitória (Vila Mariana)', regiao: 'Vila Mariana, SP', desc: 'Pronto-socorro e consultas.'}
+        ]}
+        depoimento={{
+          inicial: "P",
+          nome: "Paulo",
+          local: "Barueri, SP",
+          texto: "Estava precisando de um plano com hospital perto de Alphaville. O Rodrigo me mostrou o Porto Saúde e foi perfeito!"
+        }}
+      />
+
 
       <FloatingWhatsApp />
     </>

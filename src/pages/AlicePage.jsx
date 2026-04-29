@@ -5,6 +5,7 @@ import { CheckCircle2, Smartphone } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
+import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
 const AlicePage = () => {
   useEffect(() => {
@@ -95,6 +96,28 @@ const AlicePage = () => {
           </div>
         </div>
       </section>
+      <OperadoraPlanoSection
+        operadora="Alice"
+        cor="#a21caf"
+        tabela={[
+          {idade: '00 a 18', enf: 'R$ 350,78', apto: 'R$ 350,78'},
+          {idade: '19 a 23', enf: 'R$ 416,80', apto: 'R$ 416,80'},
+          {idade: '24 a 28', enf: 'R$ 500,16', apto: 'R$ 500,16'}
+        ]}
+        hospitais={[
+          {nome: 'Hospital Israelita Albert Einstein', regiao: 'Morumbi, SP', desc: 'Referência mundial em saúde.'},
+          {nome: 'Hospital Sírio-Libanês', regiao: 'Bela Vista, SP', desc: 'Alta complexidade e oncologia.'},
+          {nome: 'Hospital Alemão Oswaldo Cruz', regiao: 'Bela Vista, SP', desc: 'Cardiologia, cirurgias e UTI.'},
+          {nome: 'Hospital Santa Joana', regiao: 'Perdizes, SP', desc: 'Maternidade e cirurgias.'}
+        ]}
+        depoimento={{
+          inicial: "L",
+          nome: "Luísa",
+          local: "Vila Olímpia, SP",
+          texto: "A Alice tem um app incrível e acesso ao Einstein. O Rodrigo me explicou tudo sobre o plano PME e eu adorei!"
+        }}
+      />
+
 
       <FloatingWhatsApp />
     </>

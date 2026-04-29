@@ -5,6 +5,7 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'luc
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
+import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
 const AmilPage = () => {
   useEffect(() => {
@@ -94,6 +95,28 @@ const AmilPage = () => {
           </div>
         </div>
       </section>
+      <OperadoraPlanoSection
+        operadora="Amil"
+        cor="#4338ca"
+        tabela={[
+          {idade: '00 a 18', enf: 'R$ 235,68', apto: 'R$ 328,50'},
+          {idade: '19 a 23', enf: 'R$ 279,80', apto: 'R$ 390,20'},
+          {idade: '24 a 28', enf: 'R$ 335,75', apto: 'R$ 468,20'}
+        ]}
+        hospitais={[
+          {nome: 'Hospital Samaritano Paulista', regiao: 'Bela Vista, SP', desc: 'Cirurgias, UTI e emergência 24h.'},
+          {nome: 'Hospital Paulistano', regiao: 'Bela Vista, SP', desc: 'Internações, exames e consultas.'},
+          {nome: 'Hospital Leforte Morumbi', regiao: 'Morumbi, SP', desc: 'Alta complexidade, UTI e maternidade.'},
+          {nome: 'Hospital Metropolitano', regiao: 'Barra Funda, SP', desc: 'Pronto-socorro, cirurgias e internações.'}
+        ]}
+        depoimento={{
+          inicial: "C",
+          nome: "Carlos",
+          local: "Guarulhos, SP",
+          texto: "O Rodrigo me ajudou a encontrar o plano Amil ideal para minha família em menos de um dia. Atendimento incrível e sem burocracia!"
+        }}
+      />
+
 
       <FloatingWhatsApp />
     </>

@@ -5,6 +5,7 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'luc
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
+import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
 const HapvidaPage = () => {
   useEffect(() => {
@@ -94,6 +95,28 @@ const HapvidaPage = () => {
           </div>
         </div>
       </section>
+      <OperadoraPlanoSection
+        operadora="Hapvida"
+        cor="#f97316"
+        tabela={[
+          {idade: '00 a 18', enf: 'R$ 143,83', apto: 'R$ 201,40'},
+          {idade: '19 a 23', enf: 'R$ 170,95', apto: 'R$ 239,30'},
+          {idade: '24 a 28', enf: 'R$ 205,14', apto: 'R$ 287,20'}
+        ]}
+        hospitais={[
+          {nome: 'Hospital Hapvida (Penha)', regiao: 'Zona Leste, SP', desc: 'Pronto-socorro, internações e cirurgias.'},
+          {nome: 'Hospital Hapvida (Santo André)', regiao: 'Grande ABC', desc: 'UTI, emergência 24h e internações.'},
+          {nome: 'Hospital Hapvida (Guarulhos)', regiao: 'Guarulhos, SP', desc: 'Pronto-socorro e consultas.'},
+          {nome: 'Hospital Hapvida (Campinas)', regiao: 'Interior SP', desc: 'Rede própria com UTI e cirurgias.'}
+        ]}
+        depoimento={{
+          inicial: "R",
+          nome: "Roberto",
+          local: "São Paulo, SP",
+          texto: "Melhor custo-benefício que encontrei. O Rodrigo me explicou como funciona a rede própria e fechei com tranquilidade."
+        }}
+      />
+
 
       <FloatingWhatsApp />
     </>

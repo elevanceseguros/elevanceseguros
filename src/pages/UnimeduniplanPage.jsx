@@ -5,6 +5,7 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'luc
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
+import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
 const UnimeduniplanPage = () => {
   useEffect(() => {
@@ -94,6 +95,28 @@ const UnimeduniplanPage = () => {
           </div>
         </div>
       </section>
+      <OperadoraPlanoSection
+        operadora="Unimed"
+        cor="#16a34a"
+        tabela={[
+          {idade: '00 a 18', enf: 'R$ 263,18', apto: 'R$ 368,50'},
+          {idade: '19 a 23', enf: 'R$ 312,80', apto: 'R$ 437,90'},
+          {idade: '24 a 28', enf: 'R$ 375,35', apto: 'R$ 525,50'}
+        ]}
+        hospitais={[
+          {nome: 'Hospital Unimed Paulistana', regiao: 'Vila Mariana, SP', desc: 'Hospital próprio com UTI e cirurgias.'},
+          {nome: 'Hospital Santa Cruz', regiao: 'Oswaldo Cruz, SP', desc: 'Emergência 24h, internações e exames.'},
+          {nome: 'Hospital São Camilo Santana', regiao: 'Santana, SP', desc: 'Alta complexidade e maternidade.'},
+          {nome: 'Hospital Beneficência Portuguesa', regiao: 'Santa Cecília, SP', desc: 'Referência em SP com UTI e oncologia.'}
+        ]}
+        depoimento={{
+          inicial: "A",
+          nome: "Ana Paula",
+          local: "Osasco, SP",
+          texto: "A Unimed é reconhecida e o Rodrigo me ajudou a fechar um plano com excelente rede credenciada. Super atencioso!"
+        }}
+      />
+
 
       <FloatingWhatsApp />
     </>

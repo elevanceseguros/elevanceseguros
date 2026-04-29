@@ -5,6 +5,7 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'luc
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
+import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
 const SulamericaPage = () => {
   useEffect(() => {
@@ -94,6 +95,28 @@ const SulamericaPage = () => {
           </div>
         </div>
       </section>
+      <OperadoraPlanoSection
+        operadora="SulAmérica"
+        cor="#ea580c"
+        tabela={[
+          {idade: '00 a 18', enf: 'R$ 255,99', apto: 'R$ 358,40'},
+          {idade: '19 a 23', enf: 'R$ 304,10', apto: 'R$ 425,80'},
+          {idade: '24 a 28', enf: 'R$ 364,90', apto: 'R$ 511,00'}
+        ]}
+        hospitais={[
+          {nome: 'Hospital Alemão Oswaldo Cruz', regiao: 'Bela Vista, SP', desc: 'Alta complexidade, oncologia e cardiologia.'},
+          {nome: 'Hospital 9 de Julho', regiao: 'Jardins, SP', desc: 'Cirurgias, UTI e maternidade.'},
+          {nome: 'Hospital São Camilo', regiao: 'Pompeia, SP', desc: 'Emergência 24h, internações e cirurgias.'},
+          {nome: 'Hospital São Luiz Morumbi', regiao: 'Morumbi, SP', desc: 'Rede D'Or — alta complexidade.'}
+        ]}
+        depoimento={{
+          inicial: "F",
+          nome: "Fernanda",
+          local: "São Bernardo, SP",
+          texto: "Precisava de um plano com o Oswaldo Cruz e o Rodrigo me mostrou as melhores opções da SulAmérica. Fechei em menos de 2 dias!"
+        }}
+      />
+
 
       <FloatingWhatsApp />
     </>

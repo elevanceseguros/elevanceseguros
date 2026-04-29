@@ -5,6 +5,7 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'luc
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
+import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
 const BradescosaudePage = () => {
   useEffect(() => {
@@ -94,6 +95,28 @@ const BradescosaudePage = () => {
           </div>
         </div>
       </section>
+      <OperadoraPlanoSection
+        operadora="Bradesco Saúde"
+        cor="#dc2626"
+        tabela={[
+          {idade: '00 a 18', enf: 'R$ 218,35', apto: 'R$ 306,70'},
+          {idade: '19 a 23', enf: 'R$ 259,40', apto: 'R$ 364,20'},
+          {idade: '24 a 28', enf: 'R$ 311,30', apto: 'R$ 436,80'}
+        ]}
+        hospitais={[
+          {nome: 'Hospital Sírio-Libanês', regiao: 'Bela Vista, SP', desc: 'Referência nacional em alta complexidade.'},
+          {nome: 'Hospital Leforte Liberdade', regiao: 'Liberdade, SP', desc: 'Cirurgias, UTI e maternidade.'},
+          {nome: 'Hospital Igesp', regiao: 'Paraíso, SP', desc: 'Internações, exames e consultas.'},
+          {nome: 'Pro Matre Paulista', regiao: 'Santa Cecília, SP', desc: 'Referência em maternidade em SP.'}
+        ]}
+        depoimento={{
+          inicial: "M",
+          nome: "Márcia",
+          local: "Santo André, SP",
+          texto: "Finalmente consegui um plano com o Hospital Sírio-Libanês dentro do orçamento. O Rodrigo fez a cotação e fechamos no mesmo dia!"
+        }}
+      />
+
 
       <FloatingWhatsApp />
     </>
