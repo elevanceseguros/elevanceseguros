@@ -53,7 +53,7 @@ const MedSeniorPage = () => {
                 Cuidado especial com a <span className="text-emerald-600">MedSênior</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                O MedSênior é um plano de saúde desenvolvido especialmente para pessoas acima de 59 anos, com cobertura completa e foco no cuidado integral da melhor idade.
+                O MedSênior é um plano de saúde desenvolvido especialmente para pessoas acima de 49 anos, com cobertura completa e foco no cuidado integral da melhor idade.
               </p>
               
               <ul className="space-y-4 mb-8">
@@ -81,9 +81,9 @@ const MedSeniorPage = () => {
         operadora="MedSênior"
         cor="#059669"
         tabela={[
-          {idade: '44 a 48', enf: 'R$ 855,78', apto: 'R$ 1.198,10'},
-          {idade: '49 a 53', enf: 'R$ 1.026,93', apto: 'R$ 1.437,70'},
-          {idade: '54 a 58', enf: 'R$ 1.232,32', apto: 'R$ 1.725,25'}
+          {idade: '49 a 53', enf: 'R$ 855,78', apto: 'R$ 1.198,10'},
+          {idade: '54 a 58', enf: 'R$ 1.026,93', apto: 'R$ 1.437,70'},
+          {idade: '59 ou +', enf: 'R$ 1.232,32', apto: 'R$ 1.725,25'}
         ]}
         hospitais={[
           {nome: 'Hospital Santa Paula', regiao: 'Vila Clementino, SP', desc: 'Referência para idosos com UTI e cardiologia.'},
