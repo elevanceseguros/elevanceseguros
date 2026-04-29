@@ -33,7 +33,7 @@ const MedSeniorPage = () => {
           transition={{ duration: 0.5 }}
           src="/logos/medsenior.png" 
           alt="Logo MedSênior" 
-          className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}} loading="lazy" decoding="async"
+          className="max-h-24 w-auto object-contain mx-auto" style={{maxWidth:"220px"}} loading="lazy" decoding="async"
         />
       </div>
 
