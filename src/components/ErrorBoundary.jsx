@@ -15,6 +15,13 @@ class ErrorBoundary extends React.Component {
     console.error('ErrorBoundary capturou:', error, info);
   }
 
+  // Reseta o erro quando a rota muda
+  componentDidUpdate(prevProps) {
+    if (this.state.hasError && prevProps.location !== this.props.location) {
+      this.setState({ hasError: false, error: null });
+    }
+  }
+
   render() {
     if (this.state.hasError) {
       return (
@@ -23,7 +30,7 @@ class ErrorBoundary extends React.Component {
             <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <span className="text-3xl">😕</span>
             </div>
-            <h1 className="text-2xl font-black text-[#114d8e] italic mb-3">Algo deu errado</h1>
+            <h2 className="text-2xl font-black text-[#114d8e] italic mb-3">Algo deu errado</h2>
             <p className="text-slate-500 font-medium text-sm mb-8 leading-relaxed">
               Ocorreu um erro inesperado nesta página. Tente recarregar ou volte para o início.
             </p>
@@ -35,6 +42,7 @@ class ErrorBoundary extends React.Component {
                 <RefreshCw size={14} /> Recarregar
               </button>
               <a href="/"
+                onClick={() => this.setState({ hasError: false, error: null })}
                 className="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-[#114d8e] px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-widest transition-all"
               >
                 <Home size={14} /> Início
@@ -53,4 +61,10 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-export default ErrorBoundary;
+// Wrapper que passa a location para o ErrorBoundary resetar ao navegar
+import { useLocation } from 'react-router-dom';
+
+export default function ErrorBoundaryWrapper({ children }) {
+  const location = useLocation();
+  return <ErrorBoundary location={location}>{children}</ErrorBoundary>;
+}
