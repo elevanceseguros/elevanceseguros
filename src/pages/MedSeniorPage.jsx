@@ -50,7 +50,7 @@ const MedSeniorPage = () => {
                 <ShieldCheck className="w-4 h-4" /> Especialista na melhor idade
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Cuidado especial com a, <br/><span className="text-emerald-600">MedSênior</span>
+                Cuidado especial com a <span className="text-emerald-600">MedSênior</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 O MedSênior é um plano de saúde desenvolvido especialmente para pessoas acima de 59 anos, com cobertura completa e foco no cuidado integral da melhor idade.

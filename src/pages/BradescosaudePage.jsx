@@ -50,7 +50,7 @@ const BradescosaudePage = () => {
                 <ShieldCheck className="w-4 h-4" /> Um dos maiores do Brasil
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Saúde garantida com o, <br/><span className="text-red-600">Bradesco Saúde</span>
+                Saúde garantida com o <span className="text-red-600">Bradesco Saúde</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 O Bradesco Saúde é um dos maiores e mais tradicionais planos de saúde do Brasil. Com ampla rede credenciada em São Paulo e em todo o país, oferece cobertura completa para você e sua família.

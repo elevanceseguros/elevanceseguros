@@ -50,7 +50,7 @@ const SulamericaPage = () => {
                 <ShieldCheck className="w-4 h-4" /> Mais de 120 anos de história
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Tradição e cuidado com a, <br/><span className="text-orange-600">SulAmérica</span>
+                Tradição e cuidado com a <span className="text-orange-600">SulAmérica</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 A SulAmérica é uma das seguradoras mais tradicionais do Brasil, com mais de 120 anos de história. Seus planos de saúde oferecem ampla rede credenciada e cobertura completa em São Paulo.

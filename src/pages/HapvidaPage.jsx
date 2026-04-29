@@ -50,7 +50,7 @@ const HapvidaPage = () => {
                 <ShieldCheck className="w-4 h-4" /> Rede própria integrada
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Saúde acessível com a, <br/><span className="text-orange-600">Hapvida</span>
+                Saúde acessível com a <span className="text-orange-600">Hapvida</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 A Hapvida NotreDame Intermédica é um dos maiores grupos de saúde do Brasil, com rede própria de hospitais, clínicas e laboratórios. Planos acessíveis com cobertura completa.

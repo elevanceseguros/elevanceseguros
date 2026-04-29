@@ -50,7 +50,7 @@ const AmilPage = () => {
                 <ShieldCheck className="w-4 h-4" /> Ampla rede credenciada
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Saúde completa com a, <br/><span className="text-indigo-600">Amil</span>
+                Saúde completa com a <span className="text-indigo-600">Amil</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 A Amil é uma das maiores operadoras de saúde do Brasil, com ampla rede credenciada em São Paulo e em todo o país. Planos individuais, familiares e empresariais com cobertura completa.

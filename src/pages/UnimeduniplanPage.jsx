@@ -50,7 +50,7 @@ const UnimeduniplanPage = () => {
                 <ShieldCheck className="w-4 h-4" /> Cooperativa médica líder
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Saúde de qualidade com a, <br/><span className="text-green-600">Unimed</span>
+                Saúde de qualidade com a <span className="text-green-600">Unimed</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 A Unimed é a maior cooperativa médica do mundo, presente em todo o Brasil. Com planos para pessoa física, família e empresas, oferece ampla rede de médicos cooperados e hospitais de referência.

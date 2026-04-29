@@ -56,7 +56,7 @@ const AlicePage = () => {
                 <Smartphone className="w-4 h-4" /> Saúde na palma da mão
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Mais que um plano, <br/><span className="text-fuchsia-600">Alice Saúde</span>
+                Mais que um plano <span className="text-fuchsia-600">Alice Saúde</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 A Alice reinventou o cuidado com a saúde. Com tecnologia e um Time de Saúde sempre disponível, você tem acesso aos melhores hospitais e laboratórios sem dor de cabeça.

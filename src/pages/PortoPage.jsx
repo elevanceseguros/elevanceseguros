@@ -50,7 +50,7 @@ const PortoPage = () => {
                 <ShieldCheck className="w-4 h-4" /> Tradição e confiança
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Proteja sua saúde com a, <br/><span className="text-blue-600">Porto Saúde</span>
+                Proteja sua saúde com a <span className="text-blue-600">Porto Saúde</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 A Porto Saúde traz a tradição e solidez da Porto Seguro para o setor de saúde. Planos com ampla rede credenciada, cobertura completa e atendimento de excelência.
