@@ -83,19 +83,6 @@ const AlicePage = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Como a Alice funciona?</h2>
-          <div className="prose prose-lg text-slate-600">
-            <p className="mb-4">
-              Alice não se define apenas como um plano de saúde, mas como uma gestora de saúde. Todo membro tem um "Time de Saúde" (médico, enfermeiro, nutricionista) acessível diretamente pelo aplicativo.
-            </p>
-            <p className="mb-4">
-              Seu modelo é focado em desfechos clínicos: o objetivo é deixar você mais saudável. A rede credenciada é enxuta, porém de altíssima qualidade, contando com os hospitais e laboratórios mais renomados do país (como Albert Einstein e Fleury, dependendo do plano).
-            </p>
-          </div>
-        </div>
-      </section>
       <OperadoraPlanoSection
         operadora="Alice"
         cor="#a21caf"
@@ -117,6 +104,20 @@ const AlicePage = () => {
           texto: "A Alice tem um app incrível e acesso ao Einstein. O Rodrigo me explicou tudo sobre o plano PME e eu adorei!"
         }}
       />
+
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Como a Alice funciona?</h2>
+          <div className="prose prose-lg text-slate-600">
+            <p className="mb-4">
+              Alice não se define apenas como um plano de saúde, mas como uma gestora de saúde. Todo membro tem um "Time de Saúde" (médico, enfermeiro, nutricionista) acessível diretamente pelo aplicativo.
+            </p>
+            <p className="mb-4">
+              Seu modelo é focado em desfechos clínicos: o objetivo é deixar você mais saudável. A rede credenciada é enxuta, porém de altíssima qualidade, contando com os hospitais e laboratórios mais renomados do país (como Albert Einstein e Fleury, dependendo do plano).
+            </p>
+          </div>
+        </div>
+      </section>
 
 
       <FloatingWhatsApp />

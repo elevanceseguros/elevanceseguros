@@ -77,24 +77,6 @@ const AmilPage = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Como funciona o plano Amil?</h2>
-          <div className="prose prose-lg text-slate-600">
-            <p className="mb-4">A Amil oferece planos de saúde com ampla cobertura para consultas, exames, internações e cirurgias. Com mais de 40 anos de mercado, é referência em atendimento médico de qualidade em todo o Brasil.</p>
-            <p className="mb-4">
-              Na Elevance Seguros, nosso corretor especializado analisa seu perfil e encontra a melhor opção de plano Amil para você e sua família, com o melhor custo-benefício do mercado.
-            </p>
-          </div>
-          <div className="mt-10">
-            <a href="https://wa.me/5511920144864?text=Olá Rodrigo, quero cotar um plano Amil"
-              target="_blank" rel="noreferrer"
-              className="inline-flex items-center gap-3 bg-[#114d8e] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
-              <MessageCircle size={16} /> Cotar via WhatsApp <ArrowRight size={16} />
-            </a>
-          </div>
-        </div>
-      </section>
       <OperadoraPlanoSection
         operadora="Amil"
         cor="#4338ca"
@@ -116,6 +98,25 @@ const AmilPage = () => {
           texto: "O Rodrigo me ajudou a encontrar o plano Amil ideal para minha família em menos de um dia. Atendimento incrível e sem burocracia!"
         }}
       />
+
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Como funciona o plano Amil?</h2>
+          <div className="prose prose-lg text-slate-600">
+            <p className="mb-4">A Amil oferece planos de saúde com ampla cobertura para consultas, exames, internações e cirurgias. Com mais de 40 anos de mercado, é referência em atendimento médico de qualidade em todo o Brasil.</p>
+            <p className="mb-4">
+              Na Elevance Seguros, nosso corretor especializado analisa seu perfil e encontra a melhor opção de plano Amil para você e sua família, com o melhor custo-benefício do mercado.
+            </p>
+          </div>
+          <div className="mt-10">
+            <a href="https://wa.me/5511920144864?text=Olá Rodrigo, quero cotar um plano Amil"
+              target="_blank" rel="noreferrer"
+              className="inline-flex items-center gap-3 bg-[#114d8e] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
+              <MessageCircle size={16} /> Cotar via WhatsApp <ArrowRight size={16} />
+            </a>
+          </div>
+        </div>
+      </section>
 
 
       <FloatingWhatsApp />

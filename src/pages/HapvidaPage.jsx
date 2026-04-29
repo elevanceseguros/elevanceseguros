@@ -77,24 +77,6 @@ const HapvidaPage = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Como funciona o plano Hapvida?</h2>
-          <div className="prose prose-lg text-slate-600">
-            <p className="mb-4">A Hapvida possui rede própria integrada de hospitais, UPAs, clínicas e laboratórios, o que garante mais controle de qualidade e planos com custo-benefício competitivo.</p>
-            <p className="mb-4">
-              Na Elevance Seguros, nosso corretor especializado analisa seu perfil e encontra a melhor opção de plano Hapvida para você e sua família, com o melhor custo-benefício do mercado.
-            </p>
-          </div>
-          <div className="mt-10">
-            <a href="https://wa.me/5511920144864?text=Olá Rodrigo, quero cotar um plano Hapvida"
-              target="_blank" rel="noreferrer"
-              className="inline-flex items-center gap-3 bg-[#114d8e] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
-              <MessageCircle size={16} /> Cotar via WhatsApp <ArrowRight size={16} />
-            </a>
-          </div>
-        </div>
-      </section>
       <OperadoraPlanoSection
         operadora="Hapvida"
         cor="#f97316"
@@ -116,6 +98,25 @@ const HapvidaPage = () => {
           texto: "Melhor custo-benefício que encontrei. O Rodrigo me explicou como funciona a rede própria e fechei com tranquilidade."
         }}
       />
+
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Como funciona o plano Hapvida?</h2>
+          <div className="prose prose-lg text-slate-600">
+            <p className="mb-4">A Hapvida possui rede própria integrada de hospitais, UPAs, clínicas e laboratórios, o que garante mais controle de qualidade e planos com custo-benefício competitivo.</p>
+            <p className="mb-4">
+              Na Elevance Seguros, nosso corretor especializado analisa seu perfil e encontra a melhor opção de plano Hapvida para você e sua família, com o melhor custo-benefício do mercado.
+            </p>
+          </div>
+          <div className="mt-10">
+            <a href="https://wa.me/5511920144864?text=Olá Rodrigo, quero cotar um plano Hapvida"
+              target="_blank" rel="noreferrer"
+              className="inline-flex items-center gap-3 bg-[#114d8e] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
+              <MessageCircle size={16} /> Cotar via WhatsApp <ArrowRight size={16} />
+            </a>
+          </div>
+        </div>
+      </section>
 
 
       <FloatingWhatsApp />

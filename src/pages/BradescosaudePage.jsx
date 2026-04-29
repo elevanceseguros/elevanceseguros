@@ -77,24 +77,6 @@ const BradescosaudePage = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Como funciona o plano Bradesco Saúde?</h2>
-          <div className="prose prose-lg text-slate-600">
-            <p className="mb-4">O Bradesco Saúde oferece planos com cobertura completa para consultas, exames, internações e cirurgias, com a solidez e tradição do Grupo Bradesco.</p>
-            <p className="mb-4">
-              Na Elevance Seguros, nosso corretor especializado analisa seu perfil e encontra a melhor opção de plano Bradesco Saúde para você e sua família, com o melhor custo-benefício do mercado.
-            </p>
-          </div>
-          <div className="mt-10">
-            <a href="https://wa.me/5511920144864?text=Olá Rodrigo, quero cotar um plano Bradesco Saúde"
-              target="_blank" rel="noreferrer"
-              className="inline-flex items-center gap-3 bg-[#114d8e] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
-              <MessageCircle size={16} /> Cotar via WhatsApp <ArrowRight size={16} />
-            </a>
-          </div>
-        </div>
-      </section>
       <OperadoraPlanoSection
         operadora="Bradesco Saúde"
         cor="#dc2626"
@@ -116,6 +98,25 @@ const BradescosaudePage = () => {
           texto: "Finalmente consegui um plano com o Hospital Sírio-Libanês dentro do orçamento. O Rodrigo fez a cotação e fechamos no mesmo dia!"
         }}
       />
+
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Como funciona o plano Bradesco Saúde?</h2>
+          <div className="prose prose-lg text-slate-600">
+            <p className="mb-4">O Bradesco Saúde oferece planos com cobertura completa para consultas, exames, internações e cirurgias, com a solidez e tradição do Grupo Bradesco.</p>
+            <p className="mb-4">
+              Na Elevance Seguros, nosso corretor especializado analisa seu perfil e encontra a melhor opção de plano Bradesco Saúde para você e sua família, com o melhor custo-benefício do mercado.
+            </p>
+          </div>
+          <div className="mt-10">
+            <a href="https://wa.me/5511920144864?text=Olá Rodrigo, quero cotar um plano Bradesco Saúde"
+              target="_blank" rel="noreferrer"
+              className="inline-flex items-center gap-3 bg-[#114d8e] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
+              <MessageCircle size={16} /> Cotar via WhatsApp <ArrowRight size={16} />
+            </a>
+          </div>
+        </div>
+      </section>
 
 
       <FloatingWhatsApp />

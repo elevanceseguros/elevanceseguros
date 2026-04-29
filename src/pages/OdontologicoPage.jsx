@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Smile, ShieldCheck, Zap, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, Heart } from 'lucide-react';
 import CorretorHero from '@/components/CorretorHero';
+import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
 const MEU_NUMERO = "5511920144864";
 
@@ -125,6 +126,28 @@ export default function OdontologicoPage() {
           </div>
         </div>
       </section>
+
+      <OperadoraPlanoSection
+        operadora="Plano Odontológico SulAmérica"
+        cor="#0ea5e9"
+        tabela={[
+          {idade: 'Individual', enf: 'R$ 49,90', apto: 'R$ 49,90'},
+          {idade: 'Familiar (2 vidas)', enf: 'R$ 89,80', apto: 'R$ 89,80'},
+          {idade: 'Familiar (3+ vidas)', enf: 'R$ 42,90/vida', apto: 'R$ 42,90/vida'},
+        ]}
+        hospitais={[
+          {nome: 'OdontoCompany', regiao: 'Todo SP', desc: 'Maior rede odontológica do Brasil com mais de 800 clínicas em SP.'},
+          {nome: 'OdontoPrev', regiao: 'Todo SP', desc: 'Rede credenciada com clínicas em todos os bairros de SP.'},
+          {nome: 'Sorridents', regiao: 'Grande SP', desc: 'Franquia odontológica com alta capilaridade na região.'},
+          {nome: 'Clínicas Privadas Credenciadas', regiao: 'São Paulo, SP', desc: 'Ampla rede de dentistas particulares conveniados.'},
+        ]}
+        depoimento={{
+          inicial: 'J',
+          nome: 'Juliana',
+          local: 'Mooca, SP',
+          texto: 'Finalmente tenho plano odontológico com preço justo. O Rodrigo me ajudou a escolher o SulAmérica Dental e cobre tudo que preciso!'
+        }}
+      />
 
       {/* CTA */}
       <section className="py-16 bg-slate-50">
