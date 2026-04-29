@@ -1,4 +1,5 @@
 import CorretorHero from '@/components/CorretorHero';
+import { Helmet } from 'react-helmet-async';
 import React from 'react';
 import LeadFormSincero from '@/components/LeadFormSincero';
 import { ShieldCheck, Clock, MapPin, Users, CheckCircle2, Building2, Table, Activity, ArrowRight } from 'lucide-react';
@@ -54,6 +55,12 @@ const SagradaFamiliaHomePage = () => {
   };
 
   return (
+    <>
+    <Helmet>
+      <title>Plano de Saúde Sagrada Família | Tabela 2026 - Elevance Seguros</title>
+      <meta name="description" content="Plano de Saúde Sagrada Família em São Paulo. Tabela de preços 2026, rede própria de hospitais e cotação gratuita via WhatsApp." />
+      <link rel="canonical" href="https://elevanceseguros.com/sagrada-familia" />
+    </Helmet>
     <div className="min-h-screen bg-slate-50 font-sans">
       <nav className="bg-white border-b sticky top-0 z-50 py-3 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
@@ -76,7 +83,7 @@ const SagradaFamiliaHomePage = () => {
             Tabela Atualizada 2026
           </div>
           <h1 className="text-4xl md:text-6xl font-black text-[#114d8e] mb-6 leading-tight">
-            Sagrada Família Saúde
+            Plano de Saúde <span className="text-blue-600">Sagrada Família</span>
           </h1>
           <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-medium">
             Atendimento completo em São Paulo e Região. O plano que cuida da sua família com preço direto da Elevance.
@@ -175,6 +182,7 @@ const SagradaFamiliaHomePage = () => {
          </p>
       </footer>
     </div>
+    </>
   );
 };
 
