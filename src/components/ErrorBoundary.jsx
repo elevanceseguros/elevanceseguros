@@ -4,53 +4,44 @@ import { MessageCircle, RefreshCw, Home } from 'lucide-react';
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { hasError: false, error: null };
+    this.state = { hasError: false };
   }
 
-  static getDerivedStateFromError(error) {
-    return { hasError: true, error };
+  static getDerivedStateFromError() {
+    return { hasError: true };
   }
 
   componentDidCatch(error, info) {
-    console.error('ErrorBoundary capturou:', error, info);
+    console.error('ErrorBoundary:', error, info);
   }
 
-  // Reseta o erro quando a rota muda
   componentDidUpdate(prevProps) {
-    if (this.state.hasError && prevProps.location !== this.props.location) {
-      this.setState({ hasError: false, error: null });
+    if (this.state.hasError && prevProps.resetKey !== this.props.resetKey) {
+      this.setState({ hasError: false });
     }
   }
 
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white flex items-center justify-center px-4">
-          <div className="text-center max-w-md">
-            <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <span className="text-3xl">😕</span>
-            </div>
-            <h2 className="text-2xl font-black text-[#114d8e] italic mb-3">Algo deu errado</h2>
-            <p className="text-slate-500 font-medium text-sm mb-8 leading-relaxed">
-              Ocorreu um erro inesperado nesta página. Tente recarregar ou volte para o início.
+        <div style={{minHeight:'100vh',display:'flex',alignItems:'center',justifyContent:'center',padding:'16px',background:'#f8fafc'}}>
+          <div style={{textAlign:'center',maxWidth:'400px'}}>
+            <div style={{fontSize:'48px',marginBottom:'16px'}}>😕</div>
+            <h2 style={{fontSize:'24px',fontWeight:'900',color:'#114d8e',marginBottom:'12px'}}>Algo deu errado</h2>
+            <p style={{color:'#64748b',marginBottom:'24px',fontSize:'14px'}}>
+              Ocorreu um erro nesta página. Tente recarregar ou volte ao início.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <button
-                onClick={() => { this.setState({ hasError: false, error: null }); window.location.reload(); }}
-                className="flex items-center justify-center gap-2 bg-[#114d8e] hover:bg-blue-700 text-white px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-widest transition-all"
-              >
-                <RefreshCw size={14} /> Recarregar
+            <div style={{display:'flex',flexDirection:'column',gap:'12px'}}>
+              <button onClick={() => window.location.reload()}
+                style={{background:'#114d8e',color:'white',padding:'12px 24px',borderRadius:'16px',border:'none',fontWeight:'900',cursor:'pointer',fontSize:'12px',textTransform:'uppercase'}}>
+                Recarregar
               </button>
-              <a href="/"
-                onClick={() => this.setState({ hasError: false, error: null })}
-                className="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-[#114d8e] px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-widest transition-all"
-              >
-                <Home size={14} /> Início
+              <a href="/" style={{background:'#f1f5f9',color:'#114d8e',padding:'12px 24px',borderRadius:'16px',fontWeight:'900',fontSize:'12px',textTransform:'uppercase',textDecoration:'none'}}>
+                Início
               </a>
               <a href="https://wa.me/5511920144864" target="_blank" rel="noreferrer"
-                className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-widest transition-all"
-              >
-                <MessageCircle size={14} /> WhatsApp
+                style={{background:'#22c55e',color:'white',padding:'12px 24px',borderRadius:'16px',fontWeight:'900',fontSize:'12px',textTransform:'uppercase',textDecoration:'none'}}>
+                WhatsApp
               </a>
             </div>
           </div>
@@ -61,10 +52,4 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-// Wrapper que passa a location para o ErrorBoundary resetar ao navegar
-import { useLocation } from 'react-router-dom';
-
-export default function ErrorBoundaryWrapper({ children }) {
-  const location = useLocation();
-  return <ErrorBoundary location={location}>{children}</ErrorBoundary>;
-}
+export default ErrorBoundary;
