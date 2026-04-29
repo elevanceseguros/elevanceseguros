@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
 import { MessageCircle, Zap, PartyPopper } from 'lucide-react';
 
-const MEU_NUMERO = "5511920144864";
+const WEBHOOK_URL = "https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead";
 
 const OperatorQuoteForm = ({ operatorName }) => {
   const [sent, setSent] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const nome = formData.get('nome');
-    const whatsappLead = formData.get('whatsapp');
-    const mensagem = encodeURIComponent(
-      `Olá Rodrigo! Me chamo ${nome}. Vi o site da Elevance Seguros e gostaria de cotar um plano ${operatorName}. Meu WhatsApp é: ${whatsappLead}`
-    );
-    window.open(`https://wa.me/${MEU_NUMERO}?text=${mensagem}`, '_blank');
+    const whatsapp = (formData.get('whatsapp') || '').replace(/[^0-9]/g, '');
+    try {
+      await fetch(WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nome, whatsapp, produto: `Plano de Saúde ${operatorName}`, origem: window.location.pathname }),
+      });
+    } catch (_) {}
     setSent(true);
   };
 
@@ -38,10 +41,10 @@ const OperatorQuoteForm = ({ operatorName }) => {
               type="submit"
               className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2"
             >
-              SOLICITAR VIA WHATSAPP <MessageCircle size={16} />
+              RECEBER CONTATO GRATUITO <MessageCircle size={16} />
             </button>
             <p className="text-[9px] text-center text-slate-400 font-bold uppercase italic">
-              Você será direcionado para o WhatsApp do Rodrigo
+              Entraremos em contato no seu WhatsApp em instantes
             </p>
           </form>
         </>
@@ -51,10 +54,9 @@ const OperatorQuoteForm = ({ operatorName }) => {
             <PartyPopper size={40} />
           </div>
           <div className="space-y-2">
-            <h3 className="text-2xl font-black text-[#114d8e] italic">Encaminhando...</h3>
+            <h3 className="text-2xl font-black text-[#114d8e] italic">Solicitação Enviada!</h3>
             <p className="text-slate-500 font-medium text-sm leading-relaxed">
-              Estamos abrindo o WhatsApp. Se não abrir automaticamente,{' '}
-              <a href={`https://wa.me/${MEU_NUMERO}`} className="text-blue-600 font-bold underline">clique aqui</a>.
+              Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊
             </p>
           </div>
         </div>
