@@ -23,13 +23,18 @@ export default function ConsorciосPage() {
   const [sent, setSent] = useState(false);
   const [tipoSelecionado, setTipoSelecionado] = useState("Imóvel");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const nome = formData.get('nome');
-    const whatsapp = formData.get('whatsapp');
-    const mensagem = encodeURIComponent(`Olá Rodrigo! Me chamo ${nome}. Vi o site da Elevance Seguros e gostaria de simular um Consórcio de ${tipoSelecionado}. Meu WhatsApp é: ${whatsapp}`);
-    window.open(`https://wa.me/${MEU_NUMERO}?text=${mensagem}`, '_blank');
+    const whatsapp = (formData.get('whatsapp') || '').replace(/[^0-9]/g, '');
+    try {
+      await fetch('https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nome, whatsapp, produto: `Consórcio de ${tipoSelecionado}`, origem: window.location.pathname }),
+      });
+    } catch (_) {}
     setSent(true);
   };
 

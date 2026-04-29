@@ -12,19 +12,18 @@ const HomePage = () => {
   const fotoHero = "/preview.webp";
   const meuNumero = "5511920144864";
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const nome = formData.get('nome');
-    const whatsappLead = formData.get('whatsapp');
-
-    // Prepara a mensagem para o seu WhatsApp
-    const mensagem = encodeURIComponent(`Olá Rodrigo! Me chamo ${nome}. Vi o site da Elevance Seguros e gostaria de uma consultoria. Meu WhatsApp é: ${whatsappLead}`);
-    
-    // Abre o WhatsApp em uma nova aba
-    window.open(`https://wa.me/${meuNumero}?text=${mensagem}`, '_blank');
-
-    // Transforma o formulário em sucesso na tela
+    const whatsapp = (formData.get('whatsapp') || '').replace(/[^0-9]/g, '');
+    try {
+      await fetch('https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nome, whatsapp, produto: 'Consultoria Geral', origem: window.location.pathname }),
+      });
+    } catch (_) {}
     setSent(true);
   };
 
