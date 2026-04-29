@@ -55,7 +55,7 @@ const BusinessInsurancePage = () => {
             <p className="text-gray-600">Proteção contra incêndio, roubo, danos elétricos e responsabilidade civil.</p>
           </div>
 
-          <LeadFormSincero />
+          <LeadFormSincero produto="Seguro Empresarial" />
 
           <div className="grid md:grid-cols-3 gap-8 mt-20">
             {[
@@ -73,7 +73,7 @@ const BusinessInsurancePage = () => {
         </div>
       </section>
 
-      <ContactForm />
+      <ContactForm produto="Seguro Empresarial" />
     </>
   );
 };

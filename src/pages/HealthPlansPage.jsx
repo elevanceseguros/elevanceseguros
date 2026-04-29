@@ -28,11 +28,11 @@ const HealthPlansPage = () => {
       <Hero customTitle="Planos de Saúde" />
       <Breadcrumb items={[{ name: 'Planos de Saúde', path: '/health-plans' }]} />
       
-      <LeadFormSincero /> {/* Componente novo aqui */}
+      <LeadFormSincero produto="Planos de Saude" />
       
       <HealthPlans />
 
-      <ContactForm />
+      <ContactForm produto="Planos de Saude" />
     </>
   );
 };

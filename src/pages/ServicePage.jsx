@@ -97,7 +97,7 @@ const ServicePage = ({ type }) => {
       {content}
       
       {/* ContactForm is displayed at the bottom of all service pages */}
-      <ContactForm />
+      <ContactForm produto="Seguro Auto" />
     </>
   );
 };

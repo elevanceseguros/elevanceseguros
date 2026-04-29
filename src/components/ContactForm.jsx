@@ -4,7 +4,7 @@ import { Send, CheckCircle, MessageCircle } from 'lucide-react';
 
 const WEBHOOK_URL = "https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead";
 
-const ContactForm = () => {
+const ContactForm = ({ produto = "Contato Geral" }) => {
   const [nome, setNome] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
   const [enviado, setEnviado] = useState(false);
@@ -34,8 +34,8 @@ const ContactForm = () => {
         body: JSON.stringify({ 
           nome: nome.trim(), 
           whatsapp: nums, 
-          origem: "elevanceseguros.com",
-          produto: "Contacto Geral / Rodapé" 
+          origem: window.location.pathname,
+          produto 
         }),
       });
       setEnviado(true);

@@ -134,7 +134,7 @@ const GenericHealthPlanPage = () => {
       <HealthPlans />
 
       {/* Contact Form Section */}
-      <ContactForm />
+      <ContactForm produto="Plano de Saude" />
 
       <FloatingWhatsApp />
     </>

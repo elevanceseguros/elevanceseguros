@@ -25,11 +25,11 @@ const OnlineQuotePage = () => {
             <p className="text-slate-600 mt-2">Informe seus dados básicos e um especialista entrará em contato.</p>
           </div>
           
-          <LeadFormSincero />
+          <LeadFormSincero produto="Cotacao Online" />
         </div>
       </div>
 
-      <ContactForm />
+      <ContactForm produto="Cotacao Online" />
     </>
   );
 };

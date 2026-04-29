@@ -4,7 +4,7 @@ import { ChevronRight, CheckCircle, Loader2 } from 'lucide-react';
 
 const WEBHOOK_URL = "https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead";
 
-const LeadFormSincero = () => {
+const LeadFormSincero = ({ produto = "Cotação Geral" }) => {
   const [nome, setNome] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
   const [enviado, setEnviado] = useState(false);
@@ -28,7 +28,7 @@ const LeadFormSincero = () => {
           nome: nome.trim(), 
           whatsapp: whatsapp.replace(/\D/g, ""), 
           origem: window.location.pathname,
-          produto: "Lead Site Principal" 
+          produto
         }),
       });
       setEnviado(true);
