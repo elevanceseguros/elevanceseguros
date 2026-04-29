@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ShieldCheck, Zap, Car, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, Users, Table } from 'lucide-react';
+import { ShieldCheck, Zap, Car, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, Users, LayoutList } from 'lucide-react';
 import CorretorHero from '@/components/CorretorHero';
 
 const MEU_NUMERO = "5511920144864";
@@ -123,7 +123,7 @@ export default function ProtecaoVeicularPage() {
             {/* Tabela */}
             <div className="bg-white rounded-[40px] shadow-xl overflow-hidden border border-slate-100">
               <div className="bg-[#114d8e] p-6 text-white flex items-center gap-3">
-                <Table className="w-5 h-5 opacity-80" />
+                <LayoutList className="w-5 h-5 opacity-80" />
                 <div>
                   <h2 className="text-lg font-black uppercase tracking-tight">Valores Mensais APVS</h2>
                   <p className="text-white/70 text-xs mt-0.5">Rastreador incluso · Referência SP 2026</p>
