@@ -525,7 +525,7 @@ export const postsData = [
     id: 9,
     slug: "seguro-residencial-o-que-cobre-e-por-que-contratar",
     title: "Seguro Residencial: O que Cobre e Por que Contratar em 2026",
-    date: "28 Abr, 2026",
+    date: "01 Mai, 2026",
     category: "Seguro Residencial",
     readTime: "5 min",
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
