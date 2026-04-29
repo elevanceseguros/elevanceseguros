@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table, Activity, Users, ArrowRight, Star } from 'lucide-react';
 
-const OperadoraPlanoSection = ({ tabela, hospitais, depoimento, cor, operadora }) => {
+const OperadoraPlanoSection = ({ tabela, hospitais, depoimento, cor, operadora, labelEnf = "Enfermaria", labelApto = "Apartamento" }) => {
   const handleWhatsApp = (msg) => {
     window.open(`https://wa.me/5511920144864?text=${encodeURIComponent(msg)}`, '_blank');
   };
@@ -28,8 +28,8 @@ const OperadoraPlanoSection = ({ tabela, hospitais, depoimento, cor, operadora }
                   <thead>
                     <tr className="border-b-2 border-slate-50 text-left">
                       <th className="py-3 font-bold text-slate-400 text-xs uppercase">Faixa</th>
-                      <th className="py-3 font-bold text-slate-600 text-xs uppercase">Enfermaria</th>
-                      <th className="py-3 font-bold text-xs uppercase" style={{ color: cor }}>Apartamento</th>
+                      <th className="py-3 font-bold text-slate-600 text-xs uppercase">{labelEnf}</th>
+                      <th className="py-3 font-bold text-xs uppercase" style={{ color: cor }}>{labelApto}</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-50">

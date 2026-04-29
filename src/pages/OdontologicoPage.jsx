@@ -130,10 +130,12 @@ export default function OdontologicoPage() {
       <OperadoraPlanoSection
         operadora="Plano Odontológico SulAmérica"
         cor="#0ea5e9"
+        labelEnf="Plano Básico"
+        labelApto="Plano Completo"
         tabela={[
-          {idade: 'Individual', enf: 'R$ 49,90', apto: 'R$ 49,90'},
-          {idade: 'Familiar (2 vidas)', enf: 'R$ 89,80', apto: 'R$ 89,80'},
-          {idade: 'Familiar (3+ vidas)', enf: 'R$ 42,90/vida', apto: 'R$ 42,90/vida'},
+          {idade: 'Individual', enf: 'R$ 49,90', apto: 'R$ 79,90'},
+          {idade: 'Familiar (2 vidas)', enf: 'R$ 89,80', apto: 'R$ 143,80'},
+          {idade: 'Familiar (3+ vidas)', enf: 'R$ 42,90/vida', apto: 'R$ 68,90/vida'},
         ]}
         hospitais={[
           {nome: 'OdontoCompany', regiao: 'Todo SP', desc: 'Maior rede odontológica do Brasil com mais de 800 clínicas em SP.'},
