@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Home, ShieldCheck, Zap, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, Flame } from 'lucide-react';
+import { Home, ShieldCheck, Zap, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, Flame , LayoutList} from 'lucide-react';
 import CorretorHero from '@/components/CorretorHero';
 
 const MEU_NUMERO = "5511920144864";
@@ -124,6 +124,82 @@ export default function SeguroResidencialPage() {
         </div>
       </section>
 
+      {/* Tabela + Depoimento */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+            {/* Tabela de valores */}
+            <div className="bg-white rounded-[40px] shadow-xl overflow-hidden border border-slate-100">
+              <div className="bg-[#114d8e] p-6 text-white flex items-center gap-3">
+                <LayoutList className="w-5 h-5 opacity-80" />
+                <div>
+                  <h2 className="text-lg font-black uppercase tracking-tight">Valores Referenciais</h2>
+                  <p className="text-white/70 text-xs mt-0.5">SP 2026 · Varia por cobertura e imóvel</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b-2 border-slate-50 text-left">
+                      <th className="py-3 font-bold text-slate-400 text-xs uppercase">Perfil do Imóvel</th>
+                      <th className="py-3 font-bold text-slate-600 text-xs uppercase">Cobertura</th>
+                      <th className="py-3 font-bold text-[#114d8e] text-xs uppercase">Mensalidade aprox.</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-50">
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">Apartamento até R$ 300k</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">Básica</td>
+                        <td className="py-3 font-black text-sm text-[#114d8e]">R$ 30 – R$ 50</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">Apartamento até R$ 600k</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">Completa</td>
+                        <td className="py-3 font-black text-sm text-[#114d8e]">R$ 65 – R$ 95</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">Casa até R$ 400k</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">Básica</td>
+                        <td className="py-3 font-black text-sm text-[#114d8e]">R$ 45 – R$ 70</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">Casa até R$ 800k</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">Completa</td>
+                        <td className="py-3 font-black text-sm text-[#114d8e]">R$ 90 – R$ 140</td>
+                      </tr>
+                  </tbody>
+                </table>
+                <p className="text-[10px] text-slate-400 italic mt-3">*Valores referenciais. Variam por seguradora, localização e coberturas escolhidas.</p>
+                <a
+                  href={`https://wa.me/5511920144864?text=Ol%C3%A1+Rodrigo%2C+quero+cotar+Seguro+Residencial`}
+                  target="_blank" rel="noreferrer"
+                  className="w-full mt-5 bg-[#114d8e] hover:bg-blue-700 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2">
+                  Cotar Seguro Residencial <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Depoimento */}
+            <div className="bg-white p-6 rounded-[30px] shadow-xl border border-slate-100 flex flex-col justify-center">
+              <div className="flex gap-0.5 mb-4">
+                {[...Array(5)].map((_, i) => <Star key={i} size={14} className="text-yellow-400 fill-yellow-400" />)}
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed mb-5 italic font-medium">&ldquo;Tive um problema elétrico em casa e o seguro cobriu tudo. O Rodrigo me ajudou a escolher a cobertura certa e o processo de sinistro foi super tranquilo.&rdquo;</p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-2xl bg-[#114d8e] flex items-center justify-center text-white font-black text-sm shrink-0">
+                  A
+                </div>
+                <div>
+                  <div className="font-black text-[#114d8e] text-sm">Ana Paula</div>
+                  <div className="text-slate-400 text-xs font-medium">São Paulo, SP · Seguro Residencial</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
       <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="bg-[#114d8e] rounded-[50px] p-12 text-center">

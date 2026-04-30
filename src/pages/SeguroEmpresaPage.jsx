@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Building2, ShieldCheck, Zap, Users, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Briefcase, Star } from 'lucide-react';
+import { Building2, ShieldCheck, Zap, Users, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Briefcase, Star , LayoutList} from 'lucide-react';
 import CorretorHero from '@/components/CorretorHero';
 
 const MEU_NUMERO = "5511920144864";
@@ -118,6 +118,82 @@ export default function SeguroEmpresaPage() {
         </div>
       </section>
 
+      {/* Tabela + Depoimento */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+            {/* Tabela de valores */}
+            <div className="bg-white rounded-[40px] shadow-xl overflow-hidden border border-slate-100">
+              <div className="bg-[#114d8e] p-6 text-white flex items-center gap-3">
+                <LayoutList className="w-5 h-5 opacity-80" />
+                <div>
+                  <h2 className="text-lg font-black uppercase tracking-tight">Soluções por Porte</h2>
+                  <p className="text-white/70 text-xs mt-0.5">SP 2026 · Varia por setor e cobertura</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b-2 border-slate-50 text-left">
+                      <th className="py-3 font-bold text-slate-400 text-xs uppercase">Porte / Produto</th>
+                      <th className="py-3 font-bold text-slate-600 text-xs uppercase">Cobertura</th>
+                      <th className="py-3 font-bold text-[#114d8e] text-xs uppercase">Investimento aprox.</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-50">
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">MEI / Micro · Saúde PME</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">2–5 vidas</td>
+                        <td className="py-3 font-black text-sm text-[#114d8e]">R$ 180 – R$ 350/vida</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">Pequena · Seguro Patrimonial</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">Básica</td>
+                        <td className="py-3 font-black text-sm text-[#114d8e]">A partir de R$ 120/mês</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">Média · Vida em Grupo</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">Conforme folha</td>
+                        <td className="py-3 font-black text-sm text-[#114d8e]">A partir de R$ 15/vida</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">RC Profissional / D&O</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">Conforme capital</td>
+                        <td className="py-3 font-black text-sm text-[#114d8e]">A partir de R$ 200/mês</td>
+                      </tr>
+                  </tbody>
+                </table>
+                <p className="text-[10px] text-slate-400 italic mt-3">*Valores referenciais. Variam por setor, número de colaboradores e coberturas.</p>
+                <a
+                  href={`https://wa.me/5511920144864?text=Ol%C3%A1+Rodrigo%2C+quero+cotar+Seguro+Empresarial`}
+                  target="_blank" rel="noreferrer"
+                  className="w-full mt-5 bg-[#114d8e] hover:bg-blue-700 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2">
+                  Proteger Minha Empresa <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Depoimento */}
+            <div className="bg-white p-6 rounded-[30px] shadow-xl border border-slate-100 flex flex-col justify-center">
+              <div className="flex gap-0.5 mb-4">
+                {[...Array(5)].map((_, i) => <Star key={i} size={14} className="text-yellow-400 fill-yellow-400" />)}
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed mb-5 italic font-medium">&ldquo;O Rodrigo estruturou toda a proteção da minha empresa: saúde pra equipe, seguro patrimonial e RC. Tudo em uma única consultoria. Atendimento impecável.&rdquo;</p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-2xl bg-[#114d8e] flex items-center justify-center text-white font-black text-sm shrink-0">
+                  R
+                </div>
+                <div>
+                  <div className="font-black text-[#114d8e] text-sm">Roberto</div>
+                  <div className="text-slate-400 text-xs font-medium">São Paulo, SP · Seguro Empresarial</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="bg-[#114d8e] rounded-[50px] p-12 text-center">
