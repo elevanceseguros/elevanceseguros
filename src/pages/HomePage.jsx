@@ -1,3 +1,4 @@
+import { postsData } from '@/data/posts';
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
@@ -5,7 +6,7 @@ import {
   Star, ShieldCheck, Zap, Car, Heart, 
   Building2, Wallet, CheckCircle2, Bike, 
   Users, ArrowRight, MessageCircle, Smile, PartyPopper, Home
-} from 'lucide-react';
+, BookOpen} from 'lucide-react';
 
 const HomePage = () => {
   const [sent, setSent] = useState(false);
@@ -282,6 +283,56 @@ const HomePage = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* BLOG — 3 últimos posts */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <span className="inline-block bg-[#114d8e]/10 text-[#114d8e] px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-3">Blog</span>
+              <h2 className="text-3xl md:text-4xl font-black text-slate-900 italic leading-tight">Conteúdo que <span className="text-[#114d8e]">educa e protege</span></h2>
+            </div>
+            <a href="/blog" className="hidden md:flex items-center gap-2 text-[#114d8e] font-black text-sm hover:underline shrink-0">
+              Ver todos <BookOpen size={16} />
+            </a>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[...postsData].reverse().slice(0, 3).map(post => (
+              <a key={post.id} href={`/blog/${post.slug}`}
+                className="bg-white rounded-[30px] overflow-hidden shadow-md hover:shadow-xl transition-all group border border-slate-100">
+                <div className="relative overflow-hidden h-44">
+                  <img
+                    src={post.image} alt={post.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <span className="absolute top-3 left-3 bg-[#114d8e] text-white text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
+                    {post.category}
+                  </span>
+                </div>
+                <div className="p-5 space-y-2">
+                  <div className="flex items-center gap-2 text-slate-400 text-[10px] font-bold uppercase">
+                    <span>{post.date}</span>
+                    <span>·</span>
+                    <span>{post.readTime} de leitura</span>
+                  </div>
+                  <h3 className="font-black text-slate-900 text-sm leading-snug group-hover:text-[#114d8e] transition-colors line-clamp-2">
+                    {post.title}
+                  </h3>
+                  <p className="text-slate-500 text-xs leading-relaxed line-clamp-2">{post.excerpt}</p>
+                  <span className="inline-block text-[#114d8e] font-black text-xs mt-1 group-hover:underline">Ler artigo →</span>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="text-center mt-8 md:hidden">
+            <a href="/blog" className="inline-flex items-center gap-2 text-[#114d8e] font-black text-sm hover:underline">
+              Ver todos os artigos <BookOpen size={16} />
+            </a>
           </div>
         </div>
       </section>
