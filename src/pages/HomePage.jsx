@@ -154,14 +154,14 @@ const HomePage = () => {
           <div className="marquee-track flex gap-8 items-center whitespace-nowrap" style={{animationDirection: "reverse", animationDuration: "25s"}}>
             {[
               { src: "/logos/allianz.png",       alt: "Allianz" },
-              { src: "/logos/bradescoseguros.png",alt: "Bradesco Seguros" },
+              { src: "/logos/bradescoauto.png",alt: "Bradesco Seguros" },
               { src: "/logos/hdi.png",            alt: "HDI" },
               { src: "/logos/tokio.png",          alt: "Tokio Marine" },
               { src: "/logos/portoauto.png",      alt: "Porto Seguro Auto" },
               { src: "/logos/suhai.png",          alt: "Suhai" },
               // duplicata
               { src: "/logos/allianz.png",       alt: "Allianz" },
-              { src: "/logos/bradescoseguros.png",alt: "Bradesco Seguros" },
+              { src: "/logos/bradescoauto.png",alt: "Bradesco Seguros" },
               { src: "/logos/hdi.png",            alt: "HDI" },
               { src: "/logos/tokio.png",          alt: "Tokio Marine" },
               { src: "/logos/portoauto.png",      alt: "Porto Seguro Auto" },
