@@ -104,6 +104,78 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* PARCEIROS & OPERADORAS — carrossel infinito */}
+      <section className="py-10 bg-white border-y border-slate-100 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 mb-6 text-center">
+          <p className="text-[11px] font-black uppercase tracking-widest text-slate-400">Parceiros e Operadoras</p>
+        </div>
+        <style>{`
+          @keyframes marquee {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .marquee-track { animation: marquee 30s linear infinite; }
+          .marquee-track:hover { animation-play-state: paused; }
+        `}</style>
+
+        {/* Linha 1 — Planos de Saúde */}
+        <div className="flex overflow-hidden mb-4">
+          <div className="marquee-track flex gap-8 items-center whitespace-nowrap">
+            {[
+              { src: "/logos/amil.png",        alt: "Amil" },
+              { src: "/logos/bradesco.png",     alt: "Bradesco Saúde" },
+              { src: "/logos/sulamerica.png",   alt: "SulAmérica" },
+              { src: "/logos/hapvida.png",      alt: "Hapvida" },
+              { src: "/logos/unimed.png",       alt: "Unimed" },
+              { src: "/logos/alice.webp",       alt: "Alice" },
+              { src: "/logos/notredame.png",    alt: "Notre Dame" },
+              { src: "/logos/medsenior.png",    alt: "MedSênior" },
+              { src: "/logos/portoseguro.svg",  alt: "Porto Seguro Saúde" },
+              // duplicata para loop infinito
+              { src: "/logos/amil.png",        alt: "Amil" },
+              { src: "/logos/bradesco.png",     alt: "Bradesco Saúde" },
+              { src: "/logos/sulamerica.png",   alt: "SulAmérica" },
+              { src: "/logos/hapvida.png",      alt: "Hapvida" },
+              { src: "/logos/unimed.png",       alt: "Unimed" },
+              { src: "/logos/alice.webp",       alt: "Alice" },
+              { src: "/logos/notredame.png",    alt: "Notre Dame" },
+              { src: "/logos/medsenior.png",    alt: "MedSênior" },
+              { src: "/logos/portoseguro.svg",  alt: "Porto Seguro Saúde" },
+            ].map((logo, i) => (
+              <div key={i} className="flex items-center justify-center w-28 h-12 shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+                <img src={logo.src} alt={logo.alt} className="max-h-10 max-w-[100px] object-contain" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Linha 2 — Seguros (direção oposta) */}
+        <div className="flex overflow-hidden">
+          <div className="marquee-track flex gap-8 items-center whitespace-nowrap" style={{animationDirection: "reverse", animationDuration: "25s"}}>
+            {[
+              { src: "/logos/allianz.png",       alt: "Allianz" },
+              { src: "/logos/bradescoseguros.png",alt: "Bradesco Seguros" },
+              { src: "/logos/hdi.png",            alt: "HDI" },
+              { src: "/logos/tokio.png",          alt: "Tokio Marine" },
+              { src: "/logos/portoauto.png",      alt: "Porto Seguro Auto" },
+              { src: "/logos/suhai.png",          alt: "Suhai" },
+              // duplicata
+              { src: "/logos/allianz.png",       alt: "Allianz" },
+              { src: "/logos/bradescoseguros.png",alt: "Bradesco Seguros" },
+              { src: "/logos/hdi.png",            alt: "HDI" },
+              { src: "/logos/tokio.png",          alt: "Tokio Marine" },
+              { src: "/logos/portoauto.png",      alt: "Porto Seguro Auto" },
+              { src: "/logos/suhai.png",          alt: "Suhai" },
+            ].map((logo, i) => (
+              <div key={i} className="flex items-center justify-center w-28 h-12 shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+                <img src={logo.src} alt={logo.alt} className="max-h-10 max-w-[100px] object-contain" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       {/* 2. PROTEÇÃO VEICULAR (APVS) */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
