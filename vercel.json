@@ -1,13 +1,5 @@
 {
   "installCommand": "npm install --legacy-peer-deps",
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [{ "type": "host", "value": "elevanceseguros.com" }],
-      "destination": "https://www.elevanceseguros.com/$1",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     {
       "source": "/(.*)",
