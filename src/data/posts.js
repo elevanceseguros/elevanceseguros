@@ -597,5 +597,150 @@ export const postsData = [
       <p class="mt-8 font-bold text-blue-600">Quer cotar um seguro residencial para sua casa ou apartamento em SP? Me chame no WhatsApp — cotação gratuita!</p>
     `
   }
+  ,
+  {
+    id: 10,
+    slug: "responsabilidade-civil-do-e-o-o-que-e-e-quem-precisa",
+    title: "RC D&O: O Que é Seguro para Diretores e Gestores e Quem Precisa Contratar",
+    date: "02 Mai, 2026",
+    category: "Seguros Empresariais",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Se você é sócio, diretor ou gestor de uma empresa, suas decisões podem gerar processos milionários. Entenda como o seguro D&O protege seu patrimônio pessoal.",
+    content: `
+      <p class="mb-4">Você sabia que um diretor de empresa pode ser processado pessoalmente por decisões tomadas no exercício do cargo — mesmo que tenha agido de boa-fé? É exatamente para proteger esses profissionais que existe o seguro <strong>D&O (Directors & Officers Liability)</strong>, uma modalidade de Responsabilidade Civil cada vez mais exigida no mercado brasileiro.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que é o Seguro D&O?</h2>
+      <p class="mb-4">D&O significa <em>Directors and Officers</em> — em português, Diretores e Gestores. É um seguro de Responsabilidade Civil voltado exclusivamente para proteger pessoas físicas que ocupam cargos de gestão em empresas: diretores, sócios-administradores, conselheiros, gerentes e até membros de comitês.</p>
+      <p class="mb-4">Quando uma decisão tomada por um gestor causa prejuízo a terceiros — acionistas, credores, colaboradores, órgãos reguladores ou o próprio mercado — esse profissional pode ser acionado judicialmente de forma pessoal. Sem o D&O, ele responde com o próprio patrimônio.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que o D&O cobre?</h2>
+      <ul class="mb-6 space-y-3 list-none">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Custos de defesa:</strong> honorários advocatícios e custas processuais em ações movidas contra o gestor.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Indenizações a terceiros:</strong> valores pagos a acionistas, credores ou parceiros em decorrência de decisões equivocadas.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Investigações e auditorias:</strong> custos com processos administrativos em órgãos como CVM, Banco Central ou CADE.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Erros e omissões gerenciais:</strong> decisões de gestão que resultem em perdas financeiras para a empresa ou terceiros.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Proteção do patrimônio pessoal:</strong> evita que bens do gestor (imóveis, veículos, investimentos) sejam bloqueados judicialmente.</span></li>
+      </ul>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Quem precisa contratar o D&O?</h2>
+      <p class="mb-4">A percepção comum é que o D&O é exclusivo para grandes corporações e empresas de capital aberto. Isso mudou. Hoje, qualquer empresa com gestão profissional está exposta:</p>
+      <ul class="mb-6 space-y-3 list-none">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Startups e scale-ups</strong> com investidores externos — os aportes aumentam a responsabilidade dos fundadores.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Empresas familiares</strong> em processo de profissionalização ou com sócios em conflito.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>PMEs com contratos públicos</strong> — licitações e contratos governamentais aumentam a exposição regulatória.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Gestores contratados (CEO, CFO, COO)</strong> que respondem por decisões estratégicas mas não são donos da empresa.</span></li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Perfil</th>
+              <th class="p-3 text-left">Capital Segurado</th>
+              <th class="p-3 text-left rounded-tr-xl">Prêmio anual aprox.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">PME · Receita até R$ 10M</td>
+              <td class="p-3">R$ 500.000</td>
+              <td class="p-3 font-bold text-blue-600">R$ 2.500 – R$ 5.000/ano</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Média empresa · Receita até R$ 50M</td>
+              <td class="p-3">R$ 2.000.000</td>
+              <td class="p-3 font-bold text-blue-600">R$ 8.000 – R$ 18.000/ano</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">Startup com investidores</td>
+              <td class="p-3">Conforme aporte</td>
+              <td class="p-3 font-bold text-blue-600">Sob consulta</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">*Valores aproximados para 2026. Variam conforme seguradora, setor e histórico de sinistros.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Muitos gestores acreditam que a personalidade jurídica da empresa os protege totalmente. Mas em casos de má gestão, fraude ou descumprimento de obrigações trabalhistas e fiscais, a desconsideração da personalidade jurídica é cada vez mais comum na Justiça brasileira. O D&O é a única proteção real para o patrimônio pessoal do gestor.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">D&O x RC Profissional: qual a diferença?</h2>
+      <p class="mb-4">A <strong>RC Profissional</strong> protege erros técnicos de um profissional liberal (médico, advogado, engenheiro) no exercício da sua atividade. Já o <strong>D&O</strong> protege decisões estratégicas e de gestão — não erros técnicos, mas escolhas de negócio que podem prejudicar terceiros. São coberturas complementares, não substitutivas.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Como contratar o D&O?</h2>
+      <p class="mb-4">A contratação exige análise do perfil da empresa, faturamento, setor de atuação, histórico de litígios e estrutura de governança. Por isso, é essencial contar com um corretor especializado que conheça as nuances de cada seguradora e consiga negociar as melhores condições.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Você é gestor ou diretor e quer entender como o D&O pode proteger seu patrimônio? Fale comigo no WhatsApp — análise gratuita!</p>
+    `
+  }
+  ,
+  {
+    id: 11,
+    slug: "portabilidade-de-plano-de-saude-como-funciona",
+    title: "Portabilidade de Plano de Saúde: Como Trocar de Plano Sem Perder Carências",
+    date: "03 Mai, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Insatisfeito com seu plano de saúde atual? A portabilidade permite trocar de operadora sem cumprir novas carências. Saiba as regras e como fazer.",
+    content: `
+      <p class="mb-4">Você paga caro pelo plano de saúde, a rede credenciada deixa a desejar ou o reajuste deste ano foi absurdo. A boa notícia: <strong>você pode trocar de plano sem perder as carências que já cumpriu</strong>. Esse direito se chama portabilidade de carências e é garantido pela ANS (Agência Nacional de Saúde Suplementar).</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que é portabilidade de plano de saúde?</h2>
+      <p class="mb-4">A portabilidade de carências permite que um beneficiário troque de plano de saúde — seja de operadora, produto ou segmentação — sem precisar cumprir novamente os períodos de carência já cumpridos no plano anterior. É um direito regulamentado pela <strong>RN nº 438/2018 da ANS</strong>.</p>
+      <p class="mb-4">Isso significa que se você já esperou os 180 dias para cirurgias no plano atual, não precisará esperar de novo no plano novo — desde que as regras sejam respeitadas.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Quais são as regras para fazer a portabilidade?</h2>
+      <ul class="mb-6 space-y-3 list-none">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Tempo mínimo no plano atual:</strong> você precisa ter pelo menos 2 anos de permanência no plano de origem — ou ter cumprido todas as carências, o que ocorrer primeiro.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Plano dentro do prazo de portabilidade:</strong> a solicitação deve ser feita dentro de 60 dias antes do aniversário do contrato ou durante o período de portabilidade especial.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Plano de destino compatível:</strong> o novo plano deve ter segmentação e preço compatíveis com o atual (não pode portar de um plano enfermaria para um apartamento premium sem pagar diferença).</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Sem débitos:</strong> o plano de origem não pode ter mensalidades em atraso.</span></li>
+      </ul>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Portabilidade especial: quando o reajuste é abusivo</h2>
+      <p class="mb-4">Se o seu plano recebeu um reajuste acima de determinado percentual definido pela ANS, você tem direito à <strong>portabilidade especial</strong> — com prazo diferenciado e mais flexibilidade para escolher o plano de destino. Esse é um dos casos mais comuns atualmente, dado os reajustes expressivos de 2025 e 2026.</p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Tipo</th>
+              <th class="p-3 text-left">Tempo mínimo</th>
+              <th class="p-3 text-left rounded-tr-xl">Prazo para solicitar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Portabilidade comum</td>
+              <td class="p-3">2 anos no plano</td>
+              <td class="p-3 font-bold text-blue-600">60 dias antes do aniversário</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Portabilidade especial</td>
+              <td class="p-3">Qualquer período</td>
+              <td class="p-3 font-bold text-blue-600">Até 60 dias após o reajuste</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">A portabilidade não é automática — você precisa encontrar um plano de destino compatível e solicitar formalmente. O maior erro que vejo é o beneficiário cancelar o plano atual antes de ter o novo confirmado. Nunca faça isso: cancele apenas depois de ter a apólice do novo plano em mãos.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que NÃO é portabilidade</h2>
+      <p class="mb-4">Portabilidade não é simplesmente cancelar um plano e contratar outro. Nesse caso, você perderia todas as carências e começaria do zero. A portabilidade é um processo formal com documentação específica e precisa ser feita com o acompanhamento de um corretor especializado para garantir que todas as regras sejam cumpridas.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Como a Elevance pode ajudar</h2>
+      <p class="mb-4">Na Elevance Seguros, analisamos o seu plano atual, verificamos se você se enquadra nas regras de portabilidade e mapeamos as melhores opções de destino — com rede compatível, preço justo e coberturas adequadas para o seu perfil. Todo o processo é acompanhado de perto para garantir que você não fique nem um dia sem cobertura.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Quer fazer a portabilidade do seu plano de saúde? Fale comigo no WhatsApp — análise gratuita e sem compromisso!</p>
+    `
+  }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
