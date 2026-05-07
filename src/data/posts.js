@@ -742,5 +742,355 @@ export const postsData = [
       <p class="mt-8 font-bold text-blue-600">Quer fazer a portabilidade do seu plano de saúde? Fale comigo no WhatsApp — análise gratuita e sem compromisso!</p>
     `
   }
+
+  ,
+  {
+    id: 12,
+    slug: "plano-de-saude-individual-vs-familiar-qual-contratar",
+    title: "Plano de Saúde Individual ou Familiar: Qual é o Melhor para Você?",
+    date: "03 Mai, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Contratar um plano individual para cada membro da família ou um único plano familiar? Entenda as diferenças de custo, cobertura e quando cada um compensa.",
+    content: `
+      <p class="mb-4">Uma das dúvidas mais comuns de quem busca plano de saúde em São Paulo é: vale mais a pena contratar um plano <strong>individual</strong> para cada pessoa ou um único <strong>plano familiar</strong>? A resposta depende do seu perfil, da quantidade de dependentes e das operadoras disponíveis na sua região.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que é plano individual?</h2>
+      <p class="mb-4">O plano individual é contratado por uma única pessoa, sem vínculo com empresa ou associação. É regulamentado diretamente pela ANS e tem reajustes anuais controlados — em 2026, o índice máximo da ANS foi de <strong>6,06%</strong> para planos individuais. A grande vantagem é a estabilidade: o reajuste é limitado por lei.</p>
+      <p class="mb-4">A desvantagem? A oferta está cada vez mais escassa. Muitas operadoras reduziram ou encerraram a comercialização de planos individuais em São Paulo, tornando a contratação mais difícil e os preços mais elevados.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que é plano familiar?</h2>
+      <p class="mb-4">O plano familiar — também chamado de <strong>plano coletivo por adesão</strong> — é contratado por um titular e inclui dependentes (cônjuge, filhos, pais). A mensalidade é calculada por faixa etária de cada beneficiário, e o contrato é feito com base em um grupo, o que permite mais flexibilidade de produto e rede.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Comparativo direto</h2>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Critério</th>
+              <th class="p-3 text-left">Individual</th>
+              <th class="p-3 text-left rounded-tr-xl">Familiar (Adesão)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Reajuste anual</td>
+              <td class="p-3">Controlado pela ANS</td>
+              <td class="p-3">Livre negociação</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Disponibilidade em SP</td>
+              <td class="p-3">Limitada</td>
+              <td class="p-3 font-bold text-blue-600">Ampla</td>
+            </tr>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Cancelamento pela operadora</td>
+              <td class="p-3">Proibido (inadimplência)</td>
+              <td class="p-3">Possível com aviso prévio</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Custo para famílias</td>
+              <td class="p-3">Mais alto (por pessoa)</td>
+              <td class="p-3 font-bold text-blue-600">Mais competitivo</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">Carência</td>
+              <td class="p-3">Padrão ANS</td>
+              <td class="p-3">Padrão ANS</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Para famílias em São Paulo, o plano de adesão costuma ser a melhor relação custo-benefício. Além de ter mais opções de rede, o valor por vida tende a ser menor do que contratar planos individuais separados. O segredo está em escolher a operadora e o produto certo para o perfil de uso da sua família.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">E os dependentes? Há limite de idade?</h2>
+      <p class="mb-4">Filhos podem ser incluídos como dependentes até os <strong>21 anos</strong> — ou até os 24 anos se estiverem cursando ensino superior. Após esse período, precisam contratar um plano próprio. Cônjuge e companheiro(a) podem ser incluídos sem limite de idade.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Quando o plano individual ainda vale a pena?</h2>
+      <p class="mb-4">Para quem é solteiro, sem dependentes e prioriza a estabilidade do reajuste controlado pela ANS, o plano individual ainda é uma boa opção — especialmente se você encontrar uma oferta competitiva. Também faz sentido para quem teve experiências ruins com cancelamentos em planos coletivos.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Quer comparar as melhores opções individuais e familiares disponíveis agora em SP? Me chame no WhatsApp — cotação gratuita!</p>
+    `
+  }
+  ,
+  {
+    id: 13,
+    slug: "como-funciona-consorcio-de-imovel-passo-a-passo",
+    title: "Como Funciona o Consórcio de Imóvel: Guia Passo a Passo 2026",
+    date: "04 Mai, 2026",
+    category: "Consórcios",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+    excerpt: "O consórcio de imóvel é uma das formas mais inteligentes de comprar casa própria sem juros. Entenda como funciona, como é feita a contemplação e o que avaliar antes de entrar.",
+    content: `
+      <p class="mb-4">Comprar um imóvel é o sonho de grande parte dos brasileiros — e o consórcio imobiliário é, para muitos, o caminho mais inteligente para realizá-lo. Sem juros, sem entrada obrigatória e com parcelas que cabem no bolso, o consórcio de imóvel cresceu mais de 20% em 2025 no Brasil. Mas como ele funciona na prática?</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que é consórcio de imóvel?</h2>
+      <p class="mb-4">O consórcio é um sistema de autofinanciamento em grupo. Um conjunto de pessoas se une com o objetivo comum de adquirir um bem — neste caso, um imóvel. Cada participante paga parcelas mensais a uma <strong>administradora autorizada pelo Banco Central</strong>, e mensalmente um ou mais participantes são <strong>contemplados</strong> com a carta de crédito para comprar o imóvel.</p>
+      <p class="mb-4">Diferente do financiamento, no consórcio <strong>não há cobrança de juros</strong> — apenas uma taxa de administração, que costuma variar entre 15% e 20% do valor total da carta, diluída nas parcelas ao longo do plano.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Passo a passo: como funciona na prática</h2>
+      <ul class="mb-6 space-y-4 list-none">
+        <li class="flex items-start gap-3"><span class="bg-[#114d8e] text-white font-black text-xs rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">1</span><span><strong>Escolha do plano:</strong> você define o valor da carta de crédito (ex: R$ 300.000), o prazo (ex: 200 meses) e a administradora. Isso determina o valor da sua parcela mensal.</span></li>
+        <li class="flex items-start gap-3"><span class="bg-[#114d8e] text-white font-black text-xs rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">2</span><span><strong>Pagamento das parcelas:</strong> você passa a pagar mensalmente. Esse valor compõe o fundo comum do grupo, que é usado para contemplar os participantes.</span></li>
+        <li class="flex items-start gap-3"><span class="bg-[#114d8e] text-white font-black text-xs rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">3</span><span><strong>Contemplação por sorteio:</strong> todo mês, a administradora realiza sorteios entre todos os participantes adimplentes. Quem é sorteado recebe a carta de crédito.</span></li>
+        <li class="flex items-start gap-3"><span class="bg-[#114d8e] text-white font-black text-xs rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">4</span><span><strong>Contemplação por lance:</strong> você pode oferecer um lance — um valor adicional — para antecipar sua contemplação. Quem oferece o maior lance percentual é contemplado.</span></li>
+        <li class="flex items-start gap-3"><span class="bg-[#114d8e] text-white font-black text-xs rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">5</span><span><strong>Uso da carta de crédito:</strong> ao ser contemplado, você recebe a carta e pode usá-la para comprar o imóvel que quiser — novo, usado, terreno ou até reformar.</span></li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Carta de Crédito</th>
+              <th class="p-3 text-left">Prazo</th>
+              <th class="p-3 text-left rounded-tr-xl">Parcela aprox.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">R$ 150.000</td>
+              <td class="p-3">180 meses</td>
+              <td class="p-3 font-bold text-blue-600">R$ 1.050 – R$ 1.200</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">R$ 300.000</td>
+              <td class="p-3">200 meses</td>
+              <td class="p-3 font-bold text-blue-600">R$ 1.900 – R$ 2.200</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">R$ 500.000</td>
+              <td class="p-3">200 meses</td>
+              <td class="p-3 font-bold text-blue-600">R$ 3.100 – R$ 3.600</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">*Valores referenciais para 2026. Variam conforme administradora e taxa de administração.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">O lance embutido é uma estratégia pouco conhecida: você usa parte da própria carta de crédito como lance, sem precisar ter o dinheiro em mãos. Por exemplo, em uma carta de R$ 300.000, você oferece R$ 60.000 como lance e recebe R$ 240.000 para comprar o imóvel. É uma forma inteligente de se antecipar na fila sem desembolso imediato.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Posso usar o FGTS no consórcio?</h2>
+      <p class="mb-4">Sim! O FGTS pode ser usado de duas formas no consórcio imobiliário: como <strong>lance para antecipar a contemplação</strong> ou para <strong>amortizar o saldo devedor</strong> após ser contemplado. As regras são as mesmas do financiamento habitacional — o imóvel precisa ser para uso próprio e atender às normas do SFH.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Quer simular um consórcio de imóvel com as melhores administradoras do mercado? Fale comigo no WhatsApp!</p>
+    `
+  }
+  ,
+  {
+    id: 14,
+    slug: "seguro-de-vida-para-autonomo-e-mei",
+    title: "Seguro de Vida para Autônomo e MEI: Por Que é Ainda Mais Importante",
+    date: "05 Mai, 2026",
+    category: "Seguro de Vida",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Quem trabalha por conta própria não tem INSS robusto, décimo terceiro nem férias pagas. Se você parar de trabalhar amanhã, sua família está protegida? Entenda por que o seguro de vida é essencial para autônomos e MEIs.",
+    content: `
+      <p class="mb-4">O trabalhador CLT tem uma rede de proteção: FGTS, seguro-desemprego, auxílio-doença pelo INSS e, em muitos casos, seguro de vida coletivo pago pela empresa. O autônomo e o MEI não têm nada disso. Se você parar de trabalhar — por doença, acidente ou pior — sua renda simplesmente cessa. É exatamente por isso que o seguro de vida é <strong>ainda mais urgente</strong> para quem trabalha por conta própria.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">A realidade do autônomo sem proteção</h2>
+      <p class="mb-4">O MEI contribui para o INSS com alíquota reduzida (5% do salário mínimo), o que garante aposentadoria e auxílio-doença — mas com benefício limitado a 1 salário mínimo. Para a maioria dos autônomos, esse valor está muito aquém do padrão de vida da família. E em caso de falecimento, os dependentes ficam sem renda imediata.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que o seguro de vida cobre para autônomos?</h2>
+      <ul class="mb-6 space-y-3 list-none">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Morte natural ou acidental:</strong> capital pago aos beneficiários de uma só vez, sem burocracia.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Invalidez permanente total ou parcial:</strong> você recebe o capital segurado em vida se não puder mais trabalhar.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Doenças graves (DIT):</strong> indenização em caso de diagnóstico de câncer, infarto, AVC e outras doenças graves.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Diária por incapacidade temporária (DIT):</strong> renda diária enquanto você está afastado por acidente ou doença.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Assistência funeral:</strong> cobre despesas funerárias para o segurado e, em alguns planos, para familiares diretos.</span></li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Perfil</th>
+              <th class="p-3 text-left">Capital Segurado</th>
+              <th class="p-3 text-left rounded-tr-xl">Mensalidade aprox.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">MEI · 30 anos</td>
+              <td class="p-3">R$ 150.000</td>
+              <td class="p-3 font-bold text-blue-600">R$ 45 – R$ 70</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Autônomo · 40 anos</td>
+              <td class="p-3">R$ 300.000</td>
+              <td class="p-3 font-bold text-blue-600">R$ 110 – R$ 160</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">Profissional liberal · 45 anos</td>
+              <td class="p-3">R$ 500.000 + DIT</td>
+              <td class="p-3 font-bold text-blue-600">R$ 220 – R$ 320</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">*Valores referenciais para 2026. Variam por seguradora, idade e coberturas contratadas.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Para autônomos e MEIs, recomendo fortemente incluir a cobertura de <strong>DIT (Diária por Incapacidade Temporária)</strong>. Um acidente ou cirurgia pode te afastar por 30, 60 ou 90 dias. Durante esse período, suas contas não param — mas sua renda sim. A DIT garante um valor diário para cobrir esse período de afastamento sem comprometer o que você construiu.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Seguro de vida é dedutível do Imposto de Renda?</h2>
+      <p class="mb-4">Não — o prêmio do seguro de vida não é dedutível no IR para pessoa física. Porém, o capital recebido pelos beneficiários em caso de sinistro é <strong>isento de Imposto de Renda</strong>, independentemente do valor. Esse é um benefício significativo em comparação a outras formas de proteção financeira.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Você é autônomo ou MEI e ainda não tem seguro de vida? Me chame no WhatsApp e monte a proteção ideal para o seu perfil!</p>
+    `
+  }
+  ,
+  {
+    id: 15,
+    slug: "o-que-e-dit-e-dih-no-plano-de-saude",
+    title: "DIT e DIH no Plano de Saúde: O Que São e Por Que Fazem Diferença",
+    date: "06 Mai, 2026",
+    category: "Planos de Saúde",
+    readTime: "4 min",
+    image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Ao comparar planos de saúde, você já se deparou com as siglas DIT e DIH e não soube o que significam? Esses dois critérios impactam diretamente no seu bolso na hora de usar o plano.",
+    content: `
+      <p class="mb-4">Na hora de comparar planos de saúde, a maioria das pessoas foca no preço da mensalidade e na rede credenciada. Mas dois critérios pouco conhecidos podem fazer uma diferença enorme no custo real do plano: o <strong>DIT (Diárias de Internação em Terapia Intensiva)</strong> e o <strong>DIH (Diárias de Internação Hospitalar)</strong>.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que é DIH?</h2>
+      <p class="mb-4">A <strong>Diária de Internação Hospitalar (DIH)</strong> é o valor cobrado pela operadora — ou que você paga como coparticipação — por cada dia de internação em enfermaria ou quarto. Nos planos com coparticipação, a DIH representa um custo variável que pode se acumular rapidamente em internações longas.</p>
+      <p class="mb-4">Exemplo: um plano com DIH de R$ 150 e uma internação de 10 dias gera R$ 1.500 de coparticipação — além dos outros custos do procedimento.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que é DIT?</h2>
+      <p class="mb-4">A <strong>Diária de Internação em Terapia Intensiva (DIT)</strong> é o mesmo conceito, mas aplicado a internações na UTI (Unidade de Terapia Intensiva). Como a UTI tem custo muito mais alto, a DIT tende a ser significativamente maior — e uma internação de apenas 5 dias em UTI pode gerar coparticipações de R$ 5.000 a R$ 15.000 dependendo do plano.</p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Tipo de Plano</th>
+              <th class="p-3 text-left">DIH (por dia)</th>
+              <th class="p-3 text-left rounded-tr-xl">DIT (por dia)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Sem coparticipação</td>
+              <td class="p-3 font-bold text-green-600">R$ 0</td>
+              <td class="p-3 font-bold text-green-600">R$ 0</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Coparticipação parcial</td>
+              <td class="p-3">R$ 80 – R$ 200</td>
+              <td class="p-3">R$ 500 – R$ 1.500</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">Coparticipação integral</td>
+              <td class="p-3">R$ 200 – R$ 400</td>
+              <td class="p-3">R$ 1.500 – R$ 3.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">*Valores referenciais. Variam por operadora, produto e abrangência.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Planos com DIT e DIH baixos tendem a ter mensalidades mais altas — e vice-versa. Antes de escolher pelo preço mais barato, calcule o custo real em um cenário de internação. Para quem tem histórico de doenças cardíacas, diabetes ou outros fatores de risco, um plano sem coparticipação em UTI pode ser muito mais econômico no longo prazo.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Existe limite para DIT e DIH?</h2>
+      <p class="mb-4">Sim. A ANS estabelece que a coparticipação em internações não pode ultrapassar <strong>20% do valor da cobertura</strong> para eventos cobertos pelo plano. Além disso, planos que cobram coparticipação em UTI devem informar claramente os valores no contrato. Sempre verifique essa informação antes de assinar.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Como saber se meu plano tem DIT e DIH?</h2>
+      <p class="mb-4">As informações sobre DIT e DIH estão no contrato do plano, no campo de coparticipação. Você também pode consultar diretamente a operadora ou pedir ao seu corretor uma análise comparativa. Na Elevance, sempre apresentamos essa informação de forma transparente ao comparar planos.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Quer comparar planos com e sem coparticipação em UTI? Me chame no WhatsApp e faço uma análise completa para o seu perfil!</p>
+    `
+  }
+  ,
+  {
+    id: 16,
+    slug: "como-escolher-o-melhor-seguro-auto-para-seu-perfil",
+    title: "Como Escolher o Melhor Seguro Auto para o Seu Perfil em 2026",
+    date: "07 Mai, 2026",
+    category: "Seguro Auto",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Preço, franquia, cobertura, seguradora — há muitas variáveis na hora de contratar um seguro auto. Veja como montar a proteção certa para o seu carro e perfil sem pagar a mais.",
+    content: `
+      <p class="mb-4">Contratar seguro auto vai muito além de escolher o mais barato. Um seguro mal escolhido pode te deixar na mão exatamente quando você mais precisa — ou fazer você pagar por coberturas que nunca vai usar. Neste guia, vou te mostrar como analisar cada variável e montar o seguro ideal para o seu perfil.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">1. Defina o que você precisa cobrir</h2>
+      <p class="mb-4">O primeiro passo é entender seu risco real. Responda:</p>
+      <ul class="mb-6 space-y-3 list-none">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span>Você mora ou trabalha em região com alto índice de roubo?</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span>Usa o carro para trabalho (app, entregas) ou só para uso pessoal?</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span>Tem garagem em casa e no trabalho?</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span>O carro é financiado? (banco geralmente exige cobertura total)</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span>Qual o valor de mercado do veículo?</span></li>
+      </ul>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">2. Entenda as coberturas disponíveis</h2>
+      <ul class="mb-6 space-y-3 list-none">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Colisão:</strong> cobre danos ao seu veículo por batida, mesmo se você for o culpado.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Roubo e furto:</strong> cobre perda total ou parcial do veículo por roubo ou furto.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Incêndio:</strong> cobre danos causados por incêndio, explosão e raio.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Responsabilidade Civil (RC):</strong> cobre danos causados a terceiros — pessoas ou veículos. Obrigatório em qualquer seguro completo.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Assistência 24h:</strong> guincho, pane seca, troca de pneu, táxi emergencial e chaveiro.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Carro reserva:</strong> veículo substituto enquanto o seu está em conserto.</span></li>
+      </ul>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">3. Franquia: menor nem sempre é melhor</h2>
+      <p class="mb-4">A franquia é o valor que você paga em caso de sinistro antes de a seguradora cobrir o restante. Franquias menores resultam em prêmios mais altos — e vice-versa. Para quem tem reserva financeira, uma franquia maior pode reduzir bastante o valor do seguro anual.</p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Perfil do motorista</th>
+              <th class="p-3 text-left">Franquia ideal</th>
+              <th class="p-3 text-left rounded-tr-xl">Impacto no prêmio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Motorista conservador · garagem</td>
+              <td class="p-3">Franquia majorada</td>
+              <td class="p-3 font-bold text-green-600">Até 25% mais barato</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Motorista urbano · sem garagem</td>
+              <td class="p-3">Franquia normal</td>
+              <td class="p-3">Padrão</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">Jovem condutor · alto risco</td>
+              <td class="p-3">Franquia reduzida</td>
+              <td class="p-3 font-bold text-red-500">Mais caro, porém necessário</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Muita gente contrata o seguro pelo menor prêmio e depois se arrepende na hora do sinistro. O seguro auto ideal é aquele que equilibra o custo mensal com a proteção real. Uma boa análise leva em conta seu CEP, perfil de uso, garagem e o histórico de sinistros da região — variáveis que um corretor especializado consegue negociar melhor do que uma cotação online genérica.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Seguro auto vs proteção veicular: qual escolher?</h2>
+      <p class="mb-4">Para carros de alto valor ou financiados, o seguro auto tradicional é o mais indicado pela solidez jurídica e cobertura abrangente. Para veículos mais antigos ou perfis que as seguradoras penalizam (jovens, carros modificados, regiões de alto risco), a proteção veicular APVS pode ser uma alternativa mais acessível e com cobertura equivalente.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Quer receber cotações personalizadas de Allianz, HDI, Porto, Tokio Marine e outras? Me chame no WhatsApp — cotação gratuita e sem burocracia!</p>
+    `
+  }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
+
+// ── POSTS SEMANA 03–07 MAI ────────────────────────────────────────────────
