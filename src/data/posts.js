@@ -1090,6 +1090,299 @@ export const postsData = [
       <p class="mt-8 font-bold text-blue-600">Quer receber cotações personalizadas de Allianz, HDI, Porto, Tokio Marine e outras? Me chame no WhatsApp — cotação gratuita e sem burocracia!</p>
     `
   }
+
+  ,
+  {
+    id: 17,
+    slug: "seguro-garantia-o-que-e-e-quando-sua-empresa-precisa",
+    title: "Seguro Garantia: O Que É e Quando Sua Empresa Precisa Contratar",
+    date: "08 Mai, 2026",
+    category: "Seguros Empresariais",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Se sua empresa participa de licitações, obras públicas ou contratos de grande porte, o seguro garantia pode ser exigido — e ignorá-lo pode custar o negócio. Entenda como funciona.",
+    content: `
+      <p class="mb-4">O <strong>seguro garantia</strong> é uma das modalidades de seguro empresarial menos conhecidas entre pequenas e médias empresas — mas é obrigatório em muitas situações e pode ser decisivo para fechar contratos de grande porte. Se a sua empresa presta serviços para o governo ou celebra contratos com grandes corporações, você precisa entender como ele funciona.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que é seguro garantia?</h2>
+      <p class="mb-4">O seguro garantia é um instrumento que garante ao <strong>tomador de um contrato</strong> (chamado de obrigado) o cumprimento de suas obrigações perante o <strong>beneficiário</strong> (contratante). Em caso de inadimplemento, a seguradora indeniza o beneficiário ou garante a continuidade do contrato.</p>
+      <p class="mb-4">Em outras palavras: se sua empresa ganhar uma licitação ou fechar um contrato de obras e não conseguir cumprir o que foi acordado, a seguradora entra no lugar para garantir a conclusão ou ressarcir o prejuízo.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Principais modalidades</h2>
+      <ul class="mb-6 space-y-3 list-none">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Garantia de proposta (Bid Bond):</strong> garante que, se vencer a licitação, a empresa assina o contrato. Muito comum em concorrências públicas.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Garantia de execução (Performance Bond):</strong> garante a execução do contrato conforme os termos acordados. Exigida na maioria das obras públicas.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Garantia de adiantamento de pagamento:</strong> garante a devolução de valores pagos antecipadamente pelo contratante, caso o serviço não seja executado.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Garantia judicial:</strong> substitui depósitos judiciais em processos administrativos e judiciais, liberando capital de giro da empresa.</span></li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Modalidade</th>
+              <th class="p-3 text-left">Quando usar</th>
+              <th class="p-3 text-left rounded-tr-xl">Custo aprox.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Garantia de proposta</td>
+              <td class="p-3">Licitações públicas</td>
+              <td class="p-3 font-bold text-blue-600">0,5% – 1% do valor</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Garantia de execução</td>
+              <td class="p-3">Contratos de obras e serviços</td>
+              <td class="p-3 font-bold text-blue-600">1% – 3% ao ano</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">Garantia judicial</td>
+              <td class="p-3">Processos judiciais/administrativos</td>
+              <td class="p-3 font-bold text-blue-600">2% – 5% ao ano</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">*Valores referenciais. Variam por seguradora, porte da empresa e histórico de crédito.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">O seguro garantia tem uma vantagem enorme sobre a fiança bancária: ele não compromete o limite de crédito da empresa no banco. Enquanto a carta fiança ocupa linha de crédito, o seguro garantia é um produto separado — o que preserva o capital de giro e a capacidade de financiamento da empresa para outras operações.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Seguro garantia é obrigatório?</h2>
+      <p class="mb-4">Na Lei de Licitações (Lei 14.133/2021), a exigência de garantia contratual para obras e serviços acima de determinado valor é obrigatória. O contratante pode exigir garantia de até 5% do valor do contrato — podendo chegar a 10% em casos de risco elevado. Cabe à empresa escolher entre seguro garantia, fiança bancária ou depósito em dinheiro.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Sua empresa participa de licitações ou tem contratos que exigem garantia? Me chame no WhatsApp — análise gratuita!</p>
+    `
+  }
+  ,
+  {
+    id: 18,
+    slug: "plano-de-saude-para-idosos-opcoes-apos-60-anos",
+    title: "Plano de Saúde para Idosos: Opções e Como Contratar Após os 60 Anos",
+    date: "09 Mai, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Contratar plano de saúde após os 60 anos tem regras específicas. Entenda quais operadoras aceitam, como funcionam as carências e como encontrar o melhor custo-benefício para idosos em SP.",
+    content: `
+      <p class="mb-4">Uma das buscas mais frequentes no nosso atendimento é de filhos que querem incluir os pais idosos em um plano de saúde — ou de pessoas com mais de 60 anos que buscam cobertura pela primeira vez. A boa notícia: é possível contratar. A atenção necessária: existem regras específicas e os valores são mais altos. Veja o que você precisa saber.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">A ANS proíbe recusa por idade</h2>
+      <p class="mb-4">Pela regulamentação da ANS, <strong>nenhuma operadora pode recusar a contratação de um plano por causa da idade do beneficiário</strong>. O que muda é o preço: a ANS estabelece faixas etárias que permitem reajustes progressivos, e a última faixa — acima de 58 anos — pode chegar a até 6 vezes o valor da faixa inicial (0 a 18 anos).</p>
+      <p class="mb-4">Isso significa que um plano que custa R$ 300 para uma criança pode custar até R$ 1.800 para um idoso na mesma operadora e produto.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Carências para idosos: o que muda?</h2>
+      <p class="mb-4">As carências seguem as mesmas regras da ANS para qualquer beneficiário: 24 horas para urgência e emergência, 30 dias para consultas, 180 dias para cirurgias eletivas e 300 dias para parto. <strong>Não há carências adicionais por causa da idade.</strong></p>
+      <p class="mb-4">A exceção é a <strong>cobertura parcial temporária (CPT)</strong>: se o beneficiário declarar uma doença ou lesão preexistente, a operadora pode impor um período de até 24 meses sem cobertura para procedimentos relacionados àquela condição específica.</p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Faixa etária</th>
+              <th class="p-3 text-left">Plano enfermaria aprox.</th>
+              <th class="p-3 text-left rounded-tr-xl">Plano apartamento aprox.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">59 – 63 anos</td>
+              <td class="p-3">R$ 900 – R$ 1.400</td>
+              <td class="p-3 font-bold text-blue-600">R$ 1.400 – R$ 2.200</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">64 – 68 anos</td>
+              <td class="p-3">R$ 1.100 – R$ 1.700</td>
+              <td class="p-3 font-bold text-blue-600">R$ 1.700 – R$ 2.700</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">69 anos ou mais</td>
+              <td class="p-3">R$ 1.300 – R$ 2.000</td>
+              <td class="p-3 font-bold text-blue-600">R$ 2.000 – R$ 3.200</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">*Valores referenciais para São Paulo em 2026. Variam por operadora, abrangência e coberturas.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Para idosos, a operadora MedSênior é especializada nessa faixa etária e frequentemente oferece melhor custo-benefício do que as grandes operadoras para beneficiários acima de 60 anos. Vale sempre comparar com Amil, SulAmérica e Hapvida antes de decidir — o corretor certo faz essa análise por você de graça.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Vale incluir como dependente no plano dos filhos?</h2>
+      <p class="mb-4">Sim — muitos planos coletivos por adesão permitem incluir pais como dependentes do titular. Essa pode ser uma estratégia interessante para diluir o custo, especialmente se o plano do filho já tiver uma rede robusta. Verifique as regras de cada operadora, pois algumas limitam a inclusão de dependentes ascendentes.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Quer comparar os melhores planos para idosos em SP? Me chame no WhatsApp — cotação gratuita e sem burocracia!</p>
+    `
+  }
+  ,
+  {
+    id: 19,
+    slug: "o-que-e-spvat-dpvat-e-como-funciona-em-2026",
+    title: "SPVAT (Antigo DPVAT): O Que É, Como Funciona e Como Acionar em 2026",
+    date: "10 Mai, 2026",
+    category: "Seguro Auto",
+    readTime: "4 min",
+    image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800",
+    excerpt: "O DPVAT mudou de nome para SPVAT e voltou a ser obrigatório em 2025. Entenda o que cobre, como acionar e qual a diferença para o seguro auto tradicional.",
+    content: `
+      <p class="mb-4">Se você possui veículo no Brasil, já pagou pelo <strong>DPVAT</strong> — ou agora pelo <strong>SPVAT</strong>, como passou a se chamar em 2025. Mas poucos motoristas sabem exatamente o que esse seguro cobre, como acionar e qual a diferença para o seguro auto convencional. Vamos esclarecer tudo.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que é o SPVAT?</h2>
+      <p class="mb-4">O <strong>SPVAT (Seguro Obrigatório para Proteção de Vítimas de Acidentes de Trânsito)</strong> é o substituto do antigo DPVAT, reativado em janeiro de 2025 após ter sido extinto em 2020. É um seguro obrigatório pago anualmente junto com o licenciamento do veículo e gerido pela <strong>Caixa Econômica Federal</strong>.</p>
+      <p class="mb-4">Diferente do seguro auto tradicional — que protege o veículo e seu proprietário — o SPVAT protege <strong>vítimas de acidentes de trânsito</strong>, independentemente de quem seja o culpado.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que o SPVAT cobre?</h2>
+      <ul class="mb-6 space-y-3 list-none">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Morte:</strong> indenização de R$ 13.500 para os beneficiários da vítima fatal de acidente de trânsito.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Invalidez permanente:</strong> até R$ 13.500 proporcionalmente ao grau de invalidez.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Despesas médicas (DAMS):</strong> reembolso de até R$ 2.700 em despesas médicas e hospitalares decorrentes do acidente.</span></li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Cobertura</th>
+              <th class="p-3 text-left">Valor máximo</th>
+              <th class="p-3 text-left rounded-tr-xl">Quem pode acionar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Morte</td>
+              <td class="p-3 font-bold text-blue-600">R$ 13.500</td>
+              <td class="p-3">Beneficiários legais</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Invalidez permanente</td>
+              <td class="p-3 font-bold text-blue-600">Até R$ 13.500</td>
+              <td class="p-3">A própria vítima</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">Despesas médicas (DAMS)</td>
+              <td class="p-3 font-bold text-blue-600">Até R$ 2.700</td>
+              <td class="p-3">Vítima ou prestador de saúde</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">O SPVAT cobre qualquer vítima de acidente de trânsito no Brasil — pedestres, ciclistas, passageiros e motoristas — independentemente de quem causou o acidente. Mesmo que o veículo não tenha seguro auto, a vítima pode ser indenizada pelo SPVAT. O prazo para acionar é de 3 anos a partir da data do acidente.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Como acionar o SPVAT?</h2>
+      <p class="mb-4">O pedido de indenização é feito diretamente nas agências da <strong>Caixa Econômica Federal</strong> ou pelo aplicativo Caixa Tem. Você precisará do Boletim de Ocorrência do acidente, documentos pessoais e, dependendo da cobertura, laudos médicos e certidão de óbito.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">SPVAT substitui o seguro auto?</h2>
+      <p class="mb-4">Não. O SPVAT cobre apenas vítimas com valores limitados e não cobre danos ao veículo. Para proteger seu carro contra colisões, roubo, incêndio e responsabilidade civil por danos a terceiros, você ainda precisa de um seguro auto convencional.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Quer cotar o seguro auto completo para seu veículo? Me chame no WhatsApp — cotação gratuita com as melhores seguradoras!</p>
+    `
+  }
+  ,
+  {
+    id: 20,
+    slug: "consorcio-de-veiculo-como-funciona-e-quando-vale-a-pena",
+    title: "Consórcio de Veículo: Como Funciona e Quando Vale a Pena em 2026",
+    date: "11 Mai, 2026",
+    category: "Consórcios",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "O consórcio de veículo é uma alternativa ao financiamento sem juros. Mas será que vale para o seu caso? Entenda como funciona, quando compensa e o que avaliar antes de entrar.",
+    content: `
+      <p class="mb-4">O consórcio de veículo cresceu muito nos últimos anos como alternativa ao financiamento — especialmente com a alta das taxas de juros que encarecem o crédito convencional. Mas o consórcio não é a solução certa para todo mundo. Veja como ele funciona e quando realmente vale a pena.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Como funciona o consórcio de veículo?</h2>
+      <p class="mb-4">Assim como no consórcio imobiliário, você entra em um grupo de pessoas com o mesmo objetivo — comprar um veículo — e paga parcelas mensais. Todo mês, um ou mais participantes são <strong>contemplados por sorteio ou lance</strong> e recebem a carta de crédito para adquirir o veículo.</p>
+      <p class="mb-4">A carta de crédito funciona como dinheiro à vista para o vendedor — o que frequentemente garante um desconto no valor do veículo, especialmente em concessionárias.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Consórcio vs financiamento: a diferença real</h2>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Critério</th>
+              <th class="p-3 text-left">Consórcio</th>
+              <th class="p-3 text-left rounded-tr-xl">Financiamento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Juros</td>
+              <td class="p-3 font-bold text-green-600">Sem juros</td>
+              <td class="p-3 font-bold text-red-500">1,5% – 2,5% ao mês</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Taxa de administração</td>
+              <td class="p-3">15% – 20% total</td>
+              <td class="p-3">Inclusa nos juros</td>
+            </tr>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Entrega do bem</td>
+              <td class="p-3">Sorteio ou lance</td>
+              <td class="p-3 font-bold text-green-600">Imediata</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Parcela mensal</td>
+              <td class="p-3 font-bold text-green-600">Mais baixa</td>
+              <td class="p-3">Mais alta</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">Custo total</td>
+              <td class="p-3 font-bold text-green-600">Muito menor</td>
+              <td class="p-3">Pode dobrar o valor</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Simulação prática: carro de R$ 80.000</h2>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Modalidade</th>
+              <th class="p-3 text-left">Prazo</th>
+              <th class="p-3 text-left">Parcela</th>
+              <th class="p-3 text-left rounded-tr-xl">Custo total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Consórcio</td>
+              <td class="p-3">80 meses</td>
+              <td class="p-3">R$ 1.200 – R$ 1.400</td>
+              <td class="p-3 font-bold text-green-600">~R$ 96.000</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="p-3 font-medium">Financiamento (2% a.m.)</td>
+              <td class="p-3">60 meses</td>
+              <td class="p-3">R$ 2.200 – R$ 2.500</td>
+              <td class="p-3 font-bold text-red-500">~R$ 138.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">*Valores referenciais para 2026.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">O consórcio é ideal para quem <strong>não precisa do veículo imediatamente</strong> e quer pagar muito menos no total. Se você precisa do carro agora para trabalho ou não pode esperar pelo sorteio, o financiamento pode ser necessário. Mas se tiver flexibilidade de prazo, o consórcio economiza dezenas de milhares de reais.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Posso usar o FGTS no consórcio de veículo?</h2>
+      <p class="mb-4">Não — o FGTS só pode ser usado em consórcios imobiliários. Para veículos, o lance precisa ser em dinheiro próprio ou pela estratégia do <strong>lance embutido</strong>, onde você usa parte da própria carta de crédito como lance sem desembolso imediato.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Quer simular um consórcio de veículo? Me chame no WhatsApp e encontramos o melhor plano para o seu perfil!</p>
+    `
+  }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
 
