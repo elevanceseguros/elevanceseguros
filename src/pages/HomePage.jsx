@@ -45,7 +45,7 @@ const HomePage = () => {
               <div className="flex flex-col md:flex-row items-center lg:items-start gap-6">
                 <div className="relative shrink-0">
                   <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white shadow-xl overflow-hidden bg-slate-200">
-                    <img src={fotoHero} alt="Rodrigo" className="w-full h-full object-cover" />
+                    <img src={fotoHero} alt="Rodrigo" className="w-full h-full object-cover object-top" />
                   </div>
                   <div className="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-4 border-white animate-pulse"></div>
                 </div>
