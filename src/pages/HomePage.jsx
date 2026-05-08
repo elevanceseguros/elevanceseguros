@@ -50,16 +50,16 @@ const HomePage = () => {
             {/* ESQUERDA */}
             <div className="w-full lg:w-3/5 space-y-7 text-center lg:text-left">
               {/* Foto + nome + badge online */}
-              <div className="flex flex-col md:flex-row items-center lg:items-center gap-5">
+              <div className="flex flex-row items-center lg:items-center gap-5">
                 <div className="relative shrink-0">
-                  <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden bg-blue-800 shadow-[0_0_0_4px_rgba(255,255,255,0.3),0_0_0_8px_rgba(255,255,255,0.1)]">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full overflow-hidden bg-blue-800 shadow-[0_0_0_4px_rgba(255,255,255,0.3),0_0_0_8px_rgba(255,255,255,0.1)]">
                     <img src={fotoHero} alt="Rodrigo Farias" className="w-full h-full object-cover object-center" fetchpriority="high" />
                   </div>
-                  <div className="absolute -bottom-1 -right-1 bg-green-400 w-7 h-7 rounded-full border-4 border-[#114d8e] animate-pulse shadow-lg"></div>
+                  <div className="absolute -bottom-1 -right-1 bg-green-400 w-6 h-6 rounded-full border-4 border-[#114d8e] animate-pulse shadow-lg"></div>
                 </div>
-                <div className="space-y-1 text-center md:text-left">
-                  <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest backdrop-blur-sm">✦ Consultoria Especializada</span>
-                  <p className="text-white/80 text-sm font-semibold">Rodrigo Farias · Corretor de Seguros · São Paulo</p>
+                <div className="space-y-1 text-left">
+                  <span className="inline-block bg-white/20 text-white px-3 py-1 rounded-full text-[9px] font-black uppercase tracking-widest backdrop-blur-sm">✦ Consultoria Especializada</span>
+                  <p className="text-white/80 text-xs sm:text-sm font-semibold">Rodrigo Farias · Corretor · SP</p>
                 </div>
               </div>
 
@@ -75,15 +75,15 @@ const HomePage = () => {
               </div>
 
               {/* Números de impacto */}
-              <div className="flex flex-row justify-center lg:justify-start gap-4 flex-wrap">
+              <div className="grid grid-cols-3 gap-3">
                 {[
                   { num: "+500", label: "Clientes atendidos" },
                   { num: "+15", label: "Operadoras parceiras" },
                   { num: "R$ 0", label: "Taxa de consultoria" },
                 ].map((item, i) => (
-                  <div key={i} className="bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl px-5 py-3 text-center">
-                    <div className="text-yellow-300 font-black text-xl leading-none">{item.num}</div>
-                    <div className="text-white/70 text-[10px] font-bold uppercase mt-1">{item.label}</div>
+                  <div key={i} className="bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl px-3 py-3 text-center">
+                    <div className="text-yellow-300 font-black text-lg sm:text-xl leading-none">{item.num}</div>
+                    <div className="text-white/70 text-[9px] sm:text-[10px] font-bold uppercase mt-1 leading-tight">{item.label}</div>
                   </div>
                 ))}
               </div>
