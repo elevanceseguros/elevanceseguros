@@ -32,6 +32,7 @@ const Footer = () => {
     { name: 'Seguro Residencial', path: '/seguro-residencial' },
     { name: 'Seguro Empresarial', path: '/seguro-empresa' },
     { name: 'Responsab. Civil', path: '/responsabilidade-civil' },
+    { name: 'Seguro Garantia', path: '/seguro-garantia' },
   ];
 
   const outrosLinks = [

@@ -6,7 +6,7 @@ import {
   Star, ShieldCheck, Zap, Car, Heart, 
   Building2, Wallet, CheckCircle2, Bike, 
   Users, ArrowRight, MessageCircle, Smile, PartyPopper, Home
-, BookOpen} from 'lucide-react';
+, BookOpen, FileCheck} from 'lucide-react';
 
 const HomePage = () => {
   const [sent, setSent] = useState(false);
@@ -237,7 +237,8 @@ const HomePage = () => {
               { icon: <Users size={36}/>, title: "Seguro de Vida", desc: "Proteja o futuro da sua família com coberturas completas.", btn: "Simular", path: "/seguro-vida", bg: "bg-rose-50", cor: "text-rose-600" },
               { icon: <Building2 size={36}/>, title: "Seguro Empresarial", desc: "Patrimônio, PME, responsabilidade civil e vida em grupo.", btn: "Cotar", path: "/seguro-empresa", bg: "bg-slate-50", cor: "text-slate-600" },
               { icon: <ShieldCheck size={36}/>, title: "Responsabilidade Civil", desc: "RC Geral, Profissional, Produtos e D&O para sua empresa.", btn: "Cotar", path: "/responsabilidade-civil", bg: "bg-violet-50", cor: "text-violet-600" },
-              { icon: <Home size={36}/>, title: "Seguro Residencial", desc: "Proteja sua casa ou apartamento contra incêndio, roubo e danos.", btn: "Cotar", path: "/seguro-residencial", bg: "bg-amber-50", cor: "text-amber-600" }
+              { icon: <Home size={36}/>, title: "Seguro Residencial", desc: "Proteja sua casa ou apartamento contra incêndio, roubo e danos.", btn: "Cotar", path: "/seguro-residencial", bg: "bg-amber-50", cor: "text-amber-600" },
+              { icon: <FileCheck size={36}/>, title: "Seguro Garantia", desc: "Para licitações e contratos. Substitui a fiança bancária sem comprometer seu crédito.", btn: "Cotar", path: "/seguro-garantia", bg: "bg-emerald-50", cor: "text-emerald-600" }
             ].map((item, i) => (
               <div key={i} className={`${item.bg} rounded-[40px] p-8 border border-slate-100 group hover:bg-[#114d8e] transition-all duration-500 flex flex-col`}>
                 <div className={`${item.cor} mb-5 group-hover:text-blue-400 transition-colors`}>{item.icon}</div>

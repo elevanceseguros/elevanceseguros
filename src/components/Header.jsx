@@ -25,6 +25,7 @@ const segurosSubmenu = [
   { name: 'Seguro Residencial', path: '/seguro-residencial' },
   { name: 'Seguro Empresarial', path: '/seguro-empresa' },
   { name: 'Responsabilidade Civil', path: '/responsabilidade-civil' },
+  { name: 'Seguro Garantia', path: '/seguro-garantia' },
 ];
 
 const Header = () => {

@@ -35,6 +35,7 @@ const OdontologicoPage = lazy(() => import('@/pages/OdontologicoPage'));
 const SeguroVidaPage = lazy(() => import('@/pages/SeguroVidaPage'));
 const SeguroResidencialPage = lazy(() => import('@/pages/SeguroResidencialPage'));
 const ResponsabilidadeCivilPage = lazy(() => import('@/pages/ResponsabilidadeCivilPage'));
+const SeguroGarantiaPage = lazy(() => import('@/pages/SeguroGarantiaPage'));
 const ConsorciosPage = lazy(() => import('@/pages/ConsorciosPage'));
 const SeguroEmpresaPage = lazy(() => import('@/pages/SeguroEmpresaPage'));
 const SeguroAutoPage = lazy(() => import('@/pages/SeguroAutoPage'));
@@ -145,6 +146,7 @@ const AppContent = () => {
                 <Route path="/seguro-vida" element={<SeguroVidaPage />} />
                 <Route path="/seguro-residencial" element={<SeguroResidencialPage />} />
                 <Route path="/responsabilidade-civil" element={<ResponsabilidadeCivilPage />} />
+                <Route path="/seguro-garantia" element={<SeguroGarantiaPage />} />
                 <Route path="/seguro-auto" element={<SeguroAutoPage />} />
                 <Route path="/protecao-veicular" element={<ProtecaoVeicularPage />} />
 
