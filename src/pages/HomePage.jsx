@@ -37,70 +37,103 @@ const HomePage = () => {
       </Helmet>
       <div className="min-h-screen bg-white font-sans">
       
-      {/* 1. HERO - DIRETO PARA WHATSAPP */}
-      <section className="relative pt-24 pb-12 sm:pt-32 md:pt-44 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="w-full lg:w-3/5 space-y-8 text-center lg:text-left">
-              <div className="flex flex-col md:flex-row items-center lg:items-start gap-6">
+      {/* 1. HERO */}
+      <section className="relative pt-24 pb-16 sm:pt-28 md:pt-36 overflow-hidden bg-[#114d8e]">
+        {/* Fundo com padrão geométrico sutil */}
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+        {/* Gradiente de transição para branco */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+
+        <div className="relative max-w-7xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+
+            {/* ESQUERDA */}
+            <div className="w-full lg:w-3/5 space-y-7 text-center lg:text-left">
+              {/* Foto + nome + badge online */}
+              <div className="flex flex-col md:flex-row items-center lg:items-center gap-5">
                 <div className="relative shrink-0">
-                  <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white shadow-xl overflow-hidden bg-slate-200">
-                    <img src={fotoHero} alt="Rodrigo" className="w-full h-full object-cover object-top" />
+                  <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden bg-blue-800 shadow-[0_0_0_4px_rgba(255,255,255,0.3),0_0_0_8px_rgba(255,255,255,0.1)]">
+                    <img src={fotoHero} alt="Rodrigo Farias" className="w-full h-full object-cover object-center" fetchpriority="high" />
                   </div>
-                  <div className="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-4 border-white animate-pulse"></div>
+                  <div className="absolute -bottom-1 -right-1 bg-green-400 w-7 h-7 rounded-full border-4 border-[#114d8e] animate-pulse shadow-lg"></div>
                 </div>
-                <div className="space-y-3">
-                  <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Consultoria Especializada</span>
-                  <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight italic">Sua tranquilidade é <br className="hidden md:block"/> nosso maior seguro.</h1>
+                <div className="space-y-1 text-center md:text-left">
+                  <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest backdrop-blur-sm">✦ Consultoria Especializada</span>
+                  <p className="text-white/80 text-sm font-semibold">Rodrigo Farias · Corretor de Seguros · São Paulo</p>
                 </div>
               </div>
 
-              <p className="text-slate-600 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic italic">
-                Deixe seu contato e nossos <span className="text-blue-600 font-black uppercase">especialistas</span> encontrarão a melhor proteção para você agora.
-              </p>
+              {/* Headline principal */}
+              <div className="space-y-3">
+                <h1 className="text-4xl md:text-6xl font-black text-white leading-[1.05] italic tracking-tight">
+                  Sua tranquilidade é<br/>
+                  <span className="text-yellow-300">nosso maior seguro.</span>
+                </h1>
+                <p className="text-white/75 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium leading-relaxed">
+                  Deixe seu contato e nossos <span className="text-white font-black">especialistas</span> encontrarão a melhor proteção para você — de graça e sem burocracia.
+                </p>
+              </div>
 
-              <div className="flex flex-row justify-center lg:justify-start gap-4 pt-2">
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
-                  <Star size={14} className="text-yellow-500 fill-yellow-500" /> 5 Estrelas no Google
+              {/* Números de impacto */}
+              <div className="flex flex-row justify-center lg:justify-start gap-4 flex-wrap">
+                {[
+                  { num: "+500", label: "Clientes atendidos" },
+                  { num: "+15", label: "Operadoras parceiras" },
+                  { num: "R$ 0", label: "Taxa de consultoria" },
+                ].map((item, i) => (
+                  <div key={i} className="bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl px-5 py-3 text-center">
+                    <div className="text-yellow-300 font-black text-xl leading-none">{item.num}</div>
+                    <div className="text-white/70 text-[10px] font-bold uppercase mt-1">{item.label}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Badges */}
+              <div className="flex flex-row justify-center lg:justify-start gap-3 flex-wrap">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
+                  <Star size={13} className="text-yellow-400 fill-yellow-400" /> 5 Estrelas no Google
                 </div>
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
-                  <ShieldCheck size={14} className="text-blue-600" /> Melhores Operadoras
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
+                  <ShieldCheck size={13} className="text-green-400" /> Melhores Operadoras
                 </div>
               </div>
             </div>
 
+            {/* FORMULÁRIO */}
             <div className="w-full lg:w-2/5">
-              <div className="bg-white rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 p-8 md:p-10 relative min-h-[350px] flex flex-col justify-center transition-all duration-500">
-                
+              <div className="bg-white rounded-[40px] shadow-[0_30px_80px_rgba(0,0,0,0.25)] p-8 md:p-10 relative min-h-[340px] flex flex-col justify-center">
                 {!sent ? (
                   <>
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10 shadow-lg">
                       <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Iniciar Atendimento
                     </div>
-                    <form onSubmit={handleSubmit} className="space-y-4">
-                      <input name="nome" type="text" required placeholder="Seu Nome" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
-                      <input name="whatsapp" type="tel" required placeholder="WhatsApp (DDD)" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
-                      <button className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                    <form onSubmit={handleSubmit} className="space-y-4 mt-2">
+                      <input name="nome" type="text" required placeholder="Seu Nome"
+                        className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
+                      <input name="whatsapp" type="tel" required placeholder="WhatsApp (DDD)"
+                        className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
+                      <button type="submit" className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
                         RECEBER CONTATO GRATUITO <MessageCircle size={16}/>
                       </button>
                       <p className="text-[9px] text-center text-slate-400 font-bold uppercase italic">Entraremos em contato no seu WhatsApp em instantes</p>
                     </form>
                   </>
                 ) : (
-                  <div className="text-center space-y-6 animate-in zoom-in duration-500">
+                  <div className="text-center space-y-6">
                     <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto shadow-inner">
                       <PartyPopper size={40} />
                     </div>
                     <div className="space-y-2">
                       <h3 className="text-2xl font-black text-[#114d8e] italic">Solicitação Enviada!</h3>
                       <p className="text-slate-500 font-medium text-sm leading-relaxed">
-                        Entraremos em contato no seu WhatsApp em instantes. <a href={`https://wa.me/${meuNumero}`} className="text-blue-600 font-bold underline">clique aqui</a>.
+                        Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊
                       </p>
                     </div>
                   </div>
                 )}
               </div>
             </div>
+
           </div>
         </div>
       </section>
