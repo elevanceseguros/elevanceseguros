@@ -79,7 +79,7 @@ const SagradaFamiliaHomePage = () => {
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <img src="/logo-white.png" alt="Elevance Seguros" className="h-8 w-auto object-contain" loading="eager" />
           <div className="flex items-center gap-3">
-            <img src="/logos/sagrada-familia.png" alt="Sagrada Família" className="h-8 w-auto object-contain brightness-0 invert opacity-90" loading="eager" />
+            <img src="/logos/sagrada-familia.png" alt="Sagrada Família" className="h-8 w-auto object-contain" loading="eager" />
             <a href={`https://wa.me/${MEU_NUMERO}?text=Olá, quero cotar o plano Sagrada Família`}
               target="_blank" rel="noreferrer"
               className="hidden sm:flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-4 py-2 rounded-xl font-black text-xs uppercase tracking-wide transition-all">
