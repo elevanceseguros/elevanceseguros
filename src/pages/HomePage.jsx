@@ -411,15 +411,30 @@ const HomePage = () => {
 
       {/* CTA FINAL */}
       <section className="py-12 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-[#114d8e] rounded-[50px] py-16 px-8 text-white text-center space-y-6">
-            <span className="inline-block bg-white/10 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Atendimento 100% Digital</span>
-            <h2 className="text-3xl md:text-5xl font-black leading-tight italic">Cada dia sem proteção <br className="hidden md:block"/>é um risco desnecessário.</h2>
-            <p className="text-blue-100 font-medium text-base max-w-xl mx-auto">Rodrigo responde em minutos. Cotação gratuita, sem burocracia, sem compromisso.</p>
-            <a href={`https://wa.me/${meuNumero}`} target="_blank" rel="noreferrer"
-              className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-2xl hover:scale-105">
-              <MessageCircle size={20}/> Chamar no WhatsApp
-            </a>
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="bg-[#114d8e] rounded-[50px] py-16 px-8 md:px-16 text-white flex flex-col lg:flex-row items-center gap-12 relative overflow-hidden">
+            {/* Padrão de fundo sutil */}
+            <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+            <div className="lg:w-1/2 space-y-4 z-10 text-center lg:text-left">
+              <span className="inline-block bg-white/15 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Atendimento 100% Digital</span>
+              <h2 className="text-3xl md:text-5xl font-black leading-tight italic">Cada dia sem proteção <br className="hidden md:block"/>é um risco desnecessário.</h2>
+              <p className="text-white/75 font-medium text-base">Rodrigo responde em minutos. Cotação gratuita, sem burocracia, sem compromisso.</p>
+            </div>
+            <div className="lg:w-1/2 w-full z-10">
+              <div className="bg-white/10 backdrop-blur-md p-8 md:p-12 rounded-[40px] border border-white/10 text-center space-y-4">
+                <p className="text-white font-black text-xl italic">Fale agora com o Rodrigo</p>
+                <p className="text-white/60 text-sm">Sem formulário, sem espera. Direto no WhatsApp.</p>
+                <a href={`https://wa.me/${meuNumero}`} target="_blank" rel="noreferrer"
+                  className="flex items-center justify-center gap-3 bg-green-500 hover:bg-green-400 px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-2xl hover:scale-105 w-full">
+                  <MessageCircle size={18}/> Chamar no WhatsApp
+                </a>
+                <div className="flex items-center justify-center gap-4 pt-1">
+                  <span className="text-[9px] text-white/50 font-bold">🔒 100% sigiloso</span>
+                  <span className="text-[9px] text-white/50 font-bold">⚡ Resposta em minutos</span>
+                  <span className="text-[9px] text-white/50 font-bold">🚫 Sem spam</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
