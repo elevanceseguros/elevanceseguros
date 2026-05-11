@@ -158,7 +158,9 @@ export default function SaudeLanding() {
                         {erro && <p className="text-red-500 text-xs px-2">{erro}</p>}
                         <button type="submit" disabled={loading}
                           className="w-full bg-[#114d8e] hover:bg-blue-700 disabled:bg-slate-300 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
-                          {loading ? "Enviando..." : <><MessageCircle size={16} /> Quero minha cotação</>}
+                          {loading ? "Enviando..." : <><MessageCircle size={16} /> Quero minha cotação
+      <ScrollCTA produto="Plano de Saúde" />
+</>}
                         </button>
                         <p className="text-[9px] text-center text-slate-400 font-bold uppercase italic">Você receberá uma mensagem no WhatsApp</p>
                       </form>

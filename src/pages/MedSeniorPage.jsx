@@ -23,6 +23,15 @@ const MedSeniorPage = () => {
         <meta name="description" content="Plano de saúde MedSênior especialmente desenvolvido para a melhor idade. Cobertura completa com foco no cuidado do idoso." />
         <meta name="keywords" content="MedSênior plano de saúde, plano saúde idoso, plano terceira idade" />
               <link rel="canonical" href="https://elevanceseguros.com/medsenior" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "MedSênior", "item": "https://www.elevanceseguros.com/medsenior"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="MedSênior" />
@@ -40,7 +49,7 @@ const MedSeniorPage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-emerald-50">
+      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-slate-50">
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div 
@@ -48,11 +57,11 @@ const MedSeniorPage = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-block bg-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
+              <div className="inline-block bg-blue-100 text-[#114d8e] px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4" /> Especialista na melhor idade
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Cuidado especial com a <span className="text-emerald-600">MedSênior</span>
+                Cuidado especial com a <span className="text-[#114d8e]">MedSênior</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 O MedSênior é um plano de saúde desenvolvido especialmente para pessoas acima de 49 anos, com cobertura completa e foco no cuidado integral da melhor idade.
@@ -130,6 +139,16 @@ const MedSeniorPage = () => {
     { pergunta: "Posso incluir meu cônjuge no plano MedSênior?", resposta: "Sim, desde que o cônjuge também tenha 49 anos ou mais. Caso o cônjuge seja mais jovem, ele precisaria contratar um plano em outra operadora." }
   ]} />
 
+
+      {/* Links internos — outras operadoras */}
+      <section className="py-8 bg-blue-50 border-t border-blue-100">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Também trabalhamos com</p>
+          <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
+            <a href="/amil" className="text-[#114d8e] font-black hover:underline">Amil</a> · <a href="/bradescosaude" className="text-[#114d8e] font-black hover:underline">Bradesco Saúde</a> · <a href="/sulamerica" className="text-[#114d8e] font-black hover:underline">SulAmérica</a> · <a href="/hapvida" className="text-[#114d8e] font-black hover:underline">Hapvida</a> · <a href="/porto" className="text-[#114d8e] font-black hover:underline">Porto Saúde</a>
+          </p>
+        </div>
+      </section>
       <ScrollCTA produto="Plano de Saúde MedSenior" />
     </>
   );

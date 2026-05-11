@@ -40,6 +40,15 @@ export default function SeguroResidencialPage() {
         <meta name="description" content="Seguro residencial para sua casa ou apartamento em SP. Cobertura contra incêndio, roubo, danos elétricos e assistência 24h. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="seguro residencial SP, seguro casa São Paulo, seguro apartamento SP, cotação seguro residencial" />
         <link rel="canonical" href="https://elevanceseguros.com/seguro-residencial" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Seguro Residencial", "item": "https://www.elevanceseguros.com/seguro-residencial"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="um Seguro Residencial" />

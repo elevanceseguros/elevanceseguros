@@ -23,6 +23,15 @@ const HapvidaPage = () => {
         <meta name="description" content="Hapvida NotreDame Intermédica: plano de saúde acessível com rede própria. Cotação gratuita em São Paulo." />
         <meta name="keywords" content="Hapvida plano saúde SP, NotreDame Intermédica, cotação Hapvida" />
         <link rel="canonical" href="https://elevanceseguros.com/hapvida" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Hapvida", "item": "https://www.elevanceseguros.com/hapvida"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="Hapvida" />
@@ -40,7 +49,7 @@ const HapvidaPage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-orange-50">
+      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-slate-50">
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div 
@@ -48,11 +57,11 @@ const HapvidaPage = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-block bg-orange-100 text-orange-800 px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
+              <div className="inline-block bg-blue-100 text-[#114d8e] px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4" /> Rede própria integrada
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Saúde acessível com a <span className="text-orange-600">Hapvida</span>
+                Saúde acessível com a <span className="text-[#114d8e]">Hapvida</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 A Hapvida NotreDame Intermédica é um dos maiores grupos de saúde do Brasil, com rede própria de hospitais, clínicas e laboratórios. Planos acessíveis com cobertura completa.
@@ -131,6 +140,16 @@ const HapvidaPage = () => {
 
       <FloatingWhatsApp />
 
+
+      {/* Links internos — outras operadoras */}
+      <section className="py-8 bg-blue-50 border-t border-blue-100">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Também trabalhamos com</p>
+          <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
+            <a href="/amil" className="text-[#114d8e] font-black hover:underline">Amil</a> · <a href="/bradescosaude" className="text-[#114d8e] font-black hover:underline">Bradesco Saúde</a> · <a href="/sulamerica" className="text-[#114d8e] font-black hover:underline">SulAmérica</a> · <a href="/unimed" className="text-[#114d8e] font-black hover:underline">Unimed</a> · <a href="/medsenior" className="text-[#114d8e] font-black hover:underline">MedSênior</a>
+          </p>
+        </div>
+      </section>
       <ScrollCTA produto="Plano de Saúde Hapvida" />
     </>
   );

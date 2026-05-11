@@ -23,6 +23,15 @@ const SulamericaPage = () => {
         <meta name="description" content="SulAmérica Saúde em São Paulo: planos completos, ampla rede credenciada e atendimento personalizado. Cotação gratuita." />
         <meta name="keywords" content="SulAmérica saúde SP, plano SulAmérica São Paulo, cotação SulAmérica" />
         <link rel="canonical" href="https://elevanceseguros.com/sulamerica" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "SulAmérica Saúde", "item": "https://www.elevanceseguros.com/sulamerica"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="SulAmérica" />
@@ -40,7 +49,7 @@ const SulamericaPage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-orange-50">
+      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-slate-50">
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div 
@@ -48,11 +57,11 @@ const SulamericaPage = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-block bg-orange-100 text-orange-800 px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
+              <div className="inline-block bg-blue-100 text-[#114d8e] px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4" /> Mais de 120 anos de história
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Tradição e cuidado com a <span className="text-orange-600">SulAmérica</span>
+                Tradição e cuidado com a <span className="text-[#114d8e]">SulAmérica</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 A SulAmérica é uma das seguradoras mais tradicionais do Brasil, com mais de 120 anos de história. Seus planos de saúde oferecem ampla rede credenciada e cobertura completa em São Paulo.
@@ -131,6 +140,16 @@ const SulamericaPage = () => {
 
       <FloatingWhatsApp />
 
+
+      {/* Links internos — outras operadoras */}
+      <section className="py-8 bg-blue-50 border-t border-blue-100">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Também trabalhamos com</p>
+          <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
+            <a href="/amil" className="text-[#114d8e] font-black hover:underline">Amil</a> · <a href="/bradescosaude" className="text-[#114d8e] font-black hover:underline">Bradesco Saúde</a> · <a href="/hapvida" className="text-[#114d8e] font-black hover:underline">Hapvida</a> · <a href="/alice" className="text-[#114d8e] font-black hover:underline">Alice</a> · <a href="/porto" className="text-[#114d8e] font-black hover:underline">Porto Saúde</a>
+          </p>
+        </div>
+      </section>
       <ScrollCTA produto="Plano de Saúde Sulamerica" />
     </>
   );

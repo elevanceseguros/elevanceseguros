@@ -40,6 +40,15 @@ export default function ResponsabilidadeCivilPage() {
         <meta name="description" content="Seguro de Responsabilidade Civil para empresas e profissionais em SP. RC Geral, RC Profissional, RC Produtos e D&O. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="seguro responsabilidade civil SP, RC profissional São Paulo, seguro RC empresa, D&O seguro" />
         <link rel="canonical" href="https://elevanceseguros.com/responsabilidade-civil" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Responsabilidade Civil", "item": "https://www.elevanceseguros.com/responsabilidade-civil"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="Seguro de Responsabilidade Civil" />

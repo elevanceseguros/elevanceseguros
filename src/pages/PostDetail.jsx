@@ -102,7 +102,19 @@ const PostDetail = () => {
           </div>
         )}
 
-      </article>
+      
+        {/* CTA pós-artigo */}
+        <div className="mt-12 bg-[#114d8e] rounded-[30px] p-8 text-white text-center space-y-4">
+          <p className="text-[10px] font-black uppercase tracking-widest text-white/60">Gostou do conteúdo?</p>
+          <h3 className="text-2xl font-black italic">Quer uma cotação gratuita?</h3>
+          <p className="text-white/75 text-sm font-medium">Rodrigo responde em minutos. Sem compromisso, sem burocracia.</p>
+          <a href="https://wa.me/5511920144864?text=Olá Rodrigo! Li um artigo no blog da Elevance e quero uma cotação gratuita."
+            target="_blank" rel="noreferrer"
+            className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg">
+            <MessageCircle size={16} /> Falar com Rodrigo no WhatsApp
+          </a>
+        </div>
+        </article>
     </div>
   );
 };

@@ -41,6 +41,15 @@ export default function OdontologicoPage() {
         <meta name="description" content="Planos odontológicos individuais e familiares em São Paulo. Consultas, tratamentos e urgências com a melhor rede credenciada. Cotação gratuita." />
         <meta name="keywords" content="plano odontológico SP, plano dental São Paulo, cotação plano odontológico" />
               <link rel="canonical" href="https://elevanceseguros.com/odontologico" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Plano Odontológico", "item": "https://www.elevanceseguros.com/odontologico"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="um Plano Odontológico" />

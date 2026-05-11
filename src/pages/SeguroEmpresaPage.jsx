@@ -40,6 +40,15 @@ export default function SeguroEmpresaPage() {
         <meta name="description" content="Soluções completas de seguro para empresas em São Paulo. Plano de saúde PME, seguro patrimonial, responsabilidade civil e vida em grupo." />
         <meta name="keywords" content="seguro empresarial SP, plano saúde PME, seguro empresa São Paulo" />
         <link rel="canonical" href="https://elevanceseguros.com/seguro-empresa" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Seguro Empresarial", "item": "https://www.elevanceseguros.com/seguro-empresa"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="Seguro Empresarial" />

@@ -23,6 +23,15 @@ const UnimeduniplanPage = () => {
         <meta name="description" content="Planos Unimed em São Paulo com ampla rede de médicos cooperados. Cotação gratuita e personalizada via WhatsApp." />
         <meta name="keywords" content="Unimed plano saúde SP, Unimed São Paulo, cotação Unimed" />
         <link rel="canonical" href="https://elevanceseguros.com/unimed" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Unimed", "item": "https://www.elevanceseguros.com/unimed"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="Unimed" />
@@ -40,7 +49,7 @@ const UnimeduniplanPage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-green-50">
+      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-slate-50">
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div 
@@ -48,11 +57,11 @@ const UnimeduniplanPage = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-block bg-green-100 text-green-800 px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
+              <div className="inline-block bg-blue-100 text-[#114d8e] px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4" /> Cooperativa médica líder
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Saúde de qualidade com a <span className="text-green-600">Unimed</span>
+                Saúde de qualidade com a <span className="text-[#114d8e]">Unimed</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 A Unimed é a maior cooperativa médica do mundo, presente em todo o Brasil. Com planos para pessoa física, família e empresas, oferece ampla rede de médicos cooperados e hospitais de referência.
@@ -131,6 +140,16 @@ const UnimeduniplanPage = () => {
 
       <FloatingWhatsApp />
 
+
+      {/* Links internos — outras operadoras */}
+      <section className="py-8 bg-blue-50 border-t border-blue-100">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Também trabalhamos com</p>
+          <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
+            <a href="/amil" className="text-[#114d8e] font-black hover:underline">Amil</a> · <a href="/sulamerica" className="text-[#114d8e] font-black hover:underline">SulAmérica</a> · <a href="/bradescosaude" className="text-[#114d8e] font-black hover:underline">Bradesco Saúde</a> · <a href="/porto" className="text-[#114d8e] font-black hover:underline">Porto Saúde</a> · <a href="/alice" className="text-[#114d8e] font-black hover:underline">Alice</a>
+          </p>
+        </div>
+      </section>
       <ScrollCTA produto="Plano de Saúde Unimeduniplan" />
     </>
   );

@@ -29,6 +29,15 @@ const AlicePage = () => {
         <meta name="description" content="Conheça a Alice, a gestora de saúde que conecta você aos melhores hospitais e médicos. Tecnologia, sem burocracia e foco na sua saúde." />
         <meta name="keywords" content="Alice saúde, plano Alice, gestora de saúde, plano premium, hospitais de ponta" />
         <link rel="canonical" href="https://elevanceseguros.com/alice" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Alice Saúde", "item": "https://www.elevanceseguros.com/alice"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="Alice" />
@@ -131,6 +140,16 @@ const AlicePage = () => {
     { pergunta: "Qual a cobertura da rede Alice em São Paulo?", resposta: "A Alice tem rede credenciada selecionada em São Paulo com foco em qualidade. Inclui hospitais de referência e laboratórios de exames. Por ser uma operadora mais nova, a rede é menor que as tradicionais, mas bem avaliada pelos usuários." }
   ]} />
 
+
+      {/* Links internos — outras operadoras */}
+      <section className="py-8 bg-blue-50 border-t border-blue-100">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Também trabalhamos com</p>
+          <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
+            <a href="/amil" className="text-[#114d8e] font-black hover:underline">Amil</a> · <a href="/bradescosaude" className="text-[#114d8e] font-black hover:underline">Bradesco Saúde</a> · <a href="/sulamerica" className="text-[#114d8e] font-black hover:underline">SulAmérica</a> · <a href="/unimed" className="text-[#114d8e] font-black hover:underline">Unimed</a> · <a href="/porto" className="text-[#114d8e] font-black hover:underline">Porto Saúde</a>
+          </p>
+        </div>
+      </section>
       <ScrollCTA produto="Plano de Saúde Alice" />
     </>
   );

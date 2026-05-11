@@ -47,6 +47,15 @@ export default function ConsorciосPage() {
         <meta name="description" content="Consórcios sem juros para imóvel, veículo e serviços. Planeje suas conquistas com inteligência. Simulação gratuita via WhatsApp." />
         <meta name="keywords" content="consórcio imóvel SP, consórcio carro São Paulo, consórcio sem juros, consórcio serviços" />
         <link rel="canonical" href="https://elevanceseguros.com/consorcios" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Consórcios", "item": "https://www.elevanceseguros.com/consorcios"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="um Consórcio" />

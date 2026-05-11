@@ -23,6 +23,15 @@ const BradescosaudePage = () => {
         <meta name="description" content="Bradesco Saúde: um dos maiores planos de saúde do Brasil. Ampla rede credenciada, cobertura completa em São Paulo." />
         <meta name="keywords" content="Bradesco Saúde SP, plano Bradesco São Paulo, cotação Bradesco saúde" />
         <link rel="canonical" href="https://elevanceseguros.com/bradescosaude" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Bradesco Saúde", "item": "https://www.elevanceseguros.com/bradescosaude"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="Bradesco Saúde" />
@@ -40,7 +49,7 @@ const BradescosaudePage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-red-50">
+      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-slate-50">
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div 
@@ -48,11 +57,11 @@ const BradescosaudePage = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-block bg-red-100 text-red-800 px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
+              <div className="inline-block bg-blue-100 text-[#114d8e] px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4" /> Um dos maiores do Brasil
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Saúde garantida com o <span className="text-red-600">Bradesco Saúde</span>
+                Saúde garantida com o <span className="text-[#114d8e]">Bradesco Saúde</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 O Bradesco Saúde é um dos maiores e mais tradicionais planos de saúde do Brasil. Com ampla rede credenciada em São Paulo e em todo o país, oferece cobertura completa para você e sua família.
@@ -131,6 +140,16 @@ const BradescosaudePage = () => {
 
       <FloatingWhatsApp />
 
+
+      {/* Links internos — outras operadoras */}
+      <section className="py-8 bg-blue-50 border-t border-blue-100">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Também trabalhamos com</p>
+          <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
+            <a href="/amil" className="text-[#114d8e] font-black hover:underline">Amil</a> · <a href="/sulamerica" className="text-[#114d8e] font-black hover:underline">SulAmérica</a> · <a href="/porto" className="text-[#114d8e] font-black hover:underline">Porto Saúde</a> · <a href="/unimed" className="text-[#114d8e] font-black hover:underline">Unimed</a> · <a href="/medsenior" className="text-[#114d8e] font-black hover:underline">MedSênior</a>
+          </p>
+        </div>
+      </section>
       <ScrollCTA produto="Plano de Saúde Bradesco" />
     </>
   );

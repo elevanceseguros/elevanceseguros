@@ -40,6 +40,15 @@ export default function SeguroVidaPage() {
         <meta name="description" content="Seguro de vida com cobertura completa para você e sua família. Morte, invalidez, doenças graves e diária hospitalar. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="seguro de vida SP, seguro vida São Paulo, cotação seguro vida, seguro vida família" />
         <link rel="canonical" href="https://elevanceseguros.com/seguro-vida" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Seguro de Vida", "item": "https://www.elevanceseguros.com/seguro-vida"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="um Seguro de Vida" />

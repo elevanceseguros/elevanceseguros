@@ -53,6 +53,15 @@ export default function EncontreSeuPlanoPage() {
         <meta name="description" content="Compare os melhores planos de saúde em São Paulo. Amil, Bradesco, SulAmérica, Unimed, Hapvida e mais. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="encontre plano de saúde SP, comparar planos saúde São Paulo, melhor plano saúde" />
               <link rel="canonical" href="https://elevanceseguros.com/encontre-seu-plano" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Encontre seu Plano", "item": "https://www.elevanceseguros.com/encontre-seu-plano"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="um plano de saúde" />
@@ -180,6 +189,51 @@ export default function EncontreSeuPlanoPage() {
       </section>
 
       
+
+      {/* Comparativo de operadoras */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <span className="inline-block bg-[#114d8e]/10 text-[#114d8e] px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-3">Comparativo</span>
+            <h2 className="text-3xl font-black text-[#114d8e] italic">Qual operadora é certa para você?</h2>
+            <p className="text-slate-500 mt-2 text-sm font-medium">Resumo das principais operadoras disponíveis em São Paulo</p>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-[#114d8e] text-white">
+                  <th className="p-4 text-left rounded-tl-2xl text-xs font-black uppercase">Operadora</th>
+                  <th className="p-4 text-center text-xs font-black uppercase">Rede</th>
+                  <th className="p-4 text-center text-xs font-black uppercase">Preço</th>
+                  <th className="p-4 text-center text-xs font-black uppercase">Perfil ideal</th>
+                  <th className="p-4 text-center rounded-tr-2xl text-xs font-black uppercase">Destaque</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {[
+                  { op: "Amil", rede: "⭐⭐⭐⭐⭐", preco: "$$$$", perfil: "Quem quer o Einstein / Sírio", destaque: "Maior rede do Brasil" },
+                  { op: "Bradesco Saúde", rede: "⭐⭐⭐⭐⭐", preco: "$$$$", perfil: "Cobertura nacional", destaque: "Tradição e abrangência" },
+                  { op: "SulAmérica", rede: "⭐⭐⭐⭐", preco: "$$$", perfil: "App e telemedicina", destaque: "Melhor app do mercado" },
+                  { op: "Hapvida", rede: "⭐⭐⭐", preco: "$$", perfil: "Menor custo", destaque: "Rede própria controlada" },
+                  { op: "Unimed", rede: "⭐⭐⭐⭐", preco: "$$$", perfil: "Confiança e tradição", destaque: "Cooperativa médica" },
+                  { op: "Alice", rede: "⭐⭐⭐", preco: "$$$", perfil: "PME digital", destaque: "Melhor experiência digital" },
+                  { op: "Porto Saúde", rede: "⭐⭐⭐⭐", preco: "$$$", perfil: "Custo-benefício SP", destaque: "Boa resolução de casos" },
+                  { op: "MedSênior", rede: "⭐⭐⭐", preco: "$$", perfil: "A partir de 49 anos", destaque: "Especialista em idosos" },
+                ].map((row, i) => (
+                  <tr key={i} className={i % 2 === 0 ? "bg-slate-50" : "bg-white"}>
+                    <td className="p-4 font-black text-[#114d8e]">{row.op}</td>
+                    <td className="p-4 text-center">{row.rede}</td>
+                    <td className="p-4 text-center font-bold text-slate-600">{row.preco}</td>
+                    <td className="p-4 text-center text-slate-600 text-xs">{row.perfil}</td>
+                    <td className="p-4 text-center"><span className="bg-blue-100 text-[#114d8e] text-[10px] font-black px-3 py-1 rounded-full">{row.destaque}</span></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-[10px] text-slate-400 italic mt-3 text-center">*Avaliação orientativa. Preços e redes variam conforme plano e perfil.</p>
+        </div>
+      </section>
       {/* FAQ */}
       <FAQ perguntas={[
     { pergunta: "Como escolher o melhor plano de saúde em São Paulo?", resposta: "Os principais critérios são: rede credenciada (verifique se seus médicos e hospitais favoritos estão incluídos), tipo de acomodação (enfermaria ou apartamento), coparticipação (se há e quanto é cobrado por consulta/exame), abrangência geográfica e, claro, o valor da mensalidade. Um corretor especializado como o Rodrigo pode fazer essa análise gratuitamente." },

@@ -47,6 +47,15 @@ export default function SeguroGarantiaPage() {
         <meta name="description" content="Seguro Garantia para licitações, obras públicas e contratos empresariais em SP. Garantia de proposta, execução, judicial e adiantamento. Cotação gratuita." />
         <meta name="keywords" content="seguro garantia SP, garantia licitação São Paulo, bid bond, performance bond, seguro garantia empresarial" />
         <link rel="canonical" href="https://elevanceseguros.com/seguro-garantia" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Seguro Garantia", "item": "https://www.elevanceseguros.com/seguro-garantia"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="Seguro Garantia" />

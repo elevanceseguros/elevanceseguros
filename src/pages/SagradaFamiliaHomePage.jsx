@@ -1,5 +1,6 @@
 import CorretorHero from '@/components/CorretorHero';
 import { Helmet } from 'react-helmet-async';
+import ScrollCTA from '@/components/ScrollCTA';
 import React from 'react';
 import LeadFormSincero from '@/components/LeadFormSincero';
 import { ShieldCheck, Clock, MapPin, Users, CheckCircle2, Building2, Table, Activity, ArrowRight } from 'lucide-react';
@@ -182,6 +183,8 @@ const SagradaFamiliaHomePage = () => {
          </p>
       </footer>
     </div>
+
+      <ScrollCTA produto="Plano de Saúde Sagrada Família" />
     </>
   );
 };

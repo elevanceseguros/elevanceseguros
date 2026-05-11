@@ -50,6 +50,16 @@ export default function SeguroAutoPage() {
         <title>Seguro Auto em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Seguro auto em São Paulo com as melhores seguradoras. Cobertura completa, melhor preço. Cotação gratuita via WhatsApp." />
         <link rel="canonical" href="https://elevanceseguros.com/seguro-auto" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Seguro Auto", "item": "https://www.elevanceseguros.com/seguro-auto"}
+          ]
+        })}`}</script>
+              <meta name="keywords" content="seguro auto São Paulo, seguro carro SP, cotação seguro auto SP 2026, seguro auto barato São Paulo, seguro auto online SP" />
       </Helmet>
 
       <CorretorHero operadora="um Seguro Auto" />

@@ -23,6 +23,15 @@ const PortoPage = () => {
         <meta name="description" content="Porto Saúde: plano de saúde com ampla cobertura, rede credenciada de qualidade e atendimento 24h em São Paulo." />
         <meta name="keywords" content="Porto Saúde plano, Porto Seguro saúde SP, cotação Porto saúde" />
         <link rel="canonical" href="https://elevanceseguros.com/porto" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Porto Saúde", "item": "https://www.elevanceseguros.com/porto"}
+          ]
+        })}`}</script>
       </Helmet>
 
       <CorretorHero operadora="Porto Saúde" />
@@ -130,6 +139,16 @@ const PortoPage = () => {
     { pergunta: "Porto Saúde oferece plano individual?", resposta: "A disponibilidade de planos individuais Porto Saúde em SP pode variar. Atualmente, as principais opções são planos coletivos por adesão. Entre em contato para verificar as opções disponíveis para o seu perfil." }
   ]} />
 
+
+      {/* Links internos — outras operadoras */}
+      <section className="py-8 bg-blue-50 border-t border-blue-100">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Também trabalhamos com</p>
+          <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
+            <a href="/amil" className="text-[#114d8e] font-black hover:underline">Amil</a> · <a href="/sulamerica" className="text-[#114d8e] font-black hover:underline">SulAmérica</a> · <a href="/bradescosaude" className="text-[#114d8e] font-black hover:underline">Bradesco Saúde</a> · <a href="/alice" className="text-[#114d8e] font-black hover:underline">Alice</a> · <a href="/medsenior" className="text-[#114d8e] font-black hover:underline">MedSênior</a>
+          </p>
+        </div>
+      </section>
       <ScrollCTA produto="Plano de Saúde Porto" />
     </>
   );
