@@ -82,27 +82,20 @@ const Footer = () => {
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.04 0 12 0 12s0 3.96.5 5.81a3.02 3.02 0 0 0 2.12 2.14C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.96 24 12 24 12s0-3.96-.5-5.81zM9.75 15.5V8.5l6.5 3.5-6.5 3.5z"/></svg>
               </a>
             </div>
-
-            {/* Logos operadoras — só desktop */}
-            <div className="hidden lg:block pt-2 space-y-3">
-              <p className="text-[9px] font-black uppercase tracking-[0.2em] text-white/30">Operadoras Parceiras</p>
-              <div className="flex flex-wrap gap-3 items-center">
-                {[
-                  { src: "/logos/amil.png", alt: "Amil" },
-                  { src: "/logos/sulamerica.png", alt: "SulAmérica" },
-                  { src: "/logos/hapvida.png", alt: "Hapvida" },
-                  { src: "/logos/unimed.png", alt: "Unimed" },
-                  { src: "/logos/allianz.png", alt: "Allianz" },
-                  { src: "/logos/hdi.png", alt: "HDI" },
-                  { src: "/logos/tokio.png", alt: "Tokio Marine" },
-                  { src: "/logos/suhai.png", alt: "Suhai" },
-                ].map((logo, i) => (
-                  <img key={i} src={logo.src} alt={logo.alt}
-                    className="h-5 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-80 transition-opacity"
-                    loading="lazy" />
-                ))}
-              </div>
+              <a href="https://tiktok.com/@elevance.seguros" target="_blank" rel="noreferrer"
+                className="p-2 bg-white/10 hover:bg-slate-900 rounded-xl transition-all" title="TikTok">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+              </a>
+              <a href="https://kwai.com/@elevanceseguros" target="_blank" rel="noreferrer"
+                className="p-2 bg-white/10 hover:bg-orange-500 rounded-xl transition-all" title="Kwai">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+              </a>
+              <a href="https://youtube.com/@elevanceseguros" target="_blank" rel="noreferrer"
+                className="p-2 bg-white/10 hover:bg-red-600 rounded-xl transition-all" title="YouTube">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.04 0 12 0 12s0 3.96.5 5.81a3.02 3.02 0 0 0 2.12 2.14C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.96 24 12 24 12s0-3.96-.5-5.81zM9.75 15.5V8.5l6.5 3.5-6.5 3.5z"/></svg>
+              </a>
             </div>
+
           </div>
 
           {/* Coluna 2: Saúde em 2 subcolunas — 5 cols */}
