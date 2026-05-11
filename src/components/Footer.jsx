@@ -120,27 +120,28 @@ const Footer = () => {
               <h4 className="flex items-center gap-1.5 font-black text-white uppercase text-[10px] tracking-[0.2em] mb-4">
                 <Car size={11} className="text-blue-400" /> Auto
               </h4>
-              <ul className="space-y-2">
+              <div className="grid grid-cols-2 gap-x-6 gap-y-2">
                 {autoLinks.map((item) => (
-                  <li key={item.path}>
-                    <Link to={item.path} className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
-                      <ChevronRight size={10} className="shrink-0" /> {item.name}
-                    </Link>
-                  </li>
+                  <Link key={item.path} to={item.path} className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
+                    <ChevronRight size={10} className="shrink-0" /> {item.name}
+                  </Link>
                 ))}
-              </ul>
+              </div>
             </div>
             <div>
               <h4 className="font-black text-white uppercase text-[10px] tracking-[0.2em] mb-4">Seguros</h4>
-              <ul className="space-y-2">
-                {segurosLinks.map((item) => (
-                  <li key={item.path}>
-                    <Link to={item.path} className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
-                      <ChevronRight size={10} className="shrink-0" /> {item.name}
-                    </Link>
-                  </li>
+              <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+                {segurosLinks.slice(0, 3).map((item) => (
+                  <Link key={item.path} to={item.path} className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
+                    <ChevronRight size={10} className="shrink-0" /> {item.name}
+                  </Link>
                 ))}
-              </ul>
+                {segurosLinks.slice(3).map((item) => (
+                  <Link key={item.path} to={item.path} className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
+                    <ChevronRight size={10} className="shrink-0" /> {item.name}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
 
