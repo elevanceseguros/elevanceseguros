@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Home, Car, Briefcase, Zap, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, TrendingUp, Shield, Star , LayoutList} from 'lucide-react';
+import FAQ from '@/components/FAQ';
 import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
 
@@ -272,6 +273,15 @@ export default function ConsorciосPage() {
         </div>
       </section>
 
+      
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "Consórcio tem juros?", resposta: "Não! O consórcio não cobra juros — apenas uma taxa de administração que varia entre 15% e 20% do valor total, diluída nas parcelas. Em comparação, um financiamento pode cobrar mais de 100% do valor do bem em juros ao longo do prazo." },
+    { pergunta: "Como funciona a contemplação no consórcio?", resposta: "A contemplação acontece de duas formas: sorteio mensal entre todos os participantes adimplentes, ou lance — onde você oferta um valor adicional (percentual do crédito) para antecipar a contemplação. Quem oferta o maior lance percentual é contemplado. É possível usar o FGTS como lance em consórcios imobiliários." },
+    { pergunta: "Posso usar a carta de crédito do consórcio para qualquer imóvel?", resposta: "Sim! A carta de crédito imobiliária pode ser usada para comprar imóvel novo ou usado, terreno, ou para construção/reforma. O imóvel precisa estar regularizado e ter matrícula no cartório de registro de imóveis." },
+    { pergunta: "O que acontece se eu não pagar as parcelas do consórcio?", resposta: "Em caso de inadimplência, você fica suspenso dos sorteios e pode ser excluído do grupo. O valor pago pode ser resgatado (com desconto de multa e taxa de administração) após o encerramento do grupo. Por isso, é importante calcular bem o valor da parcela antes de entrar." },
+    { pergunta: "Consórcio é seguro? Quem fiscaliza?", resposta: "Sim! Os consórcios no Brasil são fiscalizados pelo Banco Central (BACEN), que autoriza e supervisiona as administradoras. A ABAC (Associação Brasileira de Administradoras de Consórcios) também regula o setor. Sempre verifique se a administradora tem autorização ativa no site do Banco Central." }
+  ]} />
       <ScrollCTA produto="Consórcio" />
     </>
   );

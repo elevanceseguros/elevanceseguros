@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShieldCheck, Zap, Car, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, Users, LayoutList } from 'lucide-react';
+import FAQ from '@/components/FAQ';
 import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
 
@@ -232,6 +233,15 @@ export default function SeguroAutoPage() {
         </div>
       </section>
 
+      
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "Qual o valor médio do seguro auto em São Paulo em 2026?", resposta: "O valor varia muito conforme perfil do motorista, CEP, modelo do veículo e cobertura escolhida. Em São Paulo, um veículo popular de até R$ 60.000 para motorista de 30 a 40 anos custa entre R$ 120 e R$ 250 por mês. Para cotação personalizada, entre em contato." },
+    { pergunta: "O que é coberto pelo seguro auto completo?", resposta: "O seguro auto completo cobre: colisão (mesmo quando você é o culpado), roubo e furto, incêndio e explosão, danos a terceiros (Responsabilidade Civil), assistência 24h com guincho e carro reserva. Vidros e retrovisores podem ser incluídos opcionalmente." },
+    { pergunta: "Como funciona a franquia no seguro auto?", resposta: "A franquia é o valor que você paga em caso de sinistro antes de a seguradora cobrir o restante. Por exemplo, com franquia de R$ 3.000, se o conserto custar R$ 10.000, você paga R$ 3.000 e a seguradora paga R$ 7.000. Franquias maiores reduzem o valor do seguro anual." },
+    { pergunta: "Seguro auto cobre o carro de terceiros também?", resposta: "Sim! A cobertura de Responsabilidade Civil (RC) cobre danos causados a veículos e pessoas de terceiros em acidentes onde você for o responsável. Os valores de RC variam conforme a apólice contratada." },
+    { pergunta: "Consigo seguro auto com histórico de sinistros?", resposta: "Sim, mas o valor será mais alto. Cada sinistro nos últimos 3 anos aumenta o prêmio. Trabalhamos com várias seguradoras e encontramos a mais competitiva para o seu perfil, mesmo com histórico de acionamentos." }
+  ]} />
       <ScrollCTA produto="Seguro Auto" />
     </>
   );

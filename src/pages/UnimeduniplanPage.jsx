@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
+import ScrollCTA from '@/components/ScrollCTA';
+import FAQ from '@/components/FAQ';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
@@ -119,7 +121,17 @@ const UnimeduniplanPage = () => {
       </section>
 
 
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "Unimed é confiável? Como funciona o sistema cooperativista?", resposta: "A Unimed é uma cooperativa de médicos — os próprios médicos são donos da operadora. Com mais de 50 anos de história, é a maior cooperativa de saúde do mundo e uma das mais confiáveis do Brasil. O sistema cooperativista garante alinhamento entre os interesses dos médicos e dos pacientes." },
+    { pergunta: "Posso usar o plano Unimed em qualquer Unimed do Brasil?", resposta: "Depende do plano. Planos com abrangência nacional (Unimed Uniplan ou planos inter-cooperativas) permitem atendimento em qualquer Unimed do país. Planos locais ficam restritos à região da cooperativa contratada. Viajantes frequentes devem optar por planos nacionais." },
+    { pergunta: "Unimed Uniplan é diferente de Unimed?", resposta: "A Unimed-BH/Uniplan é uma operadora específica do sistema Unimed que opera em nível nacional. Já a Unimed São Paulo é a cooperativa local. Ambas pertencem ao sistema Unimed, mas são entidades diferentes com contratos, redes e preços distintos." },
+    { pergunta: "Qual a carência do plano Unimed?", resposta: "As carências seguem o padrão ANS: 24h para urgência, 30 dias para consultas, 180 dias para cirurgias eletivas e 300 dias para parto. Em casos de portabilidade de plano, é possível eliminar as carências do novo plano." }
+  ]} />
+
       <FloatingWhatsApp />
+
+      <ScrollCTA produto="Plano de Saúde Unimeduniplan" />
     </>
   );
 };

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Building2, ShieldCheck, Zap, Users, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Briefcase, Star , LayoutList} from 'lucide-react';
+import FAQ from '@/components/FAQ';
 import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
 
@@ -216,6 +217,14 @@ export default function SeguroEmpresaPage() {
         </div>
       </section>
 
+      
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "Quais coberturas o seguro empresarial inclui?", resposta: "O seguro empresarial pode incluir: incêndio e explosão do patrimônio, roubo de mercadorias e equipamentos, responsabilidade civil do estabelecimento, danos elétricos, lucros cessantes (receita que você deixa de ganhar em caso de sinistro), vida em grupo para funcionários e cobertura de vidros." },
+    { pergunta: "MEI e microempresa precisam de seguro empresarial?", resposta: "Sim! Mesmo um MEI com um espaço físico ou equipamentos está exposto a incêndio, roubo e responsabilidade civil. O seguro empresarial para pequenas empresas custa a partir de R$ 80 por mês e pode evitar o encerramento das atividades em caso de sinistro grave." },
+    { pergunta: "O que é lucros cessantes no seguro empresarial?", resposta: "Lucros cessantes é a cobertura que indeniza a empresa pela receita que deixa de ser gerada durante o período de paralisação após um sinistro (incêndio, por exemplo). Se sua empresa ficar 3 meses fechada para reconstrução, o seguro paga uma indenização equivalente à receita do período." },
+    { pergunta: "Seguro empresarial é obrigatório?", resposta: "Em alguns casos sim: condomínios comerciais exigem seguro contra incêndio, financiamentos bancários geralmente exigem seguro patrimonial, e contratos com o poder público podem exigir seguro de responsabilidade civil. Mas mesmo quando não obrigatório, é altamente recomendado." }
+  ]} />
       <ScrollCTA produto="Seguro Empresarial" />
     </>
   );

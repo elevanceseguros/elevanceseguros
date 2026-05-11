@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, ShieldCheck, Zap, Heart, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import FAQ from '@/components/FAQ';
 import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
 
@@ -178,6 +179,14 @@ export default function EncontreSeuPlanoPage() {
         </div>
       </section>
 
+      
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "Como escolher o melhor plano de saúde em São Paulo?", resposta: "Os principais critérios são: rede credenciada (verifique se seus médicos e hospitais favoritos estão incluídos), tipo de acomodação (enfermaria ou apartamento), coparticipação (se há e quanto é cobrado por consulta/exame), abrangência geográfica e, claro, o valor da mensalidade. Um corretor especializado como o Rodrigo pode fazer essa análise gratuitamente." },
+    { pergunta: "Plano individual ou coletivo por adesão: qual é melhor?", resposta: "Planos individuais têm reajuste controlado pela ANS, mas são escassos em SP e mais caros. Planos coletivos por adesão têm mais opções, costumam ser mais baratos para famílias e têm redes mais amplas — mas o reajuste é livre. Para a maioria das famílias em SP, o coletivo por adesão oferece melhor custo-benefício." },
+    { pergunta: "Quanto tempo leva para ativar o plano de saúde?", resposta: "Após a aprovação cadastral e pagamento da primeira mensalidade, a carteirinha é emitida em 2 a 5 dias úteis. A carência para consultas começa a ser contada a partir da data de início de vigência. Em casos de portabilidade, a cobertura pode ser imediata." },
+    { pergunta: "O que é coparticipação no plano de saúde?", resposta: "Coparticipação é o valor fixo ou percentual que o beneficiário paga no momento de usar o plano — por consulta, exame ou internação. Planos com coparticipação têm mensalidade menor, mas podem gerar custos altos para quem usa muito o plano. Ideal para quem usa pouco." }
+  ]} />
       <ScrollCTA produto="Plano de Saúde" />
     </>
   );

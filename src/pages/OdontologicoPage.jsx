@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Smile, ShieldCheck, Zap, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, Heart } from 'lucide-react';
+import FAQ from '@/components/FAQ';
 import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
@@ -175,6 +176,14 @@ export default function OdontologicoPage() {
         </div>
       </section>
 
+      
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "Plano odontológico individual tem carência?", resposta: "Sim. A maioria dos planos odontológicos tem carência de 30 dias para consultas, 90 dias para procedimentos simples (limpeza, extração) e 180 dias para procedimentos mais complexos como canal, próteses e ortodontia. Urgências como dor intensa e hemorragia são atendidas imediatamente." },
+    { pergunta: "Implante dentário é coberto pelo plano odontológico?", resposta: "Depende do plano. Implantes não são obrigatórios pela ANS, mas alguns planos premium oferecem cobertura parcial ou total. A maioria cobre a prótese sobre implante, mas não o implante (o pino de titânio) em si. Verifique sempre o rol de cobertura antes de contratar." },
+    { pergunta: "Qual a diferença entre plano odontológico e dental?", resposta: "São a mesma coisa — dental e odontológico são termos sinônimos para planos de assistência odontológica. Os planos variam conforme a rede credenciada, cobertura de procedimentos e valor. Na Elevance, comparamos as melhores opções disponíveis em São Paulo." },
+    { pergunta: "Plano odontológico cobre ortodontia (aparelho)?", resposta: "Nem todos cobrem. Ortodontia é um item opcional e os planos que oferecem cobrem geralmente aparelhos metálicos convencionais com carência de 180 dias. Aparelhos estéticos (invisalign, cerâmico) raramente são cobertos. Sempre confirme antes de contratar." }
+  ]} />
       <ScrollCTA produto="Plano Odontológico" />
     </>
   );

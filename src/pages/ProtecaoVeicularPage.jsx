@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShieldCheck, Zap, Car, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, Users, LayoutList } from 'lucide-react';
+import FAQ from '@/components/FAQ';
 import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
 
@@ -226,6 +227,14 @@ export default function ProtecaoVeicularPage() {
         </div>
       </section>
 
+      
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "Qual a diferença entre proteção veicular e seguro auto?", resposta: "O seguro auto é regulado pela SUSEP e oferece solidez jurídica total. A proteção veicular APVS é um contrato entre associados, geralmente mais acessível e sem análise de perfil rígida. Ambos cobrem roubo, furto e colisão, mas a proteção veicular costuma ter custo menor para perfis que as seguradoras penalizam." },
+    { pergunta: "A proteção veicular APVS cobre motos?", resposta: "Sim! A APVS Brasil oferece proteção para motos com cobertura contra roubo, furto e colisão, além de assistência 24h. Uma das poucas opções do mercado que aceita motocicletas sem restrição de cilindrada." },
+    { pergunta: "Carros modificados ou rebaixados têm cobertura?", resposta: "Sim! Diferente de muitas seguradoras tradicionais que recusam veículos modificados, a proteção veicular APVS aceita carros rebaixados, tuning e modificações estéticas, sem cobrança adicional pelo perfil do veículo." },
+    { pergunta: "Quanto custa a proteção veicular APVS em SP?", resposta: "O valor varia conforme o modelo e ano do veículo, mas em geral fica entre R$ 100 e R$ 250 por mês para veículos populares em São Paulo. É comum ser 30% a 50% mais barato que o seguro auto tradicional para perfis de alto risco." }
+  ]} />
       <ScrollCTA produto="Proteção Veicular" />
     </>
   );

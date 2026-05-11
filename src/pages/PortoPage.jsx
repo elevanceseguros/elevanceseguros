@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import ScrollCTA from '@/components/ScrollCTA';
+import FAQ from '@/components/FAQ';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
@@ -120,6 +122,15 @@ const PortoPage = () => {
 
 
       <FloatingWhatsApp />
+
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "Porto Saúde tem boa rede em São Paulo?", resposta: "Sim! A Porto Seguro Saúde tem rede credenciada robusta em São Paulo, incluindo hospitais de referência e ampla cobertura de especialidades. É conhecida pela facilidade no uso do plano e boa resolução de casos." },
+    { pergunta: "Porto Saúde aceita portabilidade?", resposta: "Sim! A Porto Seguro Saúde aceita portabilidade de carências de outros planos ANS. O processo é feito diretamente com o corretor, que verifica a compatibilidade entre os planos." },
+    { pergunta: "Porto Saúde oferece plano individual?", resposta: "A disponibilidade de planos individuais Porto Saúde em SP pode variar. Atualmente, as principais opções são planos coletivos por adesão. Entre em contato para verificar as opções disponíveis para o seu perfil." }
+  ]} />
+
+      <ScrollCTA produto="Plano de Saúde Porto" />
     </>
   );
 };

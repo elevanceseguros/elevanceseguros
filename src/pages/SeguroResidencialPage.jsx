@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Home, ShieldCheck, Zap, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, Flame , LayoutList} from 'lucide-react';
+import FAQ from '@/components/FAQ';
 import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
 
@@ -222,6 +223,14 @@ export default function SeguroResidencialPage() {
         </div>
       </section>
 
+      
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "O que o seguro residencial cobre?", resposta: "O seguro residencial cobre: incêndio e explosão, danos elétricos (curto-circuito), roubo e furto de bens, danos causados por vendaval e granizo, responsabilidade civil do lar (danos ao vizinho), e assistência 24h (encanador, eletricista, chaveiro). Coberturas variam conforme a apólice." },
+    { pergunta: "Apartamento alugado precisa de seguro residencial?", resposta: "Sim! Para imóveis alugados, o seguro residencial é obrigatório por lei (Lei do Inquilinato 8.245/91) como uma das formas de garantia locatícia. Além disso, protege o inquilino contra danos acidentais que poderiam ser cobrados pelo proprietário." },
+    { pergunta: "Quanto custa o seguro residencial em SP?", resposta: "Para apartamentos em São Paulo, o seguro residencial básico começa em R$ 30 por mês. Para coberturas completas com roubo e danos elétricos, os valores ficam entre R$ 60 e R$ 120 mensais, dependendo do valor do imóvel e bens segurados." },
+    { pergunta: "O seguro residencial cobre equipamentos eletrônicos?", resposta: "Depende da apólice. A cobertura básica inclui danos elétricos por curto-circuito nos equipamentos fixos do imóvel. Para eletrônicos portáteis (notebook, celular, TV), é necessário incluir a cobertura de 'equipamentos portáteis' ou 'danos a equipamentos elétricos'." }
+  ]} />
       <ScrollCTA produto="Seguro Residencial" />
     </>
   );

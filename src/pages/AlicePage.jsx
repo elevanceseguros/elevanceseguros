@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import ScrollCTA from '@/components/ScrollCTA';
+import FAQ from '@/components/FAQ';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { CheckCircle2, Smartphone } from 'lucide-react';
@@ -121,6 +123,15 @@ const AlicePage = () => {
 
 
       <FloatingWhatsApp />
+
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "Alice plano de saúde é somente para empresas?", resposta: "Sim! A Alice é uma operadora exclusiva para PME (planos empresariais), atendendo empresas a partir de 2 vidas. Não comercializa planos individuais ou familiares fora do vínculo empresarial." },
+    { pergunta: "Alice saúde tem app?", resposta: "Sim! O app Alice é um dos diferenciais da operadora — permite consultas por telemedicina, agendamento, chat com médicos 24h e acesso à carteirinha digital. A Alice é conhecida pela experiência digital superior." },
+    { pergunta: "Qual a cobertura da rede Alice em São Paulo?", resposta: "A Alice tem rede credenciada selecionada em São Paulo com foco em qualidade. Inclui hospitais de referência e laboratórios de exames. Por ser uma operadora mais nova, a rede é menor que as tradicionais, mas bem avaliada pelos usuários." }
+  ]} />
+
+      <ScrollCTA produto="Plano de Saúde Alice" />
     </>
   );
 };

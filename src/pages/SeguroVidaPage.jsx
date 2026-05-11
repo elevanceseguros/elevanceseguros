@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Heart, ShieldCheck, Zap, Users, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star , LayoutList} from 'lucide-react';
+import FAQ from '@/components/FAQ';
 import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
 
@@ -215,6 +216,15 @@ export default function SeguroVidaPage() {
         </div>
       </section>
 
+      
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "Quanto custa um seguro de vida em 2026?", resposta: "Um seguro de vida básico com capital segurado de R$ 100.000 para uma pessoa de 30 anos sem comorbidades custa entre R$ 35 e R$ 70 por mês. O valor aumenta com a idade, coberturas adicionais e histórico de saúde." },
+    { pergunta: "O que é capital segurado no seguro de vida?", resposta: "O capital segurado é o valor que será pago aos beneficiários em caso de morte do segurado, ou ao próprio segurado em caso de invalidez permanente. É o principal parâmetro para definir o valor do seguro — recomenda-se no mínimo 5 vezes a renda anual do segurado." },
+    { pergunta: "Seguro de vida tem carência?", resposta: "Sim. Para morte natural, a maioria dos seguros tem carência de 2 anos. Já para morte acidental, cobertura é imediata. Doenças graves (DIT) e invalidez por acidente também costumam ter cobertura imediata ou carência menor." },
+    { pergunta: "Posso incluir minha família no mesmo seguro de vida?", resposta: "Sim! Existem seguros de vida familiares que incluem cônjuge e filhos com capital segurado individual para cada membro. É uma opção mais econômica do que contratar apólices separadas." },
+    { pergunta: "O seguro de vida é dedutível no Imposto de Renda?", resposta: "Não — o prêmio pago pelo seguro de vida não é dedutível no IR. Porém, o capital recebido pelos beneficiários em caso de sinistro é totalmente isento de Imposto de Renda, independentemente do valor." }
+  ]} />
       <ScrollCTA produto="Seguro de Vida" />
     </>
   );

@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import ScrollCTA from '@/components/ScrollCTA';
+import FAQ from '@/components/FAQ';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
@@ -120,6 +122,15 @@ const MedSeniorPage = () => {
 
 
       <FloatingWhatsApp />
+
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "MedSênior é específico para idosos?", resposta: "Sim! A MedSênior é uma operadora especializada em pessoas a partir de 49 anos. Por isso, oferece planos com melhor custo-benefício para essa faixa etária em comparação com operadoras tradicionais, que cobram valores muito mais altos para idosos." },
+    { pergunta: "MedSênior cobre cirurgias cardíacas?", resposta: "Sim! A MedSênior cobre cirurgias cardíacas, ortopédicas e oncológicas conforme o rol da ANS. A rede credenciada em SP inclui hospitais especializados em cardiologia e geriatria." },
+    { pergunta: "Posso incluir meu cônjuge no plano MedSênior?", resposta: "Sim, desde que o cônjuge também tenha 49 anos ou mais. Caso o cônjuge seja mais jovem, ele precisaria contratar um plano em outra operadora." }
+  ]} />
+
+      <ScrollCTA produto="Plano de Saúde MedSenior" />
     </>
   );
 };

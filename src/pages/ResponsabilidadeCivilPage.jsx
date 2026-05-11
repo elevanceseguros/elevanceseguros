@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShieldCheck, Zap, Building2, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, Scale , LayoutList} from 'lucide-react';
+import FAQ from '@/components/FAQ';
 import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
 
@@ -211,6 +212,14 @@ export default function ResponsabilidadeCivilPage() {
         </div>
       </section>
 
+      
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "O que é seguro de responsabilidade civil?", resposta: "É o seguro que cobre danos causados a terceiros (pessoas ou empresas) por você, sua empresa ou seus produtos/serviços. Se um cliente escorregar no seu estabelecimento, um produto causar danos ou um erro profissional gerar prejuízo, o seguro RC paga a indenização em seu lugar." },
+    { pergunta: "RC Profissional é obrigatório?", resposta: "Para algumas profissões sim: médicos, advogados, engenheiros e corretores de imóveis em alguns estados são obrigados a ter RC Profissional. Para outras profissões, não é obrigatório, mas é altamente recomendado — um único processo pode custar mais do que anos de prêmio pago." },
+    { pergunta: "Qual a diferença entre RC Geral e RC Profissional?", resposta: "RC Geral cobre danos causados nas dependências do seu estabelecimento (queda, acidente) ou por suas operações. RC Profissional cobre erros, omissões e negligências no exercício da sua atividade profissional. Um escritório de arquitetura precisa de ambos: RC Geral para o escritório e RC Profissional para os projetos." },
+    { pergunta: "D&O é o mesmo que RC Profissional?", resposta: "Não. D&O (Directors & Officers) cobre especificamente decisões estratégicas tomadas por diretores e gestores de empresas — como aprovação de contratos, demissões, expansões. É voltado para quem ocupa cargo de gestão. RC Profissional cobre erros técnicos de qualquer profissional no exercício da sua função." }
+  ]} />
       <ScrollCTA produto="Responsabilidade Civil" />
     </>
   );

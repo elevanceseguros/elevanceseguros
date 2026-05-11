@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
+import ScrollCTA from '@/components/ScrollCTA';
+import FAQ from '@/components/FAQ';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
@@ -119,7 +121,17 @@ const SulamericaPage = () => {
       </section>
 
 
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "SulAmérica Saúde é boa? Qual sua reputação?", resposta: "A SulAmérica é uma das maiores e mais tradicionais operadoras do Brasil, com mais de 100 anos de mercado. É reconhecida pela ampla rede credenciada em SP, atendimento digital avançado (app SulAmérica Saúde) e boa resolução de sinistros. Bem avaliada no mercado corporativo." },
+    { pergunta: "A SulAmérica Saúde cobre psicologia e psiquiatria?", resposta: "Sim! Por determinação da ANS, todos os planos de saúde devem cobrir consultas com psicólogos e psiquiatras, além de internações em clínicas psiquiátricas quando necessário. A SulAmérica tem ampla rede de saúde mental em São Paulo." },
+    { pergunta: "SulAmérica tem telemedicina?", resposta: "Sim! A SulAmérica oferece telemedicina (consulta médica por vídeo) pelo aplicativo, disponível 24h para diversas especialidades. É um diferencial importante para quem precisa de atendimento rápido sem sair de casa." },
+    { pergunta: "Posso usar o plano SulAmérica em outro estado?", resposta: "Depende do plano contratado. Planos com abrangência nacional permitem atendimento em toda a rede credenciada SulAmérica no Brasil. Planos com abrangência regional (só SP ou Grande SP) têm cobertura limitada fora da área contratada, exceto em emergências." }
+  ]} />
+
       <FloatingWhatsApp />
+
+      <ScrollCTA produto="Plano de Saúde Sulamerica" />
     </>
   );
 };

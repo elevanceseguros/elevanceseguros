@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
+import ScrollCTA from '@/components/ScrollCTA';
+import FAQ from '@/components/FAQ';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
@@ -119,7 +121,17 @@ const HapvidaPage = () => {
       </section>
 
 
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "Hapvida tem rede própria ou credenciada em SP?", resposta: "A Hapvida opera principalmente com rede própria — hospitais, clínicas e laboratórios próprios — o que garante maior controle de qualidade e custos. Em São Paulo, a rede Hapvida é mais restrita do que operadoras tradicionais, sendo mais forte em capitais do Nordeste e interior." },
+    { pergunta: "O plano Hapvida é bom para famílias?", resposta: "O Hapvida oferece um dos menores preços do mercado para famílias, sendo uma opção acessível. A rede própria garante bom controle de custos. Para quem valoriza preço e não tem preferência por hospitais específicos, é uma boa escolha." },
+    { pergunta: "Hapvida cobre parto?", resposta: "Sim, mas com carência de 300 dias para parto normal e cesárea. A Hapvida tem maternidades próprias credenciadas em São Paulo. Para gestantes que já estão grávidas na data de contratação, há regras específicas de cobertura — consulte-nos antes." },
+    { pergunta: "Hapvida tem app para agendar consultas?", resposta: "Sim! O app Hapvida permite agendar consultas, ver resultados de exames, solicitar autorizações e acessar a carteirinha digital. É um dos diferenciais da operadora para facilitar o acesso aos serviços de saúde." }
+  ]} />
+
       <FloatingWhatsApp />
+
+      <ScrollCTA produto="Plano de Saúde Hapvida" />
     </>
   );
 };

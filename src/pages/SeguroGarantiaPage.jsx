@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShieldCheck, Zap, FileCheck, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, LayoutList, Scale, Building2, Briefcase } from 'lucide-react';
+import FAQ from '@/components/FAQ';
 import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
 
@@ -241,6 +242,14 @@ export default function SeguroGarantiaPage() {
 
       <CorretorHero operadora="Seguro Garantia" />
 
+      
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "O seguro garantia substitui a fiança bancária em licitações?", resposta: "Sim! O seguro garantia é aceito pela Lei de Licitações (14.133/2021) como substituto da fiança bancária e do depósito em dinheiro. Tem a vantagem de não comprometer o limite de crédito bancário da empresa, sendo geralmente mais barato que a fiança bancária." },
+    { pergunta: "Quanto tempo leva para emitir o seguro garantia?", resposta: "Com a documentação completa (contrato, edital, dados da empresa e demonstrações financeiras), o seguro garantia pode ser emitido em 24 a 72 horas. Em casos mais complexos com capital acima de R$ 5 milhões, pode levar de 5 a 10 dias úteis." },
+    { pergunta: "Empresas com restrição no SERASA conseguem seguro garantia?", resposta: "Depende da restrição e da seguradora. Restrições de pequeno valor ou relacionadas a disputas judiciais podem ser aceitas com análise. Porém, empresas com protestos relevantes ou em recuperação judicial geralmente não conseguem apólice. O corretor especializado pode indicar as seguradoras mais flexíveis." },
+    { pergunta: "O seguro garantia cobre o prazo de um contrato inteiro?", resposta: "Sim! A vigência do seguro garantia acompanha o prazo do contrato. Se o contrato tiver aditivos de prazo, é necessário renovar ou aditar a apólice de garantia. O prêmio é calculado anualmente sobre o valor garantido." }
+  ]} />
       <ScrollCTA produto="Seguro Garantia" />
     </>
   );

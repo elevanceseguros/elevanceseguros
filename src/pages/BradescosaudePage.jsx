@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
+import ScrollCTA from '@/components/ScrollCTA';
+import FAQ from '@/components/FAQ';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
@@ -119,7 +121,17 @@ const BradescosaudePage = () => {
       </section>
 
 
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "O plano Bradesco Saúde tem cobertura nacional?", resposta: "Sim! O Bradesco Saúde oferece planos com abrangência nacional, permitindo atendimento em hospitais credenciados em todo o Brasil. Ideal para quem viaja com frequência ou tem familiares em outras cidades." },
+    { pergunta: "Bradesco Saúde cobre tratamento oncológico?", resposta: "Sim! Por regulamentação da ANS, todos os planos de saúde são obrigados a cobrir tratamento oncológico (quimioterapia, radioterapia e cirurgias relacionadas ao câncer). O Bradesco Saúde tem rede oncológica credenciada em São Paulo." },
+    { pergunta: "Qual a diferença entre QC e QP no Bradesco Saúde?", resposta: "QC significa Quarto Coletivo (enfermaria) — compartilhado com outros pacientes. QP significa Quarto Privativo (apartamento) — individual com mais conforto e privacidade. Planos QP são mais caros mas oferecem melhor experiência de internação." },
+    { pergunta: "Bradesco Saúde aceita MEI como empresa para plano PME?", resposta: "Sim! O Bradesco Saúde aceita MEI para contratação de planos empresariais (PME) a partir de 2 vidas. Isso permite ao MEI contratar um plano com preço e cobertura superiores ao plano individual." }
+  ]} />
+
       <FloatingWhatsApp />
+
+      <ScrollCTA produto="Plano de Saúde Bradesco" />
     </>
   );
 };

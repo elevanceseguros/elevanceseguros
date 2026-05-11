@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
+import ScrollCTA from '@/components/ScrollCTA';
+import FAQ from '@/components/FAQ';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
@@ -18,8 +20,8 @@ const AmilPage = () => {
     <>
       <Helmet>
         <title>Plano de Saúde Amil em São Paulo | Cotação Gratuita - Elevance Seguros</title>
-        <meta name="description" content="Conheça os planos de saúde Amil em São Paulo. Ampla rede credenciada, cobertura completa. Cotação gratuita via WhatsApp." />
-        <meta name="keywords" content="plano Amil São Paulo, Amil saúde SP, cotação Amil" />
+        <meta name="description" content="Plano de saúde Amil em São Paulo 2026. Tabela de preços atualizada, rede com Albert Einstein e Sírio-Libanês. Cotação gratuita com corretor especializado." />
+        <meta name="keywords" content="plano Amil São Paulo, Amil saúde SP, cotação Amil SP, plano Amil individual, Amil familiar São Paulo, tabela Amil 2026" />
         <link rel="canonical" href="https://elevanceseguros.com/amil" />
       </Helmet>
 
@@ -50,7 +52,7 @@ const AmilPage = () => {
                 <ShieldCheck className="w-4 h-4" /> Ampla rede credenciada
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Saúde completa com a <span className="text-indigo-600">Amil</span>
+                Plano de Saúde Amil em SP: <span className="text-[#114d8e]">veja tabela e cobertura 2026</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 A Amil é uma das maiores operadoras de saúde do Brasil, com ampla rede credenciada em São Paulo e em todo o país. Planos individuais, familiares e empresariais com cobertura completa.
@@ -119,7 +121,17 @@ const AmilPage = () => {
       </section>
 
 
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "A Amil aceita portabilidade de outro plano?", resposta: "Sim! A Amil aceita portabilidade de carências de outros planos, desde que você tenha cumprido o período mínimo de permanência no plano anterior (geralmente 2 anos) e o plano de destino seja compatível em segmentação e preço." },
+    { pergunta: "A Amil cobre o Hospital Albert Einstein?", resposta: "Depende do plano contratado. Os planos Amil One e planos premium têm acesso ao Einstein. Planos intermediários e básicos geralmente não cobrem hospitais de referência como Einstein e Sírio-Libanês. Consulte-nos para verificar qual plano inclui a rede que você precisa." },
+    { pergunta: "Plano Amil individual ainda existe em São Paulo?", resposta: "A Amil reduziu significativamente a oferta de planos individuais em SP. Atualmente, as opções mais acessíveis são os planos coletivos por adesão da Amil. Fale com nosso corretor para verificar as opções disponíveis para sua situação." },
+    { pergunta: "Qual o prazo de carência do plano Amil?", resposta: "As carências padrão da Amil seguem a ANS: 24h para urgência/emergência, 30 dias para consultas, 180 dias para cirurgias e 300 dias para parto normal e cesárea. Em casos de portabilidade, as carências podem ser reduzidas ou eliminadas." }
+  ]} />
+
       <FloatingWhatsApp />
+
+      <ScrollCTA produto="Plano de Saúde Amil" />
     </>
   );
 };
