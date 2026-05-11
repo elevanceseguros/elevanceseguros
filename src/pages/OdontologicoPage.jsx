@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Smile, ShieldCheck, Zap, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, Heart } from 'lucide-react';
+import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
@@ -90,15 +91,19 @@ export default function OdontologicoPage() {
                         <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
-                        <input name="nome" type="text" required placeholder="Seu Nome"
+                        <input name="nome" type="text" required placeholder="Ex: João Silva"
                           className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-sky-500 transition-all" />
-                        <input name="whatsapp" type="tel" required placeholder="WhatsApp (DDD)"
+                        <input name="whatsapp" type="tel" required placeholder="Ex: 11 99999-9999"
                           className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-sky-500 transition-all" />
                         <button type="submit"
                           className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
                           RECEBER CONTATO GRATUITO <MessageCircle size={16} />
                         </button>
-                        <p className="text-[9px] text-center text-slate-400 font-bold uppercase italic">Entraremos em contato no seu WhatsApp em instantes</p>
+                        <div className="flex items-center justify-center gap-3 flex-wrap">
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🔒 Dados sigilosos</span>
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">⚡ Resposta em até 2h</span>
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🚫 Sem spam</span>
+                        </div>
                       </form>
                     </motion.div>
                   ) : (
@@ -169,6 +174,8 @@ export default function OdontologicoPage() {
           </div>
         </div>
       </section>
+
+      <ScrollCTA produto="Plano Odontológico" />
     </>
   );
 }

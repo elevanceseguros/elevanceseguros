@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShieldCheck, Zap, FileCheck, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, LayoutList, Scale, Building2, Briefcase } from 'lucide-react';
+import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
 
 const MEU_NUMERO = "5511920144864";
@@ -95,9 +96,9 @@ export default function SeguroGarantiaPage() {
                         <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
-                        <input name="nome" type="text" required placeholder="Seu Nome"
+                        <input name="nome" type="text" required placeholder="Ex: João Silva"
                           className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
-                        <input name="whatsapp" type="tel" required placeholder="WhatsApp (DDD)"
+                        <input name="whatsapp" type="tel" required placeholder="Ex: 11 99999-9999"
                           className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
                         <button type="submit"
                           className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
@@ -239,6 +240,8 @@ export default function SeguroGarantiaPage() {
       </section>
 
       <CorretorHero operadora="Seguro Garantia" />
+
+      <ScrollCTA produto="Seguro Garantia" />
     </>
   );
 }

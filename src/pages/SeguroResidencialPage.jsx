@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Home, ShieldCheck, Zap, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, Flame , LayoutList} from 'lucide-react';
+import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
 
 const MEU_NUMERO = "5511920144864";
@@ -48,8 +49,8 @@ export default function SeguroResidencialPage() {
             <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
               <span className="inline-block bg-amber-100 text-amber-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Proteção do seu Lar</span>
               <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight italic">
-                Seu lar protegido <br className="hidden md:block" />
-                <span className="text-amber-600">do jeito certo.</span>
+                Um incêndio ou roubo pode <br className="hidden md:block" />
+                <span className="text-amber-600">destruir anos de conquista.</span>
               </h1>
               <p className="text-slate-600 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
                 O seguro residencial protege seu imóvel e patrimônio contra <span className="text-amber-600 font-black uppercase">imprevistos</span> — incêndio, roubo, danos elétricos e muito mais.
@@ -86,12 +87,20 @@ export default function SeguroResidencialPage() {
                         <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
-                        <input name="nome" type="text" required placeholder="Seu Nome" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-amber-500 transition-all" />
-                        <input name="whatsapp" type="tel" required placeholder="WhatsApp (DDD)" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-amber-500 transition-all" />
+                        <input name="nome" type="text" required placeholder="Ex: João Silva" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-amber-500 transition-all" />
+                        <input name="whatsapp" type="tel" required placeholder="Ex: 11 99999-9999" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-amber-500 transition-all" />
+                        <div className="flex items-center justify-center gap-1.5 bg-orange-50 border border-orange-100 rounded-xl py-2 px-3">
+                          <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse inline-block"></span>
+                          <span className="text-[10px] font-black text-orange-600">⚡ Cotação gratuita · Sem compromisso</span>
+                        </div>
                         <button type="submit" className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
                           RECEBER CONTATO GRATUITO <MessageCircle size={16} />
                         </button>
-                        <p className="text-[9px] text-center text-slate-400 font-bold uppercase italic">Entraremos em contato no seu WhatsApp em instantes</p>
+                        <div className="flex items-center justify-center gap-3 flex-wrap">
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🔒 Dados sigilosos</span>
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">⚡ Resposta em até 2h</span>
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🚫 Sem spam</span>
+                        </div>
                       </form>
                     </motion.div>
                   ) : (
@@ -212,6 +221,8 @@ export default function SeguroResidencialPage() {
           </div>
         </div>
       </section>
+
+      <ScrollCTA produto="Seguro Residencial" />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import { postsData } from '@/data/posts';
+import ScrollCTA from '@/components/ScrollCTA';
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
@@ -108,14 +109,22 @@ const HomePage = () => {
                       <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Iniciar Atendimento
                     </div>
                     <form onSubmit={handleSubmit} className="space-y-4 mt-2">
-                      <input name="nome" type="text" required placeholder="Seu Nome"
+                      <input name="nome" type="text" required placeholder="Ex: João Silva"
                         className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
-                      <input name="whatsapp" type="tel" required placeholder="WhatsApp (DDD)"
+                      <input name="whatsapp" type="tel" required placeholder="Ex: 11 99999-9999"
                         className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
+                      <div className="flex items-center justify-center gap-1.5 bg-orange-50 border border-orange-100 rounded-xl py-2 px-3">
+                          <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse inline-block"></span>
+                          <span className="text-[10px] font-black text-orange-600">⚡ Cotação gratuita · Sem compromisso</span>
+                        </div>
                       <button type="submit" className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
                         RECEBER CONTATO GRATUITO <MessageCircle size={16}/>
                       </button>
-                      <p className="text-[9px] text-center text-slate-400 font-bold uppercase italic">Entraremos em contato no seu WhatsApp em instantes</p>
+                      <div className="flex items-center justify-center gap-3 flex-wrap">
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🔒 Dados sigilosos</span>
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">⚡ Resposta em até 2h</span>
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🚫 Sem spam</span>
+                        </div>
                     </form>
                   </>
                 ) : (
@@ -414,6 +423,8 @@ const HomePage = () => {
       </section>
 
     </div>
+
+      <ScrollCTA produto="Seguros e Planos de Saúde" />
     </>
   );
 };
