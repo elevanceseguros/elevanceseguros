@@ -7,16 +7,16 @@ import FAQ from '@/components/FAQ';
 const MEU_NUMERO = "5511920144864";
 
 const tabelaPrecos = [
-  { idade: "00 a 18", enf: "R$ 213,28", apto: "R$ 287,13" },
-  { idade: "19 a 23", enf: "R$ 253,50", apto: "R$ 341,29" },
-  { idade: "24 a 28", enf: "R$ 304,38", apto: "R$ 409,79" },
-  { idade: "29 a 33", enf: "R$ 365,24", apto: "R$ 491,73" },
-  { idade: "34 a 38", enf: "R$ 438,30", apto: "R$ 590,09" },
-  { idade: "39 a 43", enf: "R$ 525,93", apto: "R$ 708,07" },
-  { idade: "44 a 48", enf: "R$ 631,14", apto: "R$ 849,72" },
-  { idade: "49 a 53", enf: "R$ 757,36", apto: "R$ 1.019,64" },
-  { idade: "54 a 58", enf: "R$ 908,82", apto: "R$ 1.223,59" },
-  { idade: "59 ou +", enf: "R$ 1.280,06", apto: "R$ 1.723,54" },
+  { idade: "00 a 18", enf: "R$ 127,73", apto: "R$ 166,05" },
+  { idade: "19 a 23", enf: "R$ 143,07", apto: "R$ 185,98" },
+  { idade: "24 a 28", enf: "R$ 160,23", apto: "R$ 208,30" },
+  { idade: "29 a 33", enf: "R$ 176,25", apto: "R$ 229,15" },
+  { idade: "34 a 38", enf: "R$ 193,88", apto: "R$ 252,07" },
+  { idade: "39 a 43", enf: "R$ 219,06", apto: "R$ 284,81" },
+  { idade: "44 a 48", enf: "R$ 289,77", apto: "R$ 377,69" },
+  { idade: "49 a 53", enf: "R$ 327,51", apto: "R$ 425,80" },
+  { idade: "54 a 58", enf: "R$ 458,54", apto: "R$ 596,11" },
+  { idade: "59 ou +", enf: "R$ 655,62", apto: "R$ 852,45" },
 ];
 
 const unidades = [
