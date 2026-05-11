@@ -86,21 +86,20 @@ const Footer = () => {
             {/* Logos operadoras — só desktop */}
             <div className="hidden lg:block pt-2 space-y-3">
               <p className="text-[9px] font-black uppercase tracking-[0.2em] text-white/30">Operadoras Parceiras</p>
-              <div className="grid grid-cols-3 gap-2">
+              <div className="flex flex-wrap gap-3 items-center">
                 {[
                   { src: "/logos/amil.png", alt: "Amil" },
-                  { src: "/logos/bradesco.png", alt: "Bradesco" },
                   { src: "/logos/sulamerica.png", alt: "SulAmérica" },
                   { src: "/logos/hapvida.png", alt: "Hapvida" },
                   { src: "/logos/unimed.png", alt: "Unimed" },
                   { src: "/logos/allianz.png", alt: "Allianz" },
                   { src: "/logos/hdi.png", alt: "HDI" },
                   { src: "/logos/tokio.png", alt: "Tokio Marine" },
-                  { src: "/logos/portoauto.png", alt: "Porto" },
+                  { src: "/logos/suhai.png", alt: "Suhai" },
                 ].map((logo, i) => (
-                  <div key={i} className="bg-white/10 rounded-xl p-1.5 flex items-center justify-center h-9">
-                    <img src={logo.src} alt={logo.alt} className="max-h-5 max-w-full object-contain brightness-0 invert opacity-60" loading="lazy" />
-                  </div>
+                  <img key={i} src={logo.src} alt={logo.alt}
+                    className="h-5 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-80 transition-opacity"
+                    loading="lazy" />
                 ))}
               </div>
             </div>
