@@ -222,14 +222,14 @@ const HomePage = () => {
       {/* 2. PROTEÇÃO VEICULAR (APVS) */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-slate-900 rounded-[50px] p-8 md:p-16 text-white flex flex-col lg:flex-row items-center gap-12 relative overflow-hidden">
+          <div className="bg-[#114d8e] rounded-[50px] p-8 md:p-16 text-white flex flex-col lg:flex-row items-center gap-12 relative overflow-hidden">
             <div className="lg:w-1/2 space-y-6 z-10 italic">
               <div className="flex gap-4">
-                <div className="p-4 bg-blue-600 rounded-2xl"><Car size={32}/></div>
-                <div className="p-4 bg-blue-600 rounded-2xl"><Bike size={32}/></div>
+                <div className="p-4 bg-white/20 rounded-2xl"><Car size={32}/></div>
+                <div className="p-4 bg-white/20 rounded-2xl"><Bike size={32}/></div>
               </div>
               <Link to="/protecao-veicular" className="text-3xl md:text-4xl font-black hover:text-blue-300 transition-colors underline-offset-4 hover:underline">Proteção Veicular APVS</Link>
-              <p className="text-blue-100/70 font-medium">A maior da América Latina no seu carro ou moto, sem análise de perfil.</p>
+              <p className="text-white/70 font-medium">Seu carro pode ser roubado ainda hoje — e sem proteção, o prejuízo é 100% seu.</p>
               <div className="flex flex-wrap gap-4 pt-2">
                 <span className="flex items-center gap-2 text-[10px] font-bold uppercase"><CheckCircle2 size={14} className="text-green-400"/> Sem consulta SPC/Serasa</span>
                 <span className="flex items-center gap-2 text-[10px] font-bold uppercase"><CheckCircle2 size={14} className="text-green-400"/> Rastreador Grátis</span>
@@ -238,7 +238,7 @@ const HomePage = () => {
             <div className="lg:w-1/2 w-full z-10">
               <div className="bg-white/5 backdrop-blur-md p-8 md:p-12 rounded-[40px] border border-white/10 text-center">
                 <h4 className="text-xl md:text-2xl font-bold mb-8 italic">Quanto custa proteger seu veículo?</h4>
-                <a href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero cotar Proteção Veicular APVS`} target="_blank" className="block w-full bg-blue-600 hover:bg-blue-500 text-white font-black py-5 rounded-2xl transition-all uppercase text-xs tracking-widest shadow-lg">Solicitar Cotação via WhatsApp</a>
+                <a href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero cotar Proteção Veicular APVS`} target="_blank" className="block w-full bg-green-500 hover:bg-green-400 text-white font-black py-5 rounded-2xl transition-all uppercase text-xs tracking-widest shadow-lg">Solicitar Cotação via WhatsApp</a>
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@ const HomePage = () => {
             <div className="lg:w-1/2 space-y-6 text-center lg:text-left">
               <Wallet size={48} className="text-blue-600 mx-auto lg:mx-0" />
               <Link to="/consorcios" className="text-3xl md:text-4xl font-black text-[#114d8e] hover:text-blue-600 transition-colors underline-offset-4 hover:underline">Consórcio Elevance</Link>
-              <p className="text-slate-500 font-medium">Compre seu imóvel ou veículo sem juros abusivos.</p>
+              <p className="text-slate-500 font-medium">No financiamento você paga até 2x o valor do bem. No consórcio, não.</p>
               <div className="pt-6">
                 <a href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero simular um Consórcio`} className="inline-flex items-center gap-3 bg-[#114d8e] text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-105 transition-all">Simular Agora <ArrowRight size={16}/></a>
               </div>
@@ -270,14 +270,14 @@ const HomePage = () => {
       {/* 4. CARDS SERVIÇOS */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic text-center mb-3">O que podemos fazer por você</h2>
-          <p className="text-slate-500 text-center font-medium mb-12">Clique para conhecer cada solução</p>
+          <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic text-center mb-3">Qual proteção você ainda não tem?</h2>
+          <p className="text-slate-500 text-center font-medium mb-12">Cada uma dessas situações pode acontecer amanhã. Esteja preparado.</p>
           {/* Linha 1 — 3 cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             {[
-              { icon: <Heart size={36}/>, title: "Planos de Saúde", desc: "Individuais, familiares e PME. Compare as melhores operadoras.", btn: "Ver Planos", path: "/encontre-seu-plano", bg: "bg-blue-50", cor: "text-blue-600" },
-              { icon: <Smile size={36}/>, title: "Plano Odontológico", desc: "Sorria com tranquilidade. Planos acessíveis para toda a família.", btn: "Ver Planos", path: "/odontologico", bg: "bg-sky-50", cor: "text-sky-600" },
-              { icon: <Users size={36}/>, title: "Seguro de Vida", desc: "Proteja o futuro da sua família com coberturas completas.", btn: "Simular", path: "/seguro-vida", bg: "bg-rose-50", cor: "text-rose-600" },
+              { icon: <Heart size={36}/>, title: "Planos de Saúde", desc: "Sem plano de saúde, uma internação pode custar R$ 30.000 ou mais do seu bolso.", btn: "Ver Planos", path: "/encontre-seu-plano", bg: "bg-blue-50", cor: "text-blue-600" },
+              { icon: <Smile size={36}/>, title: "Plano Odontológico", desc: "Uma extração ou canal sem plano pode custar até R$ 2.000. Com plano, R$ 0.", btn: "Ver Planos", path: "/odontologico", bg: "bg-sky-50", cor: "text-sky-600" },
+              { icon: <Users size={36}/>, title: "Seguro de Vida", desc: "Se você faltar amanhã, sua família consegue manter o padrão de vida?", btn: "Simular", path: "/seguro-vida", bg: "bg-rose-50", cor: "text-rose-600" },
             ].map((item, i) => (
               <div key={i} className={`${item.bg} rounded-[40px] p-8 border border-slate-100 group hover:bg-[#114d8e] transition-all duration-500 flex flex-col`}>
                 <div className={`${item.cor} mb-5 group-hover:text-blue-400 transition-colors`}>{item.icon}</div>
@@ -293,8 +293,8 @@ const HomePage = () => {
           {/* Linha 2 — 2 cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             {[
-              { icon: <Building2 size={36}/>, title: "Seguro Empresarial", desc: "Patrimônio, PME, responsabilidade civil e vida em grupo.", btn: "Cotar", path: "/seguro-empresa", bg: "bg-slate-50", cor: "text-slate-600" },
-              { icon: <ShieldCheck size={36}/>, title: "Responsabilidade Civil", desc: "RC Geral, Profissional, Produtos e D&O para sua empresa.", btn: "Cotar", path: "/responsabilidade-civil", bg: "bg-violet-50", cor: "text-violet-600" },
+              { icon: <Building2 size={36}/>, title: "Seguro Empresarial", desc: "Um único processo trabalhista ou sinistro pode comprometer anos de trabalho.", btn: "Cotar", path: "/seguro-empresa", bg: "bg-slate-50", cor: "text-slate-600" },
+              { icon: <ShieldCheck size={36}/>, title: "Responsabilidade Civil", desc: "Você responde pessoalmente por decisões da sua empresa. Está protegido?", btn: "Cotar", path: "/responsabilidade-civil", bg: "bg-violet-50", cor: "text-violet-600" },
             ].map((item, i) => (
               <div key={i} className={`${item.bg} rounded-[40px] p-8 border border-slate-100 group hover:bg-[#114d8e] transition-all duration-500 flex flex-col`}>
                 <div className={`${item.cor} mb-5 group-hover:text-blue-400 transition-colors`}>{item.icon}</div>
@@ -310,8 +310,8 @@ const HomePage = () => {
           {/* Linha 3 — 2 cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { icon: <Home size={36}/>, title: "Seguro Residencial", desc: "Proteja sua casa ou apartamento contra incêndio, roubo e danos.", btn: "Cotar", path: "/seguro-residencial", bg: "bg-amber-50", cor: "text-amber-600" },
-              { icon: <FileCheck size={36}/>, title: "Seguro Garantia", desc: "Para licitações e contratos. Substitui a fiança bancária sem comprometer seu crédito.", btn: "Cotar", path: "/seguro-garantia", bg: "bg-emerald-50", cor: "text-emerald-600" },
+              { icon: <Home size={36}/>, title: "Seguro Residencial", desc: "Um incêndio ou roubo pode destruir em horas o que você construiu em anos.", btn: "Cotar", path: "/seguro-residencial", bg: "bg-amber-50", cor: "text-amber-600" },
+              { icon: <FileCheck size={36}/>, title: "Seguro Garantia", desc: "Exigido em licitações — e muito mais barato que a fiança bancária.", btn: "Cotar", path: "/seguro-garantia", bg: "bg-emerald-50", cor: "text-emerald-600" },
             ].map((item, i) => (
               <div key={i} className={`${item.bg} rounded-[40px] p-8 border border-slate-100 group hover:bg-[#114d8e] transition-all duration-500 flex flex-col`}>
                 <div className={`${item.cor} mb-5 group-hover:text-blue-400 transition-colors`}>{item.icon}</div>
@@ -334,10 +334,12 @@ const HomePage = () => {
             <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic mb-2">O que dizem nossos clientes</h2>
             <p className="text-slate-500 font-medium">Pessoas reais, resultados reais</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {[
               { inicial: "S", nome: "Simone", local: "São Roque, SP", produto: "Plano de Saúde", texto: "Agradeço de coração todo seu empenho. Precisando, logicamente vou te procurar novamente." },
               { inicial: "W", nome: "Warlei", local: "Ouro Fino, MG", produto: "Seguro Auto", texto: "Agradeço pela atenção! Pelas dúvidas sanadas e por conseguir o melhor preço." },
+              { inicial: "P", nome: "Patricia", local: "São Paulo, SP", produto: "Plano de Saúde PME", texto: "O Rodrigo resolveu a contratação do plano da minha empresa em tempo record. Super atencioso e competente!" },
+              { inicial: "L", nome: "Lucas", local: "São Paulo, SP", produto: "Consórcio de Imóvel", texto: "Economizei mais de R$ 40 mil em juros optando pelo consórcio. O Rodrigo explicou tudo com paciência e clareza." },
             ].map((d, i) => (
               <div key={i} className="bg-white rounded-[30px] p-8 shadow-sm border border-slate-100">
                 <div className="flex gap-0.5 mb-4">
@@ -412,8 +414,8 @@ const HomePage = () => {
         <div className="max-w-4xl mx-auto px-4">
           <div className="bg-[#114d8e] rounded-[50px] py-16 px-8 text-white text-center space-y-6">
             <span className="inline-block bg-white/10 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Atendimento 100% Digital</span>
-            <h2 className="text-3xl md:text-5xl font-black leading-tight italic">Sua segurança <br className="hidden md:block"/>não pode esperar.</h2>
-            <p className="text-blue-100 font-medium text-base max-w-xl mx-auto">Fale com o Rodrigo agora e receba uma cotação personalizada em minutos.</p>
+            <h2 className="text-3xl md:text-5xl font-black leading-tight italic">Cada dia sem proteção <br className="hidden md:block"/>é um risco desnecessário.</h2>
+            <p className="text-blue-100 font-medium text-base max-w-xl mx-auto">Rodrigo responde em minutos. Cotação gratuita, sem burocracia, sem compromisso.</p>
             <a href={`https://wa.me/${meuNumero}`} target="_blank" rel="noreferrer"
               className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-2xl hover:scale-105">
               <MessageCircle size={20}/> Chamar no WhatsApp
