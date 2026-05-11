@@ -10,7 +10,7 @@ import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 const MEU_NUMERO = "5511920144864";
 
 const beneficios = [
-  { icon: <Smile size={28} className="text-sky-600" />, titulo: "Consultas e Limpeza", desc: "Consultas, limpeza e radiografias com custo acessível." },
+  { icon: <Smile size={28} className="text-sky-200" />, titulo: "Consultas e Limpeza", desc: "Consultas, limpeza e radiografias com custo acessível." },
   { icon: <ShieldCheck size={28} className="text-sky-600" />, titulo: "Sem Carência", desc: "Planos com carência reduzida ou zero para urgências." },
   { icon: <Heart size={28} className="text-sky-600" />, titulo: "Toda a Família", desc: "Planos individuais e familiares que cabem no orçamento." },
   { icon: <Star size={28} className="text-sky-600" />, titulo: "Rede Credenciada", desc: "Acesso a dentistas e clínicas em São Paulo e em todo o Brasil." },
@@ -55,17 +55,17 @@ export default function OdontologicoPage() {
       <CorretorHero operadora="um Plano Odontológico" />
 
       {/* HERO */}
-      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-gradient-to-b from-sky-50 to-white overflow-hidden">
+      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-[#075985] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
 
             <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
               <span className="inline-block bg-sky-100 text-sky-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Saúde Bucal Completa</span>
-              <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight italic">
+              <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
                 Sorria com <br className="hidden md:block" />
                 <span className="text-sky-600">tranquilidade.</span>
               </h1>
-              <p className="text-slate-600 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
+              <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
                 Planos odontológicos <span className="text-sky-600 font-black uppercase">acessíveis</span> para você e sua família. Consultas, tratamentos, urgências e muito mais.
               </p>
               <ul className="space-y-3 text-left max-w-xl mx-auto lg:mx-0">
@@ -76,16 +76,16 @@ export default function OdontologicoPage() {
                   "Urgências e emergências cobertas",
                   "Rede credenciada em todo o Brasil",
                 ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-slate-700 font-medium text-sm">
+                  <li key={i} className="flex items-center gap-3 text-white/90 font-medium text-sm">
                     <CheckCircle2 className="w-5 h-5 text-sky-500 flex-shrink-0" /> {item}
                   </li>
                 ))}
               </ul>
               <div className="flex flex-row justify-center lg:justify-start gap-4">
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
                   <Star size={14} className="text-yellow-500 fill-yellow-500" /> Atendimento 5 estrelas
                 </div>
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
                   <ShieldCheck size={14} className="text-sky-600" /> 100% Gratuito
                 </div>
               </div>

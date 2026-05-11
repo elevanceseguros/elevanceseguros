@@ -9,7 +9,7 @@ import CorretorHero from '@/components/CorretorHero';
 const MEU_NUMERO = "5511920144864";
 
 const beneficios = [
-  { icon: <ShieldCheck size={28} className="text-blue-600" />, titulo: "Sem Análise de Perfil", desc: "Aprovação imediata, sem consulta ao SPC/Serasa." },
+  { icon: <ShieldCheck size={28} className="text-teal-300" />, titulo: "Sem Análise de Perfil", desc: "Aprovação imediata, sem consulta ao SPC/Serasa." },
   { icon: <Car size={28} className="text-blue-600" />, titulo: "Rastreador Grátis", desc: "Rastreador instalado sem custo adicional." },
   { icon: <Zap size={28} className="text-blue-600" />, titulo: "Menor Mensalidade", desc: "Economia de até 50% comparado ao seguro tradicional." },
   { icon: <Star size={28} className="text-blue-600" />, titulo: "Maior da América Latina", desc: "APVS: maior rede de proteção veicular do continente." },
@@ -65,21 +65,23 @@ export default function ProtecaoVeicularPage() {
       <CorretorHero operadora="Proteção Veicular" />
 
       {/* HERO */}
-      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-gradient-to-b from-slate-50 to-white">
+      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-[#134e4a] overflow-hidden">
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
-              <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">APVS · Maior da América Latina</span>
-              <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight italic">
+              <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest backdrop-blur-sm">APVS · Maior da América Latina</span>
+              <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
                 Seu carro pode ser roubado <span className="text-blue-600">ainda hoje. Está protegido?</span>
               </h1>
-              <p className="text-slate-600 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
-                A <span className="text-blue-600 font-black uppercase">maior rede de proteção veicular</span> da América Latina no seu carro ou moto. Sem consulta ao SPC/Serasa.
+              <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
+                A <span className="text-yellow-300 font-black uppercase">maior rede de proteção veicular</span> da América Latina no seu carro ou moto. Sem consulta ao SPC/Serasa.
               </p>
               <ul className="space-y-3 text-left max-w-xl mx-auto lg:mx-0">
                 {["Aprovação imediata, sem análise de perfil","Rastreador instalado gratuitamente","Mensalidade até 50% menor que seguro tradicional","Cobertura para carro e moto","Assistência 24h em todo o Brasil"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-slate-700 font-medium text-sm">
-                    <CheckCircle2 className="w-5 h-5 text-blue-500 flex-shrink-0" /> {item}
+                  <li key={i} className="flex items-center gap-3 text-white/90 font-medium text-sm">
+                    <CheckCircle2 className="w-5 h-5 text-white/70 flex-shrink-0" /> {item}
                   </li>
                 ))}
               </ul>

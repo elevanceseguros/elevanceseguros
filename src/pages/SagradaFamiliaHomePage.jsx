@@ -69,12 +69,12 @@ const SagradaFamiliaHomePage = () => {
             src="/logos/Sem%20nome%20(680%20x%20680%20px).png" 
             alt="Elevance Seguros" 
             className="h-12 md:h-16 object-contain"
-          />
+           loading="lazy" />
           <img 
             src="/logos/sagrada-familia.png" 
             alt="Sagrada Família" 
             className="h-8 md:h-12 object-contain"
-          />
+           loading="lazy" />
         </div>
       </nav>
 

@@ -56,6 +56,8 @@ const AlicePage = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-fuchsia-50">
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div 
@@ -66,16 +68,16 @@ const AlicePage = () => {
               <div className="inline-block bg-fuchsia-100 text-fuchsia-800 px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
                 <Smartphone className="w-4 h-4" /> Saúde na palma da mão
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
                 Mais que um plano <span className="text-fuchsia-600">Alice Saúde</span>
               </h1>
-              <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+              <p className="text-xl text-white/80 mb-8 leading-relaxed">
                 A Alice reinventou o cuidado com a saúde. Com tecnologia e um Time de Saúde sempre disponível, você tem acesso aos melhores hospitais e laboratórios sem dor de cabeça.
               </p>
               
               <ul className="space-y-4 mb-8">
                 {benefits.map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-3 text-slate-700 font-medium">
+                  <li key={idx} className="flex items-center gap-3 text-white/90 font-medium">
                     <CheckCircle2 className="w-5 h-5 text-fuchsia-500 flex-shrink-0" />
                     {item}
                   </li>
@@ -146,7 +148,7 @@ const AlicePage = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Também trabalhamos com</p>
           <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
-            <a href="/amil" className="text-[#114d8e] font-black hover:underline">Amil</a> · <a href="/bradescosaude" className="text-[#114d8e] font-black hover:underline">Bradesco Saúde</a> · <a href="/sulamerica" className="text-[#114d8e] font-black hover:underline">SulAmérica</a> · <a href="/unimed" className="text-[#114d8e] font-black hover:underline">Unimed</a> · <a href="/porto" className="text-[#114d8e] font-black hover:underline">Porto Saúde</a>
+            <a href="/amil" className="text-sky-300 font-black hover:underline">Amil</a> · <a href="/bradescosaude" className="text-[#114d8e] font-black hover:underline">Bradesco Saúde</a> · <a href="/sulamerica" className="text-[#114d8e] font-black hover:underline">SulAmérica</a> · <a href="/unimed" className="text-[#114d8e] font-black hover:underline">Unimed</a> · <a href="/porto" className="text-[#114d8e] font-black hover:underline">Porto Saúde</a>
           </p>
         </div>
       </section>

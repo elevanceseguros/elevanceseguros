@@ -9,7 +9,7 @@ import CorretorHero from '@/components/CorretorHero';
 const MEU_NUMERO = "5511920144864";
 
 const tipos = [
-  { icon: <Home size={32} className="text-blue-600" />, titulo: "Consórcio Imóvel", desc: "Realize o sonho da casa própria sem juros abusivos. Parcelas que cabem no seu bolso.", tag: "Imóvel" },
+  { icon: <Home size={32} className="text-green-300" />, titulo: "Consórcio Imóvel", desc: "Realize o sonho da casa própria sem juros abusivos. Parcelas que cabem no seu bolso.", tag: "Imóvel" },
   { icon: <Car size={32} className="text-blue-600" />, titulo: "Consórcio Veículo", desc: "Troque de carro ou moto com planejamento inteligente e zero juros.", tag: "Veículo" },
   { icon: <Briefcase size={32} className="text-blue-600" />, titulo: "Consórcio Serviços", desc: "Financie reformas, viagens, festas e muito mais sem comprometer o orçamento.", tag: "Serviços" },
 ];
@@ -56,28 +56,40 @@ export default function ConsorciосPage() {
             {"@type": "ListItem", "position": 2, "name": "Consórcios", "item": "https://www.elevanceseguros.com/consorcios"}
           ]
         })}`}</script>
+              <meta property="og:type" content="website" />
+        <meta property="og:title" content="Consórcio em São Paulo | Imóvel e Veículo Sem Juros - Elevance" />
+        <meta property="og:description" content="Consórcio de imóvel e veículo sem juros em SP. Parceria Rodobens. Simule agora com a Elevance Seguros." />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80" />
+        <meta property="og:url" content="https://www.elevanceseguros.com/consorcios" />
+        <meta property="og:site_name" content="Elevance Seguros" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Consórcio em São Paulo | Imóvel e Veículo Sem Juros - Elevance" />
+        <meta name="twitter:description" content="Consórcio de imóvel e veículo sem juros em SP. Parceria Rodobens. Simule agora com a Elevance Seguros." />
+        <meta name="twitter:image" content="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80" />
       </Helmet>
 
       <CorretorHero operadora="um Consórcio" />
 
       {/* HERO */}
       <section className="relative pt-16 pb-12 md:pt-20 md:pb-16 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
-              <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Realize seus Sonhos</span>
-              <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight italic">
+              <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest backdrop-blur-sm">Realize seus Sonhos</span>
+              <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
                 Compre seu imóvel ou carro <br className="hidden md:block" />
                 <span className="text-blue-600">sem pagar juros abusivos.</span>
               </h1>
-              <p className="text-slate-600 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
-                Consórcio é a forma mais <span className="text-blue-600 font-black uppercase">inteligente</span> de conquistar imóveis, veículos e serviços sem pagar juros bancários abusivos.
+              <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
+                Consórcio é a forma mais <span className="text-yellow-300 font-black uppercase">inteligente</span> de conquistar imóveis, veículos e serviços sem pagar juros bancários abusivos.
               </p>
               <div className="flex flex-row justify-center lg:justify-start gap-4">
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
                   <Star size={14} className="text-yellow-500 fill-yellow-500" /> 0% de Juros
                 </div>
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
                   <Shield size={14} className="text-blue-600" /> Regulado pelo Banco Central
                 </div>
               </div>

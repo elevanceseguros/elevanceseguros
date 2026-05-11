@@ -35,6 +35,16 @@ const HomePage = () => {
         <title>Elevance Seguros | Planos de Saúde, Seguro Auto e Consórcios em SP</title>
         <meta name="description" content="Elevance Seguros: consultoria 100% digital em planos de saúde, seguro auto, proteção veicular e consórcios em São Paulo e todo o Brasil. Cotação gratuita via WhatsApp." />
         <link rel="canonical" href="https://elevanceseguros.com" />
+              <meta property="og:type" content="website" />
+        <meta property="og:title" content="Elevance Seguros | Corretora Digital em São Paulo" />
+        <meta property="og:description" content="Planos de saúde, seguro auto, vida, residencial, empresarial e consórcios em SP. Cotação gratuita com o corretor Rodrigo Farias." />
+        <meta property="og:image" content="https://www.elevanceseguros.com/preview.webp" />
+        <meta property="og:url" content="https://www.elevanceseguros.com" />
+        <meta property="og:site_name" content="Elevance Seguros" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros | Corretora Digital em São Paulo" />
+        <meta name="twitter:description" content="Planos de saúde, seguro auto, vida, residencial, empresarial e consórcios em SP. Cotação gratuita com o corretor Rodrigo Farias." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
       <div className="min-h-screen bg-white font-sans">
       
@@ -186,7 +196,7 @@ const HomePage = () => {
               { src: "/logos/portoseguro.svg",  alt: "Porto Seguro Saúde" },
             ].map((logo, i) => (
               <div key={i} className="flex items-center justify-center w-28 h-12 shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
-                <img src={logo.src} alt={logo.alt} className="max-h-10 max-w-[100px] object-contain" />
+                <img src={logo.src} alt={logo.alt} className="max-h-10 max-w-[100px] object-contain"  loading="lazy" />
               </div>
             ))}
           </div>
@@ -211,7 +221,7 @@ const HomePage = () => {
               { src: "/logos/suhai.png",          alt: "Suhai" },
             ].map((logo, i) => (
               <div key={i} className="flex items-center justify-center w-28 h-12 shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
-                <img src={logo.src} alt={logo.alt} className="max-h-10 max-w-[100px] object-contain" />
+                <img src={logo.src} alt={logo.alt} className="max-h-10 max-w-[100px] object-contain"  loading="lazy" />
               </div>
             ))}
           </div>
@@ -380,7 +390,7 @@ const HomePage = () => {
                   <img
                     src={post.image} alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                   loading="lazy" />
                   <span className="absolute top-3 left-3 bg-[#114d8e] text-white text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
                     {post.category}
                   </span>

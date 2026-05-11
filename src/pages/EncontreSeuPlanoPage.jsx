@@ -22,7 +22,7 @@ const operadoras = [
 ];
 
 const beneficios = [
-  { icon: <Heart size={28} className="text-blue-600" />, titulo: "Comparamos para você", desc: "Analisamos todas as operadoras e encontramos o melhor custo-benefício" },
+  { icon: <Heart size={28} className="text-yellow-300" />, titulo: "Comparamos para você", desc: "Analisamos todas as operadoras e encontramos o melhor custo-benefício" },
   { icon: <Zap size={28} className="text-blue-600" />, titulo: "Cotação em minutos", desc: "Resposta rápida direto no seu WhatsApp, sem burocracia" },
   { icon: <Users size={28} className="text-blue-600" />, titulo: "Atendimento humano", desc: "Fala direto com o Rodrigo, corretor especializado em saúde" },
   { icon: <ShieldCheck size={28} className="text-blue-600" />, titulo: "Sem custo adicional", desc: "Nossa consultoria é 100% gratuita para o cliente" },
@@ -62,28 +62,40 @@ export default function EncontreSeuPlanoPage() {
             {"@type": "ListItem", "position": 2, "name": "Encontre seu Plano", "item": "https://www.elevanceseguros.com/encontre-seu-plano"}
           ]
         })}`}</script>
+              <meta property="og:type" content="website" />
+        <meta property="og:title" content="Encontre seu Plano de Saúde em SP | Cotação Gratuita - Elevance" />
+        <meta property="og:description" content="Compare Amil, Bradesco, SulAmérica, Hapvida, Unimed e mais. Cotação gratuita de plano de saúde em São Paulo." />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80" />
+        <meta property="og:url" content="https://www.elevanceseguros.com/encontre-seu-plano" />
+        <meta property="og:site_name" content="Elevance Seguros" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Encontre seu Plano de Saúde em SP | Cotação Gratuita - Elevance" />
+        <meta name="twitter:description" content="Compare Amil, Bradesco, SulAmérica, Hapvida, Unimed e mais. Cotação gratuita de plano de saúde em São Paulo." />
+        <meta name="twitter:image" content="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80" />
       </Helmet>
 
       <CorretorHero operadora="um plano de saúde" />
 
       {/* HERO */}
       <section className="relative pt-16 pb-12 md:pt-20 md:pb-16 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
-              <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Consultoria Especializada</span>
-              <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight italic">
+              <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest backdrop-blur-sm">Consultoria Especializada</span>
+              <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
                 Encontre o plano de saúde <br className="hidden md:block" />
                 <span className="text-blue-600">ideal para você.</span>
               </h1>
-              <p className="text-slate-600 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
-                Trabalhamos com as <span className="text-blue-600 font-black uppercase">principais operadoras</span> do mercado. Deixe seus dados e encontraremos a melhor opção para o seu perfil e orçamento.
+              <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
+                Trabalhamos com as <span className="text-yellow-300 font-black uppercase">principais operadoras</span> do mercado. Deixe seus dados e encontraremos a melhor opção para o seu perfil e orçamento.
               </p>
               <div className="flex flex-row justify-center lg:justify-start gap-4">
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
                   <Star size={14} className="text-yellow-500 fill-yellow-500" /> Atendimento 5 estrelas
                 </div>
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
                   <ShieldCheck size={14} className="text-blue-600" /> 100% Gratuito
                 </div>
               </div>

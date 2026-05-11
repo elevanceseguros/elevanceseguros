@@ -9,7 +9,7 @@ import CorretorHero from '@/components/CorretorHero';
 const MEU_NUMERO = "5511920144864";
 
 const coberturas = [
-  { icon: <Flame size={28} className="text-amber-600" />, titulo: "Incêndio e Explosão", desc: "Cobertura para danos causados por incêndio, explosão e queda de raio." },
+  { icon: <Flame size={28} className="text-yellow-300" />, titulo: "Incêndio e Explosão", desc: "Cobertura para danos causados por incêndio, explosão e queda de raio." },
   { icon: <Home size={28} className="text-amber-600" />, titulo: "Roubo e Furto", desc: "Proteção do seu patrimônio contra roubo qualificado e furto simples." },
   { icon: <ShieldCheck size={28} className="text-amber-600" />, titulo: "Danos Elétricos", desc: "Cobertura para equipamentos danificados por variação de tensão." },
   { icon: <Star size={28} className="text-amber-600" />, titulo: "Assistência 24h", desc: "Eletricista, encanador, chaveiro e vidraceiro quando você precisar." },
@@ -53,16 +53,18 @@ export default function SeguroResidencialPage() {
 
       <CorretorHero operadora="um Seguro Residencial" />
 
-      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-gradient-to-b from-amber-50 to-white overflow-hidden">
+      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-[#78350f] overflow-hidden">
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
               <span className="inline-block bg-amber-100 text-amber-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Proteção do seu Lar</span>
-              <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight italic">
+              <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
                 Um incêndio ou roubo pode <br className="hidden md:block" />
                 <span className="text-amber-600">destruir anos de conquista.</span>
               </h1>
-              <p className="text-slate-600 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
+              <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
                 O seguro residencial protege seu imóvel e patrimônio contra <span className="text-amber-600 font-black uppercase">imprevistos</span> — incêndio, roubo, danos elétricos e muito mais.
               </p>
               <ul className="space-y-3 text-left max-w-xl mx-auto lg:mx-0">
@@ -73,16 +75,16 @@ export default function SeguroResidencialPage() {
                   "Responsabilidade civil do proprietário",
                   "Assistência 24h: eletricista, encanador, chaveiro",
                 ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-slate-700 font-medium text-sm">
+                  <li key={i} className="flex items-center gap-3 text-white/90 font-medium text-sm">
                     <CheckCircle2 className="w-5 h-5 text-amber-500 flex-shrink-0" /> {item}
                   </li>
                 ))}
               </ul>
               <div className="flex flex-row justify-center lg:justify-start gap-4">
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
                   <Star size={14} className="text-yellow-500 fill-yellow-500" /> A partir de R$ 25/mês
                 </div>
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
                   <ShieldCheck size={14} className="text-amber-600" /> Regulado pela SUSEP
                 </div>
               </div>

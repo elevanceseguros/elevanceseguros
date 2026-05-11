@@ -9,7 +9,7 @@ import CorretorHero from '@/components/CorretorHero';
 const MEU_NUMERO = "5511920144864";
 
 const coberturas = [
-  { icon: <Heart size={28} className="text-rose-600" />, titulo: "Morte", desc: "Capital segurado pago aos beneficiários em caso de falecimento por qualquer causa." },
+  { icon: <Heart size={28} className="text-yellow-300" />, titulo: "Morte", desc: "Capital segurado pago aos beneficiários em caso de falecimento por qualquer causa." },
   { icon: <ShieldCheck size={28} className="text-rose-600" />, titulo: "Invalidez", desc: "Indenização em caso de invalidez permanente total ou parcial por acidente." },
   { icon: <Zap size={28} className="text-rose-600" />, titulo: "Doenças Graves", desc: "Cobertura para câncer, infarto, AVC e outras doenças graves especificadas." },
   { icon: <Users size={28} className="text-rose-600" />, titulo: "Diária Hospitalar", desc: "Valor diário pago enquanto estiver internado por acidente ou doença." },
@@ -49,34 +49,46 @@ export default function SeguroVidaPage() {
             {"@type": "ListItem", "position": 2, "name": "Seguro de Vida", "item": "https://www.elevanceseguros.com/seguro-vida"}
           ]
         })}`}</script>
+              <meta property="og:type" content="website" />
+        <meta property="og:title" content="Seguro de Vida em São Paulo | Cotação Gratuita - Elevance" />
+        <meta property="og:description" content="Proteja sua família com o seguro de vida ideal. A partir de R$ 35/mês. Cotação gratuita com a Elevance Seguros." />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80" />
+        <meta property="og:url" content="https://www.elevanceseguros.com/seguro-vida" />
+        <meta property="og:site_name" content="Elevance Seguros" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Seguro de Vida em São Paulo | Cotação Gratuita - Elevance" />
+        <meta name="twitter:description" content="Proteja sua família com o seguro de vida ideal. A partir de R$ 35/mês. Cotação gratuita com a Elevance Seguros." />
+        <meta name="twitter:image" content="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80" />
       </Helmet>
 
       <CorretorHero operadora="um Seguro de Vida" />
 
-      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-gradient-to-b from-rose-50 to-white overflow-hidden">
+      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-[#7f1d1d] overflow-hidden">
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
               <span className="inline-block bg-rose-100 text-rose-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Proteção para quem você ama</span>
-              <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight italic">
+              <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
                 E se você faltar amanhã, <br className="hidden md:block" />
                 <span className="text-rose-600">sua família está protegida?</span>
               </h1>
-              <p className="text-slate-600 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
+              <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
                 O seguro de vida garante que as pessoas que você ama estarão <span className="text-rose-600 font-black uppercase">financeiramente protegidas</span>, independente do que aconteça.
               </p>
               <ul className="space-y-3 text-left max-w-xl mx-auto lg:mx-0">
                 {["Cobertura para morte por qualquer causa", "Invalidez permanente total ou parcial", "Doenças graves: câncer, infarto, AVC", "Diária de internação hospitalar", "Assistência funeral para toda a família"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-slate-700 font-medium text-sm">
+                  <li key={i} className="flex items-center gap-3 text-white/90 font-medium text-sm">
                     <CheckCircle2 className="w-5 h-5 text-rose-500 flex-shrink-0" /> {item}
                   </li>
                 ))}
               </ul>
               <div className="flex flex-row justify-center lg:justify-start gap-4">
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
                   <Star size={14} className="text-yellow-500 fill-yellow-500" /> A partir de R$ 30/mês
                 </div>
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
                   <ShieldCheck size={14} className="text-rose-600" /> Regulado pela SUSEP
                 </div>
               </div>

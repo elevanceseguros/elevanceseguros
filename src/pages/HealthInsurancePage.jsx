@@ -89,7 +89,7 @@ const HealthInsurancePage = () => {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center pt-28 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1694185752018-2ff397cb99b4" alt="Background" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1694185752018-2ff397cb99b4" alt="Background" className="w-full h-full object-cover"  loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-r from-teal-900/95 via-teal-900/80 to-teal-900/40" />
         </div>
 

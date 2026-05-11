@@ -72,7 +72,7 @@ const CarInsurancePage = () => {
       {/* Hero Section */}
       <section className="relative min-h-[85vh] flex items-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1694266108404-33b6afd2c15d" alt="Seguro Auto" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1694266108404-33b6afd2c15d" alt="Seguro Auto" className="w-full h-full object-cover"  loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent" />
         </div>
 

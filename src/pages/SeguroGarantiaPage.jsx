@@ -9,7 +9,7 @@ import CorretorHero from '@/components/CorretorHero';
 const MEU_NUMERO = "5511920144864";
 
 const modalidades = [
-  { icon: <FileCheck size={28} className="text-emerald-600" />, titulo: "Garantia de Proposta", desc: "Garante que, ao vencer uma licitação, a empresa assina o contrato e cumpre os requisitos exigidos." },
+  { icon: <FileCheck size={28} className="text-emerald-300" />, titulo: "Garantia de Proposta", desc: "Garante que, ao vencer uma licitação, a empresa assina o contrato e cumpre os requisitos exigidos." },
   { icon: <Building2 size={28} className="text-emerald-600" />, titulo: "Garantia de Execução", desc: "Assegura a execução do contrato conforme os termos acordados. Exigida na maioria das obras e serviços públicos." },
   { icon: <Scale size={28} className="text-emerald-600" />, titulo: "Garantia Judicial", desc: "Substitui depósitos judiciais em processos administrativos, liberando capital de giro da empresa." },
   { icon: <Briefcase size={28} className="text-emerald-600" />, titulo: "Garantia de Adiantamento", desc: "Garante a devolução de valores pagos antecipadamente pelo contratante caso o serviço não seja executado." },
@@ -62,15 +62,17 @@ export default function SeguroGarantiaPage() {
 
       {/* HERO */}
       <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-gradient-to-b from-emerald-50 to-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
               <span className="inline-block bg-emerald-100 text-emerald-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Seguro Garantia · Empresarial</span>
-              <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight italic">
+              <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
                 Garanta contratos e <br className="hidden md:block" />
                 <span className="text-emerald-600">proteja seu capital.</span>
               </h1>
-              <p className="text-slate-600 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
+              <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
                 O seguro garantia substitui a fiança bancária em licitações e contratos — sem comprometer o limite de crédito da sua empresa e com <span className="text-emerald-600 font-black uppercase">custo muito menor</span>.
               </p>
               <ul className="space-y-3 text-left max-w-xl mx-auto lg:mx-0">
@@ -81,16 +83,16 @@ export default function SeguroGarantiaPage() {
                   "Cobre proposta, execução, adiantamento e garantia judicial",
                   "Aceito por órgãos públicos e grandes contratantes privados",
                 ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-slate-700 font-medium text-sm">
+                  <li key={i} className="flex items-center gap-3 text-white/90 font-medium text-sm">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500 flex-shrink-0" /> {item}
                   </li>
                 ))}
               </ul>
               <div className="flex flex-row justify-center lg:justify-start gap-4 flex-wrap">
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
                   <Star size={14} className="text-yellow-500 fill-yellow-500" /> Exigido em licitações
                 </div>
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
                   <ShieldCheck size={14} className="text-emerald-600" /> Regulado pelo Banco Central
                 </div>
               </div>

@@ -9,7 +9,7 @@ import CorretorHero from '@/components/CorretorHero';
 const MEU_NUMERO = "5511920144864";
 
 const beneficios = [
-  { icon: <ShieldCheck size={28} className="text-blue-600" />, titulo: "Cobertura Completa", desc: "Proteção contra roubo, furto, colisão e danos a terceiros." },
+  { icon: <ShieldCheck size={28} className="text-yellow-300" />, titulo: "Cobertura Completa", desc: "Proteção contra roubo, furto, colisão e danos a terceiros." },
   { icon: <Car size={28} className="text-blue-600" />, titulo: "Carro Reserva", desc: "Veículo reserva enquanto o seu está em reparo." },
   { icon: <Zap size={28} className="text-blue-600" />, titulo: "Socorro 24h", desc: "Assistência imediata em qualquer situação na estrada." },
   { icon: <Star size={28} className="text-blue-600" />, titulo: "Melhor Preço", desc: "Comparamos várias seguradoras para garantir o melhor custo." },
@@ -60,26 +60,38 @@ export default function SeguroAutoPage() {
           ]
         })}`}</script>
               <meta name="keywords" content="seguro auto São Paulo, seguro carro SP, cotação seguro auto SP 2026, seguro auto barato São Paulo, seguro auto online SP" />
+              <meta property="og:type" content="website" />
+        <meta property="og:title" content="Seguro Auto em São Paulo | Cotação Gratuita - Elevance" />
+        <meta property="og:description" content="Compare seguradoras e encontre o melhor seguro auto em SP. Allianz, Porto, HDI, Tokio Marine. Cotação gratuita." />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&q=80" />
+        <meta property="og:url" content="https://www.elevanceseguros.com/seguro-auto" />
+        <meta property="og:site_name" content="Elevance Seguros" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Seguro Auto em São Paulo | Cotação Gratuita - Elevance" />
+        <meta name="twitter:description" content="Compare seguradoras e encontre o melhor seguro auto em SP. Allianz, Porto, HDI, Tokio Marine. Cotação gratuita." />
+        <meta name="twitter:image" content="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&q=80" />
       </Helmet>
 
       <CorretorHero operadora="um Seguro Auto" />
 
       {/* HERO */}
-      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-gradient-to-b from-slate-50 to-white">
+      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-[#1e3a5f] overflow-hidden">
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
-              <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Proteção Completa</span>
-              <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight italic">
+              <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest backdrop-blur-sm">Proteção Completa</span>
+              <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
                 Seu carro está protegido se <span className="text-blue-600">alguém bater nele hoje?</span>
               </h1>
-              <p className="text-slate-600 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
-                Comparamos as <span className="text-blue-600 font-black uppercase">principais seguradoras</span> e encontramos a melhor cobertura pelo menor preço para você.
+              <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
+                Comparamos as <span className="text-yellow-300 font-black uppercase">principais seguradoras</span> e encontramos a melhor cobertura pelo menor preço para você.
               </p>
               <ul className="space-y-3 text-left max-w-xl mx-auto lg:mx-0">
                 {["Cobertura contra roubo, furto e colisão","Assistência 24h na estrada","Carro reserva disponível","Proteção a terceiros","Vidros e retrovisores inclusos"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-slate-700 font-medium text-sm">
-                    <CheckCircle2 className="w-5 h-5 text-blue-500 flex-shrink-0" /> {item}
+                  <li key={i} className="flex items-center gap-3 text-white/90 font-medium text-sm">
+                    <CheckCircle2 className="w-5 h-5 text-white/70 flex-shrink-0" /> {item}
                   </li>
                 ))}
               </ul>
