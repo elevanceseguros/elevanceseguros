@@ -1,6 +1,7 @@
 import CorretorHero from '@/components/CorretorHero';
 import { Helmet } from 'react-helmet-async';
 import ScrollCTA from '@/components/ScrollCTA';
+import FAQ from '@/components/FAQ';
 import React from 'react';
 import LeadFormSincero from '@/components/LeadFormSincero';
 import { ShieldCheck, Clock, MapPin, Users, CheckCircle2, Building2, Table, Activity, ArrowRight } from 'lucide-react';
@@ -61,7 +62,22 @@ const SagradaFamiliaHomePage = () => {
       <title>Plano de Saúde Sagrada Família | Tabela 2026 - Elevance Seguros</title>
       <meta name="description" content="Plano de Saúde Sagrada Família em São Paulo. Tabela de preços 2026, rede própria de hospitais e cotação gratuita via WhatsApp." />
       <link rel="canonical" href="https://elevanceseguros.com/sagrada-familia" />
-    </Helmet>
+    
+        <meta name="keywords" content="plano de saúde Sagrada Família SP, plano Sagrada Família São Paulo, cotação Sagrada Família 2026, plano hospitais Sagrada Família" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Plano de Saúde Sagrada Família | Cotação 2026 - Elevance" />
+        <meta property="og:description" content="Plano de saúde com acesso aos hospitais Sagrada Família e São Francisco em SP. Tabela 2026 e cotação gratuita." />
+        <meta property="og:image" content="https://www.elevanceseguros.com/logos/sagrada-familia.png" />
+        <meta property="og:url" content="https://sagradafamilia.elevanceseguros.com" />
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Plano Sagrada Família", "item": "https://sagradafamilia.elevanceseguros.com"}
+          ]
+        })}`}</script>
+      </Helmet>
     <div className="min-h-screen bg-slate-50 font-sans">
       <nav className="bg-white border-b sticky top-0 z-50 py-3 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
@@ -184,6 +200,14 @@ const SagradaFamiliaHomePage = () => {
       </footer>
     </div>
 
+
+      <FAQ perguntas={[
+        { pergunta: "O plano Sagrada Família aceita portabilidade?", resposta: "Sim! O plano Sagrada Família aceita portabilidade de carências de outros planos ANS, desde que você tenha cumprido o período mínimo de permanência. O processo é simples e pode ser feito sem burocracia com nosso corretor." },
+        { pergunta: "Quais hospitais fazem parte da rede Sagrada Família?", resposta: "A rede própria inclui os Hospitais Sagrada Família (Vila Formosa e Mauá) e os Hospitais São Francisco (Cotia, Osasco e São Roque), além de clínicas e laboratórios próprios em São Paulo e região." },
+        { pergunta: "O plano Sagrada Família cobre parto?", resposta: "Sim, com carência de 300 dias para parto normal e cesárea. O hospital conta com maternidade própria credenciada. Para gestantes que já estão grávidas na contratação, consulte-nos sobre as coberturas disponíveis." },
+        { pergunta: "Qual o prazo de carência do plano Sagrada Família?", resposta: "As carências seguem o padrão ANS: 24h para urgência e emergência, 30 dias para consultas, 180 dias para cirurgias eletivas e 300 dias para parto. Em caso de portabilidade, as carências podem ser eliminadas." },
+        { pergunta: "Posso usar o plano Sagrada Família em outros hospitais?", resposta: "O plano Sagrada Família é focado na rede própria. Para cobertura em outros hospitais de São Paulo, consulte-nos sobre as opções de plano com rede complementar disponíveis." }
+      ]} />
       <ScrollCTA produto="Plano de Saúde Sagrada Família" />
     </>
   );

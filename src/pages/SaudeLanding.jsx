@@ -1,3 +1,4 @@
+import ScrollCTA from '@/components/ScrollCTA';
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Star, ShieldCheck, Zap, Heart, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Users, Phone } from "lucide-react";
