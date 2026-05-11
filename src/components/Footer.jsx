@@ -70,6 +70,28 @@ const Footer = () => {
                 <Instagram size={16} />
               </a>
             </div>
+
+            {/* Logos operadoras — só desktop */}
+            <div className="hidden lg:block pt-2 space-y-3">
+              <p className="text-[9px] font-black uppercase tracking-[0.2em] text-white/30">Operadoras Parceiras</p>
+              <div className="grid grid-cols-3 gap-2">
+                {[
+                  { src: "/logos/amil.png", alt: "Amil" },
+                  { src: "/logos/bradesco.png", alt: "Bradesco" },
+                  { src: "/logos/sulamerica.png", alt: "SulAmérica" },
+                  { src: "/logos/hapvida.png", alt: "Hapvida" },
+                  { src: "/logos/unimed.png", alt: "Unimed" },
+                  { src: "/logos/allianz.png", alt: "Allianz" },
+                  { src: "/logos/hdi.png", alt: "HDI" },
+                  { src: "/logos/tokio.png", alt: "Tokio Marine" },
+                  { src: "/logos/portoauto.png", alt: "Porto" },
+                ].map((logo, i) => (
+                  <div key={i} className="bg-white/10 rounded-xl p-1.5 flex items-center justify-center h-9">
+                    <img src={logo.src} alt={logo.alt} className="max-h-5 max-w-full object-contain brightness-0 invert opacity-60" loading="lazy" />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Coluna 2: Saúde em 2 subcolunas — 5 cols */}
