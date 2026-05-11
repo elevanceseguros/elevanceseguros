@@ -61,7 +61,7 @@ export default function SeguroGarantiaPage() {
       <CorretorHero operadora="Seguro Garantia" />
 
       {/* HERO */}
-      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-gradient-to-b from-emerald-50 to-white overflow-hidden">
+      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-[#052e22] overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4">

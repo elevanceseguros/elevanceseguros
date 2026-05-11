@@ -55,7 +55,7 @@ const AlicePage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-fuchsia-50">
+      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-[#4a1272]">
         <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
         <div className="container mx-auto px-4 relative z-10">
@@ -65,11 +65,11 @@ const AlicePage = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-block bg-fuchsia-100 text-fuchsia-800 px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
+              <div className="inline-block bg-white/20 text-white backdrop-blur-sm px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
                 <Smartphone className="w-4 h-4" /> Saúde na palma da mão
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
-                Mais que um plano <span className="text-fuchsia-600">Alice Saúde</span>
+                Mais que um plano <span className="text-pink-300">Alice Saúde</span>
               </h1>
               <p className="text-xl text-white/80 mb-8 leading-relaxed">
                 A Alice reinventou o cuidado com a saúde. Com tecnologia e um Time de Saúde sempre disponível, você tem acesso aos melhores hospitais e laboratórios sem dor de cabeça.
