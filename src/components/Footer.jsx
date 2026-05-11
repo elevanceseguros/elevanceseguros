@@ -69,11 +69,11 @@ const Footer = () => {
                 className="p-2 bg-white/10 hover:bg-pink-600 rounded-xl transition-all" title="Instagram">
                 <Instagram size={16} />
               </a>
-              <a href="https://tiktok.com/elevance.seguros" target="_blank" rel="noreferrer"
+              <a href="https://tiktok.com/@elevance.seguros" target="_blank" rel="noreferrer"
                 className="p-2 bg-white/10 hover:bg-slate-900 rounded-xl transition-all" title="TikTok">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
               </a>
-              <a href="https://kwai.com/elevanceseguros" target="_blank" rel="noreferrer"
+              <a href="https://kwai.com/@elevanceseguros" target="_blank" rel="noreferrer"
                 className="p-2 bg-white/10 hover:bg-orange-500 rounded-xl transition-all" title="Kwai">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
               </a>
