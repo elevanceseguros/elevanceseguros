@@ -151,12 +151,23 @@ export default function EncontreSeuPlanoPage() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-black text-[#114d8e] italic text-center mb-3">Ou escolha diretamente sua operadora</h2>
           <p className="text-slate-500 text-center font-medium mb-10">Clique para ver planos e cotar diretamente</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {operadoras.map((op) => (
+
+          {/* Grid desktop: 3x3 | Mobile: Amil wide + 2x2 */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {/* Amil — ocupa 2 cols no mobile, 1 no desktop */}
+            <Link to="/amil"
+              className="col-span-2 md:col-span-1 bg-white border-2 border-indigo-200 hover:border-indigo-400 rounded-2xl p-5 flex flex-col items-center gap-3 transition-all hover:shadow-md hover:-translate-y-0.5">
+              <div className="h-14 flex items-center justify-center">
+                <img src="/logos/amil.png" alt="Amil" className="max-h-12 max-w-[140px] object-contain" loading="lazy" />
+              </div>
+              <span className="text-[10px] font-black uppercase px-2 py-1 rounded-full bg-indigo-100 text-indigo-700">Amil</span>
+            </Link>
+            {/* Demais operadoras — 1 col cada */}
+            {operadoras.slice(1).map((op) => (
               <Link key={op.nome} to={op.path}
                 className={`bg-white border-2 ${op.cor} rounded-2xl p-5 flex flex-col items-center gap-3 transition-all hover:shadow-md hover:-translate-y-0.5`}>
                 <div className="h-12 flex items-center justify-center">
-                  <img src={op.logo} alt={op.nome} className="max-h-10 max-w-[100px] object-contain"
+                  <img src={op.logo} alt={op.nome} className="max-h-10 max-w-[100px] object-contain" loading="lazy"
                     onError={(e) => { e.target.style.display = "none"; e.target.nextSibling.style.display = "block"; }} />
                   <span style={{ display: "none" }} className="text-slate-700 font-black text-sm">{op.nome}</span>
                 </div>
