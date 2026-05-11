@@ -69,65 +69,73 @@ const Header = () => {
         <nav className="hidden lg:flex items-center gap-8">
 
           {/* Saúde com submenu */}
-          <div ref={saudeRef} className="relative">
+          <div ref={saudeRef} className="relative"
+            onMouseEnter={() => { setSaudeOpen(true); setAutoOpen(false); setSegurosOpen(false); }}
+            onMouseLeave={() => setSaudeOpen(false)}>
             <button
-              onClick={() => { setSaudeOpen(!saudeOpen); setAutoOpen(false); }}
               className="flex items-center gap-1 text-[11px] font-black uppercase tracking-widest text-white hover:text-blue-200 transition-colors"
             >
               <Heart size={13} /> Saúde <ChevronDown size={13} className={`transition-transform ${saudeOpen ? 'rotate-180' : ''}`} />
             </button>
             {saudeOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-2xl shadow-xl border border-slate-100 py-2 z-50">
-                {saudeSubmenu.map((item, i) => (
-                  <Link key={item.path} to={item.path}
-                    onClick={() => setSaudeOpen(false)}
-                    className={`block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#114d8e] hover:bg-blue-50 hover:text-blue-600 transition-colors ${i === 0 ? 'border-b border-slate-100 mb-1 text-blue-600' : ''}`}>
-                    {i === 0 ? '⭐ ' + item.name : item.name}
-                  </Link>
-                ))}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-3 w-52 z-50">
+                <div className="bg-white rounded-2xl shadow-xl border border-slate-100 py-2">
+                  {saudeSubmenu.map((item, i) => (
+                    <Link key={item.path} to={item.path}
+                      onClick={() => setSaudeOpen(false)}
+                      className={`block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#114d8e] hover:bg-blue-50 hover:text-blue-600 transition-colors ${i === 0 ? 'border-b border-slate-100 mb-1 text-blue-600' : ''}`}>
+                      {i === 0 ? '⭐ ' + item.name : item.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
 
           {/* Auto com submenu */}
-          <div ref={autoRef} className="relative">
+          <div ref={autoRef} className="relative"
+            onMouseEnter={() => { setAutoOpen(true); setSaudeOpen(false); setSegurosOpen(false); }}
+            onMouseLeave={() => setAutoOpen(false)}>
             <button
-              onClick={() => { setAutoOpen(!autoOpen); setSaudeOpen(false); }}
               className="flex items-center gap-1 text-[11px] font-black uppercase tracking-widest text-white hover:text-blue-200 transition-colors"
             >
               <Car size={13} /> Auto <ChevronDown size={13} className={`transition-transform ${autoOpen ? 'rotate-180' : ''}`} />
             </button>
             {autoOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-48 bg-white rounded-2xl shadow-xl border border-slate-100 py-2 z-50">
-                {autoSubmenu.map((item) => (
-                  <Link key={item.path} to={item.path}
-                    onClick={() => setAutoOpen(false)}
-                    className="block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#114d8e] hover:bg-blue-50 hover:text-blue-600 transition-colors">
-                    {item.name}
-                  </Link>
-                ))}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-3 w-48 z-50">
+                <div className="bg-white rounded-2xl shadow-xl border border-slate-100 py-2">
+                  {autoSubmenu.map((item) => (
+                    <Link key={item.path} to={item.path}
+                      onClick={() => setAutoOpen(false)}
+                      className="block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#114d8e] hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
 
-
           {/* Seguros com submenu */}
-          <div ref={segurosRef} className="relative">
+          <div ref={segurosRef} className="relative"
+            onMouseEnter={() => { setSegurosOpen(true); setSaudeOpen(false); setAutoOpen(false); }}
+            onMouseLeave={() => setSegurosOpen(false)}>
             <button
-              onClick={() => { setSegurosOpen(!segurosOpen); setSaudeOpen(false); setAutoOpen(false); }}
               className="flex items-center gap-1 text-[11px] font-black uppercase tracking-widest text-white hover:text-blue-200 transition-colors"
             >
               <Shield size={13} /> Seguros <ChevronDown size={13} className={`transition-transform ${segurosOpen ? 'rotate-180' : ''}`} />
             </button>
             {segurosOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-2xl shadow-xl border border-slate-100 py-2 z-50">
-                {segurosSubmenu.map((item) => (
-                  <Link key={item.path} to={item.path}
-                    onClick={() => setSegurosOpen(false)}
-                    className="block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#114d8e] hover:bg-blue-50 hover:text-blue-600 transition-colors">
-                    {item.name}
-                  </Link>
-                ))}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-3 w-52 z-50">
+                <div className="bg-white rounded-2xl shadow-xl border border-slate-100 py-2">
+                  {segurosSubmenu.map((item) => (
+                    <Link key={item.path} to={item.path}
+                      onClick={() => setSegurosOpen(false)}
+                      className="block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#114d8e] hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
