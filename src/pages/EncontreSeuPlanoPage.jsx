@@ -77,7 +77,7 @@ export default function EncontreSeuPlanoPage() {
       <CorretorHero operadora="um plano de saúde" />
 
       {/* HERO */}
-      <section className="relative pt-16 pb-12 md:pt-20 md:pb-16 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
+      <section className="relative pt-16 pb-12 md:pt-20 md:pb-16 bg-[#114d8e] overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4">
@@ -86,7 +86,7 @@ export default function EncontreSeuPlanoPage() {
               <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest backdrop-blur-sm">Consultoria Especializada</span>
               <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
                 Encontre o plano de saúde <br className="hidden md:block" />
-                <span className="text-blue-600">ideal para você.</span>
+                <span className="text-yellow-300">ideal para você.</span>
               </h1>
               <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
                 Trabalhamos com as <span className="text-yellow-300 font-black uppercase">principais operadoras</span> do mercado. Deixe seus dados e encontraremos a melhor opção para o seu perfil e orçamento.
