@@ -110,6 +110,15 @@ const Footer = () => {
                   <ChevronRight size={10} className="shrink-0" /> {item.name}
                 </Link>
               ))}
+              {/* Consórcios e Blog abaixo das operadoras */}
+              <div className="col-span-2 border-t border-white/10 mt-3 pt-3 grid grid-cols-2 gap-x-6 gap-y-2">
+                <Link to="/consorcios" className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
+                  <ChevronRight size={10} className="shrink-0" /> Consórcios
+                </Link>
+                <Link to="/blog" className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
+                  <ChevronRight size={10} className="shrink-0" /> Blog
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -133,18 +142,6 @@ const Footer = () => {
               <h4 className="font-black text-white uppercase text-[10px] tracking-[0.2em] mb-4">Seguros</h4>
               <ul className="space-y-2">
                 {segurosLinks.map((item) => (
-                  <li key={item.path}>
-                    <Link to={item.path} className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
-                      <ChevronRight size={10} className="shrink-0" /> {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-black text-white uppercase text-[10px] tracking-[0.2em] mb-4">Outros</h4>
-              <ul className="space-y-2">
-                {outrosLinks.map((item) => (
                   <li key={item.path}>
                     <Link to={item.path} className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
                       <ChevronRight size={10} className="shrink-0" /> {item.name}
