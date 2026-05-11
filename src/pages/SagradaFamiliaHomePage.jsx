@@ -12,7 +12,7 @@ const tabelaPrecos = [
   { idade: "24 a 28", enf: "R$ 238,77", apto: "R$ 341,66" },
   { idade: "29 a 33", enf: "R$ 238,77", apto: "R$ 341,66" },
   { idade: "34 a 38", enf: "R$ 305,62", apto: "R$ 437,35" },
-  { idade: "39 a 43", enf: "—", apto: "—" },
+  { idade: "39 a 43", enf: "R$ 305,62", apto: "R$ 437,35" },
   { idade: "44 a 48", enf: "R$ 421,77", apto: "R$ 603,55" },
   { idade: "49 a 53", enf: "R$ 529,31", apto: "R$ 757,45" },
   { idade: "54 a 58", enf: "R$ 688,10", apto: "R$ 984,68" },
