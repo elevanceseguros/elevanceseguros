@@ -91,13 +91,25 @@ const Footer = () => {
                   <ChevronRight size={10} className="shrink-0" /> {item.name}
                 </Link>
               ))}
-              <div className="col-span-2 border-t border-white/10 mt-3 pt-3 grid grid-cols-2 gap-x-6 gap-y-2">
-                <Link to="/consorcios" className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
-                  <ChevronRight size={10} className="shrink-0" /> Consórcios
-                </Link>
-                <Link to="/blog" className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
-                  <ChevronRight size={10} className="shrink-0" /> Blog
-                </Link>
+              <div className="col-span-2 border-t border-white/10 mt-3 pt-4 grid grid-cols-2 gap-x-6 gap-y-2">
+                <div>
+                  <h4 className="flex items-center gap-1.5 font-black text-white uppercase text-[10px] tracking-[0.2em] mb-3">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-blue-400"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    Consórcios
+                  </h4>
+                  <Link to="/consorcios" className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
+                    <ChevronRight size={10} className="shrink-0" /> Ver Consórcios
+                  </Link>
+                </div>
+                <div>
+                  <h4 className="flex items-center gap-1.5 font-black text-white uppercase text-[10px] tracking-[0.2em] mb-3">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-blue-400"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    Blog
+                  </h4>
+                  <Link to="/blog" className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
+                    <ChevronRight size={10} className="shrink-0" /> Ver Artigos
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
