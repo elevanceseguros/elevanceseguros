@@ -1383,6 +1383,288 @@ export const postsData = [
       <p class="mt-8 font-bold text-blue-600">Quer simular um consórcio de veículo? Me chame no WhatsApp e encontramos o melhor plano para o seu perfil!</p>
     `
   }
+
+  ,
+  {
+    id: 21,
+    slug: "consorcio-de-servicos-o-que-e-e-como-usar",
+    title: "Consórcio de Serviços: O Que É e Como Usar para Reforma, Viagem e Educação",
+    date: "12 Mai, 2026",
+    category: "Consórcios",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Poucos sabem, mas o consórcio não serve só para imóvel e carro. Você pode usar a carta de crédito para reformar a casa, fazer uma viagem, pagar faculdade ou qualquer outro serviço. Entenda como.",
+    content: `
+      <p class="mb-4">Quando falamos em consórcio, a maioria das pessoas pensa imediatamente em imóvel ou veículo. Mas existe uma modalidade pouco conhecida que abre um leque enorme de possibilidades: o <strong>consórcio de serviços</strong>. Com ele, você pode usar a carta de crédito para pagar praticamente qualquer tipo de serviço — da reforma da casa à faculdade dos filhos.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que é consórcio de serviços?</h2>
+      <p class="mb-4">O consórcio de serviços funciona exatamente como o de imóvel ou veículo: você entra em um grupo, paga parcelas mensais e aguarda a contemplação por sorteio ou lance. A diferença está no destino da carta de crédito — que pode ser usada para contratação de <strong>serviços</strong>, em vez de bens físicos.</p>
+      <p class="mb-4">É regulamentado pelo Banco Central e gerido por administradoras autorizadas, com toda a segurança jurídica do sistema tradicional de consórcios.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Para quais serviços posso usar?</h2>
+      <ul class="mb-6 space-y-3 list-none">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Reforma e construção:</strong> ampliação da casa, reforma de cozinha, banheiro, pintura e acabamentos.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Educação:</strong> faculdade, pós-graduação, MBA, cursos técnicos e intercâmbios.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Saúde e estética:</strong> cirurgias eletivas, tratamentos odontológicos, procedimentos estéticos.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Viagens:</strong> pacotes turísticos, lua de mel, viagens internacionais.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Festas e eventos:</strong> casamento, debutante, formaturas e aniversários.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Tecnologia:</strong> equipamentos, softwares e serviços digitais para empresas.</span></li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Carta de crédito</th>
+              <th class="p-3 text-left">Prazo</th>
+              <th class="p-3 text-left rounded-tr-xl">Parcela aprox.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">R$ 20.000</td>
+              <td class="p-3">40 meses</td>
+              <td class="p-3 font-bold text-blue-600">R$ 580 – R$ 650</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">R$ 50.000</td>
+              <td class="p-3">60 meses</td>
+              <td class="p-3 font-bold text-blue-600">R$ 960 – R$ 1.100</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">R$ 100.000</td>
+              <td class="p-3">80 meses</td>
+              <td class="p-3 font-bold text-blue-600">R$ 1.450 – R$ 1.700</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">*Valores referenciais para 2026. Variam conforme administradora.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">O consórcio de serviços é ideal para quem planeja uma reforma ou uma faculdade nos próximos 2 a 3 anos. Em vez de pegar um empréstimo pessoal com juros de 3% ao mês ou mais, você parcela sem juros e ainda pode dar um lance para se antecipar. A diferença no custo final pode chegar a R$ 30.000 em uma carta de R$ 100.000.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Como funciona o pagamento ao prestador?</h2>
+      <p class="mb-4">Ao ser contemplado, a carta de crédito é liberada diretamente para o prestador do serviço — empresa de construção, instituição de ensino, agência de viagens etc. O prestador precisa emitir nota fiscal e estar regularizado. Não é possível sacar o valor em dinheiro.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Consórcio de serviços vale a pena?</h2>
+      <p class="mb-4">Vale muito para quem tem <strong>planejamento</strong>. Se a reforma ou o evento é para daqui a 2 anos, o consórcio de serviços é a opção mais inteligente financeiramente. Para quem precisa do serviço imediatamente, o consórcio não é a solução ideal — nesse caso, avalie crédito pessoal ou parcelamento direto com o prestador.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Quer simular um consórcio de serviços? Me chame no WhatsApp — simulação gratuita!</p>
+    `
+  }
+  ,
+  {
+    id: 22,
+    slug: "como-dar-lance-no-consorcio-e-ser-contemplado-mais-rapido",
+    title: "Como Dar um Lance no Consórcio e Ser Contemplado Mais Rápido",
+    date: "13 Mai, 2026",
+    category: "Consórcios",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Cansado de esperar o sorteio? O lance é a estratégia certa para antecipar sua contemplação no consórcio. Entenda os tipos de lance, como calcular e quando vale a pena usar.",
+    content: `
+      <p class="mb-4">Uma das maiores dúvidas de quem entra em um consórcio é: <em>quanto tempo vou esperar para ser contemplado?</em> A resposta pode ser muito menor do que você imagina — se você usar a estratégia do <strong>lance</strong>. Entender como funciona pode fazer você sair do grupo muito antes do que esperava.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que é um lance no consórcio?</h2>
+      <p class="mb-4">O lance é uma oferta adicional feita por um participante para aumentar suas chances de ser contemplado naquele mês. Funciona como um leilão: quem oferta o maior percentual da carta de crédito é contemplado, independentemente do sorteio.</p>
+      <p class="mb-4">O valor do lance pode ser pago de três formas, dependendo da administradora e do tipo de lance escolhido.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Tipos de lance</h2>
+      <ul class="mb-6 space-y-4 list-none">
+        <li class="flex items-start gap-3"><span class="bg-[#114d8e] text-white font-black text-xs rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">1</span><span><strong>Lance livre:</strong> você oferta qualquer percentual com recursos próprios. O maior percentual vence. É o tipo mais comum.</span></li>
+        <li class="flex items-start gap-3"><span class="bg-[#114d8e] text-white font-black text-xs rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">2</span><span><strong>Lance embutido:</strong> você usa parte da própria carta de crédito como lance. Não precisa ter o dinheiro em mãos — mas recebe um crédito menor. Exemplo: carta de R$ 300.000, lance embutido de R$ 60.000, você recebe R$ 240.000.</span></li>
+        <li class="flex items-start gap-3"><span class="bg-[#114d8e] text-white font-black text-xs rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">3</span><span><strong>Lance fixo:</strong> a administradora define um percentual fixo (ex: 25%) e sorteia entre todos que ofertaram aquele valor.</span></li>
+        <li class="flex items-start gap-3"><span class="bg-[#114d8e] text-white font-black text-xs rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">4</span><span><strong>Lance com FGTS:</strong> exclusivo para consórcios imobiliários. Você usa o saldo do FGTS como lance, sem desembolso próprio.</span></li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Tipo de lance</th>
+              <th class="p-3 text-left">Precisa de dinheiro?</th>
+              <th class="p-3 text-left rounded-tr-xl">Ideal para</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Lance livre</td>
+              <td class="p-3 font-bold text-red-500">Sim</td>
+              <td class="p-3">Quem tem reserva financeira</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Lance embutido</td>
+              <td class="p-3 font-bold text-green-600">Não</td>
+              <td class="p-3">Quem não tem reserva mas aceita crédito menor</td>
+            </tr>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Lance com FGTS</td>
+              <td class="p-3 font-bold text-green-600">Não (usa FGTS)</td>
+              <td class="p-3">Consórcio imobiliário com FGTS disponível</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="p-3 font-medium">Lance fixo</td>
+              <td class="p-3 font-bold text-red-500">Sim</td>
+              <td class="p-3">Grupos com percentual definido</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">O lance embutido é a estratégia mais subestimada do consórcio. Muita gente desiste de dar lance por não ter o dinheiro em mãos — mas com o lance embutido você pode ser contemplado usando a própria carta. Em grupos com lances embutidos competitivos de 15% a 20%, você pode sair do grupo em 6 a 12 meses mesmo sem reserva financeira.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Quanto dar de lance para ser contemplado?</h2>
+      <p class="mb-4">Depende do histórico de lances do grupo. Peça ao corretor ou à administradora o histórico dos últimos 6 meses de assembleias — isso mostra qual percentual mínimo foi necessário para vencer o lance. Em grupos imobiliários, lances entre 20% e 30% costumam ser competitivos. Em grupos de veículos, entre 25% e 40%.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O lance não venceu. E o dinheiro?</h2>
+      <p class="mb-4">Se o seu lance não for o vencedor, o valor não é debitado — fica reservado na sua conta. Você pode tentar novamente no próximo mês com o mesmo valor ou aumentar a oferta.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Quer entender qual estratégia de lance é ideal para o seu consórcio? Me chame no WhatsApp — análise gratuita!</p>
+    `
+  }
+  ,
+  {
+    id: 23,
+    slug: "seguro-viagem-quando-contratar-e-o-que-cobre",
+    title: "Seguro Viagem: Quando Contratar e o Que Cobre em 2026",
+    date: "14 Mai, 2026",
+    category: "Seguros",
+    readTime: "4 min",
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Viajar sem seguro viagem é um risco que pode custar dezenas de milhares de reais. Saiba o que o seguro cobre, quando é obrigatório e como escolher o melhor para a sua viagem.",
+    content: `
+      <p class="mb-4">Uma consulta médica nos Estados Unidos pode custar mais de R$ 5.000. Uma internação de 5 dias na Europa, R$ 80.000. Uma evacuação médica de emergência, R$ 300.000. O seguro viagem evita que um imprevisto de saúde arruíne — financeiramente e emocionalmente — uma viagem que você planejou por anos.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que o seguro viagem cobre?</h2>
+      <ul class="mb-6 space-y-3 list-none">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Assistência médica e hospitalar:</strong> consultas, exames, internações e cirurgias de urgência no destino.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Evacuação médica:</strong> transporte aeromédico para o Brasil em casos graves.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Bagagem extraviada ou danificada:</strong> indenização por perda ou dano de bagagem pela companhia aérea.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Cancelamento de voo:</strong> reembolso por voos cancelados ou atrasos longos com despesas extras.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Morte acidental:</strong> indenização para os beneficiários em caso de óbito durante a viagem.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Responsabilidade civil:</strong> cobre danos causados a terceiros durante a viagem.</span></li>
+      </ul>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Destino</th>
+              <th class="p-3 text-left">Cobertura médica mínima</th>
+              <th class="p-3 text-left rounded-tr-xl">Custo aprox. (7 dias)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">América do Sul</td>
+              <td class="p-3">USD 30.000</td>
+              <td class="p-3 font-bold text-blue-600">R$ 60 – R$ 120</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Europa (Schengen)</td>
+              <td class="p-3">EUR 30.000 (obrigatório)</td>
+              <td class="p-3 font-bold text-blue-600">R$ 150 – R$ 280</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">EUA / Canadá</td>
+              <td class="p-3">USD 100.000+</td>
+              <td class="p-3 font-bold text-blue-600">R$ 200 – R$ 400</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">*Valores referenciais para 2026. Variam por seguradora, idade e coberturas.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Para a Europa, o seguro viagem com cobertura mínima de EUR 30.000 é <strong>obrigatório</strong> para obter o visto Schengen. Muitas pessoas contratam o mínimo exigido — mas para destinos como EUA, onde uma internação simples pode custar USD 50.000, recomendo cobertura de no mínimo USD 100.000. A diferença de preço entre USD 30.000 e USD 100.000 de cobertura é de apenas R$ 50 a R$ 100 para uma viagem de 15 dias.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Quando o seguro viagem é obrigatório?</h2>
+      <p class="mb-4">Para países do bloco Schengen (maioria da Europa), o seguro viagem com cobertura mínima de EUR 30.000 é exigido para concessão do visto. Para outros destinos, não é obrigatório por lei — mas é altamente recomendado para qualquer viagem internacional e mesmo para viagens domésticas longas.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Meu cartão de crédito já inclui seguro viagem — preciso contratar?</h2>
+      <p class="mb-4">Alguns cartões premium oferecem seguro viagem, mas com coberturas geralmente limitadas e condicionadas à compra da passagem com o cartão. Verifique os limites e exclusões antes de confiar exclusivamente nessa cobertura — especialmente para destinos de alto custo médico como EUA e Japão.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Viagem planejada? Me chame no WhatsApp e encontramos o melhor seguro viagem para o seu destino e perfil!</p>
+    `
+  }
+  ,
+  {
+    id: 24,
+    slug: "plano-de-saude-para-autonomo-individual-adesao-ou-mei",
+    title: "Plano de Saúde para Autônomo: Individual, Adesão ou MEI? Qual Escolher",
+    date: "15 Mai, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Autônomo, freelancer ou MEI: qual o melhor tipo de plano de saúde para quem trabalha por conta própria? Compare as opções, entenda as diferenças de preço e escolha a melhor para o seu perfil.",
+    content: `
+      <p class="mb-4">Quem trabalha como autônomo, freelancer ou MEI enfrenta um dilema na hora de contratar um plano de saúde: não tem o benefício corporativo do CLT, mas precisa de cobertura de qualidade. A boa notícia é que existem três caminhos, cada um com vantagens específicas. Veja qual se encaixa no seu perfil.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Opção 1 — Plano Individual</h2>
+      <p class="mb-4">O plano individual é contratado diretamente com a operadora, sem vínculo com empresa ou associação. É regulamentado pela ANS com reajuste anual controlado — o índice máximo para 2026 foi de <strong>6,06%</strong>.</p>
+      <p class="mb-4"><strong>Vantagem:</strong> maior estabilidade de preço e proteção contra cancelamento pela operadora.<br/><strong>Desvantagem:</strong> oferta muito restrita em São Paulo — poucas operadoras ainda comercializam planos individuais e o preço costuma ser mais alto.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Opção 2 — Plano Coletivo por Adesão</h2>
+      <p class="mb-4">O plano de adesão é vinculado a uma entidade de classe, associação profissional ou sindicato. Autônomos e freelancers podem acessá-lo através de associações como o Sindicato dos Trabalhadores Autônomos ou plataformas de adesão abertas.</p>
+      <p class="mb-4"><strong>Vantagem:</strong> mais opções de operadoras, redes mais amplas e preço geralmente mais competitivo que o individual.<br/><strong>Desvantagem:</strong> reajuste é livre (não controlado pela ANS) e pode ser cancelado com aviso prévio pela operadora.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Opção 3 — Plano PME pelo MEI</h2>
+      <p class="mb-4">Se você é MEI, pode contratar um <strong>plano empresarial PME</strong> usando seu CNPJ, a partir de 2 vidas (você + cônjuge, sócio ou dependente). É o melhor custo-benefício do mercado para quem tem MEI.</p>
+      <p class="mb-4"><strong>Vantagem:</strong> preço de empresa (até 30% mais barato que o individual), acesso a operadoras como Amil, Bradesco, SulAmérica com rede completa.<br/><strong>Desvantagem:</strong> precisa de pelo menos 2 vidas para contratar.</p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Tipo</th>
+              <th class="p-3 text-left">Reajuste</th>
+              <th class="p-3 text-left">Preço (30 anos · enf.)</th>
+              <th class="p-3 text-left rounded-tr-xl">Ideal para</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Individual</td>
+              <td class="p-3">ANS (6,06%)</td>
+              <td class="p-3 font-bold text-blue-600">R$ 600 – R$ 900</td>
+              <td class="p-3">Estabilidade máxima</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Adesão</td>
+              <td class="p-3">Livre</td>
+              <td class="p-3 font-bold text-blue-600">R$ 350 – R$ 600</td>
+              <td class="p-3">Sem MEI, sozinho</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">PME (MEI)</td>
+              <td class="p-3">Negociado</td>
+              <td class="p-3 font-bold text-blue-600">R$ 280 – R$ 500</td>
+              <td class="p-3">MEI com 2+ vidas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">*Valores referenciais para São Paulo em 2026. Variam por operadora e coberturas.</p>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Se você é MEI e tem cônjuge ou um sócio, o plano PME empresarial é quase sempre a melhor escolha. A economia em relação ao plano individual pode ser de R$ 200 a R$ 400 por mês por pessoa — o que representa R$ 2.400 a R$ 4.800 por ano. E você ainda acessa as melhores operadoras com rede completa em São Paulo.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">E se eu for autônomo sem MEI?</h2>
+      <p class="mb-4">Sem CNPJ, as opções são o plano individual (se disponível na sua região) ou o plano de adesão via associação. Em São Paulo, recomendo pesquisar as associações que oferecem planos de adesão — algumas têm anuidade baixíssima e dão acesso a operadoras como Amil e SulAmérica com preços competitivos.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Autônomo ou MEI buscando plano de saúde em SP? Me chame no WhatsApp — cotação gratuita das melhores opções para o seu perfil!</p>
+    `
+  }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
 
