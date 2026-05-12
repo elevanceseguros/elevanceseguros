@@ -52,7 +52,7 @@ export default function EncontreSeuPlanoPage() {
         <title>Encontre seu Plano de Saúde Ideal | Elevance Seguros</title>
         <meta name="description" content="Compare os melhores planos de saúde em São Paulo. Amil, Bradesco, SulAmérica, Unimed, Hapvida e mais. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="encontre plano de saúde SP, comparar planos saúde São Paulo, melhor plano saúde" />
-              <link rel="canonical" href="https://elevanceseguros.com/encontre-seu-plano" />
+              <link rel="canonical" href="https://www.elevanceseguros.com/encontre-seu-plano" />
       
         <script type="application/ld+json">{`${JSON.stringify({
           "@context": "https://schema.org",

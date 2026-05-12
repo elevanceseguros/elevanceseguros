@@ -22,7 +22,7 @@ const AmilPage = () => {
         <title>Plano de Saúde Amil em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Plano de saúde Amil em São Paulo 2026. Tabela de preços atualizada, rede com Albert Einstein e Sírio-Libanês. Cotação gratuita com corretor especializado." />
         <meta name="keywords" content="plano Amil São Paulo, Amil saúde SP, cotação Amil SP, plano Amil individual, Amil familiar São Paulo, tabela Amil 2026" />
-        <link rel="canonical" href="https://elevanceseguros.com/amil" />
+        <link rel="canonical" href="https://www.elevanceseguros.com/amil" />
       
         <script type="application/ld+json">{`${JSON.stringify({
           "@context": "https://schema.org",

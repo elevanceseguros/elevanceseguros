@@ -355,7 +355,7 @@ const SagradaFamiliaHomePage = () => {
         <img src="/logo-white.png" alt="Elevance Seguros" className="h-8 w-auto mx-auto mb-3 opacity-80" loading="lazy" />
         <p className="text-white/40 text-[10px] font-bold uppercase tracking-widest">© 2026 Elevance Seguros · São Paulo, SP</p>
         <p className="text-white/30 text-[10px] mt-1">
-          <a href="https://elevanceseguros.com" className="hover:text-white/60 transition-colors">elevanceseguros.com</a>
+          <a href="https://www.elevanceseguros.com" className="hover:text-white/60 transition-colors">elevanceseguros.com</a>
         </p>
       </footer>
 

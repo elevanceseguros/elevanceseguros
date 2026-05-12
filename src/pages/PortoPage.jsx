@@ -22,7 +22,7 @@ const PortoPage = () => {
         <title>Plano de Saúde Porto em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Porto Saúde: plano de saúde com ampla cobertura, rede credenciada de qualidade e atendimento 24h em São Paulo." />
         <meta name="keywords" content="Porto Saúde plano, Porto Seguro saúde SP, cotação Porto saúde" />
-        <link rel="canonical" href="https://elevanceseguros.com/porto" />
+        <link rel="canonical" href="https://www.elevanceseguros.com/porto" />
       
         <script type="application/ld+json">{`${JSON.stringify({
           "@context": "https://schema.org",

@@ -49,7 +49,7 @@ export default function ProtecaoVeicularPage() {
       <Helmet>
         <title>Proteção Veicular APVS em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Proteção veicular APVS em São Paulo. Sem análise de perfil, rastreador grátis, menor mensalidade. Cotação gratuita via WhatsApp." />
-        <link rel="canonical" href="https://elevanceseguros.com/protecao-veicular" />
+        <link rel="canonical" href="https://www.elevanceseguros.com/protecao-veicular" />
       
         <script type="application/ld+json">{`${JSON.stringify({
           "@context": "https://schema.org",

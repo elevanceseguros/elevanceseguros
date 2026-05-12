@@ -22,7 +22,7 @@ const HapvidaPage = () => {
         <title>Plano de Saúde Hapvida em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Hapvida NotreDame Intermédica: plano de saúde acessível com rede própria. Cotação gratuita em São Paulo." />
         <meta name="keywords" content="Hapvida plano saúde SP, NotreDame Intermédica, cotação Hapvida" />
-        <link rel="canonical" href="https://elevanceseguros.com/hapvida" />
+        <link rel="canonical" href="https://www.elevanceseguros.com/hapvida" />
       
         <script type="application/ld+json">{`${JSON.stringify({
           "@context": "https://schema.org",

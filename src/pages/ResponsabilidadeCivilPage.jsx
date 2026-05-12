@@ -39,7 +39,7 @@ export default function ResponsabilidadeCivilPage() {
         <title>Seguro de Responsabilidade Civil | RC - Elevance Seguros</title>
         <meta name="description" content="Seguro de Responsabilidade Civil para empresas e profissionais em SP. RC Geral, RC Profissional, RC Produtos e D&O. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="seguro responsabilidade civil SP, RC profissional São Paulo, seguro RC empresa, D&O seguro" />
-        <link rel="canonical" href="https://elevanceseguros.com/responsabilidade-civil" />
+        <link rel="canonical" href="https://www.elevanceseguros.com/responsabilidade-civil" />
       
         <script type="application/ld+json">{`${JSON.stringify({
           "@context": "https://schema.org",

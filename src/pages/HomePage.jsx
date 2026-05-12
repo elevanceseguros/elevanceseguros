@@ -34,7 +34,7 @@ const HomePage = () => {
       <Helmet>
         <title>Elevance Seguros | Planos de Saúde, Seguro Auto e Consórcios em SP</title>
         <meta name="description" content="Elevance Seguros: consultoria 100% digital em planos de saúde, seguro auto, proteção veicular e consórcios em São Paulo e todo o Brasil. Cotação gratuita via WhatsApp." />
-        <link rel="canonical" href="https://elevanceseguros.com" />
+        <link rel="canonical" href="https://www.elevanceseguros.com" />
               <meta property="og:type" content="website" />
         <meta property="og:title" content="Elevance Seguros | Corretora Digital em São Paulo" />
         <meta property="og:description" content="Planos de saúde, seguro auto, vida, residencial, empresarial e consórcios em SP. Cotação gratuita com o corretor Rodrigo Farias." />

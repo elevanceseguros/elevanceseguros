@@ -22,7 +22,7 @@ const UnimeduniplanPage = () => {
         <title>Plano de Saúde Unimed em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Planos Unimed em São Paulo com ampla rede de médicos cooperados. Cotação gratuita e personalizada via WhatsApp." />
         <meta name="keywords" content="Unimed plano saúde SP, Unimed São Paulo, cotação Unimed" />
-        <link rel="canonical" href="https://elevanceseguros.com/unimed" />
+        <link rel="canonical" href="https://www.elevanceseguros.com/unimed" />
       
         <script type="application/ld+json">{`${JSON.stringify({
           "@context": "https://schema.org",

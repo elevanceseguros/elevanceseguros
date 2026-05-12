@@ -1,6 +1,6 @@
 import ErrorBoundary from '@/components/ErrorBoundary';
 import React, { useCallback, useEffect, lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/Header';
@@ -151,8 +151,6 @@ const AppContent = () => {
                 <Route path="/protecao-veicular" element={<ProtecaoVeicularPage />} />
 
                 {/* Legacy & Other Routes */}
-                <Route path="/seguro-auto" element={<CarInsurancePage />} />
-                <Route path="/planos-de-saude" element={<HealthInsurancePage />} />
                 <Route path="/porto" element={<PortoPage />} />
                 <Route path="/medsenior" element={<MedSeniorPage />} />
                 <Route path="/hapvida" element={<HapvidaPage />} />
@@ -160,14 +158,8 @@ const AppContent = () => {
                 <Route path="/amil" element={<AmilPage />} />
                 <Route path="/bradescosaude" element={<BradescosaudePage />} />
                 <Route path="/unimed" element={<UnimeduniplanPage />} />
-                <Route path="/seguros-auto" element={<ServicePage type="auto" />} />
-                <Route path="/planos-saude" element={<ServicePage type="health" />} />
                 <Route path="/consorcios" element={<ConsorciosPage />} />
-                <Route path="/contato" element={<ServicePage type="contact" />} />
                 <Route path="/seguro-empresa" element={<SeguroEmpresaPage />} />
-                <Route path="/health-plans" element={<HealthPlansPage />} />
-                <Route path="/online-quote" element={<OnlineQuotePage />} />
-                <Route path="/customer-support" element={<CustomerSupportPage />} />
                 <Route path="/thank-you" element={<ThankYouPage />} />
                 <Route path="/obrigado" element={<ThankYouPage />} />
 
@@ -176,6 +168,14 @@ const AppContent = () => {
                 <Route path="/blog/:slug" element={<PostDetail />} />
                 
                 {/* Fallback to main home */}
+                {/* Redirects de URLs legacy */}
+                <Route path="/planos-de-saude" element={<Navigate to="/encontre-seu-plano" replace />} />
+                <Route path="/planos-saude" element={<Navigate to="/encontre-seu-plano" replace />} />
+                <Route path="/health-plans" element={<Navigate to="/encontre-seu-plano" replace />} />
+                <Route path="/seguros-auto" element={<Navigate to="/seguro-auto" replace />} />
+                <Route path="/contato" element={<Navigate to="/" replace />} />
+                <Route path="/online-quote" element={<Navigate to="/encontre-seu-plano" replace />} />
+                <Route path="/customer-support" element={<Navigate to="/" replace />} />
                 <Route path="*" element={<HomePage />} />
               </Routes>
             </Suspense>

@@ -39,7 +39,7 @@ export default function SeguroVidaPage() {
         <title>Seguro de Vida em São Paulo | Cotação Gratuita - Elevance Seguros</title>
         <meta name="description" content="Seguro de vida com cobertura completa para você e sua família. Morte, invalidez, doenças graves e diária hospitalar. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="seguro de vida SP, seguro vida São Paulo, cotação seguro vida, seguro vida família" />
-        <link rel="canonical" href="https://elevanceseguros.com/seguro-vida" />
+        <link rel="canonical" href="https://www.elevanceseguros.com/seguro-vida" />
       
         <script type="application/ld+json">{`${JSON.stringify({
           "@context": "https://schema.org",

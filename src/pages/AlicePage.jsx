@@ -28,7 +28,7 @@ const AlicePage = () => {
         <title>Plano de Saúde Alice | Gestora de Saúde - Elevance Seguros</title>
         <meta name="description" content="Conheça a Alice, a gestora de saúde que conecta você aos melhores hospitais e médicos. Tecnologia, sem burocracia e foco na sua saúde." />
         <meta name="keywords" content="Alice saúde, plano Alice, gestora de saúde, plano premium, hospitais de ponta" />
-        <link rel="canonical" href="https://elevanceseguros.com/alice" />
+        <link rel="canonical" href="https://www.elevanceseguros.com/alice" />
       
         <script type="application/ld+json">{`${JSON.stringify({
           "@context": "https://schema.org",

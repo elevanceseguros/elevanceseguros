@@ -5,5 +5,4 @@ Disallow: /admin-login
 Disallow: /admin-dashboard
 Disallow: /obrigado
 
-Sitemap: https://elevanceseguros.com/sitemap-index.xml
-Sitemap: https://elevanceseguros.com/sitemap.xml
+Sitemap: https://www.elevanceseguros.com/sitemap.xml
