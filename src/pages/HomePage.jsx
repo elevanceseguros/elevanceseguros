@@ -175,24 +175,24 @@ const HomePage = () => {
         <div className="flex overflow-hidden mb-4">
           <div className="marquee-track flex gap-8 items-center whitespace-nowrap">
             {[
-              { src: "/logos/amil.png",        alt: "Amil" },
-              { src: "/logos/bradesco.png",     alt: "Bradesco Saúde" },
-              { src: "/logos/sulamerica.png",   alt: "SulAmérica" },
-              { src: "/logos/hapvida.png",      alt: "Hapvida" },
+              { src: "/logos/amil.webp",        alt: "Amil" },
+              { src: "/logos/bradesco.webp",     alt: "Bradesco Saúde" },
+              { src: "/logos/sulamerica.webp",   alt: "SulAmérica" },
+              { src: "/logos/hapvida.webp",      alt: "Hapvida" },
               { src: "/logos/unimed.png",       alt: "Unimed" },
               { src: "/logos/alice.webp",       alt: "Alice" },
-              { src: "/logos/notredame.png",    alt: "Notre Dame" },
-              { src: "/logos/medsenior.png",    alt: "MedSênior" },
+              { src: "/logos/notredame.webp",    alt: "Notre Dame" },
+              { src: "/logos/medsenior.webp",    alt: "MedSênior" },
               { src: "/logos/portoseguro.svg",  alt: "Porto Seguro Saúde" },
               // duplicata para loop infinito
-              { src: "/logos/amil.png",        alt: "Amil" },
-              { src: "/logos/bradesco.png",     alt: "Bradesco Saúde" },
-              { src: "/logos/sulamerica.png",   alt: "SulAmérica" },
-              { src: "/logos/hapvida.png",      alt: "Hapvida" },
+              { src: "/logos/amil.webp",        alt: "Amil" },
+              { src: "/logos/bradesco.webp",     alt: "Bradesco Saúde" },
+              { src: "/logos/sulamerica.webp",   alt: "SulAmérica" },
+              { src: "/logos/hapvida.webp",      alt: "Hapvida" },
               { src: "/logos/unimed.png",       alt: "Unimed" },
               { src: "/logos/alice.webp",       alt: "Alice" },
-              { src: "/logos/notredame.png",    alt: "Notre Dame" },
-              { src: "/logos/medsenior.png",    alt: "MedSênior" },
+              { src: "/logos/notredame.webp",    alt: "Notre Dame" },
+              { src: "/logos/medsenior.webp",    alt: "MedSênior" },
               { src: "/logos/portoseguro.svg",  alt: "Porto Seguro Saúde" },
             ].map((logo, i) => (
               <div key={i} className="flex items-center justify-center w-28 h-12 shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
@@ -206,19 +206,19 @@ const HomePage = () => {
         <div className="flex overflow-hidden">
           <div className="marquee-track flex gap-8 items-center whitespace-nowrap" style={{animationDirection: "reverse", animationDuration: "25s"}}>
             {[
-              { src: "/logos/allianz.png",       alt: "Allianz" },
-              { src: "/logos/bradescoauto.png",alt: "Bradesco Seguros" },
-              { src: "/logos/hdi.png",            alt: "HDI" },
-              { src: "/logos/tokio.png",          alt: "Tokio Marine" },
-              { src: "/logos/portoauto.png",      alt: "Porto Seguro Auto" },
-              { src: "/logos/suhai.png",          alt: "Suhai" },
+              { src: "/logos/allianz.webp",       alt: "Allianz" },
+              { src: "/logos/bradescoauto.webp",alt: "Bradesco Seguros" },
+              { src: "/logos/hdi.webp",            alt: "HDI" },
+              { src: "/logos/tokio.webp",          alt: "Tokio Marine" },
+              { src: "/logos/portoauto.webp",      alt: "Porto Seguro Auto" },
+              { src: "/logos/suhai.webp",          alt: "Suhai" },
               // duplicata
-              { src: "/logos/allianz.png",       alt: "Allianz" },
-              { src: "/logos/bradescoauto.png",alt: "Bradesco Seguros" },
-              { src: "/logos/hdi.png",            alt: "HDI" },
-              { src: "/logos/tokio.png",          alt: "Tokio Marine" },
-              { src: "/logos/portoauto.png",      alt: "Porto Seguro Auto" },
-              { src: "/logos/suhai.png",          alt: "Suhai" },
+              { src: "/logos/allianz.webp",       alt: "Allianz" },
+              { src: "/logos/bradescoauto.webp",alt: "Bradesco Seguros" },
+              { src: "/logos/hdi.webp",            alt: "HDI" },
+              { src: "/logos/tokio.webp",          alt: "Tokio Marine" },
+              { src: "/logos/portoauto.webp",      alt: "Porto Seguro Auto" },
+              { src: "/logos/suhai.webp",          alt: "Suhai" },
             ].map((logo, i) => (
               <div key={i} className="flex items-center justify-center w-28 h-12 shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
                 <img src={logo.src} alt={logo.alt} className="max-h-10 max-w-[100px] object-contain"  loading="lazy" />

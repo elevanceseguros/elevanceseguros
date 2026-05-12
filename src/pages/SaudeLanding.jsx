@@ -9,11 +9,11 @@ const WEBHOOK_URL = "https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-le
 const MEU_NUMERO = "5511920144864";
 
 const operadoras = [
-  { nome: "Amil",          logo: "/logos/amil.png" },
-  { nome: "Bradesco Saúde", logo: "/logos/bradesco.png" },
-  { nome: "SulAmérica",    logo: "/logos/sulamerica.png" },
-  { nome: "Hapvida",       logo: "/logos/hapvida.png" },
-  { nome: "NotreDame",     logo: "/logos/notredame.png" },
+  { nome: "Amil",          logo: "/logos/amil.webp" },
+  { nome: "Bradesco Saúde", logo: "/logos/bradesco.webp" },
+  { nome: "SulAmérica",    logo: "/logos/sulamerica.webp" },
+  { nome: "Hapvida",       logo: "/logos/hapvida.webp" },
+  { nome: "NotreDame",     logo: "/logos/notredame.webp" },
   { nome: "Unimed",        logo: "/logos/unimed.png" },
   { nome: "Porto Seguro",  logo: "/logos/portoseguro.svg" },
   { nome: "Alice",         logo: "/logos/alice.webp" },
@@ -86,7 +86,7 @@ export default function SaudeLanding() {
       {/* NAV */}
       <nav className="bg-[#114d8e] sticky top-0 z-50 py-3 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-          <Link to="/"><img src="/logo-white.png" alt="Elevance Seguros" className="h-8 w-auto object-contain" loading="eager" /></Link>
+          <Link to="/"><img src="/logo-white.webp" alt="Elevance Seguros" className="h-8 w-auto object-contain" loading="eager" /></Link>
           <a href={`https://wa.me/${MEU_NUMERO}?text=Olá, vim pela página de planos de saúde e quero uma cotação`}
             target="_blank" rel="noreferrer"
             className="flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-4 py-2 rounded-xl font-black text-xs uppercase tracking-wide transition-all">
@@ -364,7 +364,7 @@ export default function SaudeLanding() {
 
       {/* FOOTER */}
       <footer className="bg-[#114d8e] py-8 px-4 text-center">
-        <img src="/logo-white.png" alt="Elevance Seguros" className="h-8 w-auto mx-auto mb-3 opacity-80" loading="lazy" />
+        <img src="/logo-white.webp" alt="Elevance Seguros" className="h-8 w-auto mx-auto mb-3 opacity-80" loading="lazy" />
         <p className="text-white/40 text-[10px] font-bold uppercase tracking-widest">© 2026 Elevance Seguros · São Paulo, SP</p>
         <p className="text-slate-600 text-xs mt-1">
           <a href="https://www.elevanceseguros.com" className="hover:text-white/60 transition-colors text-white/30">elevanceseguros.com</a>

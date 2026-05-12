@@ -62,7 +62,7 @@ const SagradaFamiliaHomePage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Plano de Saúde Sagrada Família | Tabela 2026 - Elevance" />
         <meta property="og:description" content="Plano de saúde com 5 hospitais próprios em SP. Tabela 2026 e cotação gratuita com a Elevance Seguros." />
-        <meta property="og:image" content="https://www.elevanceseguros.com/logos/sagrada-familia.png" />
+        <meta property="og:image" content="https://www.elevanceseguros.com/logos/sagrada-familia.webp" />
         <meta property="og:url" content="https://sagradafamilia.elevanceseguros.com" />
         <script type="application/ld+json">{`${JSON.stringify({
           "@context": "https://schema.org",
@@ -77,9 +77,9 @@ const SagradaFamiliaHomePage = () => {
       {/* NAV — landing page sem menu principal */}
       <nav className="bg-[#114d8e] sticky top-0 z-50 py-3 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-          <img src="/logo-white.png" alt="Elevance Seguros" className="h-8 w-auto object-contain" loading="eager" />
+          <img src="/logo-white.webp" alt="Elevance Seguros" className="h-8 w-auto object-contain" loading="eager" />
           <div className="flex items-center gap-3">
-            <img src="/logos/sagrada-familia.png" alt="Sagrada Família" className="h-8 w-auto object-contain" loading="eager" />
+            <img src="/logos/sagrada-familia.webp" alt="Sagrada Família" className="h-8 w-auto object-contain" loading="eager" />
             <a href={`https://wa.me/${MEU_NUMERO}?text=Olá, quero cotar o plano Sagrada Família`}
               target="_blank" rel="noreferrer"
               className="hidden sm:flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-4 py-2 rounded-xl font-black text-xs uppercase tracking-wide transition-all">
@@ -352,7 +352,7 @@ const SagradaFamiliaHomePage = () => {
 
       {/* FOOTER */}
       <footer className="bg-[#114d8e] py-8 px-4 text-center">
-        <img src="/logo-white.png" alt="Elevance Seguros" className="h-8 w-auto mx-auto mb-3 opacity-80" loading="lazy" />
+        <img src="/logo-white.webp" alt="Elevance Seguros" className="h-8 w-auto mx-auto mb-3 opacity-80" loading="lazy" />
         <p className="text-white/40 text-[10px] font-bold uppercase tracking-widest">© 2026 Elevance Seguros · São Paulo, SP</p>
         <p className="text-white/30 text-[10px] mt-1">
           <a href="https://www.elevanceseguros.com" className="hover:text-white/60 transition-colors">elevanceseguros.com</a>

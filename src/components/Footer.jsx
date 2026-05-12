@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Instagram, Phone, Mail, Globe, ShieldCheck, Heart, Car, ChevronRight } from 'lucide-react';
 
 const Footer = () => {
-  const logo = "/logo-white.png";
+  const logo = "/logo-white.webp";
   const currentYear = new Date().getFullYear();
 
   const saudeLinks1 = [

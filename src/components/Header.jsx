@@ -40,7 +40,7 @@ const Header = () => {
   const saudeRef = useRef(null);
   const autoRef = useRef(null);
   const segurosRef = useRef(null);
-  const logo = "/logo-white.png";
+  const logo = "/logo-white.webp";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);

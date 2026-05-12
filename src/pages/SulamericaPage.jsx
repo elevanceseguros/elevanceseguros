@@ -42,7 +42,7 @@ const SulamericaPage = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          src="/logos/sulamerica.png" 
+          src="/logos/sulamerica.webp" 
           alt="Logo SulAmérica" 
           className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}} loading="lazy" decoding="async"
         />

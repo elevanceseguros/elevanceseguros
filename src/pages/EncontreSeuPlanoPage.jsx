@@ -10,15 +10,15 @@ import CorretorHero from '@/components/CorretorHero';
 const MEU_NUMERO = "5511920144864";
 
 const operadoras = [
-  { nome: "Amil", path: "/amil", logo: "/logos/amil.png", cor: "border-indigo-200 hover:border-indigo-400", tag: "bg-indigo-100 text-indigo-700" },
-  { nome: "Bradesco Saúde", path: "/bradescosaude", logo: "/logos/bradesco.png", cor: "border-red-200 hover:border-red-400", tag: "bg-red-100 text-red-700" },
-  { nome: "SulAmérica", path: "/sulamerica", logo: "/logos/sulamerica.png", cor: "border-orange-200 hover:border-orange-400", tag: "bg-orange-100 text-orange-700" },
-  { nome: "Hapvida", path: "/hapvida", logo: "/logos/hapvida.png", cor: "border-orange-200 hover:border-orange-400", tag: "bg-orange-100 text-orange-700" },
-  { nome: "NotreDame", path: "/hapvida", logo: "/logos/notredame.png", cor: "border-orange-200 hover:border-orange-400", tag: "bg-orange-100 text-orange-700" },
+  { nome: "Amil", path: "/amil", logo: "/logos/amil.webp", cor: "border-indigo-200 hover:border-indigo-400", tag: "bg-indigo-100 text-indigo-700" },
+  { nome: "Bradesco Saúde", path: "/bradescosaude", logo: "/logos/bradesco.webp", cor: "border-red-200 hover:border-red-400", tag: "bg-red-100 text-red-700" },
+  { nome: "SulAmérica", path: "/sulamerica", logo: "/logos/sulamerica.webp", cor: "border-orange-200 hover:border-orange-400", tag: "bg-orange-100 text-orange-700" },
+  { nome: "Hapvida", path: "/hapvida", logo: "/logos/hapvida.webp", cor: "border-orange-200 hover:border-orange-400", tag: "bg-orange-100 text-orange-700" },
+  { nome: "NotreDame", path: "/hapvida", logo: "/logos/notredame.webp", cor: "border-orange-200 hover:border-orange-400", tag: "bg-orange-100 text-orange-700" },
   { nome: "Unimed", path: "/unimed", logo: "/logos/unimed.png", cor: "border-green-200 hover:border-green-400", tag: "bg-green-100 text-green-700" },
   { nome: "Porto Saúde", path: "/porto", logo: "/logos/portoseguro.svg", cor: "border-blue-200 hover:border-blue-400", tag: "bg-blue-100 text-blue-700" },
   { nome: "Alice", path: "/alice", logo: "/logos/alice.webp", cor: "border-fuchsia-200 hover:border-fuchsia-400", tag: "bg-fuchsia-100 text-fuchsia-700" },
-  { nome: "MedSênior", path: "/medsenior", logo: "/logos/notredame.png", cor: "border-emerald-200 hover:border-emerald-400", tag: "bg-emerald-100 text-emerald-700" },
+  { nome: "MedSênior", path: "/medsenior", logo: "/logos/notredame.webp", cor: "border-emerald-200 hover:border-emerald-400", tag: "bg-emerald-100 text-emerald-700" },
 ];
 
 const beneficios = [
@@ -158,7 +158,7 @@ export default function EncontreSeuPlanoPage() {
             <Link to="/amil"
               className="col-span-2 md:col-span-1 bg-white border-2 border-indigo-200 hover:border-indigo-400 rounded-2xl p-5 flex flex-col items-center gap-3 transition-all hover:shadow-md hover:-translate-y-0.5">
               <div className="h-14 flex items-center justify-center">
-                <img src="/logos/amil.png" alt="Amil" className="max-h-12 max-w-[140px] object-contain" loading="lazy" />
+                <img src="/logos/amil.webp" alt="Amil" className="max-h-12 max-w-[140px] object-contain" loading="lazy" />
               </div>
               <span className="text-[10px] font-black uppercase px-2 py-1 rounded-full bg-indigo-100 text-indigo-700">Amil</span>
             </Link>

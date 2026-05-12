@@ -35,13 +35,13 @@ const AmilPage = () => {
               <meta property="og:type" content="website" />
         <meta property="og:title" content="Plano de Saúde Amil em São Paulo | Tabela 2026 - Elevance" />
         <meta property="og:description" content="Plano Amil em SP com acesso ao Einstein e Sírio-Libanês. Tabela de preços 2026 e cotação gratuita." />
-        <meta property="og:image" content="https://www.elevanceseguros.com/logos/amil.png" />
+        <meta property="og:image" content="https://www.elevanceseguros.com/logos/amil.webp" />
         <meta property="og:url" content="https://www.elevanceseguros.com/amil" />
         <meta property="og:site_name" content="Elevance Seguros" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Plano de Saúde Amil em São Paulo | Tabela 2026 - Elevance" />
         <meta name="twitter:description" content="Plano Amil em SP com acesso ao Einstein e Sírio-Libanês. Tabela de preços 2026 e cotação gratuita." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/amil.png" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/amil.webp" />
       </Helmet>
 
       <CorretorHero operadora="Amil" />
@@ -52,7 +52,7 @@ const AmilPage = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          src="/logos/amil.png" 
+          src="/logos/amil.webp" 
           alt="Logo Amil" 
           className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}} loading="lazy" decoding="async"
         />

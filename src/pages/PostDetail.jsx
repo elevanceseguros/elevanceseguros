@@ -34,7 +34,7 @@ const PostDetail = () => {
             <ArrowLeft size={16} /> Voltar ao Blog
           </Link>
           <Link to="/">
-            <img src="/logo.png" alt="Elevance" className="h-10 object-contain" />
+            <img src="/logo.webp" alt="Elevance" className="h-10 object-contain" />
           </Link>
         </div>
 

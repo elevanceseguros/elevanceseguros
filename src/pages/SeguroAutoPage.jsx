@@ -219,12 +219,12 @@ export default function SeguroAutoPage() {
                 <p className="text-blue-100 text-sm font-medium mb-5">Cotamos nas principais do mercado para você ter o melhor preço.</p>
                 <div className="grid grid-cols-3 gap-2">
                   {[
-                    {nome: "Porto Seguro", logo: "/logos/portoauto.png"},
-                    {nome: "Tokio Marine", logo: "/logos/tokio.png"},
-                    {nome: "Allianz", logo: "/logos/allianz.png"},
-                    {nome: "Bradesco Seguros", logo: "/logos/bradescoauto.png"},
-                    {nome: "Suhai", logo: "/logos/suhai.png"},
-                    {nome: "HDI", logo: "/logos/hdi.png"},
+                    {nome: "Porto Seguro", logo: "/logos/portoauto.webp"},
+                    {nome: "Tokio Marine", logo: "/logos/tokio.webp"},
+                    {nome: "Allianz", logo: "/logos/allianz.webp"},
+                    {nome: "Bradesco Seguros", logo: "/logos/bradescoauto.webp"},
+                    {nome: "Suhai", logo: "/logos/suhai.webp"},
+                    {nome: "HDI", logo: "/logos/hdi.webp"},
                   ].map((s, i) => (
                     <div key={i} className="bg-white rounded-xl py-2 px-2 flex items-center justify-center" style={{minHeight: 44}}>
                       <img src={s.logo} alt={s.nome} className="max-h-7 max-w-full object-contain" loading="lazy"

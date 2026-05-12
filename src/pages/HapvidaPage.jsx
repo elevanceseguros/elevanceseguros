@@ -42,7 +42,7 @@ const HapvidaPage = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          src="/logos/hapvida.png" 
+          src="/logos/hapvida.webp" 
           alt="Logo Hapvida" 
           className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}} loading="lazy" decoding="async"
         />

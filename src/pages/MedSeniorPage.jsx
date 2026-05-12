@@ -42,7 +42,7 @@ const MedSeniorPage = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          src="/logos/medsenior.png" 
+          src="/logos/medsenior.webp" 
           alt="Logo MedSênior" 
           className="max-h-24 w-auto object-contain mx-auto" style={{maxWidth:"220px"}} loading="lazy" decoding="async"
         />
