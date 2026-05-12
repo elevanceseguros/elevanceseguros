@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { CheckCircle2, MessageCircle, Home, ArrowRight, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -22,23 +21,13 @@ const SagradaFamiliaThankYouPage = () => {
       </Helmet>
 
       <div className="min-h-screen pt-28 pb-20 bg-gradient-to-b from-blue-50 to-white flex items-center justify-center px-4">
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-2xl w-full bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-100"
-        >
+        <div>
           {/* Header Section */}
           <div className="bg-[#003B71] p-8 text-center relative overflow-hidden">
              <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-            <motion.div 
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ type: "spring", stiffness: 200, delay: 0.2 }}
-              className="relative z-10 w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-[#8fc74a]"
-            >
+            <div>
               <CheckCircle2 className="w-12 h-12 text-[#8fc74a]" />
-            </motion.div>
+            </div>
             
             <h1 className="relative z-10 text-3xl md:text-4xl font-bold text-white mb-2">
               Obrigado{name ? `, ${name}` : ''}!
@@ -58,12 +47,7 @@ const SagradaFamiliaThankYouPage = () => {
             </div>
 
             {/* WhatsApp CTA Section */}
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.4 }}
-              className="bg-gradient-to-br from-[#f0f9eb] to-green-50 border border-green-200 rounded-2xl p-6 md:p-8 text-center shadow-sm relative overflow-hidden"
-            >
+            <div>
               
               <h3 className="text-xl font-bold text-[#003B71] mb-3 relative z-10">
                 Prefere atendimento imediato?
@@ -86,7 +70,7 @@ const SagradaFamiliaThankYouPage = () => {
                   <ArrowRight className="w-5 h-5 ml-2 opacity-70 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
-            </motion.div>
+            </div>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-slate-500 text-sm">
                 <div className="flex items-center gap-2">
@@ -109,7 +93,7 @@ const SagradaFamiliaThankYouPage = () => {
               </Button>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </>
   );

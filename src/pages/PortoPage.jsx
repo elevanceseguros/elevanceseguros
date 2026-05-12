@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import ScrollCTA from '@/components/ScrollCTA';
 import FAQ from '@/components/FAQ';
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
@@ -38,10 +37,7 @@ const PortoPage = () => {
 
       {/* Logo Section */}
       <div className="pt-6 pb-4 flex justify-center items-center bg-white">
-        <motion.img 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+        <img className="animate-fade-in"
           src="/logos/portoseguro.svg" 
           alt="Logo Porto Saúde" 
           className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}} loading="lazy" decoding="async"
@@ -54,10 +50,7 @@ const PortoPage = () => {
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div 
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+            <div className="animate-fade-in"
             >
               <div className="inline-block bg-blue-100 text-blue-800 px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4" /> Tradição e confiança
@@ -77,15 +70,12 @@ const PortoPage = () => {
                   </li>
                 ))}
               </ul>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+            <div className="animate-fade-in"
             >
               <OperatorQuoteForm operatorName="Porto Saúde" />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

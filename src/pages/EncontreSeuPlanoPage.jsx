@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Star, ShieldCheck, Zap, Heart, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import FAQ from '@/components/FAQ';
@@ -104,9 +103,9 @@ export default function EncontreSeuPlanoPage() {
             {/* FORMULÁRIO */}
             <div className="w-full lg:w-2/5">
               <div className="bg-white rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 p-8 md:p-10 relative min-h-[320px] flex flex-col justify-center">
-                <AnimatePresence mode="wait">
+                
                   {!sent ? (
-                    <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                    <div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
                       <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
                         <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
                       </div>
@@ -129,17 +128,17 @@ export default function EncontreSeuPlanoPage() {
                           <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🚫 Sem spam</span>
                         </div>
                       </form>
-                    </motion.div>
+                    </div>
                   ) : (
-                    <motion.div key="success" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="text-center space-y-6">
+                    <div key="success" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="text-center space-y-6">
                       <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto shadow-inner">
                         <PartyPopper size={40} />
                       </div>
                       <h3 className="text-2xl font-black text-[#114d8e] italic">Solicitação Enviada!</h3>
                       <p className="text-slate-500 font-medium text-sm">Estamos abrindo o WhatsApp. Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊</p>
-                    </motion.div>
+                    </div>
                   )}
-                </AnimatePresence>
+                
               </div>
             </div>
           </div>
@@ -185,12 +184,12 @@ export default function EncontreSeuPlanoPage() {
           <p className="text-slate-500 text-center font-medium mb-12">Consultoria gratuita, atendimento humano</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {beneficios.map((b, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
+              <div
                 className="bg-white rounded-[30px] p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                 <div className="mb-4">{b.icon}</div>
                 <div className="font-black text-[#114d8e] text-sm uppercase tracking-wide mb-2 italic">{b.titulo}</div>
                 <div className="text-slate-500 text-sm leading-relaxed font-medium">{b.desc}</div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

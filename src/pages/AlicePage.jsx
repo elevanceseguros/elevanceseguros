@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import ScrollCTA from '@/components/ScrollCTA';
 import FAQ from '@/components/FAQ';
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
 import { CheckCircle2, Smartphone } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
@@ -44,10 +43,7 @@ const AlicePage = () => {
 
       {/* Logo Section */}
       <div className="pt-6 pb-4 flex justify-center items-center bg-white">
-        <motion.img 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+        <img className="animate-fade-in"
           src="https://horizons-cdn.hostinger.com/31b5dfa3-4e40-4378-96a9-7dc0284f5b4c/d99e1d08bfc2df463658d326c4aafc4d.jpg" 
           alt="Logo Alice" 
           className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}} loading="lazy" decoding="async"
@@ -60,10 +56,7 @@ const AlicePage = () => {
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div 
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+            <div className="animate-fade-in"
             >
               <div className="inline-block bg-white/20 text-white backdrop-blur-sm px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
                 <Smartphone className="w-4 h-4" /> Saúde na palma da mão
@@ -83,15 +76,12 @@ const AlicePage = () => {
                   </li>
                 ))}
               </ul>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+            <div className="animate-fade-in"
             >
               <OperatorQuoteForm operatorName="Alice" />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

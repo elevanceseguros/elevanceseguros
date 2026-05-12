@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { motion, AnimatePresence } from 'framer-motion';
 import { ShieldCheck, Zap, FileCheck, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, LayoutList, Scale, Building2, Briefcase } from 'lucide-react';
 import FAQ from '@/components/FAQ';
 import ScrollCTA from '@/components/ScrollCTA';
@@ -101,9 +100,9 @@ export default function SeguroGarantiaPage() {
             {/* FORMULÁRIO */}
             <div className="w-full lg:w-2/5">
               <div className="bg-white rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 p-8 md:p-10 relative min-h-[320px] flex flex-col justify-center">
-                <AnimatePresence mode="wait">
+                
                   {!sent ? (
-                    <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                    <div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
                       <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
                         <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
                       </div>
@@ -120,9 +119,9 @@ export default function SeguroGarantiaPage() {
                           Entraremos em contato no seu WhatsApp em instantes
                         </p>
                       </form>
-                    </motion.div>
+                    </div>
                   ) : (
-                    <motion.div key="success" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="text-center space-y-6">
+                    <div key="success" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="text-center space-y-6">
                       <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto shadow-inner">
                         <PartyPopper size={40} />
                       </div>
@@ -130,9 +129,9 @@ export default function SeguroGarantiaPage() {
                       <p className="text-slate-500 font-medium text-sm leading-relaxed">
                         Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊
                       </p>
-                    </motion.div>
+                    </div>
                   )}
-                </AnimatePresence>
+                
               </div>
             </div>
           </div>
