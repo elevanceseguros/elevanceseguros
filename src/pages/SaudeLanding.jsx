@@ -1,7 +1,7 @@
 import ScrollCTA from '@/components/ScrollCTA';
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Star, ShieldCheck, Zap, Heart, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Users, Phone } from "lucide-react";
+import { Star, ShieldCheck, Zap, Heart, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
@@ -83,55 +83,76 @@ export default function SaudeLanding() {
         <link rel="canonical" href="https://saude.elevanceseguros.com" />
       </Helmet>
 
-      {/* HEADER */}
-      <header className="bg-white shadow-sm border-b border-slate-100 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <Link to="/">
-            <img src="/logo.png" alt="Elevance Seguros" className="h-10 w-auto object-contain"
-              onError={(e) => { e.target.src = "/logos/elevance-logo.png"; }} />
-          </Link>
-          <div className="hidden md:flex items-center gap-2 text-sm text-slate-500 font-medium">
-            <Phone size={14} className="text-blue-600" /> (11) 92014-4864
-          </div>
-          <a href={`https://wa.me/${MEU_NUMERO}`} target="_blank" rel="noreferrer"
-            className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-xl text-sm font-black transition-colors uppercase tracking-wide">
-            <MessageCircle size={16} /> WhatsApp
+      {/* NAV */}
+      <nav className="bg-[#114d8e] sticky top-0 z-50 py-3 shadow-lg">
+        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
+          <Link to="/"><img src="/logo-white.png" alt="Elevance Seguros" className="h-8 w-auto object-contain" loading="eager" /></Link>
+          <a href={`https://wa.me/${MEU_NUMERO}?text=Olá, vim pela página de planos de saúde e quero uma cotação`}
+            target="_blank" rel="noreferrer"
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-4 py-2 rounded-xl font-black text-xs uppercase tracking-wide transition-all">
+            <MessageCircle size={13} /> Cotar agora
           </a>
         </div>
-      </header>
+      </nav>
+
+      {/* CORRETOR HERO */}
+      <div className="bg-white border-b border-slate-100 py-3 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-4">
+            <div className="relative shrink-0">
+              <div className="w-11 h-11 rounded-full border-2 border-white shadow-md overflow-hidden bg-slate-200">
+                <img src="/preview.webp" alt="Rodrigo Farias" className="w-full h-full object-cover object-top" loading="eager" />
+              </div>
+              <div className="absolute -bottom-0.5 -right-0.5 bg-green-500 w-3 h-3 rounded-full border-2 border-white animate-pulse"></div>
+            </div>
+            <div>
+              <div className="font-black text-[#114d8e] text-sm">Rodrigo Farias</div>
+              <div className="flex gap-0.5 my-0.5">{[...Array(5)].map((_, i) => <Star key={i} size={9} className="text-yellow-400 fill-yellow-400" />)}</div>
+              <div className="text-green-600 text-[10px] font-black flex items-center gap-1">
+                <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse inline-block"></span>
+                Online agora · Responde em minutos
+              </div>
+            </div>
+            <div className="hidden sm:flex items-center gap-1.5 bg-blue-50 border border-blue-100 rounded-xl px-3 py-1.5 ml-2">
+              <span className="text-[10px] font-black text-blue-600">⚡ Cotação gratuita · Sem compromisso</span>
+            </div>
+          </div>
+          <a href={`https://wa.me/${MEU_NUMERO}?text=Olá Rodrigo, vim pela página de planos de saúde e quero uma cotação gratuita`}
+            target="_blank" rel="noreferrer"
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wide transition-colors shadow-md whitespace-nowrap">
+            <MessageCircle size={13} /> Falar agora — é gratuito
+          </a>
+        </div>
+      </div>
 
       {/* HERO */}
-      <section className="relative pt-16 pb-12 md:pt-24 md:pb-20 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="relative pt-12 pb-16 bg-[#114d8e] overflow-hidden">
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
+        <div className="relative max-w-7xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
-
-            {/* ESQUERDA */}
-            <div className="w-full lg:w-3/5 space-y-8 text-center lg:text-left">
-              <div className="flex flex-col md:flex-row items-center lg:items-start gap-6">
-                <div className="relative shrink-0">
-                  <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white shadow-xl overflow-hidden bg-slate-200">
-                    <img src="/preview.webp" alt="Rodrigo Farias" className="w-full h-full object-cover object-center"  loading="lazy" />
-                  </div>
-                  <div className="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-4 border-white animate-pulse"></div>
-                </div>
-                <div className="space-y-3">
-                  <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Consultoria Especializada</span>
-                  <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight italic">
-                    Plano de saúde do jeito certo, <br className="hidden md:block" /> sem enrolação.
-                  </h1>
-                </div>
-              </div>
-
-              <p className="text-slate-600 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
-                Deixe seu contato e o <span className="text-blue-600 font-black uppercase">Rodrigo Farias</span> encontrará o melhor plano para você em minutos.
+            <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
+              <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest backdrop-blur-sm">✦ Consultoria Especializada em SP</span>
+              <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
+                Plano de saúde do jeito certo, <br className="hidden md:block" />
+                <span className="text-yellow-300">sem enrolação.</span>
+              </h1>
+              <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium">
+                Deixe seu contato e o <span className="text-yellow-300 font-black">Rodrigo Farias</span> encontrará o melhor plano para você em minutos — de graça.
               </p>
-
-              <div className="flex flex-row justify-center lg:justify-start gap-4 pt-2">
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
-                  <Star size={14} className="text-yellow-500 fill-yellow-500" /> Atendimento 5 estrelas
+              <div className="grid grid-cols-2 gap-3 max-w-xl mx-auto lg:mx-0">
+                {["Amil, Bradesco, SulAmérica", "Hapvida, Unimed, Alice", "Individual e familiar", "MEI e PME empresarial", "Cotação em minutos", "Sem burocracia"].map((item, i) => (
+                  <div key={i} className="flex items-center gap-2 text-white/90 text-sm font-medium">
+                    <CheckCircle2 size={14} className="text-green-400 shrink-0" /> {item}
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
+                  <Star size={11} className="text-yellow-400 fill-yellow-400" /> 5 Estrelas no Google
                 </div>
-                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-600 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
-                  <ShieldCheck size={14} className="text-blue-600" /> Melhores Operadoras
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
+                  <ShieldCheck size={11} className="text-green-400" /> Melhores Operadoras
                 </div>
               </div>
             </div>
@@ -147,12 +168,12 @@ export default function SaudeLanding() {
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
                         <input
-                          type="text" required placeholder="Seu Nome"
+                          type="text" required placeholder="Ex: João Silva"
                           value={nome} onChange={e => setNome(e.target.value)}
                           className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all"
                         />
                         <input
-                          type="tel" required placeholder="WhatsApp (DDD)"
+                          type="tel" required placeholder="Ex: 11 99999-9999"
                           value={whatsapp} onChange={e => setWhatsapp(formatWhatsapp(e.target.value))}
                           className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all"
                         />
@@ -163,7 +184,11 @@ export default function SaudeLanding() {
       <ScrollCTA produto="Plano de Saúde" />
 </>}
                         </button>
-                        <p className="text-[9px] text-center text-slate-400 font-bold uppercase italic">Você receberá uma mensagem no WhatsApp</p>
+                        <div className="flex items-center justify-center gap-3 flex-wrap">
+                          <span className="text-[9px] text-slate-400 font-bold">🔒 Dados sigilosos</span>
+                          <span className="text-[9px] text-slate-400 font-bold">⚡ Resposta em até 2h</span>
+                          <span className="text-[9px] text-slate-400 font-bold">🚫 Sem spam</span>
+                        </div>
                       </form>
                     </motion.div>
                   ) : (
@@ -228,7 +253,7 @@ export default function SaudeLanding() {
       {/* COMO FUNCIONA */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-slate-900 rounded-[50px] p-8 md:p-16 text-white flex flex-col lg:flex-row items-center gap-12 relative overflow-hidden">
+          <div className="bg-[#114d8e] rounded-[50px] p-8 md:p-16 text-white flex flex-col lg:flex-row items-center gap-12 relative overflow-hidden">
             <div className="lg:w-1/2 space-y-8 z-10">
               <span className="inline-block bg-blue-600 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Como funciona</span>
               <h2 className="text-3xl md:text-4xl font-black italic">Simples assim.</h2>
@@ -254,7 +279,7 @@ export default function SaudeLanding() {
                 <p className="text-slate-400 text-sm font-medium mb-8">Cotação gratuita e sem compromisso</p>
                 <a href={`https://wa.me/${MEU_NUMERO}?text=Olá Rodrigo, vim pelo site e quero cotar um plano de saúde`}
                   target="_blank" rel="noreferrer"
-                  className="block w-full bg-blue-600 hover:bg-blue-500 text-white font-black py-5 rounded-2xl transition-all uppercase text-xs tracking-widest shadow-lg flex items-center justify-center gap-2">
+                  className="block w-full bg-green-500 hover:bg-green-400 text-white font-black py-5 rounded-2xl transition-all uppercase text-xs tracking-widest shadow-lg flex items-center justify-center gap-2">
                   <MessageCircle size={16} /> Solicitar via WhatsApp
                 </a>
               </div>
@@ -338,12 +363,11 @@ export default function SaudeLanding() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-slate-900 py-8 px-4 text-center">
-        <img src="/logo.png" alt="Elevance Seguros" className="h-8 w-auto mx-auto mb-3 opacity-70"
-          onError={(e) => { e.target.src = "/logos/elevance-logo.png"; }} />
-        <p className="text-slate-500 text-xs font-medium">© 2026 Elevance Seguros · São Paulo, SP</p>
+      <footer className="bg-[#114d8e] py-8 px-4 text-center">
+        <img src="/logo-white.png" alt="Elevance Seguros" className="h-8 w-auto mx-auto mb-3 opacity-80" loading="lazy" />
+        <p className="text-white/40 text-[10px] font-bold uppercase tracking-widest">© 2026 Elevance Seguros · São Paulo, SP</p>
         <p className="text-slate-600 text-xs mt-1">
-          <a href="https://elevanceseguros.com" className="hover:text-slate-400 transition-colors">elevanceseguros.com</a>
+          <a href="https://elevanceseguros.com" className="hover:text-white/60 transition-colors text-white/30">elevanceseguros.com</a>
         </p>
       </footer>
     </div>
