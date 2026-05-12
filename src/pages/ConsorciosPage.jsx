@@ -97,7 +97,7 @@ export default function ConsorciосPage() {
             {/* FORMULÁRIO */}
             <div className="w-full lg:w-2/5">
               <div className="bg-white rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 p-8 md:p-10 relative min-h-[380px] flex flex-col justify-center">
-                <AnimatePresence mode="wait">
+                
                   {!sent ? (
                     <div>
                       <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">

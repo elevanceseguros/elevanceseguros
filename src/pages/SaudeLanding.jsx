@@ -190,7 +190,7 @@ export default function SaudeLanding() {
                           <span className="text-[9px] text-slate-400 font-bold">🚫 Sem spam</span>
                         </div>
                       </form>
-                    </motion.div>
+                    </div>
                   ) : (
                     <motion.div key="success" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}
                       className="text-center space-y-6">
@@ -203,7 +203,7 @@ export default function SaudeLanding() {
                           Em instantes você vai receber uma mensagem no WhatsApp. Fique de olho!
                         </p>
                       </div>
-                    </motion.div>
+                    </div>
                   )}
                 </AnimatePresence>
               </div>
@@ -244,7 +244,7 @@ export default function SaudeLanding() {
                 <div className="mb-4">{b.icon}</div>
                 <div className="font-black text-[#114d8e] text-sm uppercase tracking-wide mb-2 italic">{b.titulo}</div>
                 <div className="text-slate-500 text-sm leading-relaxed font-medium">{b.desc}</div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -313,7 +313,7 @@ export default function SaudeLanding() {
                     <div className="text-slate-400 text-xs font-medium">{d.local} · {d.produto}</div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -335,7 +335,7 @@ export default function SaudeLanding() {
                   {faqAberto === i && (
                     <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.2 }} style={{ overflow: "hidden" }}>
                       <p className="px-6 pb-5 text-slate-500 text-sm leading-relaxed font-medium">{item.r}</p>
-                    </motion.div>
+                    </div>
                   )}
                 </AnimatePresence>
               </div>
