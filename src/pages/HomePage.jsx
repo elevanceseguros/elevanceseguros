@@ -64,7 +64,7 @@ const HomePage = () => {
               <div className="flex flex-row items-center lg:items-center gap-5">
                 <div className="relative shrink-0">
                   <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 aspect-square rounded-full overflow-hidden bg-blue-800 shrink-0 shadow-[0_0_0_4px_rgba(255,255,255,0.3),0_0_0_8px_rgba(255,255,255,0.1)]">
-                    <img src={fotoHero} alt="Rodrigo Farias" className="w-full h-full object-cover object-top" fetchpriority="high" />
+                    <img src={fotoHero} alt="Rodrigo Farias" className="w-full h-full object-cover object-top" fetchpriority="high" width="144" height="144" />
                   </div>
                   <div className="absolute -bottom-1 -right-1 bg-green-400 w-6 h-6 rounded-full border-4 border-[#114d8e] animate-pulse shadow-lg"></div>
                 </div>
