@@ -256,23 +256,55 @@ const HomePage = () => {
       </section>
 
       {/* 3. CONSÓRCIOS */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-col lg:flex-row-reverse items-center gap-12 italic">
-            <div className="lg:w-1/2 space-y-6 text-center lg:text-left">
-              <Wallet size={48} className="text-blue-600 mx-auto lg:mx-0" />
-              <Link to="/consorcios" className="text-3xl md:text-4xl font-black text-[#114d8e] hover:text-blue-600 transition-colors underline-offset-4 hover:underline">Consórcio Elevance</Link>
-              <p className="text-slate-500 font-medium">No financiamento você paga até 2x o valor do bem. No consórcio, não.</p>
-              <div className="pt-6">
-                <a href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero simular um Consórcio`} className="inline-flex items-center gap-3 bg-[#114d8e] text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-105 transition-all">Simular Agora <ArrowRight size={16}/></a>
+          {/* Header */}
+          <div className="text-center mb-12">
+            <span className="inline-block bg-blue-50 text-[#114d8e] text-xs font-black uppercase tracking-widest px-4 py-2 rounded-full mb-4">Rodobens — maior administradora do Brasil</span>
+            <h2 className="text-3xl md:text-5xl font-black text-[#114d8e] italic mb-4">
+              Conquiste seu bem<br/><span className="text-green-500">sem pagar juros.</span>
+            </h2>
+            <p className="text-slate-500 text-lg max-w-xl mx-auto">No financiamento você paga até 2x o valor do bem. No consórcio, você paga só pelo bem — sem juros reais.</p>
+          </div>
+
+          {/* Cards dos 3 tipos */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {[
+              { emoji: "🏠", tipo: "Imóvel", desc: "Casa, apartamento ou terreno. Cartas de até R$ 500 mil.", valor: "até R$ 500 mil" },
+              { emoji: "🚗", tipo: "Veículo", desc: "Carro novo, usado ou moto. Parcelas que cabem no bolso.", valor: "até R$ 200 mil" },
+              { emoji: "🛠️", tipo: "Serviços", desc: "Reforma, viagem, cirurgia estética, educação e muito mais.", valor: "até R$ 30 mil" },
+            ].map((item) => (
+              <div key={item.tipo} className="bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all">
+                <div className="text-4xl mb-4">{item.emoji}</div>
+                <h3 className="text-xl font-black text-[#114d8e] mb-2">Consórcio de {item.tipo}</h3>
+                <p className="text-slate-500 text-sm mb-4">{item.desc}</p>
+                <span className="inline-block bg-blue-100 text-[#114d8e] text-xs font-black px-3 py-1 rounded-full">{item.valor}</span>
               </div>
+            ))}
+          </div>
+
+          {/* Faixa de diferenciais */}
+          <div className="bg-[#0a3018] rounded-3xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="flex flex-col md:flex-row gap-8 text-white text-center md:text-left">
+              {[
+                { num: "0%", label: "Juros reais" },
+                { num: "+180k", label: "Consorciados Rodobens" },
+                { num: "60x", label: "Parcelas facilitadas" },
+              ].map((d) => (
+                <div key={d.label} className="flex flex-col">
+                  <span className="text-4xl font-black text-green-400 italic">{d.num}</span>
+                  <span className="text-sm text-white/70 font-medium uppercase tracking-wide">{d.label}</span>
+                </div>
+              ))}
             </div>
-            <div className="lg:w-1/2 w-full">
-               <div className="bg-white rounded-[50px] p-12 shadow-xl border border-slate-100 flex flex-col items-center">
-                  <div className="text-7xl font-black text-blue-600 mb-2">0%</div>
-                  <div className="text-lg font-black text-[#114d8e] uppercase tracking-widest mb-6">De Juros Reais</div>
-               </div>
-            </div>
+            <a
+              href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero simular um Consórcio`}
+              target="_blank"
+              rel="noreferrer"
+              className="flex-shrink-0 inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all hover:scale-105 shadow-lg"
+            >
+              Simular Agora <ArrowRight size={16}/>
+            </a>
           </div>
         </div>
       </section>
