@@ -18,7 +18,7 @@ const HapvidaPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano de Saúde Hapvida em São Paulo | Cotação Gratuita - Elevance Seguros</title>
+        <title>Plano Hapvida em São Paulo | Cotação Gratuita</title>
         <meta name="description" content="Hapvida NotreDame Intermédica: plano de saúde acessível com rede própria. Cotação gratuita em São Paulo." />
         <meta name="keywords" content="Hapvida plano saúde SP, NotreDame Intermédica, cotação Hapvida" />
         <link rel="canonical" href="https://www.elevanceseguros.com/hapvida" />
@@ -31,6 +31,10 @@ const HapvidaPage = () => {
             {"@type": "ListItem", "position": 2, "name": "Hapvida", "item": "https://www.elevanceseguros.com/hapvida"}
           ]
         })}`}</script>
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       <CorretorHero operadora="Hapvida" />

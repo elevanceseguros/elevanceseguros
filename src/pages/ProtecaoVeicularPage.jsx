@@ -46,7 +46,7 @@ export default function ProtecaoVeicularPage() {
   return (
     <>
       <Helmet>
-        <title>Proteção Veicular APVS em São Paulo | Cotação Gratuita - Elevance Seguros</title>
+        <title>Proteção Veicular APVS SP | Cotação Gratuita</title>
         <meta name="description" content="Proteção veicular APVS em São Paulo. Sem análise de perfil, rastreador grátis, menor mensalidade. Cotação gratuita via WhatsApp." />
         <link rel="canonical" href="https://www.elevanceseguros.com/protecao-veicular" />
       
@@ -59,6 +59,10 @@ export default function ProtecaoVeicularPage() {
           ]
         })}`}</script>
               <meta name="keywords" content="proteção veicular São Paulo, APVS Brasil SP, proteção veicular barata SP, proteção veicular moto São Paulo, proteção veicular sem análise perfil" />
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       <CorretorHero operadora="Proteção Veicular" />

@@ -72,7 +72,7 @@ export default function SaudeLanding() {
   return (
     <div className="min-h-screen bg-white font-sans">
       <Helmet>
-        <title>Plano de Saúde em São Paulo | Cotação Gratuita - Elevance Seguros</title>
+        <title>Plano de Saúde SP | Cotação Gratuita</title>
         <meta name="description" content="Compare planos de saúde em São Paulo com a Elevance Seguros. Cotação gratuita e personalizada em minutos via WhatsApp. Amil, Bradesco, SulAmérica, Unimed e mais." />
         <meta name="keywords" content="plano de saúde São Paulo, cotação plano de saúde, plano de saúde barato SP, plano de saúde individual SP, plano de saúde familiar SP" />
         <meta property="og:title" content="Plano de Saúde em São Paulo | Cotação Gratuita - Elevance Seguros" />
@@ -81,6 +81,10 @@ export default function SaudeLanding() {
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://saude.elevanceseguros.com/preview.webp" />
         <link rel="canonical" href="https://saude.elevanceseguros.com" />
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content=" content=" />
+        <meta name="twitter:description" content=" content=" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       {/* NAV */}

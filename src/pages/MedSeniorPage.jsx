@@ -18,7 +18,7 @@ const MedSeniorPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano de Saúde MedSênior | Cotação Gratuita - Elevance Seguros</title>
+        <title>Plano MedSênior SP | Cotação Gratuita</title>
         <meta name="description" content="Plano de saúde MedSênior especialmente desenvolvido para a melhor idade. Cobertura completa com foco no cuidado do idoso." />
         <meta name="keywords" content="MedSênior plano de saúde, plano saúde idoso, plano terceira idade" />
               <link rel="canonical" href="https://www.elevanceseguros.com/medsenior" />
@@ -31,6 +31,10 @@ const MedSeniorPage = () => {
             {"@type": "ListItem", "position": 2, "name": "MedSênior", "item": "https://www.elevanceseguros.com/medsenior"}
           ]
         })}`}</script>
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       <CorretorHero operadora="MedSênior" />

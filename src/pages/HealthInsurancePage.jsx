@@ -84,6 +84,10 @@ const HealthInsurancePage = () => {
       <Helmet>
         <title>Seguro Saúde Familiar e Empresarial | Cotação - Elevance Seguros</title>
         <meta name="description" content="Garanta a saúde da sua família e funcionários com os melhores planos de saúde." />
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       {/* Hero Section */}

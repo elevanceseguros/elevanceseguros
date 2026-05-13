@@ -18,7 +18,7 @@ const BradescosaudePage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano de Saúde Bradesco em São Paulo | Cotação Gratuita - Elevance Seguros</title>
+        <title>Plano Bradesco Saúde SP | Cotação Gratuita</title>
         <meta name="description" content="Bradesco Saúde: um dos maiores planos de saúde do Brasil. Ampla rede credenciada, cobertura completa em São Paulo." />
         <meta name="keywords" content="Bradesco Saúde SP, plano Bradesco São Paulo, cotação Bradesco saúde" />
         <link rel="canonical" href="https://www.elevanceseguros.com/bradescosaude" />
@@ -31,6 +31,10 @@ const BradescosaudePage = () => {
             {"@type": "ListItem", "position": 2, "name": "Bradesco Saúde", "item": "https://www.elevanceseguros.com/bradescosaude"}
           ]
         })}`}</script>
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       <CorretorHero operadora="Bradesco Saúde" />

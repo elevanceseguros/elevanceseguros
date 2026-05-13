@@ -35,7 +35,7 @@ export default function SeguroResidencialPage() {
   return (
     <>
       <Helmet>
-        <title>Seguro Residencial em São Paulo | Cotação Gratuita - Elevance Seguros</title>
+        <title>Seguro Residencial SP | Cotação Gratuita</title>
         <meta name="description" content="Seguro residencial para sua casa ou apartamento em SP. Cobertura contra incêndio, roubo, danos elétricos e assistência 24h. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="seguro residencial SP, seguro casa São Paulo, seguro apartamento SP, cotação seguro residencial" />
         <link rel="canonical" href="https://www.elevanceseguros.com/seguro-residencial" />
@@ -48,6 +48,10 @@ export default function SeguroResidencialPage() {
             {"@type": "ListItem", "position": 2, "name": "Seguro Residencial", "item": "https://www.elevanceseguros.com/seguro-residencial"}
           ]
         })}`}</script>
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       <CorretorHero operadora="um Seguro Residencial" />

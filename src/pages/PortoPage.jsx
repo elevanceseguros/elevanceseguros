@@ -18,7 +18,7 @@ const PortoPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano de Saúde Porto em São Paulo | Cotação Gratuita - Elevance Seguros</title>
+        <title>Plano Porto Saúde SP | Cotação Gratuita</title>
         <meta name="description" content="Porto Saúde: plano de saúde com ampla cobertura, rede credenciada de qualidade e atendimento 24h em São Paulo." />
         <meta name="keywords" content="Porto Saúde plano, Porto Seguro saúde SP, cotação Porto saúde" />
         <link rel="canonical" href="https://www.elevanceseguros.com/porto" />
@@ -31,6 +31,10 @@ const PortoPage = () => {
             {"@type": "ListItem", "position": 2, "name": "Porto Saúde", "item": "https://www.elevanceseguros.com/porto"}
           ]
         })}`}</script>
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       <CorretorHero operadora="Porto Saúde" />

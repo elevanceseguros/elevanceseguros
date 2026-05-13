@@ -18,7 +18,7 @@ const UnimeduniplanPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano de Saúde Unimed em São Paulo | Cotação Gratuita - Elevance Seguros</title>
+        <title>Plano Unimed SP | Cotação Gratuita</title>
         <meta name="description" content="Planos Unimed em São Paulo com ampla rede de médicos cooperados. Cotação gratuita e personalizada via WhatsApp." />
         <meta name="keywords" content="Unimed plano saúde SP, Unimed São Paulo, cotação Unimed" />
         <link rel="canonical" href="https://www.elevanceseguros.com/unimed" />
@@ -31,6 +31,10 @@ const UnimeduniplanPage = () => {
             {"@type": "ListItem", "position": 2, "name": "Unimed", "item": "https://www.elevanceseguros.com/unimed"}
           ]
         })}`}</script>
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       <CorretorHero operadora="Unimed" />

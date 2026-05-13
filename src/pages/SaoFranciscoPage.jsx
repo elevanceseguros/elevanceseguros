@@ -24,6 +24,10 @@ const SaoFranciscoPage = () => {
         <title>Plano de Saúde São Francisco | Tradição e Qualidade - Elevance</title>
         <meta name="description" content="Planos de saúde São Francisco. Tradição, qualidade e ampla rede própria. Confira as opções para você e sua empresa. Cotação online." />
         <meta name="keywords" content="São Francisco saúde, plano São Francisco, convênio médico, saúde regional, hospital são francisco" />
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       {/* Logo Section */}

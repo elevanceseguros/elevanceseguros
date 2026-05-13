@@ -44,6 +44,10 @@ const GenericHealthPlanPage = () => {
         <title>Encontre o Plano de Saúde Ideal | Elevance Seguros</title>
         <meta name="description" content="Compare e encontre o melhor plano de saúde para você, sua família ou empresa. Cotação rápida, gratuita e com as melhores operadoras do mercado." />
         <meta name="keywords" content="plano de saúde, cotação saúde, convênio médico, seguro saúde, melhores planos" />
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       {/* Hero Section with Form (CASSI structure style) */}

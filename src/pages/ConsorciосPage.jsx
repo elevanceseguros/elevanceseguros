@@ -39,6 +39,10 @@ export default function ConsorciосPage() {
         <title>Consórcios | Imóvel, Veículo e Serviços - Elevance Seguros</title>
         <meta name="description" content="Consórcios sem juros para imóvel, veículo e serviços. Planeje suas conquistas com inteligência. Simulação gratuita via WhatsApp." />
         <meta name="keywords" content="consórcio imóvel SP, consórcio carro São Paulo, consórcio sem juros, consórcio serviços" />
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       <CorretorHero operadora="um Consórcio" />

@@ -23,6 +23,10 @@ const HealthPlansPage = () => {
       <Helmet>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       <Hero customTitle="Planos de Saúde" />

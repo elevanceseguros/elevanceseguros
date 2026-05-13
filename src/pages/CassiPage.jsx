@@ -24,6 +24,10 @@ const CassiPage = () => {
         <title>Plano de Saúde Cassi | Servidores e Familiares - Elevance Seguros</title>
         <meta name="description" content="Planos de saúde Cassi com cobertura completa. Ideal para familiares de funcionários do BB e conveniados. Tradição e qualidade em saúde." />
         <meta name="keywords" content="Cassi saúde, plano Cassi, servidor público, convênio banco do brasil, cassi família" />
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       {/* Logo Section */}

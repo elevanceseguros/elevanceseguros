@@ -55,7 +55,7 @@ const SagradaFamiliaHomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano de Saúde Sagrada Família | Tabela 2026 - Elevance Seguros</title>
+        <title>Plano Sagrada Família SP | Tabela 2026</title>
         <meta name="description" content="Plano de Saúde Sagrada Família em São Paulo. Tabela de preços 2026, 5 hospitais próprios, cobertura completa. Cotação gratuita com a Elevance Seguros." />
         <link rel="canonical" href="https://sagradafamilia.elevanceseguros.com" />
         <meta name="keywords" content="plano de saúde Sagrada Família SP, plano Sagrada Família São Paulo, cotação Sagrada Família 2026, plano hospitais Sagrada Família, São Francisco saúde SP" />
@@ -72,6 +72,10 @@ const SagradaFamiliaHomePage = () => {
             { "@type": "Question", "name": "Quais hospitais fazem parte da rede Sagrada Família?", "acceptedAnswer": { "@type": "Answer", "text": "5 hospitais próprios: Sagrada Família Vila Formosa, Sagrada Família Mauá, São Francisco Cotia, São Francisco Osasco e São Francisco São Roque." } }
           ]
         })}`}</script>
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content=" content=" />
+        <meta name="twitter:description" content=" content=" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       {/* NAV — landing page sem menu principal */}

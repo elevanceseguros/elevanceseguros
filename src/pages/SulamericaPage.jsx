@@ -18,7 +18,7 @@ const SulamericaPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano de Saúde SulAmérica em São Paulo | Cotação Gratuita - Elevance Seguros</title>
+        <title>Plano SulAmérica SP | Cotação Gratuita</title>
         <meta name="description" content="SulAmérica Saúde em São Paulo: planos completos, ampla rede credenciada e atendimento personalizado. Cotação gratuita." />
         <meta name="keywords" content="SulAmérica saúde SP, plano SulAmérica São Paulo, cotação SulAmérica" />
         <link rel="canonical" href="https://www.elevanceseguros.com/sulamerica" />
@@ -31,6 +31,10 @@ const SulamericaPage = () => {
             {"@type": "ListItem", "position": 2, "name": "SulAmérica Saúde", "item": "https://www.elevanceseguros.com/sulamerica"}
           ]
         })}`}</script>
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       <CorretorHero operadora="SulAmérica" />

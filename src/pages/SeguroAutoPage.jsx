@@ -46,7 +46,7 @@ export default function SeguroAutoPage() {
   return (
     <>
       <Helmet>
-        <title>Seguro Auto em São Paulo | Cotação Gratuita - Elevance Seguros</title>
+        <title>Seguro Auto SP | Cotação Gratuita</title>
         <meta name="description" content="Seguro auto em São Paulo com as melhores seguradoras. Cobertura completa, melhor preço. Cotação gratuita via WhatsApp." />
         <link rel="canonical" href="https://www.elevanceseguros.com/seguro-auto" />
       

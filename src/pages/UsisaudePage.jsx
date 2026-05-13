@@ -24,6 +24,10 @@ const UsisaudePage = () => {
         <title>Plano de Saúde Usisaúde | Fundação São Francisco Xavier</title>
         <meta name="description" content="Planos Usisaúde com a qualidade da Fundação São Francisco Xavier. Cobertura completa, planos familiares e empresariais. Faça sua cotação." />
         <meta name="keywords" content="Usisaúde, plano usisaúde, fundação são francisco xavier, fsfx, plano de saúde mg" />
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       {/* Logo Section */}
