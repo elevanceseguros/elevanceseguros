@@ -68,7 +68,7 @@ export default function ProtecaoVeicularPage() {
       <CorretorHero operadora="Proteção Veicular" />
 
       {/* HERO */}
-      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-[#134e4a] overflow-hidden">
+      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-[#0033a0] overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4">
@@ -80,7 +80,7 @@ export default function ProtecaoVeicularPage() {
                 <img src="/logos/apvs_truck.webp" alt="APVS Truck" className="h-12" />
               </div>
               <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
-                Seu carro pode ser roubado <span className="text-blue-600">ainda hoje. Está protegido?</span>
+                Seu carro pode ser roubado <span className="text-yellow-300">ainda hoje. Está protegido?</span>
               </h1>
               <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
                 A <span className="text-yellow-300 font-black uppercase">maior rede de proteção veicular</span> da América Latina no seu carro ou moto. Sem consulta ao SPC/Serasa.
@@ -88,7 +88,7 @@ export default function ProtecaoVeicularPage() {
               <ul className="space-y-3 text-left max-w-xl mx-auto lg:mx-0">
                 {["Aprovação imediata, sem análise de perfil","Rastreador instalado gratuitamente","Mensalidade até 50% menor que seguro tradicional","Cobertura para carro e moto","Assistência 24h em todo o Brasil"].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-white/90 font-medium text-sm">
-                    <CheckCircle2 className="w-5 h-5 text-white/70 flex-shrink-0" /> {item}
+                    <CheckCircle2 className="w-5 h-5 text-yellow-300 flex-shrink-0" /> {item}
                   </li>
                 ))}
               </ul>
