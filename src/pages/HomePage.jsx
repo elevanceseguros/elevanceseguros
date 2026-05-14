@@ -353,8 +353,8 @@ const HomePage = () => {
               ].map((item) => (
                 <div key={item.tipo} className="bg-white/10 hover:bg-white/15 rounded-2xl p-6 transition-all">
                   <div className="mb-3">{item.icon}</div>
-                  <h3 className="text-base font-black text-white mb-2">Consórcio de {item.tipo}</h3>
-                  <p className="text-white/60 text-sm mb-4">{item.desc}</p>
+                  <h3 className="text-sm font-black text-white italic mb-1">Consórcio de {item.tipo}</h3>
+                  <p className="text-white/50 text-xs leading-tight mb-3">{item.desc}</p>
                   <span className="inline-block bg-green-500/20 text-green-300 text-xs font-black px-3 py-1 rounded-full">{item.valor}</span>
                 </div>
               ))}
