@@ -8,9 +8,9 @@ import CorretorHero from '@/components/CorretorHero';
 const MEU_NUMERO = "5511920144864";
 
 const tipos = [
-  { icon: <Home size={32} className="text-green-300" />, titulo: "Consórcio Imóvel", desc: "Realize o sonho da casa própria sem juros abusivos. Parcelas que cabem no seu bolso.", tag: "Imóvel" },
-  { icon: <Car size={32} className="text-blue-600" />, titulo: "Consórcio Veículo", desc: "Troque de carro ou moto com planejamento inteligente e zero juros.", tag: "Veículo" },
-  { icon: <Briefcase size={32} className="text-blue-600" />, titulo: "Consórcio Serviços", desc: "Financie reformas, viagens, festas e muito mais sem comprometer o orçamento.", tag: "Serviços" },
+  { icon: <Home size={32} className="text-[#114d8e]" />, titulo: "Consórcio Imóvel", desc: "Realize o sonho da casa própria sem juros abusivos. Parcelas que cabem no seu bolso.", tag: "Imóvel" },
+  { icon: <Car size={32} className="text-[#114d8e]" />, titulo: "Consórcio Veículo", desc: "Troque de carro ou moto com planejamento inteligente e zero juros.", tag: "Veículo" },
+  { icon: <Briefcase size={32} className="text-[#114d8e]" />, titulo: "Consórcio Serviços", desc: "Financie reformas, viagens, festas e muito mais sem comprometer o orçamento.", tag: "Serviços" },
 ];
 
 const vantagens = [
@@ -163,8 +163,12 @@ export default function ConsorciосPage() {
                 <p className="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">Rodobens Consórcio</p>
                 <p className="text-slate-600 text-sm leading-relaxed">Maior administradora independente do Brasil. Mais de 180 mil consorciados ativos, cartas de crédito para imóvel, veículo e serviços.</p>
                 <div className="flex gap-2 mt-4 flex-wrap">
-                  {["🏠 Imóvel", "🚗 Veículo", "🛠️ Serviços"].map(t => (
-                    <span key={t} className="bg-[#00441f]/10 text-[#00441f] text-xs font-bold px-3 py-1 rounded-full">{t}</span>
+                  {[
+                    { label: "Imóvel", icon: <Home size={10}/> },
+                    { label: "Veículo", icon: <Car size={10}/> },
+                    { label: "Serviços", icon: <Briefcase size={10}/> },
+                  ].map(t => (
+                    <span key={t.label} className="flex items-center gap-1 bg-[#00441f]/10 text-[#00441f] text-xs font-bold px-3 py-1 rounded-full">{t.icon}{t.label}</span>
                   ))}
                 </div>
               </div>
@@ -178,8 +182,12 @@ export default function ConsorciосPage() {
                 <p className="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">Embracon Consórcio</p>
                 <p className="text-slate-600 text-sm leading-relaxed">Uma das maiores administradoras do país. Ampla variedade de cartas de crédito com flexibilidade de prazos e valores para todos os perfis.</p>
                 <div className="flex gap-2 mt-4 flex-wrap">
-                  {["🏠 Imóvel", "🚗 Veículo", "🛠️ Serviços"].map(t => (
-                    <span key={t} className="bg-red-50 text-red-600 text-xs font-bold px-3 py-1 rounded-full">{t}</span>
+                  {[
+                    { label: "Imóvel", icon: <Home size={10}/> },
+                    { label: "Veículo", icon: <Car size={10}/> },
+                    { label: "Serviços", icon: <Briefcase size={10}/> },
+                  ].map(t => (
+                    <span key={t.label} className="flex items-center gap-1 bg-red-50 text-red-600 text-xs font-bold px-3 py-1 rounded-full">{t.icon}{t.label}</span>
                   ))}
                 </div>
               </div>
@@ -195,11 +203,11 @@ export default function ConsorciосPage() {
           <p className="text-slate-500 text-center font-medium mb-12">Escolha o que faz mais sentido para você</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {tipos.map((t, i) => (
-              <div>
+              <div key={i} className="bg-white rounded-3xl p-8 border border-slate-100 hover:shadow-lg transition-all">
                 <div className="mb-4">{t.icon}</div>
-                <span className="text-[10px] font-black uppercase tracking-widest text-blue-600 bg-blue-50 px-3 py-1 rounded-full">{t.tag}</span>
-                <div className="font-black text-[#114d8e] text-lg italic mt-3 mb-2">{t.titulo}</div>
-                <div className="text-slate-500 text-sm font-medium leading-relaxed">{t.desc}</div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-[#114d8e] bg-blue-50 px-3 py-1 rounded-full">{t.tag}</span>
+                <h3 className="font-black text-[#114d8e] text-xl italic mt-4 mb-2">{t.titulo}</h3>
+                <p className="text-slate-500 text-sm font-medium leading-relaxed">{t.desc}</p>
               </div>
             ))}
           </div>

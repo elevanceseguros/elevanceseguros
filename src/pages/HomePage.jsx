@@ -314,9 +314,9 @@ const HomePage = () => {
                 { icon: <Layers size={20} style={{color:"#54DEF8"}}/>, titulo: "Vidros", desc: "Para-brisa e laterais" },
               ].map(item => (
                 <div key={item.titulo} className="bg-white/10 rounded-2xl p-4 hover:bg-white/15 transition-all">
-                  <div className="mb-2">{item.icon}</div>
-                  <p className="text-white font-black text-xs mb-1">{item.titulo}</p>
-                  <p className="text-white/50 text-[10px] leading-tight">{item.desc}</p>
+                  <div className="mb-3">{item.icon}</div>
+                  <p className="text-white font-black text-sm italic mb-1">{item.titulo}</p>
+                  <p className="text-white/50 text-xs leading-tight">{item.desc}</p>
                 </div>
               ))}
             </div>
