@@ -56,7 +56,7 @@ export default function LooviPage() {
 
               {/* Badge Loovi */}
               <div className="flex items-center justify-center lg:justify-start">
-                <img src="/logos/loovi.svg" alt="Loovi Seguros" className="h-8 mb-1" />
+                <img src="/logos/loovi.webp" alt="Loovi Seguros" className="h-8 mb-1" />
               </div>
               <div className="flex items-center justify-center lg:justify-start">
                 <span className="inline-flex items-center gap-2 bg-[#5A78FF]/20 border border-[#5A78FF]/30 text-[#a0b4ff] px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest">
