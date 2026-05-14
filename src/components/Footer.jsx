@@ -25,6 +25,7 @@ const Footer = () => {
   const autoLinks = [
     { name: 'Seguro Auto', path: '/seguro-auto' },
     { name: 'Proteção Veicular', path: '/protecao-veicular' },
+    { name: 'Loovi Seguros', path: '/loovi' },
   ];
 
   const segurosLinks = [

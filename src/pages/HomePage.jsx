@@ -274,6 +274,47 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* 2b. LOOVI */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row items-center gap-0" style={{background: "linear-gradient(135deg, #1a1f3c 0%, #2d3580 100%)"}}>
+            {/* Texto */}
+            <div className="flex-1 p-8 md:p-12 space-y-4">
+              <span className="inline-flex items-center gap-2 bg-[#5A78FF]/20 border border-[#5A78FF]/30 text-[#a0b4ff] px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest">
+                <span className="w-1.5 h-1.5 bg-[#5A78FF] rounded-full animate-pulse inline-block"></span>
+                Seguro Auto Digital
+              </span>
+              <h2 className="text-2xl md:text-3xl font-black text-white italic leading-tight">
+                Seguro auto completo.<br/>
+                <span style={{color: "#5A78FF"}}>Sem burocracia.</span>
+              </h2>
+              <p className="text-white/60 text-sm">Sem análise de perfil · Aceita Uber e táxi · Ative em 5 minutos</p>
+              <div className="flex flex-wrap gap-2 pt-1">
+                {["Colisão", "Furto e Roubo", "Assistência 24h", "Carro Reserva", "Vidros"].map(item => (
+                  <span key={item} className="flex items-center gap-1.5 bg-white/10 text-white/80 text-[10px] font-bold uppercase px-3 py-1.5 rounded-full">
+                    <CheckCircle2 size={10} style={{color: "#54DEF8"}} />{item}
+                  </span>
+                ))}
+              </div>
+            </div>
+            {/* CTA */}
+            <div className="w-full md:w-72 p-8 md:p-10 flex flex-col items-center text-center border-t md:border-t-0 md:border-l border-white/10">
+              <p className="text-white/40 text-[10px] uppercase tracking-widest font-bold mb-2">Parceiro Oficial</p>
+              <p className="text-white font-black text-lg italic mb-6">Cote em 30 segundos</p>
+              <a
+                href="https://loovi.com.br/52562/Q0FUX0FERVNBT18yOTk=?utm_source=escvir&utm_medium=meusite"
+                target="_blank"
+                rel="noreferrer"
+                className="w-full text-white font-black py-4 rounded-2xl text-xs uppercase tracking-widest text-center hover:opacity-90 transition-all hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+                style={{background: "linear-gradient(135deg, #5A78FF, #54DEF8)"}}
+              >
+                Cotar Online <ArrowRight size={14}/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 3. CONSÓRCIOS */}
       <section className="py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
