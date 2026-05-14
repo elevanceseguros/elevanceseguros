@@ -262,7 +262,7 @@ const HomePage = () => {
 
             {/* Header dentro do bloco */}
             <div className="text-center px-8 pt-12 pb-8">
-              <img src="/logos/rodobens_white.webp" alt="Rodobens Consórcio" className="h-10 mx-auto mb-5 opacity-90" />
+              <img src="/logos/rodobens_white.webp" alt="Rodobens Consórcio" className="h-16 mx-auto mb-5" />
               <h2 className="text-3xl md:text-5xl font-black text-white italic mb-4">
                 Conquiste seu bem<br/><span className="text-green-400">sem pagar juros.</span>
               </h2>
