@@ -258,53 +258,57 @@ const HomePage = () => {
       {/* 3. CONSÓRCIOS */}
       <section className="py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
-          {/* Header */}
-          <div className="text-center mb-12">
-            <span className="inline-block bg-blue-50 text-[#114d8e] text-xs font-black uppercase tracking-widest px-4 py-2 rounded-full mb-4">Rodobens — maior administradora do Brasil</span>
-            <h2 className="text-3xl md:text-5xl font-black text-[#114d8e] italic mb-4">
-              Conquiste seu bem<br/><span className="text-green-500">sem pagar juros.</span>
-            </h2>
-            <p className="text-slate-500 text-lg max-w-xl mx-auto">No financiamento você paga até 2x o valor do bem. No consórcio, você paga só pelo bem — sem juros reais.</p>
-          </div>
+          <div className="bg-[#0a3018] rounded-[2.5rem] overflow-hidden">
 
-          {/* Cards dos 3 tipos */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            {[
-              { emoji: "🏠", tipo: "Imóvel", desc: "Casa, apartamento ou terreno. Cartas de até R$ 500 mil.", valor: "até R$ 500 mil" },
-              { emoji: "🚗", tipo: "Veículo", desc: "Carro novo, usado ou moto. Parcelas que cabem no bolso.", valor: "até R$ 200 mil" },
-              { emoji: "🛠️", tipo: "Serviços", desc: "Reforma, viagem, cirurgia estética, educação e muito mais.", valor: "até R$ 30 mil" },
-            ].map((item) => (
-              <div key={item.tipo} className="bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all">
-                <div className="text-4xl mb-4">{item.emoji}</div>
-                <h3 className="text-xl font-black text-[#114d8e] mb-2">Consórcio de {item.tipo}</h3>
-                <p className="text-slate-500 text-sm mb-4">{item.desc}</p>
-                <span className="inline-block bg-blue-100 text-[#114d8e] text-xs font-black px-3 py-1 rounded-full">{item.valor}</span>
-              </div>
-            ))}
-          </div>
+            {/* Header dentro do bloco */}
+            <div className="text-center px-8 pt-12 pb-8">
+              <span className="inline-block bg-white/10 text-green-300 text-xs font-black uppercase tracking-widest px-4 py-2 rounded-full mb-5">Rodobens — maior administradora do Brasil</span>
+              <h2 className="text-3xl md:text-5xl font-black text-white italic mb-4">
+                Conquiste seu bem<br/><span className="text-green-400">sem pagar juros.</span>
+              </h2>
+              <p className="text-white/60 text-base max-w-xl mx-auto">No financiamento você paga até 2x o valor do bem. No consórcio, você paga só pelo bem — sem juros reais.</p>
+            </div>
 
-          {/* Faixa de diferenciais */}
-          <div className="bg-[#0a3018] rounded-3xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="flex flex-col md:flex-row gap-8 text-white text-center md:text-left">
+            {/* Cards dos 3 tipos */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-8 pb-8">
               {[
-                { num: "0%", label: "Juros reais" },
-                { num: "+180k", label: "Consorciados Rodobens" },
-                { num: "60x", label: "Parcelas facilitadas" },
-              ].map((d) => (
-                <div key={d.label} className="flex flex-col">
-                  <span className="text-4xl font-black text-green-400 italic">{d.num}</span>
-                  <span className="text-sm text-white/70 font-medium uppercase tracking-wide">{d.label}</span>
+                { emoji: "🏠", tipo: "Imóvel", desc: "Casa, apartamento ou terreno. Cartas de até R$ 500 mil.", valor: "até R$ 500 mil" },
+                { emoji: "🚗", tipo: "Veículo", desc: "Carro novo, usado ou moto. Parcelas que cabem no bolso.", valor: "até R$ 200 mil" },
+                { emoji: "🛠️", tipo: "Serviços", desc: "Reforma, viagem, cirurgia estética, educação e muito mais.", valor: "até R$ 30 mil" },
+              ].map((item) => (
+                <div key={item.tipo} className="bg-white/10 hover:bg-white/15 rounded-2xl p-6 transition-all">
+                  <div className="text-3xl mb-3">{item.emoji}</div>
+                  <h3 className="text-base font-black text-white mb-2">Consórcio de {item.tipo}</h3>
+                  <p className="text-white/60 text-sm mb-4">{item.desc}</p>
+                  <span className="inline-block bg-green-500/20 text-green-300 text-xs font-black px-3 py-1 rounded-full">{item.valor}</span>
                 </div>
               ))}
             </div>
-            <a
-              href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero simular um Consórcio`}
-              target="_blank"
-              rel="noreferrer"
-              className="flex-shrink-0 inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all hover:scale-105 shadow-lg"
-            >
-              Simular Agora <ArrowRight size={16}/>
-            </a>
+
+            {/* Rodapé com números + CTA */}
+            <div className="border-t border-white/10 px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="flex flex-col md:flex-row gap-8 text-center md:text-left">
+                {[
+                  { num: "0%", label: "Juros reais" },
+                  { num: "+180k", label: "Consorciados Rodobens" },
+                  { num: "60x", label: "Parcelas facilitadas" },
+                ].map((d) => (
+                  <div key={d.label} className="flex flex-col">
+                    <span className="text-3xl font-black text-green-400 italic">{d.num}</span>
+                    <span className="text-xs text-white/50 font-medium uppercase tracking-wide">{d.label}</span>
+                  </div>
+                ))}
+              </div>
+              <a
+                href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero simular um Consórcio`}
+                target="_blank"
+                rel="noreferrer"
+                className="flex-shrink-0 inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all hover:scale-105 shadow-lg"
+              >
+                Simular Agora <ArrowRight size={16}/>
+              </a>
+            </div>
+
           </div>
         </div>
       </section>
