@@ -157,7 +157,7 @@ export default function LooviPage() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-black text-[#114d8e] italic text-center mb-12">Dúvidas frequentes</h2>
-          <FAQ items={faqs} />
+          <FAQ perguntas={faqs} />
         </div>
       </section>
 
