@@ -258,11 +258,11 @@ const HomePage = () => {
       {/* 3. CONSÓRCIOS */}
       <section className="py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-[#0a3018] rounded-[2.5rem] overflow-hidden">
+          <div className="bg-[#00441f] rounded-[2.5rem] overflow-hidden">
 
             {/* Header dentro do bloco */}
             <div className="text-center px-8 pt-12 pb-8">
-              <span className="inline-block bg-white/10 text-green-300 text-xs font-black uppercase tracking-widest px-4 py-2 rounded-full mb-5">Rodobens — maior administradora do Brasil</span>
+              <img src="/logos/rodobens_white.webp" alt="Rodobens Consórcio" className="h-10 mx-auto mb-5 opacity-90" />
               <h2 className="text-3xl md:text-5xl font-black text-white italic mb-4">
                 Conquiste seu bem<br/><span className="text-green-400">sem pagar juros.</span>
               </h2>
