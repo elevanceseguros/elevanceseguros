@@ -74,7 +74,11 @@ export default function ProtecaoVeicularPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
-              <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest backdrop-blur-sm">APVS · Maior da América Latina</span>
+              <div className="flex items-center gap-6 justify-center lg:justify-start">
+                <img src="/logos/apvs_brasil.webp" alt="APVS Brasil" className="h-10" />
+                <div className="w-px h-7 bg-white/30"/>
+                <img src="/logos/apvs_truck.webp" alt="APVS Truck" className="h-12" />
+              </div>
               <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
                 Seu carro pode ser roubado <span className="text-blue-600">ainda hoje. Está protegido?</span>
               </h1>

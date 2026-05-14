@@ -232,25 +232,44 @@ const HomePage = () => {
       {/* 2. PROTEÇÃO VEICULAR (APVS) */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-[#114d8e] rounded-[50px] p-8 md:p-16 text-white flex flex-col lg:flex-row items-center gap-12 relative overflow-hidden">
-            <div className="lg:w-1/2 space-y-6 z-10 italic">
-              <div className="flex gap-4">
-                <div className="p-4 bg-white/20 rounded-2xl"><Car size={32}/></div>
-                <div className="p-4 bg-white/20 rounded-2xl"><Bike size={32}/></div>
+          <div className="bg-[#0033a0] rounded-[2.5rem] overflow-hidden">
+
+            {/* Logos APVS */}
+            <div className="flex items-center justify-center gap-8 px-8 pt-10 pb-6 border-b border-white/10">
+              <img src="/logos/apvs_brasil.webp" alt="APVS Brasil" className="h-10" />
+              <div className="w-px h-8 bg-white/20"/>
+              <img src="/logos/apvs_truck.webp" alt="APVS Truck" className="h-12" />
+            </div>
+
+            {/* Conteúdo */}
+            <div className="flex flex-col lg:flex-row items-center gap-10 p-8 md:p-12">
+              <div className="lg:w-1/2 space-y-6 text-white italic">
+                <Link to="/protecao-veicular" className="block text-3xl md:text-4xl font-black hover:text-yellow-300 transition-colors">Proteção Veicular sem burocracia</Link>
+                <p className="text-white/70 font-medium not-italic">Seu carro pode ser roubado ainda hoje — e sem proteção, o prejuízo é 100% seu.</p>
+                <div className="flex flex-wrap gap-3 pt-2 not-italic">
+                  {["Sem consulta SPC/Serasa", "Rastreador Grátis", "Carro, moto e caminhão"].map(item => (
+                    <span key={item} className="flex items-center gap-2 bg-white/10 px-3 py-2 rounded-full text-[10px] font-bold uppercase">
+                      <CheckCircle2 size={12} className="text-yellow-400"/>{item}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <Link to="/protecao-veicular" className="text-3xl md:text-4xl font-black hover:text-blue-300 transition-colors underline-offset-4 hover:underline">Proteção Veicular APVS</Link>
-              <p className="text-white/70 font-medium">Seu carro pode ser roubado ainda hoje — e sem proteção, o prejuízo é 100% seu.</p>
-              <div className="flex flex-wrap gap-4 pt-2">
-                <span className="flex items-center gap-2 text-[10px] font-bold uppercase"><CheckCircle2 size={14} className="text-green-400"/> Sem consulta SPC/Serasa</span>
-                <span className="flex items-center gap-2 text-[10px] font-bold uppercase"><CheckCircle2 size={14} className="text-green-400"/> Rastreador Grátis</span>
+              <div className="lg:w-1/2 w-full">
+                <div className="bg-white/5 border border-white/10 rounded-3xl p-8 text-center">
+                  <p className="text-white/60 text-sm mb-2 uppercase tracking-widest font-bold">Simule agora</p>
+                  <h4 className="text-white text-xl md:text-2xl font-black italic mb-8">Quanto custa proteger seu veículo?</h4>
+                  <a
+                    href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero cotar Proteção Veicular APVS`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block w-full bg-yellow-400 hover:bg-yellow-300 text-[#0033a0] font-black py-4 rounded-2xl transition-all uppercase text-xs tracking-widest shadow-lg"
+                  >
+                    Solicitar Cotação via WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="lg:w-1/2 w-full z-10">
-              <div className="bg-white/5 backdrop-blur-md p-8 md:p-12 rounded-[40px] border border-white/10 text-center">
-                <h4 className="text-xl md:text-2xl font-bold mb-8 italic">Quanto custa proteger seu veículo?</h4>
-                <a href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero cotar Proteção Veicular APVS`} target="_blank" className="block w-full bg-green-500 hover:bg-green-400 text-white font-black py-5 rounded-2xl transition-all uppercase text-xs tracking-widest shadow-lg">Solicitar Cotação via WhatsApp</a>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
