@@ -171,8 +171,8 @@ export default function ConsorciосPage() {
             </div>
             {/* Embracon */}
             <div className="rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all">
-              <div className="bg-white px-8 py-6 flex items-center justify-center border-b border-slate-100">
-                <img src="/logos/embracon.webp" alt="Embracon" className="w-40" />
+              <div className="bg-[#cc0000] px-8 py-6 flex items-center justify-center">
+                <img src="/logos/embracon.webp" alt="Embracon" className="w-40 brightness-0 invert" />
               </div>
               <div className="p-6">
                 <p className="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">Embracon Consórcio</p>
