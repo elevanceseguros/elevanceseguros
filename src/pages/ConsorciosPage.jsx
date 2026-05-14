@@ -97,7 +97,7 @@ export default function ConsorciосPage() {
                 <span className="text-white/30 text-[10px] uppercase tracking-widest font-bold">Parceiros:</span>
                 <img src="/logos/rodobens_white.webp" alt="Rodobens" className="h-6 opacity-70" />
                 <div className="w-px h-4 bg-white/20"/>
-                <img src="/logos/embracon.webp" alt="Embracon" className="h-8 opacity-70 brightness-0 invert" />
+                <img src="/logos/embracon_white.webp" alt="Embracon" className="h-8 opacity-70" />
               </div>
             </div>
 
