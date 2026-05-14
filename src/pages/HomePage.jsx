@@ -326,7 +326,7 @@ const HomePage = () => {
               <div className="flex items-center justify-center gap-6 mb-3">
                 <img src="/logos/rodobens_white.webp" alt="Rodobens" className="h-8 opacity-90" />
                 <div className="w-px h-6 bg-white/20"/>
-                <img src="/logos/embracon_white.webp" alt="Embracon" className="h-10 opacity-90" />
+                <img src="/logos/embracon_white.webp" alt="Embracon" className="w-16 opacity-90" />
               </div>
               <p className="text-white/40 text-xs uppercase tracking-widest font-bold mb-6">Parceiros das maiores administradoras do Brasil</p>
               <h2 className="text-3xl md:text-5xl font-black text-white italic mb-4">

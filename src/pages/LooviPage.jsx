@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { ShieldCheck, Zap, Car, CheckCircle2, Star, ArrowRight, Smartphone, Clock, Ban, Wrench } from 'lucide-react';
 import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
+import FAQ from '@/components/FAQ';
 
 const LOOVI_URL = "https://loovi.com.br/52562/Q0FUX0FERVNBT18yOTk=?utm_source=escvir&utm_medium=meusite";
 
