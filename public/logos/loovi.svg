@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70" fill="white">
+  <!-- L -->
+  <path d="M8 12 L8 58 L32 58 L32 50 L16 50 L16 12 Z" rx="3"/>
+  <!-- O (primeiro) com círculo interno -->
+  <circle cx="52" cy="35" r="19" fill="none" stroke="white" stroke-width="8"/>
+  <!-- O (segundo) com círculo interno -->
+  <circle cx="95" cy="35" r="19" fill="none" stroke="white" stroke-width="8"/>
+  <!-- traço ligando os dois O -->
+  <rect x="71" y="31" width="24" height="8" rx="4"/>
+  <!-- V -->
+  <path d="M122 12 L134 50 L146 12 L154 12 L140 58 L128 58 L114 12 Z"/>
+  <!-- I -->
+  <rect x="162" y="12" width="8" height="46" rx="3"/>
+  <!-- TM -->
+  <text x="175" y="20" font-family="Arial" font-size="9" fill="white" font-weight="300">TM</text>
+</svg>

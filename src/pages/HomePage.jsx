@@ -284,7 +284,7 @@ const HomePage = () => {
                 <span className="w-1.5 h-1.5 bg-[#5A78FF] rounded-full animate-pulse inline-block"></span>
                 Seguro Auto Digital
               </span>
-              <img src="/logos/loovi.webp" alt="Loovi" className="h-6" />
+              <img src="/logos/loovi.svg" alt="Loovi" className="h-6" />
               <h2 className="text-2xl md:text-3xl font-black text-white italic leading-tight">
                 Seguro auto completo.<br/>
                 <span style={{color: "#5A78FF"}}>Sem burocracia.</span>
