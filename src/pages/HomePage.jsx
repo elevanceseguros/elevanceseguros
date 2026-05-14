@@ -277,41 +277,50 @@ const HomePage = () => {
       {/* 2b. LOOVI */}
       <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row items-center gap-0" style={{background: "linear-gradient(135deg, #1a1f3c 0%, #2d3580 100%)"}}>
-            {/* Texto */}
-            <div className="flex-1 p-8 md:p-12 space-y-4">
-              <span className="inline-flex items-center gap-2 bg-[#5A78FF]/20 border border-[#5A78FF]/30 text-[#a0b4ff] px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest">
-                <span className="w-1.5 h-1.5 bg-[#5A78FF] rounded-full animate-pulse inline-block"></span>
-                Seguro Auto Digital
-              </span>
-              <img src="/logos/loovi.webp" alt="Loovi" className="h-6" />
-              <h2 className="text-2xl md:text-3xl font-black text-white italic leading-tight">
-                Seguro auto completo.<br/>
-                <span style={{color: "#5A78FF"}}>Sem burocracia.</span>
-              </h2>
-              <p className="text-white/60 text-sm">Sem análise de perfil · Aceita Uber e táxi · Ative em 5 minutos</p>
-              <div className="flex flex-wrap gap-2 pt-1">
-                {["Colisão", "Furto e Roubo", "Assistência 24h", "Carro Reserva", "Vidros"].map(item => (
-                  <span key={item} className="flex items-center gap-1.5 bg-white/10 text-white/80 text-[10px] font-bold uppercase px-3 py-1.5 rounded-full">
-                    <CheckCircle2 size={10} style={{color: "#54DEF8"}} />{item}
-                  </span>
-                ))}
+          <div className="rounded-[2.5rem] overflow-hidden p-8 md:p-12" style={{background: "linear-gradient(135deg, #1a1f3c 0%, #2d3580 100%)"}}>
+
+            {/* Linha 1 — Logo + badge + CTA */}
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-8">
+              <div className="flex items-center gap-4">
+                <img src="/logos/loovi.webp" alt="Loovi" className="h-7" />
+                <span className="inline-flex items-center gap-2 bg-[#5A78FF]/20 border border-[#5A78FF]/30 text-[#a0b4ff] px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest">
+                  <span className="w-1.5 h-1.5 bg-[#5A78FF] rounded-full animate-pulse inline-block"></span>
+                  Parceiro Oficial
+                </span>
               </div>
-            </div>
-            {/* CTA */}
-            <div className="w-full md:w-72 p-8 md:p-10 flex flex-col items-center text-center border-t md:border-t-0 md:border-l border-white/10">
-              <p className="text-white/40 text-[10px] uppercase tracking-widest font-bold mb-2">Parceiro Oficial</p>
-              <p className="text-white font-black text-lg italic mb-6">Cote em 30 segundos</p>
               <a
                 href="https://loovi.com.br/52562/Q0FUX0FERVNBT18yOTk=?utm_source=escvir&utm_medium=meusite"
-                target="_blank"
-                rel="noreferrer"
-                className="w-full text-white font-black py-4 rounded-2xl text-xs uppercase tracking-widest text-center hover:opacity-90 transition-all hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+                target="_blank" rel="noreferrer"
+                className="flex-shrink-0 inline-flex items-center gap-2 text-white font-black px-8 py-4 rounded-2xl text-xs uppercase tracking-widest hover:opacity-90 hover:scale-105 transition-all shadow-lg"
                 style={{background: "linear-gradient(135deg, #5A78FF, #54DEF8)"}}
               >
-                Cotar Online <ArrowRight size={14}/>
+                Cotar 100% Online <ArrowRight size={14}/>
               </a>
             </div>
+
+            {/* Linha 2 — Título */}
+            <h2 className="text-2xl md:text-4xl font-black text-white italic leading-tight mb-8">
+              Seguro auto completo, sem análise de perfil.<br/>
+              <span style={{color: "#54DEF8"}}>Ative em 5 minutos.</span>
+            </h2>
+
+            {/* Linha 3 — 5 cards de cobertura */}
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+              {[
+                { icon: "🛡️", titulo: "Colisão", desc: "Pagamento integral ou parcial" },
+                { icon: "🔒", titulo: "Furto e Roubo", desc: "100% da tabela FIPE" },
+                { icon: "🚨", titulo: "Assistência 24h", desc: "Reboque em todo o Brasil" },
+                { icon: "🚗", titulo: "Carro Reserva", desc: "7 dias incluídos" },
+                { icon: "🪟", titulo: "Vidros", desc: "Para-brisa e laterais" },
+              ].map(item => (
+                <div key={item.titulo} className="bg-white/10 rounded-2xl p-4 hover:bg-white/15 transition-all">
+                  <div className="text-xl mb-2">{item.icon}</div>
+                  <p className="text-white font-black text-xs mb-1">{item.titulo}</p>
+                  <p className="text-white/50 text-[10px] leading-tight">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+
           </div>
         </div>
       </section>
