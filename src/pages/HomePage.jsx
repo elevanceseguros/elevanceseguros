@@ -7,7 +7,7 @@ import {
   Star, ShieldCheck, Zap, Car, Heart, 
   Building2, Wallet, CheckCircle2, Bike, 
   Users, ArrowRight, MessageCircle, Smile, PartyPopper, Home,
-  Lock, PhoneCall, Layers, BookOpen, FileCheck} from 'lucide-react';
+  Lock, PhoneCall, Layers, Wrench, BookOpen, FileCheck} from 'lucide-react';
 
 const HomePage = () => {
   const [sent, setSent] = useState(false);
@@ -347,12 +347,12 @@ const HomePage = () => {
             {/* Cards dos 3 tipos */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-8 pb-8">
               {[
-                { emoji: "🏠", tipo: "Imóvel", desc: "Casa, apartamento ou terreno. Cartas de até R$ 500 mil.", valor: "até R$ 500 mil" },
-                { emoji: "🚗", tipo: "Veículo", desc: "Carro novo, usado ou moto. Parcelas que cabem no bolso.", valor: "até R$ 200 mil" },
-                { emoji: "🛠️", tipo: "Serviços", desc: "Reforma, viagem, cirurgia estética, educação e muito mais.", valor: "até R$ 30 mil" },
+                { icon: <Home size={24} className="text-green-300"/>, tipo: "Imóvel", desc: "Casa, apartamento ou terreno. Cartas de até R$ 500 mil.", valor: "até R$ 500 mil" },
+                { icon: <Car size={24} className="text-green-300"/>, tipo: "Veículo", desc: "Carro novo, usado ou moto. Parcelas que cabem no bolso.", valor: "até R$ 200 mil" },
+                { icon: <Wrench size={24} className="text-green-300"/>, tipo: "Serviços", desc: "Reforma, viagem, cirurgia estética, educação e muito mais.", valor: "até R$ 30 mil" },
               ].map((item) => (
                 <div key={item.tipo} className="bg-white/10 hover:bg-white/15 rounded-2xl p-6 transition-all">
-                  <div className="text-3xl mb-3">{item.emoji}</div>
+                  <div className="mb-3">{item.icon}</div>
                   <h3 className="text-base font-black text-white mb-2">Consórcio de {item.tipo}</h3>
                   <p className="text-white/60 text-sm mb-4">{item.desc}</p>
                   <span className="inline-block bg-green-500/20 text-green-300 text-xs font-black px-3 py-1 rounded-full">{item.valor}</span>
