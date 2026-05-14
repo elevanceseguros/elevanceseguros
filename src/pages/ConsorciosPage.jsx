@@ -92,6 +92,13 @@ export default function ConsorciосPage() {
                   <Shield size={14} className="text-blue-600" /> Regulado pelo Banco Central
                 </div>
               </div>
+              {/* Logos parceiras no hero */}
+              <div className="flex items-center gap-5 justify-center lg:justify-start pt-2">
+                <span className="text-white/30 text-[10px] uppercase tracking-widest font-bold">Parceiros:</span>
+                <img src="/logos/rodobens_white.webp" alt="Rodobens" className="h-6 opacity-70" />
+                <div className="w-px h-4 bg-white/20"/>
+                <img src="/logos/embracon.webp" alt="Embracon" className="h-8 opacity-70 brightness-0 invert" />
+              </div>
             </div>
 
             {/* FORMULÁRIO */}
@@ -136,6 +143,45 @@ export default function ConsorciосPage() {
                     </div>
                   )}
                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PARCEIRAS */}
+      <section className="py-14 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <p className="text-center text-slate-400 text-xs uppercase tracking-widest font-bold mb-10">Parceiros das maiores administradoras de consórcio do Brasil</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            {/* Rodobens */}
+            <div className="rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all">
+              <div className="bg-[#00441f] px-8 py-6 flex items-center justify-center">
+                <img src="/logos/rodobens_white.webp" alt="Rodobens" className="h-10" />
+              </div>
+              <div className="p-6">
+                <p className="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">Rodobens Consórcio</p>
+                <p className="text-slate-600 text-sm leading-relaxed">Maior administradora independente do Brasil. Mais de 180 mil consorciados ativos, cartas de crédito para imóvel, veículo e serviços.</p>
+                <div className="flex gap-2 mt-4 flex-wrap">
+                  {["🏠 Imóvel", "🚗 Veículo", "🛠️ Serviços"].map(t => (
+                    <span key={t} className="bg-[#00441f]/10 text-[#00441f] text-xs font-bold px-3 py-1 rounded-full">{t}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+            {/* Embracon */}
+            <div className="rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all">
+              <div className="bg-white px-8 py-6 flex items-center justify-center border-b border-slate-100">
+                <img src="/logos/embracon.webp" alt="Embracon" className="h-14" />
+              </div>
+              <div className="p-6">
+                <p className="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">Embracon Consórcio</p>
+                <p className="text-slate-600 text-sm leading-relaxed">Uma das maiores administradoras do país. Ampla variedade de cartas de crédito com flexibilidade de prazos e valores para todos os perfis.</p>
+                <div className="flex gap-2 mt-4 flex-wrap">
+                  {["🏠 Imóvel", "🚗 Veículo", "🛠️ Serviços"].map(t => (
+                    <span key={t} className="bg-red-50 text-red-600 text-xs font-bold px-3 py-1 rounded-full">{t}</span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

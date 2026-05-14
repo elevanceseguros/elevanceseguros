@@ -281,7 +281,12 @@ const HomePage = () => {
 
             {/* Header dentro do bloco */}
             <div className="text-center px-8 pt-12 pb-8">
-              <img src="/logos/rodobens_white.webp" alt="Rodobens Consórcio" className="h-16 mx-auto mb-5" />
+              <div className="flex items-center justify-center gap-6 mb-3">
+                <img src="/logos/rodobens_white.webp" alt="Rodobens" className="h-8 opacity-90" />
+                <div className="w-px h-6 bg-white/20"/>
+                <img src="/logos/embracon.webp" alt="Embracon" className="h-10 opacity-90 brightness-0 invert" />
+              </div>
+              <p className="text-white/40 text-xs uppercase tracking-widest font-bold mb-6">Parceiros das maiores administradoras do Brasil</p>
               <h2 className="text-3xl md:text-5xl font-black text-white italic mb-4">
                 Conquiste seu bem<br/><span className="text-green-400">sem pagar juros.</span>
               </h2>
