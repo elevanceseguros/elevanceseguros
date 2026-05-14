@@ -97,7 +97,7 @@ export default function ConsorciосPage() {
                 <span className="text-white/30 text-[10px] uppercase tracking-widest font-bold">Parceiros:</span>
                 <img src="/logos/rodobens_white.webp" alt="Rodobens" className="h-6 opacity-70" />
                 <div className="w-px h-4 bg-white/20"/>
-                <img src="/logos/embracon_white.webp" alt="Embracon" className="w-20 opacity-70" />
+                <img src="/logos/embracon_white.webp" alt="Embracon" className="h-8 opacity-70" />
               </div>
             </div>
 
@@ -172,7 +172,7 @@ export default function ConsorciосPage() {
             {/* Embracon */}
             <div className="rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all">
               <div className="bg-[#cc0000] px-8 py-6 flex items-center justify-center">
-                <img src="/logos/embracon.webp" alt="Embracon" className="w-40 brightness-0 invert" />
+                <img src="/logos/embracon.webp" alt="Embracon" className="h-10 brightness-0 invert" />
               </div>
               <div className="p-6">
                 <p className="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">Embracon Consórcio</p>
