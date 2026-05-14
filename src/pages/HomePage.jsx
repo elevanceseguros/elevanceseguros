@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 import { 
   Star, ShieldCheck, Zap, Car, Heart, 
   Building2, Wallet, CheckCircle2, Bike, 
-  Users, ArrowRight, MessageCircle, Smile, PartyPopper, Home
-, BookOpen, FileCheck} from 'lucide-react';
+  Users, ArrowRight, MessageCircle, Smile, PartyPopper, Home,
+  Lock, PhoneCall, Layers, BookOpen, FileCheck} from 'lucide-react';
 
 const HomePage = () => {
   const [sent, setSent] = useState(false);
@@ -307,14 +307,14 @@ const HomePage = () => {
             {/* Linha 3 — 5 cards de cobertura */}
             <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
               {[
-                { icon: "🛡️", titulo: "Colisão", desc: "Pagamento integral ou parcial" },
-                { icon: "🔒", titulo: "Furto e Roubo", desc: "100% da tabela FIPE" },
-                { icon: "🚨", titulo: "Assistência 24h", desc: "Reboque em todo o Brasil" },
-                { icon: "🚗", titulo: "Carro Reserva", desc: "7 dias incluídos" },
-                { icon: "🪟", titulo: "Vidros", desc: "Para-brisa e laterais" },
+                { icon: <ShieldCheck size={20} style={{color:"#54DEF8"}}/>, titulo: "Colisão", desc: "Pagamento integral ou parcial" },
+                { icon: <Lock size={20} style={{color:"#54DEF8"}}/>, titulo: "Furto e Roubo", desc: "100% da tabela FIPE" },
+                { icon: <PhoneCall size={20} style={{color:"#54DEF8"}}/>, titulo: "Assistência 24h", desc: "Reboque em todo o Brasil" },
+                { icon: <Car size={20} style={{color:"#54DEF8"}}/>, titulo: "Carro Reserva", desc: "7 dias incluídos" },
+                { icon: <Layers size={20} style={{color:"#54DEF8"}}/>, titulo: "Vidros", desc: "Para-brisa e laterais" },
               ].map(item => (
                 <div key={item.titulo} className="bg-white/10 rounded-2xl p-4 hover:bg-white/15 transition-all">
-                  <div className="text-xl mb-2">{item.icon}</div>
+                  <div className="mb-2">{item.icon}</div>
                   <p className="text-white font-black text-xs mb-1">{item.titulo}</p>
                   <p className="text-white/50 text-[10px] leading-tight">{item.desc}</p>
                 </div>
