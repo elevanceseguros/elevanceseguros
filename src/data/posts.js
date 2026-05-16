@@ -1665,6 +1665,282 @@ export const postsData = [
       <p class="mt-8 font-bold text-blue-600">Autônomo ou MEI buscando plano de saúde em SP? Me chame no WhatsApp — cotação gratuita das melhores opções para o seu perfil!</p>
     `
   }
+
+  ,
+  {
+    id: 25,
+    slug: "plano-de-saude-para-familia-como-incluir-dependentes",
+    title: "Plano de Saúde para Família: Como Incluir Dependentes e Economizar",
+    date: "16 Mai, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1511895426328-dc8714191011?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Incluir cônjuge e filhos no plano de saúde pode ser mais barato do que contratar planos separados. Mas existem regras, prazos e armadilhas que você precisa conhecer antes de decidir.",
+    content: `
+      <p class="mb-4">Quando o assunto é plano de saúde para família, a dúvida mais comum é: vale mais a pena um plano familiar único ou planos individuais para cada um? A resposta depende de fatores como idade dos dependentes, operadora escolhida e tipo de plano — mas na maioria dos casos, o <strong>plano familiar é mais econômico e prático</strong>.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Quem pode ser dependente no plano de saúde?</h2>
+      <p class="mb-4">A ANS define os seguintes dependentes elegíveis:</p>
+      <ul class="mb-6 space-y-3 list-none">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Cônjuge ou companheiro(a):</strong> casamento civil ou união estável comprovada (mínimo 2 anos de convivência ou filho em comum).</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Filhos:</strong> até 21 anos automaticamente; até 24 anos se estudante universitário; sem limite de idade se tiver deficiência ou doença que gere dependência.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Filhos adotivos:</strong> mesmas regras dos filhos biológicos.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Enteados e tutelados:</strong> aceitos pela maioria das operadoras com documentação de dependência econômica.</span></li>
+      </ul>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Plano individual vs. plano familiar: qual é mais barato?</h2>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Composição</th>
+              <th class="p-3 text-left">Planos separados</th>
+              <th class="p-3 text-left rounded-tr-xl">Plano familiar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Casal (30 anos)</td>
+              <td class="p-3">R$ 700 + R$ 700 = R$ 1.400</td>
+              <td class="p-3 font-bold text-blue-600">R$ 1.100 – R$ 1.250</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Casal + 1 filho (0-18)</td>
+              <td class="p-3">R$ 1.400 + R$ 300 = R$ 1.700</td>
+              <td class="p-3 font-bold text-blue-600">R$ 1.300 – R$ 1.500</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">Casal + 2 filhos</td>
+              <td class="p-3">R$ 1.400 + R$ 600 = R$ 2.000</td>
+              <td class="p-3 font-bold text-blue-600">R$ 1.500 – R$ 1.750</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">*Valores referenciais para SP 2026 — enfermaria sem coparticipação.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Como funciona a carência para dependentes incluídos depois?</h2>
+      <p class="mb-4">Se você já tem plano e quer incluir um dependente <strong>depois da contratação inicial</strong>, as carências se aplicam normalmente — com algumas exceções importantes:</p>
+      <ul class="mb-6 space-y-3 list-none">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Casamento ou nascimento:</strong> a maioria das operadoras permite inclusão sem carência se feita em até 30 dias do evento. Após esse prazo, aplica carência completa.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Recém-nascido:</strong> incluído em até 30 dias do nascimento, sem carência. Nascido durante internação da mãe tem cobertura imediata.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Portabilidade:</strong> se o dependente já tinha plano, pode portar as carências e entrar sem cumprir novamente.</span></li>
+      </ul>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">O erro mais comum que vejo é a família esperar o filho nascer para incluir no plano — e perder a janela de 30 dias. Com isso, a criança entra com carência de 180 dias para cirurgias e 300 dias para parto na fase adulta. Sempre oriente sua família: inclusão de recém-nascido deve ser feita em até 30 dias do nascimento para garantir cobertura imediata.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Filho universitário perde o plano aos 21 anos?</h2>
+      <p class="mb-4">Não necessariamente. Filhos universitários podem permanecer como dependentes até os <strong>24 anos</strong>, mediante comprovação de matrícula em curso superior. A operadora pode solicitar renovação anual do comprovante. Após os 24 anos, o filho precisa contratar um plano próprio — e pode fazer portabilidade do histórico.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Quer montar o plano ideal para sua família em SP? Me chama no WhatsApp — comparo as melhores operadoras gratuitamente!</p>
+    `
+  }
+  ,
+  {
+    id: 26,
+    slug: "o-que-e-dps-no-seguro-de-vida",
+    title: "O Que é DPS no Seguro de Vida e Quando Pode Te Prejudicar",
+    date: "17 Mai, 2026",
+    category: "Seguros",
+    readTime: "4 min",
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800",
+    excerpt: "A DPS é a Declaração Pessoal de Saúde que você preenche ao contratar um seguro de vida. Mentir ou omitir informações pode invalidar sua apólice na hora que você mais precisa. Entenda como funciona.",
+    content: `
+      <p class="mb-4">Você contrata um seguro de vida, paga as parcelas em dia por anos — e na hora do sinistro, a seguradora nega o pagamento. Como isso acontece? Muitas vezes a causa é a <strong>DPS — Declaração Pessoal de Saúde</strong>. Entender o que é e como preenchê-la corretamente pode ser a diferença entre sua família receber ou não a indenização.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que é a DPS?</h2>
+      <p class="mb-4">A DPS é um questionário de saúde que a seguradora exige no momento da contratação. Nela você declara doenças preexistentes, histórico de internações, cirurgias, uso de medicamentos contínuos e hábitos como tabagismo e prática de esportes radicais.</p>
+      <p class="mb-4">Com base nessas informações, a seguradora decide se aceita o seguro, aplica exclusões específicas ou cobra um prêmio maior. É um contrato de <strong>boa-fé</strong> — você declara, a seguradora confia.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que acontece se eu omitir informações?</h2>
+      <p class="mb-4">O Código Civil Brasileiro (art. 766) é claro: se o segurado omitir ou prestar informações falsas na DPS, a seguradora pode <strong>anular o contrato</strong> e se recusar a pagar a indenização, mesmo que o sinistro não tenha relação direta com a doença omitida.</p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Situação</th>
+              <th class="p-3 text-left rounded-tr-xl">Consequência</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Omitiu doença preexistente</td>
+              <td class="p-3 text-red-600 font-bold">Apólice pode ser anulada</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Declarou ser não fumante sendo fumante</td>
+              <td class="p-3 text-red-600 font-bold">Indenização negada</td>
+            </tr>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Não declarou esporte radical praticado</td>
+              <td class="p-3 text-orange-600 font-bold">Cobertura excluída para esse risco</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="p-3 font-medium">Declarou tudo corretamente</td>
+              <td class="p-3 text-green-600 font-bold">Indenização garantida</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Muita gente tem medo de declarar doenças preexistentes achando que vai ser recusado. Na prática, a maioria das seguradoras aceita — mas com exclusão específica para aquela condição ou prêmio maior. Isso é infinitamente melhor do que omitir e ter a apólice anulada. Sempre declare tudo. Um corretor especializado te ajuda a encontrar a seguradora mais acessível mesmo com histórico de saúde.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">A seguradora pode investigar minha saúde após o sinistro?</h2>
+      <p class="mb-4">Sim. Após um sinistro, a seguradora tem direito de solicitar prontuários médicos, histórico de consultas e laudos. Se encontrar divergências com o que foi declarado na DPS, pode negar o pagamento mesmo que o contrato tenha anos de vigência.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">E doenças que descobri após contratar o seguro?</h2>
+      <p class="mb-4">Não há problema — você só precisa declarar o que sabia no momento da contratação. Se um câncer foi diagnosticado depois que você assinou o contrato, a cobertura é plena (respeitadas as carências). O que a seguradora avalia é o que você <em>sabia ou deveria saber</em> na data da assinatura.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Quer contratar seguro de vida com toda a segurança jurídica? Me chama no WhatsApp — te oriento no preenchimento correto da DPS!</p>
+    `
+  }
+  ,
+  {
+    id: 27,
+    slug: "seguro-auto-para-uber-e-aplicativos",
+    title: "Seguro Auto para Uber e Apps: Quem Cobre e Quem Não Cobre em 2026",
+    date: "18 Mai, 2026",
+    category: "Seguro Auto",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Se você usa o carro para Uber, 99 ou iFood, saiba que a maioria dos seguros auto tradicionais não cobre acidentes durante o trabalho no app. Entenda quais são as exceções e como se proteger.",
+    content: `
+      <p class="mb-4">Mais de 1 milhão de motoristas trabalham com aplicativos de transporte no Brasil. A maioria acredita que o seguro auto tradicional os protege — mas <strong>na prática, quase nenhum seguro convencional cobre acidentes durante o uso comercial do veículo</strong>. Descubra como se proteger corretamente.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Por que o seguro tradicional não cobre motoristas de app?</h2>
+      <p class="mb-4">Na contratação do seguro, você declara o uso do veículo: <strong>lazer</strong> (vai ao trabalho e fins de semana) ou <strong>trabalho</strong> (uso intenso diário). Motoristas de aplicativo usam o carro comercialmente — e a maioria das seguradoras exclui cobertura para <em>uso remunerado de passageiros</em> na apólice padrão.</p>
+      <p class="mb-4">Se você sofrer um acidente transportando um passageiro via Uber ou 99 com um seguro declarado como uso pessoal, a seguradora pode negar a indenização por uso irregular do veículo.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que as plataformas cobrem?</h2>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Plataforma</th>
+              <th class="p-3 text-left">Cobertura oferecida</th>
+              <th class="p-3 text-left rounded-tr-xl">Limitações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Uber</td>
+              <td class="p-3">Seguro de acidentes pessoais para motorista e passageiro durante a corrida</td>
+              <td class="p-3 text-orange-600">Não cobre danos ao veículo</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">99</td>
+              <td class="p-3">Seguro de vida e acidentes pessoais durante corridas ativas</td>
+              <td class="p-3 text-orange-600">Não cobre veículo nem aguardando corrida</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-medium">iFood (moto)</td>
+              <td class="p-3">Seguro de acidentes pessoais básico</td>
+              <td class="p-3 text-orange-600">Cobertura muito limitada</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Quais seguros aceitam motoristas de aplicativo?</h2>
+      <ul class="mb-6 space-y-3 list-none">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Suhai:</strong> especializada em motoristas de app. Cobre roubo, furto, colisão e assistência 24h para veículos usados em aplicativo. Preço competitivo.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Porto Seguro App:</strong> plano específico para motoristas de transporte por aplicativo. Inclui cobertura completa durante corridas.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Tokio Marine:</strong> aceita uso misto (pessoal + app) com declaração correta na contratação.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span><strong>Proteção Veicular APVS:</strong> aceita veículos usados em aplicativo sem restrição de perfil.</span></li>
+      </ul>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">Se você trabalha com app mesmo que seja meio período, declare isso na contratação. O prêmio vai ser um pouco maior, mas você terá cobertura real. Já vi casos de motoristas que pagaram seguro por 2 anos e não receberam nada porque o acidente aconteceu durante uma corrida com seguro declarado como uso pessoal. Não vale o risco.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">E o carro financiado pode fazer seguro para app?</h2>
+      <p class="mb-4">Sim, mas atenção: alguns contratos de financiamento proíbem o uso comercial do veículo. Verifique o contrato antes. Em caso de sinistro, se o banco financiador descobrir que o veículo era usado em transporte remunerado em desacordo com o contrato, pode haver complicações além da seguradora.</p>
+
+      <p class="mt-8 font-bold text-blue-600">Motorista de app em SP? Me chama no WhatsApp — tenho as melhores opções de seguro para o seu perfil!</p>
+    `
+  }
+  ,
+  {
+    id: 28,
+    slug: "consorcio-contemplado-o-que-fazer-depois",
+    title: "Fui Contemplado no Consórcio: O Que Fazer Agora com a Carta de Crédito?",
+    date: "19 Mai, 2026",
+    category: "Consórcios",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Ser contemplado no consórcio é um momento de euforia — mas também de dúvidas. O que fazer com a carta de crédito? Qual o prazo para usar? Posso escolher qualquer imóvel ou veículo? Tire todas as dúvidas.",
+    content: `
+      <p class="mb-4">Você recebeu a notícia: foi contemplado no consórcio! Seja por sorteio ou lance, agora tem acesso à carta de crédito. Mas antes de sair comemorando, é importante entender <strong>exatamente o que acontece a seguir</strong> — porque existem prazos, documentações e regras que podem complicar o processo se você não souber.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">O que acontece imediatamente após a contemplação?</h2>
+      <ol class="mb-6 space-y-4 list-none">
+        <li class="flex items-start gap-3"><span class="bg-[#114d8e] text-white font-black text-xs rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">1</span><span><strong>Comunicação oficial:</strong> a administradora envia carta ou e-mail confirmando a contemplação e solicitando documentos.</span></li>
+        <li class="flex items-start gap-3"><span class="bg-[#114d8e] text-white font-black text-xs rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">2</span><span><strong>Análise de crédito:</strong> mesmo sendo consórcio, a administradora faz análise cadastral. Restrições no CPF podem travar a liberação.</span></li>
+        <li class="flex items-start gap-3"><span class="bg-[#114d8e] text-white font-black text-xs rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">3</span><span><strong>Oferta de bem:</strong> você indica o imóvel, veículo ou serviço que deseja adquirir.</span></li>
+        <li class="flex items-start gap-3"><span class="bg-[#114d8e] text-white font-black text-xs rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">4</span><span><strong>Avaliação e liberação:</strong> a administradora avalia o bem escolhido e libera a carta diretamente ao vendedor.</span></li>
+      </ol>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Quanto tempo tenho para usar a carta de crédito?</h2>
+      <p class="mb-4">O prazo varia conforme a administradora, mas em geral você tem <strong>entre 180 dias e 1 ano</strong> para utilizar a carta após a contemplação. Se não usar nesse prazo, a carta pode ser devolvida ao grupo ou o valor fica em aplicação até o encerramento do grupo.</p>
+      <p class="mb-4">Atenção: as parcelas continuam sendo cobradas normalmente durante esse período, mesmo que você ainda não tenha usado a carta.</p>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Posso escolher qualquer imóvel ou veículo?</h2>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#114d8e] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Tipo de consórcio</th>
+              <th class="p-3 text-left rounded-tr-xl">O que pode comprar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Imóvel</td>
+              <td class="p-3">Imóvel novo ou usado, terreno, construção, reforma. Deve ter matrícula no cartório e estar regularizado.</td>
+            </tr>
+            <tr class="bg-white border-b border-slate-100">
+              <td class="p-3 font-medium">Veículo leve</td>
+              <td class="p-3">Carro novo ou usado (até 3-5 anos dependendo da administradora), não pode ser salvado ou leiloado.</td>
+            </tr>
+            <tr class="bg-slate-50 border-b border-slate-100">
+              <td class="p-3 font-medium">Veículo pesado</td>
+              <td class="p-3">Caminhão, ônibus, máquinas agrícolas e equipamentos conforme o grupo contratado.</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="p-3 font-medium">Serviços</td>
+              <td class="p-3">Reforma, educação, viagem, cirurgia — prestador precisa emitir NF.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="my-10 bg-blue-50 p-8 rounded-3xl border border-blue-100 shadow-sm text-[#114d8e]">
+        <h3 class="font-bold mb-2">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium">O erro mais comum após a contemplação é demorar para agir. Muitas pessoas ficam meses "procurando o imóvel perfeito" enquanto continuam pagando parcelas sem usar a carta. Se o valor da carta não for suficiente para o bem que você quer, é possível completar com recursos próprios. E se o bem for mais barato que a carta, você pode usar o saldo restante para amortizar as parcelas futuras.</p>
+      </div>
+
+      <h2 class="text-[#114d8e] font-black mt-8 mb-4 text-2xl">Posso usar o FGTS junto com a carta de consórcio imobiliário?</h2>
+      <p class="mb-4">Sim! Essa é uma das combinações mais poderosas do mercado. Você pode usar o FGTS para:</p>
+      <ul class="mb-6 space-y-2 list-none">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span>Completar o valor da carta se o imóvel for mais caro</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span>Amortizar o saldo devedor das parcelas restantes</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black mt-0.5">→</span><span>Dar como lance para antecipar a contemplação (antes de ser contemplado)</span></li>
+      </ul>
+
+      <p class="mt-8 font-bold text-blue-600">Acabou de ser contemplado ou quer entender melhor como funciona o consórcio? Me chama no WhatsApp — te oriento em cada passo!</p>
+    `
+  }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
 
