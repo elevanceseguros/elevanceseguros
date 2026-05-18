@@ -123,7 +123,7 @@ const SagradaFamiliaHomePage = () => {
               <div className="w-px h-6 bg-white/20 hidden sm:block"></div>
               <div className="hidden sm:flex flex-col items-start">
                 <span className="text-white/50 text-[8px] uppercase tracking-widest font-bold">Corretora Autorizada</span>
-                <img src="/logo-white.webp" alt="Elevance Seguros" className="h-4 w-auto object-contain opacity-70 mt-0.5" loading="eager" />
+                <img src="/logos/elevance-logo-branco.png" alt="Elevance Seguros" className="h-5 w-auto object-contain opacity-80 mt-0.5" loading="eager" />
               </div>
             </div>
             <a
@@ -501,7 +501,7 @@ const SagradaFamiliaHomePage = () => {
           <img src="/logos/sagrada-familia-logo.png" alt="Sagrada Família Saúde" className="h-10 w-auto mx-auto mb-3 opacity-90" loading="lazy" />
           <div className="flex items-center justify-center gap-2 mb-3">
             <span className="text-white/40 text-[9px] uppercase tracking-widest font-bold">Corretora Autorizada</span>
-            <img src="/logo-white.webp" alt="Elevance Seguros" className="h-3 w-auto opacity-40" loading="lazy" />
+            <img src="/logos/elevance-logo-branco.png" alt="Elevance Seguros" className="h-4 w-auto opacity-50" loading="lazy" />
           </div>
           <p className="text-white/40 text-[10px] font-bold uppercase tracking-widest">© 2026 · São Paulo, SP</p>
           <p className="text-white/20 text-[9px] mt-2 max-w-lg mx-auto">
