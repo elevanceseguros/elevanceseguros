@@ -47,11 +47,11 @@ const tabelaPrecos = [
 ];
 
 const unidades = [
-  { nome: "Hosp. Sagrada Família", local: "Vila Formosa · Zona Leste SP", desc: "Pronto-socorro adulto/infantil, UTI, maternidade e exames." },
-  { nome: "Hosp. Sagrada Família", local: "Mauá · Grande ABC", desc: "Pronto-socorro 24h, UTI e internações." },
-  { nome: "Hosp. São Francisco", local: "Cotia · Grande SP", desc: "Maternidade, UTI, pronto-socorro infantil e cirúrgico." },
-  { nome: "Hosp. São Francisco", local: "Osasco · Grande SP", desc: "UTI, consultas e pronto-socorro 24h." },
-  { nome: "Hosp. São Francisco", local: "São Roque · Interior", desc: "UTI, pronto-socorro e internações." },
+  { nome: "Hosp. Sagrada Família", local: "Vila Formosa · Zona Leste SP", desc: "Pronto-socorro adulto/infantil, UTI, maternidade e exames.", foto: "/hospitais/sf-vila-formosa.jpg" },
+  { nome: "Hosp. Sagrada Família", local: "Mauá · Grande ABC", desc: "Pronto-socorro 24h, UTI e internações.", foto: "/hospitais/sf-maua.jpg" },
+  { nome: "Hosp. São Francisco", local: "Cotia · Grande SP", desc: "Maternidade, UTI, pronto-socorro infantil e cirúrgico.", foto: "/hospitais/hsf-cotia.jpg" },
+  { nome: "Hosp. São Francisco", local: "Osasco · Grande SP", desc: "UTI, consultas e pronto-socorro 24h.", foto: "/hospitais/hsf-osasco.jpg" },
+  { nome: "Hosp. São Francisco", local: "São Roque · Interior", desc: "UTI, pronto-socorro e internações.", foto: "/hospitais/hsf-sao-roque.jpg" },
 ];
 
 const diferenciais = [
@@ -383,8 +383,13 @@ const SagradaFamiliaHomePage = () => {
                   </div>
                   <div className="p-5 space-y-3">
                     {unidades.map((u, i) => (
-                      <div key={i} className="flex items-start gap-3 p-4 bg-slate-50 rounded-2xl hover:bg-purple-50 transition-colors">
-                        <Building2 size={18} style={{ color: '#1a4a7a' }} className="shrink-0 mt-0.5" />
+                      <div key={i} className="flex items-center gap-4 p-3 bg-slate-50 rounded-2xl hover:bg-purple-50 transition-colors">
+                        <img
+                          src={u.foto}
+                          alt={u.nome}
+                          className="w-20 h-16 object-cover rounded-xl shrink-0"
+                          loading="lazy"
+                        />
                         <div>
                           <p className="sf-heading text-sm" style={{ color: '#1a4a7a' }}>{u.nome}</p>
                           <p className="text-[10px] text-slate-400 font-bold uppercase tracking-wide">{u.local}</p>
