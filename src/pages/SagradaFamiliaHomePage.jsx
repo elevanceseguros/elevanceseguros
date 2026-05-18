@@ -92,12 +92,12 @@ const SagradaFamiliaHomePage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Plano de Saúde Sagrada Família | Tabela 2026" />
         <meta property="og:description" content="Plano de saúde com 5 hospitais próprios em SP. Tabela 2026 e cotação gratuita." />
-        <meta property="og:image" content="https://www.elevanceseguros.com/logos/sagrada-familia.webp" />
+        <meta property="og:image" content="https://sagradafamilia.elevanceseguros.com/logos/sagrada-familia-logo.png" />
         <meta property="og:url" content="https://sagradafamilia.elevanceseguros.com" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Plano de Saúde Sagrada Família | Tabela 2026" />
         <meta name="twitter:description" content="Plano de saúde com 5 hospitais próprios em SP. Cotação gratuita." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
+        <meta name="twitter:image" content="https://sagradafamilia.elevanceseguros.com/logos/sagrada-familia-logo.png" />
       </Helmet>
 
       <style>{`
