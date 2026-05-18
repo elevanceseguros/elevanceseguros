@@ -137,9 +137,9 @@ const SagradaFamiliaHomePage = () => {
         </nav>
 
         {/* HERO */}
-        <section style={{ background: 'linear-gradient(135deg, #1a4a7a 0%, #2a5a9a 60%, #9b1fa8 100%)' }} className="relative pt-12 pb-20 overflow-hidden">
-          <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px" }}></div>
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
+        <section style={{ background: '#ffffff' }} className="relative pt-12 pb-20 overflow-hidden">
+          <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, #1a4a7a 1px, transparent 1px), radial-gradient(circle at 80% 20%, #9b1fa8 1px, transparent 1px)", backgroundSize: "40px 40px" }}></div>
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-50 to-transparent"></div>
           <div className="relative max-w-7xl mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-center gap-12">
 
@@ -151,13 +151,13 @@ const SagradaFamiliaHomePage = () => {
                   className="h-16 w-auto object-contain mx-auto lg:mx-0"
                   loading="eager"
                 />
-                <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest backdrop-blur-sm">✦ Tabela Atualizada 2026</span>
-                <h1 className="sf-heading text-3xl md:text-5xl text-white leading-tight">
+                <span style={{ background: '#f3e8f5', color: '#9b1fa8' }} className="inline-block px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">✦ Tabela Atualizada 2026</span>
+                <h1 className="sf-heading text-3xl md:text-5xl leading-tight" style={{ color: '#1a4a7a' }}>
                   Plano de Saúde <br className="hidden md:block" />
-                  <span style={{ color: '#d97de8' }}>Sagrada Família</span>
+                  <span style={{ color: '#9b1fa8' }}>Sagrada Família</span>
                 </h1>
-                <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium">
-                  Um plano sob medida para você, sua família e sua empresa — com atendimento humanizado e <span style={{ color: '#d97de8' }} className="font-black">cotação 100% gratuita</span>.
+                <p className="text-slate-600 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium">
+                  Um plano sob medida para você, sua família e sua empresa — com atendimento humanizado e <span style={{ color: '#9b1fa8' }} className="font-black">cotação 100% gratuita</span>.
                 </p>
                 <div className="grid grid-cols-2 gap-3 max-w-xl mx-auto lg:mx-0">
                   {[
@@ -168,8 +168,8 @@ const SagradaFamiliaHomePage = () => {
                     "Plano individual e familiar",
                     "Desconto para CNPJ/MEI",
                   ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-2 text-white/90 text-sm font-medium">
-                      <CheckCircle2 size={14} className="text-green-400 shrink-0" /> {item}
+                    <div key={i} className="flex items-center gap-2 text-slate-700 text-sm font-medium">
+                      <CheckCircle2 size={14} className="text-green-500 shrink-0" /> {item}
                     </div>
                   ))}
                 </div>
@@ -186,7 +186,7 @@ const SagradaFamiliaHomePage = () => {
 
               {/* FORMULÁRIO */}
               <div className="w-full lg:w-2/5">
-                <div className="bg-white rounded-[40px] shadow-[0_30px_80px_rgba(0,0,0,0.25)] p-8 md:p-10 relative flex flex-col justify-center">
+                <div className="bg-white rounded-[40px] shadow-[0_30px_80px_rgba(26,74,122,0.15)] border border-purple-100 p-8 md:p-10 relative flex flex-col justify-center">
                   {!sent ? (
                     <>
                       <div style={{ background: '#1a4a7a' }} className="absolute -top-4 left-1/2 -translate-x-1/2 text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10 shadow-lg">
