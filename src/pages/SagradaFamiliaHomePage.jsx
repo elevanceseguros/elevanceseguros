@@ -16,6 +16,7 @@ const planos = [
     preco: "R$ 154,49",
     detalhe: "00–18 anos · Enfermaria · 1 a 29 vidas",
     registro: "ANS 497.308/23-9",
+    foto: "/hospitais/plano-adesao.jpg",
   },
   {
     nome: "Plano Sênior",
@@ -23,6 +24,7 @@ const planos = [
     preco: "R$ 513,00",
     detalhe: "44 a 48 anos · Enfermaria",
     registro: "ANS 493.030/22-4",
+    foto: "/hospitais/plano-senior.jpg",
   },
   {
     nome: "Plano Empresarial PME",
@@ -30,6 +32,7 @@ const planos = [
     preco: "R$ 119,50",
     detalhe: "00–18 anos · Enfermaria · 1 a 29 vidas",
     registro: "ANS 497.008/23-0",
+    foto: "/hospitais/plano-empresarial.jpg",
   },
 ];
 
@@ -279,6 +282,9 @@ const SagradaFamiliaHomePage = () => {
                       ⭐ Mais Procurado
                     </div>
                   )}
+                  <div className="h-44 overflow-hidden">
+                    <img src={p.foto} alt={p.nome} className="w-full h-full object-cover" loading="lazy" />
+                  </div>
                   <div className="p-7 flex flex-col flex-1">
                     <h3 className="sf-heading text-lg mb-1" style={{ color: '#1a4a7a' }}>{p.nome}</h3>
                     <div className="text-3xl font-black text-slate-800 my-3">{p.preco}<span className="text-sm font-medium text-slate-400">/mês</span></div>
