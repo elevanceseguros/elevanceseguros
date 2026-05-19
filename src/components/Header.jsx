@@ -41,7 +41,7 @@ const Header = () => {
   const saudeRef = useRef(null);
   const autoRef = useRef(null);
   const segurosRef = useRef(null);
-  const logo = "/logos/elevance-dark-horizontal-white.png";
+  const logo = "/logos/elevance-dark-horizontal-gold.png";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);

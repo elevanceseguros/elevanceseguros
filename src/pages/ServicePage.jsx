@@ -89,7 +89,7 @@ const ServicePage = ({ type }) => {
         <meta property=" />
         <meta name="twitter:description" content=" content={meta['og:description']} />
         <meta property=" />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       <SchemaMarkup pageType="Service" breadcrumbs={breadcrumbs} />

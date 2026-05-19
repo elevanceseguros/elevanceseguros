@@ -21,7 +21,7 @@ const SagradaFamiliaThankYouPage = () => {
               <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Elevance Seguros" />
         <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       <div className="min-h-screen pt-28 pb-20 bg-gradient-to-b from-blue-50 to-white flex items-center justify-center px-4">

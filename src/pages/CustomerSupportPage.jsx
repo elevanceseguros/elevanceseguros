@@ -60,7 +60,7 @@ const CustomerSupportPage = () => {
               <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Elevance Seguros" />
         <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       <Hero customTitle="Suporte ao Cliente" />

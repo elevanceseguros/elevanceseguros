@@ -79,12 +79,12 @@ export default function SaudeLanding() {
         <meta property="og:description" content="Compare planos de saúde em São Paulo. Cotação gratuita em minutos via WhatsApp. Sem burocracia." />
         <meta property="og:url" content="https://saude.elevanceseguros.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://saude.elevanceseguros.com/logos/elevance-icon.png" />
+        <meta property="og:image" content="https://saude.elevanceseguros.com/preview.webp" />
         <link rel="canonical" href="https://saude.elevanceseguros.com" />
               <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content=" content=" />
         <meta name="twitter:description" content=" content=" />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       {/* NAV */}
@@ -105,7 +105,7 @@ export default function SaudeLanding() {
           <div className="flex items-center gap-4">
             <div className="relative shrink-0">
               <div className="w-11 h-11 rounded-full border-2 border-white shadow-md overflow-hidden bg-slate-200">
-                <img src="/logos/elevance-icon.png" alt="Rodrigo Farias" className="w-full h-full object-cover object-top" loading="eager" />
+                <img src="/preview.webp" alt="Rodrigo Farias" className="w-full h-full object-cover object-top" loading="eager" />
               </div>
               <div className="absolute -bottom-0.5 -right-0.5 bg-green-500 w-3 h-3 rounded-full border-2 border-white animate-pulse"></div>
             </div>

@@ -526,7 +526,7 @@ const SagradaFamiliaHomePage = () => {
 
         {/* FOOTER */}
         <footer style={{ background: '#ffffff', borderTop: '2px solid #e8d5ed' }} className="py-8 px-4 text-center">
-          <img src="/logos/sagrada-familia-logo.png" alt="Sagrada Família Saúde" className="h-10 w-auto mx-auto mb-3" loading="lazy" />
+          <img src="/logos/sagrada-familia-logo.png" alt="Sagrada Família Saúde" className="h-12 w-auto mx-auto mb-3" loading="lazy" />
           <div className="flex items-center justify-center gap-2 mb-3">
             <span className="text-slate-400 text-[9px] uppercase tracking-widest font-bold">Corretora Autorizada</span>
             <img src="/logos/elevance-light.png" alt="Elevance Seguros" className="h-5 w-auto" loading="lazy" />

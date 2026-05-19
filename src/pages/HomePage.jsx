@@ -11,7 +11,7 @@ import {
 
 const HomePage = () => {
   const [sent, setSent] = useState(false);
-  const fotoHero = "/logos/elevance-icon.png";
+  const fotoHero = "/preview.webp";
   const meuNumero = "5511920144864";
 
   const handleSubmit = async (e) => {
@@ -38,13 +38,13 @@ const HomePage = () => {
               <meta property="og:type" content="website" />
         <meta property="og:title" content="Elevance Seguros | Corretora Digital em São Paulo" />
         <meta property="og:description" content="Planos de saúde, seguro auto, vida, residencial, empresarial e consórcios em SP. Cotação gratuita com o corretor Rodrigo Farias." />
-        <meta property="og:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
+        <meta property="og:image" content="https://www.elevanceseguros.com/preview.webp" />
         <meta property="og:url" content="https://www.elevanceseguros.com" />
         <meta property="og:site_name" content="Elevance Seguros" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Elevance Seguros | Corretora Digital em São Paulo" />
         <meta name="twitter:description" content="Planos de saúde, seguro auto, vida, residencial, empresarial e consórcios em SP. Cotação gratuita com o corretor Rodrigo Farias." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
       <div className="min-h-screen bg-white font-sans">
       
