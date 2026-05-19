@@ -407,22 +407,36 @@ const SagradaFamiliaHomePage = () => {
                 </div>
 
                 {/* MEI/CNPJ */}
-                <div style={{ background: '#9b1fa8' }} className="rounded-[30px] p-6 text-white flex items-center gap-4 relative overflow-hidden">
-                  <img src="/logos/sagrada-familia-white.png" alt="" className="absolute right-3 top-1/2 -translate-y-1/2 h-14 opacity-20 pointer-events-none select-none" aria-hidden="true" />
-                  <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center shrink-0 z-10">
-                    <Users size={24} />
+                <div style={{ background: '#9b1fa8' }} className="rounded-[30px] p-6 text-white relative overflow-hidden">
+                  {/* Logo branca — desktop: canto direito decorativa | mobile: centralizada no topo */}
+                  <img
+                    src="/logos/sagrada-familia-white.png"
+                    alt=""
+                    className="block lg:hidden w-28 mx-auto mb-4 opacity-30 pointer-events-none select-none"
+                    aria-hidden="true"
+                  />
+                  <img
+                    src="/logos/sagrada-familia-white.png"
+                    alt=""
+                    className="hidden lg:block absolute right-6 top-1/2 -translate-y-1/2 h-16 opacity-20 pointer-events-none select-none"
+                    aria-hidden="true"
+                  />
+                  <div className="flex items-center gap-4 relative z-10">
+                    <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center shrink-0">
+                      <Users size={24} />
+                    </div>
+                    <div className="flex-1">
+                      <p className="sf-heading text-base">Possui CNPJ ou MEI?</p>
+                      <p className="text-white/70 text-sm">Desconto de até <span className="text-yellow-300 font-black">30%</span> no plano empresarial.</p>
+                    </div>
+                    <a
+                      href={`https://wa.me/${MEU_NUMERO}?text=Olá, quero saber sobre o plano empresarial Sagrada Família`}
+                      target="_blank" rel="noreferrer"
+                      className="bg-white/20 hover:bg-white/30 text-white px-4 py-3 rounded-2xl font-black text-[10px] uppercase tracking-wide transition-all shrink-0"
+                    >
+                      Saber mais
+                    </a>
                   </div>
-                  <div className="flex-1 z-10">
-                    <p className="sf-heading text-base">Possui CNPJ ou MEI?</p>
-                    <p className="text-white/70 text-sm">Desconto de até <span className="text-yellow-300 font-black">30%</span> no plano empresarial.</p>
-                  </div>
-                  <a
-                    href={`https://wa.me/${MEU_NUMERO}?text=Olá, quero saber sobre o plano empresarial Sagrada Família`}
-                    target="_blank" rel="noreferrer"
-                    className="bg-white/20 hover:bg-white/30 text-white px-4 py-3 rounded-2xl font-black text-[10px] uppercase tracking-wide transition-all shrink-0 z-10"
-                  >
-                    Saber mais
-                  </a>
                 </div>
               </div>
             </div>
@@ -474,10 +488,13 @@ const SagradaFamiliaHomePage = () => {
           <div className="max-w-7xl mx-auto px-4">
             <div style={{ background: 'linear-gradient(135deg, #1a4a7a 0%, #9b1fa8 100%)' }} className="rounded-[50px] py-14 px-8 md:px-16 text-white flex flex-col lg:flex-row items-center gap-12 relative overflow-hidden">
               <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px" }}></div>
-              {/* Logo branca decorativa */}
-              <img src="/logos/sagrada-familia-white.png" alt="" className="absolute right-8 bottom-4 h-16 opacity-10 hidden lg:block pointer-events-none" aria-hidden="true" />
               <div className="lg:w-1/2 space-y-4 z-10 text-center lg:text-left">
-                <img src="/logos/sagrada-familia-white.png" alt="Sagrada Família Saúde" className="h-10 w-auto mb-2 mx-auto lg:mx-0 opacity-90" />
+                {/* Logo branca — sempre visível, tamanho responsivo */}
+                <img
+                  src="/logos/sagrada-familia-white.png"
+                  alt="Sagrada Família Saúde"
+                  className="h-10 w-auto mx-auto lg:mx-0 opacity-90"
+                />
                 <h2 className="sf-heading text-3xl md:text-4xl leading-tight">Pronto para proteger sua família?</h2>
                 <p className="text-white/75 font-medium">Cuidar da saúde nunca foi tão simples, seguro e completo. Cotação gratuita, sem burocracia, sem compromisso.</p>
               </div>
