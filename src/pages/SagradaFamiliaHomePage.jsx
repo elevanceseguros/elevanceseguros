@@ -89,7 +89,7 @@ const SagradaFamiliaHomePage = () => {
       <Helmet>
         <title>Plano Sagrada Família SP | Tabela 2026 — Cotação Gratuita</title>
         <link rel="icon" type="image/x-icon" href="/sagrada-familia-favicon.ico" />
-        <link rel="apple-touch-icon" href="/sagrada-familia-favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/sagrada-familia-apple-touch-icon.png" />
         <meta name="description" content="Plano de Saúde Sagrada Família em São Paulo. Tabela de preços 2026, 5 hospitais próprios, cobertura completa. Cotação gratuita." />
         <link rel="canonical" href="https://sagradafamilia.elevanceseguros.com" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
