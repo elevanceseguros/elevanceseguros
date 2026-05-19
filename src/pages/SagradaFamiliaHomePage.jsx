@@ -407,7 +407,8 @@ const SagradaFamiliaHomePage = () => {
                 </div>
 
                 {/* MEI/CNPJ */}
-                <div style={{ background: '#9b1fa8' }} className="rounded-[30px] p-6 text-white flex items-center gap-4">
+                <div style={{ background: '#9b1fa8' }} className="rounded-[30px] p-6 text-white flex items-center gap-4 relative overflow-hidden">
+                  <img src="/logos/sagrada-familia-white.png" alt="" className="absolute right-4 top-1/2 -translate-y-1/2 h-12 opacity-10 pointer-events-none" aria-hidden="true" />
                   <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center shrink-0">
                     <Users size={24} />
                   </div>
@@ -418,7 +419,7 @@ const SagradaFamiliaHomePage = () => {
                   <a
                     href={`https://wa.me/${MEU_NUMERO}?text=Olá, quero saber sobre o plano empresarial Sagrada Família`}
                     target="_blank" rel="noreferrer"
-                    className="bg-white/20 hover:bg-white/30 text-white px-4 py-3 rounded-2xl font-black text-[10px] uppercase tracking-wide transition-all shrink-0"
+                    className="bg-white/20 hover:bg-white/30 text-white px-4 py-3 rounded-2xl font-black text-[10px] uppercase tracking-wide transition-all shrink-0 z-10"
                   >
                     Saber mais
                   </a>
@@ -432,9 +433,7 @@ const SagradaFamiliaHomePage = () => {
         <section style={{ background: '#f4f0f8' }} className="py-10">
           <div className="max-w-3xl mx-auto px-4">
             <div className="bg-white rounded-[30px] border border-purple-100 shadow-sm p-8 flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
-              <div className="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0" style={{ background: '#f3e8f5' }}>
-                <Phone size={26} style={{ color: '#9b1fa8' }} />
-              </div>
+              <img src="/logos/sagrada-familia-logo.png" alt="Sagrada Família Saúde" className="h-12 w-auto object-contain shrink-0" loading="lazy" />
               <div className="flex-1">
                 <h3 className="sf-heading text-lg" style={{ color: '#1a4a7a' }}>Já é Cliente?</h3>
                 <p className="text-slate-500 text-sm mt-1">Quer marcar consultas ou tem dúvidas sobre seu plano? Acesse a Central de Clientes da Sagrada Família.</p>
