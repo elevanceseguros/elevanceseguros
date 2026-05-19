@@ -125,7 +125,7 @@ const SagradaFamiliaHomePage = () => {
               <div className="w-px h-6 bg-slate-200"></div>
               <div className="flex flex-col items-start">
                 <span className="text-slate-400 text-[7px] uppercase tracking-widest font-bold">Corretora Autorizada</span>
-                <img src="/logos/elevance-light.png" alt="Elevance Seguros" className="h-5 w-auto object-contain mt-0.5" loading="eager" />
+                <img src="/logos/elevance-light.png" alt="Elevance Seguros" className="h-8 w-auto object-contain mt-0.5" loading="eager" />
               </div>
             </div>
             <a
