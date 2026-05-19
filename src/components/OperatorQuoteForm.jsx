@@ -25,7 +25,7 @@ const OperatorQuoteForm = ({ operatorName }) => {
     <div className="bg-white rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 p-8 md:p-10 relative min-h-[320px] flex flex-col justify-center transition-all duration-500">
       {!sent ? (
         <>
-          <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+          <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d1f3c] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
             <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
           </div>
           <form onSubmit={handleSubmit} className="space-y-4 mt-4">
@@ -39,7 +39,7 @@ const OperatorQuoteForm = ({ operatorName }) => {
             />
             <button
               type="submit"
-              className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2"
+              className="w-full bg-[#0d1f3c] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2"
             >
               RECEBER CONTATO GRATUITO <MessageCircle size={16} />
             </button>
@@ -54,7 +54,7 @@ const OperatorQuoteForm = ({ operatorName }) => {
             <PartyPopper size={40} />
           </div>
           <div className="space-y-2">
-            <h3 className="text-2xl font-black text-[#114d8e] italic">Solicitação Enviada!</h3>
+            <h3 className="text-2xl font-black text-[#0d1f3c] italic">Solicitação Enviada!</h3>
             <p className="text-slate-500 font-medium text-sm leading-relaxed">
               Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊
             </p>

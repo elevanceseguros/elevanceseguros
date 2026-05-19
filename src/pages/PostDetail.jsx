@@ -14,7 +14,7 @@ const PostDetail = () => {
 
   if (!post) return (
     <div className="py-40 text-center">
-      <p className="font-black text-2xl text-[#114d8e] mb-4">Post não encontrado.</p>
+      <p className="font-black text-2xl text-[#0d1f3c] mb-4">Post não encontrado.</p>
       <Link to="/blog" className="text-blue-600 font-bold underline">Voltar ao Blog</Link>
     </div>
   );
@@ -28,7 +28,7 @@ const PostDetail = () => {
               <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Elevance Seguros" />
         <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
       </Helmet>
       <article className="max-w-3xl mx-auto px-4">
 
@@ -58,7 +58,7 @@ const PostDetail = () => {
         </div>
 
         {/* TÍTULO */}
-        <h1 className="text-3xl md:text-5xl font-black text-[#114d8e] leading-tight mb-8 italic">{post.title}</h1>
+        <h1 className="text-3xl md:text-5xl font-black text-[#0d1f3c] leading-tight mb-8 italic">{post.title}</h1>
 
         {/* IMAGEM */}
         <img src={post.image} className="w-full h-80 md:h-96 object-cover rounded-[40px] mb-12 shadow-2xl" alt={post.title} loading="eager" decoding="async" />
@@ -70,7 +70,7 @@ const PostDetail = () => {
         />
 
         {/* CTA */}
-        <div className="mt-16 p-10 bg-[#114d8e] rounded-[40px] text-white text-center space-y-4">
+        <div className="mt-16 p-10 bg-[#0d1f3c] rounded-[40px] text-white text-center space-y-4">
           <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mx-auto">
             <MessageCircle size={24} className="text-green-400" />
           </div>
@@ -85,7 +85,7 @@ const PostDetail = () => {
         {/* POSTS RELACIONADOS */}
         {relacionados.length > 0 && (
           <div className="mt-16">
-            <h3 className="text-xl font-black text-[#114d8e] italic mb-6">Leia também</h3>
+            <h3 className="text-xl font-black text-[#0d1f3c] italic mb-6">Leia também</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {relacionados.map(rel => (
                 <Link key={rel.slug} to={`/blog/${rel.slug}`}
@@ -93,7 +93,7 @@ const PostDetail = () => {
                   <img src={rel.image} alt={rel.title} className="w-full h-40 object-cover" />
                   <div className="p-5">
                     <span className="text-blue-600 font-black text-[10px] uppercase">{rel.category}</span>
-                    <h4 className="font-black text-[#114d8e] text-sm mt-1 group-hover:text-blue-600 transition-colors leading-snug">{rel.title}</h4>
+                    <h4 className="font-black text-[#0d1f3c] text-sm mt-1 group-hover:text-blue-600 transition-colors leading-snug">{rel.title}</h4>
                     {rel.readTime && (
                       <div className="flex items-center gap-1 mt-2 text-slate-400 text-xs font-bold">
                         <Clock size={11} /> {rel.readTime}
@@ -108,7 +108,7 @@ const PostDetail = () => {
 
       
         {/* CTA pós-artigo */}
-        <div className="mt-12 bg-[#114d8e] rounded-[30px] p-8 text-white text-center space-y-4">
+        <div className="mt-12 bg-[#0d1f3c] rounded-[30px] p-8 text-white text-center space-y-4">
           <p className="text-[10px] font-black uppercase tracking-widest text-white/60">Gostou do conteúdo?</p>
           <h3 className="text-2xl font-black italic">Quer uma cotação gratuita?</h3>
           <p className="text-white/75 text-sm font-medium">Rodrigo responde em minutos. Sem compromisso, sem burocracia.</p>

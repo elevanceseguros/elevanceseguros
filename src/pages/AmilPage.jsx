@@ -66,7 +66,7 @@ const AmilPage = () => {
                 <ShieldCheck className="w-4 h-4" /> Ampla rede credenciada
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
-                Plano de Saúde Amil em SP: <span className="text-[#114d8e]">veja tabela e cobertura 2026</span>
+                Plano de Saúde Amil em SP: <span className="text-[#0d1f3c]">veja tabela e cobertura 2026</span>
               </h1>
               <p className="text-xl text-white/80 mb-8 leading-relaxed">
                 A Amil é uma das maiores operadoras de saúde do Brasil, com ampla rede credenciada em São Paulo e em todo o país. Planos individuais, familiares e empresariais com cobertura completa.
@@ -124,7 +124,7 @@ const AmilPage = () => {
           <div className="mt-10">
             <a href="https://wa.me/5511920144864?text=Olá Rodrigo, quero cotar um plano Amil"
               target="_blank" rel="noreferrer"
-              className="inline-flex items-center gap-3 bg-[#114d8e] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
+              className="inline-flex items-center gap-3 bg-[#0d1f3c] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
               <MessageCircle size={16} /> Cotar via WhatsApp <ArrowRight size={16} />
             </a>
           </div>
@@ -148,7 +148,7 @@ const AmilPage = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Também trabalhamos com</p>
           <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
-            <a href="/bradescosaude" className="text-[#114d8e] font-black hover:underline">Bradesco Saúde</a> · <a href="/sulamerica" className="text-[#114d8e] font-black hover:underline">SulAmérica</a> · <a href="/hapvida" className="text-[#114d8e] font-black hover:underline">Hapvida</a> · <a href="/unimed" className="text-[#114d8e] font-black hover:underline">Unimed</a> · <a href="/alice" className="text-[#114d8e] font-black hover:underline">Alice</a>
+            <a href="/bradescosaude" className="text-[#0d1f3c] font-black hover:underline">Bradesco Saúde</a> · <a href="/sulamerica" className="text-[#0d1f3c] font-black hover:underline">SulAmérica</a> · <a href="/hapvida" className="text-[#0d1f3c] font-black hover:underline">Hapvida</a> · <a href="/unimed" className="text-[#0d1f3c] font-black hover:underline">Unimed</a> · <a href="/alice" className="text-[#0d1f3c] font-black hover:underline">Alice</a>
           </p>
         </div>
       </section>

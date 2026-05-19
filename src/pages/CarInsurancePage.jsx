@@ -70,7 +70,7 @@ const CarInsurancePage = () => {
               <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Elevance Seguros" />
         <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
       </Helmet>
 
       {/* Hero Section */}
@@ -96,7 +96,7 @@ const CarInsurancePage = () => {
               <AnimatePresence mode="wait">
                 {!enviado ? (
                   <div className="bg-white p-8 rounded-3xl shadow-2xl border border-slate-100">
-                    <h3 className="text-[#114d8e] text-2xl font-bold mb-6">Cotação em 1 minuto</h3>
+                    <h3 className="text-[#0d1f3c] text-2xl font-bold mb-6">Cotação em 1 minuto</h3>
                     <form onSubmit={handleSubmit} className="space-y-4">
                       <div>
                         <label className="block text-sm font-bold text-slate-700 mb-1">Seu Nome</label>
@@ -133,7 +133,7 @@ const CarInsurancePage = () => {
                 ) : (
                   <motion.div initial={{ scale: 0.9 }} animate={{ scale: 1 }} className="bg-white p-12 rounded-3xl text-center shadow-2xl">
                     <CheckCircle2 className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                    <h3 className="text-[#114d8e] font-bold text-2xl">Solicitado!</h3>
+                    <h3 className="text-[#0d1f3c] font-bold text-2xl">Solicitado!</h3>
                     <p className="text-slate-500 mt-2 text-lg">Nossa equipe entrará em contato via WhatsApp agora mesmo.</p>
                   </motion.div>
                 )}

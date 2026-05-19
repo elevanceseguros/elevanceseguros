@@ -22,8 +22,8 @@ const FAQ = ({ perguntas }) => {
       </Helmet>
       <div className="max-w-3xl mx-auto px-4">
         <div className="text-center mb-10">
-          <span className="inline-block bg-[#114d8e]/10 text-[#114d8e] px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-3">FAQ</span>
-          <h2 className="text-3xl font-black text-[#114d8e] italic">Perguntas Frequentes</h2>
+          <span className="inline-block bg-[#0d1f3c]/10 text-[#0d1f3c] px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-3">FAQ</span>
+          <h2 className="text-3xl font-black text-[#0d1f3c] italic">Perguntas Frequentes</h2>
         </div>
         <div className="space-y-3">
           {perguntas.map((item, i) => (
@@ -33,7 +33,7 @@ const FAQ = ({ perguntas }) => {
                 className="w-full flex items-center justify-between px-6 py-4 text-left gap-4"
               >
                 <span className="font-black text-slate-800 text-sm">{item.pergunta}</span>
-                <ChevronDown size={18} className={`text-[#114d8e] shrink-0 transition-transform duration-300 ${aberto === i ? 'rotate-180' : ''}`} />
+                <ChevronDown size={18} className={`text-[#0d1f3c] shrink-0 transition-transform duration-300 ${aberto === i ? 'rotate-180' : ''}`} />
               </button>
               {aberto === i && (
                 <div className="px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-50 pt-3">

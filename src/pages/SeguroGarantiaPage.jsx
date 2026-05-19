@@ -58,7 +58,7 @@ export default function SeguroGarantiaPage() {
               <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Elevance Seguros" />
         <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
       </Helmet>
 
       <CorretorHero operadora="Seguro Garantia" />
@@ -107,7 +107,7 @@ export default function SeguroGarantiaPage() {
                 
                   {!sent ? (
                     <div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d1f3c] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
                         <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
@@ -116,7 +116,7 @@ export default function SeguroGarantiaPage() {
                         <input name="whatsapp" type="tel" required placeholder="Ex: 11 99999-9999"
                           className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
                         <button type="submit"
-                          className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                          className="w-full bg-[#0d1f3c] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
                           RECEBER CONTATO GRATUITO <MessageCircle size={16} />
                         </button>
                         <p className="text-[9px] text-center text-slate-400 font-bold uppercase italic">
@@ -129,7 +129,7 @@ export default function SeguroGarantiaPage() {
                       <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto shadow-inner">
                         <PartyPopper size={40} />
                       </div>
-                      <h3 className="text-2xl font-black text-[#114d8e] italic">Solicitação Enviada!</h3>
+                      <h3 className="text-2xl font-black text-[#0d1f3c] italic">Solicitação Enviada!</h3>
                       <p className="text-slate-500 font-medium text-sm leading-relaxed">
                         Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊
                       </p>
@@ -147,13 +147,13 @@ export default function SeguroGarantiaPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-10">
             <span className="inline-block bg-emerald-100 text-emerald-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-3">Modalidades</span>
-            <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic">Qual garantia sua empresa precisa?</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-[#0d1f3c] italic">Qual garantia sua empresa precisa?</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {modalidades.map((m, i) => (
               <div key={i} className="bg-emerald-50 rounded-[30px] p-6 hover:shadow-lg transition-all border border-emerald-100 space-y-3">
                 <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm">{m.icon}</div>
-                <h3 className="font-black text-[#114d8e] text-base">{m.titulo}</h3>
+                <h3 className="font-black text-[#0d1f3c] text-base">{m.titulo}</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">{m.desc}</p>
               </div>
             ))}
@@ -166,7 +166,7 @@ export default function SeguroGarantiaPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="bg-white rounded-[40px] shadow-xl overflow-hidden border border-slate-100">
-              <div className="bg-[#114d8e] p-6 text-white flex items-center gap-3">
+              <div className="bg-[#0d1f3c] p-6 text-white flex items-center gap-3">
                 <LayoutList className="w-5 h-5 opacity-80" />
                 <div>
                   <h2 className="text-lg font-black uppercase tracking-tight">Custo por Modalidade</h2>
@@ -179,7 +179,7 @@ export default function SeguroGarantiaPage() {
                     <tr className="border-b-2 border-slate-50 text-left">
                       <th className="py-3 font-bold text-slate-400 text-xs uppercase">Modalidade</th>
                       <th className="py-3 font-bold text-slate-600 text-xs uppercase">Quando usar</th>
-                      <th className="py-3 font-bold text-[#114d8e] text-xs uppercase">Custo aprox.</th>
+                      <th className="py-3 font-bold text-[#0d1f3c] text-xs uppercase">Custo aprox.</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-50">
@@ -187,7 +187,7 @@ export default function SeguroGarantiaPage() {
                       <tr key={i} className="hover:bg-slate-50 transition-colors">
                         <td className="py-3 text-slate-600 font-medium text-xs">{row.modalidade}</td>
                         <td className="py-3 text-slate-700 font-semibold text-sm">{row.quando}</td>
-                        <td className="py-3 font-black text-sm text-[#114d8e]">{row.custo}</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">{row.custo}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -195,7 +195,7 @@ export default function SeguroGarantiaPage() {
                 <p className="text-[10px] text-slate-400 italic mt-3">*Valores referenciais. Variam por seguradora, porte da empresa e histórico de crédito.</p>
                 <a href={`https://wa.me/${MEU_NUMERO}?text=Ol%C3%A1+Rodrigo%2C+quero+cotar+Seguro+Garantia`}
                   target="_blank" rel="noreferrer"
-                  className="w-full mt-5 bg-[#114d8e] hover:bg-blue-700 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2">
+                  className="w-full mt-5 bg-[#0d1f3c] hover:bg-blue-700 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2">
                   Solicitar Cotação de Garantia <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
@@ -207,9 +207,9 @@ export default function SeguroGarantiaPage() {
               </div>
               <p className="text-slate-600 text-sm leading-relaxed mb-5 italic font-medium">&ldquo;Precisávamos de uma garantia de execução para um contrato público de R$ 2 milhões. O Rodrigo resolveu em 48 horas, sem burocracia e com custo muito abaixo do que o banco nos ofereceu. Fundamental para o negócio.&rdquo;</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-2xl bg-[#114d8e] flex items-center justify-center text-white font-black text-sm shrink-0">P</div>
+                <div className="w-10 h-10 rounded-2xl bg-[#0d1f3c] flex items-center justify-center text-white font-black text-sm shrink-0">P</div>
                 <div>
-                  <div className="font-black text-[#114d8e] text-sm">Paulo</div>
+                  <div className="font-black text-[#0d1f3c] text-sm">Paulo</div>
                   <div className="text-slate-400 text-xs font-medium">São Paulo, SP · Seguro Garantia de Execução</div>
                 </div>
               </div>
@@ -222,7 +222,7 @@ export default function SeguroGarantiaPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-black text-[#114d8e] italic">Seguro Garantia vs Fiança Bancária</h2>
+            <h2 className="text-3xl font-black text-[#0d1f3c] italic">Seguro Garantia vs Fiança Bancária</h2>
             <p className="text-slate-500 mt-2 font-medium">Por que o seguro garantia é a melhor escolha para sua empresa</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
@@ -233,7 +233,7 @@ export default function SeguroGarantiaPage() {
             ].map((item, i) => (
               <div key={i} className={`bg-${item.cor}-50 rounded-[30px] p-6 border border-${item.cor}-100`}>
                 <CheckCircle2 className={`w-8 h-8 text-${item.cor}-500 mb-3`} />
-                <h3 className="font-black text-[#114d8e] text-base mb-2">{item.titulo}</h3>
+                <h3 className="font-black text-[#0d1f3c] text-base mb-2">{item.titulo}</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -242,7 +242,7 @@ export default function SeguroGarantiaPage() {
       </section>
 
       {/* CTA FINAL */}
-      <section className="py-16 bg-[#114d8e]">
+      <section className="py-16 bg-[#0d1f3c]">
         <div className="max-w-3xl mx-auto px-4 text-center space-y-6">
           <h2 className="text-3xl md:text-4xl font-black text-white italic">Precisa de seguro garantia?</h2>
           <p className="text-white/80 text-base font-medium">Envie os dados do contrato ou licitação e receba uma cotação personalizada em até 24 horas.</p>

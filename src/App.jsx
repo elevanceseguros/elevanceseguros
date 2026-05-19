@@ -64,7 +64,7 @@ const SaudeLanding = lazy(() => import('@/pages/SaudeLanding'));
 
 const LoadingFallback = () => (
   <div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh',width:'100%'}}>
-    <div style={{width:'40px',height:'40px',border:'3px solid #114d8e',borderTopColor:'transparent',borderRadius:'50%',animation:'spin 0.8s linear infinite'}} />
+    <div style={{width:'40px',height:'40px',border:'3px solid #0d1f3c',borderTopColor:'transparent',borderRadius:'50%',animation:'spin 0.8s linear infinite'}} />
     <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
   </div>
 );
@@ -111,7 +111,7 @@ const AppContent = () => {
       <Helmet>
         <html lang="pt-br" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#114d8e" />
+        <meta name="theme-color" content="#0d1f3c" />
       </Helmet>
       
       <div className="min-h-screen bg-white font-sans text-slate-900 flex flex-col">

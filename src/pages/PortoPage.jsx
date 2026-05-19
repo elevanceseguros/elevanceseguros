@@ -34,7 +34,7 @@ const PortoPage = () => {
               <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Elevance Seguros" />
         <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
       </Helmet>
 
       <CorretorHero operadora="Porto Saúde" />
@@ -118,7 +118,7 @@ const PortoPage = () => {
           <div className="mt-10">
             <a href="https://wa.me/5511920144864?text=Olá Rodrigo, quero cotar um plano Porto Saúde"
               target="_blank" rel="noreferrer"
-              className="inline-flex items-center gap-3 bg-[#114d8e] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
+              className="inline-flex items-center gap-3 bg-[#0d1f3c] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
               <MessageCircle size={16} /> Cotar via WhatsApp <ArrowRight size={16} />
             </a>
           </div>
@@ -141,7 +141,7 @@ const PortoPage = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Também trabalhamos com</p>
           <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
-            <a href="/amil" className="text-sky-300 font-black hover:underline">Amil</a> · <a href="/sulamerica" className="text-[#114d8e] font-black hover:underline">SulAmérica</a> · <a href="/bradescosaude" className="text-[#114d8e] font-black hover:underline">Bradesco Saúde</a> · <a href="/alice" className="text-[#114d8e] font-black hover:underline">Alice</a> · <a href="/medsenior" className="text-[#114d8e] font-black hover:underline">MedSênior</a>
+            <a href="/amil" className="text-sky-300 font-black hover:underline">Amil</a> · <a href="/sulamerica" className="text-[#0d1f3c] font-black hover:underline">SulAmérica</a> · <a href="/bradescosaude" className="text-[#0d1f3c] font-black hover:underline">Bradesco Saúde</a> · <a href="/alice" className="text-[#0d1f3c] font-black hover:underline">Alice</a> · <a href="/medsenior" className="text-[#0d1f3c] font-black hover:underline">MedSênior</a>
           </p>
         </div>
       </section>

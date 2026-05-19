@@ -52,7 +52,7 @@ export default function OdontologicoPage() {
               <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Elevance Seguros" />
         <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
       </Helmet>
 
       <CorretorHero operadora="um Plano Odontológico" />
@@ -100,7 +100,7 @@ export default function OdontologicoPage() {
                 
                   {!sent ? (
                     <div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d1f3c] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
                         <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
@@ -109,7 +109,7 @@ export default function OdontologicoPage() {
                         <input name="whatsapp" type="tel" required placeholder="Ex: 11 99999-9999"
                           className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-sky-500 transition-all" />
                         <button type="submit"
-                          className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                          className="w-full bg-[#0d1f3c] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
                           RECEBER CONTATO GRATUITO <MessageCircle size={16} />
                         </button>
                         <div className="flex items-center justify-center gap-3 flex-wrap">
@@ -122,7 +122,7 @@ export default function OdontologicoPage() {
                   ) : (
                     <div key="success" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="text-center space-y-6">
                       <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto"><PartyPopper size={40} /></div>
-                      <h3 className="text-2xl font-black text-[#114d8e] italic">Solicitação Enviada!</h3>
+                      <h3 className="text-2xl font-black text-[#0d1f3c] italic">Solicitação Enviada!</h3>
                       <p className="text-slate-500 text-sm">Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊</p>
                     </div>
                   )}
@@ -136,13 +136,13 @@ export default function OdontologicoPage() {
       {/* BENEFÍCIOS */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-black text-[#114d8e] italic text-center mb-12">O que está incluso?</h2>
+          <h2 className="text-3xl font-black text-[#0d1f3c] italic text-center mb-12">O que está incluso?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {beneficios.map((b, i) => (
               <div
                 className="bg-sky-50 rounded-[30px] p-8 border border-sky-100 hover:shadow-md transition-shadow">
                 <div className="mb-4">{b.icon}</div>
-                <div className="font-black text-[#114d8e] text-sm uppercase tracking-wide mb-2 italic">{b.titulo}</div>
+                <div className="font-black text-[#0d1f3c] text-sm uppercase tracking-wide mb-2 italic">{b.titulo}</div>
                 <div className="text-slate-500 text-sm font-medium leading-relaxed">{b.desc}</div>
               </div>
             ))}
@@ -177,7 +177,7 @@ export default function OdontologicoPage() {
       {/* CTA */}
       <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-[#114d8e] rounded-[50px] p-12 text-center">
+          <div className="bg-[#0d1f3c] rounded-[50px] p-12 text-center">
             <h2 className="text-3xl font-black text-white italic mb-3">Pronto para cuidar do seu sorriso?</h2>
             <p className="text-slate-300 font-medium mb-8">Cotação gratuita e sem compromisso</p>
             <a href={`https://wa.me/${MEU_NUMERO}?text=Olá, quero cotar um Plano Odontológico`} target="_blank" rel="noreferrer"

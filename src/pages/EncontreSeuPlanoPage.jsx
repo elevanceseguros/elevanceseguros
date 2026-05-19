@@ -76,7 +76,7 @@ export default function EncontreSeuPlanoPage() {
       <CorretorHero operadora="um plano de saúde" />
 
       {/* HERO */}
-      <section className="relative pt-16 pb-12 md:pt-20 md:pb-16 bg-[#114d8e] overflow-hidden">
+      <section className="relative pt-16 pb-12 md:pt-20 md:pb-16 bg-[#0d1f3c] overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4">
@@ -106,7 +106,7 @@ export default function EncontreSeuPlanoPage() {
                 
                   {!sent ? (
                     <div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d1f3c] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
                         <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
@@ -119,7 +119,7 @@ export default function EncontreSeuPlanoPage() {
                           <span className="text-[10px] font-black text-orange-600">⚡ Cotação gratuita · Sem compromisso</span>
                         </div>
                         <button type="submit"
-                          className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                          className="w-full bg-[#0d1f3c] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
                           RECEBER CONTATO GRATUITO <MessageCircle size={16} />
                         </button>
                         <div className="flex items-center justify-center gap-3 flex-wrap">
@@ -134,7 +134,7 @@ export default function EncontreSeuPlanoPage() {
                       <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto shadow-inner">
                         <PartyPopper size={40} />
                       </div>
-                      <h3 className="text-2xl font-black text-[#114d8e] italic">Solicitação Enviada!</h3>
+                      <h3 className="text-2xl font-black text-[#0d1f3c] italic">Solicitação Enviada!</h3>
                       <p className="text-slate-500 font-medium text-sm">Estamos abrindo o WhatsApp. Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊</p>
                     </div>
                   )}
@@ -148,7 +148,7 @@ export default function EncontreSeuPlanoPage() {
       {/* OPERADORAS */}
       <section className="py-16 bg-white border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-black text-[#114d8e] italic text-center mb-3">Ou escolha diretamente sua operadora</h2>
+          <h2 className="text-2xl md:text-3xl font-black text-[#0d1f3c] italic text-center mb-3">Ou escolha diretamente sua operadora</h2>
           <p className="text-slate-500 text-center font-medium mb-10">Clique para ver planos e cotar diretamente</p>
 
           {/* Grid desktop: 3x3 | Mobile: Amil wide + 2x2 */}
@@ -180,14 +180,14 @@ export default function EncontreSeuPlanoPage() {
       {/* BENEFÍCIOS */}
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic text-center mb-3">Por que usar a Elevance?</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-[#0d1f3c] italic text-center mb-3">Por que usar a Elevance?</h2>
           <p className="text-slate-500 text-center font-medium mb-12">Consultoria gratuita, atendimento humano</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {beneficios.map((b, i) => (
               <div
                 className="bg-white rounded-[30px] p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                 <div className="mb-4">{b.icon}</div>
-                <div className="font-black text-[#114d8e] text-sm uppercase tracking-wide mb-2 italic">{b.titulo}</div>
+                <div className="font-black text-[#0d1f3c] text-sm uppercase tracking-wide mb-2 italic">{b.titulo}</div>
                 <div className="text-slate-500 text-sm leading-relaxed font-medium">{b.desc}</div>
               </div>
             ))}
@@ -198,7 +198,7 @@ export default function EncontreSeuPlanoPage() {
       {/* CTA */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-[#114d8e] rounded-[50px] p-12 text-center relative overflow-hidden">
+          <div className="bg-[#0d1f3c] rounded-[50px] p-12 text-center relative overflow-hidden">
             <h2 className="text-3xl font-black text-white italic mb-3">Ainda com dúvidas?</h2>
             <p className="text-slate-300 font-medium mb-8">Fale com o Rodrigo agora mesmo</p>
             <a href={`https://wa.me/${MEU_NUMERO}?text=Olá, quero encontrar o melhor plano de saúde`}
@@ -216,14 +216,14 @@ export default function EncontreSeuPlanoPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-10">
-            <span className="inline-block bg-[#114d8e]/10 text-[#114d8e] px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-3">Comparativo</span>
-            <h2 className="text-3xl font-black text-[#114d8e] italic">Qual operadora é certa para você?</h2>
+            <span className="inline-block bg-[#0d1f3c]/10 text-[#0d1f3c] px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-3">Comparativo</span>
+            <h2 className="text-3xl font-black text-[#0d1f3c] italic">Qual operadora é certa para você?</h2>
             <p className="text-slate-500 mt-2 text-sm font-medium">Resumo das principais operadoras disponíveis em São Paulo</p>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="bg-[#114d8e] text-white">
+                <tr className="bg-[#0d1f3c] text-white">
                   <th className="p-4 text-left rounded-tl-2xl text-xs font-black uppercase">Operadora</th>
                   <th className="p-4 text-center text-xs font-black uppercase">Rede</th>
                   <th className="p-4 text-center text-xs font-black uppercase">Preço</th>
@@ -243,11 +243,11 @@ export default function EncontreSeuPlanoPage() {
                   { op: "MedSênior", rede: "⭐⭐⭐", preco: "$$", perfil: "A partir de 49 anos", destaque: "Especialista em idosos" },
                 ].map((row, i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-slate-50" : "bg-white"}>
-                    <td className="p-4 font-black text-[#114d8e]">{row.op}</td>
+                    <td className="p-4 font-black text-[#0d1f3c]">{row.op}</td>
                     <td className="p-4 text-center">{row.rede}</td>
                     <td className="p-4 text-center font-bold text-slate-600">{row.preco}</td>
                     <td className="p-4 text-center text-slate-600 text-xs">{row.perfil}</td>
-                    <td className="p-4 text-center"><span className="bg-blue-100 text-[#114d8e] text-[10px] font-black px-3 py-1 rounded-full">{row.destaque}</span></td>
+                    <td className="p-4 text-center"><span className="bg-blue-100 text-[#0d1f3c] text-[10px] font-black px-3 py-1 rounded-full">{row.destaque}</span></td>
                   </tr>
                 ))}
               </tbody>

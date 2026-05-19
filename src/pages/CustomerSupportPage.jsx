@@ -60,7 +60,7 @@ const CustomerSupportPage = () => {
               <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Elevance Seguros" />
         <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
       </Helmet>
 
       <Hero customTitle="Suporte ao Cliente" />
@@ -74,7 +74,7 @@ const CustomerSupportPage = () => {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 text-blue-600">
                 <Phone className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-[#114d8e] mb-2">Telefone</h3>
+              <h3 className="text-xl font-bold text-[#0d1f3c] mb-2">Telefone</h3>
               <p className="text-gray-600 mb-4">Segunda a Sexta, 9h às 18h</p>
               <a href="tel:5511920144864" className="text-lg font-bold text-blue-600 hover:underline">
                 (11) 92014-4864
@@ -85,7 +85,7 @@ const CustomerSupportPage = () => {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 text-green-600">
                 <MessageCircle className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-[#114d8e] mb-2">WhatsApp</h3>
+              <h3 className="text-xl font-bold text-[#0d1f3c] mb-2">WhatsApp</h3>
               <p className="text-gray-600 mb-4">Atendimento Ágil</p>
               <a 
                 href="https://wa.me/5511920144864" 
@@ -101,7 +101,7 @@ const CustomerSupportPage = () => {
               <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6 text-indigo-600">
                 <Mail className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-[#114d8e] mb-2">E-mail</h3>
+              <h3 className="text-xl font-bold text-[#0d1f3c] mb-2">E-mail</h3>
               <p className="text-gray-600 mb-4">Respostas em até 24h</p>
               <a href="mailto:contato@elevanceseguros.com" className="text-lg font-bold text-indigo-600 hover:underline break-all">
                 contato@elevanceseguros.com
@@ -112,8 +112,8 @@ const CustomerSupportPage = () => {
           {/* FAQ Section */}
           <div className="max-w-4xl mx-auto mb-16">
             <div className="flex items-center gap-3 mb-8 justify-center">
-              <HelpCircle className="w-8 h-8 text-[#114d8e]" />
-              <h2 className="text-3xl font-bold text-[#114d8e]">Perguntas Frequentes</h2>
+              <HelpCircle className="w-8 h-8 text-[#0d1f3c]" />
+              <h2 className="text-3xl font-bold text-[#0d1f3c]">Perguntas Frequentes</h2>
             </div>
             
             <div className="space-y-4">

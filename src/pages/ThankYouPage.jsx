@@ -21,13 +21,13 @@ const ThankYouPage = () => {
               <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Elevance Seguros" />
         <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
       </Helmet>
 
       <div className="min-h-screen pt-28 pb-20 bg-gradient-to-b from-blue-50 to-white flex items-center justify-center px-4">
         <div>
           {/* Header Section */}
-          <div className="bg-[#114d8e] p-8 text-center relative overflow-hidden">
+          <div className="bg-[#0d1f3c] p-8 text-center relative overflow-hidden">
              <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
             <div>
               <CheckCircle2 className="w-12 h-12 text-white" />
@@ -54,7 +54,7 @@ const ThankYouPage = () => {
             <div>
                <div className="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-green-200 rounded-full blur-2xl opacity-50"></div>
               
-              <h3 className="text-xl font-bold text-[#114d8e] mb-3 relative z-10">
+              <h3 className="text-xl font-bold text-[#0d1f3c] mb-3 relative z-10">
                 Quer agilizar seu atendimento?
               </h3>
               <p className="text-slate-700 mb-6 relative z-10">
@@ -93,7 +93,7 @@ const ThankYouPage = () => {
               <Button 
                 asChild 
                 variant="ghost" 
-                className="text-slate-600 hover:text-[#114d8e] hover:bg-blue-50 mt-4"
+                className="text-slate-600 hover:text-[#0d1f3c] hover:bg-blue-50 mt-4"
               >
                 <Link to="/">
                   <Home className="w-4 h-4 mr-2" />

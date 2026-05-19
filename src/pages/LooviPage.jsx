@@ -110,13 +110,13 @@ export default function LooviPage() {
       {/* COBERTURAS */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic text-center mb-3">O que está incluído</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-[#0d1f3c] italic text-center mb-3">O que está incluído</h2>
           <p className="text-slate-500 text-center font-medium mb-12">Cobertura completa para você dirigir sem preocupação</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {coberturas.map((c, i) => (
               <div key={i} className="bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:shadow-md transition-all">
                 <div className="mb-3">{c.icon}</div>
-                <h3 className="font-black text-[#114d8e] mb-2">{c.titulo}</h3>
+                <h3 className="font-black text-[#0d1f3c] mb-2">{c.titulo}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">{c.desc}</p>
               </div>
             ))}

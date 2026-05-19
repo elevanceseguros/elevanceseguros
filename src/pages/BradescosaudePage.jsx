@@ -34,7 +34,7 @@ const BradescosaudePage = () => {
               <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Elevance Seguros" />
         <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
       </Helmet>
 
       <CorretorHero operadora="Bradesco Saúde" />
@@ -60,7 +60,7 @@ const BradescosaudePage = () => {
                 <ShieldCheck className="w-4 h-4" /> Um dos maiores do Brasil
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
-                Saúde garantida com o <span className="text-[#114d8e]">Bradesco Saúde</span>
+                Saúde garantida com o <span className="text-[#0d1f3c]">Bradesco Saúde</span>
               </h1>
               <p className="text-xl text-white/80 mb-8 leading-relaxed">
                 O Bradesco Saúde é um dos maiores e mais tradicionais planos de saúde do Brasil. Com ampla rede credenciada em São Paulo e em todo o país, oferece cobertura completa para você e sua família.
@@ -118,7 +118,7 @@ const BradescosaudePage = () => {
           <div className="mt-10">
             <a href="https://wa.me/5511920144864?text=Olá Rodrigo, quero cotar um plano Bradesco Saúde"
               target="_blank" rel="noreferrer"
-              className="inline-flex items-center gap-3 bg-[#114d8e] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
+              className="inline-flex items-center gap-3 bg-[#0d1f3c] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
               <MessageCircle size={16} /> Cotar via WhatsApp <ArrowRight size={16} />
             </a>
           </div>
@@ -142,7 +142,7 @@ const BradescosaudePage = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Também trabalhamos com</p>
           <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
-            <a href="/amil" className="text-[#114d8e] font-black hover:underline">Amil</a> · <a href="/sulamerica" className="text-[#114d8e] font-black hover:underline">SulAmérica</a> · <a href="/porto" className="text-[#114d8e] font-black hover:underline">Porto Saúde</a> · <a href="/unimed" className="text-[#114d8e] font-black hover:underline">Unimed</a> · <a href="/medsenior" className="text-[#114d8e] font-black hover:underline">MedSênior</a>
+            <a href="/amil" className="text-[#0d1f3c] font-black hover:underline">Amil</a> · <a href="/sulamerica" className="text-[#0d1f3c] font-black hover:underline">SulAmérica</a> · <a href="/porto" className="text-[#0d1f3c] font-black hover:underline">Porto Saúde</a> · <a href="/unimed" className="text-[#0d1f3c] font-black hover:underline">Unimed</a> · <a href="/medsenior" className="text-[#0d1f3c] font-black hover:underline">MedSênior</a>
           </p>
         </div>
       </section>

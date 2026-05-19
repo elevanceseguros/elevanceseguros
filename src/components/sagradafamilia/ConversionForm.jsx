@@ -71,12 +71,12 @@ const ConversionForm = () => {
     <section id="conversion-form" className="py-16 bg-slate-50">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-black text-[#114d8e] italic">Falta pouco para sua tranquilidade</h2>
+          <h2 className="text-3xl font-black text-[#0d1f3c] italic">Falta pouco para sua tranquilidade</h2>
           <p className="mt-2 text-base text-slate-500 font-medium">Sua cotação completa em menos de 2 minutos no WhatsApp.</p>
         </div>
 
         <div className="bg-white rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 p-8 md:p-10 relative">
-          <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+          <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d1f3c] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
             <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
           </div>
 
@@ -130,7 +130,7 @@ const ConversionForm = () => {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-[#114d8e] hover:bg-blue-700 disabled:bg-slate-300 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2 mt-2"
+                className="w-full bg-[#0d1f3c] hover:bg-blue-700 disabled:bg-slate-300 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2 mt-2"
               >
                 {isLoading ? <Loader2 className="animate-spin w-5 h-5" /> : <><Send size={16} /> SOLICITAR COTAÇÃO GRATUITA</>}
               </button>
@@ -143,7 +143,7 @@ const ConversionForm = () => {
               <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto shadow-inner">
                 <PartyPopper size={40} />
               </div>
-              <h3 className="text-2xl font-black text-[#114d8e] italic">Solicitação Enviada!</h3>
+              <h3 className="text-2xl font-black text-[#0d1f3c] italic">Solicitação Enviada!</h3>
               <p className="text-slate-500 font-medium text-sm">Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊</p>
             </div>
           )}

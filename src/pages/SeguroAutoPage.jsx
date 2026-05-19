@@ -100,7 +100,7 @@ export default function SeguroAutoPage() {
                 
                   {!sent ? (
                     <div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d1f3c] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
                         <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
@@ -110,7 +110,7 @@ export default function SeguroAutoPage() {
                           <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse inline-block"></span>
                           <span className="text-[10px] font-black text-orange-600">⚡ Cotação gratuita · Sem compromisso</span>
                         </div>
-                        <button type="submit" className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                        <button type="submit" className="w-full bg-[#0d1f3c] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
                           RECEBER CONTATO GRATUITO <MessageCircle size={16} />
                         </button>
                         <div className="flex items-center justify-center gap-3 flex-wrap">
@@ -123,7 +123,7 @@ export default function SeguroAutoPage() {
                   ) : (
                     <div key="success" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="text-center space-y-6">
                       <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto"><PartyPopper size={40} /></div>
-                      <h3 className="text-2xl font-black text-[#114d8e] italic">Solicitação Enviada!</h3>
+                      <h3 className="text-2xl font-black text-[#0d1f3c] italic">Solicitação Enviada!</h3>
                       <p className="text-slate-500 text-sm">Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊</p>
                     </div>
                   )}
@@ -137,13 +137,13 @@ export default function SeguroAutoPage() {
       {/* BENEFÍCIOS */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-black text-[#114d8e] italic text-center mb-12">O que está incluso?</h2>
+          <h2 className="text-3xl font-black text-[#0d1f3c] italic text-center mb-12">O que está incluso?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {beneficios.map((b, i) => (
               <div
                 className="bg-slate-50 rounded-[30px] p-8 border border-slate-100 hover:shadow-md transition-shadow">
                 <div className="mb-4">{b.icon}</div>
-                <div className="font-black text-[#114d8e] text-sm uppercase tracking-wide mb-2 italic">{b.titulo}</div>
+                <div className="font-black text-[#0d1f3c] text-sm uppercase tracking-wide mb-2 italic">{b.titulo}</div>
                 <div className="text-slate-500 text-sm font-medium leading-relaxed">{b.desc}</div>
               </div>
             ))}
@@ -158,7 +158,7 @@ export default function SeguroAutoPage() {
 
             {/* Tabela de preços */}
             <div className="bg-white rounded-[40px] shadow-xl overflow-hidden border border-slate-100">
-              <div className="bg-[#114d8e] p-6 text-white flex items-center gap-3">
+              <div className="bg-[#0d1f3c] p-6 text-white flex items-center gap-3">
                 <LayoutList className="w-5 h-5 opacity-80" />
                 <div>
                   <h2 className="text-lg font-black uppercase tracking-tight">Valores Referenciais</h2>
@@ -171,7 +171,7 @@ export default function SeguroAutoPage() {
                     <tr className="border-b-2 border-slate-50 text-left">
                       <th className="py-3 font-bold text-slate-400 text-xs uppercase">Perfil</th>
                       <th className="py-3 font-bold text-slate-600 text-xs uppercase">Franquia</th>
-                      <th className="py-3 font-bold text-[#114d8e] text-xs uppercase">Mensalidade</th>
+                      <th className="py-3 font-bold text-[#0d1f3c] text-xs uppercase">Mensalidade</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-50">
@@ -179,7 +179,7 @@ export default function SeguroAutoPage() {
                       <tr key={i} className="hover:bg-slate-50 transition-colors">
                         <td className="py-3 text-slate-600 font-medium text-xs">{item.perfil}</td>
                         <td className="py-3 text-slate-700 font-semibold text-sm">{item.franquia}</td>
-                        <td className="py-3 font-black text-sm text-[#114d8e]">{item.mensalidade}</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">{item.mensalidade}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -187,7 +187,7 @@ export default function SeguroAutoPage() {
                 <p className="text-[10px] text-slate-400 italic mt-3">*Valores referenciais. Variam por seguradora, perfil e cidade.</p>
                 <button
                   onClick={() => window.open("https://wa.me/" + MEU_NUMERO + "?text=Ol%C3%A1+Rodrigo%2C+quero+cotar+Seguro+Auto", "_blank")}
-                  className="w-full mt-5 bg-[#114d8e] hover:bg-blue-700 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2">
+                  className="w-full mt-5 bg-[#0d1f3c] hover:bg-blue-700 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2">
                   Cotar Meu Seguro <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
@@ -202,18 +202,18 @@ export default function SeguroAutoPage() {
                 </div>
                 <p className="text-slate-600 text-sm leading-relaxed mb-5 italic font-medium">&ldquo;{depoimento.texto}&rdquo;</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-[#114d8e] flex items-center justify-center text-white font-black text-sm shrink-0">
+                  <div className="w-10 h-10 rounded-2xl bg-[#0d1f3c] flex items-center justify-center text-white font-black text-sm shrink-0">
                     {depoimento.inicial}
                   </div>
                   <div>
-                    <div className="font-black text-[#114d8e] text-sm">{depoimento.nome}</div>
+                    <div className="font-black text-[#0d1f3c] text-sm">{depoimento.nome}</div>
                     <div className="text-slate-400 text-xs font-medium">{depoimento.local} · {depoimento.produto}</div>
                   </div>
                 </div>
               </div>
 
               {/* Seguradoras parceiras */}
-              <div className="bg-[#114d8e] rounded-[30px] p-6 text-white relative overflow-hidden shadow-xl">
+              <div className="bg-[#0d1f3c] rounded-[30px] p-6 text-white relative overflow-hidden shadow-xl">
                 <h3 className="text-xl font-black mb-2">Seguradoras Parceiras</h3>
                 <p className="text-blue-100 text-sm font-medium mb-5">Cotamos nas principais do mercado para você ter o melhor preço.</p>
                 <div className="grid grid-cols-3 gap-2">
@@ -243,7 +243,7 @@ export default function SeguroAutoPage() {
       {/* CTA */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-[#114d8e] rounded-[50px] p-12 text-center">
+          <div className="bg-[#0d1f3c] rounded-[50px] p-12 text-center">
             <h2 className="text-3xl font-black text-white italic mb-3">Pronto para proteger seu carro?</h2>
             <p className="text-blue-100 font-medium mb-8">Cotação gratuita em minutos</p>
             <a href={"https://wa.me/" + MEU_NUMERO + "?text=Ol%C3%A1%2C+quero+cotar+um+Seguro+Auto"} target="_blank" rel="noreferrer"

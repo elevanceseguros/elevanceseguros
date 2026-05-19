@@ -8,9 +8,9 @@ import CorretorHero from '@/components/CorretorHero';
 const MEU_NUMERO = "5511920144864";
 
 const tipos = [
-  { icon: <Home size={32} className="text-[#114d8e]" />, titulo: "Consórcio Imóvel", desc: "Realize o sonho da casa própria sem juros abusivos. Parcelas que cabem no seu bolso.", tag: "Imóvel" },
-  { icon: <Car size={32} className="text-[#114d8e]" />, titulo: "Consórcio Veículo", desc: "Troque de carro ou moto com planejamento inteligente e zero juros.", tag: "Veículo" },
-  { icon: <Briefcase size={32} className="text-[#114d8e]" />, titulo: "Consórcio Serviços", desc: "Financie reformas, viagens, festas e muito mais sem comprometer o orçamento.", tag: "Serviços" },
+  { icon: <Home size={32} className="text-[#0d1f3c]" />, titulo: "Consórcio Imóvel", desc: "Realize o sonho da casa própria sem juros abusivos. Parcelas que cabem no seu bolso.", tag: "Imóvel" },
+  { icon: <Car size={32} className="text-[#0d1f3c]" />, titulo: "Consórcio Veículo", desc: "Troque de carro ou moto com planejamento inteligente e zero juros.", tag: "Veículo" },
+  { icon: <Briefcase size={32} className="text-[#0d1f3c]" />, titulo: "Consórcio Serviços", desc: "Financie reformas, viagens, festas e muito mais sem comprometer o orçamento.", tag: "Serviços" },
 ];
 
 const vantagens = [
@@ -107,14 +107,14 @@ export default function ConsorciосPage() {
                 
                   {!sent ? (
                     <div>
-                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d1f3c] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
                         <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Simulação Gratuita
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
                         <div className="grid grid-cols-3 gap-2">
                           {["Imóvel", "Veículo", "Serviços"].map((tipo) => (
                             <button key={tipo} type="button" onClick={() => setTipoSelecionado(tipo)}
-                              className={`py-2 rounded-xl text-xs font-black uppercase transition-all ${tipoSelecionado === tipo ? 'bg-[#114d8e] text-white' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}>
+                              className={`py-2 rounded-xl text-xs font-black uppercase transition-all ${tipoSelecionado === tipo ? 'bg-[#0d1f3c] text-white' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}>
                               {tipo}
                             </button>
                           ))}
@@ -125,7 +125,7 @@ export default function ConsorciосPage() {
                           <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse inline-block"></span>
                           <span className="text-[10px] font-black text-orange-600">⚡ Cotação gratuita · Sem compromisso</span>
                         </div>
-                        <button type="submit" className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                        <button type="submit" className="w-full bg-[#0d1f3c] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
                           SIMULAR VIA WHATSAPP <MessageCircle size={16} />
                         </button>
                         <div className="flex items-center justify-center gap-3 flex-wrap">
@@ -138,7 +138,7 @@ export default function ConsorciосPage() {
                   ) : (
                     <div>
                       <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto"><PartyPopper size={40} /></div>
-                      <h3 className="text-2xl font-black text-[#114d8e] italic">Solicitação Enviada!</h3>
+                      <h3 className="text-2xl font-black text-[#0d1f3c] italic">Solicitação Enviada!</h3>
                       <p className="text-slate-500 text-sm">Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊</p>
                     </div>
                   )}
@@ -199,14 +199,14 @@ export default function ConsorciосPage() {
       {/* TIPOS */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic text-center mb-3">Tipos de Consórcio</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-[#0d1f3c] italic text-center mb-3">Tipos de Consórcio</h2>
           <p className="text-slate-500 text-center font-medium mb-12">Escolha o que faz mais sentido para você</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {tipos.map((t, i) => (
               <div key={i} className="bg-white rounded-3xl p-8 border border-slate-100 hover:shadow-lg transition-all">
                 <div className="mb-4">{t.icon}</div>
-                <span className="text-[10px] font-black uppercase tracking-widest text-[#114d8e] bg-blue-50 px-3 py-1 rounded-full">{t.tag}</span>
-                <h3 className="font-black text-[#114d8e] text-xl italic mt-4 mb-2">{t.titulo}</h3>
+                <span className="text-[10px] font-black uppercase tracking-widest text-[#0d1f3c] bg-blue-50 px-3 py-1 rounded-full">{t.tag}</span>
+                <h3 className="font-black text-[#0d1f3c] text-xl italic mt-4 mb-2">{t.titulo}</h3>
                 <p className="text-slate-500 text-sm font-medium leading-relaxed">{t.desc}</p>
               </div>
             ))}
@@ -235,7 +235,7 @@ export default function ConsorciосPage() {
       {/* COMO FUNCIONA */}
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-black text-[#114d8e] italic mb-12">Como funciona?</h2>
+          <h2 className="text-3xl font-black text-[#0d1f3c] italic mb-12">Como funciona?</h2>
           <div className="space-y-6 text-left">
             {[
               { n: "01", titulo: "Escolha o seu consórcio", desc: "Imóvel, veículo ou serviço — defina o valor da carta de crédito que precisa." },
@@ -246,7 +246,7 @@ export default function ConsorciосPage() {
               <div key={i} className="flex items-start gap-4">
                 <div className="min-w-10 h-10 rounded-2xl bg-blue-600 flex items-center justify-center text-white font-black text-xs flex-shrink-0">{p.n}</div>
                 <div>
-                  <div className="font-black text-[#114d8e] text-sm uppercase tracking-wide italic mb-1">{p.titulo}</div>
+                  <div className="font-black text-[#0d1f3c] text-sm uppercase tracking-wide italic mb-1">{p.titulo}</div>
                   <div className="text-slate-500 text-sm font-medium leading-relaxed">{p.desc}</div>
                 </div>
               </div>
@@ -263,7 +263,7 @@ export default function ConsorciосPage() {
 
             {/* Tabela de valores */}
             <div className="bg-white rounded-[40px] shadow-xl overflow-hidden border border-slate-100">
-              <div className="bg-[#114d8e] p-6 text-white flex items-center gap-3">
+              <div className="bg-[#0d1f3c] p-6 text-white flex items-center gap-3">
                 <LayoutList className="w-5 h-5 opacity-80" />
                 <div>
                   <h2 className="text-lg font-black uppercase tracking-tight">Simulação de Parcelas</h2>
@@ -276,29 +276,29 @@ export default function ConsorciосPage() {
                     <tr className="border-b-2 border-slate-50 text-left">
                       <th className="py-3 font-bold text-slate-400 text-xs uppercase">Bem / Carta</th>
                       <th className="py-3 font-bold text-slate-600 text-xs uppercase">Prazo</th>
-                      <th className="py-3 font-bold text-[#114d8e] text-xs uppercase">Parcela aprox.</th>
+                      <th className="py-3 font-bold text-[#0d1f3c] text-xs uppercase">Parcela aprox.</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-50">
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="py-3 text-slate-600 font-medium text-xs">Imóvel R$ 200k</td>
                         <td className="py-3 text-slate-700 font-semibold text-sm">200 meses</td>
-                        <td className="py-3 font-black text-sm text-[#114d8e]">R$ 1.200 – R$ 1.400</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">R$ 1.200 – R$ 1.400</td>
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="py-3 text-slate-600 font-medium text-xs">Imóvel R$ 400k</td>
                         <td className="py-3 text-slate-700 font-semibold text-sm">200 meses</td>
-                        <td className="py-3 font-black text-sm text-[#114d8e]">R$ 2.200 – R$ 2.600</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">R$ 2.200 – R$ 2.600</td>
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="py-3 text-slate-600 font-medium text-xs">Veículo R$ 60k</td>
                         <td className="py-3 text-slate-700 font-semibold text-sm">80 meses</td>
-                        <td className="py-3 font-black text-sm text-[#114d8e]">R$ 820 – R$ 980</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">R$ 820 – R$ 980</td>
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="py-3 text-slate-600 font-medium text-xs">Veículo R$ 120k</td>
                         <td className="py-3 text-slate-700 font-semibold text-sm">80 meses</td>
-                        <td className="py-3 font-black text-sm text-[#114d8e]">R$ 1.500 – R$ 1.800</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">R$ 1.500 – R$ 1.800</td>
                       </tr>
                   </tbody>
                 </table>
@@ -306,7 +306,7 @@ export default function ConsorciосPage() {
                 <a
                   href={`https://wa.me/5511920144864?text=Ol%C3%A1+Rodrigo%2C+quero+simular+um+cons%C3%B3rcio`}
                   target="_blank" rel="noreferrer"
-                  className="w-full mt-5 bg-[#114d8e] hover:bg-blue-700 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2">
+                  className="w-full mt-5 bg-[#0d1f3c] hover:bg-blue-700 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2">
                   Simular Meu Consórcio <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
@@ -319,11 +319,11 @@ export default function ConsorciосPage() {
               </div>
               <p className="text-slate-600 text-sm leading-relaxed mb-5 italic font-medium">&ldquo;Nunca imaginei que seria tão simples adquirir meu imóvel. O Rodrigo explicou tudo com clareza e me ajudou a escolher o consórcio ideal para meu perfil.&rdquo;</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-2xl bg-[#114d8e] flex items-center justify-center text-white font-black text-sm shrink-0">
+                <div className="w-10 h-10 rounded-2xl bg-[#0d1f3c] flex items-center justify-center text-white font-black text-sm shrink-0">
                   F
                 </div>
                 <div>
-                  <div className="font-black text-[#114d8e] text-sm">Fernanda</div>
+                  <div className="font-black text-[#0d1f3c] text-sm">Fernanda</div>
                   <div className="text-slate-400 text-xs font-medium">São Paulo, SP · Consórcio de Imóvel</div>
                 </div>
               </div>
@@ -334,7 +334,7 @@ export default function ConsorciосPage() {
       </section>
       <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-[#114d8e] rounded-[50px] p-12 text-center">
+          <div className="bg-[#0d1f3c] rounded-[50px] p-12 text-center">
             <h2 className="text-3xl font-black text-white italic mb-3">Pronto para conquistar seu sonho?</h2>
             <p className="text-slate-300 font-medium mb-8">Simulação gratuita e sem compromisso</p>
             <a href={`https://wa.me/${MEU_NUMERO}?text=Olá, quero simular um Consórcio`} target="_blank" rel="noreferrer"

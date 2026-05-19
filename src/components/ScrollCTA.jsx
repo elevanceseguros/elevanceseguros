@@ -23,9 +23,9 @@ const ScrollCTA = ({ produto = "Seguro ou Plano de Saúde", pagina = "/" }) => {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-[90] px-4 pb-4 pointer-events-none">
       <div className="max-w-2xl mx-auto pointer-events-auto">
-        <div className="bg-[#114d8e] rounded-2xl shadow-[0_-4px_30px_rgba(17,77,142,0.4)] p-4 flex items-center justify-between gap-4 border border-blue-400/20">
+        <div className="bg-[#0d1f3c] rounded-2xl shadow-[0_-4px_30px_rgba(201,168,76,0.3)] p-4 flex items-center justify-between gap-4 border border-[#c9a84c]/40">
           <div className="flex-1 min-w-0">
-            <p className="text-white font-black text-sm leading-tight">Ainda tem dúvidas sobre <span className="text-yellow-300">{produto}</span>?</p>
+            <p className="text-white font-black text-sm leading-tight">Ainda tem dúvidas sobre <span className="text-[#c9a84c]">{produto}</span>?</p>
             <p className="text-white/70 text-[11px] mt-0.5">Rodrigo responde agora, sem compromisso.</p>
           </div>
           <a

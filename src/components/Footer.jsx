@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Instagram, Phone, Mail, Globe, ShieldCheck, Heart, Car, ChevronRight } from 'lucide-react';
 
 const Footer = () => {
-  const logo = "/logo-white.webp";
+  const logo = "/logos/elevance-dark-horizontal-white.png";
   const currentYear = new Date().getFullYear();
 
   const saudeLinks1 = [
@@ -37,7 +37,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#114d8e] text-white pt-14 pb-8 border-t-4 border-white/20">
+    <footer className="bg-[#0d1f3c] text-white pt-14 pb-8 border-t-4 border-[#c9a84c]">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* GRID PRINCIPAL */}

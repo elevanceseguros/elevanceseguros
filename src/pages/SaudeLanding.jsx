@@ -79,18 +79,18 @@ export default function SaudeLanding() {
         <meta property="og:description" content="Compare planos de saúde em São Paulo. Cotação gratuita em minutos via WhatsApp. Sem burocracia." />
         <meta property="og:url" content="https://saude.elevanceseguros.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://saude.elevanceseguros.com/preview.webp" />
+        <meta property="og:image" content="https://saude.elevanceseguros.com/logos/elevance-icon.png" />
         <link rel="canonical" href="https://saude.elevanceseguros.com" />
               <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content=" content=" />
         <meta name="twitter:description" content=" content=" />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
       </Helmet>
 
       {/* NAV */}
-      <nav className="bg-[#114d8e] sticky top-0 z-50 py-3 shadow-lg">
+      <nav className="bg-[#0d1f3c] sticky top-0 z-50 py-3 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-          <Link to="/"><img src="/logo-white.webp" alt="Elevance Seguros" className="h-8 w-auto object-contain" loading="eager" /></Link>
+          <Link to="/"><img src="/logos/elevance-dark-horizontal-white.png" alt="Elevance Seguros" className="h-8 w-auto object-contain" loading="eager" /></Link>
           <a href={`https://wa.me/${MEU_NUMERO}?text=Olá, vim pela página de planos de saúde e quero uma cotação`}
             target="_blank" rel="noreferrer"
             className="flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-4 py-2 rounded-xl font-black text-xs uppercase tracking-wide transition-all">
@@ -105,12 +105,12 @@ export default function SaudeLanding() {
           <div className="flex items-center gap-4">
             <div className="relative shrink-0">
               <div className="w-11 h-11 rounded-full border-2 border-white shadow-md overflow-hidden bg-slate-200">
-                <img src="/preview.webp" alt="Rodrigo Farias" className="w-full h-full object-cover object-top" loading="eager" />
+                <img src="/logos/elevance-icon.png" alt="Rodrigo Farias" className="w-full h-full object-cover object-top" loading="eager" />
               </div>
               <div className="absolute -bottom-0.5 -right-0.5 bg-green-500 w-3 h-3 rounded-full border-2 border-white animate-pulse"></div>
             </div>
             <div>
-              <div className="font-black text-[#114d8e] text-sm">Rodrigo Farias</div>
+              <div className="font-black text-[#0d1f3c] text-sm">Rodrigo Farias</div>
               <div className="flex gap-0.5 my-0.5">{[...Array(5)].map((_, i) => <Star key={i} size={9} className="text-yellow-400 fill-yellow-400" />)}</div>
               <div className="text-green-600 text-[10px] font-black flex items-center gap-1">
                 <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse inline-block"></span>
@@ -130,7 +130,7 @@ export default function SaudeLanding() {
       </div>
 
       {/* HERO */}
-      <section className="relative pt-12 pb-16 bg-[#114d8e] overflow-hidden">
+      <section className="relative pt-12 pb-16 bg-[#0d1f3c] overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-4">
@@ -167,7 +167,7 @@ export default function SaudeLanding() {
                 <AnimatePresence mode="wait">
                   {!enviado ? (
                     <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d1f3c] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
                         <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
@@ -183,7 +183,7 @@ export default function SaudeLanding() {
                         />
                         {erro && <p className="text-red-500 text-xs px-2">{erro}</p>}
                         <button type="submit" disabled={loading}
-                          className="w-full bg-[#114d8e] hover:bg-blue-700 disabled:bg-slate-300 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                          className="w-full bg-[#0d1f3c] hover:bg-blue-700 disabled:bg-slate-300 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
                           {loading ? "Enviando..." : <><MessageCircle size={16} /> Quero minha cotação
       <ScrollCTA produto="Plano de Saúde" />
 </>}
@@ -202,7 +202,7 @@ export default function SaudeLanding() {
                         <PartyPopper size={40} />
                       </div>
                       <div className="space-y-2">
-                        <h3 className="text-2xl font-black text-[#114d8e] italic">Perfeito, {nome.split(" ")[0]}!</h3>
+                        <h3 className="text-2xl font-black text-[#0d1f3c] italic">Perfeito, {nome.split(" ")[0]}!</h3>
                         <p className="text-slate-500 font-medium text-sm leading-relaxed">
                           Em instantes você vai receber uma mensagem no WhatsApp. Fique de olho!
                         </p>
@@ -238,7 +238,7 @@ export default function SaudeLanding() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic mb-2">Por que escolher a Elevance?</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-[#0d1f3c] italic mb-2">Por que escolher a Elevance?</h2>
             <p className="text-slate-500 font-medium">Atendimento de corretor de verdade, não de plataforma</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -246,7 +246,7 @@ export default function SaudeLanding() {
               <div
                 className="bg-white rounded-[30px] p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                 <div className="mb-4">{b.icon}</div>
-                <div className="font-black text-[#114d8e] text-sm uppercase tracking-wide mb-2 italic">{b.titulo}</div>
+                <div className="font-black text-[#0d1f3c] text-sm uppercase tracking-wide mb-2 italic">{b.titulo}</div>
                 <div className="text-slate-500 text-sm leading-relaxed font-medium">{b.desc}</div>
               </div>
             ))}
@@ -257,7 +257,7 @@ export default function SaudeLanding() {
       {/* COMO FUNCIONA */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-[#114d8e] rounded-[50px] p-8 md:p-16 text-white flex flex-col lg:flex-row items-center gap-12 relative overflow-hidden">
+          <div className="bg-[#0d1f3c] rounded-[50px] p-8 md:p-16 text-white flex flex-col lg:flex-row items-center gap-12 relative overflow-hidden">
             <div className="lg:w-1/2 space-y-8 z-10">
               <span className="inline-block bg-blue-600 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Como funciona</span>
               <h2 className="text-3xl md:text-4xl font-black italic">Simples assim.</h2>
@@ -296,7 +296,7 @@ export default function SaudeLanding() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic mb-2">O que dizem nossos clientes</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-[#0d1f3c] italic mb-2">O que dizem nossos clientes</h2>
             <p className="text-slate-500 font-medium">Pessoas reais, resultados reais</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -311,9 +311,9 @@ export default function SaudeLanding() {
                 </div>
                 <p className="text-slate-600 text-sm leading-relaxed mb-6 italic font-medium">&ldquo;{d.texto}&rdquo;</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-blue-100 flex items-center justify-center text-[#114d8e] font-black text-sm">{d.inicial}</div>
+                  <div className="w-10 h-10 rounded-2xl bg-blue-100 flex items-center justify-center text-[#0d1f3c] font-black text-sm">{d.inicial}</div>
                   <div>
-                    <div className="font-black text-[#114d8e] text-sm">{d.nome}</div>
+                    <div className="font-black text-[#0d1f3c] text-sm">{d.nome}</div>
                     <div className="text-slate-400 text-xs font-medium">{d.local} · {d.produto}</div>
                   </div>
                 </div>
@@ -326,13 +326,13 @@ export default function SaudeLanding() {
       {/* FAQ */}
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-black text-[#114d8e] italic text-center mb-12">Dúvidas frequentes</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-[#0d1f3c] italic text-center mb-12">Dúvidas frequentes</h2>
           <div className="space-y-3">
             {faq.map((item, i) => (
               <div key={i} className="border border-slate-200 rounded-2xl overflow-hidden">
                 <button onClick={() => setFaqAberto(faqAberto === i ? null : i)}
                   className="w-full px-6 py-5 flex justify-between items-center text-left bg-white hover:bg-slate-50 transition-colors">
-                  <span className="font-black text-[#114d8e] text-sm uppercase tracking-wide pr-4 italic">{item.q}</span>
+                  <span className="font-black text-[#0d1f3c] text-sm uppercase tracking-wide pr-4 italic">{item.q}</span>
                   <span className="text-blue-600 text-xl flex-shrink-0 font-black">{faqAberto === i ? "−" : "+"}</span>
                 </button>
                 <AnimatePresence>
@@ -351,7 +351,7 @@ export default function SaudeLanding() {
       {/* CTA FINAL */}
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-[#114d8e] rounded-[50px] p-12 md:p-16 text-center relative overflow-hidden">
+          <div className="bg-[#0d1f3c] rounded-[50px] p-12 md:p-16 text-center relative overflow-hidden">
             <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400 rounded-full filter blur-3xl opacity-10 pointer-events-none" />
             <div className="relative z-10 space-y-6">
               <h2 className="text-3xl md:text-4xl font-black text-white italic">Ainda tem dúvidas?</h2>
@@ -367,8 +367,8 @@ export default function SaudeLanding() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#114d8e] py-8 px-4 text-center">
-        <img src="/logo-white.webp" alt="Elevance Seguros" className="h-8 w-auto mx-auto mb-3 opacity-80" loading="lazy" />
+      <footer className="bg-[#0d1f3c] py-8 px-4 text-center">
+        <img src="/logos/elevance-dark-horizontal-white.png" alt="Elevance Seguros" className="h-8 w-auto mx-auto mb-3 opacity-80" loading="lazy" />
         <p className="text-white/40 text-[10px] font-bold uppercase tracking-widest">© 2026 Elevance Seguros · São Paulo, SP</p>
         <p className="text-slate-600 text-xs mt-1">
           <a href="https://www.elevanceseguros.com" className="hover:text-white/60 transition-colors text-white/30">elevanceseguros.com</a>

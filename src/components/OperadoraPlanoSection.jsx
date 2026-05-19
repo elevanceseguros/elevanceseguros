@@ -64,7 +64,7 @@ const OperadoraPlanoSection = ({ tabela, hospitais, depoimento, cor, operadora, 
                   {depoimento.inicial}
                 </div>
                 <div>
-                  <div className="font-black text-[#114d8e] text-sm">{depoimento.nome}</div>
+                  <div className="font-black text-[#0d1f3c] text-sm">{depoimento.nome}</div>
                   <div className="text-slate-400 text-xs font-medium">{depoimento.local} · {operadora}</div>
                 </div>
               </div>
@@ -81,13 +81,13 @@ const OperadoraPlanoSection = ({ tabela, hospitais, depoimento, cor, operadora, 
                 <div className="p-2.5 rounded-xl" style={{ background: cor + '20' }}>
                   <Activity className="w-5 h-5" style={{ color: cor }} />
                 </div>
-                <h2 className="text-base font-black text-[#114d8e] uppercase tracking-tight">Principais Hospitais SP</h2>
+                <h2 className="text-base font-black text-[#0d1f3c] uppercase tracking-tight">Principais Hospitais SP</h2>
               </div>
               <div className="space-y-3">
                 {hospitais.map((h, i) => (
                   <div key={i} className="p-4 bg-slate-50 rounded-[20px] border border-transparent hover:border-blue-100 transition-all">
                     <div className="flex justify-between items-start">
-                      <p className="font-black text-[#114d8e] text-sm">{h.nome}</p>
+                      <p className="font-black text-[#0d1f3c] text-sm">{h.nome}</p>
                       <span className="text-[9px] bg-white px-2 py-1 rounded-lg font-black text-slate-400 uppercase ml-2 shrink-0">{h.regiao}</span>
                     </div>
                     <p className="text-xs text-slate-500 mt-1 font-medium">{h.desc}</p>

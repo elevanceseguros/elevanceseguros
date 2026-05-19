@@ -18,13 +18,13 @@ const CorretorHero = ({ operadora = "" }) => {
           {/* Foto */}
           <div className="relative shrink-0">
             <div className="w-11 h-11 rounded-full border-2 border-white shadow-md overflow-hidden bg-slate-200">
-              <img src="/preview.webp" alt="Rodrigo Farias" className="w-full h-full object-cover object-center" loading="eager" decoding="async" fetchpriority="high" />
+              <img src="/logos/elevance-icon.png" alt="Rodrigo Farias" className="w-full h-full object-cover object-center" loading="eager" decoding="async" fetchpriority="high" />
             </div>
             <div className="absolute -bottom-0.5 -right-0.5 bg-green-500 w-3 h-3 rounded-full border-2 border-white animate-pulse"></div>
           </div>
           {/* Info */}
           <div>
-            <div className="font-black text-[#114d8e] text-sm leading-tight">Rodrigo Farias</div>
+            <div className="font-black text-[#0d1f3c] text-sm leading-tight">Rodrigo Farias</div>
             <div className="flex gap-0.5 my-0.5">
               {[...Array(5)].map((_, i) => <Star key={i} size={9} className="text-yellow-400 fill-yellow-400" />)}
             </div>

@@ -51,7 +51,7 @@ export default function SeguroEmpresaPage() {
               <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Elevance Seguros" />
         <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/elevance-icon.png" />
       </Helmet>
 
       <CorretorHero operadora="Seguro Empresarial" />
@@ -92,7 +92,7 @@ export default function SeguroEmpresaPage() {
                 
                   {!sent ? (
                     <div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#114d8e] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d1f3c] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
                         <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
@@ -102,7 +102,7 @@ export default function SeguroEmpresaPage() {
                           <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse inline-block"></span>
                           <span className="text-[10px] font-black text-orange-600">⚡ Cotação gratuita · Sem compromisso</span>
                         </div>
-                        <button type="submit" className="w-full bg-[#114d8e] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                        <button type="submit" className="w-full bg-[#0d1f3c] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
                           RECEBER CONTATO GRATUITO <MessageCircle size={16} />
                         </button>
                         <div className="flex items-center justify-center gap-3 flex-wrap">
@@ -115,7 +115,7 @@ export default function SeguroEmpresaPage() {
                   ) : (
                     <div key="success" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="text-center space-y-6">
                       <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto"><PartyPopper size={40} /></div>
-                      <h3 className="text-2xl font-black text-[#114d8e] italic">Solicitação Enviada!</h3>
+                      <h3 className="text-2xl font-black text-[#0d1f3c] italic">Solicitação Enviada!</h3>
                       <p className="text-slate-500 text-sm">Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊</p>
                     </div>
                   )}
@@ -128,13 +128,13 @@ export default function SeguroEmpresaPage() {
 
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-black text-[#114d8e] italic text-center mb-12">Produtos para sua empresa</h2>
+          <h2 className="text-3xl font-black text-[#0d1f3c] italic text-center mb-12">Produtos para sua empresa</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {produtos.map((p, i) => (
               <div
                 className="bg-white rounded-[30px] p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                 <div className="mb-4">{p.icon}</div>
-                <div className="font-black text-[#114d8e] text-sm uppercase tracking-wide mb-2 italic">{p.titulo}</div>
+                <div className="font-black text-[#0d1f3c] text-sm uppercase tracking-wide mb-2 italic">{p.titulo}</div>
                 <div className="text-slate-500 text-sm font-medium leading-relaxed">{p.desc}</div>
               </div>
             ))}
@@ -149,7 +149,7 @@ export default function SeguroEmpresaPage() {
 
             {/* Tabela de valores */}
             <div className="bg-white rounded-[40px] shadow-xl overflow-hidden border border-slate-100">
-              <div className="bg-[#114d8e] p-6 text-white flex items-center gap-3">
+              <div className="bg-[#0d1f3c] p-6 text-white flex items-center gap-3">
                 <LayoutList className="w-5 h-5 opacity-80" />
                 <div>
                   <h2 className="text-lg font-black uppercase tracking-tight">Soluções por Porte</h2>
@@ -162,29 +162,29 @@ export default function SeguroEmpresaPage() {
                     <tr className="border-b-2 border-slate-50 text-left">
                       <th className="py-3 font-bold text-slate-400 text-xs uppercase">Porte / Produto</th>
                       <th className="py-3 font-bold text-slate-600 text-xs uppercase">Cobertura</th>
-                      <th className="py-3 font-bold text-[#114d8e] text-xs uppercase">Investimento aprox.</th>
+                      <th className="py-3 font-bold text-[#0d1f3c] text-xs uppercase">Investimento aprox.</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-50">
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="py-3 text-slate-600 font-medium text-xs">MEI / Micro · Saúde PME</td>
                         <td className="py-3 text-slate-700 font-semibold text-sm">2–5 vidas</td>
-                        <td className="py-3 font-black text-sm text-[#114d8e]">R$ 180 – R$ 350/vida</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">R$ 180 – R$ 350/vida</td>
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="py-3 text-slate-600 font-medium text-xs">Pequena · Seguro Patrimonial</td>
                         <td className="py-3 text-slate-700 font-semibold text-sm">Básica</td>
-                        <td className="py-3 font-black text-sm text-[#114d8e]">A partir de R$ 120/mês</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">A partir de R$ 120/mês</td>
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="py-3 text-slate-600 font-medium text-xs">Média · Vida em Grupo</td>
                         <td className="py-3 text-slate-700 font-semibold text-sm">Conforme folha</td>
-                        <td className="py-3 font-black text-sm text-[#114d8e]">A partir de R$ 15/vida</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">A partir de R$ 15/vida</td>
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="py-3 text-slate-600 font-medium text-xs">RC Profissional / D&O</td>
                         <td className="py-3 text-slate-700 font-semibold text-sm">Conforme capital</td>
-                        <td className="py-3 font-black text-sm text-[#114d8e]">A partir de R$ 200/mês</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">A partir de R$ 200/mês</td>
                       </tr>
                   </tbody>
                 </table>
@@ -192,7 +192,7 @@ export default function SeguroEmpresaPage() {
                 <a
                   href={`https://wa.me/5511920144864?text=Ol%C3%A1+Rodrigo%2C+quero+cotar+Seguro+Empresarial`}
                   target="_blank" rel="noreferrer"
-                  className="w-full mt-5 bg-[#114d8e] hover:bg-blue-700 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2">
+                  className="w-full mt-5 bg-[#0d1f3c] hover:bg-blue-700 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2">
                   Proteger Minha Empresa <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
@@ -205,11 +205,11 @@ export default function SeguroEmpresaPage() {
               </div>
               <p className="text-slate-600 text-sm leading-relaxed mb-5 italic font-medium">&ldquo;O Rodrigo estruturou toda a proteção da minha empresa: saúde pra equipe, seguro patrimonial e RC. Tudo em uma única consultoria. Atendimento impecável.&rdquo;</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-2xl bg-[#114d8e] flex items-center justify-center text-white font-black text-sm shrink-0">
+                <div className="w-10 h-10 rounded-2xl bg-[#0d1f3c] flex items-center justify-center text-white font-black text-sm shrink-0">
                   R
                 </div>
                 <div>
-                  <div className="font-black text-[#114d8e] text-sm">Roberto</div>
+                  <div className="font-black text-[#0d1f3c] text-sm">Roberto</div>
                   <div className="text-slate-400 text-xs font-medium">São Paulo, SP · Seguro Empresarial</div>
                 </div>
               </div>
@@ -220,7 +220,7 @@ export default function SeguroEmpresaPage() {
       </section>
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-[#114d8e] rounded-[50px] p-12 text-center">
+          <div className="bg-[#0d1f3c] rounded-[50px] p-12 text-center">
             <h2 className="text-3xl font-black text-white italic mb-3">Proteja seu negócio agora</h2>
             <p className="text-slate-300 font-medium mb-8">Consultoria gratuita para empresas de todos os tamanhos</p>
             <a href={`https://wa.me/${MEU_NUMERO}?text=Olá, quero cotar seguro para minha empresa`} target="_blank" rel="noreferrer"
