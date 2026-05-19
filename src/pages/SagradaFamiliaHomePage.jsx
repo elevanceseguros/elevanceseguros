@@ -116,17 +116,17 @@ const SagradaFamiliaHomePage = () => {
         <nav style={{ background: '#ffffff', borderBottom: '2px solid #e8d5ed' }} className="sticky top-0 z-50 py-3 shadow-sm">
           <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
             {/* Logo Sagrada Família em destaque + Elevance menor */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               <img
                 src="/logos/sagrada-familia-logo.png"
                 alt="Sagrada Família Saúde"
                 className="h-10 w-auto object-contain"
                 loading="eager"
               />
-              <div className="w-px h-6 bg-slate-200 hidden sm:block"></div>
-              <div className="hidden sm:flex flex-col items-start">
-                <span className="text-slate-400 text-[8px] uppercase tracking-widest font-bold">Corretora Autorizada</span>
-                <img src="/logos/elevance-logo-branco.png" alt="Elevance Seguros" className="h-5 w-auto object-contain mt-0.5" loading="eager" />
+              <div className="w-px h-6 bg-slate-200"></div>
+              <div className="flex flex-col items-start">
+                <span className="text-slate-400 text-[7px] uppercase tracking-widest font-bold">Corretora Autorizada</span>
+                <img src="/logos/elevance-logo-branco.png" alt="Elevance Seguros" className="h-4 w-auto object-contain mt-0.5" loading="eager" />
               </div>
             </div>
             <a
@@ -408,11 +408,11 @@ const SagradaFamiliaHomePage = () => {
 
                 {/* MEI/CNPJ */}
                 <div style={{ background: '#9b1fa8' }} className="rounded-[30px] p-6 text-white flex items-center gap-4 relative overflow-hidden">
-                  <img src="/logos/sagrada-familia-white.png" alt="" className="absolute right-4 top-1/2 -translate-y-1/2 h-12 opacity-10 pointer-events-none" aria-hidden="true" />
-                  <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center shrink-0">
+                  <img src="/logos/sagrada-familia-white.png" alt="" className="absolute right-3 top-1/2 -translate-y-1/2 h-14 opacity-20 pointer-events-none select-none" aria-hidden="true" />
+                  <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center shrink-0 z-10">
                     <Users size={24} />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 z-10">
                     <p className="sf-heading text-base">Possui CNPJ ou MEI?</p>
                     <p className="text-white/70 text-sm">Desconto de até <span className="text-yellow-300 font-black">30%</span> no plano empresarial.</p>
                   </div>
