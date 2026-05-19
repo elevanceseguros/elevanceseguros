@@ -120,13 +120,13 @@ const SagradaFamiliaHomePage = () => {
               <img
                 src="/logos/sagrada-familia-logo.png"
                 alt="Sagrada Família Saúde"
-                className="h-10 w-auto object-contain"
+                className="h-16 w-auto object-contain"
                 loading="eager"
               />
               <div className="w-px h-6 bg-slate-200"></div>
               <div className="flex flex-col items-start">
                 <span className="text-slate-400 text-[7px] uppercase tracking-widest font-bold">Corretora Autorizada</span>
-                <img src="/logos/elevance-light.png" alt="Elevance Seguros" className="h-4 w-auto object-contain mt-0.5" loading="eager" />
+                <img src="/logos/elevance-light.png" alt="Elevance Seguros" className="h-8 w-auto object-contain mt-1" loading="eager" />
               </div>
             </div>
             <a
@@ -446,7 +446,7 @@ const SagradaFamiliaHomePage = () => {
         <section style={{ background: '#f4f0f8' }} className="py-10">
           <div className="max-w-3xl mx-auto px-4">
             <div className="bg-white rounded-[30px] border border-purple-100 shadow-sm p-8 flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
-              <img src="/logos/sagrada-familia-logo.png" alt="Sagrada Família Saúde" className="h-12 w-auto object-contain shrink-0" loading="lazy" />
+              <img src="/logos/sagrada-familia-logo.png" alt="Sagrada Família Saúde" className="h-20 w-auto object-contain shrink-0" loading="lazy" />
               <div className="flex-1">
                 <h3 className="sf-heading text-lg" style={{ color: '#1a4a7a' }}>Já é Cliente?</h3>
                 <p className="text-slate-500 text-sm mt-1">Quer marcar consultas ou tem dúvidas sobre seu plano? Acesse a Central de Clientes da Sagrada Família.</p>
@@ -526,10 +526,10 @@ const SagradaFamiliaHomePage = () => {
 
         {/* FOOTER */}
         <footer style={{ background: '#ffffff', borderTop: '2px solid #e8d5ed' }} className="py-8 px-4 text-center">
-          <img src="/logos/sagrada-familia-logo.png" alt="Sagrada Família Saúde" className="h-12 w-auto mx-auto mb-3" loading="lazy" />
+          <img src="/logos/sagrada-familia-logo.png" alt="Sagrada Família Saúde" className="h-20 w-auto mx-auto mb-4" loading="lazy" />
           <div className="flex items-center justify-center gap-2 mb-3">
             <span className="text-slate-400 text-[9px] uppercase tracking-widest font-bold">Corretora Autorizada</span>
-            <img src="/logos/elevance-light.png" alt="Elevance Seguros" className="h-5 w-auto" loading="lazy" />
+            <img src="/logos/elevance-light.png" alt="Elevance Seguros" className="h-10 w-auto" loading="lazy" />
           </div>
           <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest">© 2026 · São Paulo, SP</p>
           <p className="text-slate-300 text-[9px] mt-2 max-w-lg mx-auto">
