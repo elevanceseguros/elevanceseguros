@@ -407,21 +407,14 @@ const SagradaFamiliaHomePage = () => {
                 </div>
 
                 {/* MEI/CNPJ */}
-                <div style={{ background: '#9b1fa8' }} className="rounded-[30px] p-6 text-white relative overflow-hidden">
-                  {/* Logo branca — desktop: canto direito decorativa | mobile: centralizada no topo */}
+                <div style={{ background: '#9b1fa8' }} className="rounded-[30px] p-6 text-white">
+                  {/* Logo branca — acima do conteúdo, centralizada mobile / alinhada à esquerda desktop */}
                   <img
                     src="/logos/sagrada-familia-white.png"
-                    alt=""
-                    className="block lg:hidden w-28 mx-auto mb-4 opacity-30 pointer-events-none select-none"
-                    aria-hidden="true"
+                    alt="Sagrada Família Saúde"
+                    className="w-36 mb-4 mx-auto lg:mx-0 opacity-60"
                   />
-                  <img
-                    src="/logos/sagrada-familia-white.png"
-                    alt=""
-                    className="hidden lg:block absolute right-6 top-1/2 -translate-y-1/2 h-16 opacity-20 pointer-events-none select-none"
-                    aria-hidden="true"
-                  />
-                  <div className="flex items-center gap-4 relative z-10">
+                  <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center shrink-0">
                       <Users size={24} />
                     </div>
@@ -488,12 +481,11 @@ const SagradaFamiliaHomePage = () => {
           <div className="max-w-7xl mx-auto px-4">
             <div style={{ background: 'linear-gradient(135deg, #1a4a7a 0%, #9b1fa8 100%)' }} className="rounded-[50px] py-14 px-8 md:px-16 text-white flex flex-col lg:flex-row items-center gap-12 relative overflow-hidden">
               <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px" }}></div>
-              <div className="lg:w-1/2 space-y-4 z-10 text-center lg:text-left">
-                {/* Logo branca — sempre visível, tamanho responsivo */}
+              <div className="lg:w-1/2 space-y-4 z-10 relative text-center lg:text-left">
                 <img
                   src="/logos/sagrada-familia-white.png"
                   alt="Sagrada Família Saúde"
-                  className="h-10 w-auto mx-auto lg:mx-0 opacity-90"
+                  className="w-40 mx-auto lg:mx-0 opacity-90"
                 />
                 <h2 className="sf-heading text-3xl md:text-4xl leading-tight">Pronto para proteger sua família?</h2>
                 <p className="text-white/75 font-medium">Cuidar da saúde nunca foi tão simples, seguro e completo. Cotação gratuita, sem burocracia, sem compromisso.</p>
