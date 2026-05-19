@@ -113,20 +113,19 @@ const SagradaFamiliaHomePage = () => {
       <div className="sf-page">
 
         {/* NAV */}
-        <nav style={{ background: '#ffffff', borderBottom: '2px solid #e8d5ed' }} className="sticky top-0 z-50 py-3 shadow-sm">
+        <nav style={{ background: '#ffffff', borderBottom: '2px solid #e8d5ed' }} className="sticky top-0 z-50 py-2 shadow-sm">
           <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            {/* Logo Sagrada Família em destaque + Elevance menor */}
             <div className="flex items-center gap-3">
               <img
                 src="/logos/sagrada-familia-logo.png"
                 alt="Sagrada Família Saúde"
-                className="h-16 w-auto object-contain"
+                className="h-10 w-auto object-contain"
                 loading="eager"
               />
               <div className="w-px h-6 bg-slate-200"></div>
               <div className="flex flex-col items-start">
                 <span className="text-slate-400 text-[7px] uppercase tracking-widest font-bold">Corretora Autorizada</span>
-                <img src="/logos/elevance-light.png" alt="Elevance Seguros" className="h-8 w-auto object-contain mt-1" loading="eager" />
+                <img src="/logos/elevance-light.png" alt="Elevance Seguros" className="h-5 w-auto object-contain mt-0.5" loading="eager" />
               </div>
             </div>
             <a

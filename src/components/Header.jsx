@@ -63,7 +63,7 @@ const Header = () => {
     <header className="fixed top-0 inset-x-0 z-[100] bg-[#0d1f3c] shadow-lg py-3">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
         <Link to="/" onClick={() => setIsOpen(false)} aria-label="Elevance Seguros - Página Inicial">
-          <img src={logo} alt="Elevance Seguros" className="h-16 md:h-20 w-auto object-contain" loading="eager" decoding="async" fetchpriority="high" width="120" height="48" />
+          <img src={logo} alt="Elevance Seguros" className="h-10 md:h-12 w-auto object-contain" loading="eager" decoding="async" fetchpriority="high" width="120" height="48" />
         </Link>
 
         {/* Menu Desktop */}
