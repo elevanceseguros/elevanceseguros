@@ -345,9 +345,12 @@ const SagradaFamiliaHomePage = () => {
 
               {/* Tabela de preços */}
               <div className="bg-white rounded-[40px] shadow-xl overflow-hidden border border-slate-100">
-                <div style={{ background: '#1a4a7a' }} className="p-6 text-white">
-                  <h2 className="sf-heading text-lg uppercase tracking-tight">Tabela de Preços 2026</h2>
-                  <p className="text-white/60 text-xs mt-1">QC = Enfermaria · QP = Apartamento</p>
+                <div style={{ background: '#1a4a7a' }} className="p-6 text-white flex items-center justify-between gap-4">
+                  <div>
+                    <h2 className="sf-heading text-lg uppercase tracking-tight">Tabela de Preços 2026</h2>
+                    <p className="text-white/60 text-xs mt-1">QC = Enfermaria · QP = Apartamento</p>
+                  </div>
+                  <img src="/logos/sagrada-familia-white.png" alt="" className="h-10 w-auto opacity-80 shrink-0" aria-hidden="true" />
                 </div>
                 <div className="p-6">
                   <table className="w-full">
@@ -381,11 +384,14 @@ const SagradaFamiliaHomePage = () => {
               {/* Rede de hospitais */}
               <div className="space-y-4">
                 <div className="bg-white rounded-[40px] shadow-xl border border-slate-100 overflow-hidden">
-                  <div style={{ background: '#1a4a7a' }} className="p-6 text-white">
-                    <h2 className="sf-heading text-lg uppercase tracking-tight flex items-center gap-2">
-                      <MapPin size={18} className="opacity-80" /> Rede Própria de Hospitais
-                    </h2>
-                    <p className="text-white/60 text-xs mt-1">Área de atuação: São Paulo, Cotia, Mauá, São Roque e Osasco</p>
+                  <div style={{ background: '#1a4a7a' }} className="p-6 text-white flex items-center justify-between gap-4">
+                    <div>
+                      <h2 className="sf-heading text-lg uppercase tracking-tight flex items-center gap-2">
+                        <MapPin size={18} className="opacity-80" /> Rede Própria de Hospitais
+                      </h2>
+                      <p className="text-white/60 text-xs mt-1">Área de atuação: São Paulo, Cotia, Mauá, São Roque e Osasco</p>
+                    </div>
+                    <img src="/logos/sagrada-familia-white.png" alt="" className="h-10 w-auto opacity-80 shrink-0" aria-hidden="true" />
                   </div>
                   <div className="p-5 space-y-3">
                     {unidades.map((u, i) => (
@@ -412,7 +418,7 @@ const SagradaFamiliaHomePage = () => {
                   <img
                     src="/logos/sagrada-familia-white.png"
                     alt="Sagrada Família Saúde"
-                    className="w-36 mb-4 mx-auto lg:mx-0 opacity-60"
+                    className="w-36 mb-4 mx-auto lg:mx-0 opacity-90"
                   />
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center shrink-0">
