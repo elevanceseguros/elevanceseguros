@@ -448,7 +448,7 @@ const HomePage = () => {
       {/* ═══════════════════════════════
           SEÇÃO RODRIGO — presença humana
       ═══════════════════════════════ */}
-      <section className="py-24 overflow-hidden" style={{background: '#F5F7FA'}}>
+      <section className="py-14 overflow-hidden" style={{background: '#071B34'}}>
         <div className="max-w-7xl mx-auto px-4">
           <div className="rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row"
             style={{background: 'linear-gradient(135deg, #071B34 0%, #0d2a55 100%)', boxShadow: '0 40px 100px rgba(7,27,52,0.25)'}}>
@@ -506,7 +506,7 @@ const HomePage = () => {
       {/* ═══════════════════════════════
           DEPOIMENTOS — estilo WhatsApp sobre navy
       ═══════════════════════════════ */}
-      <section className="py-24 relative overflow-hidden"
+      <section className="py-16 relative overflow-hidden"
         style={{background: 'linear-gradient(160deg, #071B34 0%, #0a2244 100%)'}}>
 
         {/* Glow dourado */}
@@ -580,7 +580,7 @@ const HomePage = () => {
       {/* ═══════════════════════════════
           BLOG — navy com cards flutuando
       ═══════════════════════════════ */}
-      <section className="py-24 relative overflow-hidden"
+      <section className="py-16 relative overflow-hidden"
         style={{background: 'linear-gradient(160deg, #071B34 0%, #0d2a55 100%)'}}>
 
         <div className="absolute inset-0 pointer-events-none" style={{background: 'radial-gradient(ellipse 80% 50% at 100% 50%, rgba(200,169,107,0.05) 0%, transparent 70%)'}}></div>
