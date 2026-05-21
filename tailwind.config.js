@@ -16,10 +16,6 @@ module.exports = {
 			},
 		},
 		extend: {
-			fontFamily: {
-				display: ['"DM Serif Display"', 'Georgia', 'serif'],
-				sans: ['"DM Sans"', 'Inter', 'system-ui', 'sans-serif'],
-			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
