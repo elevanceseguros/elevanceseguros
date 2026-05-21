@@ -76,7 +76,7 @@ const HomePage = () => {
 
               {/* Headline principal */}
               <div className="space-y-3">
-                <h1 className="text-4xl md:text-6xl font-black text-white leading-[1.05] italic tracking-tight">
+                <h1 className="text-4xl md:text-6xl font-bold text-white leading-[1.05] italic tracking-tight font-display">
                   Sua tranquilidade é<br/>
                   <span className="text-yellow-300">nosso maior seguro.</span>
                 </h1>
@@ -244,7 +244,7 @@ const HomePage = () => {
             {/* Conteúdo */}
             <div className="flex flex-col lg:flex-row items-center gap-10 p-8 md:p-12">
               <div className="lg:w-1/2 space-y-6 text-white italic">
-                <Link to="/protecao-veicular" className="block text-3xl md:text-4xl font-black hover:text-yellow-300 transition-colors">Proteção Veicular sem burocracia</Link>
+                <Link to="/protecao-veicular" className="block text-3xl md:text-4xl font-bold hover:text-yellow-300 font-display transition-colors">Proteção Veicular sem burocracia</Link>
                 <p className="text-white/70 font-medium not-italic">Seu carro pode ser roubado ainda hoje — e sem proteção, o prejuízo é 100% seu.</p>
                 <div className="flex flex-wrap gap-3 pt-2 not-italic">
                   {["Sem consulta SPC/Serasa", "Rastreador Grátis", "Carro, moto e caminhão"].map(item => (
@@ -299,7 +299,7 @@ const HomePage = () => {
             </div>
 
             {/* Linha 2 — Título */}
-            <h2 className="text-2xl md:text-4xl font-black text-white italic leading-tight mb-8">
+            <h2 className="text-2xl md:text-4xl font-bold text-white italic leading-tight font-display mb-8">
               Seguro auto completo, sem análise de perfil.<br/>
               <span style={{color: "#54DEF8"}}>Ative em 5 minutos.</span>
             </h2>
@@ -338,7 +338,7 @@ const HomePage = () => {
                 <img src="/logos/embracon_white.webp" alt="Embracon" className="h-8 opacity-90" />
               </div>
               <p className="text-white/40 text-xs uppercase tracking-widest font-bold mb-6">Parceiros das maiores administradoras do Brasil</p>
-              <h2 className="text-3xl md:text-5xl font-black text-white italic mb-4">
+              <h2 className="text-3xl md:text-5xl font-bold text-white italic mb-4 font-display">
                 Conquiste seu bem<br/><span className="text-green-400">sem pagar juros.</span>
               </h2>
               <p className="text-white/60 text-base max-w-xl mx-auto">No financiamento você paga até 2x o valor do bem. No consórcio, você paga só pelo bem — sem juros reais.</p>
@@ -391,7 +391,7 @@ const HomePage = () => {
       {/* 4. CARDS SERVIÇOS */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-black text-[#0d1f3c] italic text-center mb-3">Qual proteção você ainda não tem?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1f3c] italic text-center mb-3 font-display">Qual proteção você ainda não tem?</h2>
           <p className="text-slate-500 text-center font-medium mb-12">Cada uma dessas situações pode acontecer amanhã. Esteja preparado.</p>
           {/* Linha 1 — 3 cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
@@ -452,7 +452,7 @@ const HomePage = () => {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-[#0d1f3c] italic mb-2">O que dizem nossos clientes</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1f3c] italic mb-2 font-display">O que dizem nossos clientes</h2>
             <p className="text-slate-500 font-medium">Pessoas reais, resultados reais</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
