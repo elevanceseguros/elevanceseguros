@@ -166,7 +166,7 @@ export default function EncontreSeuPlanoPage() {
               <Link key={op.nome} to={op.path}
                 className={`bg-white border-2 ${op.cor} rounded-2xl p-5 flex flex-col items-center gap-3 transition-all hover:shadow-md hover:-translate-y-0.5`}>
                 <div className="h-12 flex items-center justify-center">
-                  <img src={op.logo} alt={op.nome} className="max-h-10 max-w-[100px] object-contain" loading="lazy"
+                  <img src={op.logo} alt={op.nome} className="max-h-10 max-w-[140px] object-contain" loading="lazy"
                     onError={(e) => { e.target.style.display = "none"; e.target.nextSibling.style.display = "block"; }} />
                   <span style={{ display: "none" }} className="text-slate-700 font-black text-sm">{op.nome}</span>
                 </div>
