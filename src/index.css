@@ -2,7 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --navy: #071B34;
+  --gold: #C8A96B;
+  --gold-light: #E8C98A;
+  --gold-dark: #97651e;
+  --white: #F5F7FA;
+}
+
+/* Gradiente dourado metálico extraído da logo Elevance */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #97651e 0%, #c28328 25%, #e2a43b 50%, #f0b447 75%, #fcc854 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gold-gradient-bright {
+  background: linear-gradient(135deg, #b77920 0%, #d1912d 30%, #f0b447 60%, #fcc854 85%, #ffe08a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow dourado para elementos premium */
+.gold-glow {
+  box-shadow: 0 0 40px rgba(200, 169, 107, 0.15), 0 0 80px rgba(200, 169, 107, 0.05);
+}
+
+.gold-glow-strong {
+  box-shadow: 0 0 60px rgba(200, 169, 107, 0.25), 0 20px 60px rgba(7, 27, 52, 0.4);
+}
+
+/* Border dourada animada */
+.border-gold {
+  border: 1px solid rgba(200, 169, 107, 0.3);
+}
+
+/* Glassmorphism premium */
+.glass-dark {
+  background: rgba(7, 27, 52, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(200, 169, 107, 0.15);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Fonte display premium */
+.font-sora {
+  font-family: 'Sora', sans-serif;
+}
 
 /* Gradiente dourado metálico extraído da logo Elevance */
 .text-gold-gradient {
