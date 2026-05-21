@@ -1674,7 +1674,7 @@ export const postsData = [
     date: "16 Mai, 2026",
     category: "Planos de Saúde",
     readTime: "5 min",
-    image: "https://images.unsplash.com/photo-1511895426328-dc8714191011?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1542884748-2b87b36c6b90?auto=format&fit=crop&q=80&w=800",
     excerpt: "Incluir cônjuge e filhos no plano de saúde pode ser mais barato do que contratar planos separados. Mas existem regras, prazos e armadilhas que você precisa conhecer antes de decidir.",
     content: `
       <p class="mb-4">Quando o assunto é plano de saúde para família, a dúvida mais comum é: vale mais a pena um plano familiar único ou planos individuais para cada um? A resposta depende de fatores como idade dos dependentes, operadora escolhida e tipo de plano — mas na maioria dos casos, o <strong>plano familiar é mais econômico e prático</strong>.</p>
