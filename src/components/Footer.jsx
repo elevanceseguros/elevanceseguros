@@ -6,15 +6,12 @@ const Footer = () => {
   const logo = "/logos/elevance-dark-horizontal-gold.png";
   const currentYear = new Date().getFullYear();
 
-  const saudeLinks1 = [
+  const saudeLinks = [
     { name: 'Encontre seu Plano', path: '/encontre-seu-plano', destaque: true },
     { name: 'Amil', path: '/amil' },
     { name: 'Bradesco Saúde', path: '/bradescosaude' },
     { name: 'SulAmérica', path: '/sulamerica' },
     { name: 'Hapvida', path: '/hapvida' },
-  ];
-
-  const saudeLinks2 = [
     { name: 'Unimed', path: '/unimed' },
     { name: 'Porto Saúde', path: '/porto' },
     { name: 'Alice', path: '/alice' },
@@ -32,147 +29,142 @@ const Footer = () => {
     { name: 'Seguro de Vida', path: '/seguro-vida' },
     { name: 'Seguro Residencial', path: '/seguro-residencial' },
     { name: 'Seguro Empresarial', path: '/seguro-empresa' },
-    { name: 'Responsab. Civil', path: '/responsabilidade-civil' },
+    { name: 'Resp. Civil', path: '/responsabilidade-civil' },
     { name: 'Seguro Garantia', path: '/seguro-garantia' },
   ];
 
+  const linkStyle = {color: 'rgba(255,255,255,0.45)'};
+  const linkHoverClass = "flex items-center gap-1 text-[11px] font-medium tracking-wide transition-colors hover:text-white";
+
   return (
-    <footer className="bg-[#0d1f3c] text-white pt-14 pb-8 border-t-4 border-[#c9a84c]">
+    <footer className="text-white pt-16 pb-8"
+      style={{background: '#071B34', borderTop: '1px solid rgba(200,169,107,0.2)'}}>
+
+      {/* Linha dourada topo */}
       <div className="max-w-7xl mx-auto px-4">
+        <div className="h-px w-32 mb-12 mx-auto md:mx-0" style={{background: 'linear-gradient(to right, #C8A96B, transparent)'}}></div>
 
-        {/* GRID PRINCIPAL */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10 border-b border-white/20">
+        {/* GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12"
+          style={{borderBottom: '1px solid rgba(255,255,255,0.06)'}}>
 
-          {/* Coluna 1: Logo + info — 3 cols */}
-          <div className="lg:col-span-3 space-y-4">
-            <img src={logo} alt="Elevance Seguros" className="h-10 w-auto object-contain" loading="lazy" decoding="async" width="120" height="36" />
-            <p className="text-blue-100/70 text-xs leading-relaxed font-medium">
+          {/* Col 1 — Logo + info */}
+          <div className="lg:col-span-3 space-y-5">
+            <img src={logo} alt="Elevance Seguros" className="h-10 w-auto object-contain" loading="lazy" width="120" height="36" />
+            <p className="text-xs font-light leading-relaxed" style={{color: 'rgba(255,255,255,0.45)'}}>
               Consultoria de seguros 100% digital. Especialistas em proteger o que é mais importante, em todo o Brasil.
             </p>
-            <div className="space-y-2 text-xs text-blue-100/70">
-              <a href="tel:5511920144864" className="flex items-center gap-2 hover:text-white transition-colors font-medium">
-                <Phone size={12} className="text-blue-400 shrink-0" /> (11) 92014-4864
+            <div className="space-y-2.5 text-xs">
+              <a href="tel:5511920144864" className="flex items-center gap-2 hover:text-white transition-colors" style={{color: 'rgba(255,255,255,0.45)'}}>
+                <Phone size={11} style={{color: '#C8A96B'}} /> (11) 92014-4864
               </a>
-              <a href="mailto:contato@elevanceseguros.com" className="flex items-center gap-2 hover:text-white transition-colors font-medium">
-                <Mail size={12} className="text-blue-400 shrink-0" /> contato@elevanceseguros.com
+              <a href="mailto:contato@elevanceseguros.com" className="flex items-center gap-2 hover:text-white transition-colors" style={{color: 'rgba(255,255,255,0.45)'}}>
+                <Mail size={11} style={{color: '#C8A96B'}} /> contato@elevanceseguros.com
               </a>
-              <div className="flex items-center gap-2 font-medium">
-                <Globe size={12} className="text-blue-400 shrink-0" /> Atendimento em todo o Brasil
+              <div className="flex items-center gap-2" style={{color: 'rgba(255,255,255,0.45)'}}>
+                <Globe size={11} style={{color: '#C8A96B'}} /> Atendimento em todo o Brasil
               </div>
             </div>
             <div className="flex gap-2 pt-1">
-              <a href="https://instagram.com/elevanceseguros" target="_blank" rel="noreferrer"
-                className="p-2 bg-white/10 hover:bg-pink-600 rounded-xl transition-all" title="Instagram">
-                <Instagram size={16} />
-              </a>
-              <a href="https://tiktok.com/@elevance.seguros" target="_blank" rel="noreferrer"
-                className="p-2 bg-white/10 hover:bg-slate-900 rounded-xl transition-all" title="TikTok">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
-              </a>
-              <a href="https://kwai.com/@elevanceseguros" target="_blank" rel="noreferrer"
-                className="p-2 bg-white/10 hover:bg-orange-500 rounded-xl transition-all" title="Kwai">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
-              </a>
-              <a href="https://youtube.com/@elevanceseguros" target="_blank" rel="noreferrer"
-                className="p-2 bg-white/10 hover:bg-red-600 rounded-xl transition-all" title="YouTube">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.04 0 12 0 12s0 3.96.5 5.81a3.02 3.02 0 0 0 2.12 2.14C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.96 24 12 24 12s0-3.96-.5-5.81zM9.75 15.5V8.5l6.5 3.5-6.5 3.5z"/></svg>
-              </a>
+              {[
+                { href: "https://instagram.com/elevanceseguros", title: "Instagram", hover: "#E1306C", icon: <Instagram size={15}/> },
+                { href: "https://tiktok.com/@elevance.seguros", title: "TikTok", hover: "#010101", icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg> },
+                { href: "https://kwai.com/@elevanceseguros", title: "Kwai", hover: "#FF6600", icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg> },
+                { href: "https://youtube.com/@elevanceseguros", title: "YouTube", hover: "#FF0000", icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.04 0 12 0 12s0 3.96.5 5.81a3.02 3.02 0 0 0 2.12 2.14C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.96 24 12 24 12s0-3.96-.5-5.81zM9.75 15.5V8.5l6.5 3.5-6.5 3.5z"/></svg> },
+              ].map((s) => (
+                <a key={s.title} href={s.href} target="_blank" rel="noreferrer" title={s.title}
+                  className="p-2 rounded-xl transition-all hover:scale-110"
+                  style={{background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                  {s.icon}
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Coluna 2: Saúde + Consórcios + Blog — 5 cols */}
-          <div className="lg:col-span-5">
-            <h4 className="flex items-center gap-1.5 font-black text-white uppercase text-[10px] tracking-[0.2em] mb-4">
-              <Heart size={11} className="text-blue-400" /> Planos de Saúde
+          {/* Col 2 — Saúde */}
+          <div className="lg:col-span-4">
+            <h4 className="flex items-center gap-1.5 font-bold uppercase text-[10px] tracking-widest mb-5"
+              style={{color: '#C8A96B'}}>
+              <Heart size={10}/> Planos de Saúde
             </h4>
-            <div className="grid grid-cols-2 gap-x-6 gap-y-2">
-              {[...saudeLinks1, ...saudeLinks2].map((item) => (
-                <Link key={item.path} to={item.path}
-                  className={`flex items-center gap-1 text-[11px] font-bold tracking-wide transition-colors hover:text-white ${item.destaque ? 'text-blue-400 hover:text-blue-300' : 'text-blue-100/70'}`}>
-                  <ChevronRight size={10} className="shrink-0" /> {item.name}
+            <div className="grid grid-cols-2 gap-x-4 gap-y-2.5">
+              {saudeLinks.map((item) => (
+                <Link key={item.path} to={item.path} className={linkHoverClass}
+                  style={item.destaque ? {color: '#C8A96B'} : linkStyle}>
+                  <ChevronRight size={9} className="shrink-0" /> {item.name}
                 </Link>
               ))}
-              <div className="col-span-2 border-t border-white/10 mt-3 pt-4 grid grid-cols-2 gap-x-6 gap-y-2">
-                <div>
-                  <h4 className="flex items-center gap-1.5 font-black text-white uppercase text-[10px] tracking-[0.2em] mb-3">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-blue-400"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    Consórcios
-                  </h4>
-                  <Link to="/consorcios" className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
-                    <ChevronRight size={10} className="shrink-0" /> Ver Consórcios
-                  </Link>
-                </div>
-                <div>
-                  <h4 className="flex items-center gap-1.5 font-black text-white uppercase text-[10px] tracking-[0.2em] mb-3">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-blue-400"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-                    Blog
-                  </h4>
-                  <Link to="/blog" className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
-                    <ChevronRight size={10} className="shrink-0" /> Ver Artigos
-                  </Link>
-                </div>
+            </div>
+            <div className="mt-6 pt-5 grid grid-cols-2 gap-4" style={{borderTop: '1px solid rgba(255,255,255,0.06)'}}>
+              <div>
+                <h4 className="font-bold uppercase text-[10px] tracking-widest mb-3" style={{color: '#C8A96B'}}>Consórcios</h4>
+                <Link to="/consorcios" className={linkHoverClass} style={linkStyle}>
+                  <ChevronRight size={9} className="shrink-0" /> Ver Consórcios
+                </Link>
+              </div>
+              <div>
+                <h4 className="font-bold uppercase text-[10px] tracking-widest mb-3" style={{color: '#C8A96B'}}>Blog</h4>
+                <Link to="/blog" className={linkHoverClass} style={linkStyle}>
+                  <ChevronRight size={9} className="shrink-0" /> Ver Artigos
+                </Link>
               </div>
             </div>
           </div>
 
-          {/* Coluna 3: Auto + Seguros — 2 cols */}
-          <div className="lg:col-span-2 space-y-6">
+          {/* Col 3 — Auto + Seguros */}
+          <div className="lg:col-span-3 space-y-6">
             <div>
-              <h4 className="flex items-center gap-1.5 font-black text-white uppercase text-[10px] tracking-[0.2em] mb-4">
-                <Car size={11} className="text-blue-400" /> Auto
+              <h4 className="flex items-center gap-1.5 font-bold uppercase text-[10px] tracking-widest mb-5" style={{color: '#C8A96B'}}>
+                <Car size={10}/> Auto
               </h4>
-              <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+              <div className="space-y-2.5">
                 {autoLinks.map((item) => (
-                  <Link key={item.path} to={item.path} className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
-                    <ChevronRight size={10} className="shrink-0" /> {item.name}
+                  <Link key={item.path} to={item.path} className={linkHoverClass} style={linkStyle}>
+                    <ChevronRight size={9} className="shrink-0" /> {item.name}
                   </Link>
                 ))}
               </div>
             </div>
             <div>
-              <h4 className="font-black text-white uppercase text-[10px] tracking-[0.2em] mb-4">Seguros</h4>
-              <div className="grid grid-cols-2 gap-x-6 gap-y-2">
-                {segurosLinks.slice(0, 3).map((item) => (
-                  <Link key={item.path} to={item.path} className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
-                    <ChevronRight size={10} className="shrink-0" /> {item.name}
-                  </Link>
-                ))}
-                {segurosLinks.slice(3).map((item) => (
-                  <Link key={item.path} to={item.path} className="flex items-center gap-1 text-[11px] font-bold text-blue-100/70 tracking-wide transition-colors hover:text-white">
-                    <ChevronRight size={10} className="shrink-0" /> {item.name}
+              <h4 className="font-bold uppercase text-[10px] tracking-widest mb-5" style={{color: '#C8A96B'}}>Seguros</h4>
+              <div className="space-y-2.5">
+                {segurosLinks.map((item) => (
+                  <Link key={item.path} to={item.path} className={linkHoverClass} style={linkStyle}>
+                    <ChevronRight size={9} className="shrink-0" /> {item.name}
                   </Link>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Coluna 4: Credenciais — 2 cols */}
-          <div className="lg:col-span-2 space-y-3">
-            <h4 className="font-black text-white uppercase text-[10px] tracking-[0.2em] mb-4">Credenciais</h4>
-            <div className="bg-white/10 p-4 rounded-[20px] border border-white/20 text-center space-y-2">
-              <ShieldCheck size={24} className="text-blue-400 mx-auto" />
-              <span className="text-[9px] font-black uppercase bg-blue-600 px-3 py-1 rounded-full inline-block tracking-widest">Susep Ativa</span>
-              <p className="text-[8px] text-blue-100/50 uppercase tracking-widest font-bold leading-tight">Parceiro Oficial APVS Brasil</p>
+          {/* Col 4 — Credenciais */}
+          <div className="lg:col-span-2 space-y-4">
+            <h4 className="font-bold uppercase text-[10px] tracking-widest mb-5" style={{color: '#C8A96B'}}>Credenciais</h4>
+            <div className="rounded-2xl p-4 text-center space-y-2"
+              style={{background: 'rgba(200,169,107,0.06)', border: '1px solid rgba(200,169,107,0.15)'}}>
+              <ShieldCheck size={22} style={{color: '#C8A96B'}} className="mx-auto" />
+              <span className="text-[9px] font-bold uppercase px-3 py-1 rounded-full inline-block tracking-widest"
+                style={{background: 'rgba(200,169,107,0.15)', color: '#C8A96B'}}>Susep Ativa</span>
+              <p className="text-[8px] uppercase tracking-widest font-medium leading-tight" style={{color: 'rgba(255,255,255,0.3)'}}>Parceiro Oficial APVS Brasil</p>
             </div>
-            <div className="bg-white/10 p-4 rounded-[20px] border border-white/20">
-              <p className="text-[9px] font-black uppercase text-blue-100/70 tracking-widest mb-1">Atendimento</p>
-              <p className="text-xs font-bold text-white">São Paulo, SP</p>
-              <p className="text-[11px] text-blue-100/70 font-medium mt-0.5">🇧🇷 Todo o Brasil</p>
+            <div className="rounded-2xl p-4" style={{background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)'}}>
+              <p className="text-[9px] font-bold uppercase tracking-widest mb-1" style={{color: 'rgba(255,255,255,0.35)'}}>Atendimento</p>
+              <p className="text-xs font-semibold text-white">São Paulo, SP</p>
+              <p className="text-[11px] mt-0.5" style={{color: 'rgba(255,255,255,0.4)'}}>🇧🇷 Todo o Brasil</p>
             </div>
           </div>
 
         </div>
 
-        {/* RODAPÉ FINAL */}
+        {/* Rodapé final */}
         <div className="pt-6 flex flex-col md:flex-row justify-between items-center gap-2">
-          <p className="text-[10px] font-bold text-white/40 tracking-[0.2em] uppercase">
+          <p className="text-[10px] font-medium uppercase tracking-widest" style={{color: 'rgba(255,255,255,0.25)'}}>
             © {currentYear} Elevance Seguros · Todos os direitos reservados
           </p>
-          <p className="text-[10px] font-bold text-white/40 tracking-[0.2em] uppercase">
+          <p className="text-[10px] font-medium uppercase tracking-widest" style={{color: 'rgba(255,255,255,0.25)'}}>
             Rodrigo Farias · Corretor de Seguros
           </p>
         </div>
-
       </div>
     </footer>
   );

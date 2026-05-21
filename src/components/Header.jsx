@@ -59,32 +59,35 @@ const Header = () => {
     return () => document.removeEventListener('mousedown', handleClick);
   }, []);
 
+  const navBg = scrolled
+    ? 'rgba(7,27,52,0.97)'
+    : 'rgba(7,27,52,1)';
+
   return (
-    <header className="fixed top-0 inset-x-0 z-[100] bg-[#0d1f3c] shadow-lg py-3">
+    <header className="fixed top-0 inset-x-0 z-[100] py-3 transition-all duration-300"
+      style={{background: navBg, borderBottom: '1px solid rgba(200,169,107,0.12)', backdropFilter: 'blur(12px)'}}>
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-        <Link to="/" onClick={() => setIsOpen(false)} aria-label="Elevance Seguros - Página Inicial">
+        <Link to="/" onClick={() => setIsOpen(false)} aria-label="Elevance Seguros">
           <img src={logo} alt="Elevance Seguros" className="h-10 md:h-12 w-auto object-contain" loading="eager" decoding="async" fetchpriority="high" width="120" height="48" />
         </Link>
 
         {/* Menu Desktop */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-7">
 
-          {/* Saúde com submenu */}
+          {/* Saúde */}
           <div ref={saudeRef} className="relative"
             onMouseEnter={() => { setSaudeOpen(true); setAutoOpen(false); setSegurosOpen(false); }}
             onMouseLeave={() => setSaudeOpen(false)}>
-            <button
-              className="flex items-center gap-1 text-[11px] font-black uppercase tracking-widest text-white hover:text-blue-200 transition-colors"
-            >
-              <Heart size={13} /> Saúde <ChevronDown size={13} className={`transition-transform ${saudeOpen ? 'rotate-180' : ''}`} />
+            <button className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-widest text-white/80 hover:text-white transition-colors">
+              <Heart size={12} style={{color: '#C8A96B'}} /> Saúde <ChevronDown size={11} className={`transition-transform text-white/40 ${saudeOpen ? 'rotate-180' : ''}`} />
             </button>
             {saudeOpen && (
               <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-3 w-52 z-50">
-                <div className="bg-white rounded-2xl shadow-xl border border-slate-100 py-2">
+                <div className="rounded-2xl py-2 overflow-hidden" style={{background: '#0A1F3A', border: '1px solid rgba(200,169,107,0.2)', boxShadow: '0 20px 60px rgba(7,27,52,0.6)'}}>
                   {saudeSubmenu.map((item, i) => (
-                    <Link key={item.path} to={item.path}
-                      onClick={() => setSaudeOpen(false)}
-                      className={`block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#0d1f3c] hover:bg-blue-50 hover:text-[#c9a84c] transition-colors ${i === 0 ? 'border-b border-slate-100 mb-1 text-[#c9a84c]' : ''}`}>
+                    <Link key={item.path} to={item.path} onClick={() => setSaudeOpen(false)}
+                      className={`block px-5 py-2.5 text-xs font-semibold uppercase tracking-wide transition-colors hover:bg-white/5 ${i === 0 ? 'mb-1 border-b' : ''}`}
+                      style={{color: i === 0 ? '#C8A96B' : 'rgba(255,255,255,0.7)', borderColor: 'rgba(200,169,107,0.15)'}}>
                       {i === 0 ? '⭐ ' + item.name : item.name}
                     </Link>
                   ))}
@@ -93,22 +96,20 @@ const Header = () => {
             )}
           </div>
 
-          {/* Auto com submenu */}
+          {/* Auto */}
           <div ref={autoRef} className="relative"
             onMouseEnter={() => { setAutoOpen(true); setSaudeOpen(false); setSegurosOpen(false); }}
             onMouseLeave={() => setAutoOpen(false)}>
-            <button
-              className="flex items-center gap-1 text-[11px] font-black uppercase tracking-widest text-white hover:text-blue-200 transition-colors"
-            >
-              <Car size={13} /> Auto <ChevronDown size={13} className={`transition-transform ${autoOpen ? 'rotate-180' : ''}`} />
+            <button className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-widest text-white/80 hover:text-white transition-colors">
+              <Car size={12} style={{color: '#C8A96B'}} /> Auto <ChevronDown size={11} className={`transition-transform text-white/40 ${autoOpen ? 'rotate-180' : ''}`} />
             </button>
             {autoOpen && (
               <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-3 w-48 z-50">
-                <div className="bg-white rounded-2xl shadow-xl border border-slate-100 py-2">
+                <div className="rounded-2xl py-2 overflow-hidden" style={{background: '#0A1F3A', border: '1px solid rgba(200,169,107,0.2)', boxShadow: '0 20px 60px rgba(7,27,52,0.6)'}}>
                   {autoSubmenu.map((item) => (
-                    <Link key={item.path} to={item.path}
-                      onClick={() => setAutoOpen(false)}
-                      className="block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#0d1f3c] hover:bg-blue-50 hover:text-[#c9a84c] transition-colors">
+                    <Link key={item.path} to={item.path} onClick={() => setAutoOpen(false)}
+                      className="block px-5 py-2.5 text-xs font-semibold uppercase tracking-wide transition-colors hover:bg-white/5"
+                      style={{color: 'rgba(255,255,255,0.7)'}}>
                       {item.name}
                     </Link>
                   ))}
@@ -117,22 +118,20 @@ const Header = () => {
             )}
           </div>
 
-          {/* Seguros com submenu */}
+          {/* Seguros */}
           <div ref={segurosRef} className="relative"
             onMouseEnter={() => { setSegurosOpen(true); setSaudeOpen(false); setAutoOpen(false); }}
             onMouseLeave={() => setSegurosOpen(false)}>
-            <button
-              className="flex items-center gap-1 text-[11px] font-black uppercase tracking-widest text-white hover:text-blue-200 transition-colors"
-            >
-              <Shield size={13} /> Seguros <ChevronDown size={13} className={`transition-transform ${segurosOpen ? 'rotate-180' : ''}`} />
+            <button className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-widest text-white/80 hover:text-white transition-colors">
+              <Shield size={12} style={{color: '#C8A96B'}} /> Seguros <ChevronDown size={11} className={`transition-transform text-white/40 ${segurosOpen ? 'rotate-180' : ''}`} />
             </button>
             {segurosOpen && (
               <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-3 w-52 z-50">
-                <div className="bg-white rounded-2xl shadow-xl border border-slate-100 py-2">
+                <div className="rounded-2xl py-2 overflow-hidden" style={{background: '#0A1F3A', border: '1px solid rgba(200,169,107,0.2)', boxShadow: '0 20px 60px rgba(7,27,52,0.6)'}}>
                   {segurosSubmenu.map((item) => (
-                    <Link key={item.path} to={item.path}
-                      onClick={() => setSegurosOpen(false)}
-                      className="block px-5 py-2.5 text-xs font-black uppercase tracking-wide text-[#0d1f3c] hover:bg-blue-50 hover:text-[#c9a84c] transition-colors">
+                    <Link key={item.path} to={item.path} onClick={() => setSegurosOpen(false)}
+                      className="block px-5 py-2.5 text-xs font-semibold uppercase tracking-wide transition-colors hover:bg-white/5"
+                      style={{color: 'rgba(255,255,255,0.7)'}}>
                       {item.name}
                     </Link>
                   ))}
@@ -141,82 +140,94 @@ const Header = () => {
             )}
           </div>
 
-          <Link to="/consorcios" className="text-[11px] font-black uppercase tracking-widest text-white hover:text-blue-200 transition-colors">Consórcios</Link>
-          <Link to="/blog" className="text-[11px] font-black uppercase tracking-widest text-white hover:text-blue-200 transition-colors">Blog</Link>
+          <Link to="/consorcios" className="text-[11px] font-semibold uppercase tracking-widest text-white/80 hover:text-white transition-colors">Consórcios</Link>
+          <Link to="/blog" className="text-[11px] font-semibold uppercase tracking-widest text-white/80 hover:text-white transition-colors">Blog</Link>
 
           <a href="https://wa.me/5511920144864" target="_blank" rel="noreferrer"
-            className="flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-md">
-            <Phone size={14} /> Falar com Rodrigo
+            className="flex items-center gap-2 text-white px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all hover:opacity-90 hover:scale-105"
+            style={{background: 'linear-gradient(135deg, #16a34a, #15803d)', boxShadow: '0 4px 15px rgba(22,163,74,0.3)'}}>
+            <Phone size={13} /> Falar com Rodrigo
           </a>
         </nav>
 
-        <button className="lg:hidden text-white p-2" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        <button className="lg:hidden text-white p-2" onClick={() => setIsOpen(!isOpen)} aria-label="Menu">
+          {isOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
       </div>
 
       {/* Menu Mobile */}
-      <div className={`lg:hidden absolute top-full left-0 w-full bg-[#0d1f3c] border-t border-[#c9a84c]/30 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[700px] opacity-100 shadow-2xl' : 'max-h-0 opacity-0'}`}>
-        <div className="flex flex-col p-6 gap-2">
+      <div className={`lg:hidden absolute top-full left-0 w-full overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}`}
+        style={{background: '#071B34', borderTop: '1px solid rgba(200,169,107,0.15)', boxShadow: '0 20px 40px rgba(7,27,52,0.5)'}}>
+        <div className="flex flex-col p-6 gap-1">
 
-          {/* Saúde mobile */}
+          {/* Saúde */}
           <button onClick={() => setMobileSaudeOpen(!mobileSaudeOpen)}
-            className="flex items-center justify-between text-sm font-black uppercase tracking-widest text-white border-b border-[#c9a84c]/30 pb-3">
-            <span className="flex items-center gap-2"><Heart size={14} /> Saúde</span>
-            <ChevronDown size={16} className={`transition-transform ${mobileSaudeOpen ? 'rotate-180' : ''}`} />
+            className="flex items-center justify-between text-sm font-semibold uppercase tracking-widest text-white/80 py-3 border-b"
+            style={{borderColor: 'rgba(200,169,107,0.12)'}}>
+            <span className="flex items-center gap-2"><Heart size={13} style={{color:'#C8A96B'}}/> Saúde</span>
+            <ChevronDown size={14} className={`transition-transform text-white/30 ${mobileSaudeOpen ? 'rotate-180' : ''}`} />
           </button>
           {mobileSaudeOpen && (
-            <div className="flex flex-col gap-1 pl-4 mb-2">
+            <div className="flex flex-col pl-5 mb-1">
               {saudeSubmenu.map((item, i) => (
                 <Link key={item.path} to={item.path} onClick={() => setIsOpen(false)}
-                  className={`text-xs font-black uppercase tracking-wide py-2 border-b border-white/20 ${i === 0 ? 'text-yellow-300' : 'text-white'}`}>
+                  className="text-xs font-medium uppercase tracking-wide py-2.5 border-b"
+                  style={{color: i === 0 ? '#C8A96B' : 'rgba(255,255,255,0.55)', borderColor: 'rgba(255,255,255,0.06)'}}>
                   {i === 0 ? '⭐ ' + item.name : item.name}
                 </Link>
               ))}
             </div>
           )}
 
-          {/* Auto mobile */}
+          {/* Auto */}
           <button onClick={() => setMobileAutoOpen(!mobileAutoOpen)}
-            className="flex items-center justify-between text-sm font-black uppercase tracking-widest text-white border-b border-[#c9a84c]/30 pb-3">
-            <span className="flex items-center gap-2"><Car size={14} /> Auto</span>
-            <ChevronDown size={16} className={`transition-transform ${mobileAutoOpen ? 'rotate-180' : ''}`} />
+            className="flex items-center justify-between text-sm font-semibold uppercase tracking-widest text-white/80 py-3 border-b"
+            style={{borderColor: 'rgba(200,169,107,0.12)'}}>
+            <span className="flex items-center gap-2"><Car size={13} style={{color:'#C8A96B'}}/> Auto</span>
+            <ChevronDown size={14} className={`transition-transform text-white/30 ${mobileAutoOpen ? 'rotate-180' : ''}`} />
           </button>
           {mobileAutoOpen && (
-            <div className="flex flex-col gap-1 pl-4 mb-2">
+            <div className="flex flex-col pl-5 mb-1">
               {autoSubmenu.map((item) => (
                 <Link key={item.path} to={item.path} onClick={() => setIsOpen(false)}
-                  className="text-xs font-black uppercase tracking-wide text-blue-100 py-2 border-b border-blue-400/20">
+                  className="text-xs font-medium uppercase tracking-wide py-2.5 border-b"
+                  style={{color: 'rgba(255,255,255,0.55)', borderColor: 'rgba(255,255,255,0.06)'}}>
                   {item.name}
                 </Link>
               ))}
             </div>
           )}
 
-
-          {/* Seguros mobile */}
+          {/* Seguros */}
           <button onClick={() => setMobileSegurosOpen(!mobileSegurosOpen)}
-            className="flex items-center justify-between text-sm font-black uppercase tracking-widest text-white border-b border-[#c9a84c]/30 pb-3">
-            <span className="flex items-center gap-2"><Shield size={14} /> Seguros</span>
-            <ChevronDown size={16} className={`transition-transform ${mobileSegurosOpen ? 'rotate-180' : ''}`} />
+            className="flex items-center justify-between text-sm font-semibold uppercase tracking-widest text-white/80 py-3 border-b"
+            style={{borderColor: 'rgba(200,169,107,0.12)'}}>
+            <span className="flex items-center gap-2"><Shield size={13} style={{color:'#C8A96B'}}/> Seguros</span>
+            <ChevronDown size={14} className={`transition-transform text-white/30 ${mobileSegurosOpen ? 'rotate-180' : ''}`} />
           </button>
           {mobileSegurosOpen && (
-            <div className="flex flex-col gap-1 pl-4 mb-2">
+            <div className="flex flex-col pl-5 mb-1">
               {segurosSubmenu.map((item) => (
                 <Link key={item.path} to={item.path} onClick={() => setIsOpen(false)}
-                  className="text-xs font-black uppercase tracking-wide text-blue-100 py-2 border-b border-blue-400/20">
+                  className="text-xs font-medium uppercase tracking-wide py-2.5 border-b"
+                  style={{color: 'rgba(255,255,255,0.55)', borderColor: 'rgba(255,255,255,0.06)'}}>
                   {item.name}
                 </Link>
               ))}
             </div>
           )}
 
-          <Link to="/consorcios" onClick={() => setIsOpen(false)} className="text-sm font-black uppercase tracking-widest text-white border-b border-[#c9a84c]/30 pb-3">Consórcios</Link>
-          <Link to="/blog" onClick={() => setIsOpen(false)} className="text-sm font-black uppercase tracking-widest text-white border-b border-[#c9a84c]/30 pb-3">Blog</Link>
+          <Link to="/consorcios" onClick={() => setIsOpen(false)}
+            className="text-sm font-semibold uppercase tracking-widest text-white/80 py-3 border-b"
+            style={{borderColor: 'rgba(200,169,107,0.12)'}}>Consórcios</Link>
+          <Link to="/blog" onClick={() => setIsOpen(false)}
+            className="text-sm font-semibold uppercase tracking-widest text-white/80 py-3 border-b"
+            style={{borderColor: 'rgba(200,169,107,0.12)'}}>Blog</Link>
 
           <a href="https://wa.me/5511920144864"
-            className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-400 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest shadow-lg mt-2">
-            <Phone size={16} /> Falar com Rodrigo
+            className="flex items-center justify-center gap-2 text-white py-4 rounded-xl font-bold text-xs uppercase tracking-widest mt-3"
+            style={{background: 'linear-gradient(135deg, #16a34a, #15803d)', boxShadow: '0 4px 15px rgba(22,163,74,0.3)'}}>
+            <Phone size={15} /> Falar com Rodrigo
           </a>
         </div>
       </div>
