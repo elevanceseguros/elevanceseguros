@@ -68,7 +68,7 @@ export default function SeguroEmpresaPage() {
                 <span className="text-blue-600">fechar sua empresa.</span>
               </h1>
               <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
-                Soluções completas de seguro para <span className="text-yellow-300 font-black uppercase">proteger seu negócio</span>, seu patrimônio e seus colaboradores.
+                Soluções completas de seguro para <span className="text-gold-gradient font-black uppercase">proteger seu negócio</span>, seu patrimônio e seus colaboradores.
               </p>
               <ul className="space-y-3 text-left max-w-xl mx-auto lg:mx-0">
                 {["Planos de saúde PME a partir de 2 vidas", "Seguro patrimonial completo", "Responsabilidade civil empresarial", "Seguro de vida em grupo para colaboradores", "Atendimento especializado para empresas"].map((item, i) => (

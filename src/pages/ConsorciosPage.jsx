@@ -82,7 +82,7 @@ export default function ConsorciосPage() {
                 <span className="text-blue-600">sem pagar juros abusivos.</span>
               </h1>
               <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
-                Consórcio é a forma mais <span className="text-yellow-300 font-black uppercase">inteligente</span> de conquistar imóveis, veículos e serviços sem pagar juros bancários abusivos.
+                Consórcio é a forma mais <span className="text-gold-gradient font-black uppercase">inteligente</span> de conquistar imóveis, veículos e serviços sem pagar juros bancários abusivos.
               </p>
               <div className="flex flex-row justify-center lg:justify-start gap-4">
                 <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">

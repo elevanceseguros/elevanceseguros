@@ -85,10 +85,10 @@ export default function EncontreSeuPlanoPage() {
               <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest backdrop-blur-sm">Consultoria Especializada</span>
               <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
                 Encontre o plano de saúde <br className="hidden md:block" />
-                <span className="text-yellow-300">ideal para você.</span>
+                <span className="text-gold-gradient-bright">ideal para você.</span>
               </h1>
               <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
-                Trabalhamos com as <span className="text-yellow-300 font-black uppercase">principais operadoras</span> do mercado. Deixe seus dados e encontraremos a melhor opção para o seu perfil e orçamento.
+                Trabalhamos com as <span className="text-gold-gradient font-black uppercase">principais operadoras</span> do mercado. Deixe seus dados e encontraremos a melhor opção para o seu perfil e orçamento.
               </p>
               <div className="flex flex-row justify-center lg:justify-start gap-4">
                 <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">

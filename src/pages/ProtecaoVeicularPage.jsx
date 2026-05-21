@@ -80,10 +80,10 @@ export default function ProtecaoVeicularPage() {
                 <img src="/logos/apvs_truck.webp" alt="APVS Truck" className="h-12" />
               </div>
               <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
-                Seu carro pode ser roubado <span className="text-yellow-300">ainda hoje. Está protegido?</span>
+                Seu carro pode ser roubado <span className="text-gold-gradient-bright">ainda hoje. Está protegido?</span>
               </h1>
               <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
-                A <span className="text-yellow-300 font-black uppercase">maior rede de proteção veicular</span> da América Latina no seu carro ou moto. Sem consulta ao SPC/Serasa.
+                A <span className="text-gold-gradient font-black uppercase">maior rede de proteção veicular</span> da América Latina no seu carro ou moto. Sem consulta ao SPC/Serasa.
               </p>
               <ul className="space-y-3 text-left max-w-xl mx-auto lg:mx-0">
                 {["Aprovação imediata, sem análise de perfil","Rastreador instalado gratuitamente","Mensalidade até 50% menor que seguro tradicional","Cobertura para carro e moto","Assistência 24h em todo o Brasil"].map((item, i) => (

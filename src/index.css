@@ -4,6 +4,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
+/* Gradiente dourado metálico extraído da logo Elevance */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #97651e 0%, #c28328 25%, #e2a43b 50%, #f0b447 75%, #fcc854 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Versão mais brilhante para títulos grandes */
+.text-gold-gradient-bright {
+  background: linear-gradient(135deg, #b77920 0%, #d1912d 30%, #f0b447 60%, #fcc854 85%, #ffe08a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 * {
   margin: 0;
   padding: 0;

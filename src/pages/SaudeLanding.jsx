@@ -139,10 +139,10 @@ export default function SaudeLanding() {
               <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest backdrop-blur-sm">✦ Consultoria Especializada em SP</span>
               <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
                 Plano de saúde do jeito certo, <br className="hidden md:block" />
-                <span className="text-yellow-300">sem enrolação.</span>
+                <span className="text-gold-gradient-bright">sem enrolação.</span>
               </h1>
               <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium">
-                Deixe seu contato e o <span className="text-yellow-300 font-black">Rodrigo Farias</span> encontrará o melhor plano para você em minutos — de graça.
+                Deixe seu contato e o <span className="text-gold-gradient font-black">Rodrigo Farias</span> encontrará o melhor plano para você em minutos — de graça.
               </p>
               <div className="grid grid-cols-2 gap-3 max-w-xl mx-auto lg:mx-0">
                 {["Amil, Bradesco, SulAmérica", "Hapvida, Unimed, Alice", "Individual e familiar", "MEI e PME empresarial", "Cotação em minutos", "Sem burocracia"].map((item, i) => (

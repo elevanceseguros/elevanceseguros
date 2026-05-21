@@ -78,7 +78,7 @@ const HomePage = () => {
               <div className="space-y-3">
                 <h1 className="text-4xl md:text-6xl font-black text-white leading-[1.05] italic tracking-tight">
                   Sua tranquilidade é<br/>
-                  <span className="text-yellow-300">nosso maior seguro.</span>
+                  <span className="text-gold-gradient-bright">nosso maior seguro.</span>
                 </h1>
                 <p className="text-white/75 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium leading-relaxed">
                   Deixe seu contato e nossos <span className="text-white font-black">especialistas</span> encontrarão a melhor proteção para você — de graça e sem burocracia.
@@ -93,7 +93,7 @@ const HomePage = () => {
                   { num: "R$ 0", label: "Taxa de consultoria" },
                 ].map((item, i) => (
                   <div key={i} className="bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl px-3 py-3 text-center">
-                    <div className="text-yellow-300 font-black text-lg sm:text-xl leading-none">{item.num}</div>
+                    <div className="text-gold-gradient font-black text-lg sm:text-xl leading-none">{item.num}</div>
                     <div className="text-white/70 text-[9px] sm:text-[10px] font-bold uppercase mt-1 leading-tight">{item.label}</div>
                   </div>
                 ))}

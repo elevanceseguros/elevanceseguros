@@ -85,7 +85,7 @@ export default function SeguroAutoPage() {
                 Seu carro está protegido se <span className="text-blue-600">alguém bater nele hoje?</span>
               </h1>
               <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
-                Comparamos as <span className="text-yellow-300 font-black uppercase">principais seguradoras</span> e encontramos a melhor cobertura pelo menor preço para você.
+                Comparamos as <span className="text-gold-gradient font-black uppercase">principais seguradoras</span> e encontramos a melhor cobertura pelo menor preço para você.
               </p>
               <ul className="space-y-3 text-left max-w-xl mx-auto lg:mx-0">
                 {["Cobertura contra roubo, furto e colisão","Assistência 24h na estrada","Carro reserva disponível","Proteção a terceiros","Vidros e retrovisores inclusos"].map((item, i) => (
