@@ -370,7 +370,7 @@ const HomePage = () => {
       </section>
 
       {/* ═══════════════════════════════
-          CARDS DE SERVIÇO — redesenhados
+          CARDS DE SERVIÇO
       ═══════════════════════════════ */}
       <section className="py-24" style={{background: '#ffffff'}}>
         <div className="max-w-7xl mx-auto px-4">
@@ -381,66 +381,67 @@ const HomePage = () => {
           </div>
           <p className="text-center font-light mb-14" style={{color: '#7A8899'}}>Cada uma dessas situações pode acontecer amanhã. Esteja preparado.</p>
 
-          {/* 3 cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-5">
-            {[
-              { icon: <Heart size={26}/>, title: "Planos de Saúde", desc: "Sem plano, uma internação pode custar R$ 30.000 ou mais do seu bolso.", cta: "Proteger minha saúde", path: "/encontre-seu-plano", accent: "#3B82F6" },
-              { icon: <Smile size={26}/>, title: "Plano Odontológico", desc: "Uma extração ou canal sem plano pode custar até R$ 2.000. Com plano, R$ 0.", cta: "Ver planos odonto", path: "/odontologico", accent: "#0EA5E9" },
-              { icon: <Users size={26}/>, title: "Seguro de Vida", desc: "Se você faltar amanhã, sua família consegue manter o padrão de vida?", cta: "Proteger minha família", path: "/seguro-vida", accent: "#EF4444" },
-            ].map((item, i) => (
-              <Link key={i} to={item.path}
-                className="group rounded-[2rem] p-8 flex flex-col transition-all duration-400 hover:-translate-y-1.5 hover:shadow-xl"
-                style={{background: '#F8FAFB', border: '1.5px solid #EAEEF3', boxShadow: '0 2px 12px rgba(7,27,52,0.04)'}}>
-                <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110"
-                  style={{background: `${item.accent}15`, color: item.accent}}>{item.icon}</div>
-                <h3 className="font-sora text-lg font-bold italic mb-2" style={{color: '#071B34'}}>{item.title}</h3>
-                <p className="text-sm font-light leading-relaxed mb-6 flex-1" style={{color: '#7A8899'}}>{item.desc}</p>
-                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest transition-all group-hover:gap-3" style={{color: item.accent}}>
-                  {item.cta} <ArrowRight size={13}/>
-                </div>
-              </Link>
-            ))}
-          </div>
+          {[
+            [
+              { icon: <Heart size={24}/>, title: "Planos de Saúde", impacto: "R$ 30.000", impactoLabel: "custo médio de internação", desc: "Sem plano, você paga do próprio bolso. Com a Elevance, você encontra o melhor plano para seu perfil.", cta: "Proteger minha saúde", path: "/encontre-seu-plano", accent: "#3B82F6" },
+              { icon: <Smile size={24}/>, title: "Plano Odontológico", impacto: "R$ 2.000", impactoLabel: "custo de um canal sem plano", desc: "Uma extração ou canal sem plano pode custar até R$ 2.000. Com plano, você paga R$ 0.", cta: "Ver planos odonto", path: "/odontologico", accent: "#0EA5E9" },
+              { icon: <Users size={24}/>, title: "Seguro de Vida", impacto: "R$ 0", impactoLabel: "custo da proteção básica", desc: "Se você faltar amanhã, sua família consegue manter o padrão de vida? Essa pergunta tem resposta.", cta: "Proteger minha família", path: "/seguro-vida", accent: "#EF4444" },
+            ],
+            [
+              { icon: <Building2 size={24}/>, title: "Seguro Empresarial", impacto: "Anos", impactoLabel: "de trabalho em risco", desc: "Um único processo trabalhista ou sinistro pode comprometer tudo que você construiu.", cta: "Proteger minha empresa", path: "/seguro-empresa", accent: "#64748B" },
+              { icon: <ShieldCheck size={24}/>, title: "Responsabilidade Civil", impacto: "100%", impactoLabel: "da responsabilidade é sua", desc: "Você responde pessoalmente por decisões da sua empresa. A RC te protege disso.", cta: "Entender minha exposição", path: "/responsabilidade-civil", accent: "#7C3AED" },
+            ],
+            [
+              { icon: <Home size={24}/>, title: "Seguro Residencial", impacto: "24h", impactoLabel: "para perder o que levou anos", desc: "Um incêndio ou roubo pode destruir em horas o que você construiu em anos.", cta: "Proteger minha casa", path: "/seguro-residencial", accent: "#D97706" },
+              { icon: <FileCheck size={24}/>, title: "Seguro Garantia", impacto: "10x", impactoLabel: "mais barato que fiança bancária", desc: "Exigido em licitações públicas e contratos. A alternativa mais barata à fiança bancária.", cta: "Simular agora", path: "/seguro-garantia", accent: "#059669" },
+            ],
+          ].map((row, ri) => (
+            <div key={ri} className={`grid grid-cols-1 gap-5 mb-5 ${row.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
+              {row.map((item, i) => (
+                <Link key={i} to={item.path} className="group relative rounded-[2rem] overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2"
+                  style={{background: '#ffffff', border: '1.5px solid #EAEEF3', boxShadow: `0 4px 20px rgba(7,27,52,0.06)`}}>
 
-          {/* 2 cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
-            {[
-              { icon: <Building2 size={26}/>, title: "Seguro Empresarial", desc: "Um único processo trabalhista ou sinistro pode comprometer anos de trabalho.", cta: "Proteger minha empresa", path: "/seguro-empresa", accent: "#64748B" },
-              { icon: <ShieldCheck size={26}/>, title: "Responsabilidade Civil", desc: "Você responde pessoalmente por decisões da sua empresa. Está protegido?", cta: "Entender minha exposição", path: "/responsabilidade-civil", accent: "#7C3AED" },
-            ].map((item, i) => (
-              <Link key={i} to={item.path}
-                className="group rounded-[2rem] p-8 flex flex-col transition-all duration-400 hover:-translate-y-1.5 hover:shadow-xl"
-                style={{background: '#F8FAFB', border: '1.5px solid #EAEEF3', boxShadow: '0 2px 12px rgba(7,27,52,0.04)'}}>
-                <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110"
-                  style={{background: `${item.accent}15`, color: item.accent}}>{item.icon}</div>
-                <h3 className="font-sora text-lg font-bold italic mb-2" style={{color: '#071B34'}}>{item.title}</h3>
-                <p className="text-sm font-light leading-relaxed mb-6 flex-1" style={{color: '#7A8899'}}>{item.desc}</p>
-                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest transition-all group-hover:gap-3" style={{color: item.accent}}>
-                  {item.cta} <ArrowRight size={13}/>
-                </div>
-              </Link>
-            ))}
-          </div>
+                  {/* Borda esquerda colorida */}
+                  <div className="absolute left-0 top-6 bottom-6 w-1 rounded-full transition-all duration-300 group-hover:top-0 group-hover:bottom-0"
+                    style={{background: item.accent}}></div>
 
-          {/* 2 cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {[
-              { icon: <Home size={26}/>, title: "Seguro Residencial", desc: "Um incêndio ou roubo pode destruir em horas o que você construiu em anos.", cta: "Proteger minha casa", path: "/seguro-residencial", accent: "#D97706" },
-              { icon: <FileCheck size={26}/>, title: "Seguro Garantia", desc: "Exigido em licitações — e muito mais barato que a fiança bancária.", cta: "Simular agora", path: "/seguro-garantia", accent: "#059669" },
-            ].map((item, i) => (
-              <Link key={i} to={item.path}
-                className="group rounded-[2rem] p-8 flex flex-col transition-all duration-400 hover:-translate-y-1.5 hover:shadow-xl"
-                style={{background: '#F8FAFB', border: '1.5px solid #EAEEF3', boxShadow: '0 2px 12px rgba(7,27,52,0.04)'}}>
-                <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110"
-                  style={{background: `${item.accent}15`, color: item.accent}}>{item.icon}</div>
-                <h3 className="font-sora text-lg font-bold italic mb-2" style={{color: '#071B34'}}>{item.title}</h3>
-                <p className="text-sm font-light leading-relaxed mb-6 flex-1" style={{color: '#7A8899'}}>{item.desc}</p>
-                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest transition-all group-hover:gap-3" style={{color: item.accent}}>
-                  {item.cta} <ArrowRight size={13}/>
-                </div>
-              </Link>
-            ))}
-          </div>
+                  {/* Overlay hover navy */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[2rem]"
+                    style={{background: 'linear-gradient(135deg, #071B34 0%, #0a2244 100%)'}}></div>
+
+                  <div className="relative p-8 flex flex-col flex-1 z-10">
+                    {/* Ícone + impacto */}
+                    <div className="flex items-start justify-between mb-5">
+                      <div className="w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+                        style={{background: `${item.accent}18`, color: item.accent}}>
+                        {item.icon}
+                      </div>
+                      <div className="text-right">
+                        <div className="font-sora font-bold text-xl transition-colors duration-300 group-hover:text-gold-gradient"
+                          style={{color: item.accent}}>{item.impacto}</div>
+                        <div className="text-[9px] font-medium uppercase tracking-wide transition-colors duration-300"
+                          style={{color: '#A0AABA'}}
+                          ref={el => el && el.closest('.group:hover') && (el.style.color = 'rgba(255,255,255,0.45)')}
+                          >{item.impactoLabel}</div>
+                      </div>
+                    </div>
+
+                    <h3 className="font-sora text-lg font-bold italic mb-2 transition-colors duration-300"
+                      style={{color: '#071B34'}}
+                      onMouseEnter={e => e.currentTarget.closest('.group') && (e.currentTarget.style.color = '#ffffff')}
+                      >{item.title}</h3>
+                    <p className="text-sm font-light leading-relaxed mb-6 flex-1 transition-colors duration-300"
+                      style={{color: '#7A8899'}}>{item.desc}</p>
+
+                    <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest transition-all duration-300 group-hover:gap-3"
+                      style={{color: item.accent}}>
+                      {item.cta} <ArrowRight size={13}/>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          ))}
         </div>
       </section>
 
@@ -503,74 +504,49 @@ const HomePage = () => {
       </section>
 
       {/* ═══════════════════════════════
-          DEPOIMENTOS — estilo WhatsApp
+          DEPOIMENTOS — estilo WhatsApp sobre navy
       ═══════════════════════════════ */}
-      <section className="py-24" style={{background: '#ffffff'}}>
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="py-24 relative overflow-hidden"
+        style={{background: 'linear-gradient(160deg, #071B34 0%, #0a2244 100%)'}}>
+
+        {/* Glow dourado */}
+        <div className="absolute inset-0 pointer-events-none" style={{background: 'radial-gradient(ellipse 60% 40% at 50% 100%, rgba(200,169,107,0.06) 0%, transparent 70%)'}}></div>
+        <div className="absolute inset-0 opacity-[0.02]" style={{backgroundImage: 'radial-gradient(circle, #C8A96B 1px, transparent 1px)', backgroundSize: '48px 48px'}}></div>
+
+        <div className="relative max-w-7xl mx-auto px-4">
           <div className="text-center mb-14">
             <span className="inline-block px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4"
-              style={{background: 'rgba(7,27,52,0.06)', color: '#071B34'}}>Depoimentos reais</span>
-            <h2 className="font-sora text-3xl md:text-4xl font-bold italic" style={{color: '#071B34'}}>O que dizem nossos clientes</h2>
-            <p className="mt-2 font-light" style={{color: '#7A8899'}}>Mensagens reais recebidas no WhatsApp da Elevance</p>
+              style={{background: 'rgba(200,169,107,0.1)', border: '1px solid rgba(200,169,107,0.2)', color: '#E8C98A'}}>
+              Depoimentos reais
+            </span>
+            <h2 className="font-sora text-3xl md:text-4xl font-bold italic text-white">O que dizem nossos clientes</h2>
+            <p className="mt-2 font-light" style={{color: 'rgba(255,255,255,0.4)'}}>Mensagens reais recebidas no WhatsApp da Elevance</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {[
-              {
-                avatar: "/avatars/simone.png",
-                nome: "Simone",
-                local: "São Roque, SP",
-                produto: "Plano de Saúde",
-                texto: "Agradeço de coração todo seu empenho. Precisando, logicamente vou te procurar novamente.",
-                data: "Dez 2025",
-                cor: "#2A52A0"
-              },
-              {
-                avatar: "/avatars/warlei.png",
-                nome: "Warlei",
-                local: "Ouro Fino, MG",
-                produto: "Seguro Auto",
-                texto: "Agradeço pela atenção! Pelas dúvidas sanadas e por conseguir o melhor preço.",
-                data: "Fev 2026",
-                cor: "#1E6450"
-              },
-              {
-                avatar: "/avatars/patricia.png",
-                nome: "Patricia",
-                local: "São Paulo, SP",
-                produto: "Plano de Saúde PME",
-                texto: "O Rodrigo resolveu a contratação do plano da minha empresa em tempo record. Super atencioso e competente!",
-                data: "Mar 2026",
-                cor: "#782860"
-              },
-              {
-                avatar: "/avatars/lucas.png",
-                nome: "Lucas",
-                local: "São Paulo, SP",
-                produto: "Consórcio de Imóvel",
-                texto: "Economizei mais de R$ 40 mil em juros optando pelo consórcio. O Rodrigo explicou tudo com paciência e clareza.",
-                data: "Abr 2026",
-                cor: "#3C328C"
-              },
+              { avatar: "/avatars/simone.png", nome: "Simone", local: "São Roque, SP", produto: "Plano de Saúde", texto: "Agradeço de coração todo seu empenho. Precisando, logicamente vou te procurar novamente.", data: "Dez 2025" },
+              { avatar: "/avatars/warlei.png", nome: "Warlei", local: "Ouro Fino, MG", produto: "Seguro Auto", texto: "Agradeço pela atenção! Pelas dúvidas sanadas e por conseguir o melhor preço.", data: "Fev 2026" },
+              { avatar: "/avatars/patricia.png", nome: "Patricia", local: "São Paulo, SP", produto: "Plano de Saúde PME", texto: "O Rodrigo resolveu a contratação do plano da minha empresa em tempo record. Super atencioso e competente!", data: "Mar 2026" },
+              { avatar: "/avatars/lucas.png", nome: "Lucas", local: "São Paulo, SP", produto: "Consórcio de Imóvel", texto: "Economizei mais de R$ 40 mil em juros optando pelo consórcio. O Rodrigo explicou tudo com paciência e clareza.", data: "Abr 2026" },
             ].map((d, i) => (
               <div key={i} className="rounded-[1.75rem] overflow-hidden"
-                style={{background: '#F8FAFB', border: '1.5px solid #EAEEF3', boxShadow: '0 4px 20px rgba(7,27,52,0.06)'}}>
+                style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(200,169,107,0.12)', boxShadow: '0 8px 40px rgba(7,27,52,0.3)'}}>
 
-                {/* Header WhatsApp style */}
+                {/* Header WhatsApp */}
                 <div className="flex items-center gap-3 px-5 py-3"
-                  style={{background: '#075E54', borderBottom: '1px solid rgba(255,255,255,0.1)'}}>
+                  style={{background: '#075E54', borderBottom: '1px solid rgba(255,255,255,0.08)'}}>
                   <img src={d.avatar} alt={d.nome} className="w-8 h-8 rounded-full object-cover" loading="lazy"/>
                   <div className="flex-1">
                     <p className="text-white font-bold text-xs">{d.nome}</p>
-                    <p className="text-green-300 text-[10px] font-medium">{d.local} · {d.produto}</p>
+                    <p className="text-[10px] font-medium" style={{color: '#86efac'}}>{d.local} · {d.produto}</p>
                   </div>
-                  <span className="text-[9px] font-medium" style={{color: 'rgba(255,255,255,0.5)'}}>{d.data}</span>
+                  <span className="text-[9px] font-medium" style={{color: 'rgba(255,255,255,0.4)'}}>{d.data}</span>
                 </div>
 
-                {/* Bubble de mensagem */}
+                {/* Bubble */}
                 <div className="p-5">
                   <div className="relative ml-2">
-                    {/* Bolinha WhatsApp */}
                     <div className="absolute -left-2 top-2 w-3 h-3 rounded-full" style={{background: '#DCF8C6'}}></div>
                     <div className="rounded-2xl rounded-tl-sm p-4" style={{background: '#DCF8C6'}}>
                       <p className="text-sm font-light leading-relaxed" style={{color: '#1a1a1a'}}>{d.texto}</p>
@@ -585,13 +561,15 @@ const HomePage = () => {
                   </div>
                 </div>
 
-                {/* Footer com estrelas */}
+                {/* Footer */}
                 <div className="px-5 pb-4 flex items-center justify-between">
                   <div className="flex gap-0.5">
                     {[...Array(5)].map((_, j) => <Star key={j} size={12} className="text-yellow-400 fill-yellow-400" />)}
                   </div>
                   <span className="text-[9px] font-bold uppercase tracking-widest px-2 py-1 rounded-full"
-                    style={{background: 'rgba(7,27,52,0.06)', color: '#071B34'}}>via WhatsApp</span>
+                    style={{background: 'rgba(200,169,107,0.1)', color: '#C8A96B', border: '1px solid rgba(200,169,107,0.2)'}}>
+                    via WhatsApp
+                  </span>
                 </div>
               </div>
             ))}
@@ -600,27 +578,36 @@ const HomePage = () => {
       </section>
 
       {/* ═══════════════════════════════
-          BLOG
+          BLOG — navy com cards flutuando
       ═══════════════════════════════ */}
-      <section className="py-24" style={{background: '#F5F7FA'}}>
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="py-24 relative overflow-hidden"
+        style={{background: 'linear-gradient(160deg, #071B34 0%, #0d2a55 100%)'}}>
+
+        <div className="absolute inset-0 pointer-events-none" style={{background: 'radial-gradient(ellipse 80% 50% at 100% 50%, rgba(200,169,107,0.05) 0%, transparent 70%)'}}></div>
+        <div className="absolute inset-0 opacity-[0.02]" style={{backgroundImage: 'radial-gradient(circle, #C8A96B 1px, transparent 1px)', backgroundSize: '48px 48px'}}></div>
+
+        <div className="relative max-w-7xl mx-auto px-4">
           <div className="flex items-end justify-between mb-12">
             <div>
               <span className="inline-block px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4"
-                style={{background: 'rgba(7,27,52,0.06)', color: '#071B34'}}>Blog</span>
-              <h2 className="font-sora text-3xl md:text-4xl font-bold italic leading-tight" style={{color: '#071B34'}}>
-                Conteúdo que <span style={{color: '#C8A96B'}}>educa e protege</span>
+                style={{background: 'rgba(200,169,107,0.1)', border: '1px solid rgba(200,169,107,0.2)', color: '#E8C98A'}}>
+                Blog
+              </span>
+              <h2 className="font-sora text-3xl md:text-4xl font-bold italic leading-tight text-white">
+                Conteúdo que <span className="text-gold-gradient-bright">educa e protege</span>
               </h2>
             </div>
-            <a href="/blog" className="hidden md:flex items-center gap-2 font-bold text-sm hover:opacity-70 transition-opacity shrink-0" style={{color: '#071B34'}}>
+            <a href="/blog" className="hidden md:flex items-center gap-2 font-bold text-sm hover:opacity-70 transition-opacity shrink-0"
+              style={{color: '#C8A96B'}}>
               Ver todos <BookOpen size={15} />
             </a>
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[...postsData].reverse().slice(0, 3).map(post => (
               <a key={post.id} href={`/blog/${post.slug}`}
-                className="rounded-[2rem] overflow-hidden transition-all duration-300 group hover:-translate-y-1"
-                style={{background: '#ffffff', border: '1.5px solid #EAEEF3', boxShadow: '0 2px 12px rgba(7,27,52,0.04)'}}>
+                className="rounded-[2rem] overflow-hidden transition-all duration-300 group hover:-translate-y-2"
+                style={{background: '#ffffff', boxShadow: '0 20px 60px rgba(7,27,52,0.4), 0 0 0 1px rgba(200,169,107,0.08)'}}>
                 <div className="relative overflow-hidden h-44">
                   <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
                   <span className="absolute top-3 left-3 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full"
@@ -637,8 +624,9 @@ const HomePage = () => {
               </a>
             ))}
           </div>
+
           <div className="text-center mt-8 md:hidden">
-            <a href="/blog" className="inline-flex items-center gap-2 font-bold text-sm" style={{color: '#071B34'}}>
+            <a href="/blog" className="inline-flex items-center gap-2 font-bold text-sm" style={{color: '#C8A96B'}}>
               Ver todos os artigos <BookOpen size={15} />
             </a>
           </div>
