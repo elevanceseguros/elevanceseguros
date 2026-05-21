@@ -1940,6 +1940,237 @@ export const postsData = [
 
       <p class="mt-8 font-bold text-blue-600">Acabou de ser contemplado ou quer entender melhor como funciona o consórcio? Me chama no WhatsApp — te oriento em cada passo!</p>
     `
+  },
+  {
+    id: 29,
+    slug: "coparticipacao-plano-saude-vale-a-pena",
+    title: "Coparticipação no Plano de Saúde: Vale a Pena ou É Armadilha?",
+    date: "20 Mai, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Plano com coparticipação é mais barato na mensalidade — mas pode custar muito mais no uso. Entenda quando vale e quando evitar.",
+    content: `
+      <p class="mb-4">Na hora de cotar um plano de saúde, quase sempre aparece aquela dúvida: "Esse aqui é mais barato, mas tem coparticipação. Vale a pena?" É uma das perguntas que mais recebo aqui na Elevance — e a resposta depende muito do seu perfil de uso.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que é coparticipação?</h2>
+      <p class="mb-4">É uma porcentagem ou valor fixo que você paga <strong>por cada utilização</strong> do plano — consulta, exame, internação. O plano arca com a maior parte, mas você divide uma fatia do custo. Em troca, a mensalidade é menor.</p>
+      <p class="mb-4">Exemplo prático: consulta custa R$ 300. O plano cobre 80%, você paga R$ 60 de coparticipação. Se você usa o plano 3 vezes por mês, são R$ 180 extras além da mensalidade.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quando a coparticipação vale a pena?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Você é jovem e saudável</strong> — usa o plano raramente. A economia na mensalidade supera o que você pagaria em coparticipação.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Plano empresarial coletivo</strong> — para empresas com muitos funcionários, reduz o custo total da folha de benefícios.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Emergências pontuais</strong> — se você só usa o plano em situações graves, paga pouco de coparticipação.</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quando evitar coparticipação?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Você tem filhos pequenos</strong> — consultas e exames pediátricos são frequentes. A coparticipação pode triplicar o custo real.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Você tem condição crônica</strong> — diabetes, hipertensão, tratamento contínuo. Cada consulta e exame gera coparticipação.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Você é acima de 50 anos</strong> — a frequência de uso tende a aumentar. Plano sem coparticipação pode sair mais barato no longo prazo.</span></li>
+      </ul>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Antes de escolher, some: mensalidade × 12 + estimativa de coparticipação no ano. Compare com um plano sem coparticipação. Na maioria dos casos, quem usa o plano mais de 2x por mês sai perdendo com coparticipação. Faça a cotação personalizada com a Elevance e a gente faz essa conta por você.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer comparar planos com e sem coparticipação para o seu perfil? Chama a gente no WhatsApp — cotação gratuita!</p>
+    `
+  },
+  {
+    id: 30,
+    slug: "seguro-de-vida-quanto-custa-e-o-que-cobre",
+    title: "Seguro de Vida em 2026: Quanto Custa e o Que Realmente Cobre?",
+    date: "21 Mai, 2026",
+    category: "Seguro de Vida",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Muita gente adia o seguro de vida por achar caro ou desnecessário. Descubra os valores reais e o que o seguro cobre de verdade.",
+    content: `
+      <p class="mb-4">Seguro de vida ainda é o produto mais subestimado do mercado. A maioria das pessoas acha que é caro, que só serve para morte, ou que "quando precisar, vejo isso". O problema é que, quando você precisa, é tarde demais para contratar.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quanto custa um seguro de vida?</h2>
+      <p class="mb-4">Menos do que você imagina. Um seguro de vida com cobertura de <strong>R$ 200.000</strong> para um adulto de 35 anos, não fumante, sai em média entre <strong>R$ 60 e R$ 120 por mês</strong>. Para quem tem 25 anos, pode custar menos de R$ 40/mês. O valor sobe com a idade — por isso, quanto antes contratar, mais barato fica travado.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que o seguro de vida cobre?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Morte por qualquer causa:</strong> natural ou acidental. Os beneficiários recebem o capital segurado.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Invalidez permanente:</strong> se um acidente ou doença te deixar sem condição de trabalhar, você recebe enquanto está vivo.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Doenças graves:</strong> cobertura opcional para câncer, AVC, infarto — pagamento em vida para custear tratamento.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Diária por internação:</strong> complemento de renda enquanto estiver hospitalizado.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Assistência funeral:</strong> cobre custos do velório e sepultamento para a família.</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quem realmente precisa de seguro de vida?</h2>
+      <p class="mb-4">A resposta objetiva: <strong>qualquer pessoa que tenha dependentes financeiros ou dívidas</strong>. Se sua família depende do seu salário — cônjuge, filhos, pais — e você faltar amanhã, de onde vem a renda para pagar aluguel, escola, mercado? O seguro de vida é a resposta para essa pergunta.</p>
+      <p class="mb-4">Também é essencial para quem tem financiamento imobiliário — alguns bancos já exigem. E para sócios de empresas — o seguro de vida empresarial garante a continuidade do negócio em caso de morte de um dos sócios.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">O cálculo padrão do mercado é: capital segurado = 5 a 10 vezes sua renda anual. Se você ganha R$ 5.000/mês, o ideal é uma cobertura entre R$ 300.000 e R$ 600.000. Parece muito, mas o custo mensal para um adulto jovem é menor do que uma assinatura de streaming.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer simular o valor do seu seguro de vida? É gratuito e leva menos de 5 minutos. Chama a Elevance no WhatsApp!</p>
+    `
+  },
+  {
+    id: 31,
+    slug: "consorcio-imovel-vs-financiamento-2026",
+    title: "Consórcio de Imóvel x Financiamento: A Conta Real que Ninguém te Mostra",
+    date: "22 Mai, 2026",
+    category: "Consórcios",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Financiar pode parecer mais fácil, mas a conta final assusta. Veja a comparação real entre consórcio e financiamento para imóveis em 2026.",
+    content: `
+      <p class="mb-4">Essa é a comparação mais pedida aqui na Elevance: consórcio ou financiamento para comprar imóvel? A resposta honesta é que depende do seu objetivo — mas a <strong>conta matemática quase sempre favorece o consórcio</strong>. E vou te mostrar por quê.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">A conta do financiamento</h2>
+      <p class="mb-4">Imóvel de R$ 400.000. Financiamento em 30 anos com taxa de 10% a.a. (Caixa Econômica, perfil médio 2026):</p>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span>Entrada: R$ 80.000 (20%)</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span>Parcela inicial: ~R$ 2.900/mês</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span>Total pago em 30 anos: aproximadamente <strong>R$ 760.000</strong></span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span>Juros pagos: cerca de <strong>R$ 360.000</strong></span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">A conta do consórcio</h2>
+      <p class="mb-4">Mesmo imóvel de R$ 400.000. Consórcio Rodobens em 200 meses (16,6 anos):</p>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Entrada: R$ 0</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Parcela: ~R$ 2.400/mês (inclui taxa de administração ~17%)</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Total pago: aproximadamente <strong>R$ 468.000</strong></span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Taxa administrativa: ~R$ 68.000 (contra R$ 360.000 de juros)</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Diferença real: R$ 292.000</h2>
+      <p class="mb-4">Sim. A diferença entre financiar e fazer consórcio pode ser de quase <strong>R$ 300.000</strong> no longo prazo. É como comprar um segundo imóvel com o dinheiro que você economizou em juros.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quando o financiamento faz mais sentido?</h2>
+      <p class="mb-4">Quando você precisa do imóvel <strong>agora</strong> — para morar imediatamente, para encerrar um aluguel caro, ou para aproveitar uma oportunidade de mercado. O consórcio exige paciência: você pode ser contemplado no primeiro mês (com lance) ou nos últimos meses do grupo.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Uma estratégia inteligente: usar o consórcio como poupança forçada enquanto ainda mora de aluguel. Se o aluguel for menor que a parcela do financiamento, você ainda economiza. E pode dar um lance com o FGTS para ser contemplado mais rápido.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer simular um consórcio de imóvel com a Rodobens? A Elevance faz a simulação gratuitamente. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 32,
+    slug: "seguro-residencial-o-que-cobre-e-o-que-nao-cobre",
+    title: "Seguro Residencial: O Que Cobre, O Que Não Cobre e Como Contratar Certo",
+    date: "23 Mai, 2026",
+    category: "Seguro Residencial",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Incêndio, roubo, danos elétricos, vendaval: saiba exatamente o que o seguro residencial cobre e como não cair em pegadinhas na hora do sinistro.",
+    content: `
+      <p class="mb-4">Seguro residencial ainda é visto como "luxo" por muita gente. Mas depois de um incêndio, enchente ou arrombamento, quem não tem seguro descobre que reconstruir o que perdeu pode custar anos de economia. E o pior: parte do prejuízo poderia ter sido evitada por menos de R$ 100/mês.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que o seguro residencial cobre?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Incêndio e explosão:</strong> cobertura básica obrigatória em todos os planos. Cobre estrutura, móveis e pertences.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Roubo e furto qualificado:</strong> subtração com arrombamento ou violência. Inclui eletrônicos, joias, objetos de valor.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Danos elétricos:</strong> curto-circuito que queima eletrodomésticos. Um dos sinistros mais comuns e subestimados.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Vendaval, granizo e queda de raio:</strong> eventos climáticos cobertos nos planos intermediários.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Responsabilidade civil:</strong> se um dano no seu imóvel causa prejuízo ao vizinho (vazamento, incêndio), o seguro cobre.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Assistência 24h:</strong> encanador, eletricista, chaveiro — serviços emergenciais sem custo adicional.</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que o seguro residencial NÃO cobre?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Danos por falta de manutenção:</strong> infiltração por descuido, cano que furou por falta de revisão.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Furto simples sem arrombamento:</strong> você esqueceu o portão aberto e sumiram coisas. Não é coberto na maioria dos planos básicos.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Inundação por transbordamento de rios:</strong> eventos hidrológicos geralmente requerem cobertura específica.</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quanto custa?</h2>
+      <p class="mb-4">Um seguro residencial básico para um apartamento em São Paulo começa em <strong>R$ 40 a R$ 80/mês</strong>. Para casas com valor maior de conteúdo, coberturas adicionais ficam entre R$ 100 e R$ 200/mês. Barato demais para o risco que protege.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Antes de contratar, faça um inventário dos seus bens: eletrônicos, móveis, eletrodomésticos. Some o valor de reposição. Esse número vai te mostrar o quanto você está arriscando sem seguro — e vai te ajudar a escolher a cobertura certa.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer cotar seguro residencial? A Elevance compara as melhores seguradoras para você. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 33,
+    slug: "plano-de-saude-pme-para-pequenas-empresas",
+    title: "Plano de Saúde PME: Por Que Oferecer ao Seu Time Vale Mais do Que Você Pensa",
+    date: "24 Mai, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Oferecer plano de saúde para sua equipe não é só benefício — é estratégia de retenção, produtividade e dedução fiscal. Entenda como funciona para PMEs.",
+    content: `
+      <p class="mb-4">Se você tem uma pequena ou média empresa e ainda não oferece plano de saúde para seu time, provavelmente está perdendo talentos para concorrentes que oferecem. Mas além da retenção, tem algo que pouca gente sabe: <strong>o plano de saúde empresarial é um dos benefícios com melhor retorno financeiro para a empresa</strong>.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quanto custa um plano de saúde PME?</h2>
+      <p class="mb-4">Para empresas de 2 a 29 vidas (PME), os valores em SP ficam entre:</p>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Planos básicos (enfermaria): <strong>R$ 150 a R$ 280/vida/mês</strong></span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Planos intermediários (apartamento): <strong>R$ 280 a R$ 500/vida/mês</strong></span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Planos premium (nacional): <strong>R$ 500 a R$ 900/vida/mês</strong></span></li>
+      </ul>
+      <p class="mb-4">Comparando: o mesmo plano contratado individualmente pelo funcionário pode custar <strong>30% a 50% mais caro</strong>. Ou seja, a empresa oferece um benefício de R$ 400, mas o custo real para o colaborador seria R$ 600 se contratasse sozinho.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Benefícios fiscais para a empresa</h2>
+      <p class="mb-4">O plano de saúde empresarial é <strong>dedutível do Imposto de Renda</strong> para empresas no regime de Lucro Real. Na prática, parte do custo é "reembolsado" pela redução do IR. Para empresas no Lucro Presumido, o benefício também existe, mas de forma diferente — vale uma consulta com seu contador.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quais operadoras atendem PME em SP?</h2>
+      <p class="mb-4">Na Elevance, trabalhamos com as principais: <strong>Amil, Bradesco Saúde, SulAmérica, Hapvida, Unimed, Porto Saúde, Alice e Sagrada Família</strong>. Cada uma tem pontos fortes — rede hospitalar, custo, cobertura, atendimento. A escolha certa depende da localização dos funcionários e do orçamento da empresa.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Com apenas 2 funcionários já é possível contratar plano PME. MEI também conta. Se você é autônomo ou empreendedor solo, abrir um MEI te dá acesso imediato a planos empresariais com preços muito melhores que os individuais. A Elevance cuida de todo o processo sem burocracia.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer uma cotação de plano de saúde PME para sua empresa? A Elevance compara todas as operadoras e apresenta as melhores opções. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 34,
+    slug: "consorcio-de-moto-vale-a-pena-2026",
+    title: "Consórcio de Moto em 2026: Vale a Pena? Como Funciona e Quanto Sai",
+    date: "25 Mai, 2026",
+    category: "Consórcios",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Consórcio de moto cresceu 40% em 2025. Entenda como funciona, quanto custa na prática e quando vale mais que o financiamento.",
+    content: `
+      <p class="mb-4">O consórcio de moto explodiu em 2025 e 2026. Com os preços das motos subindo — uma CG 160 já passa dos R$ 15.000 — e o crédito apertado, muita gente está descobrindo que o consórcio é a forma mais inteligente de adquirir uma moto sem se endividar com juros absurdos.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Como funciona o consórcio de moto?</h2>
+      <p class="mb-4">Você entra em um grupo de pessoas com o mesmo objetivo. Todo mês, cada participante paga uma parcela. Com esse fundo, são realizados sorteios mensais — e quem é sorteado recebe a carta de crédito para comprar a moto. Você também pode dar um <strong>lance</strong> (oferta antecipada de parcelas) para ser contemplado mais rápido.</p>
+      <p class="mb-4">A carta de crédito tem o mesmo poder que dinheiro na mão: você escolhe a moto, a concessionária e negocia à vista — o que geralmente garante descontos adicionais.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Comparação real: Consórcio vs Financiamento</h2>
+      <p class="mb-4">Moto de R$ 20.000:</p>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Financiamento 36 meses a 2,5% a.m.:</strong> parcela de ~R$ 800/mês, total pago ~R$ 28.800</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Consórcio Rodobens 60 meses:</strong> parcela de ~R$ 380/mês, total pago ~R$ 23.400</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Economia real:</strong> ~R$ 5.400 — mais de 25% do valor da moto</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quem pode fazer consórcio de moto?</h2>
+      <p class="mb-4">Qualquer pessoa maior de 18 anos, com CPF regular e renda comprovada. Não há análise de crédito rigorosa como nos financiamentos. Até quem está com nome negativado pode participar em algumas administradoras — a contemplação é por sorteio, não por score.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Posso usar o FGTS para dar lance?</h2>
+      <p class="mb-4">Para consórcio de moto, o FGTS <strong>não pode ser usado</strong> como lance — ele só é liberado para imóveis. Mas você pode usar recursos próprios, poupança ou até outro consórcio quitado como lance.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Se você precisa da moto para trabalhar (entregador, mototaxista), o consórcio pode não ser ideal — você precisa do veículo agora. Mas se você pode esperar alguns meses, vale muito a pena. Na Rodobens, média de contemplação por sorteio é de 8 a 14 meses. Com lance, pode ser no primeiro mês.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer simular um consórcio de moto? A Elevance é parceira oficial Rodobens e faz a simulação na hora. Chama no WhatsApp!</p>
+    `
   }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
