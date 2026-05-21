@@ -305,7 +305,7 @@ export const postsData = [
     date: "28 Abr, 2026",
     category: "Planos de Saúde",
     readTime: "5 min",
-    image: "https://images.unsplash.com/photo-1664575602554-2087b04935a5?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800",
     excerpt: "Sim, MEI pode ter plano de saúde empresarial! Entenda como funciona, quais operadoras aceitam e quanto você economiza.",
     content: `
       <p class="mb-4">Essa é uma das perguntas que mais recebo aqui na Elevance Seguros: <strong>"Sou MEI, posso ter plano de saúde empresarial?"</strong>. A resposta é sim — e pode ser a melhor decisão financeira que você toma este ano.</p>
