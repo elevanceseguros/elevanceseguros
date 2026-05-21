@@ -17,7 +17,7 @@ const operadoras = [
   { nome: "Unimed", path: "/unimed", logo: "/logos/unimed.png", cor: "border-green-200 hover:border-green-400", tag: "bg-green-100 text-green-700" },
   { nome: "Porto Saúde", path: "/porto", logo: "/logos/portoseguro.svg", cor: "border-blue-200 hover:border-blue-400", tag: "bg-blue-100 text-blue-700" },
   { nome: "Alice", path: "/alice", logo: "/logos/alice.webp", cor: "border-fuchsia-200 hover:border-fuchsia-400", tag: "bg-fuchsia-100 text-fuchsia-700" },
-  { nome: "MedSênior", path: "/medsenior", logo: "/logos/notredame.webp", cor: "border-emerald-200 hover:border-emerald-400", tag: "bg-emerald-100 text-emerald-700" },
+  { nome: "MedSênior", path: "/medsenior", logo: "/logos/medsenior.webp", cor: "border-emerald-200 hover:border-emerald-400", tag: "bg-emerald-100 text-emerald-700" },
 ];
 
 const beneficios = [
