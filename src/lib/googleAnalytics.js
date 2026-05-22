@@ -1,7 +1,7 @@
 // Google Analytics & Tag Manager utility functions
 
-const GA_MEASUREMENT_ID = '''';
-const GTM_ID = '''';
+const GA_MEASUREMENT_ID = 'G-0E0B48S28G';
+const GTM_ID = 'GTM-PVV23QSX';
 
 /**
  * Check if GTM/dataLayer is available
