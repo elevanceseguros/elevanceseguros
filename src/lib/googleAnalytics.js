@@ -4,6 +4,38 @@ const GA_MEASUREMENT_ID = 'G-0E0B48S28G';
 const GTM_ID = 'GTM-PVV23QSX';
 
 /**
+ * Detecta se o acesso é humano real.
+ * Bots geralmente não têm: interação de mouse/touch, navigator.webdriver = false,
+ * languages definidas, hardware concurrency > 0, e não passam em checks de timing.
+ */
+const isHumanSession = () => {
+  if (typeof window === 'undefined' || typeof navigator === 'undefined') return false;
+
+  // 1. Bloqueia bots que se identificam (headless, webdriver, puppeteer, etc.)
+  if (navigator.webdriver === true) return false;
+  if (window._phantom || window.__nightmare || window.callPhantom) return false;
+  if (navigator.userAgent.match(/HeadlessChrome|PhantomJS|SlimerJS|Zombie|bot|crawler|spider|scraper/i)) return false;
+
+  // 2. Browsers reais sempre têm idioma definido
+  if (!navigator.language || navigator.language.length < 2) return false;
+
+  // 3. Browsers reais têm pelo menos 1 núcleo de CPU reportado
+  if (navigator.hardwareConcurrency !== undefined && navigator.hardwareConcurrency < 1) return false;
+
+  // 4. Verifica se há plugins (bots headless geralmente têm 0)
+  // Nota: só bloqueia se explicitamente 0 — alguns browsers legítimos escondem plugins
+  if (navigator.plugins !== undefined && navigator.plugins.length === 0 && !navigator.userAgent.match(/Mobile|Android|iPhone/i)) {
+    // Mobile legítimo pode ter 0 plugins, então só bloqueia desktop com 0 plugins E sem touch
+    if (!('ontouchstart' in window) && navigator.maxTouchPoints === 0) return false;
+  }
+
+  // 5. Verifica dimensões de tela reais (bots às vezes reportam 0x0)
+  if (window.screen && (window.screen.width === 0 || window.screen.height === 0)) return false;
+
+  return true;
+};
+
+/**
  * Check if GTM/dataLayer is available
  */
 export const isGtagAvailable = () => {
@@ -15,11 +47,10 @@ export const isGtagAvailable = () => {
  */
 export const initGA = () => {
   if (typeof window === 'undefined') return false;
+  if (!isHumanSession()) return false; // Bloqueia na inicialização
 
-  // Create dataLayer if it doesn't exist (Standard for GTM)
   window.dataLayer = window.dataLayer || [];
 
-  // Create gtag shim if it doesn't exist
   if (!window.gtag) {
     window.gtag = function() {
       window.dataLayer.push(arguments);
@@ -30,19 +61,18 @@ export const initGA = () => {
 };
 
 /**
- * Track page views
- * @param {string} pathname - The current page path
+ * Track page views — só dispara para sessões humanas reais
  */
 export const trackPageView = (pathname) => {
+  if (!isHumanSession()) return; // Bloqueia bots antes de qualquer coisa
+
   if (!isGtagAvailable()) initGA();
 
   try {
-    // Standard GA4 / gtag page view
     window.gtag('config', GA_MEASUREMENT_ID, {
       page_path: pathname,
     });
     
-    // GTM specific page view event push
     window.dataLayer.push({
       event: 'page_view_custom',
       page_path: pathname
@@ -53,21 +83,19 @@ export const trackPageView = (pathname) => {
 };
 
 /**
- * Track custom events
- * @param {string} eventName - Name of the event
- * @param {object} eventParams - Event parameters
+ * Track custom events — só dispara para sessões humanas reais
  */
 export const trackEvent = (eventName, eventParams = {}) => {
+  if (!isHumanSession()) return; // Bloqueia bots
+
   if (!isGtagAvailable()) initGA();
 
   try {
-    // Push to dataLayer for GTM to intercept
     window.dataLayer.push({
       event: eventName,
       ...eventParams
     });
 
-    // Also send via gtag API
     window.gtag('event', eventName, {
       ...eventParams,
     });
@@ -78,8 +106,6 @@ export const trackEvent = (eventName, eventParams = {}) => {
 
 /**
  * Track form submissions
- * @param {string} formName - Name of the form
- * @param {string} formType - Type of form (e.g., 'contact', 'quote')
  */
 export const trackFormSubmission = (formName, formType = 'form') => {
   trackEvent('form_submission', {
@@ -90,8 +116,6 @@ export const trackFormSubmission = (formName, formType = 'form') => {
 
 /**
  * Track button clicks
- * @param {string} buttonName - Name/label of the button
- * @param {string} buttonLocation - Where the button is located
  */
 export const trackButtonClick = (buttonName, buttonLocation = '') => {
   trackEvent('button_click', {
@@ -102,8 +126,6 @@ export const trackButtonClick = (buttonName, buttonLocation = '') => {
 
 /**
  * Track CTA interactions
- * @param {string} ctaName - Name of the CTA
- * @param {string} ctaType - Type of CTA (e.g., 'whatsapp', 'phone', 'email')
  */
 export const trackCTAClick = (ctaName, ctaType = '') => {
   trackEvent('cta_click', {
@@ -114,7 +136,6 @@ export const trackCTAClick = (ctaName, ctaType = '') => {
 
 /**
  * Track conversions
- * @param {string} conversionLabel - Optional conversion label
  */
 export const trackConversion = (conversionLabel = '') => {
   trackEvent('conversion', {
@@ -125,7 +146,6 @@ export const trackConversion = (conversionLabel = '') => {
 
 /**
  * Track insurance quote requests
- * @param {string} insuranceType - Type of insurance requested
  */
 export const trackQuoteRequest = (insuranceType) => {
   trackEvent('quote_request', {
