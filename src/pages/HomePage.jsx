@@ -531,7 +531,7 @@ const HomePage = () => {
               { avatar: "/avatars/lucas.png", nome: "Lucas", local: "São Paulo, SP", produto: "Consórcio de Imóvel", texto: "Economizei mais de R$ 40 mil em juros optando pelo consórcio. O Rodrigo explicou tudo com paciência e clareza.", data: "Abr 2026" },
             ].map((d, i) => (
               <div key={i} className="rounded-[1.75rem] overflow-hidden"
-                style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(200,169,107,0.12)', boxShadow: '0 8px 40px rgba(7,27,52,0.3)'}}>
+                style={{background: '#ffffff', border: '1px solid rgba(200,169,107,0.15)', boxShadow: '0 8px 40px rgba(7,27,52,0.25)'}}>
 
                 {/* Header WhatsApp */}
                 <div className="flex items-center gap-3 px-5 py-3"
