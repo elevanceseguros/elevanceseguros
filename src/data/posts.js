@@ -2171,6 +2171,277 @@ export const postsData = [
 
       <p class="mt-8 font-bold" style="color:#C8A96B">Quer simular um consórcio de moto? A Elevance é parceira oficial Rodobens e faz a simulação na hora. Chama no WhatsApp!</p>
     `
+  },
+  {
+    id: 35,
+    slug: "portabilidade-plano-de-saude-como-funciona",
+    title: "Portabilidade de Plano de Saúde: Como Funciona e Quando Vale a Pena Mudar",
+    date: "26 Mai, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1504813184591-01572f98c85f?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Você pode trocar de plano de saúde sem cumprir novas carências. Mas tem regras. Entenda como funciona a portabilidade e quando realmente vale a pena.",
+    content: `
+      <p class="mb-4">Muita gente aguenta um plano ruim por anos achando que trocar significa começar tudo do zero — novas carências, novo período de espera. Isso é mito. A <strong>portabilidade de plano de saúde</strong> existe exatamente para você mudar sem perder o que já cumpriu.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que é portabilidade de plano de saúde?</h2>
+      <p class="mb-4">É o direito garantido pela ANS de migrar de uma operadora para outra — ou de um plano para outro dentro da mesma operadora — sem cumprir novas carências, desde que você já tenha cumprido o período mínimo de permanência no plano atual.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quais são as regras?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Tempo mínimo no plano atual:</strong> pelo menos 2 anos para portabilidade especial, ou 1 ano para portabilidade comum em alguns casos.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Plano equivalente ou inferior:</strong> o novo plano não pode ter cobertura maior que o atual. Se quiser upgrade, as carências das coberturas novas se aplicam.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Sem inadimplência:</strong> você precisa estar em dia com os pagamentos do plano atual.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Registro na ANS:</strong> tanto o plano atual quanto o novo precisam ser registrados e ativos na ANS.</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quando vale a pena fazer portabilidade?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Sua operadora reduziu a rede credenciada e os médicos que você usa saíram</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>O reajuste anual ficou abusivo e encontrou plano equivalente mais barato</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>O atendimento e autorização de procedimentos piorou muito</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Você se mudou e a rede da operadora atual não atende bem na nova cidade</span></li>
+      </ul>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Portabilidade tem prazo de solicitação — você precisa pedir entre 30 e 60 dias antes do vencimento do seu aniversário de contrato. Perdeu esse prazo? Tem que esperar mais um ano. Por isso, se estiver insatisfeito com seu plano, não deixe para última hora. A Elevance acompanha todo o processo gratuitamente.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer analisar se vale fazer portabilidade do seu plano? A Elevance compara as opções disponíveis para você gratuitamente. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 36,
+    slug: "seguro-auto-loovi-vale-a-pena",
+    title: "Loovi: O Seguro Auto Que Aceita Todo Mundo — Vale a Pena em 2026?",
+    date: "27 Mai, 2026",
+    category: "Seguro Auto",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=800",
+    excerpt: "A Loovi promete seguro auto sem análise de perfil, sem consulta ao SPC e 100% digital. Mas o que ela cobre de verdade? Vale mais que um seguro tradicional?",
+    content: `
+      <p class="mb-4">Se você já tentou contratar seguro auto e levou uma negativa — ou recebeu uma proposta com valor absurdo por ter CNH nova, carro mais velho ou perfil de risco alto — a Loovi foi criada para você. Mas antes de contratar, entenda exatamente o que ela oferece e onde estão os limites.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que é a Loovi?</h2>
+      <p class="mb-4">A Loovi é uma <strong>seguradora digital 100% regulada pela SUSEP</strong>, operando através da LTI Seguros. Diferente das seguradoras tradicionais, ela não faz análise de perfil — qualquer pessoa pode contratar, independente de idade, CEP, tempo de CNH ou histórico de sinistros.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que a Loovi cobre?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Roubo e furto:</strong> 100% da tabela FIPE — um dos melhores coberturas do mercado nesse quesito</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Colisão:</strong> cobertura parcial ou total, dependendo do plano escolhido</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Terceiros:</strong> danos materiais e corporais causados a outras pessoas</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Assistência 24h:</strong> reboque, chaveiro, pane seca em todo o Brasil</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Carro reserva:</strong> até 7 dias incluídos</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Vidros:</strong> para-brisa, laterais e traseira</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Para quem a Loovi é ideal?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>CNH recente (menos de 3 anos) — seguradoras tradicionais cobram caro ou negam</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Carro antigo (acima de 10 anos) — muitas seguradoras não aceitam</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Carro com GNV ou veículo de leilão</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Motoristas de app (Uber, 99) — muitas seguradoras negam uso comercial</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Quem quer praticidade: contratação em 5 minutos pelo celular</span></li>
+      </ul>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Se você tem um perfil "fácil" — CNH antiga, carro popular, bairro tranquilo — vale comparar a Loovi com seguradoras tradicionais. Para perfis difíceis, a Loovi quase sempre sai mais em conta e sem dor de cabeça. A Elevance é parceira oficial Loovi e faz a cotação na hora. Me chama no WhatsApp com o modelo e ano do carro.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer cotar o seguro Loovi agora? Manda o modelo e ano do carro no WhatsApp da Elevance — resposta em minutos!</p>
+    `
+  },
+  {
+    id: 37,
+    slug: "consorcio-servicos-o-que-pode-comprar",
+    title: "Consórcio de Serviços: O Que Você Pode Comprar Com Essa Carta de Crédito?",
+    date: "28 Mai, 2026",
+    category: "Consórcios",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Reforma, viagem, cirurgia, educação, festas: o consórcio de serviços financia quase tudo. Descubra o que é possível e como funciona na prática.",
+    content: `
+      <p class="mb-4">Quando a maioria das pessoas pensa em consórcio, pensa em imóvel ou carro. Mas existe uma modalidade muito menos conhecida — e extremamente útil — que permite financiar praticamente qualquer serviço sem juros: o <strong>consórcio de serviços</strong>.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que é consórcio de serviços?</h2>
+      <p class="mb-4">É um consórcio com carta de crédito de até R$ 30.000 destinada exclusivamente para contratação de serviços. Diferente do consórcio de imóvel ou veículo, aqui você não compra um bem físico — você paga por um serviço prestado por empresas credenciadas ou mediante apresentação de nota fiscal.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que você pode usar a carta de crédito?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Reforma e construção:</strong> mão de obra, materiais, projetos de arquitetura</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Viagens:</strong> pacotes nacionais e internacionais, passagens, hospedagem</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Cirurgias estéticas e procedimentos médicos:</strong> não cobertos por plano de saúde</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Educação:</strong> faculdade, pós-graduação, cursos técnicos, idiomas</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Festas e eventos:</strong> casamento, formatura, aniversário</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Tratamentos odontológicos:</strong> implantes, ortodontia, próteses</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Mudanças e frete:</strong> transporte de bens</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Como funciona na prática?</h2>
+      <p class="mb-4">Após ser contemplado, você apresenta o orçamento do serviço desejado para a administradora. Ela libera o pagamento diretamente para o prestador de serviço — você não recebe o dinheiro em mãos. Isso garante que a carta seja usada para o fim correto.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">O consórcio de serviços é perfeito para quem está planejando uma reforma ou viagem daqui 1 ou 2 anos. Você começa a pagar agora em parcelas pequenas, e quando chegar a hora, tem a carta disponível para usar. É uma poupança forçada com objetivo definido — sem juros.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer simular um consórcio de serviços? A Elevance é parceira Rodobens e faz a simulação gratuitamente. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 38,
+    slug: "seguro-empresarial-o-que-cobre",
+    title: "Seguro Empresarial: O Que Cobre e Por Que Toda Empresa Deveria Ter",
+    date: "29 Mai, 2026",
+    category: "Seguro Empresarial",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Incêndio, roubo, processo trabalhista, dano a clientes: um único sinistro pode fechar uma empresa. Entenda o que o seguro empresarial cobre e quanto custa.",
+    content: `
+      <p class="mb-4">Empreendedor que ainda não tem seguro empresarial está correndo um risco que não precisa correr. A maioria dos donos de pequenas empresas acha que seguro é coisa de grande corporação. Na prática, são as pequenas empresas que mais precisam — porque não têm reserva financeira para absorver um sinistro grande.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que o seguro empresarial cobre?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Incêndio e explosão:</strong> estrutura, equipamentos, estoque — cobertura básica obrigatória</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Roubo e furto:</strong> mercadorias, equipamentos, dinheiro em caixa</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Danos elétricos:</strong> curto-circuito que queima servidores, computadores, máquinas</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Responsabilidade civil:</strong> danos causados a clientes ou terceiros dentro do seu estabelecimento</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Perda de lucros:</strong> cobertura da receita que deixou de entrar enquanto o negócio estava paralisado</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Vidros e fachadas:</strong> substituição de vitrines e estruturas de vidro</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quanto custa?</h2>
+      <p class="mb-4">Para um pequeno comércio ou escritório, o seguro empresarial básico começa em <strong>R$ 80 a R$ 200/mês</strong>. O valor depende do ramo de atividade, valor do estoque e equipamentos, localização e coberturas escolhidas. Para restaurantes e oficinas (maior risco de incêndio), os valores são mais altos.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">MEI e autônomo precisam de seguro empresarial?</h2>
+      <p class="mb-4">Sim — especialmente quem trabalha com equipamentos de alto valor (fotógrafo, designer, técnico de TI) ou atende clientes em um espaço físico. Um notebook roubado ou um cliente que se machuca no seu consultório pode gerar prejuízo enorme sem seguro.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Antes de cotar, faça um levantamento do valor dos seus equipamentos, estoque e faturamento mensal. Esses três números definem a cobertura ideal. Um seguro subdimensionado pode deixar você descoberto na hora do sinistro — e um superdimensionado desperdiça dinheiro. A Elevance faz esse dimensionamento gratuitamente.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer cotar seguro empresarial para seu negócio? A Elevance compara as melhores opções para o seu ramo. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 39,
+    slug: "plano-de-saude-individual-vs-coletivo",
+    title: "Plano de Saúde Individual x Coletivo: Qual a Diferença Real e Qual Escolher?",
+    date: "30 Mai, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Individual é mais caro mas mais protegido. Coletivo é mais barato mas pode ser cancelado. Entenda as diferenças antes de escolher seu plano de saúde.",
+    content: `
+      <p class="mb-4">Uma das dúvidas mais comuns na hora de contratar plano de saúde é: individual ou coletivo? A resposta certa depende do seu momento de vida — e escolher errado pode te deixar sem plano na pior hora.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Plano individual: o que é?</h2>
+      <p class="mb-4">É o plano contratado diretamente com a operadora, sem vínculo com empresa ou associação. As regras são mais rígidas para a operadora — ela não pode te cancelar sem motivo, e o reajuste é regulado pela ANS.</p>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Não pode ser cancelado pela operadora sem justa causa</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Reajuste anual regulado pela ANS</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span>Mais caro — pode ser 30% a 50% mais caro que coletivo equivalente</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span>Menos operadoras oferecem (muitas saíram do mercado individual)</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Plano coletivo: o que é?</h2>
+      <p class="mb-4">É vinculado a uma empresa (coletivo empresarial) ou associação/sindicato (coletivo por adesão). Os reajustes são negociados entre a operadora e a empresa/associação — sem regulação direta da ANS.</p>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Mais barato — melhor custo-benefício na maioria dos casos</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Mais operadoras disponíveis e redes maiores</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span>Pode ser cancelado pela operadora com 30 dias de aviso</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span>Reajuste pode ser acima da inflação sem limite regulatório</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Qual escolher?</h2>
+      <p class="mb-4">Se você tem empresa ou MEI aberto: <strong>coletivo empresarial</strong> é quase sempre a melhor opção — mais barato e com boa cobertura. Se é pessoa física sem vínculo: verifique associações do seu setor que oferecem coletivo por adesão. O plano individual fica como última opção pelo custo mais alto.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Abrir um MEI custa zero e te dá acesso imediato a planos coletivos empresariais — que podem ser 30% mais baratos que o individual equivalente. Se você é autônomo, freelancer ou profissional liberal, vale muito considerar essa opção antes de contratar um individual.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer descobrir qual tipo de plano é ideal para seu perfil? A Elevance analisa gratuitamente. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 40,
+    slug: "seguro-viagem-quando-contratar-e-o-que-cobre",
+    title: "Seguro Viagem: Quando Contratar, O Que Cobre e Por Que É Obrigatório em Alguns Destinos",
+    date: "31 Mai, 2026",
+    category: "Seguros",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Seguro viagem não é luxo — é necessidade. Sem ele, uma emergência médica fora do Brasil pode custar R$ 100.000 ou mais. Entenda o que contratar e quando.",
+    content: `
+      <p class="mb-4">Em 2026, o seguro viagem ainda é um dos produtos mais ignorados pelos brasileiros — até que precisam dele. Uma internação de emergência nos Estados Unidos pode custar mais de <strong>US$ 50.000</strong>. No Brasil, uma evacuação aérea de uma viagem de aventura pode passar de R$ 80.000. Sem seguro, você paga do bolso.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que o seguro viagem cobre?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Despesas médicas e hospitalares:</strong> cobertura principal — consultas, internação, cirurgia no exterior</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Remoção e resgate:</strong> transporte de ambulância ou avião até hospital adequado</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Extravio de bagagem:</strong> indenização por mala perdida pela companhia aérea</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Cancelamento de voo:</strong> reembolso de despesas extras por atraso ou cancelamento</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Morte acidental:</strong> indenização para a família</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Assistência jurídica:</strong> para incidentes legais no exterior</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Onde o seguro viagem é obrigatório?</h2>
+      <p class="mb-4">Toda a zona <strong>Schengen</strong> (Europa) exige seguro com cobertura mínima de € 30.000 para emissão do visto. Cuba também exige. Outros destinos como Equador e alguns países do Caribe também exigem comprovante. Mas mesmo onde não é obrigatório — Estados Unidos, Ásia, América Latina — é essencial.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quanto custa?</h2>
+      <p class="mb-4">Para uma viagem de 15 dias à Europa, o seguro viagem com cobertura de US$ 30.000 custa entre <strong>R$ 150 e R$ 350</strong> dependendo da idade e cobertura. Para os EUA, com cobertura de US$ 100.000, fica entre R$ 200 e R$ 500. Uma fração mínima do custo da viagem para uma proteção enorme.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Não contrate o seguro viagem oferecido pela companhia aérea no checkout — geralmente é mais caro e com cobertura limitada. Contrate separado, compare coberturas e preste atenção no valor máximo de despesas médicas. Para destinos como EUA e Canadá, o mínimo recomendado é US$ 100.000 em cobertura médica.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Viagem marcada? A Elevance cota seguro viagem para qualquer destino em minutos. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 41,
+    slug: "consorcio-imovel-fgts-como-usar",
+    title: "Como Usar o FGTS no Consórcio de Imóvel: Guia Completo 2026",
+    date: "01 Jun, 2026",
+    category: "Consórcios",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&q=80&w=800",
+    excerpt: "O FGTS pode ser usado para dar lance no consórcio de imóvel e acelerar sua contemplação. Entenda as regras, limites e como fazer isso na prática.",
+    content: `
+      <p class="mb-4">Uma das maiores vantagens do consórcio de imóvel sobre o financiamento é a possibilidade de usar o FGTS de forma estratégica. No financiamento, o FGTS entra na entrada ou amortização. No consórcio, ele pode ser usado como <strong>lance para antecipar a contemplação</strong> — ou seja, receber a carta de crédito muito antes do sorteio.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Em quais situações o FGTS pode ser usado no consórcio?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Lance:</strong> ofertar o saldo do FGTS como percentual da carta de crédito para ser contemplado mais rápido</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Amortização:</strong> após contemplado, usar o FGTS para reduzir o saldo devedor das parcelas restantes</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Pagamento de parcelas:</strong> em algumas administradoras, usar o FGTS para quitar parcelas em atraso</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quais são os requisitos para usar o FGTS?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#3B82F6">→</span><span>Ter pelo menos <strong>3 anos</strong> de trabalho sob regime CLT (somando todos os empregos)</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#3B82F6">→</span><span>Não ser proprietário de imóvel residencial no município onde mora ou trabalha</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#3B82F6">→</span><span>O imóvel a ser adquirido deve ser residencial e estar na cidade onde você mora ou trabalha</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#3B82F6">→</span><span>Valor do imóvel dentro dos limites do SFH (Sistema Financeiro de Habitação)</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#3B82F6">→</span><span>Não ter outro financiamento ativo pelo SFH em qualquer parte do Brasil</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Como funciona na prática o lance com FGTS?</h2>
+      <p class="mb-4">Na assembleia mensal do grupo, você oferta um percentual da carta de crédito como lance. Se o seu percentual for o maior (ou empatado com o maior), você é contemplado. O FGTS é então sacado diretamente pela administradora junto à Caixa Econômica Federal — você não movimenta o dinheiro diretamente.</p>
+      <p class="mb-4">Exemplo: carta de crédito de R$ 300.000. Você tem R$ 45.000 no FGTS. Lance de 15% = R$ 45.000. Se naquele mês nenhum outro participante ofertou mais de 15%, você é contemplado.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Antes de entrar em um grupo de consórcio com intenção de usar o FGTS como lance, verifique o histórico de lances do grupo — algumas administradoras disponibilizam essa informação. Grupos com lances médios de 15% a 20% são mais acessíveis. A Elevance, como parceira Rodobens, tem acesso a esses dados e pode te ajudar a escolher o grupo certo.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer simular um consórcio de imóvel usando seu FGTS? A Elevance faz a simulação completa gratuitamente. Chama no WhatsApp!</p>
+    `
   }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
