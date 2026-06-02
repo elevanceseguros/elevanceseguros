@@ -2442,6 +2442,295 @@ export const postsData = [
 
       <p class="mt-8 font-bold" style="color:#C8A96B">Quer simular um consórcio de imóvel usando seu FGTS? A Elevance faz a simulação completa gratuitamente. Chama no WhatsApp!</p>
     `
+  },
+  {
+    id: 42,
+    slug: "o-que-e-carencia-plano-de-saude",
+    title: "O Que É Carência no Plano de Saúde e Como Funciona em 2026",
+    date: "02 Jun, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Carência é o período em que você paga o plano mas ainda não pode usar determinados serviços. Entenda os prazos, exceções e como a portabilidade elimina a espera.",
+    content: `
+      <p class="mb-4">A carência é um dos temas que mais geram dúvidas — e frustrações — na contratação de plano de saúde. Muita gente descobre que o plano não cobre uma internação urgente só quando precisa usar. Entender as regras desde o início evita esse tipo de surpresa.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que é carência?</h2>
+      <p class="mb-4">Carência é o período que começa na data de contratação do plano durante o qual você paga normalmente mas não pode utilizar determinados serviços cobertos. É uma proteção das operadoras contra fraudes — sem carência, alguém poderia contratar o plano já com uma cirurgia marcada e cancelar logo depois.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quais são os prazos de carência pela ANS?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Urgência e emergência:</strong> 24 horas — o plano deve atender em até 24h após a adesão, para situações de risco de morte</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Consultas e exames simples:</strong> 30 dias</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Internações e cirurgias eletivas:</strong> 180 dias (6 meses)</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Parto:</strong> 300 dias (10 meses)</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Doenças e lesões preexistentes:</strong> até 24 meses de cobertura parcial temporária</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Como eliminar a carência com portabilidade?</h2>
+      <p class="mb-4">Se você já tem plano há pelo menos 2 anos e quer trocar de operadora, a portabilidade elimina as carências para coberturas equivalentes. Você não começa do zero — leva o histórico de carência cumprida para o novo plano.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Se você precisar de cirurgia ou internação nos próximos 6 meses, o plano de saúde ainda pode ajudar — para urgências e emergências com risco de morte, o atendimento é obrigatório após 24h de contrato. Mas para cirurgias eletivas planejadas, contrate o plano com antecedência mínima de 6 meses.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Ficou com dúvida sobre carência ou quer cotar um plano? A Elevance esclarece tudo gratuitamente. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 43,
+    slug: "protecao-veicular-vs-seguro-auto-diferenca",
+    title: "Proteção Veicular x Seguro Auto: Qual a Diferença Real e Qual Escolher?",
+    date: "03 Jun, 2026",
+    category: "Seguro Auto",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Proteção veicular é mais barata que o seguro, mas tem limitações importantes. Entenda as diferenças reais antes de decidir qual contratação faz sentido para você.",
+    content: `
+      <p class="mb-4">Proteção veicular ou seguro auto? Essa é uma das perguntas mais frequentes que recebo aqui na Elevance — e a resposta depende do seu perfil, do seu carro e do que você realmente precisa proteger.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Qual a diferença fundamental?</h2>
+      <p class="mb-4"><strong>Seguro auto</strong> é um produto regulado pela SUSEP (Superintendência de Seguros Privados) — tem regras claras, fiscalização federal e obrigações legais com o segurado. <strong>Proteção veicular</strong> é operada por associações ou cooperativas, com regulamentação menos rígida e funcionamento diferente.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Comparação direta</h2>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr style="background:#071B34; color:white">
+              <th class="p-3 text-left rounded-tl-xl">Critério</th>
+              <th class="p-3 text-left">Seguro Auto</th>
+              <th class="p-3 text-left rounded-tr-xl">Proteção Veicular</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#f8fafb"><td class="p-3 font-bold">Regulamentação</td><td class="p-3">SUSEP — federal</td><td class="p-3">Associação — menos rígida</td></tr>
+            <tr style="background:#ffffff"><td class="p-3 font-bold">Custo mensal</td><td class="p-3">Maior</td><td class="p-3">Menor (30–50% mais barato)</td></tr>
+            <tr style="background:#f8fafb"><td class="p-3 font-bold">Aceita carro antigo</td><td class="p-3">Depende da seguradora</td><td class="p-3">Geralmente sim</td></tr>
+            <tr style="background:#ffffff"><td class="p-3 font-bold">Cobertura colisão</td><td class="p-3">Sim, completa</td><td class="p-3">Sim, mas pode ter franquia maior</td></tr>
+            <tr style="background:#f8fafb"><td class="p-3 font-bold">Roubo/Furto</td><td class="p-3">100% FIPE</td><td class="p-3">Varia — verifique o contrato</td></tr>
+            <tr style="background:#ffffff"><td class="p-3 font-bold">Segurança jurídica</td><td class="p-3">Alta</td><td class="p-3">Menor — sem fiscalização SUSEP</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quando escolher proteção veicular?</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Carro com mais de 15 anos que seguradoras não aceitam</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Orçamento limitado que não comporta o seguro tradicional</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Veículo com GNV ou leilão que não é aceito em seguradoras</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quando escolher seguro auto?</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#3B82F6">→</span><span>Carro novo ou seminovo com valor alto</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#3B82F6">→</span><span>Você precisa de cobertura garantida por lei</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#3B82F6">→</span><span>Quer carro reserva e assistência mais completa</span></li>
+      </ul>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">A Elevance trabalha com ambos: proteção veicular APVS e seguro auto Loovi. Se você me mandar o modelo, ano e CEP, consigo indicar qual faz mais sentido para o seu caso — sem pressão.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer comparar proteção veicular e seguro auto para o seu carro? Chama a Elevance no WhatsApp!</p>
+    `
+  },
+  {
+    id: 44,
+    slug: "consorcio-como-funciona-contemplacao",
+    title: "Como Funciona a Contemplação no Consórcio: Sorteio, Lance e Estratégias",
+    date: "04 Jun, 2026",
+    category: "Consórcios",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800",
+    excerpt: "A contemplação no consórcio pode acontecer no primeiro mês ou no último. Entenda como funcionam os sorteios, os tipos de lance e as estratégias para ser contemplado mais rápido.",
+    content: `
+      <p class="mb-4">A principal dúvida de quem considera entrar em um consórcio é: "Quando serei contemplado?" A resposta honesta é: pode ser no primeiro mês ou no último. Mas existem estratégias que aumentam significativamente suas chances — e é isso que vou explicar aqui.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Como funciona o sorteio?</h2>
+      <p class="mb-4">Todo mês é realizada uma assembleia do grupo. Nessa assembleia, são realizados sorteios entre todos os participantes que estão em dia com as parcelas. Cada cota tem o mesmo número de chances — é literalmente como uma loteria, sem nenhum critério além do pagamento em dia.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que é lance?</h2>
+      <p class="mb-4">Lance é uma oferta que você faz para antecipar sua contemplação. Você oferece pagar à vista um percentual das parcelas restantes. Quem oferecer o maior percentual é contemplado. Se houver empate, vai a sorteio entre os empatados.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Tipos de lance</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Lance livre:</strong> você oferece qualquer percentual. Vence quem oferecer mais.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Lance fixo:</strong> a administradora define um percentual fixo (ex: 25%). Todos que ofertarem esse valor vão a sorteio.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Lance embutido:</strong> o valor do lance é descontado da carta de crédito, não precisa pagar do bolso. Mas a carta fica menor.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Lance com FGTS:</strong> para consórcio de imóvel, você pode usar o saldo do FGTS como lance.</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Estratégias para ser contemplado mais rápido</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Pesquise o histórico de lances do grupo:</strong> algumas administradoras informam o percentual médio de contemplação. Entre em grupos onde o lance médio esteja dentro do que você consegue ofertar.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Guarde as parcelas para dar lance:</strong> se você paga R$ 500/mês, em 10 meses tem R$ 5.000 para oferecer como lance além das parcelas normais.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Escolha grupos menores:</strong> menos participantes = mais chances de sorteio.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Entre no início do grupo:</strong> grupos recém-formados têm menos contemplados, então a carta ainda está intacta.</span></li>
+      </ul>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Na Rodobens, a média de contemplação por sorteio é de 8 a 14 meses. Com lance, pode ser no primeiro mês. Tenho acesso ao histórico de lances dos grupos disponíveis — se você me informar o bem que quer e o valor, consigo indicar o grupo com maior chance para o seu perfil.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer entender qual grupo de consórcio tem mais chance para você? A Elevance analisa gratuitamente. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 45,
+    slug: "plano-de-saude-para-autonomos-e-freelancers",
+    title: "Plano de Saúde Para Autônomos e Freelancers: Qual a Melhor Opção em 2026?",
+    date: "05 Jun, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Autônomo não tem plano de saúde da empresa. Mas existem opções muito melhores do que o plano individual caro. Veja o que contratar sendo freelancer ou autônomo.",
+    content: `
+      <p class="mb-4">Trabalhar por conta própria tem muitas vantagens — mas perder o plano de saúde da empresa não é uma delas. A boa notícia é que autônomos e freelancers têm opções muito mais em conta do que o plano individual, e a maioria não sabe disso.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">As opções disponíveis para autônomos</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Plano individual:</strong> contratado direto com a operadora. É o mais caro e com menos operadoras disponíveis — mas tem proteção total da ANS.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Plano coletivo por adesão:</strong> vinculado a associações profissionais, sindicatos ou entidades de classe. Geralmente 20–30% mais barato que o individual.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Plano PME via MEI:</strong> abrir um MEI é gratuito e te dá acesso a planos empresariais. É a opção mais barata para a maioria dos autônomos.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Plano por adesão:</strong> operadoras como Sagrada Família e outras oferecem planos de adesão sem vínculo empresarial com valores competitivos.</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Abrir MEI para ter plano de saúde vale a pena?</h2>
+      <p class="mb-4">Sim — e muito. O MEI tem custo mensal de R$ 70 (aproximadamente), mas o acesso a planos PME pode economizar R$ 150 a R$ 300/mês na mensalidade do plano comparado ao individual. Em um ano, você economiza mais de R$ 1.500 só no plano de saúde — pagando apenas R$ 840 de MEI.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Se você é autônomo, a primeira coisa que faço é verificar se existe associação da sua área profissional que oferece plano coletivo. Médicos, advogados, engenheiros, contadores, professores — quase todas as categorias têm. O segundo caminho é o MEI. A Elevance verifica as duas opções para você gratuitamente.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Autônomo sem plano de saúde? A Elevance encontra a melhor opção para o seu perfil. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 46,
+    slug: "sinistro-de-seguro-como-acionar",
+    title: "Como Acionar o Seguro Após um Sinistro: Passo a Passo Sem Erro",
+    date: "06 Jun, 2026",
+    category: "Seguros",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Bateu o carro, teve roubo ou incêndio? Muita gente perde o direito ao reembolso por acionar o seguro errado. Veja o passo a passo correto para cada tipo de sinistro.",
+    content: `
+      <p class="mb-4">O momento de acionar o seguro é sempre estressante. E é exatamente nesse momento que erros acontecem — erros que podem resultar na negativa do sinistro ou no reembolso menor do que o esperado. Veja o passo a passo correto para cada situação.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Regra geral para qualquer sinistro</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Não conserte ou descarte nada antes de comunicar:</strong> a seguradora precisa avaliar o dano. Consertar antes pode invalidar o sinistro.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Documente tudo:</strong> fotos, vídeos, boletim de ocorrência, notas fiscais dos itens danificados.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Comunique dentro do prazo:</strong> a maioria dos seguros exige comunicação em até 72h do sinistro.</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Acidente de trânsito — passo a passo</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span style="color:#3B82F6; font-weight:900">1.</span><span>Verifique se há feridos — se sim, chame SAMU (192) imediatamente</span></li>
+        <li class="flex items-start gap-2"><span style="color:#3B82F6; font-weight:900">2.</span><span>Fotografe os veículos, a posição, os danos e a placa do outro carro</span></li>
+        <li class="flex items-start gap-2"><span style="color:#3B82F6; font-weight:900">3.</span><span>Registre Boletim de Ocorrência (BO) — mesmo que seja queda ou objeto na pista</span></li>
+        <li class="flex items-start gap-2"><span style="color:#3B82F6; font-weight:900">4.</span><span>Ligue para a central 24h da sua seguradora — número está na apólice</span></li>
+        <li class="flex items-start gap-2"><span style="color:#3B82F6; font-weight:900">5.</span><span>Aguarde o perito da seguradora — não use a oficina antes da vistoria</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Roubo ou furto do veículo</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span style="color:#EF4444; font-weight:900">1.</span><span>Registre BO imediatamente na delegacia ou online (Boletim Eletrônico)</span></li>
+        <li class="flex items-start gap-2"><span style="color:#EF4444; font-weight:900">2.</span><span>Comunique a seguradora em até 24h com o número do BO</span></li>
+        <li class="flex items-start gap-2"><span style="color:#EF4444; font-weight:900">3.</span><span>Entregue os documentos solicitados: CRV, CNH, BO</span></li>
+        <li class="flex items-start gap-2"><span style="color:#EF4444; font-weight:900">4.</span><span>Aguarde o prazo de 30 dias — a seguradora aguarda possível recuperação do veículo</span></li>
+        <li class="flex items-start gap-2"><span style="color:#EF4444; font-weight:900">5.</span><span>Se não recuperado, receba a indenização pela tabela FIPE na data do sinistro</span></li>
+      </ul>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Guarde sempre o número da central 24h da sua seguradora no celular — não apenas na apólice física. Em situação de estresse, procurar o papel leva tempo. Clientes da Elevance podem me chamar diretamente no WhatsApp em caso de sinistro — ajudo a acionar a seguradora corretamente.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Precisou acionar o seguro e não sabe como? A Elevance te acompanha em todo o processo. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 47,
+    slug: "reajuste-plano-de-saude-como-funciona",
+    title: "Reajuste do Plano de Saúde: Como Funciona, Quando Acontece e Como Contestar",
+    date: "07 Jun, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=800",
+    excerpt: "O reajuste anual do plano de saúde pode ser uma surpresa desagradável. Entenda como é calculado, o papel da ANS, e quando vale a pena trocar de plano.",
+    content: `
+      <p class="mb-4">Todo ano, na data de aniversário do seu contrato, o plano de saúde sofre reajuste. Em alguns casos, o aumento chega a 15%, 20% ou mais — e muita gente aceita sem questionar. Entender como funciona esse processo pode economizar centenas de reais por ano.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Como funciona o reajuste?</h2>
+      <p class="mb-4">Existem dois tipos de reajuste:</p>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Reajuste por variação de custos:</strong> aplica-se a planos individuais e familiares. O índice máximo é definido anualmente pela ANS — em 2025 foi de 6,06%.</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Reajuste por mudança de faixa etária:</strong> ao completar certas idades (19, 24, 29, 34, 39, 44, 49, 54, 59 anos), o plano pode aumentar. A ANS limita esse aumento a no máximo 6x o valor da faixa inicial.</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Planos coletivos têm reajuste limitado?</h2>
+      <p class="mb-4">Não. Planos coletivos (empresarial ou por adesão) não têm o índice da ANS como limite — o reajuste é negociado entre a operadora e a empresa ou associação. Isso significa que pode ser menor ou muito maior que o limite dos planos individuais. É por isso que alguns planos coletivos ficam caros com o tempo.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que fazer quando o reajuste parece abusivo?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Verifique se o reajuste aplicado ao seu plano individual não ultrapassou o índice máximo da ANS do ano</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Se ultrapassou, registre reclamação no site da ANS (ans.gov.br) ou no Procon</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Considere portabilidade para outro plano — se já tem 2 anos de contrato, muda sem novas carências</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span>Compare o custo anual total (mensalidade x 12 + coparticipação estimada) entre o plano atual e alternativas</span></li>
+      </ul>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Recebeu o aviso de reajuste? Me manda o valor atual e o novo valor — faço uma análise gratuita e comparo com planos equivalentes disponíveis. Às vezes dá para trocar para um plano melhor pagando o mesmo valor ou até menos.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Recebeu reajuste abusivo ou quer comparar opções? A Elevance analisa gratuitamente. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 48,
+    slug: "consorcio-contemplado-o-que-fazer",
+    title: "Fui Contemplado no Consórcio: O Que Fazer Agora? Guia Completo",
+    date: "08 Jun, 2026",
+    category: "Consórcios",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Ser contemplado no consórcio é emocionante — mas o que fazer com a carta de crédito? Veja o passo a passo correto para usar o crédito da melhor forma possível.",
+    content: `
+      <p class="mb-4">Você foi contemplado no consórcio — parabéns! Mas agora vem a parte que muita gente não está preparada: o que fazer com a carta de crédito. Errar nessa etapa pode atrasar meses o uso do seu crédito ou resultar em prejuízo. Veja o passo a passo correto.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Primeiro passo: confirme a contemplação</h2>
+      <p class="mb-4">A administradora entra em contato após a contemplação, mas confirme você mesmo pelo app ou site da administradora. Verifique o valor exato da carta de crédito e se está atualizado pelo INCC (para imóveis) ou tabela FIPE (para veículos).</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Segundo passo: ofereça a garantia</h2>
+      <p class="mb-4">Para liberar a carta, a administradora exige uma garantia. As opções mais comuns:</p>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>O próprio bem:</strong> o imóvel ou veículo comprado fica como garantia até quitar o consórcio — é a opção mais simples</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Imóvel quitado:</strong> oferecer um imóvel já pago como garantia do consórcio</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Fiador:</strong> outra pessoa com renda e imóvel que assina como responsável</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Terceiro passo: escolha o bem</h2>
+      <p class="mb-4">A carta de crédito tem prazo de uso — geralmente 180 dias. Use esse tempo para pesquisar bem. Lembre-se: a carta tem poder de compra à vista, então você pode negociar desconto com o vendedor. Muitas pessoas conseguem 5% a 10% de desconto negociando o pagamento à vista via consórcio.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">E se o bem custar mais que a carta?</h2>
+      <p class="mb-4">Você completa a diferença com recursos próprios. O pagamento é feito diretamente pela administradora ao vendedor — você não recebe o dinheiro em mãos.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">E se o bem custar menos que a carta?</h2>
+      <p class="mb-4">O saldo restante é usado para quitar as parcelas futuras do consórcio — reduzindo ou eliminando as mensalidades que ainda faltam pagar.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Fui contemplado é a melhor frase que um cliente me manda no WhatsApp. Mas não saia comprando qualquer coisa por impulso — a carta tem validade e você tem tempo para pesquisar o melhor negócio. Clientes da Elevance que foram contemplados pela Rodobens podem me consultar gratuitamente sobre os próximos passos.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Foi contemplado e não sabe os próximos passos? A Elevance te acompanha em todo o processo. Chama no WhatsApp!</p>
+    `
   }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
