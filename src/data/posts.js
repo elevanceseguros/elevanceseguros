@@ -2731,6 +2731,272 @@ export const postsData = [
 
       <p class="mt-8 font-bold" style="color:#C8A96B">Foi contemplado e não sabe os próximos passos? A Elevance te acompanha em todo o processo. Chama no WhatsApp!</p>
     `
+  },
+  {
+    id: 49,
+    slug: "seguro-de-vida-para-autonomos",
+    title: "Seguro de Vida Para Autônomos: Por Que É Ainda Mais Importante Que Para CLT",
+    date: "09 Jun, 2026",
+    category: "Seguro de Vida",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Quem tem carteira assinada tem FGTS, seguro-desemprego e INSS. Autônomo não tem nada disso. O seguro de vida é a única rede de proteção real para quem trabalha por conta própria.",
+    content: `
+      <p class="mb-4">Trabalhador CLT tem uma rede de proteção embutida: FGTS, INSS, seguro-desemprego, auxílio-doença. Se ficar incapacitado, recebe pelo INSS. Se morrer, a família tem o FGTS e o seguro de vida coletivo da empresa. Autônomo não tem nada disso — e é por isso que o seguro de vida é ainda mais urgente para quem trabalha por conta própria.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O risco real do autônomo sem proteção</h2>
+      <p class="mb-4">Se você é autônomo e fica 3 meses sem trabalhar por doença ou acidente, o que acontece com suas contas? Sem renda, sem benefício do INSS (a menos que contribua como autônomo), sem reserva suficiente — é uma situação que destrói anos de construção financeira em meses.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que o seguro de vida cobre para autônomos?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Morte:</strong> sua família recebe o capital segurado para manter o padrão de vida</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Invalidez permanente:</strong> você recebe o capital em vida se um acidente ou doença te impedir de trabalhar definitivamente</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Invalidez temporária:</strong> alguns planos pagam diária por incapacidade — uma renda substituta enquanto você se recupera</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Doenças graves:</strong> cobertura adicional para câncer, infarto, AVC — recebe o capital para custear tratamento</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quanto custa?</h2>
+      <p class="mb-4">Para um autônomo de 35 anos com cobertura de R$ 300.000, o custo fica entre R$ 80 e R$ 150/mês. Com cobertura de invalidez temporária incluída, pode chegar a R$ 200/mês — ainda assim, menos que um plano de saúde básico.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Para autônomos, recomendo sempre incluir a cobertura de invalidez temporária — ela funciona como um seguro-desemprego particular. Se você ficar 60 dias sem trabalhar, o seguro paga uma diária que cobre parte das suas despesas fixas. A Elevance cota as melhores opções para autônomos gratuitamente.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Autônomo sem proteção é o maior risco financeiro que existe. A Elevance te ajuda a resolver isso. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 50,
+    slug: "plano-de-saude-reembolso-como-funciona",
+    title: "Reembolso no Plano de Saúde: Como Funciona, Prazo e Como Solicitar",
+    date: "10 Jun, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Usou um médico fora da rede e pagou do bolso? Seu plano pode reembolsar. Entenda quais planos oferecem reembolso, como solicitar e quais são os limites.",
+    content: `
+      <p class="mb-4">Muita gente paga do bolso uma consulta com um especialista fora da rede e nem sabe que pode pedir reembolso ao plano. Em alguns casos, o plano reembolsa parcial ou totalmente — mas tem regras que precisam ser seguidas.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Todo plano oferece reembolso?</h2>
+      <p class="mb-4">Não. O reembolso existe principalmente em planos de <strong>abrangência nacional</strong> e em alguns planos <strong>premium individuais</strong>. Planos básicos regionais geralmente não têm essa cobertura. Verifique sua apólice ou ligue para a operadora.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quando o reembolso é obrigatório pela ANS?</h2>
+      <p class="mb-4">A ANS obriga o reembolso em dois casos específicos:</p>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Urgência e emergência fora da área de cobertura:</strong> se você precisou de atendimento de emergência em cidade não coberta pelo seu plano, a operadora é obrigada a reembolsar</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Indisponibilidade de rede:</strong> se a operadora não tiver o especialista necessário na rede credenciada em prazo razoável, você pode buscar fora e pedir reembolso</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Como solicitar o reembolso?</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span style="color:#3B82F6; font-weight:900">1.</span><span>Guarde a nota fiscal ou recibo do atendimento com CRM do médico e CRO/CRF se for dentista</span></li>
+        <li class="flex items-start gap-2"><span style="color:#3B82F6; font-weight:900">2.</span><span>Solicite o relatório médico com CID (código da doença) e procedimento realizado</span></li>
+        <li class="flex items-start gap-2"><span style="color:#3B82F6; font-weight:900">3.</span><span>Acesse o app ou site da sua operadora e abra a solicitação de reembolso</span></li>
+        <li class="flex items-start gap-2"><span style="color:#3B82F6; font-weight:900">4.</span><span>Anexe os documentos — a operadora tem até 30 dias para analisar e responder</span></li>
+        <li class="flex items-start gap-2"><span style="color:#3B82F6; font-weight:900">5.</span><span>Se negado sem justificativa, registre reclamação na ANS (ans.gov.br)</span></li>
+      </ul>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">O valor do reembolso geralmente é baseado em uma tabela de referência da operadora — não necessariamente o que você pagou. Mas em casos de urgência fora da área, a ANS exige reembolso pelo valor pago. Guarde sempre todas as notas fiscais de atendimentos médicos, mesmo os pagos fora da rede.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Dúvida sobre reembolso ou quer um plano com essa cobertura? A Elevance orienta gratuitamente. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 51,
+    slug: "consorcio-de-veiculo-como-funciona",
+    title: "Consórcio de Veículo: Como Funciona, Quanto Custa e Como Ser Contemplado",
+    date: "11 Jun, 2026",
+    category: "Consórcios",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800",
+    excerpt: "O consórcio de veículo cresceu 35% em 2025. Entenda como funciona na prática, quanto você vai pagar no total e as estratégias para ser contemplado antes do sorteio.",
+    content: `
+      <p class="mb-4">Com os juros altos do financiamento de veículos — que chegam a 2,5% ao mês ou mais — o consórcio virou a alternativa inteligente para quem quer trocar de carro sem se endividar. Mas como funciona exatamente? Vou explicar do zero.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Como funciona o consórcio de veículo?</h2>
+      <p class="mb-4">Um grupo de pessoas se reúne com o mesmo objetivo: comprar um veículo. Todo mês, cada um paga uma parcela. Com esse fundo coletivo, são realizados sorteios mensais — quem é sorteado recebe a carta de crédito para comprar o veículo à vista. Você também pode dar um lance para antecipar a contemplação.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Comparação real: Consórcio vs Financiamento</h2>
+      <p class="mb-4">Veículo de R$ 80.000:</p>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Financiamento 48 meses a 1,8% a.m.:</strong> parcela ~R$ 2.400, total pago ~R$ 115.000</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Consórcio Rodobens 60 meses:</strong> parcela ~R$ 1.500, total pago ~R$ 93.000</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Economia:</strong> ~R$ 22.000 — quase 28% do valor do carro</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que posso comprar com a carta de veículo?</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Carro novo ou seminovo (até 5 anos em algumas administradoras)</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Moto nova ou usada</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Caminhão, van ou veículo comercial</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Qualquer marca e modelo — você escolhe na concessionária</span></li>
+      </ul>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">A carta de crédito tem poder de compra à vista — use isso a seu favor na negociação com a concessionária. Muitos vendedores dão desconto de 5% a 8% para pagamento à vista, mesmo sendo via consórcio. Isso pode abater boa parte da taxa de administração. A Elevance simula o consórcio de veículo gratuitamente pela Rodobens.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer simular um consórcio de veículo? A Elevance compara as melhores opções. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 52,
+    slug: "hapvida-notredame-plano-de-saude",
+    title: "Hapvida NotreDAme: Vale a Pena em 2026? Análise Honesta",
+    date: "12 Jun, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&q=80&w=800",
+    excerpt: "A fusão Hapvida-NotreDAme criou o maior grupo de saúde do Brasil. Mas vale a pena contratar em 2026? Veja pontos fortes, fracos e para qual perfil faz sentido.",
+    content: `
+      <p class="mb-4">Desde a fusão em 2022, o Grupo Hapvida NotreDAme Intermédica se tornou o maior operador de saúde do Brasil, com mais de 8 milhões de beneficiários. Isso significa muita coisa — boa rede, escala e preço competitivo. Mas também significa reclamações e filas. Veja a análise honesta.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Pontos fortes</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Preço:</strong> um dos mais competitivos do mercado, especialmente para PME e adesão</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Rede própria:</strong> hospitais, clínicas e laboratórios próprios reduzem burocracia de autorização</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Abrangência:</strong> presente em mais de 1.500 municípios brasileiros</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>App funcional:</strong> agendamento online, telemedicina e resultado de exames no app</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Pontos fracos</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Fila para especialistas:</strong> tempo de espera para algumas especialidades pode ser longo em cidades menores</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Rede credenciada restrita fora das próprias:</strong> em algumas cidades, a rede de clínicas externas é limitada</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Pós-fusão ainda em integração:</strong> alguns beneficiários relatam inconsistências entre as redes Hapvida e NDI</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Para qual perfil faz sentido?</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Empresas PME buscando custo baixo com cobertura decente</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Pessoas que usam o plano principalmente para consultas e exames básicos</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Quem mora em cidade com boa rede própria Hapvida/NDI</span></li>
+      </ul>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Antes de contratar qualquer plano, verifique a rede credenciada na sua cidade no site da operadora. Para São Paulo capital, Hapvida/NDI tem boa cobertura. Para interior, pesquise antes. A Elevance compara Hapvida com as outras operadoras disponíveis na sua região gratuitamente.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer comparar Hapvida com outras operadoras na sua cidade? A Elevance faz essa análise gratuitamente. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 53,
+    slug: "seguro-residencial-apartamento-alugado",
+    title: "Seguro Residencial Para Apartamento Alugado: Inquilino ou Proprietário Paga?",
+    date: "13 Jun, 2026",
+    category: "Seguro Residencial",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Quem mora de aluguel tem dúvida: preciso de seguro residencial? E quem paga — eu ou o proprietário? A resposta depende do contrato, mas há coberturas essenciais para inquilinos.",
+    content: `
+      <p class="mb-4">Essa é uma dúvida muito comum — e a resposta surpreende muita gente. O proprietário tem obrigação de segurar a estrutura do imóvel, mas o inquilino fica completamente desprotegido em relação ao conteúdo (móveis, eletrônicos, roupas) e à responsabilidade civil. Entenda como funciona.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que o proprietário deve segurar?</h2>
+      <p class="mb-4">O proprietário é responsável pelo seguro da estrutura do imóvel — paredes, instalações elétricas e hidráulicas, cobertura. Em condomínios, o seguro coletivo geralmente cobre a estrutura. Mas esse seguro não protege nada que pertença a você como inquilino.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que o inquilino deve segurar?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Conteúdo:</strong> seus móveis, eletrônicos, roupas, eletrodomésticos — nada disso está coberto pelo seguro do proprietário</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Responsabilidade civil:</strong> se você causar um incêndio ou alagamento que danifique o apartamento do vizinho, você responde pelo prejuízo</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Danos elétricos:</strong> curto-circuito que queima seus equipamentos não é coberto pelo proprietário</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quanto custa o seguro para inquilino?</h2>
+      <p class="mb-4">Um seguro residencial focado em conteúdo e RC para um apartamento de 2 quartos em SP custa entre <strong>R$ 35 e R$ 80/mês</strong>. É um dos seguros mais baratos em relação ao risco que protege.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Ao assinar o contrato de aluguel, verifique se existe cláusula sobre seguro residencial — alguns proprietários exigem que o inquilino contrate. Mas mesmo que não exijam, contratar por conta própria é altamente recomendado. A Elevance cota o seguro ideal para inquilinos em minutos.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Mora de aluguel e quer proteger seu conteúdo? A Elevance encontra o seguro certo para você. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 54,
+    slug: "bradesco-saude-plano-vale-a-pena",
+    title: "Bradesco Saúde Vale a Pena em 2026? Análise Completa dos Planos",
+    date: "14 Jun, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800",
+    excerpt: "O Bradesco Saúde é um dos planos mais tradicionais do Brasil. Mas vale o preço em 2026? Veja os planos disponíveis, pontos fortes, fracos e para qual perfil é ideal.",
+    content: `
+      <p class="mb-4">O Bradesco Saúde é frequentemente associado a planos premium — e por uma boa razão. Mas nem todo mundo precisa (ou pode pagar) pelo topo de linha. Veja a análise completa e para quem cada faixa de plano faz sentido.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Pontos fortes do Bradesco Saúde</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Rede credenciada extensa:</strong> uma das maiores redes do Brasil, com hospitais de referência em todo o país</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Cobertura nacional:</strong> planos com cobertura em todo o território nacional, ideal para quem viaja muito</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Serviços premium:</strong> telemedicina, segunda opinião médica, central 24h com médicos</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Estabilidade:</strong> operadora sólida, baixo risco de descredenciamento de rede</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Pontos fracos</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Preço:</strong> um dos planos mais caros do mercado — o diferencial de qualidade tem um custo</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Reajuste:</strong> historicamente acima da média do mercado</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Burocracia em alguns procedimentos:</strong> autorização para cirurgias eletivas pode ser demorada</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Para qual perfil faz sentido?</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Famílias que priorizam qualidade de atendimento acima do custo</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Empresas que querem oferecer benefício premium para reter talentos</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Pessoas acima de 50 anos que usam o plano com frequência</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Quem quer cobertura nacional confiável</span></li>
+      </ul>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">O Bradesco Saúde tem diferentes segmentos — Nacional Flex, Top Nacional, Efetivo — com preços e coberturas muito diferentes. Antes de contratar, compare o custo-benefício com SulAmérica e Porto Saúde, que têm qualidade similar com preços às vezes menores. A Elevance faz essa comparação gratuitamente.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer comparar Bradesco Saúde com outras operadoras premium? A Elevance analisa para você. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 55,
+    slug: "lance-consorcio-como-calcular",
+    title: "Como Calcular o Lance no Consórcio e Maximizar Suas Chances",
+    date: "15 Jun, 2026",
+    category: "Consórcios",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Dar lance no consórcio sem estratégia é jogar dinheiro fora. Entenda como calcular o lance ideal, quando ofertar e como usar o FGTS para maximizar suas chances de contemplação.",
+    content: `
+      <p class="mb-4">O lance é a ferramenta mais poderosa do consórcio — e a mais mal utilizada. Muita gente dá um lance aleatório e perde para quem foi mais estratégico. Com as informações certas, você pode maximizar suas chances sem precisar ofertar mais do que o necessário.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Como funciona o cálculo do lance?</h2>
+      <p class="mb-4">O lance é sempre um percentual da carta de crédito. Se a carta é R$ 300.000 e você quer ofertar R$ 45.000, seu lance é de 15%. Quem oferecer o maior percentual é contemplado. Se houver empate, vai a sorteio entre os empatados.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Como descobrir qual percentual tem chance de vencer?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Histórico de lances do grupo:</strong> a administradora disponibiliza os lances vencedores dos últimos meses — analise a média</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Maturidade do grupo:</strong> grupos mais antigos tendem a ter lances menores, pois há menos participantes com saldo acumulado</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Mês de referência:</strong> meses com assembleia maior (aniversário do grupo) costumam ter lances mais disputados</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Estratégia do lance embutido</h2>
+      <p class="mb-4">No lance embutido, você não precisa ter o dinheiro do lance disponível — ele é descontado da carta de crédito. Exemplo: carta de R$ 300.000, lance embutido de 20% = você recebe R$ 240.000 de carta, mas foi contemplado sem desembolsar nada além das parcelas normais. Ideal para quem não tem reserva mas quer antecipar a contemplação.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Lance com FGTS para imóvel</h2>
+      <p class="mb-4">Para consórcio de imóvel, o FGTS pode ser usado como lance — sem sair do seu bolso. Se você tem R$ 30.000 no FGTS e a carta é R$ 200.000, seu lance é de 15%. A Caixa libera o FGTS direto para a administradora após a contemplação.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Nunca oferte um lance que não tem. Se for sorteado para dar um lance livre e não tiver o dinheiro disponível, você perde a contemplação e ainda pode ser penalizado. Só oferte o que você consegue pagar no prazo determinado. A Elevance analisa o histórico de lances dos grupos Rodobens disponíveis e indica o percentual com maior chance para o seu caso.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer saber qual percentual de lance tem mais chance no seu grupo? A Elevance analisa gratuitamente. Chama no WhatsApp!</p>
+    `
   }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
