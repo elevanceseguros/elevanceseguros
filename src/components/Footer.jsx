@@ -19,6 +19,16 @@ const Footer = () => {
     { name: 'Odontológico', path: '/odontologico' },
   ];
 
+  const saudeLinksExtras = [
+    { name: 'Trasmontano', path: '/trasmontano' },
+    { name: 'São Cristóvão', path: '/sao-cristovao' },
+    { name: 'São Miguel', path: '/sao-miguel' },
+    { name: 'Plena Saúde', path: '/plena-saude' },
+    { name: 'Biovida', path: '/biovida' },
+    { name: 'UniHosp', path: '/unihosp' },
+    { name: 'Garantia de Saúde', path: '/garantia-saude' },
+  ];
+
   const autoLinks = [
     { name: 'Seguro Auto', path: '/seguro-auto' },
     { name: 'Proteção Veicular', path: '/protecao-veicular' },
@@ -87,13 +97,24 @@ const Footer = () => {
               style={{color: '#C8A96B'}}>
               <Heart size={10}/> Planos de Saúde
             </h4>
-            <div className="grid grid-cols-2 gap-x-4 gap-y-2.5">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 mb-4">
               {saudeLinks.map((item) => (
                 <Link key={item.path} to={item.path} className={linkHoverClass}
                   style={item.destaque ? {color: '#C8A96B'} : linkStyle}>
                   <ChevronRight size={9} className="shrink-0" /> {item.name}
                 </Link>
               ))}
+            </div>
+            {/* Regionais — separadas visualmente */}
+            <div className="pt-3 border-t" style={{borderColor: 'rgba(200,169,107,0.1)'}}>
+              <p className="text-[9px] font-bold uppercase tracking-widest mb-2.5" style={{color: 'rgba(200,169,107,0.5)'}}>Regionais SP</p>
+              <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+                {saudeLinksExtras.map((item) => (
+                  <Link key={item.path} to={item.path} className={linkHoverClass} style={linkStyle}>
+                    <ChevronRight size={9} className="shrink-0" /> {item.name}
+                  </Link>
+                ))}
+              </div>
             </div>
             <div className="mt-6 pt-5 grid grid-cols-2 gap-4" style={{borderTop: '1px solid rgba(255,255,255,0.06)'}}>
               <div>

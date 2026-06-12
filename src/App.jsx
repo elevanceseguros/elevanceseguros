@@ -26,6 +26,13 @@ const HealthInsurancePage = lazy(() => import('@/pages/HealthInsurancePage'));
 const MediservicePage = lazy(() => import('@/pages/MediservicePage'));
 const MedSeniorPage = lazy(() => import('@/pages/MedSeniorPage'));
 const AlicePage = lazy(() => import('@/pages/AlicePage'));
+const GarantiaSaudePage = lazy(() => import('@/pages/GarantiaSaudePage'));
+const SaoMiguelPage = lazy(() => import('@/pages/SaoMiguelPage'));
+const TrasmontanoPage = lazy(() => import('@/pages/TrasmontanoPage'));
+const SaoCristovaoPage = lazy(() => import('@/pages/SaoCristovaoPage'));
+const PlenaSaudePage = lazy(() => import('@/pages/PlenaSaudePage'));
+const BiovidaPage = lazy(() => import('@/pages/BiovidaPage'));
+const UnihospPage = lazy(() => import('@/pages/UnihospPage'));
 const SaoFranciscoPage = lazy(() => import('@/pages/SaoFranciscoPage'));
 const UsisaudePage = lazy(() => import('@/pages/UsisaudePage'));
 const UnimeduniplanPage = lazy(() => import('@/pages/UnimeduniplanPage'));
@@ -156,6 +163,13 @@ const AppContent = () => {
                 <Route path="/porto" element={<PortoPage />} />
                 <Route path="/medsenior" element={<MedSeniorPage />} />
                 <Route path="/hapvida" element={<HapvidaPage />} />
+                <Route path="/garantia-saude" element={<GarantiaSaudePage />} />
+                <Route path="/sao-miguel" element={<SaoMiguelPage />} />
+                <Route path="/trasmontano" element={<TrasmontanoPage />} />
+                <Route path="/sao-cristovao" element={<SaoCristovaoPage />} />
+                <Route path="/plena-saude" element={<PlenaSaudePage />} />
+                <Route path="/biovida" element={<BiovidaPage />} />
+                <Route path="/unihosp" element={<UnihospPage />} />
                 <Route path="/alice" element={<AlicePage />} />
                 <Route path="/amil" element={<AmilPage />} />
                 <Route path="/bradescosaude" element={<BradescosaudePage />} />

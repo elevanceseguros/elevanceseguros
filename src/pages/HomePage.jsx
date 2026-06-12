@@ -189,20 +189,43 @@ const HomePage = () => {
         <div className="flex overflow-hidden mb-4">
           <div className="marquee-track flex gap-8 items-center whitespace-nowrap">
             {[
-              {src:"/logos/amil.webp",alt:"Amil"},{src:"/logos/bradesco.webp",alt:"Bradesco Saúde"},
-              {src:"/logos/sulamerica.webp",alt:"SulAmérica"},{src:"/logos/hapvida.webp",alt:"Hapvida"},
-              {src:"/logos/unimed.png",alt:"Unimed"},{src:"/logos/alice.webp",alt:"Alice"},
-              {src:"/logos/notredame.webp",alt:"Notre Dame"},{src:"/logos/medsenior.webp",alt:"MedSênior"},
-              {src:"/logos/portoseguro.svg",alt:"Porto Seguro Saúde"},
-              {src:"/logos/amil.webp",alt:"Amil"},{src:"/logos/bradesco.webp",alt:"Bradesco Saúde"},
-              {src:"/logos/sulamerica.webp",alt:"SulAmérica"},{src:"/logos/hapvida.webp",alt:"Hapvida"},
-              {src:"/logos/unimed.png",alt:"Unimed"},{src:"/logos/alice.webp",alt:"Alice"},
-              {src:"/logos/notredame.webp",alt:"Notre Dame"},{src:"/logos/medsenior.webp",alt:"MedSênior"},
-              {src:"/logos/portoseguro.svg",alt:"Porto Seguro Saúde"},
+              {src:"/logos/amil.webp",alt:"Amil",path:"/amil"},
+              {src:"/logos/bradesco.webp",alt:"Bradesco Saúde",path:"/bradescosaude"},
+              {src:"/logos/sulamerica.webp",alt:"SulAmérica",path:"/sulamerica"},
+              {src:"/logos/hapvida.webp",alt:"Hapvida",path:"/hapvida"},
+              {src:"/logos/unimed.png",alt:"Unimed",path:"/unimed"},
+              {src:"/logos/alice.webp",alt:"Alice",path:"/alice"},
+              {src:"/logos/notredame.webp",alt:"Notre Dame",path:"/hapvida"},
+              {src:"/logos/medsenior.webp",alt:"MedSênior",path:"/medsenior"},
+              {src:"/logos/portoseguro.svg",alt:"Porto Seguro Saúde",path:"/porto"},
+              {src:"/logos/trasmontano.png",alt:"Trasmontano",path:"/trasmontano"},
+              {src:"/logos/sao-cristovao.webp",alt:"São Cristóvão",path:"/sao-cristovao"},
+              {src:"/logos/sao-miguel.png",alt:"São Miguel",path:"/sao-miguel"},
+              {src:"/logos/plena-saude.png",alt:"Plena Saúde",path:"/plena-saude"},
+              {src:"/logos/biovida.webp",alt:"Biovida",path:"/biovida"},
+              {src:"/logos/unihosp.webp",alt:"UniHosp",path:"/unihosp"},
+              {src:"/logos/garantia-saude.webp",alt:"Garantia de Saúde",path:"/garantia-saude"},
+              {src:"/logos/amil.webp",alt:"Amil",path:"/amil"},
+              {src:"/logos/bradesco.webp",alt:"Bradesco Saúde",path:"/bradescosaude"},
+              {src:"/logos/sulamerica.webp",alt:"SulAmérica",path:"/sulamerica"},
+              {src:"/logos/hapvida.webp",alt:"Hapvida",path:"/hapvida"},
+              {src:"/logos/unimed.png",alt:"Unimed",path:"/unimed"},
+              {src:"/logos/alice.webp",alt:"Alice",path:"/alice"},
+              {src:"/logos/notredame.webp",alt:"Notre Dame",path:"/hapvida"},
+              {src:"/logos/medsenior.webp",alt:"MedSênior",path:"/medsenior"},
+              {src:"/logos/portoseguro.svg",alt:"Porto Seguro Saúde",path:"/porto"},
+              {src:"/logos/trasmontano.png",alt:"Trasmontano",path:"/trasmontano"},
+              {src:"/logos/sao-cristovao.webp",alt:"São Cristóvão",path:"/sao-cristovao"},
+              {src:"/logos/sao-miguel.png",alt:"São Miguel",path:"/sao-miguel"},
+              {src:"/logos/plena-saude.png",alt:"Plena Saúde",path:"/plena-saude"},
+              {src:"/logos/biovida.webp",alt:"Biovida",path:"/biovida"},
+              {src:"/logos/unihosp.webp",alt:"UniHosp",path:"/unihosp"},
+              {src:"/logos/garantia-saude.webp",alt:"Garantia de Saúde",path:"/garantia-saude"},
             ].map((logo, i) => (
-              <div key={i} className="flex items-center justify-center w-28 h-12 shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-50 hover:opacity-100">
+              <a key={i} href={logo.path}
+                className="flex items-center justify-center w-28 h-12 shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-50 hover:opacity-100">
                 <img src={logo.src} alt={logo.alt} className="max-h-10 max-w-[100px] object-contain" loading="lazy" />
-              </div>
+              </a>
             ))}
           </div>
         </div>

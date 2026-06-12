@@ -13,6 +13,13 @@ const saudeSubmenu = [
   { name: 'Alice', path: '/alice' },
   { name: 'MedSênior', path: '/medsenior' },
   { name: 'Odontológico', path: '/odontologico' },
+  { name: 'Trasmontano', path: '/trasmontano' },
+  { name: 'São Cristóvão', path: '/sao-cristovao' },
+  { name: 'São Miguel', path: '/sao-miguel' },
+  { name: 'Plena Saúde', path: '/plena-saude' },
+  { name: 'Biovida', path: '/biovida' },
+  { name: 'UniHosp', path: '/unihosp' },
+  { name: 'Garantia de Saúde', path: '/garantia-saude' },
 ];
 
 const autoSubmenu = [
