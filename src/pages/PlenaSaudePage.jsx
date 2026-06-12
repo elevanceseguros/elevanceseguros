@@ -114,11 +114,11 @@ const PlenaSaudePage = () => {
       </section>
 
       <FAQ perguntas={[
-        {p: "Quanto tempo leva para o plano ser ativado?", r: "Após a contratação e pagamento da primeira mensalidade, o plano é ativado em até 48 horas. A urgência e emergência ficam disponíveis em 24 horas após a contratação."},
-        {p: "Posso incluir dependentes no plano?", r: "Sim! Cônjuge, filhos e dependentes legais podem ser incluídos. A Elevance orienta sobre todos os procedimentos e valores por faixa etária."},
-        {p: "O plano cobre consultas com qualquer médico?", r: "O plano cobre consultas com médicos da rede credenciada. Verifique se o seu plano oferece cobertura de reembolso para atendimentos fora da rede."},
-        {p: "Quais são os prazos de carência?", r: "Seguindo as regras da ANS: 24h para urgência/emergência, 30 dias para consultas simples, 180 dias para internações e 300 dias para parto. A portabilidade pode eliminar as carências."},
-        {p: "Como funciona a cotação gratuita pela Elevance?", r: "A Elevance analisa seu perfil e orçamento para apresentar as melhores opções disponíveis. Todo o processo é gratuito e sem compromisso — você decide se e quando contratar."}
+        {pergunta: "Quanto tempo leva para o plano ser ativado?", resposta: "Após a contratação e pagamento da primeira mensalidade, o plano é ativado em até 48 horas. A urgência e emergência ficam disponíveis em 24 horas após a contratação."},
+        {pergunta: "Posso incluir dependentes no plano?", resposta: "Sim! Cônjuge, filhos e dependentes legais podem ser incluídos. A Elevance orienta sobre todos os procedimentos e valores por faixa etária."},
+        {pergunta: "O plano cobre consultas com qualquer médico?", resposta: "O plano cobre consultas com médicos da rede credenciada. Verifique se o seu plano oferece cobertura de reembolso para atendimentos fora da rede."},
+        {pergunta: "Quais são os prazos de carência?", resposta: "Seguindo as regras da ANS: 24h para urgência/emergência, 30 dias para consultas simples, 180 dias para internações e 300 dias para parto. A portabilidade pode eliminar as carências."},
+        {pergunta: "Como funciona a cotação gratuita pela Elevance?", resposta: "A Elevance analisa seu perfil e orçamento para apresentar as melhores opções disponíveis. Todo o processo é gratuito e sem compromisso — você decide se e quando contratar."}
       ]} />
       <ScrollCTA produto="Plano Plena Saúde" />
     </>
