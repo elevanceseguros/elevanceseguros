@@ -89,15 +89,24 @@ const Header = () => {
               <Heart size={12} style={{color: '#C8A96B'}} /> Saúde <ChevronDown size={11} className={`transition-transform text-white/40 ${saudeOpen ? 'rotate-180' : ''}`} />
             </button>
             {saudeOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-3 w-52 z-50">
-                <div className="rounded-2xl py-2 overflow-hidden" style={{background: '#0A1F3A', border: '1px solid rgba(200,169,107,0.2)', boxShadow: '0 20px 60px rgba(7,27,52,0.6)'}}>
-                  {saudeSubmenu.map((item, i) => (
-                    <Link key={item.path} to={item.path} onClick={() => setSaudeOpen(false)}
-                      className={`block px-5 py-2.5 text-xs font-semibold uppercase tracking-wide transition-colors hover:bg-white/5 ${i === 0 ? 'mb-1 border-b' : ''}`}
-                      style={{color: i === 0 ? '#C8A96B' : 'rgba(255,255,255,0.7)', borderColor: 'rgba(200,169,107,0.15)'}}>
-                      {i === 0 ? '⭐ ' + item.name : item.name}
-                    </Link>
-                  ))}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-3 z-50" style={{width: '420px'}}>
+                <div className="rounded-2xl py-3 overflow-hidden" style={{background: '#0A1F3A', border: '1px solid rgba(200,169,107,0.2)', boxShadow: '0 20px 60px rgba(7,27,52,0.6)'}}>
+                  {/* Linha de destaque — 1 coluna */}
+                  <Link to={saudeSubmenu[0].path} onClick={() => setSaudeOpen(false)}
+                    className="flex items-center gap-2 px-5 py-2.5 text-xs font-bold uppercase tracking-wide transition-colors hover:bg-white/5 border-b mx-3 mb-2"
+                    style={{color: '#C8A96B', borderColor: 'rgba(200,169,107,0.2)'}}>
+                    ⭐ {saudeSubmenu[0].name}
+                  </Link>
+                  {/* Resto em 2 colunas */}
+                  <div className="grid grid-cols-2 px-2">
+                    {saudeSubmenu.slice(1).map((item) => (
+                      <Link key={item.path} to={item.path} onClick={() => setSaudeOpen(false)}
+                        className="block px-3 py-2 text-xs font-semibold uppercase tracking-wide transition-colors hover:bg-white/5 rounded-lg"
+                        style={{color: 'rgba(255,255,255,0.7)'}}>
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
             )}
