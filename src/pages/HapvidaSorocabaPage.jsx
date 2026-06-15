@@ -8,26 +8,26 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
-const HapvidaRibeiraoPretoPage = () => {
+const HapvidaSorocabaPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const benefits = [
-    "Hospital São Francisco — referência em Ribeirão Preto desde 1945",
-    "Mais de 600 leitos e 65 leitos de UTI",
-    "Maternidade Sinhá Junqueira na rede",
-    "Pronto Atendimento próprio na Ribeirânia",
-    "Cobertura para toda a região de Ribeirão Preto"
+    "Hospital Modelo: certificação máxima ONA Nível 3",
+    "Maternidade referência com Método Canguru",
+    "Hospital NotreCare com Pronto-Socorro 24h",
+    "Dois hospitais próprios na cidade",
+    "Centro Qualivida de medicina preventiva"
   ];
 
   return (
     <>
       <Helmet>
-        <title>Plano Hapvida em Ribeirão Preto | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde Hapvida (Hospital São Francisco) em Ribeirão Preto. Rede própria com mais de 600 leitos, Maternidade Sinhá Junqueira e PA na Ribeirânia. Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="Hapvida Ribeirão Preto, plano de saúde Ribeirão Preto, Hospital São Francisco Ribeirão Preto, cotação Hapvida Ribeirão Preto" />
-        <link rel="canonical" href="https://www.elevanceseguros.com/hapvida-ribeirao-preto" />
+        <title>Plano Hapvida em Sorocaba | Cotação Gratuita | Elevance Seguros</title>
+        <meta name="description" content="Plano de saúde Hapvida em Sorocaba. Rede própria com Hospital Modelo (ONA Nível 3, maternidade referência) e Hospital NotreCare (PS 24h). Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="Hapvida Sorocaba, plano de saúde Sorocaba, Hospital Modelo Sorocaba, NotreDame Sorocaba, cotação Hapvida Sorocaba" />
+        <link rel="canonical" href="https://www.elevanceseguros.com/hapvida-sorocaba" />
 
         <script type="application/ld+json">{`${JSON.stringify({
           "@context": "https://schema.org",
@@ -35,7 +35,7 @@ const HapvidaRibeiraoPretoPage = () => {
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
             {"@type": "ListItem", "position": 2, "name": "Hapvida", "item": "https://www.elevanceseguros.com/hapvida"},
-            {"@type": "ListItem", "position": 3, "name": "Ribeirão Preto", "item": "https://www.elevanceseguros.com/hapvida-ribeirao-preto"}
+            {"@type": "ListItem", "position": 3, "name": "Sorocaba", "item": "https://www.elevanceseguros.com/hapvida-sorocaba"}
           ]
         })}`}</script>
         <meta name="twitter:card" content="summary_large_image" />
@@ -64,13 +64,13 @@ const HapvidaRibeiraoPretoPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <div className="inline-block bg-blue-100 text-green-300 px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
-                <MapPin className="w-4 h-4" /> Hospital São Francisco · Ribeirão Preto
+                <MapPin className="w-4 h-4" /> Hospital Modelo · Sorocaba
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
-                Plano Hapvida em <span className="text-[#0d1f3c]">Ribeirão Preto</span>
+                Plano Hapvida em <span className="text-[#0d1f3c]">Sorocaba</span>
               </h1>
               <p className="text-xl text-white/80 mb-8 leading-relaxed">
-                A Hapvida assumiu a operação do tradicional Hospital São Francisco em Ribeirão Preto, referência na cidade desde 1945. Rede própria robusta, Maternidade Sinhá Junqueira e Pronto Atendimento na Ribeirânia.
+                A Hapvida NotreDame Intermédica mantém em Sorocaba dois hospitais próprios: o Hospital Modelo, com certificação máxima ONA Nível 3 e maternidade referência, e o Hospital NotreCare, geral com Pronto-Socorro 24h.
               </p>
 
               <ul className="space-y-4 mb-8">
@@ -84,14 +84,14 @@ const HapvidaRibeiraoPretoPage = () => {
             </div>
 
             <div className="animate-fade-in">
-              <OperatorQuoteForm operatorName="Hapvida Ribeirão Preto" />
+              <OperatorQuoteForm operatorName="Hapvida Sorocaba" />
             </div>
           </div>
         </div>
       </section>
 
       <OperadoraPlanoSection
-        operadora="Hapvida Ribeirão Preto"
+        operadora="Hapvida Sorocaba"
         cor="#f97316"
         tabela={[
           {idade: '00 a 18', enf: 'R$ 143,83', apto: 'R$ 201,40'},
@@ -99,33 +99,33 @@ const HapvidaRibeiraoPretoPage = () => {
           {idade: '24 a 28', enf: 'R$ 205,14', apto: 'R$ 287,20'}
         ]}
         hospitais={[
-          {nome: 'Hospital São Francisco', regiao: 'Centro, Ribeirão Preto', desc: 'Mais de 600 leitos e 65 leitos de UTI. Referência hospitalar na cidade desde 1945.'},
-          {nome: 'Maternidade Sinhá Junqueira', regiao: 'Ribeirão Preto', desc: 'Maternidade integrada à rede para acompanhamento de gestantes e parto.'},
-          {nome: 'PA Mais Saúde (Ribeirânia)', regiao: 'Ribeirânia, Ribeirão Preto', desc: 'Pronto Atendimento próprio com emergência 24h na Av. Leão XIII.'},
-          {nome: 'Rede regional Hapvida', regiao: 'Região de Ribeirão Preto', desc: 'Cobertura ambulatorial estendida às cidades vizinhas da região.'}
+          {nome: 'Hospital Modelo (Geral e Maternidade)', regiao: 'Trujillo, Sorocaba', desc: 'Certificação máxima ONA Nível 3, Pronto-Socorro 24h, UTI Neonatal/Adulta, Centro Cirúrgico Robótico e selo Hospital Amigo da Criança (Método Canguru).'},
+          {nome: 'Hospital NotreCare', regiao: 'Santa Terezinha, Sorocaba', desc: 'Atendimento geral com Pronto-Socorro 24h, opção de urgência mais rápida na cidade.'},
+          {nome: 'Centro Qualivida', regiao: 'Sorocaba', desc: 'Unidade de medicina preventiva integrada à rede própria.'},
+          {nome: 'Cobertura regional', regiao: 'Região Metropolitana de Sorocaba', desc: 'Atendimento estendido para cidades vizinhas da RM de Sorocaba (cerca de 2,26 milhões de habitantes).'}
         ]}
         depoimento={{
-          inicial: "M",
-          nome: "Mariana",
-          local: "Ribeirão Preto, SP",
-          texto: "Fechei o plano pela Elevance e o Rodrigo me explicou direitinho como funciona a rede do São Francisco aqui em Ribeirão. Atendimento rápido pelo WhatsApp."
+          inicial: "R",
+          nome: "Renata",
+          local: "Sorocaba, SP",
+          texto: "Achei pela internet e fechei rapidinho com a Elevance. O Rodrigo explicou a diferença entre o Hospital Modelo e o NotreCare, ajudou muito na escolha."
         }}
       />
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Plano de saúde Hapvida em Ribeirão Preto: como funciona?</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Plano de saúde Hapvida em Sorocaba: como funciona?</h2>
           <div className="prose prose-lg text-slate-600">
-            <p className="mb-4">Em Ribeirão Preto, a Hapvida opera através da estrutura do tradicional <strong>Hospital São Francisco</strong>, fundado em 1945 e considerado o maior hospital particular da cidade, com mais de 600 leitos e 65 leitos de UTI. A rede inclui ainda a <strong>Maternidade Sinhá Junqueira</strong> e o Pronto Atendimento na Ribeirânia, na Av. Leão XIII.</p>
+            <p className="mb-4">Sorocaba é a segunda maior cidade do interior paulista e conta com <strong>dois hospitais próprios</strong> da Hapvida NotreDame Intermédica: o <strong>Hospital Modelo</strong>, no bairro Trujillo, com certificação máxima ONA Nível 3, maternidade referência (Método Canguru, selo Hospital Amigo da Criança) e Centro Cirúrgico Robótico; e o <strong>Hospital NotreCare</strong>, na Santa Terezinha, com atendimento geral e Pronto-Socorro 24h.</p>
             <p className="mb-4">
-              Quem mora em Ribeirão Preto e região mantém o atendimento já conhecido do São Francisco, agora com a tecnologia e solidez nacional da marca Hapvida — telemedicina 24h, app para agendamento de consultas e carteirinha digital.
+              Esse modelo verticalizado garante acesso direto às duas unidades, sem depender de autorização de rede credenciada externa para os procedimentos cobertos. A rede ainda conta com o Centro Qualivida, voltado à medicina preventiva.
             </p>
             <p className="mb-4">
-              Na Elevance Seguros, nosso corretor especializado analisa seu perfil e encontra a melhor opção de plano Hapvida para você e sua família em Ribeirão Preto, com o melhor custo-benefício do mercado.
+              Na Elevance Seguros, nosso corretor especializado analisa seu perfil e encontra a melhor opção de plano Hapvida para você e sua família em Sorocaba, com o melhor custo-benefício do mercado.
             </p>
           </div>
           <div className="mt-10">
-            <a href="https://wa.me/5511920144864?text=Olá Rodrigo, sou de Ribeirão Preto e quero cotar um plano Hapvida"
+            <a href="https://wa.me/5511920144864?text=Olá Rodrigo, sou de Sorocaba e quero cotar um plano Hapvida"
               target="_blank" rel="noreferrer"
               className="inline-flex items-center gap-3 bg-[#0d1f3c] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
               <MessageCircle size={16} /> Cotar via WhatsApp <ArrowRight size={16} />
@@ -136,11 +136,11 @@ const HapvidaRibeiraoPretoPage = () => {
 
       {/* FAQ */}
       <FAQ perguntas={[
-        { pergunta: "O plano Hapvida em Ribeirão Preto atende no Hospital São Francisco?", resposta: "Sim. A Hapvida assumiu a operação do Hospital São Francisco, tradicional na cidade desde 1945, com mais de 600 leitos e 65 leitos de UTI. É a principal unidade de referência para os beneficiários Hapvida em Ribeirão Preto." },
-        { pergunta: "A Maternidade Sinhá Junqueira está incluída no plano?", resposta: "Sim, a Maternidade Sinhá Junqueira faz parte da rede Hapvida em Ribeirão Preto, sendo referência para acompanhamento de gestantes e parto na região." },
-        { pergunta: "Tem Pronto Atendimento próprio em Ribeirão Preto?", resposta: "Sim, a Hapvida conta com Pronto Atendimento próprio na Ribeirânia (Av. Leão XIII), com emergência 24h, além do pronto-socorro do Hospital São Francisco no Centro." },
-        { pergunta: "Moro na região de Ribeirão Preto, posso contratar o plano?", resposta: "Sim. A cobertura ambulatorial da Hapvida em Ribeirão Preto se estende às cidades vizinhas da região. Fale com a Elevance Seguros para confirmar a rede disponível na sua cidade específica." },
-        { pergunta: "Hapvida cobre parto em Ribeirão Preto?", resposta: "Sim, mas com carência de 300 dias para parto normal e cesárea, conforme regras gerais da operadora. Para gestantes já grávidas na data de contratação, há regras específicas — consulte-nos antes de fechar o plano." }
+        { pergunta: "O plano Hapvida em Sorocaba dá acesso ao Hospital Modelo?", resposta: "Sim. O Hospital Modelo faz parte da rede própria da Hapvida NotreDame Intermédica em Sorocaba, com certificação máxima ONA Nível 3, Pronto-Socorro 24h, maternidade e UTI Neonatal/Adulta." },
+        { pergunta: "Qual a diferença entre o Hospital Modelo e o Hospital NotreCare?", resposta: "O Hospital Modelo, no Trujillo, é geral e materno-infantil, com maternidade referência e Centro Cirúrgico Robótico. O Hospital NotreCare, na Santa Terezinha, é uma opção de urgência mais rápida, com atendimento geral e Pronto-Socorro 24h." },
+        { pergunta: "O Hospital Modelo é referência em maternidade em Sorocaba?", resposta: "Sim, possui o selo Hospital Amigo da Criança (IHAC) da OMS/UNICEF e adota o Método Canguru para recém-nascidos prematuros, sendo uma das maternidades mais respeitadas da cidade." },
+        { pergunta: "Hapvida cobre parto em Sorocaba?", resposta: "Sim, mas com carência de 300 dias para parto normal e cesárea, conforme regras gerais da operadora. Para gestantes já grávidas na data de contratação, há regras específicas — consulte-nos antes de fechar o plano." },
+        { pergunta: "O plano cobre cidades da região metropolitana de Sorocaba?", resposta: "Sim, a cobertura se estende para a região metropolitana de Sorocaba, que reúne cerca de 2,26 milhões de habitantes. Fale com a Elevance Seguros para confirmar a rede disponível na sua cidade específica." }
       ]} />
 
       <FloatingWhatsApp />
@@ -150,7 +150,7 @@ const HapvidaRibeiraoPretoPage = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Hapvida em outras cidades</p>
           <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2 mb-6">
-            <a href="/hapvida-campinas" className="text-[#0d1f3c] font-black hover:underline">Campinas</a> · <a href="/hapvida-sao-bernardo-do-campo" className="text-[#0d1f3c] font-black hover:underline">São Bernardo do Campo</a> · <a href="/hapvida-sorocaba" className="text-[#0d1f3c] font-black hover:underline">Sorocaba</a>
+            <a href="/hapvida-ribeirao-preto" className="text-[#0d1f3c] font-black hover:underline">Ribeirão Preto</a> · <a href="/hapvida-campinas" className="text-[#0d1f3c] font-black hover:underline">Campinas</a> · <a href="/hapvida-sao-bernardo-do-campo" className="text-[#0d1f3c] font-black hover:underline">São Bernardo do Campo</a>
           </p>
           <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Veja também</p>
           <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
@@ -158,9 +158,9 @@ const HapvidaRibeiraoPretoPage = () => {
           </p>
         </div>
       </section>
-      <ScrollCTA produto="Plano de Saúde Hapvida em Ribeirão Preto" />
+      <ScrollCTA produto="Plano de Saúde Hapvida em Sorocaba" />
     </>
   );
 };
 
-export default HapvidaRibeiraoPretoPage;
+export default HapvidaSorocabaPage;
