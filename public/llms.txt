@@ -1,14 +1,25 @@
 ## Pages
-- [Cotação Online | Elevance Seguros](/onlinequote): Solicite sua cotação de seguro de forma rápida e simples.
-- [Encontre o Plano de Saúde Ideal | Elevance Seguros](/generichealthplan): Compare e encontre o melhor plano de saúde para você, sua família ou empresa. Cotação rápida, gratuita e com as melhores operadoras do mercado.
-- [Obrigado! | Cassi Saúde](/cassithankyou): No description available
-- [Obrigado! | Elevance Seguros](/thankyou): No description available
-- [Obrigado! | Sagrada Família Saúde](/sagradafamiliathankyou): No description available
-- [Plano de Saúde Cassi | Servidores e Familiares - Elevance Seguros](/cassihome): Planos de saúde Cassi com cobertura completa. Ideal para familiares de funcionários do BB e conveniados. Tradição e qualidade em saúde.
-- [Plano de Saúde Cassi | Servidores e Familiares - Elevance Seguros](/cassi): Planos de saúde Cassi com cobertura completa. Ideal para familiares de funcionários do BB e conveniados. Tradição e qualidade em saúde.
-- [Plano de Saúde Mediservice | Cotação Online - Elevance Seguros](/mediservice): Conheça os planos de saúde Mediservice. Cobertura nacional, ampla rede credenciada e gestão de saúde completa. Solicite sua cotação online.
-- [Plano de Saúde São Francisco | Tradição e Qualidade - Elevance](/saofrancisco): Planos de saúde São Francisco. Tradição, qualidade e ampla rede própria. Confira as opções para você e sua empresa. Cotação online.
-- [Plano de Saúde Usisaúde | Fundação São Francisco Xavier](/usisaude): Planos Usisaúde com a qualidade da Fundação São Francisco Xavier. Cobertura completa, planos familiares e empresariais. Faça sua cotação.
-- [Untitled Page](/customersupport): No description available
-- [Untitled Page](/healthplans): No description available
-- [Untitled Page](/service): No description available
+- [Consórcios | Imóvel, Veículo e Serviços - Elevance Seguros](/consorcios): Consórcios sem juros para imóvel, veículo e serviços. Planeje suas conquistas com inteligência. Simulação gratuita via WhatsApp.
+- [Encontre seu Plano de Saúde Ideal | Elevance Seguros](/encontreseuplano): Compare os melhores planos de saúde em São Paulo. Amil, Bradesco, SulAmérica, Unimed, Hapvida e mais. Cotação gratuita via WhatsApp.
+- [Plano Amil em São Paulo | Cotação Gratuita](/amil): Plano de saúde Amil em São Paulo 2026. Tabela de preços atualizada, rede com Albert Einstein e Sírio-Libanês. Cotação gratuita com corretor especializado.
+- [Plano Biovida Saúde em São Paulo | Cotação Gratuita | Elevance Seguros](/biovida): A Biovida Saúde atua na região metropolitana de São Paulo com planos para pessoa física, MEI e terceira idade, com rede própria e credenciada para pronto-atendimento e serviços ambulatoriais.
+- [Plano Bradesco Saúde SP | Cotação Gratuita](/bradescosaude): Bradesco Saúde: um dos maiores planos de saúde do Brasil. Ampla rede credenciada, cobertura completa em São Paulo.
+- [Plano de Saúde Alice PME | Cotação Gratuita | Elevance Seguros](/alice): Conheça a Alice, a gestora de saúde que conecta você aos melhores hospitais e médicos. Tecnologia, sem burocracia e foco na sua saúde.
+- [Plano Garantia de Saúde em São Paulo | Cotação Gratuita | Elevance Seguros](/garantiasaude): A Garantia de Saúde oferece planos regionais para São Paulo com excelente custo-benefício, cobertura ambulatorial e hospitalar completa para pessoa física, MEI e empresas.
+- [Plano Hapvida em Ribeirão Preto | Cotação Gratuita | Elevance Seguros](/hapvidaribeiraopreto): Plano de saúde Hapvida (Hospital São Francisco) em Ribeirão Preto. Rede própria com mais de 600 leitos, Maternidade Sinhá Junqueira e PA na Ribeirânia. Cotação gratuita com a Elevance Seguros.
+- [Plano Hapvida em São Paulo | Cotação Gratuita | Elevance Seguros](/hapvida): Hapvida NotreDame Intermédica: plano de saúde acessível com rede própria. Cotação gratuita em São Paulo com a Elevance Seguros.
+- [Plano MedSênior em São Paulo | Cotação Gratuita | Elevance Seguros](/medsenior): Plano de saúde MedSênior especialmente desenvolvido para a melhor idade. Cobertura completa com foco no cuidado do idoso em São Paulo, com a Elevance Seguros.
+- [Plano Plena Saúde em São Paulo | Cotação Gratuita | Elevance Seguros](/plenasaude): A Plena Saúde atende mais de 85 mil vidas em São Paulo com 22 unidades ambulatoriais próprias e dois hospitais completos com pronto-socorro pediátrico e ginecológico 24h.
+- [Plano Porto Saúde SP | Cotação Gratuita](/porto): Porto Saúde: plano de saúde com ampla cobertura, rede credenciada de qualidade e atendimento 24h em São Paulo.
+- [Plano São Cristóvão Saúde em São Paulo | Cotação Gratuita | Elevance Seguros](/saocristovao): A São Cristóvão Saúde tem hospital e maternidade próprios em São Paulo, com planos para pessoa física, MEI e empresas. Ótimo custo-benefício para quem vive na Grande São Paulo.
+- [Plano São Miguel Saúde em São Paulo | Cotação Gratuita | Elevance Seguros](/saomiguel): A São Miguel Saúde é uma operadora regional consolidada em São Paulo, com planos para pessoa física, MEI e empresas, oferecendo atendimento de qualidade na Grande São Paulo.
+- [Plano SulAmérica SP | Cotação Gratuita](/sulamerica): SulAmérica Saúde em São Paulo: planos completos, ampla rede credenciada e atendimento personalizado. Cotação gratuita.
+- [Plano Trasmontano Saúde em São Paulo | Cotação Gratuita | Elevance Seguros](/trasmontano): Com mais de 93 anos no mercado, a Trasmontano Saúde é uma das operadoras mais tradicionais do Brasil. Planos para São Paulo Capital, Grande SP, ABC e Baixada Santista.
+- [Plano UniHosp Saúde em São Paulo | Cotação Gratuita | Elevance Seguros](/unihosp): A UniHosp Saúde oferece planos completos para quem busca tradição, credibilidade e um dos melhores custo-benefícios do mercado em São Paulo, com valores a partir de R$ 87,98.
+- [Plano Unimed SP | Cotação Gratuita](/unimeduniplan): Planos Unimed em São Paulo com ampla rede de médicos cooperados. Cotação gratuita e personalizada via WhatsApp.
+- [Proteção Veicular APVS SP | Cotação Gratuita](/protecaoveicular): Proteção veicular APVS em São Paulo. Sem análise de perfil, rastreador grátis, menor mensalidade. Cotação gratuita via WhatsApp.
+- [Seguro Auto SP | Cotação Gratuita](/seguroauto): Seguro auto em São Paulo com as melhores seguradoras. Cobertura completa, melhor preço. Cotação gratuita via WhatsApp.
+- [Seguro de Responsabilidade Civil | RC - Elevance Seguros](/responsabilidadecivil): Seguro de Responsabilidade Civil para empresas e profissionais em SP. RC Geral, RC Profissional, RC Produtos e D&O. Cotação gratuita via WhatsApp.
+- [Seguro de Vida SP | Cotação Gratuita](/segurovida): Seguro de vida com cobertura completa para você e sua família. Morte, invalidez, doenças graves e diária hospitalar. Cotação gratuita via WhatsApp.
+- [Seguro Empresarial em São Paulo | Elevance Seguros](/seguroempresa): Soluções completas de seguro para empresas em São Paulo. Plano de saúde PME, seguro patrimonial, responsabilidade civil e vida em grupo.
+- [Seguro Garantia | Licitações e Contratos - Elevance Seguros](/segurogarantia): Seguro Garantia para licitações, obras públicas e contratos empresariais em SP. Garantia de proposta, execução, judicial e adiantamento. Cotação gratuita.

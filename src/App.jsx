@@ -51,6 +51,7 @@ const LooviPage = lazy(() => import('@/pages/LooviPage'));
 const PortoPage = lazy(() => import('@/pages/PortoPage'));
 const BradescosaudePage = lazy(() => import('@/pages/BradescosaudePage'));
 const HapvidaPage = lazy(() => import('@/pages/HapvidaPage'));
+const HapvidaRibeiraoPretoPage = lazy(() => import('@/pages/HapvidaRibeiraoPretoPage'));
 const SulamericaPage = lazy(() => import('@/pages/SulamericaPage'));
 
 // Generic Pages
@@ -163,6 +164,7 @@ const AppContent = () => {
                 <Route path="/porto" element={<PortoPage />} />
                 <Route path="/medsenior" element={<MedSeniorPage />} />
                 <Route path="/hapvida" element={<HapvidaPage />} />
+                <Route path="/hapvida-ribeirao-preto" element={<HapvidaRibeiraoPretoPage />} />
                 <Route path="/garantia-saude" element={<GarantiaSaudePage />} />
                 <Route path="/sao-miguel" element={<SaoMiguelPage />} />
                 <Route path="/trasmontano" element={<TrasmontanoPage />} />
