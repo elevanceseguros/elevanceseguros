@@ -140,6 +140,10 @@ const BradescosaudePage = () => {
       {/* Links internos — outras operadoras */}
       <section className="py-8 bg-blue-50 border-t border-blue-100">
         <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Atendemos também em</p>
+          <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2 mb-6">
+            <a href="/bradescosaude-campinas" className="text-[#0d1f3c] font-black hover:underline">Campinas</a> · <a href="/bradescosaude-sao-bernardo-do-campo" className="text-[#0d1f3c] font-black hover:underline">São Bernardo do Campo</a> · <a href="/bradescosaude-sorocaba" className="text-[#0d1f3c] font-black hover:underline">Sorocaba</a> · <a href="/bradescosaude-ribeirao-preto" className="text-[#0d1f3c] font-black hover:underline">Ribeirão Preto</a>
+          </p>
           <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Também trabalhamos com</p>
           <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
             <a href="/amil" className="text-[#0d1f3c] font-black hover:underline">Amil</a> · <a href="/sulamerica" className="text-[#0d1f3c] font-black hover:underline">SulAmérica</a> · <a href="/porto" className="text-[#0d1f3c] font-black hover:underline">Porto Saúde</a> · <a href="/unimed" className="text-[#0d1f3c] font-black hover:underline">Unimed</a> · <a href="/medsenior" className="text-[#0d1f3c] font-black hover:underline">MedSênior</a>

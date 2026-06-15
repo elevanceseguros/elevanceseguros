@@ -55,6 +55,16 @@ const HapvidaRibeiraoPretoPage = lazy(() => import('@/pages/HapvidaRibeiraoPreto
 const HapvidaCampinasPage = lazy(() => import('@/pages/HapvidaCampinasPage'));
 const HapvidaSaoBernardoPage = lazy(() => import('@/pages/HapvidaSaoBernardoPage'));
 const HapvidaSorocabaPage = lazy(() => import('@/pages/HapvidaSorocabaPage'));
+const BradescoCampinasPage = lazy(() => import('@/pages/BradescoCampinasPage'));
+const BradescoSaoBernardoPage = lazy(() => import('@/pages/BradescoSaoBernardoPage'));
+const BradescoSorocabaPage = lazy(() => import('@/pages/BradescoSorocabaPage'));
+const BradescoRibeiraoPretoPage = lazy(() => import('@/pages/BradescoRibeiraoPretoPage'));
+const MedSeniorCampinasPage = lazy(() => import('@/pages/MedSeniorCampinasPage'));
+const MedSeniorSaoBernardoPage = lazy(() => import('@/pages/MedSeniorSaoBernardoPage'));
+const AmilCampinasPage = lazy(() => import('@/pages/AmilCampinasPage'));
+const AmilSaoBernardoPage = lazy(() => import('@/pages/AmilSaoBernardoPage'));
+const AmilSorocabaPage = lazy(() => import('@/pages/AmilSorocabaPage'));
+const AmilRibeiraoPretoPage = lazy(() => import('@/pages/AmilRibeiraoPretoPage'));
 const SulamericaPage = lazy(() => import('@/pages/SulamericaPage'));
 
 // Generic Pages
@@ -171,6 +181,16 @@ const AppContent = () => {
                 <Route path="/hapvida-campinas" element={<HapvidaCampinasPage />} />
                 <Route path="/hapvida-sao-bernardo-do-campo" element={<HapvidaSaoBernardoPage />} />
                 <Route path="/hapvida-sorocaba" element={<HapvidaSorocabaPage />} />
+                <Route path="/bradescosaude-campinas" element={<BradescoCampinasPage />} />
+                <Route path="/bradescosaude-sao-bernardo-do-campo" element={<BradescoSaoBernardoPage />} />
+                <Route path="/bradescosaude-sorocaba" element={<BradescoSorocabaPage />} />
+                <Route path="/bradescosaude-ribeirao-preto" element={<BradescoRibeiraoPretoPage />} />
+                <Route path="/medsenior-campinas" element={<MedSeniorCampinasPage />} />
+                <Route path="/medsenior-sao-bernardo-do-campo" element={<MedSeniorSaoBernardoPage />} />
+                <Route path="/amil-campinas" element={<AmilCampinasPage />} />
+                <Route path="/amil-sao-bernardo-do-campo" element={<AmilSaoBernardoPage />} />
+                <Route path="/amil-sorocaba" element={<AmilSorocabaPage />} />
+                <Route path="/amil-ribeirao-preto" element={<AmilRibeiraoPretoPage />} />
                 <Route path="/garantia-saude" element={<GarantiaSaudePage />} />
                 <Route path="/sao-miguel" element={<SaoMiguelPage />} />
                 <Route path="/trasmontano" element={<TrasmontanoPage />} />

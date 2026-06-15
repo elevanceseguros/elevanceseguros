@@ -146,6 +146,10 @@ const AmilPage = () => {
       {/* Links internos — outras operadoras */}
       <section className="py-8 bg-blue-50 border-t border-blue-100">
         <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Atendemos também em</p>
+          <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2 mb-6">
+            <a href="/amil-campinas" className="text-[#0d1f3c] font-black hover:underline">Campinas</a> · <a href="/amil-sao-bernardo-do-campo" className="text-[#0d1f3c] font-black hover:underline">São Bernardo do Campo</a> · <a href="/amil-sorocaba" className="text-[#0d1f3c] font-black hover:underline">Sorocaba</a> · <a href="/amil-ribeirao-preto" className="text-[#0d1f3c] font-black hover:underline">Ribeirão Preto</a>
+          </p>
           <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Também trabalhamos com</p>
           <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
             <a href="/bradescosaude" className="text-[#0d1f3c] font-black hover:underline">Bradesco Saúde</a> · <a href="/sulamerica" className="text-[#0d1f3c] font-black hover:underline">SulAmérica</a> · <a href="/hapvida" className="text-[#0d1f3c] font-black hover:underline">Hapvida</a> · <a href="/unimed" className="text-[#0d1f3c] font-black hover:underline">Unimed</a> · <a href="/alice" className="text-[#0d1f3c] font-black hover:underline">Alice</a>
