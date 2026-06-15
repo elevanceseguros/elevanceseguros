@@ -2997,6 +2997,301 @@ export const postsData = [
 
       <p class="mt-8 font-bold" style="color:#C8A96B">Quer saber qual percentual de lance tem mais chance no seu grupo? A Elevance analisa gratuitamente. Chama no WhatsApp!</p>
     `
+  },
+  {
+    id: 56,
+    slug: "seguro-auto-recusado-o-que-fazer",
+    title: "Seguro Auto Recusado pela Seguradora? Tem Saída — Veja o Que Fazer",
+    date: "16 Jun, 2026",
+    category: "Seguro Auto",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Carro de leilão, GNV, idade avançada ou perfil de Uber? Entenda por que seguradoras tradicionais recusam ou encarecem seu seguro auto — e qual a alternativa 100% digital que aceita esses perfis.",
+    content: `
+      <p class="mb-4">Se você já tentou cotar um seguro auto e recebeu um "não temos esse perfil" ou um valor impraticável, você não está sozinho. Seguradoras tradicionais têm critérios rígidos de análise de perfil — e muita gente boa fica de fora.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Por que seguradoras recusam ou encarecem o seguro?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Carro de leilão ou sinistro recuperado:</strong> muitas seguradoras simplesmente não aceitam o veículo, independente do estado de conservação</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Kit GNV instalado:</strong> aumenta o risco percebido pela seguradora e pode gerar recusa ou taxa adicional alta</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Uso por app (Uber, 99):</strong> perfil considerado de alto risco por rodar mais quilômetros e em mais horários</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Veículo com muitos anos de fabricação:</strong> seguradoras tradicionais limitam a idade máxima do carro para aceitar a apólice</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Histórico de sinistros do condutor:</strong> perfil considerado de risco elevado, gerando recusa ou prêmio muito acima da média</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">A diferença do seguro auto 100% digital</h2>
+      <p class="mb-4">Existem seguradoras 100% digitais, reguladas pela SUSEP, que foram desenhadas justamente para atender esses perfis sem fazer a análise tradicional que exclui tanta gente. A lógica é diferente: em vez de recusar o perfil, a seguradora cobra uma parcela fixa mensal, sem depender de score de crédito ou histórico extenso.</p>
+
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Sem análise de perfil tradicional:</strong> aceita carros de leilão, com GNV, idade avançada e uso por aplicativo</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Parcela fixa mensal:</strong> sem reajuste por sinistro do condutor durante a vigência</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Contratação 100% digital:</strong> em poucos minutos, sem burocracia ou visita a uma agência</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Regulado pela SUSEP:</strong> é seguro de verdade, não proteção veicular — com as garantias regulatórias que isso implica</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Seguro vs. proteção veicular: qual a diferença?</h2>
+      <p class="mb-4">Vale lembrar: seguro auto regulado pela SUSEP é diferente de proteção veicular (que é um serviço de rateio entre associados, sem garantia regulatória de pagamento). O seguro digital que aceita esses perfis continua sendo seguro de verdade — com a segurança jurídica e financeira que isso traz.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Antes de desistir de ter seguro porque uma seguradora recusou seu perfil, peça uma cotação digital. A Elevance trabalha com a Loovi, seguradora 100% digital regulada pela SUSEP via LTI Seguros, que aceita carros de leilão, GNV, uso por Uber e veículos mais antigos — com contratação em poucos minutos.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Teve seu seguro recusado em outra seguradora? A Elevance cota seu perfil gratuitamente. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 57,
+    slug: "quanto-de-seguro-de-vida-eu-preciso",
+    title: "Quanto de Seguro de Vida Eu Preciso? Como Calcular o Valor Ideal",
+    date: "17 Jun, 2026",
+    category: "Seguro de Vida",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Contratar seguro de vida é fácil. Difícil é saber o valor certo de cobertura. Veja um método prático para calcular quanto sua família precisaria para manter o padrão de vida na sua ausência.",
+    content: `
+      <p class="mb-4">Uma das perguntas mais comuns na hora de contratar seguro de vida é: "quanto de cobertura eu preciso?". A resposta não é um valor fixo de mercado — é uma conta que depende da sua realidade financeira e familiar.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O método das necessidades financeiras</h2>
+      <p class="mb-4">Uma forma prática de calcular é somar tudo que sua família precisaria cobrir na sua ausência, e comparar com o que já existe de patrimônio e outras coberturas:</p>
+
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Dívidas pendentes:</strong> financiamento de imóvel, carro, empréstimos — tudo que precisaria ser liquidado</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Despesas imediatas:</strong> funeral, inventário, custos administrativos do processo sucessório</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Substituição de renda:</strong> quantos anos de salário sua família precisaria para se reorganizar financeiramente</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Educação dos filhos:</strong> custo estimado de escola/faculdade até a maioridade ou conclusão dos estudos</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">A regra prática do múltiplo de renda</h2>
+      <p class="mb-4">Uma referência simples usada no mercado é multiplicar a renda anual por um fator entre 5 e 10, dependendo da quantidade de dependentes e dívidas. Exemplo: alguém com renda anual de R$ 60.000 e dois filhos pequenos pode considerar uma cobertura entre R$ 300.000 e R$ 600.000 — o suficiente para a família manter o padrão de vida por vários anos enquanto se reorganiza.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que muda com filhos pequenos vs. filhos adultos</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Filhos pequenos: cobertura maior, pensando em educação de longo prazo e anos de dependência financeira</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Filhos adultos e independentes: cobertura pode ser menor, focada em dívidas e despesas finais</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Cônjuge sem renda própria: considerar cobertura adicional para substituição de renda por mais tempo</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Coberturas adicionais que fazem diferença</h2>
+      <p class="mb-4">Além da morte, vale considerar coberturas de invalidez permanente por acidente (IPA) e doenças graves, que protegem a renda mesmo se você sobreviver mas ficar impossibilitado de trabalhar.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Não existe valor "certo" universal — existe o valor certo para a sua situação. O erro mais comum é contratar o mínimo só para "ter seguro" e descobrir depois que a cobertura não cobre nem as dívidas. A Elevance ajuda a fazer essa conta com você, considerando renda, dependentes e dívidas, e monta a proposta com o melhor custo-benefício.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Não sabe por onde começar a calcular sua cobertura ideal? A Elevance ajuda gratuitamente. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 58,
+    slug: "consorcio-de-imovel-x-financiamento",
+    title: "Consórcio de Imóvel x Financiamento: Qual Vale Mais a Pena em 2026?",
+    date: "18 Jun, 2026",
+    category: "Consórcios",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Comprar a casa própria pelo consórcio ou pelo financiamento bancário? Compare juros, entrada, prazo de espera e o impacto no seu orçamento antes de decidir.",
+    content: `
+      <p class="mb-4">Quem quer comprar um imóvel costuma ficar na dúvida entre financiamento bancário e consórcio. Os dois caminhos chegam ao mesmo destino — a casa própria — mas com lógicas bem diferentes. Veja as principais diferenças para decidir com mais clareza.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Como funciona cada um</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Financiamento:</strong> o banco empresta o valor do imóvel (descontada a entrada) e você paga em parcelas com juros, recebendo o imóvel imediatamente</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Consórcio:</strong> você entra em um grupo de pessoas que pagam parcelas mensais, e o crédito é liberado por sorteio ou lance — sem juros, mas com prazo incerto para a contemplação</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Juros: a diferença mais relevante</h2>
+      <p class="mb-4">No financiamento, os juros (em geral entre 9% e 12% ao ano nos sistemas SAC/Price) encarecem significativamente o valor total pago — em 30 anos, o total pago pode ser mais que o dobro do valor financiado. No consórcio, não há juros: você paga apenas o valor da carta de crédito mais a taxa de administração (em torno de 18% a 21,5% diluída ao longo do prazo).</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Prazo: certeza x incerteza</h2>
+      <p class="mb-4">O financiamento tem uma vantagem clara: você recebe o imóvel (ou o dinheiro) imediatamente após a aprovação. No consórcio, a contemplação pode acontecer em qualquer mês — por sorteio (todo grupo tem ao menos um sorteio mensal) ou por lance (oferecendo adiantar parte das parcelas). Isso é incerteza, mas também oportunidade: quem pode dar lance tem chances reais de ser contemplado nos primeiros meses.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Entrada: exigência x flexibilidade</h2>
+      <p class="mb-4">Financiamentos costumam exigir entrada de 20% a 30% do valor do imóvel. No consórcio, não existe entrada obrigatória — você começa pagando apenas a primeira parcela, embora dar um lance (que funciona como uma "entrada" para acelerar a contemplação) ajude bastante.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Para qual perfil cada opção faz mais sentido?</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Financiamento:</strong> quem precisa do imóvel agora (mudança de cidade, família crescendo) e tem renda compatível com a parcela</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Consórcio:</strong> quem tem flexibilidade de prazo, quer pagar menos no total e/ou tem reserva para dar lance e acelerar a contemplação</span></li>
+      </ul>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Uma estratégia que muita gente não considera: usar o consórcio como complemento, não substituto. Você entra no consórcio agora, e enquanto aguarda a contemplação, continua morando de aluguel ou na casa atual. Quando contemplado — especialmente com lance — o custo total tende a ser bem menor que o financiamento. A Elevance simula os dois cenários para você decidir com números na mão.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Quer simular consórcio de imóvel e comparar com financiamento? A Elevance faz essa simulação gratuita. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 59,
+    slug: "plano-de-saude-empresarial-pme-como-funciona",
+    title: "Plano de Saúde Empresarial PME: Como Funciona e Quanto Custa",
+    date: "19 Jun, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Donos de pequenas e médias empresas têm acesso a planos de saúde com preços mais competitivos que o individual. Entenda como funciona o plano PME, quem pode contratar e quanto custa.",
+    content: `
+      <p class="mb-4">Plano de saúde individual está cada vez mais raro e caro no mercado. A alternativa que a maioria das pessoas físicas com CNPJ — mesmo MEI — não sabe que tem acesso é o plano PME (Pequenas e Médias Empresas), com preços mais competitivos e menos restrições de reajuste.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que é o plano PME?</h2>
+      <p class="mb-4">É a modalidade de plano de saúde empresarial voltada para empresas com poucos funcionários — geralmente a partir de 2 ou 3 vidas (dependendo da operadora). Diferente do plano individual (cada vez mais escasso), o PME tem maior oferta no mercado e tabelas de preço mais competitivas.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quem pode contratar?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>MEI:</strong> sim, mesmo com CNPJ individual, é possível contratar plano PME incluindo o titular e dependentes</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Pequenas empresas (2-29 vidas):</strong> faixa mais comum, com tabelas de preço por idade e ampla escolha de operadoras</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Sócios e familiares:</strong> podem ser incluídos como dependentes, dependendo das regras da operadora</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quanto custa?</h2>
+      <p class="mb-4">O valor varia por operadora, faixa etária, região e tipo de acomodação (enfermaria ou apartamento). Como referência, planos PME de operadoras nacionais costumam começar entre R$ 150 e R$ 250 por vida para adultos jovens, podendo passar de R$ 400 para faixas etárias mais altas (acima de 50 anos).</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">PME vs. individual: o que muda no reajuste?</h2>
+      <p class="mb-4">O reajuste do plano individual é regulado e limitado anualmente pela ANS. O PME não tem esse teto — o reajuste é definido pela operadora conforme sinistralidade do grupo. Por isso, é importante revisar a operadora periodicamente e comparar propostas, algo que corretores fazem sem custo adicional para o cliente.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Documentos necessários</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>CNPJ ativo (mesmo MEI)</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Documentos pessoais do titular e dependentes</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Comprovante de endereço</span></li>
+      </ul>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Se você é MEI e está sem plano de saúde porque achou que "plano é só para empresa grande", essa é provavelmente a informação mais valiosa deste post: você já tem acesso ao mercado PME, que costuma ser mais barato que o individual (quando existe) e tem reajuste mais previsível ao longo do tempo. A Elevance monta a proposta considerando seu CNPJ e dependentes.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">É MEI ou tem pequena empresa e quer cotar plano de saúde PME? A Elevance simula gratuitamente. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 60,
+    slug: "seguro-residencial-o-que-cobre",
+    title: "Seguro Residencial: O Que Cobre e Por Que Todo Proprietário Deveria Ter",
+    date: "20 Jun, 2026",
+    category: "Seguro Residencial",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Incêndio, vazamento, roubo, queda de raio — o seguro residencial protege o patrimônio que você levou anos para construir. Entenda o que está coberto, o que não está, e por que o custo é menor do que parece.",
+    content: `
+      <p class="mb-4">Muita gente protege o carro com seguro, mas deixa a casa — geralmente o bem mais valioso da família — sem nenhuma cobertura. O seguro residencial costuma ser barato em relação ao risco que protege, e cobre situações que podem comprometer décadas de patrimônio em um único evento.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que o seguro residencial cobre</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Incêndio, explosão e queda de raio:</strong> cobertura básica presente em praticamente todas as apólices</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Danos elétricos:</strong> curto-circuito que queima eletrodomésticos e equipamentos eletrônicos</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Vendaval, granizo e impacto de veículos:</strong> danos causados por eventos climáticos ou acidentes externos à estrutura</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Roubo e furto de bens:</strong> conteúdo da casa (móveis, eletrônicos, joias conforme limite), geralmente com cláusula de vestígios de arrombamento</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Responsabilidade civil:</strong> se você causar dano ao imóvel ou pertences de vizinhos (ex: vazamento que afeta o apartamento de baixo)</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Assistências:</strong> chaveiro, eletricista, encanador e vidraceiro 24h, incluídos na maioria dos planos</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que geralmente NÃO está coberto</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span>Desgaste natural, infiltrações por falta de manutenção, mofo decorrente de umidade não tratada</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span>Danos causados por reformas mal executadas ou irregulares</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span>Eventos decorrentes de dolo ou má-fé do segurado</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Imóvel próprio vs. financiado: tem diferença?</h2>
+      <p class="mb-4">Se o imóvel está financiado, alguns bancos exigem a contratação de um seguro habitacional (que cobre o saldo devedor em caso de morte/invalidez do titular e danos físicos ao imóvel) — mas esse seguro habitacional não cobre conteúdo, roubo ou responsabilidade civil. Por isso, mesmo com financiamento, vale ter também um seguro residencial completo.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Quanto custa?</h2>
+      <p class="mb-4">Para uma casa ou apartamento padrão, o seguro residencial completo (estrutura + conteúdo + RC + assistências) costuma custar entre R$ 40 e R$ 120 por mês, dependendo do valor do imóvel, da região e das coberturas escolhidas — um custo baixo considerando o que está em jogo.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Muita gente acha que "minha casa nunca vai pegar fogo" — mas a cobertura mais usada na prática não é incêndio, é responsabilidade civil e danos elétricos (curto-circuito em chuveiro, máquina de lavar, etc). É um seguro barato que resolve problemas do dia a dia, não só catástrofes. A Elevance cota seguro residencial para casa própria, alugada ou financiada.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Sua casa ainda não tem seguro? A Elevance cota o seguro residencial ideal para você. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 61,
+    slug: "mei-precisa-de-seguro-quais-fazem-sentido",
+    title: "MEI Precisa de Seguro? Veja Quais Proteções Fazem Sentido",
+    date: "21 Jun, 2026",
+    category: "Seguros",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Ser MEI significa assumir riscos sozinho — sem CLT, sem benefícios automáticos. Veja quais seguros fazem sentido para proteger sua renda, sua saúde e seu patrimônio como microempreendedor.",
+    content: `
+      <p class="mb-4">Quem é CLT tem uma rede de proteção embutida: INSS, plano de saúde da empresa, em alguns casos seguro de vida em grupo. O MEI não tem nada disso por padrão — cada proteção precisa ser construída individualmente. A boa notícia é que, sendo MEI, você já tem acesso a opções que muita gente não sabe que existem.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Plano de saúde PME</h2>
+      <p class="mb-4">Como MEI, você tem CNPJ — e isso te dá acesso ao mercado de planos de saúde empresariais (PME), que costumam ser mais baratos e com mais opções de operadoras do que o plano individual, cada vez mais raro no mercado.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Seguro de vida</h2>
+      <p class="mb-4">Sem o seguro de vida em grupo que muitas empresas oferecem aos funcionários CLT, o MEI precisa contratar individualmente. É especialmente importante se você tem dependentes financeiros ou dívidas (financiamento de imóvel, veículo, equipamentos do negócio) que recairiam sobre a família.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Seguro de invalidez e doenças graves</h2>
+      <p class="mb-4">Talvez o risco mais subestimado: como MEI, se você fica impossibilitado de trabalhar por doença ou acidente, não há licença remunerada, 13º ou estabilidade — a renda simplesmente para. Um seguro com cobertura de invalidez permanente por acidente (IPA) ou doenças graves substitui parte dessa renda.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Seguro do equipamento/veículo de trabalho</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Se você usa carro/moto para trabalhar</strong> (entregas, prestação de serviço, Uber): seguro auto adequado ao uso, já que muitas apólices comuns excluem uso comercial</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span><strong>Se você trabalha com equipamentos</strong> (ferramentas, notebooks, máquinas): seguro para equipamentos profissionais, que protege contra roubo, quebra e acidentes</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Seguro residencial, se trabalha de casa</h2>
+      <p class="mb-4">Se seu MEI funciona de casa, vale verificar se o seguro residencial cobre também equipamentos de trabalho guardados no imóvel — muitas apólices padrão têm limite baixo para itens de uso profissional.</p>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">A pergunta certa não é "será que vou precisar?" — é "o que acontece com minha renda e minha família se eu não puder trabalhar por 3 meses?". Para a maioria dos MEIs, a resposta é desconfortável. Comece pelo plano de saúde (você já tem direito) e pelo seguro de vida — são as proteções com melhor relação custo-benefício para quem trabalha por conta própria. A Elevance monta um pacote considerando seu tipo de atividade.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">É MEI e quer entender quais seguros fazem sentido pro seu caso? A Elevance monta seu pacote de proteção gratuitamente. Chama no WhatsApp!</p>
+    `
+  },
+  {
+    id: 62,
+    slug: "medsenior-vale-a-pena-analise",
+    title: "MedSênior Vale a Pena? Análise do Plano de Saúde Para 49+",
+    date: "22 Jun, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800",
+    excerpt: "A MedSênior é especializada em planos para a melhor idade, com preços mais competitivos que operadoras tradicionais para quem tem mais de 49 anos. Veja como funciona, rede credenciada e para quem faz sentido.",
+    content: `
+      <p class="mb-4">Conforme a idade avança, o preço dos planos de saúde tradicionais sobe de forma acentuada — é a famosa diferença entre faixas etárias, que pode tornar o plano quase inviável após os 59 anos. A MedSênior surgiu como uma operadora especializada justamente nesse público, com uma estrutura de preços diferente.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">O que é a MedSênior?</h2>
+      <p class="mb-4">É uma operadora de planos de saúde focada em pessoas a partir de 49 anos, com modelo de atendimento voltado para medicina preventiva e foco em qualidade de vida na terceira idade — em vez de apenas reagir a problemas de saúde já instalados.</p>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Pontos fortes</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Preço competitivo para a faixa 49+:</strong> enquanto operadoras tradicionais aumentam muito o valor por faixa etária após os 50, a MedSênior já precifica considerando esse público desde o início</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Unidades próprias de medicina preventiva:</strong> consultas eletivas e acompanhamento focado em prevenção, com unidades em São Paulo e Campinas</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Categorias variadas:</strong> de SP1 (mais acessível) até o Plano Black (mais completo), com ou sem coparticipação</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#059669">→</span><span><strong>Foco em geriatria:</strong> equipe e protocolos pensados para as condições mais comuns na melhor idade</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Pontos de atenção</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Área de atuação regional:</strong> a operadora está presente principalmente em SP e cidades selecionadas de outros estados — não tem cobertura nacional ampla</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Cônjuge mais jovem:</strong> dependentes com menos de 49 anos não podem entrar no plano — precisariam de outra operadora</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#EF4444">→</span><span><strong>Rede credenciada menor</strong> que grandes operadoras nacionais, embora cubra hospitais de referência nas regiões de atuação</span></li>
+      </ul>
+
+      <h2 class="text-[#071B34] font-black mt-8 mb-4 text-2xl">Para qual perfil faz mais sentido?</h2>
+      <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Pessoas a partir de 49 anos que estão sem plano por causa do preço em operadoras tradicionais</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Quem mora em São Paulo, Campinas ou outras regiões de atuação da MedSênior</span></li>
+        <li class="flex items-start gap-2"><span class="font-black mt-0.5" style="color:#C8A96B">→</span><span>Quem valoriza atendimento focado em prevenção e na realidade da terceira idade</span></li>
+      </ul>
+
+      <div class="my-10 p-8 rounded-3xl border" style="background:rgba(200,169,107,0.06); border-color:rgba(200,169,107,0.2)">
+        <h3 class="font-bold mb-2" style="color:#071B34">Dica do Rodrigo:</h3>
+        <p class="text-sm italic font-medium" style="color:#4A5568">Se você está há anos sem plano de saúde porque "ficou caro demais depois dos 50", a MedSênior costuma ser a primeira surpresa positiva nas cotações. Vale comparar com Bradesco e Amil para o mesmo perfil — às vezes a diferença de preço para a faixa 49+ é grande o suficiente para fazer a MedSênior compensar mesmo com rede um pouco menor. A Elevance faz essa comparação para você.</p>
+      </div>
+
+      <p class="mt-8 font-bold" style="color:#C8A96B">Tem mais de 49 anos e quer comparar a MedSênior com outras operadoras? A Elevance cota gratuitamente. Chama no WhatsApp!</p>
+    `
   }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
