@@ -18,8 +18,8 @@ const HapvidaPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano Hapvida em São Paulo | Cotação Gratuita</title>
-        <meta name="description" content="Hapvida NotreDame Intermédica: plano de saúde acessível com rede própria. Cotação gratuita em São Paulo." />
+        <title>Plano Hapvida em São Paulo | Cotação Gratuita | Elevance Seguros</title>
+        <meta name="description" content="Hapvida NotreDame Intermédica: plano de saúde acessível com rede própria. Cotação gratuita em São Paulo com a Elevance Seguros." />
         <meta name="keywords" content="Hapvida plano saúde SP, NotreDame Intermédica, cotação Hapvida" />
         <link rel="canonical" href="https://www.elevanceseguros.com/hapvida" />
       
