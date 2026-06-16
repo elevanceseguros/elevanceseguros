@@ -4,7 +4,6 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'luc
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import ScrollCTA from '@/components/ScrollCTA';
 import FAQ from '@/components/FAQ';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
@@ -134,7 +133,6 @@ const BradescosaudePage = () => {
     { pergunta: "Bradesco Saúde aceita MEI como empresa para plano PME?", resposta: "Sim! O Bradesco Saúde aceita MEI para contratação de planos empresariais (PME) a partir de 2 vidas. Isso permite ao MEI contratar um plano com preço e cobertura superiores ao plano individual." }
   ]} />
 
-      <FloatingWhatsApp />
 
 
       {/* Links internos — outras operadoras */}

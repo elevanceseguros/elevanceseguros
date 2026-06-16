@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { CheckCircle2, Building2 } from 'lucide-react';
 import HealthOperatorForm from '@/components/HealthOperatorForm';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
 const CassiHomePage = () => {
   useEffect(() => {
@@ -96,7 +95,6 @@ const CassiHomePage = () => {
         </div>
       </section>
 
-      <FloatingWhatsApp />
     </>
   );
 };

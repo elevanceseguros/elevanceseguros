@@ -4,7 +4,6 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'luc
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import ScrollCTA from '@/components/ScrollCTA';
 import FAQ from '@/components/FAQ';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
@@ -134,7 +133,6 @@ const SulamericaPage = () => {
     { pergunta: "Posso usar o plano SulAmérica em outro estado?", resposta: "Depende do plano contratado. Planos com abrangência nacional permitem atendimento em toda a rede credenciada SulAmérica no Brasil. Planos com abrangência regional (só SP ou Grande SP) têm cobertura limitada fora da área contratada, exceto em emergências." }
   ]} />
 
-      <FloatingWhatsApp />
 
 
       {/* Links internos — outras operadoras */}

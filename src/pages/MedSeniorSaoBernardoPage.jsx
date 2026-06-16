@@ -4,7 +4,6 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight, MapPin } f
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import ScrollCTA from '@/components/ScrollCTA';
 import FAQ from '@/components/FAQ';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
@@ -140,7 +139,6 @@ const MedSeniorSaoBernardoPage = () => {
         { pergunta: "O plano cobre toda a região do ABC Paulista?", resposta: "Sim, a área de atuação MedSênior cobre São Bernardo do Campo, Santo André, São Caetano do Sul e demais cidades do ABC, dependendo da categoria do plano. Consulte a Elevance Seguros para confirmar a cobertura na sua cidade." }
       ]} />
 
-      <FloatingWhatsApp />
 
       <section className="py-8 bg-blue-50 border-t border-blue-100">
         <div className="max-w-4xl mx-auto px-4 text-center">

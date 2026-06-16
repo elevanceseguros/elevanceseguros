@@ -4,7 +4,6 @@ import FAQ from '@/components/FAQ';
 import { Helmet } from 'react-helmet-async';
 import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
@@ -126,7 +125,6 @@ const MedSeniorPage = () => {
       </section>
 
 
-      <FloatingWhatsApp />
 
       {/* FAQ */}
       <FAQ perguntas={[

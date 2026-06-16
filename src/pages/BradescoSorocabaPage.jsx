@@ -4,7 +4,6 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight, MapPin } f
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import ScrollCTA from '@/components/ScrollCTA';
 import FAQ from '@/components/FAQ';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
@@ -140,7 +139,6 @@ const BradescoSorocabaPage = () => {
         { pergunta: "Qual a carência para internação no Bradesco Saúde?", resposta: "As carências seguem o padrão regulatório da ANS — normalmente 180 dias para internações e 300 dias para partos. Consulte a Elevance Seguros para confirmar as condições vigentes do plano escolhido." }
       ]} />
 
-      <FloatingWhatsApp />
 
       <section className="py-8 bg-blue-50 border-t border-blue-100">
         <div className="max-w-4xl mx-auto px-4 text-center">

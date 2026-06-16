@@ -4,7 +4,6 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight, MapPin } f
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import ScrollCTA from '@/components/ScrollCTA';
 import FAQ from '@/components/FAQ';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
@@ -143,7 +142,6 @@ const HapvidaSaoBernardoPage = () => {
         { pergunta: "Quais bairros de São Bernardo têm unidades Hapvida?", resposta: "As unidades próprias estão concentradas principalmente no Centro e no Jardim do Mar, com cobertura ambulatorial e diagnóstica nesses bairros e atendimento hospitalar para toda a cidade." }
       ]} />
 
-      <FloatingWhatsApp />
 
       {/* Links internos */}
       <section className="py-8 bg-blue-50 border-t border-blue-100">

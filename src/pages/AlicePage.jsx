@@ -4,7 +4,6 @@ import FAQ from '@/components/FAQ';
 import { Helmet } from 'react-helmet-async';
 import { CheckCircle2, Smartphone } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
@@ -127,7 +126,6 @@ const AlicePage = () => {
       </section>
 
 
-      <FloatingWhatsApp />
 
       {/* FAQ */}
       <FAQ perguntas={[

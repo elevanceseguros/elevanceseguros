@@ -16,6 +16,7 @@ const coberturas = [
 
 export default function SeguroVidaPage() {
   const [sent, setSent] = useState(false);
+  const [dependentes, setDependentes] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,7 +27,7 @@ export default function SeguroVidaPage() {
       await fetch('https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome, whatsapp, produto: 'Seguro de Vida', origem: window.location.pathname }),
+        body: JSON.stringify({ nome, whatsapp, produto: 'Seguro de Vida', origem: window.location.pathname, detalhes: dependentes ? { dependentes } : null }),
       });
     } catch (_) {}
     setSent(true);
@@ -103,6 +104,17 @@ export default function SeguroVidaPage() {
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
                         <input name="nome" type="text" required placeholder="Ex: João Silva" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-rose-500 transition-all" />
                         <input name="whatsapp" type="tel" required placeholder="Ex: 11 99999-9999" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-rose-500 transition-all" />
+                        <div>
+                          <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 px-1">Tem dependentes? (opcional)</p>
+                          <div className="grid grid-cols-2 gap-2">
+                            {['Sim', 'Não'].map((opt) => (
+                              <button key={opt} type="button" onClick={() => setDependentes(dependentes === opt ? null : opt)}
+                                className={`py-3 rounded-xl text-xs font-black uppercase transition-all ${dependentes === opt ? 'bg-[#0d1f3c] text-white' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}>
+                                {opt}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
                         <div className="flex items-center justify-center gap-1.5 bg-orange-50 border border-orange-100 rounded-xl py-2 px-3">
                           <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse inline-block"></span>
                           <span className="text-[10px] font-black text-orange-600">⚡ Cotação gratuita · Sem compromisso</span>

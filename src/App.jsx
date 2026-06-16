@@ -6,6 +6,7 @@ import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import ExitIntentModal from '@/components/ExitIntentModal';
 import { useGoogleAnalytics } from '@/hooks/useGoogleAnalytics';
 import PullToRefreshContainer from '@/components/PullToRefreshContainer';
 import { SagradaFamiliaAuthProvider } from '@/contexts/SagradaFamiliaContext';
@@ -229,6 +230,7 @@ const AppContent = () => {
         </PullToRefreshContainer>
         
         <FloatingWhatsApp />
+        <ExitIntentModal />
         <Toaster />
       </div>
     </>

@@ -2,20 +2,36 @@ import { postsData } from '@/data/posts';
 import ScrollCTA from '@/components/ScrollCTA';
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { 
   Star, ShieldCheck, Zap, Car, Heart, 
   Building2, CheckCircle2,
   Users, ArrowRight, MessageCircle, Smile, PartyPopper, Home,
-  Lock, PhoneCall, Layers, Wrench, BookOpen, FileCheck, Quote} from 'lucide-react';
+  Lock, PhoneCall, Layers, Wrench, BookOpen, FileCheck, Quote, AlertCircle} from 'lucide-react';
+
+const PRODUTOS_HOME = [
+  { label: "Plano de Saúde", produto: "Plano de Saúde", icon: <Heart size={16} /> },
+  { label: "Seguro Auto", produto: "Seguro Auto", icon: <Car size={16} /> },
+  { label: "Seguro de Vida", produto: "Seguro de Vida", icon: <Users size={16} /> },
+  { label: "Consórcio", produto: "Consórcio", icon: <Layers size={16} /> },
+  { label: "Residencial", produto: "Seguro Residencial", icon: <Home size={16} /> },
+  { label: "Empresarial", produto: "Seguro Empresarial", icon: <Building2 size={16} /> },
+];
 
 const HomePage = () => {
   const [sent, setSent] = useState(false);
+  const [produtoSelecionado, setProdutoSelecionado] = useState(null);
+  const [erroProduto, setErroProduto] = useState(false);
   const fotoHero = "/preview.webp";
   const meuNumero = "5511920144864";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!produtoSelecionado) {
+      setErroProduto(true);
+      return;
+    }
+    setErroProduto(false);
     const formData = new FormData(e.target);
     const nome = formData.get('nome');
     const whatsapp = (formData.get('whatsapp') || '').replace(/[^0-9]/g, '');
@@ -23,7 +39,7 @@ const HomePage = () => {
       await fetch('https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome, whatsapp, produto: 'Consultoria Geral', origem: window.location.pathname }),
+        body: JSON.stringify({ nome, whatsapp, produto: produtoSelecionado, origem: window.location.pathname }),
       });
     } catch (_) {}
     setSent(true);
@@ -127,6 +143,23 @@ const HomePage = () => {
                 </div>
                 {!sent ? (
                   <form onSubmit={handleSubmit} className="space-y-4 mt-2">
+                    <div>
+                      <p className="text-[10px] font-bold uppercase tracking-widest mb-2 px-1" style={{color: erroProduto ? '#EF4444' : '#7A8899'}}>
+                        {erroProduto ? 'Selecione o que você precisa ⚠️' : 'O que você precisa?'}
+                      </p>
+                      <div className="grid grid-cols-2 gap-2">
+                        {PRODUTOS_HOME.map((p) => (
+                          <button key={p.produto} type="button"
+                            onClick={() => { setProdutoSelecionado(p.produto); setErroProduto(false); }}
+                            className="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl text-[11px] font-bold uppercase tracking-wide transition-all"
+                            style={produtoSelecionado === p.produto
+                              ? {background: '#071B34', color: '#E8C98A', border: '1.5px solid #C8A96B'}
+                              : {background: '#F5F7FA', color: '#5A6B82', border: '1.5px solid #E8EDF2'}}>
+                            {p.icon} {p.label}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
                     <input name="nome" type="text" required placeholder="Seu nome"
                       className="w-full rounded-xl py-4 px-5 text-sm outline-none transition-all font-medium"
                       style={{background: '#F5F7FA', border: '1.5px solid #E8EDF2', color: '#071B34'}}
@@ -145,7 +178,7 @@ const HomePage = () => {
                     <button type="submit"
                       className="w-full py-4 rounded-xl font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 transition-all hover:opacity-90 active:scale-[0.98]"
                       style={{background: 'linear-gradient(135deg, #071B34 0%, #0d2a55 100%)', color: '#E8C98A'}}>
-                      Receber Contato Gratuito <ArrowRight size={14}/>
+                      Quero Minha Cotação Grátis <ArrowRight size={14}/>
                     </button>
                     <div className="flex items-center justify-center gap-3 flex-wrap">
                       <span className="text-[9px] font-medium" style={{color: '#A0AABA'}}>🔒 Dados sigilosos</span>
@@ -406,22 +439,22 @@ const HomePage = () => {
 
           {[
             [
-              { icon: <Heart size={24}/>, title: "Planos de Saúde", impacto: "R$ 30.000", impactoLabel: "custo médio de internação", desc: "Sem plano, você paga do próprio bolso. Com a Elevance, você encontra o melhor plano para seu perfil.", cta: "Proteger minha saúde", path: "/encontre-seu-plano", accent: "#3B82F6" },
-              { icon: <Smile size={24}/>, title: "Plano Odontológico", impacto: "R$ 2.000", impactoLabel: "custo de um canal sem plano", desc: "Uma extração ou canal sem plano pode custar até R$ 2.000. Com plano, você paga R$ 0.", cta: "Ver planos odonto", path: "/odontologico", accent: "#0EA5E9" },
-              { icon: <Users size={24}/>, title: "Seguro de Vida", impacto: "R$ 0", impactoLabel: "custo da proteção básica", desc: "Se você faltar amanhã, sua família consegue manter o padrão de vida? Essa pergunta tem resposta.", cta: "Proteger minha família", path: "/seguro-vida", accent: "#EF4444" },
+              { icon: <Heart size={24}/>, title: "Planos de Saúde", impacto: "R$ 30.000", impactoLabel: "custo médio de internação", desc: "Sem plano, você paga do próprio bolso. Com a Elevance, você encontra o melhor plano para seu perfil.", cta: "Proteger minha saúde", path: "/encontre-seu-plano", accent: "#3B82F6", wpp: "Plano de Saúde" },
+              { icon: <Smile size={24}/>, title: "Plano Odontológico", impacto: "R$ 2.000", impactoLabel: "custo de um canal sem plano", desc: "Uma extração ou canal sem plano pode custar até R$ 2.000. Com plano, você paga R$ 0.", cta: "Ver planos odonto", path: "/odontologico", accent: "#0EA5E9", wpp: "Plano Odontológico" },
+              { icon: <Users size={24}/>, title: "Seguro de Vida", impacto: "R$ 0", impactoLabel: "custo da proteção básica", desc: "Se você faltar amanhã, sua família consegue manter o padrão de vida? Essa pergunta tem resposta.", cta: "Proteger minha família", path: "/seguro-vida", accent: "#EF4444", wpp: "Seguro de Vida" },
             ],
             [
-              { icon: <Building2 size={24}/>, title: "Seguro Empresarial", impacto: "Anos", impactoLabel: "de trabalho em risco", desc: "Um único processo trabalhista ou sinistro pode comprometer tudo que você construiu.", cta: "Proteger minha empresa", path: "/seguro-empresa", accent: "#64748B" },
-              { icon: <ShieldCheck size={24}/>, title: "Responsabilidade Civil", impacto: "100%", impactoLabel: "da responsabilidade é sua", desc: "Você responde pessoalmente por decisões da sua empresa. A RC te protege disso.", cta: "Entender minha exposição", path: "/responsabilidade-civil", accent: "#7C3AED" },
+              { icon: <Building2 size={24}/>, title: "Seguro Empresarial", impacto: "Anos", impactoLabel: "de trabalho em risco", desc: "Um único processo trabalhista ou sinistro pode comprometer tudo que você construiu.", cta: "Proteger minha empresa", path: "/seguro-empresa", accent: "#64748B", wpp: "Seguro Empresarial" },
+              { icon: <ShieldCheck size={24}/>, title: "Responsabilidade Civil", impacto: "100%", impactoLabel: "da responsabilidade é sua", desc: "Você responde pessoalmente por decisões da sua empresa. A RC te protege disso.", cta: "Entender minha exposição", path: "/responsabilidade-civil", accent: "#7C3AED", wpp: "Responsabilidade Civil" },
             ],
             [
-              { icon: <Home size={24}/>, title: "Seguro Residencial", impacto: "24h", impactoLabel: "para perder o que levou anos", desc: "Um incêndio ou roubo pode destruir em horas o que você construiu em anos.", cta: "Proteger minha casa", path: "/seguro-residencial", accent: "#D97706" },
-              { icon: <FileCheck size={24}/>, title: "Seguro Garantia", impacto: "10x", impactoLabel: "mais barato que fiança bancária", desc: "Exigido em licitações públicas e contratos. A alternativa mais barata à fiança bancária.", cta: "Simular agora", path: "/seguro-garantia", accent: "#059669" },
+              { icon: <Home size={24}/>, title: "Seguro Residencial", impacto: "24h", impactoLabel: "para perder o que levou anos", desc: "Um incêndio ou roubo pode destruir em horas o que você construiu em anos.", cta: "Proteger minha casa", path: "/seguro-residencial", accent: "#D97706", wpp: "Seguro Residencial" },
+              { icon: <FileCheck size={24}/>, title: "Seguro Garantia", impacto: "10x", impactoLabel: "mais barato que fiança bancária", desc: "Exigido em licitações públicas e contratos. A alternativa mais barata à fiança bancária.", cta: "Simular agora", path: "/seguro-garantia", accent: "#059669", wpp: "Seguro Garantia" },
             ],
           ].map((row, ri) => (
             <div key={ri} className={`grid grid-cols-1 gap-5 mb-5 ${row.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
               {row.map((item, i) => (
-                <Link key={i} to={item.path} className="group relative rounded-[2rem] overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2"
+                <div key={i} className="group relative rounded-[2rem] overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2"
                   style={{background: '#ffffff', border: '1.5px solid #EAEEF3', boxShadow: `0 4px 20px rgba(7,27,52,0.06)`}}>
 
                   {/* Borda esquerda colorida */}
@@ -429,10 +462,10 @@ const HomePage = () => {
                     style={{background: item.accent}}></div>
 
                   {/* Overlay hover navy */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[2rem]"
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[2rem] pointer-events-none"
                     style={{background: 'linear-gradient(135deg, #071B34 0%, #0a2244 100%)'}}></div>
 
-                  <div className="relative p-8 flex flex-col flex-1 z-10">
+                  <Link to={item.path} className="relative p-8 pb-4 flex flex-col flex-1 z-10">
                     {/* Ícone + impacto */}
                     <div className="flex items-start justify-between mb-5">
                       <div className="w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
@@ -460,8 +493,18 @@ const HomePage = () => {
                       style={{color: item.accent}}>
                       {item.cta} <ArrowRight size={13}/>
                     </div>
+                  </Link>
+
+                  {/* Ação rápida via WhatsApp — separada do link principal */}
+                  <div className="relative z-10 px-8 pb-7 pt-1">
+                    <a href={`https://wa.me/5511920144864?text=${encodeURIComponent(`Olá Rodrigo, vim pelo site e quero cotar ${item.wpp}`)}`}
+                      target="_blank" rel="noreferrer"
+                      className="flex items-center justify-center gap-1.5 w-full py-2.5 rounded-xl text-[10px] font-black uppercase tracking-wide transition-all hover:scale-[1.02]"
+                      style={{background: 'rgba(34,197,94,0.08)', color: '#16a34a', border: '1px solid rgba(34,197,94,0.25)'}}>
+                      <MessageCircle size={12} /> Cotar via WhatsApp
+                    </a>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           ))}

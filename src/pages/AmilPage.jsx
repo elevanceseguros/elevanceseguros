@@ -4,7 +4,6 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'luc
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import ScrollCTA from '@/components/ScrollCTA';
 import FAQ from '@/components/FAQ';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
@@ -140,7 +139,6 @@ const AmilPage = () => {
     { pergunta: "Qual o prazo de carência do plano Amil?", resposta: "As carências padrão da Amil seguem a ANS: 24h para urgência/emergência, 30 dias para consultas, 180 dias para cirurgias e 300 dias para parto normal e cesárea. Em casos de portabilidade, as carências podem ser reduzidas ou eliminadas." }
   ]} />
 
-      <FloatingWhatsApp />
 
 
       {/* Links internos — outras operadoras */}

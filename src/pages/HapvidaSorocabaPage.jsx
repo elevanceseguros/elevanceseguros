@@ -4,7 +4,6 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight, MapPin } f
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import ScrollCTA from '@/components/ScrollCTA';
 import FAQ from '@/components/FAQ';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
@@ -143,7 +142,6 @@ const HapvidaSorocabaPage = () => {
         { pergunta: "O plano cobre cidades da região metropolitana de Sorocaba?", resposta: "Sim, a cobertura se estende para a região metropolitana de Sorocaba, que reúne cerca de 2,26 milhões de habitantes. Fale com a Elevance Seguros para confirmar a rede disponível na sua cidade específica." }
       ]} />
 
-      <FloatingWhatsApp />
 
       {/* Links internos */}
       <section className="py-8 bg-blue-50 border-t border-blue-100">

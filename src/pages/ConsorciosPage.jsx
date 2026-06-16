@@ -29,11 +29,12 @@ export default function ConsorciосPage() {
     const formData = new FormData(e.target);
     const nome = formData.get('nome');
     const whatsapp = (formData.get('whatsapp') || '').replace(/[^0-9]/g, '');
+    const valor = (formData.get('valor') || '').trim();
     try {
       await fetch('https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome, whatsapp, produto: `Consórcio de ${tipoSelecionado}`, origem: window.location.pathname }),
+        body: JSON.stringify({ nome, whatsapp, produto: `Consórcio de ${tipoSelecionado}`, origem: window.location.pathname, detalhes: valor ? { valor } : null }),
       });
     } catch (_) {}
     setSent(true);
@@ -121,6 +122,7 @@ export default function ConsorciосPage() {
                         </div>
                         <input name="nome" type="text" required placeholder="Ex: João Silva" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
                         <input name="whatsapp" type="tel" required placeholder="Ex: 11 99999-9999" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
+                        <input name="valor" type="text" placeholder="Valor de crédito desejado (opcional)" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
                         <div className="flex items-center justify-center gap-1.5 bg-orange-50 border border-orange-100 rounded-xl py-2 px-3">
                           <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse inline-block"></span>
                           <span className="text-[10px] font-black text-orange-600">⚡ Cotação gratuita · Sem compromisso</span>

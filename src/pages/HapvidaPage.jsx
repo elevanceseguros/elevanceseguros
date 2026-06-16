@@ -4,7 +4,6 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'luc
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import ScrollCTA from '@/components/ScrollCTA';
 import FAQ from '@/components/FAQ';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
@@ -134,7 +133,6 @@ const HapvidaPage = () => {
     { pergunta: "Hapvida tem app para agendar consultas?", resposta: "Sim! O app Hapvida permite agendar consultas, ver resultados de exames, solicitar autorizações e acessar a carteirinha digital. É um dos diferenciais da operadora para facilitar o acesso aos serviços de saúde." }
   ]} />
 
-      <FloatingWhatsApp />
 
 
       {/* Links internos — outras operadoras */}

@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { CheckCircle2, Shield, User, Baby, Building2 } from 'lucide-react';
 import HealthOperatorForm from '@/components/HealthOperatorForm';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import HealthPlans from '@/components/HealthPlans';
 import ContactForm from '@/components/ContactForm';
 
@@ -140,7 +139,6 @@ const GenericHealthPlanPage = () => {
       {/* Contact Form Section */}
       <ContactForm produto="Plano de Saude" />
 
-      <FloatingWhatsApp />
     </>
   );
 };

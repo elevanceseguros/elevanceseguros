@@ -23,6 +23,7 @@ const tabela = [
 
 export default function SeguroGarantiaPage() {
   const [sent, setSent] = useState(false);
+  const [contrato, setContrato] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,7 +34,7 @@ export default function SeguroGarantiaPage() {
       await fetch('https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome, whatsapp, produto: 'Seguro Garantia', origem: window.location.pathname }),
+        body: JSON.stringify({ nome, whatsapp, produto: 'Seguro Garantia', origem: window.location.pathname, detalhes: contrato ? { contrato } : null }),
       });
     } catch (_) {}
     setSent(true);
@@ -115,9 +116,20 @@ export default function SeguroGarantiaPage() {
                           className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
                         <input name="whatsapp" type="tel" required placeholder="Ex: 11 99999-9999"
                           className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
+                        <div>
+                          <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 px-1">É para licitação ou contrato privado? (opcional)</p>
+                          <div className="grid grid-cols-2 gap-2">
+                            {['Licitação Pública', 'Contrato Privado'].map((opt) => (
+                              <button key={opt} type="button" onClick={() => setContrato(contrato === opt ? null : opt)}
+                                className={`py-3 rounded-xl text-[11px] font-black uppercase transition-all ${contrato === opt ? 'bg-[#0d1f3c] text-white' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}>
+                                {opt}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
                         <button type="submit"
                           className="w-full bg-[#0d1f3c] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
-                          RECEBER CONTATO GRATUITO <MessageCircle size={16} />
+                          QUERO MINHA COTAÇÃO GRÁTIS <MessageCircle size={16} />
                         </button>
                         <p className="text-[9px] text-center text-slate-400 font-bold uppercase italic">
                           Entraremos em contato no seu WhatsApp em instantes

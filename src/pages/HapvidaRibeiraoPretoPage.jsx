@@ -4,7 +4,6 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight, MapPin } f
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import ScrollCTA from '@/components/ScrollCTA';
 import FAQ from '@/components/FAQ';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
@@ -143,7 +142,6 @@ const HapvidaRibeiraoPretoPage = () => {
         { pergunta: "Hapvida cobre parto em Ribeirão Preto?", resposta: "Sim, mas com carência de 300 dias para parto normal e cesárea, conforme regras gerais da operadora. Para gestantes já grávidas na data de contratação, há regras específicas — consulte-nos antes de fechar o plano." }
       ]} />
 
-      <FloatingWhatsApp />
 
       {/* Links internos */}
       <section className="py-8 bg-blue-50 border-t border-blue-100">

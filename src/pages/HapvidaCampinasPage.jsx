@@ -4,7 +4,6 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight, MapPin } f
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import ScrollCTA from '@/components/ScrollCTA';
 import FAQ from '@/components/FAQ';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
@@ -143,7 +142,6 @@ const HapvidaCampinasPage = () => {
         { pergunta: "O plano Hapvida em Campinas é bom para famílias?", resposta: "Sim, é uma das opções com melhor custo-benefício para famílias em Campinas, especialmente considerando a estrutura do Hospital Renascença e a rede ambulatorial bem distribuída pela cidade." }
       ]} />
 
-      <FloatingWhatsApp />
 
       {/* Links internos */}
       <section className="py-8 bg-blue-50 border-t border-blue-100">

@@ -4,7 +4,6 @@ import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'luc
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import ScrollCTA from '@/components/ScrollCTA';
 import FAQ from '@/components/FAQ';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
@@ -134,7 +133,6 @@ const UnimeduniplanPage = () => {
     { pergunta: "Qual a carência do plano Unimed?", resposta: "As carências seguem o padrão ANS: 24h para urgência, 30 dias para consultas, 180 dias para cirurgias eletivas e 300 dias para parto. Em casos de portabilidade de plano, é possível eliminar as carências do novo plano." }
   ]} />
 
-      <FloatingWhatsApp />
 
 
       {/* Links internos — outras operadoras */}

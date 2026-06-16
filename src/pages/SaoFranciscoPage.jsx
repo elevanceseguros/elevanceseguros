@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { CheckCircle2, Shield } from 'lucide-react';
 import HealthOperatorForm from '@/components/HealthOperatorForm';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
 const SaoFranciscoPage = () => {
   useEffect(() => {
@@ -96,7 +95,6 @@ const SaoFranciscoPage = () => {
         </div>
       </section>
 
-      <FloatingWhatsApp />
     </>
   );
 };

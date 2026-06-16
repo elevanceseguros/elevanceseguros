@@ -16,6 +16,7 @@ const produtos = [
 
 export default function SeguroEmpresaPage() {
   const [sent, setSent] = useState(false);
+  const [funcionarios, setFuncionarios] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,7 +27,7 @@ export default function SeguroEmpresaPage() {
       await fetch('https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome, whatsapp, produto: 'Seguro Empresarial', origem: window.location.pathname }),
+        body: JSON.stringify({ nome, whatsapp, produto: 'Seguro Empresarial', origem: window.location.pathname, detalhes: funcionarios ? { funcionarios } : null }),
       });
     } catch (_) {}
     setSent(true);
@@ -98,12 +99,23 @@ export default function SeguroEmpresaPage() {
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
                         <input name="nome" type="text" required placeholder="Ex: João Silva" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
                         <input name="whatsapp" type="tel" required placeholder="Ex: 11 99999-9999" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
+                        <div>
+                          <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 px-1">Quantos funcionários? (opcional)</p>
+                          <div className="grid grid-cols-3 gap-2">
+                            {['2-10', '11-50', '50+'].map((opt) => (
+                              <button key={opt} type="button" onClick={() => setFuncionarios(funcionarios === opt ? null : opt)}
+                                className={`py-3 rounded-xl text-xs font-black uppercase transition-all ${funcionarios === opt ? 'bg-[#0d1f3c] text-white' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}>
+                                {opt}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
                         <div className="flex items-center justify-center gap-1.5 bg-orange-50 border border-orange-100 rounded-xl py-2 px-3">
                           <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse inline-block"></span>
                           <span className="text-[10px] font-black text-orange-600">⚡ Cotação gratuita · Sem compromisso</span>
                         </div>
                         <button type="submit" className="w-full bg-[#0d1f3c] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
-                          RECEBER CONTATO GRATUITO <MessageCircle size={16} />
+                          QUERO MINHA COTAÇÃO GRÁTIS <MessageCircle size={16} />
                         </button>
                         <div className="flex items-center justify-center gap-3 flex-wrap">
                           <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🔒 Dados sigilosos</span>

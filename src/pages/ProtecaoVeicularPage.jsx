@@ -33,11 +33,12 @@ export default function ProtecaoVeicularPage() {
     const formData = new FormData(e.target);
     const nome = formData.get('nome');
     const whatsapp = (formData.get('whatsapp') || '').replace(/[^0-9]/g, '');
+    const veiculo = (formData.get('veiculo') || '').trim();
     try {
       await fetch('https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome, whatsapp, produto: 'Proteção Veicular APVS', origem: window.location.pathname }),
+        body: JSON.stringify({ nome, whatsapp, produto: 'Proteção Veicular APVS', origem: window.location.pathname, detalhes: veiculo ? { veiculo } : null }),
       });
     } catch (_) {}
     setSent(true);
@@ -104,12 +105,13 @@ export default function ProtecaoVeicularPage() {
                       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
                         <input name="nome" type="text" required placeholder="Ex: João Silva" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
                         <input name="whatsapp" type="tel" required placeholder="Ex: 11 99999-9999" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
+                        <input name="veiculo" type="text" placeholder="Modelo e ano do veículo (opcional)" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
                         <div className="flex items-center justify-center gap-1.5 bg-orange-50 border border-orange-100 rounded-xl py-2 px-3">
                           <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse inline-block"></span>
                           <span className="text-[10px] font-black text-orange-600">⚡ Cotação gratuita · Sem compromisso</span>
                         </div>
                         <button type="submit" className="w-full bg-[#0d1f3c] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
-                          RECEBER CONTATO GRATUITO <MessageCircle size={16} />
+                          QUERO MINHA COTAÇÃO GRÁTIS <MessageCircle size={16} />
                         </button>
                         <div className="flex items-center justify-center gap-3 flex-wrap">
                           <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🔒 Dados sigilosos</span>

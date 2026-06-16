@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { ChevronRight, CheckCircle2 } from 'lucide-react';
 import HealthOperatorForm from '@/components/HealthOperatorForm';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
 const MediservicePage = () => {
   useEffect(() => {
@@ -100,7 +99,6 @@ const MediservicePage = () => {
         </div>
       </section>
 
-      <FloatingWhatsApp />
     </>
   );
 };
