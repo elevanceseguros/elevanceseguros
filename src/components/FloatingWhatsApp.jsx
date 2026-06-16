@@ -62,13 +62,16 @@ const FloatingWhatsApp = () => {
   const [recolhido, setRecolhido] = useState(false);
 
   // Recolhe o botão quando o ScrollCTA está visível no mobile
-  // (mesmo gatilho de scroll que o ScrollCTA usa: scrollY > 400),
+  // (mesmo gatilho de scroll que o ScrollCTA usa: 45% da altura da página),
   // evitando dois elementos flutuantes sobrepostos na mesma área.
   useEffect(() => {
+    const LIMIAR_PORCENTAGEM = 0.45;
     const handleScroll = () => {
       const isMobile = window.innerWidth < 768;
       if (isMobile) {
-        setRecolhido(window.scrollY > 400);
+        const alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+        const porcentagemRolada = alturaTotal > 0 ? window.scrollY / alturaTotal : 0;
+        setRecolhido(porcentagemRolada > LIMIAR_PORCENTAGEM);
       } else {
         setRecolhido(false);
       }

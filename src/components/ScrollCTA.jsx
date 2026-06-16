@@ -7,12 +7,23 @@ const ScrollCTA = ({ produto }) => {
   const meuNumero = "5511920144864";
 
   useEffect(() => {
+    const LIMIAR_PORCENTAGEM = 0.45; // aparece ao passar 45% da altura total da página
+
     const handleScroll = () => {
-      if (!dismissed && window.scrollY > 400) setVisible(true);
-      else if (window.scrollY <= 400) setVisible(false);
+      const alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+      // Evita divisão por zero em páginas muito curtas (menores que a viewport)
+      const porcentagemRolada = alturaTotal > 0 ? window.scrollY / alturaTotal : 0;
+
+      if (!dismissed && porcentagemRolada > LIMIAR_PORCENTAGEM) setVisible(true);
+      else if (porcentagemRolada <= LIMIAR_PORCENTAGEM) setVisible(false);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+    handleScroll();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
   }, [dismissed]);
 
   if (dismissed || !visible) return null;
