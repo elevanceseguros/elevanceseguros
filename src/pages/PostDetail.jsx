@@ -24,7 +24,7 @@ const PostDetail = () => {
       <Helmet>
         <title>{post.title} | Blog Elevance Seguros</title>
         <meta name="description" content={post.excerpt || post.title} />
-        <link rel="canonical" href={`https://elevanceseguros.com/blog/${post.slug}`} />
+        <link rel="canonical" href={`https://www.elevanceseguros.com/blog/${post.slug}`} />
               <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Elevance Seguros" />
         <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />

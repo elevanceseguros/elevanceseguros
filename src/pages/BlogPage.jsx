@@ -1,10 +1,22 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { postsData } from '@/data/posts';
 import { ChevronRight, Clock, Tag } from 'lucide-react';
 
 const BlogPage = () => {
   return (
+    <>
+      <Helmet>
+        <title>Blog Elevance Seguros | Dicas de Seguros e Planos de Saúde</title>
+        <meta name="description" content="Conteúdo especializado sobre seguros, planos de saúde e consórcios. Dicas e guias práticos para você tomar a melhor decisão de proteção." />
+        <link rel="canonical" href="https://www.elevanceseguros.com/blog" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Blog Elevance Seguros | Dicas de Seguros e Planos de Saúde" />
+        <meta property="og:description" content="Conteúdo especializado sobre seguros, planos de saúde e consórcios." />
+        <meta property="og:url" content="https://www.elevanceseguros.com/blog" />
+      </Helmet>
     <div className="min-h-screen bg-slate-50 pt-32 pb-20">
       <div className="max-w-7xl mx-auto px-4 text-center mb-16">
         <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-4">Conteúdo Especializado</span>
@@ -50,6 +62,7 @@ const BlogPage = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
