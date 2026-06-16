@@ -172,7 +172,7 @@ const Header = () => {
       </div>
 
       {/* Menu Mobile */}
-      <div className={`lg:hidden absolute top-full left-0 w-full overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}`}
+      <div className={`lg:hidden absolute top-full left-0 w-full transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[calc(100dvh-64px)] overflow-y-auto opacity-100' : 'max-h-0 overflow-hidden opacity-0'}`}
         style={{background: '#071B34', borderTop: '1px solid rgba(200,169,107,0.15)', boxShadow: '0 20px 40px rgba(7,27,52,0.5)'}}>
         <div className="flex flex-col p-6 gap-1">
 
