@@ -23,7 +23,7 @@ const AmilSaoBernardoPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano Amil em São Bernardo do Campo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano Amil em São Bernardo | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="Plano de saúde Amil em São Bernardo do Campo. Rede credenciada com cobertura nacional, atendimento no ABC Paulista e telemedicina 24h. Cotação gratuita com a Elevance Seguros." />
         <meta name="keywords" content="Amil São Bernardo do Campo, plano de saúde Amil ABC, cotação Amil São Bernardo, convênio Amil ABC Paulista" />
         <link rel="canonical" href="https://www.elevanceseguros.com/amil-sao-bernardo-do-campo" />

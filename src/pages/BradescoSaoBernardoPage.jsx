@@ -23,7 +23,7 @@ const BradescoSaoBernardoPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano Bradesco Saúde em São Bernardo do Campo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano Bradesco em São Bernardo | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="Plano de saúde Bradesco Saúde PME em São Bernardo do Campo. Rede credenciada com Hospital ABC, Hospital São Bernardo e Hospital Itacolomy. Cotação gratuita com a Elevance Seguros." />
         <meta name="keywords" content="Bradesco Saúde São Bernardo do Campo, plano de saúde empresarial ABC, Bradesco PME São Bernardo, cotação Bradesco Saúde ABC" />
         <link rel="canonical" href="https://www.elevanceseguros.com/bradescosaude-sao-bernardo-do-campo" />

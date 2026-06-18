@@ -23,7 +23,7 @@ const BradescoRibeiraoPretoPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano Bradesco Saúde em Ribeirão Preto | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano Bradesco em Ribeirão Preto | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="Plano de saúde Bradesco Saúde PME em Ribeirão Preto. Rede credenciada com Hospital São Lucas, São Lucas Ribeirânia e Maternidade Sinhá Junqueira. Cotação gratuita com a Elevance Seguros." />
         <meta name="keywords" content="Bradesco Saúde Ribeirão Preto, plano de saúde empresarial Ribeirão Preto, Bradesco PME Ribeirão Preto, cotação Bradesco Saúde Ribeirão Preto" />
         <link rel="canonical" href="https://www.elevanceseguros.com/bradescosaude-ribeirao-preto" />

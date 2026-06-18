@@ -23,7 +23,7 @@ const MedSeniorSaoBernardoPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano MedSênior em São Bernardo do Campo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano MedSênior em São Bernardo | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="Plano de saúde MedSênior em São Bernardo do Campo, com rede credenciada incluindo o Hospital São Bernardo e cobertura no ABC Paulista. Cotação gratuita com a Elevance Seguros." />
         <meta name="keywords" content="MedSênior São Bernardo do Campo, plano de saúde idoso ABC, MedSênior melhor idade São Bernardo, cotação MedSênior ABC" />
         <link rel="canonical" href="https://www.elevanceseguros.com/medsenior-sao-bernardo-do-campo" />

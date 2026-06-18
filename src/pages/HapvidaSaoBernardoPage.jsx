@@ -23,7 +23,7 @@ const HapvidaSaoBernardoPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano Hapvida em São Bernardo do Campo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano Hapvida em São Bernardo | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="Plano de saúde Hapvida em São Bernardo do Campo. Maior rede própria do ABC: Hospital São Bernardo, Maternidade NotreCare ABC, mais de 350 leitos. Cotação gratuita com a Elevance Seguros." />
         <meta name="keywords" content="Hapvida São Bernardo do Campo, plano de saúde São Bernardo, Hospital São Bernardo Hapvida, cotação Hapvida ABC" />
         <link rel="canonical" href="https://www.elevanceseguros.com/hapvida-sao-bernardo-do-campo" />
