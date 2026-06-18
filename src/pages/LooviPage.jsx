@@ -38,7 +38,7 @@ export default function LooviPage() {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>Seguro Auto Loovi em SP | Cotação Online em 5 Minutos — Elevance</title>
+        <title>Seguro Auto Loovi em São Paulo | Cotação Online em 5 Minutos | Elevance Seguros</title>
         <meta name="description" content="Seguro auto Loovi com cotação 100% online. Sem análise de perfil, aceita carros de app e táxi, ative em 5 minutos. Parceiro oficial Elevance Seguros SP." />
         <link rel="canonical" href="https://www.elevanceseguros.com/loovi" />
       </Helmet>
