@@ -72,7 +72,7 @@ export default function SaudeLanding() {
   return (
     <div className="min-h-screen bg-white font-sans">
       <Helmet>
-        <title>Plano de Saúde em São Paulo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano de Saúde | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="Compare planos de saúde em São Paulo com a Elevance Seguros. Cotação gratuita e personalizada em minutos via WhatsApp. Amil, Bradesco, SulAmérica, Unimed e mais." />
         <meta name="keywords" content="plano de saúde São Paulo, cotação plano de saúde, plano de saúde barato SP, plano de saúde individual SP, plano de saúde familiar SP" />
         <meta property="og:title" content="Plano de Saúde em São Paulo | Cotação Gratuita - Elevance Seguros" />

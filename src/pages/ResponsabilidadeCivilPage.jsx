@@ -36,7 +36,7 @@ export default function ResponsabilidadeCivilPage() {
   return (
     <>
       <Helmet>
-        <title>Seguro de Responsabilidade Civil em São Paulo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Seguro Responsabilidade Civil | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="Seguro de Responsabilidade Civil para empresas e profissionais em SP. RC Geral, RC Profissional, RC Produtos e D&O. Cotação gratuita via WhatsApp." />
         <meta name="keywords" content="seguro responsabilidade civil SP, RC profissional São Paulo, seguro RC empresa, D&O seguro" />
         <link rel="canonical" href="https://www.elevanceseguros.com/responsabilidade-civil" />

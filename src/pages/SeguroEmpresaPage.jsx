@@ -36,7 +36,7 @@ export default function SeguroEmpresaPage() {
   return (
     <>
       <Helmet>
-        <title>Seguro Empresarial em São Paulo | Elevance Seguros</title>
+        <title>Seguro Empresarial | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="Soluções completas de seguro para empresas em São Paulo. Plano de saúde PME, seguro patrimonial, responsabilidade civil e vida em grupo." />
         <meta name="keywords" content="seguro empresarial SP, plano saúde PME, seguro empresa São Paulo" />
         <link rel="canonical" href="https://www.elevanceseguros.com/seguro-empresa" />

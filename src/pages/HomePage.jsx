@@ -48,7 +48,7 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Elevance Seguros | Planos de Saúde e Seguros SP</title>
+        <title>Elevance Seguros | Planos de Saúde, Seguros e Consórcios</title>
         <meta name="description" content="Elevance Seguros: consultoria 100% digital em planos de saúde, seguro auto, proteção veicular e consórcios em São Paulo e todo o Brasil. Cotação gratuita via WhatsApp." />
         <link rel="canonical" href="https://www.elevanceseguros.com" />
         <meta property="og:type" content="website" />

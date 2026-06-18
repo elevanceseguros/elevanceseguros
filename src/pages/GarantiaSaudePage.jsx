@@ -15,7 +15,7 @@ const GarantiaSaudePage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano Garantia de Saúde em São Paulo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano Garantia de Saúde | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="A Garantia de Saúde oferece planos regionais para São Paulo com excelente custo-benefício, cobertura ambulatorial e hospitalar completa para pessoa física, MEI e empresas." />
         <meta name="keywords" content="Garantia de Saúde plano saúde SP, cotação Garantia Saúde, plano saúde São Paulo individual" />
         <link rel="canonical" href="https://www.elevanceseguros.com/garantia-saude" />

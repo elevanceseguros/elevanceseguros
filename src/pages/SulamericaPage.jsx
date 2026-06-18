@@ -17,7 +17,7 @@ const SulamericaPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano SulAmérica em São Paulo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano SulAmérica | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="SulAmérica Saúde em São Paulo: planos completos, ampla rede credenciada e atendimento personalizado. Cotação gratuita." />
         <meta name="keywords" content="SulAmérica saúde SP, plano SulAmérica São Paulo, cotação SulAmérica" />
         <link rel="canonical" href="https://www.elevanceseguros.com/sulamerica" />

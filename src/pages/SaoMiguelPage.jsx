@@ -15,7 +15,7 @@ const SaoMiguelPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano São Miguel Saúde em São Paulo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano São Miguel Saúde | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="A São Miguel Saúde é uma operadora regional consolidada em São Paulo, com planos para pessoa física, MEI e empresas, oferecendo atendimento de qualidade na Grande São Paulo." />
         <meta name="keywords" content="São Miguel Saúde plano, cotação São Miguel Saúde SP, plano saúde individual São Paulo" />
         <link rel="canonical" href="https://www.elevanceseguros.com/sao-miguel" />

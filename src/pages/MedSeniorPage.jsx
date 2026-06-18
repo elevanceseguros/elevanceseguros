@@ -17,7 +17,7 @@ const MedSeniorPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano MedSênior em São Paulo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano MedSênior | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="Plano de saúde MedSênior especialmente desenvolvido para a melhor idade. Cobertura completa com foco no cuidado do idoso em São Paulo, com a Elevance Seguros." />
         <meta name="keywords" content="MedSênior plano de saúde, plano saúde idoso, plano terceira idade" />
               <link rel="canonical" href="https://www.elevanceseguros.com/medsenior" />

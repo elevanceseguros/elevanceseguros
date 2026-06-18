@@ -15,7 +15,7 @@ const BiovidaPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano Biovida Saúde em São Paulo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano Biovida Saúde | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="A Biovida Saúde atua na região metropolitana de São Paulo com planos para pessoa física, MEI e terceira idade, com rede própria e credenciada para pronto-atendimento e serviços ambulatoriais." />
         <meta name="keywords" content="Biovida Saúde plano, cotação Biovida SP, plano saúde sênior São Paulo Biovida" />
         <link rel="canonical" href="https://www.elevanceseguros.com/biovida" />

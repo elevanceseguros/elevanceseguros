@@ -15,7 +15,7 @@ const TrasmontanoPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano Trasmontano Saúde em São Paulo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano Trasmontano Saúde | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="Com mais de 93 anos no mercado, a Trasmontano Saúde é uma das operadoras mais tradicionais do Brasil. Planos para São Paulo Capital, Grande SP, ABC e Baixada Santista." />
         <meta name="keywords" content="Trasmontano Saúde plano, cotação Trasmontano SP, plano saúde idoso São Paulo Trasmontano" />
         <link rel="canonical" href="https://www.elevanceseguros.com/trasmontano" />

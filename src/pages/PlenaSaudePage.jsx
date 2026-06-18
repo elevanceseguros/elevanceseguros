@@ -15,7 +15,7 @@ const PlenaSaudePage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano Plena Saúde em São Paulo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano Plena Saúde | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="A Plena Saúde atende mais de 85 mil vidas em São Paulo com 22 unidades ambulatoriais próprias e dois hospitais completos com pronto-socorro pediátrico e ginecológico 24h." />
         <meta name="keywords" content="Plena Saúde plano, cotação Plena Saúde SP, plano saúde individual São Paulo Plena" />
         <link rel="canonical" href="https://www.elevanceseguros.com/plena-saude" />

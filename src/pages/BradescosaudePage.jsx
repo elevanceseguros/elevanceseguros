@@ -17,7 +17,7 @@ const BradescosaudePage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano Bradesco Saúde em São Paulo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano Bradesco Saúde | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="Bradesco Saúde: um dos maiores planos de saúde do Brasil. Ampla rede credenciada, cobertura completa em São Paulo." />
         <meta name="keywords" content="Bradesco Saúde SP, plano Bradesco São Paulo, cotação Bradesco saúde" />
         <link rel="canonical" href="https://www.elevanceseguros.com/bradescosaude" />

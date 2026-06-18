@@ -15,7 +15,7 @@ const SaoCristovaoPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano São Cristóvão Saúde em São Paulo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano São Cristóvão Saúde | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="A São Cristóvão Saúde tem hospital e maternidade próprios em São Paulo, com planos para pessoa física, MEI e empresas. Ótimo custo-benefício para quem vive na Grande São Paulo." />
         <meta name="keywords" content="São Cristóvão Saúde plano, cotação São Cristóvão SP, plano saúde individual São Paulo São Cristóvão" />
         <link rel="canonical" href="https://www.elevanceseguros.com/sao-cristovao" />

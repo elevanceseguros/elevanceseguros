@@ -15,7 +15,7 @@ const UnihospPage = () => {
   return (
     <>
       <Helmet>
-        <title>Plano UniHosp Saúde em São Paulo | Cotação Gratuita | Elevance Seguros</title>
+        <title>Plano UniHosp Saúde | Cotação Gratuita | Elevance Seguros</title>
         <meta name="description" content="A UniHosp Saúde oferece planos completos para quem busca tradição, credibilidade e um dos melhores custo-benefícios do mercado em São Paulo, com valores a partir de R$ 87,98." />
         <meta name="keywords" content="UniHosp Saúde plano, cotação UniHosp SP, plano saúde barato São Paulo UniHosp" />
         <link rel="canonical" href="https://www.elevanceseguros.com/unihosp" />
