@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { MessageCircle, X } from 'lucide-react';
+import { BUSINESS_CONFIG } from '@/config/business';
 
 const ScrollCTA = ({ produto }) => {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
-  const meuNumero = "5511920144864";
 
   useEffect(() => {
-    const LIMIAR_PORCENTAGEM = 0.45; // aparece ao passar 45% da altura total da página
+    const LIMIAR_PORCENTAGEM = 0.45;
 
     const handleScroll = () => {
       const alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
-      // Evita divisão por zero em páginas muito curtas (menores que a viewport)
       const porcentagemRolada = alturaTotal > 0 ? window.scrollY / alturaTotal : 0;
 
       if (!dismissed && porcentagemRolada > LIMIAR_PORCENTAGEM) setVisible(true);
@@ -28,12 +27,14 @@ const ScrollCTA = ({ produto }) => {
 
   if (dismissed || !visible) return null;
 
+  const whatsappText = encodeURIComponent(`Olá Rodrigo, tenho dúvidas sobre ${produto} e quero uma cotação gratuita.`);
+  const whatsappHref = `https://wa.me/${BUSINESS_CONFIG.whatsappNumber}?text=${whatsappText}`;
+
   return (
     <div className="fixed bottom-6 left-4 right-4 md:left-auto md:right-6 md:max-w-sm z-[90] transition-all duration-500"
       style={{filter: 'drop-shadow(0 20px 40px rgba(7,27,52,0.4))'}}>
       <div className="relative rounded-2xl p-4 flex items-center gap-4"
         style={{background: '#071B34', border: '1px solid rgba(200,169,107,0.25)', boxShadow: '0 0 40px rgba(200,169,107,0.1)'}}>
-        {/* Linha dourada topo */}
         <div className="absolute top-0 left-8 right-8 h-px" style={{background: 'linear-gradient(to right, transparent, rgba(200,169,107,0.5), transparent)'}}></div>
 
         <div className="flex-1 min-w-0">
@@ -43,7 +44,7 @@ const ScrollCTA = ({ produto }) => {
           <p className="text-xs mt-0.5" style={{color: 'rgba(255,255,255,0.4)'}}>Rodrigo responde agora, sem compromisso.</p>
         </div>
 
-        <a href={`https://wa.me/${meuNumero}?text=Olá! Tenho dúvidas sobre ${produto}`}
+        <a href={whatsappHref}
           target="_blank" rel="noreferrer"
           className="flex items-center gap-2 text-white px-4 py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest shrink-0 transition-all hover:scale-105"
           style={{background: '#16a34a'}}>
