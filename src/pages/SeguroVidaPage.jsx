@@ -4,8 +4,8 @@ import { Heart, ShieldCheck, Zap, Users, CheckCircle2, MessageCircle, PartyPoppe
 import FAQ from '@/components/FAQ';
 import ScrollCTA from '@/components/ScrollCTA';
 import CorretorHero from '@/components/CorretorHero';
-
-const MEU_NUMERO = "5511920144864";
+import { buildWhatsAppUrl } from '@/config/business';
+import { submitLead } from '@/lib/submitLead';
 
 const coberturas = [
   { icon: <Heart size={28} className="text-yellow-300" />, titulo: "Morte", desc: "Capital segurado pago aos beneficiários em caso de falecimento por qualquer causa." },
@@ -23,13 +23,15 @@ export default function SeguroVidaPage() {
     const formData = new FormData(e.target);
     const nome = formData.get('nome');
     const whatsapp = (formData.get('whatsapp') || '').replace(/[^0-9]/g, '');
-    try {
-      await fetch('https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome, whatsapp, produto: 'Seguro de Vida', origem: window.location.pathname, detalhes: dependentes ? { dependentes } : null }),
-      });
-    } catch (_) {}
+
+    await submitLead({
+      nome,
+      whatsapp,
+      produto: 'Seguro de Vida',
+      origem: window.location.pathname,
+      detalhes: dependentes ? { dependentes } : null,
+    });
+
     setSent(true);
   };
 
@@ -158,8 +160,6 @@ export default function SeguroVidaPage() {
           </div>
         </div>
       </section>
-
-      {/* Tabela + Depoimento */}
       <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -207,7 +207,7 @@ export default function SeguroVidaPage() {
                 </table>
                 <p className="text-[10px] text-slate-400 italic mt-3">*Valores referenciais. Variam por seguradora, idade e coberturas contratadas.</p>
                 <a
-                  href={`https://wa.me/5511920144864?text=Ol%C3%A1+Rodrigo%2C+quero+cotar+Seguro+de+Vida`}
+                  href={buildWhatsAppUrl('Olá Rodrigo, quero cotar Seguro de Vida')}
                   target="_blank" rel="noreferrer"
                   className="w-full mt-5 bg-[#0d1f3c] hover:bg-blue-700 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2">
                   Cotar Seguro de Vida <ArrowRight className="w-4 h-4" />
@@ -240,7 +240,7 @@ export default function SeguroVidaPage() {
           <div className="bg-[#0d1f3c] rounded-[50px] p-12 text-center">
             <h2 className="text-3xl font-black text-white italic mb-3">Proteja quem você ama hoje</h2>
             <p className="text-slate-300 font-medium mb-8">Simulação gratuita e sem compromisso</p>
-            <a href={`https://wa.me/${MEU_NUMERO}?text=Olá, quero simular um Seguro de Vida`} target="_blank" rel="noreferrer"
+            <a href={buildWhatsAppUrl('Olá Rodrigo, quero simular um Seguro de Vida')} target="_blank" rel="noreferrer"
               className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg hover:scale-105">
               <MessageCircle size={18} /> Chamar no WhatsApp <ArrowRight size={16} />
             </a>
