@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MessageCircle, Zap, PartyPopper } from 'lucide-react';
-
-const WEBHOOK_URL = "https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead";
+import { BUSINESS_CONFIG } from '@/config/business';
+import { trackLeadSubmitError, trackLeadSubmitStart, trackLeadSubmitSuccess } from '@/lib/leadTracking';
 
 const OperatorQuoteForm = ({ operatorName }) => {
   const [sent, setSent] = useState(false);
@@ -11,13 +11,20 @@ const OperatorQuoteForm = ({ operatorName }) => {
     const formData = new FormData(e.target);
     const nome = formData.get('nome');
     const whatsapp = (formData.get('whatsapp') || '').replace(/[^0-9]/g, '');
+    const payload = { nome, whatsapp, produto: `Plano de Saúde ${operatorName}`, origem: window.location.pathname };
+
+    trackLeadSubmitStart({ produto: payload.produto, origem: payload.origem });
+
     try {
-      await fetch(WEBHOOK_URL, {
+      await fetch(BUSINESS_CONFIG.leadWebhookUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome, whatsapp, produto: `Plano de Saúde ${operatorName}`, origem: window.location.pathname }),
+        body: JSON.stringify(payload),
       });
-    } catch (_) {}
+      trackLeadSubmitSuccess({ produto: payload.produto, origem: payload.origem });
+    } catch (_) {
+      trackLeadSubmitError({ produto: payload.produto, origem: payload.origem });
+    }
     setSent(true);
   };
 
