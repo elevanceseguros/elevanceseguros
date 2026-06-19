@@ -1,61 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
-
-const MEU_NUMERO = "5511920144864";
-
-// Mapa de rota -> produto, para a mensagem do WhatsApp já vir
-// contextualizada com o que a pessoa estava vendo no site.
-const PRODUTO_POR_ROTA = {
-  '/': 'uma consultoria',
-  '/encontre-seu-plano': 'um Plano de Saúde',
-  '/odontologico': 'um Plano Odontológico',
-  '/seguro-auto': 'um Seguro Auto',
-  '/seguro-vida': 'um Seguro de Vida',
-  '/seguro-residencial': 'um Seguro Residencial',
-  '/seguro-empresa': 'um Seguro Empresarial',
-  '/responsabilidade-civil': 'um Seguro de Responsabilidade Civil',
-  '/seguro-garantia': 'um Seguro Garantia',
-  '/protecao-veicular': 'a Proteção Veicular APVS',
-  '/consorcios': 'um Consórcio',
-  '/hapvida': 'um plano Hapvida',
-  '/hapvida-campinas': 'um plano Hapvida em Campinas',
-  '/hapvida-ribeirao-preto': 'um plano Hapvida em Ribeirão Preto',
-  '/hapvida-sao-bernardo-do-campo': 'um plano Hapvida em São Bernardo',
-  '/hapvida-sorocaba': 'um plano Hapvida em Sorocaba',
-  '/bradescosaude': 'um plano Bradesco Saúde',
-  '/bradescosaude-campinas': 'um plano Bradesco Saúde em Campinas',
-  '/bradescosaude-ribeirao-preto': 'um plano Bradesco Saúde em Ribeirão Preto',
-  '/bradescosaude-sao-bernardo-do-campo': 'um plano Bradesco Saúde em São Bernardo',
-  '/bradescosaude-sorocaba': 'um plano Bradesco Saúde em Sorocaba',
-  '/amil': 'um plano Amil',
-  '/amil-campinas': 'um plano Amil em Campinas',
-  '/amil-ribeirao-preto': 'um plano Amil em Ribeirão Preto',
-  '/amil-sao-bernardo-do-campo': 'um plano Amil em São Bernardo',
-  '/amil-sorocaba': 'um plano Amil em Sorocaba',
-  '/medsenior': 'um plano MedSênior',
-  '/medsenior-campinas': 'um plano MedSênior em Campinas',
-  '/medsenior-sao-bernardo-do-campo': 'um plano MedSênior em São Bernardo',
-  '/sulamerica': 'um plano SulAmérica',
-  '/unimed': 'um plano Unimed',
-  '/porto': 'um plano Porto Saúde',
-  '/alice': 'um plano Alice',
-  '/plena-saude': 'um plano Plena Saúde',
-  '/biovida': 'um plano Biovida',
-  '/unihosp': 'um plano Unihosp',
-  '/garantia-saude': 'um plano Garantia de Saúde',
-  '/trasmontano': 'um plano Trasmontano',
-  '/sao-cristovao': 'um plano São Cristóvão',
-  '/sao-miguel': 'um plano São Miguel',
-  '/loovi': 'o Seguro Auto Loovi',
-};
-
-function getMensagemContextual(pathname) {
-  const produto = PRODUTO_POR_ROTA[pathname];
-  if (produto) return `Olá Rodrigo, vim pelo site e quero cotar ${produto}`;
-  if (pathname.startsWith('/blog')) return 'Olá Rodrigo, vim pelo blog da Elevance e quero saber mais';
-  return 'Olá Rodrigo, vim pelo site da Elevance e quero saber mais';
-}
+import { buildContextualWhatsAppMessage, buildWhatsAppUrl } from '@/config/business';
+import { trackWhatsAppClick } from '@/lib/leadTracking';
 
 const FloatingWhatsApp = () => {
   const location = useLocation();
@@ -85,8 +32,8 @@ const FloatingWhatsApp = () => {
     };
   }, []);
 
-  const mensagem = getMensagemContextual(location.pathname);
-  const href = `https://wa.me/${MEU_NUMERO}?text=${encodeURIComponent(mensagem)}`;
+  const mensagem = buildContextualWhatsAppMessage(location.pathname);
+  const href = buildWhatsAppUrl(mensagem);
 
   return (
     <motion.a
@@ -100,6 +47,7 @@ const FloatingWhatsApp = () => {
       style={{ pointerEvents: recolhido ? 'none' : 'auto' }}
       className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:shadow-[#25D366]/50 flex items-center justify-center group cursor-pointer"
       aria-label="Fale conosco no WhatsApp"
+      onClick={() => trackWhatsAppClick({ origem: location.pathname, canal: 'floating_whatsapp', produto: mensagem })}
     >
       <div className="absolute inset-0 rounded-full border-2 border-white/30 animate-ping opacity-75"></div>
       
