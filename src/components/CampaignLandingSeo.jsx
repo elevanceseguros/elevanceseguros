@@ -8,12 +8,14 @@ const SEO = {
     description: 'Página de campanha da Elevance Seguros para cotação de planos de saúde com atendimento pelo WhatsApp.',
     canonical: 'https://saude.elevanceseguros.com',
     image: 'https://www.elevanceseguros.com/preview.webp',
+    noindex: true,
   },
   sagrada: {
     title: 'Plano Sagrada Família | Cotação Gratuita | Elevance Seguros',
-    description: 'Página de campanha para cotação do plano Sagrada Família com atendimento da Elevance Seguros.',
-    canonical: 'https://sagradafamilia.elevanceseguros.com',
-    image: 'https://sagradafamilia.elevanceseguros.com/logos/sagrada-familia-logo.png',
+    description: 'Plano Sagrada Família em São Paulo com cotação gratuita, tabela atualizada e atendimento da Elevance Seguros pelo WhatsApp.',
+    canonical: 'https://www.elevanceseguros.com/sagrada-familia',
+    image: 'https://www.elevanceseguros.com/logos/sagrada-familia-logo.png',
+    noindex: false,
   },
 };
 
@@ -35,7 +37,7 @@ export default function CampaignLandingSeo() {
   return (
     <Helmet>
       <title>{seo.title}</title>
-      <meta name="robots" content="noindex, nofollow" />
+      {seo.noindex ? <meta name="robots" content="noindex, nofollow" /> : <meta name="robots" content="index, follow" />}
       <meta name="description" content={seo.description} />
       <link rel="canonical" href={seo.canonical} />
       <meta property="og:type" content="website" />
