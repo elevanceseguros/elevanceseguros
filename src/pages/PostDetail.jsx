@@ -175,30 +175,28 @@ const PostDetail = () => {
         .blog-cta-callout-link:hover { color: #C9A84C; }
         .blog-cta-mid {
           margin: 2rem 0;
-          padding: 1.5rem;
+          padding: 1.25rem 1.5rem;
           background: #0d1f3c;
           border-radius: 20px;
           display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          gap: 1rem;
+          flex-direction: column;
+          gap: 0.75rem;
         }
-        .blog-cta-mid-icon { font-size: 1.8rem; flex-shrink: 0; }
-        .blog-cta-mid-body { flex: 1; min-width: 0; }
-        .blog-cta-mid-titulo { margin: 0 0 0.25rem; font-size: 0.95rem; font-weight: 900; color: #fff; }
-        .blog-cta-mid-texto { margin: 0; font-size: 0.8rem; color: rgba(255,255,255,0.65); line-height: 1.5; }
+        .blog-cta-mid-icon { font-size: 1.5rem; }
+        .blog-cta-mid-titulo { margin: 0 0 0.25rem; font-size: 1rem; font-weight: 900; color: #fff; line-height: 1.3; }
+        .blog-cta-mid-texto { margin: 0; font-size: 0.82rem; color: rgba(255,255,255,0.65); line-height: 1.55; }
         .blog-cta-mid-btn {
-          flex-shrink: 0;
-          display: inline-flex;
+          display: flex;
           align-items: center;
+          justify-content: center;
           background: #C9A84C;
           color: #0d1f3c;
-          font-size: 0.75rem;
+          font-size: 0.82rem;
           font-weight: 900;
-          padding: 0.65rem 1.25rem;
+          padding: 0.85rem 1.25rem;
           border-radius: 12px;
           text-decoration: none;
-          white-space: nowrap;
+          text-align: center;
         }
         .blog-cta-mid-btn:hover { background: #b8943e; }
       `}</style>
@@ -211,7 +209,7 @@ const PostDetail = () => {
             <ArrowLeft size={16} /> Voltar ao Blog
           </Link>
           <Link to="/">
-            <img src="/logos/elevance-logo.png" alt="Elevance Seguros" className="h-8 object-contain" />
+            <img src="/logo.webp" alt="Elevance Seguros" className="h-8 object-contain" />
           </Link>
         </div>
 
