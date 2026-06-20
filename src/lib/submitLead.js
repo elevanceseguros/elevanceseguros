@@ -1,4 +1,5 @@
 import { BUSINESS_CONFIG } from '@/config/business';
+import { TRACKED_HEADER } from '@/lib/leadRuntimeTracking';
 import { trackLeadSubmitError, trackLeadSubmitStart, trackLeadSubmitSuccess } from '@/lib/leadTracking';
 
 export async function submitLead(payload) {
@@ -12,7 +13,7 @@ export async function submitLead(payload) {
   try {
     await fetch(BUSINESS_CONFIG.leadWebhookUrl, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', [TRACKED_HEADER]: '1' },
       body: JSON.stringify(lead),
     });
 
