@@ -218,10 +218,7 @@ const AppContent = () => {
                 <Route path="/online-quote" element={<Navigate to="/encontre-seu-plano" replace />} />
                 <Route path="/customer-support" element={<Navigate to="/" replace />} />
                 <Route path="*" element={<HomePage />} />
-              </Routes>
-            </Suspense>
-    </ErrorBoundary>
-<Route path="/saude" element={<SaudeLanding />} />
+                <Route path="/saude" element={<SaudeLanding />} />
                   <Route path="/sagrada-familia" element={<SagradaFamiliaHomePage />} />
                   <Route path="/sagrada-familia/thank-you" element={<SagradaFamiliaThankYouPage />} />
                   <Route path="/admin-login" element={<AdminLoginPage />} />
