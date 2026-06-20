@@ -98,8 +98,9 @@ const ctaConfig = {
 const defaultCta = ctaConfig['Seguros'];
 
 function injectInlineCtas(html, cta) {
-  const callout = `<div class="blog-cta-callout"><span class="blog-cta-callout-text">${cta.inlineTexto}</span><a href="${cta.inlineLink}" class="blog-cta-callout-link">${cta.inlineLinkTexto}</a></div>`;
-  const midBanner = `<div class="blog-cta-mid"><div class="blog-cta-mid-icon">${cta.icon}</div><div class="blog-cta-mid-body"><p class="blog-cta-mid-titulo">${cta.titulo}</p><p class="blog-cta-mid-texto">${cta.texto}</p></div><a href="https://wa.me/5511920144864?text=${encodeURIComponent(cta.wpp)}" target="_blank" rel="noreferrer" class="blog-cta-mid-btn">${cta.btnTexto} →</a></div>`;
+  const wppEncoded = encodeURIComponent(cta.wpp);
+  const callout = '<div class="blog-cta-callout"><span class="blog-cta-callout-text">' + cta.inlineTexto + '</span><a href="' + cta.inlineLink + '" class="blog-cta-callout-link">' + cta.inlineLinkTexto + '</a></div>';
+  const midBanner = '<div class="blog-cta-mid"><div class="blog-cta-mid-icon">' + cta.icon + '</div><div class="blog-cta-mid-body"><p class="blog-cta-mid-titulo">' + cta.titulo + '</p><p class="blog-cta-mid-texto">' + cta.texto + '</p></div><a href="https://wa.me/5511920144864?text=' + wppEncoded + '" target="_blank" rel="noreferrer" class="blog-cta-mid-btn">' + cta.btnTexto + ' →</a></div>';
   const parts = html.split('</p>');
   if (parts.length < 4) return html + callout;
   parts.splice(2, 0, callout);
