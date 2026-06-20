@@ -1,18 +1,13 @@
 import { BUSINESS_CONFIG } from '@/config/business';
 import { trackLeadSubmitError, trackLeadSubmitStart, trackLeadSubmitSuccess, trackWhatsAppClick } from '@/lib/leadTracking';
 
-const TRACKED_HEADER = 'X-Elevance-Tracked';
+const TRACKED_PAYLOAD_FIELD = '__elevanceTracked';
 let installed = false;
 
 function getRequestUrl(input) {
   if (typeof input === 'string') return input;
   if (input?.url) return input.url;
   return '';
-}
-
-function getRequestHeaders(input, init = {}) {
-  const headers = new Headers(init.headers || input?.headers || {});
-  return headers;
 }
 
 function parseLeadPayload(init = {}) {
@@ -42,20 +37,22 @@ export function installLeadRuntimeTracking() {
   if (originalFetch) {
     window.fetch = async (input, init = {}) => {
       const url = getRequestUrl(input);
-      const headers = getRequestHeaders(input, init);
-      const alreadyTracked = headers.get(TRACKED_HEADER) === '1';
 
-      if (!alreadyTracked && isLeadWebhook(url)) {
+      if (isLeadWebhook(url)) {
         const payload = parseLeadPayload(init);
-        trackLeadSubmitStart({ produto: payload.produto, origem: payload.origem || window.location.pathname });
+        const alreadyTracked = payload[TRACKED_PAYLOAD_FIELD] === true;
 
-        try {
-          const response = await originalFetch(input, init);
-          trackLeadSubmitSuccess({ produto: payload.produto, origem: payload.origem || window.location.pathname });
-          return response;
-        } catch (error) {
-          trackLeadSubmitError({ produto: payload.produto, origem: payload.origem || window.location.pathname });
-          throw error;
+        if (!alreadyTracked) {
+          trackLeadSubmitStart({ produto: payload.produto, origem: payload.origem || window.location.pathname });
+
+          try {
+            const response = await originalFetch(input, init);
+            trackLeadSubmitSuccess({ produto: payload.produto, origem: payload.origem || window.location.pathname });
+            return response;
+          } catch (error) {
+            trackLeadSubmitError({ produto: payload.produto, origem: payload.origem || window.location.pathname });
+            throw error;
+          }
         }
       }
 
@@ -94,4 +91,4 @@ export function installLeadRuntimeTracking() {
   }
 }
 
-export { TRACKED_HEADER };
+export { TRACKED_PAYLOAD_FIELD };
