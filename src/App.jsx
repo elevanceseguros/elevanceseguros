@@ -14,19 +14,10 @@ import PullToRefreshContainer from '@/components/PullToRefreshContainer';
 import { SagradaFamiliaAuthProvider } from '@/contexts/SagradaFamiliaContext';
 import ProtectedRoute from '@/components/ProtectedRoute';
 
-// Lazy load pages for better performance (Incluindo o Blog no padrão do projeto)
 const HomePage = lazy(() => import('@/pages/HomePage'));
 const BlogPage = lazy(() => import('@/pages/BlogPage'));
 const PostDetail = lazy(() => import('@/pages/PostDetail'));
-const ServicePage = lazy(() => import('@/pages/ServicePage'));
 const ThankYouPage = lazy(() => import('@/pages/ThankYouPage'));
-const BusinessInsurancePage = lazy(() => import('@/pages/BusinessInsurancePage'));
-const HealthPlansPage = lazy(() => import('@/pages/HealthPlansPage'));
-const OnlineQuotePage = lazy(() => import('@/pages/OnlineQuotePage'));
-const CustomerSupportPage = lazy(() => import('@/pages/CustomerSupportPage'));
-const CarInsurancePage = lazy(() => import('@/pages/CarInsurancePage'));
-const HealthInsurancePage = lazy(() => import('@/pages/HealthInsurancePage'));
-const MediservicePage = lazy(() => import('@/pages/MediservicePage'));
 const MedSeniorPage = lazy(() => import('@/pages/MedSeniorPage'));
 const AlicePage = lazy(() => import('@/pages/AlicePage'));
 const GarantiaSaudePage = lazy(() => import('@/pages/GarantiaSaudePage'));
@@ -36,8 +27,6 @@ const SaoCristovaoPage = lazy(() => import('@/pages/SaoCristovaoPage'));
 const PlenaSaudePage = lazy(() => import('@/pages/PlenaSaudePage'));
 const BiovidaPage = lazy(() => import('@/pages/BiovidaPage'));
 const UnihospPage = lazy(() => import('@/pages/UnihospPage'));
-const SaoFranciscoPage = lazy(() => import('@/pages/SaoFranciscoPage'));
-const UsisaudePage = lazy(() => import('@/pages/UsisaudePage'));
 const UnimeduniplanPage = lazy(() => import('@/pages/UnimeduniplanPage'));
 const AmilPage = lazy(() => import('@/pages/AmilPage'));
 const EncontreSeuPlanoPage = lazy(() => import('@/pages/EncontreSeuPlanoPage'));
@@ -73,26 +62,15 @@ const SulamericaCampinasPage = lazy(() => import('@/pages/SulamericaCampinasPage
 const SulamericaRibeiraoPretoPage = lazy(() => import('@/pages/SulamericaRibeiraoPretoPage'));
 const SulamericaSaoBernardoPage = lazy(() => import('@/pages/SulamericaSaoBernardoPage'));
 const SulamericaSorocabaPage = lazy(() => import('@/pages/SulamericaSorocabaPage'));
-
-// Generic Pages
-const GenericHealthPlanPage = lazy(() => import('@/pages/GenericHealthPlanPage'));
-
-// Sagrada Familia Pages
 const SagradaFamiliaHomePage = lazy(() => import('@/pages/SagradaFamiliaHomePage'));
 const SagradaFamiliaThankYouPage = lazy(() => import('@/pages/SagradaFamiliaThankYouPage'));
 const AdminLoginPage = lazy(() => import('@/pages/AdminLoginPage'));
 const AdminDashboardPage = lazy(() => import('@/pages/AdminDashboardPage'));
-
-// Cassi Pages
-const CassiHomePage = lazy(() => import('@/pages/CassiHomePage'));
-const CassiThankYouPage = lazy(() => import('@/pages/CassiThankYouPage'));
-
-// Saúde Landing Page
 const SaudeLanding = lazy(() => import('@/pages/SaudeLanding'));
 
 const LoadingFallback = () => (
-  <div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh',width:'100%'}}>
-    <div style={{width:'40px',height:'40px',border:'3px solid #0d1f3c',borderTopColor:'transparent',borderRadius:'50%',animation:'spin 0.8s linear infinite'}} />
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100%' }}>
+    <div style={{ width: '40px', height: '40px', border: '3px solid #0d1f3c', borderTopColor: 'transparent', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} />
     <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
   </div>
 );
@@ -110,7 +88,7 @@ const AppContent = () => {
   useGoogleAnalytics();
 
   const handleRefresh = useCallback(async () => {
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    await new Promise((resolve) => setTimeout(resolve, 1500));
     window.location.reload();
   }, []);
 
@@ -124,11 +102,11 @@ const AppContent = () => {
     '/admin-dashboard',
     '/sagrada-familia',
     '/sagrada-familia/thank-you',
-    '/saude'
+    '/saude',
   ];
 
-  const showHeaderFooter = !isSaudeSubdomain && !isSagradaSubdomain && !noHeaderFooterRoutes.some(path =>
-    location.pathname === path || (path !== '/' && location.pathname.startsWith(path + '/'))
+  const showHeaderFooter = !isSaudeSubdomain && !isSagradaSubdomain && !noHeaderFooterRoutes.some((path) =>
+    location.pathname === path || (path !== '/' && location.pathname.startsWith(`${path}/`))
   );
 
   return (
@@ -146,84 +124,13 @@ const AppContent = () => {
             <ErrorBoundary>
               <Suspense fallback={<LoadingFallback />}>
                 <Routes>
-                  <Route
-                    path="/"
-                    element={
-                      isSaudeSubdomain ? <SaudeLanding /> :
-                      isSagradaSubdomain ? <SagradaFamiliaHomePage /> :
-                      <HomePage />
-                    }
-                  />
-
-{/* Generic Routes */}
-                <Route path="/sulamerica" element={<SulamericaPage />} />
-                <Route path="/sulamerica-campinas" element={<SulamericaCampinasPage />} />
-                <Route path="/sulamerica-ribeirao-preto" element={<SulamericaRibeiraoPretoPage />} />
-                <Route path="/sulamerica-sao-bernardo-do-campo" element={<SulamericaSaoBernardoPage />} />
-                <Route path="/sulamerica-sorocaba" element={<SulamericaSorocabaPage />} />
-                <Route path="/encontre-seu-plano" element={<EncontreSeuPlanoPage />} />
-                <Route path="/odontologico" element={<OdontologicoPage />} />
-                <Route path="/seguro-vida" element={<SeguroVidaPage />} />
-                <Route path="/seguro-residencial" element={<SeguroResidencialPage />} />
-                <Route path="/responsabilidade-civil" element={<ResponsabilidadeCivilPage />} />
-                <Route path="/seguro-garantia" element={<SeguroGarantiaPage />} />
-                <Route path="/seguro-auto" element={<SeguroAutoPage />} />
-                <Route path="/protecao-veicular" element={<ProtecaoVeicularPage />} />
-                <Route path="/loovi" element={<LooviPage />} />
-
-                {/* Legacy & Other Routes */}
-                <Route path="/porto" element={<PortoPage />} />
-                <Route path="/medsenior" element={<MedSeniorPage />} />
-                <Route path="/hapvida" element={<HapvidaPage />} />
-                <Route path="/hapvida-ribeirao-preto" element={<HapvidaRibeiraoPretoPage />} />
-                <Route path="/hapvida-campinas" element={<HapvidaCampinasPage />} />
-                <Route path="/hapvida-sao-bernardo-do-campo" element={<HapvidaSaoBernardoPage />} />
-                <Route path="/hapvida-sorocaba" element={<HapvidaSorocabaPage />} />
-                <Route path="/bradescosaude-campinas" element={<BradescoCampinasPage />} />
-                <Route path="/bradescosaude-sao-bernardo-do-campo" element={<BradescoSaoBernardoPage />} />
-                <Route path="/bradescosaude-sorocaba" element={<BradescoSorocabaPage />} />
-                <Route path="/bradescosaude-ribeirao-preto" element={<BradescoRibeiraoPretoPage />} />
-                <Route path="/medsenior-campinas" element={<MedSeniorCampinasPage />} />
-                <Route path="/medsenior-sao-bernardo-do-campo" element={<MedSeniorSaoBernardoPage />} />
-                <Route path="/amil-campinas" element={<AmilCampinasPage />} />
-                <Route path="/amil-sao-bernardo-do-campo" element={<AmilSaoBernardoPage />} />
-                <Route path="/amil-sorocaba" element={<AmilSorocabaPage />} />
-                <Route path="/amil-ribeirao-preto" element={<AmilRibeiraoPretoPage />} />
-                <Route path="/garantia-saude" element={<GarantiaSaudePage />} />
-                <Route path="/sao-miguel" element={<SaoMiguelPage />} />
-                <Route path="/trasmontano" element={<TrasmontanoPage />} />
-                <Route path="/sao-cristovao" element={<SaoCristovaoPage />} />
-                <Route path="/plena-saude" element={<PlenaSaudePage />} />
-                <Route path="/biovida" element={<BiovidaPage />} />
-                <Route path="/unihosp" element={<UnihospPage />} />
-                <Route path="/alice" element={<AlicePage />} />
-                <Route path="/amil" element={<AmilPage />} />
-                <Route path="/bradescosaude" element={<BradescosaudePage />} />
-                <Route path="/unimed" element={<UnimeduniplanPage />} />
-                <Route path="/consorcios" element={<ConsorciosPage />} />
-                <Route path="/seguro-empresa" element={<SeguroEmpresaPage />} />
-                <Route path="/thank-you" element={<ThankYouPage />} />
-                <Route path="/obrigado" element={<ThankYouPage />} />
-                {/* BLOCO DO BLOG */}
-                <Route path="/blog" element={<BlogPage />} />
-                <Route path="/blog/:slug" element={<PostDetail />} />
-                
-                {/* Fallback to main home */}
-                {/* Redirects de URLs legacy */}
-                <Route path="/planos-de-saude" element={<Navigate to="/encontre-seu-plano" replace />} />
-                <Route path="/planos-saude" element={<Navigate to="/encontre-seu-plano" replace />} />
-                <Route path="/health-plans" element={<Navigate to="/encontre-seu-plano" replace />} />
-                <Route path="/seguros-auto" element={<Navigate to="/seguro-auto" replace />} />
-                <Route path="/contato" element={<Navigate to="/" replace />} />
-                <Route path="/online-quote" element={<Navigate to="/encontre-seu-plano" replace />} />
-                <Route path="/customer-support" element={<Navigate to="/" replace />} />
-                <Route path="*" element={<HomePage />} />
-                <Route path="/saude" element={<SaudeLanding />} />
+                  <Route path="/" element={isSaudeSubdomain ? <SaudeLanding /> : isSagradaSubdomain ? <SagradaFamiliaHomePage /> : <HomePage />} />
+                  <Route path="/saude" element={<SaudeLanding />} />
                   <Route path="/sagrada-familia" element={<SagradaFamiliaHomePage />} />
                   <Route path="/sagrada-familia/thank-you" element={<SagradaFamiliaThankYouPage />} />
                   <Route path="/admin-login" element={<AdminLoginPage />} />
                   <Route path="/admin-dashboard" element={<ProtectedRoute><AdminDashboardPage /></ProtectedRoute>} />
-                  <Route path="/sulamerica" element={<SulamericaPage />} />
+
                   <Route path="/encontre-seu-plano" element={<EncontreSeuPlanoPage />} />
                   <Route path="/odontologico" element={<OdontologicoPage />} />
                   <Route path="/seguro-vida" element={<SeguroVidaPage />} />
@@ -233,23 +140,36 @@ const AppContent = () => {
                   <Route path="/seguro-auto" element={<SeguroAutoPage />} />
                   <Route path="/protecao-veicular" element={<ProtecaoVeicularPage />} />
                   <Route path="/loovi" element={<LooviPage />} />
-                  <Route path="/porto" element={<PortoPage />} />
-                  <Route path="/medsenior" element={<MedSeniorPage />} />
+                  <Route path="/consorcios" element={<ConsorciosPage />} />
+                  <Route path="/seguro-empresa" element={<SeguroEmpresaPage />} />
+
                   <Route path="/hapvida" element={<HapvidaPage />} />
-                  <Route path="/hapvida-ribeirao-preto" element={<HapvidaRibeiraoPretoPage />} />
                   <Route path="/hapvida-campinas" element={<HapvidaCampinasPage />} />
+                  <Route path="/hapvida-ribeirao-preto" element={<HapvidaRibeiraoPretoPage />} />
                   <Route path="/hapvida-sao-bernardo-do-campo" element={<HapvidaSaoBernardoPage />} />
                   <Route path="/hapvida-sorocaba" element={<HapvidaSorocabaPage />} />
-                  <Route path="/bradescosaude-campinas" element={<BradescoCampinasPage />} />
-                  <Route path="/bradescosaude-sao-bernardo-do-campo" element={<BradescoSaoBernardoPage />} />
-                  <Route path="/bradescosaude-sorocaba" element={<BradescoSorocabaPage />} />
-                  <Route path="/bradescosaude-ribeirao-preto" element={<BradescoRibeiraoPretoPage />} />
-                  <Route path="/medsenior-campinas" element={<MedSeniorCampinasPage />} />
-                  <Route path="/medsenior-sao-bernardo-do-campo" element={<MedSeniorSaoBernardoPage />} />
+                  <Route path="/amil" element={<AmilPage />} />
                   <Route path="/amil-campinas" element={<AmilCampinasPage />} />
+                  <Route path="/amil-ribeirao-preto" element={<AmilRibeiraoPretoPage />} />
                   <Route path="/amil-sao-bernardo-do-campo" element={<AmilSaoBernardoPage />} />
                   <Route path="/amil-sorocaba" element={<AmilSorocabaPage />} />
-                  <Route path="/amil-ribeirao-preto" element={<AmilRibeiraoPretoPage />} />
+                  <Route path="/bradescosaude" element={<BradescosaudePage />} />
+                  <Route path="/bradescosaude-campinas" element={<BradescoCampinasPage />} />
+                  <Route path="/bradescosaude-ribeirao-preto" element={<BradescoRibeiraoPretoPage />} />
+                  <Route path="/bradescosaude-sao-bernardo-do-campo" element={<BradescoSaoBernardoPage />} />
+                  <Route path="/bradescosaude-sorocaba" element={<BradescoSorocabaPage />} />
+                  <Route path="/medsenior" element={<MedSeniorPage />} />
+                  <Route path="/medsenior-campinas" element={<MedSeniorCampinasPage />} />
+                  <Route path="/medsenior-sao-bernardo-do-campo" element={<MedSeniorSaoBernardoPage />} />
+                  <Route path="/sulamerica" element={<SulamericaPage />} />
+                  <Route path="/sulamerica-campinas" element={<SulamericaCampinasPage />} />
+                  <Route path="/sulamerica-ribeirao-preto" element={<SulamericaRibeiraoPretoPage />} />
+                  <Route path="/sulamerica-sao-bernardo-do-campo" element={<SulamericaSaoBernardoPage />} />
+                  <Route path="/sulamerica-sorocaba" element={<SulamericaSorocabaPage />} />
+                  <Route path="/unimed" element={<UnimeduniplanPage />} />
+                  <Route path="/porto" element={<PortoPage />} />
+                  <Route path="/alice" element={<AlicePage />} />
+
                   <Route path="/garantia-saude" element={<GarantiaSaudePage />} />
                   <Route path="/sao-miguel" element={<SaoMiguelPage />} />
                   <Route path="/trasmontano" element={<TrasmontanoPage />} />
@@ -257,12 +177,7 @@ const AppContent = () => {
                   <Route path="/plena-saude" element={<PlenaSaudePage />} />
                   <Route path="/biovida" element={<BiovidaPage />} />
                   <Route path="/unihosp" element={<UnihospPage />} />
-                  <Route path="/alice" element={<AlicePage />} />
-                  <Route path="/amil" element={<AmilPage />} />
-                  <Route path="/bradescosaude" element={<BradescosaudePage />} />
-                  <Route path="/unimed" element={<UnimeduniplanPage />} />
-                  <Route path="/consorcios" element={<ConsorciosPage />} />
-                  <Route path="/seguro-empresa" element={<SeguroEmpresaPage />} />
+
                   <Route path="/thank-you" element={<ThankYouPage />} />
                   <Route path="/obrigado" element={<ThankYouPage />} />
                   <Route path="/blog" element={<BlogPage />} />
@@ -271,6 +186,8 @@ const AppContent = () => {
                   <Route path="/planos-saude" element={<Navigate to="/encontre-seu-plano" replace />} />
                   <Route path="/health-plans" element={<Navigate to="/encontre-seu-plano" replace />} />
                   <Route path="/seguros-auto" element={<Navigate to="/seguro-auto" replace />} />
+                  <Route path="/contato" element={<Navigate to="/" replace />} />
+                  <Route path="/online-quote" element={<Navigate to="/encontre-seu-plano" replace />} />
                   <Route path="/customer-support" element={<Navigate to="/" replace />} />
                   <Route path="*" element={<HomePage />} />
                 </Routes>

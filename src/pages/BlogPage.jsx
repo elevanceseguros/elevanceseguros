@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom';
 import { postsData } from '@/data/posts';
 import { ChevronRight, Clock, Tag } from 'lucide-react';
 
+const BLOG_SLUG_ALIASES = {
+  'responsabilidade-civil-do-e-o-o-que-e-e-quem-precisa': 'seguro-responsabilidade-civil-diretores-gestores',
+};
+
+const getPublicSlug = (slug) => BLOG_SLUG_ALIASES[slug] || slug;
+
 const BlogPage = () => {
   return (
     <>
@@ -26,7 +32,7 @@ const BlogPage = () => {
 
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
         {[...postsData].reverse().map((post) => (
-          <Link to={`/blog/${post.slug}`} key={post.id}
+          <Link to={`/blog/${getPublicSlug(post.slug)}`} key={post.id}
             className="group bg-white rounded-[40px] overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
 
             {/* IMAGEM com badge de tempo sobreposto */}
