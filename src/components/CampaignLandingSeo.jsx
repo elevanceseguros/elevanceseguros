@@ -10,12 +10,19 @@ const SEO = {
     image: 'https://www.elevanceseguros.com/preview.webp',
     noindex: true,
   },
-  sagrada: {
-    title: 'Plano Sagrada Família | Cotação Gratuita | Elevance Seguros',
-    description: 'Plano Sagrada Família em São Paulo com cotação gratuita, tabela atualizada e atendimento da Elevance Seguros pelo WhatsApp.',
-    canonical: 'https://www.elevanceseguros.com/sagrada-familia',
-    image: 'https://www.elevanceseguros.com/logos/sagrada-familia-logo.png',
+  sagradaSubdomain: {
+    title: 'Plano Sagrada Família SP | Tabela e Cotação Gratuita',
+    description: 'Plano de Saúde Sagrada Família em São Paulo com tabela atualizada, hospitais próprios e cotação gratuita pelo WhatsApp.',
+    canonical: 'https://sagradafamilia.elevanceseguros.com',
+    image: 'https://sagradafamilia.elevanceseguros.com/logos/sagrada-familia-logo.png',
     noindex: false,
+  },
+  sagradaLegacyPath: {
+    title: 'Plano Sagrada Família | Elevance Seguros',
+    description: 'Rota interna da landing Sagrada Família da Elevance Seguros.',
+    canonical: 'https://sagradafamilia.elevanceseguros.com',
+    image: 'https://sagradafamilia.elevanceseguros.com/logos/sagrada-familia-logo.png',
+    noindex: true,
   },
 };
 
@@ -23,7 +30,8 @@ function getSeo(pathname) {
   const hostname = typeof window !== 'undefined' ? window.location.hostname : '';
 
   if (hostname.startsWith('saude.') || pathname === '/saude') return SEO.saude;
-  if (hostname.startsWith('sagradafamilia.') || pathname === '/sagrada-familia') return SEO.sagrada;
+  if (hostname.startsWith('sagradafamilia.')) return SEO.sagradaSubdomain;
+  if (pathname === '/sagrada-familia') return SEO.sagradaLegacyPath;
 
   return null;
 }
