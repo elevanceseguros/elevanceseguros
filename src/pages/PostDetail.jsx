@@ -1,16 +1,35 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { postsData } from '@/data/posts';
 import { ArrowLeft, MessageCircle, Clock, Tag } from 'lucide-react';
 
+const OLD_DO_SLUG = 'responsabilidade-civil-do-e-o-o-que-e-e-quem-precisa';
+const CLEAN_DO_SLUG = 'seguro-responsabilidade-civil-diretores-gestores';
+
+const BLOG_SLUG_ALIASES = {
+  [OLD_DO_SLUG]: CLEAN_DO_SLUG,
+};
+
+const BLOG_CANONICAL_TO_DATA_SLUG = {
+  [CLEAN_DO_SLUG]: OLD_DO_SLUG,
+};
+
+const getPublicSlug = (slug) => BLOG_SLUG_ALIASES[slug] || slug;
+
 const PostDetail = () => {
   const { slug } = useParams();
-  const post = postsData.find((p) => p.slug === slug);
+
+  if (BLOG_SLUG_ALIASES[slug]) {
+    return <Navigate to={`/blog/${BLOG_SLUG_ALIASES[slug]}`} replace />;
+  }
+
+  const dataSlug = BLOG_CANONICAL_TO_DATA_SLUG[slug] || slug;
+  const post = postsData.find((p) => p.slug === dataSlug);
+  const publicSlug = post ? getPublicSlug(post.slug) : slug;
   const whatsappUrl = `https://wa.me/5511920144864?text=Olá Rodrigo, li seu artigo sobre ${post?.title}`;
 
-  // Posts relacionados (exceto o atual)
-  const relacionados = postsData.filter(p => p.slug !== slug).slice(0, 2);
+  const relacionados = postsData.filter(p => p.slug !== dataSlug).slice(0, 2);
 
   if (!post) return (
     <div className="py-40 text-center">
@@ -24,11 +43,16 @@ const PostDetail = () => {
       <Helmet>
         <title>{post.title} | Blog Elevance Seguros</title>
         <meta name="description" content={post.excerpt || post.title} />
-        <link rel="canonical" href={`https://www.elevanceseguros.com/blog/${post.slug}`} />
-              <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Elevance Seguros" />
-        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
+        <link rel="canonical" href={`https://www.elevanceseguros.com/blog/${publicSlug}`} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={`${post.title} | Blog Elevance Seguros`} />
+        <meta property="og:description" content={post.excerpt || post.title} />
+        <meta property="og:url" content={`https://www.elevanceseguros.com/blog/${publicSlug}`} />
+        <meta property="og:image" content={post.image || 'https://www.elevanceseguros.com/preview.webp'} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${post.title} | Blog Elevance Seguros`} />
+        <meta name="twitter:description" content={post.excerpt || post.title} />
+        <meta name="twitter:image" content={post.image || 'https://www.elevanceseguros.com/preview.webp'} />
       </Helmet>
       <article className="max-w-3xl mx-auto px-4">
 
@@ -88,7 +112,7 @@ const PostDetail = () => {
             <h3 className="text-xl font-black text-[#0d1f3c] italic mb-6">Leia também</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {relacionados.map(rel => (
-                <Link key={rel.slug} to={`/blog/${rel.slug}`}
+                <Link key={rel.slug} to={`/blog/${getPublicSlug(rel.slug)}`}
                   className="group bg-slate-50 rounded-[24px] overflow-hidden border border-slate-100 hover:shadow-md transition-all">
                   <img src={rel.image} alt={rel.title} className="w-full h-40 object-cover" />
                   <div className="p-5">
