@@ -13,19 +13,20 @@ const BradescoRibeiraoPretoPage = () => {
   }, []);
 
   const benefits = [
-    "Maior rede credenciada do país, presente em Ribeirão Preto",
-    "Acesso ao Hospital São Lucas e Hospital São Lucas Ribeirânia",
-    "Maternidade Sinhá Junqueira na rede credenciada",
-    "Cobertura também para Sertãozinho e região",
-    "Plano empresarial PME a partir de 3 vidas"
+    "Rede credenciada com hospitais de referência no interior paulista",
+    "Fleury credenciado em Ribeirão Preto nos planos Nacional Plus e superiores",
+    "Linhas Nacional, Nacional Plus e Premium disponíveis na região",
+    "MEI e PME aceitos — CNPJ ativo há 6 meses, a partir de 2 vidas",
+    "Cobertura para urgência e emergência em toda a rede nacional",
+    "Bradesco Saúde Concierge para planos Premium — salas VIP em hospitais parceiros",
   ];
 
   return (
     <>
       <Helmet>
         <title>Plano Bradesco em Ribeirão Preto | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde Bradesco Saúde PME em Ribeirão Preto. Rede credenciada com Hospital São Lucas, São Lucas Ribeirânia e Maternidade Sinhá Junqueira. Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="Bradesco Saúde Ribeirão Preto, plano de saúde empresarial Ribeirão Preto, Bradesco PME Ribeirão Preto, cotação Bradesco Saúde Ribeirão Preto" />
+        <meta name="description" content="Plano Bradesco Saúde em Ribeirão Preto: rede credenciada premium, Fleury, linhas Nacional e Nacional Plus. MEI aceito. Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="Bradesco Saúde Ribeirão Preto, plano de saúde Ribeirão Preto, cotação Bradesco interior paulista" />
         <link rel="canonical" href="https://www.elevanceseguros.com/bradescosaude-ribeirao-preto" />
 
         <script type="application/ld+json">{`${JSON.stringify({

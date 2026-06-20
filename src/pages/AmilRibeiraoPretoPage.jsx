@@ -13,19 +13,20 @@ const AmilRibeiraoPretoPage = () => {
   }, []);
 
   const benefits = [
-    "Cobertura nacional com rede credenciada em Ribeirão Preto",
-    "Acesso aos melhores consultórios, clínicas e laboratórios da cidade",
-    "Telemedicina 24h com Amil Ligue Saúde",
-    "Descontos em medicamentos nas Drogarias São Paulo e Pacheco",
-    "Cobertura especial para viagens internacionais"
+    "Amil Fácil S80 inclui Ribeirão Preto e mais de 110 municípios paulistas",
+    "Planos nacionais (Prata, Ouro, Platinum) com acesso a toda a rede credenciada SP",
+    "MEI aceito a partir de 2 vidas com CNPJ ativo há 6 meses",
+    "Amil Dental incluso por 12 meses nos planos empresariais",
+    "Telemedicina 24h com profissionais especializados",
+    "Portabilidade disponível para quem já tem outro plano há mais de 12 meses",
   ];
 
   return (
     <>
       <Helmet>
         <title>Plano Amil em Ribeirão Preto | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde Amil em Ribeirão Preto. Rede credenciada com cobertura nacional, telemedicina 24h e descontos em medicamentos. Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="Amil Ribeirão Preto, plano de saúde Amil Ribeirão Preto, cotação Amil Ribeirão Preto, convênio Amil Ribeirão Preto" />
+        <meta name="description" content="Plano Amil em Ribeirão Preto: Amil Fácil S80 com cobertura regional, planos nacionais Prata, Ouro e Platinum. MEI aceito. Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="Amil Ribeirão Preto, plano de saúde Ribeirão Preto, cotação Amil interior paulista, Amil Fácil" />
         <link rel="canonical" href="https://www.elevanceseguros.com/amil-ribeirao-preto" />
 
         <script type="application/ld+json">{`${JSON.stringify({

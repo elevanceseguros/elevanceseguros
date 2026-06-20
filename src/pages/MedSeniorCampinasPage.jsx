@@ -13,19 +13,20 @@ const MedSeniorCampinasPage = () => {
   }, []);
 
   const benefits = [
-    "Unidade própria MedSênior no Botafogo, Campinas",
-    "Atendimento especializado e humanizado para a terceira idade",
-    "Acesso ao Hospital Renascença (ONA Nível 3)",
-    "Cobertura também no Hospital Santa Tereza e Vera Cruz",
-    "Foco em medicina preventiva para o bem envelhecer"
+    "Plano sem coparticipação — mensalidade fixa, consultas e exames sem custo adicional",
+    "Especializado em 49+: rede credenciada com foco em geriatria e medicina preventiva",
+    "Programa Bem Envelhecer disponível em Campinas com suporte presencial e digital",
+    "PA Virtual 24h — teleconsulta com emissão de receitas sem sair de casa",
+    "PME Corporate disponível para empresas com colaboradores na faixa sênior",
+    "Campinas: tabela própria com valores diferenciados do interior paulista",
   ];
 
   return (
     <>
       <Helmet>
         <title>Plano MedSênior em Campinas | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde MedSênior em Campinas, com unidade própria no Botafogo e rede credenciada incluindo Hospital Renascença e Santa Tereza. Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="MedSênior Campinas, plano de saúde idoso Campinas, MedSênior melhor idade Campinas, cotação MedSênior Campinas" />
+        <meta name="description" content="Plano MedSênior em Campinas: exclusivo para 49+, sem coparticipação. Programa Bem Envelhecer, PA Virtual 24h. PME Corporate disponível. Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="MedSênior Campinas, plano saúde idoso Campinas, plano 49 anos Campinas, cotação MedSênior Campinas" />
         <link rel="canonical" href="https://www.elevanceseguros.com/medsenior-campinas" />
 
         <script type="application/ld+json">{`${JSON.stringify({

@@ -13,19 +13,20 @@ const AmilSorocabaPage = () => {
   }, []);
 
   const benefits = [
-    "Cobertura nacional com rede credenciada em Sorocaba",
-    "Atendimento também em Votorantim e região metropolitana",
-    "Telemedicina 24h com Amil Ligue Saúde",
-    "Amil Espaço Saúde com apoio do médico de família",
-    "Opção de reembolso para consultas e exames"
+    "Amil Fácil S80 inclui Sorocaba e Votorantim — cobertura regional acessível",
+    "Planos nacionais (Prata ao Black) a partir de Sorocaba com rede ampla em SP",
+    "MEI aceito com CNPJ ativo há 6 meses, a partir de 2 vidas",
+    "Amil Dental incluso por 12 meses nos planos PME",
+    "Telemedicina e acesso ao app Amil disponíveis em todos os planos",
+    "Portabilidade de carências disponível para quem já tem plano há mais de 12 meses",
   ];
 
   return (
     <>
       <Helmet>
         <title>Plano Amil em Sorocaba | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde Amil em Sorocaba. Rede credenciada com cobertura nacional, atendimento na região metropolitana e telemedicina 24h. Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="Amil Sorocaba, plano de saúde Amil Sorocaba, cotação Amil Sorocaba, convênio Amil Sorocaba" />
+        <meta name="description" content="Plano Amil em Sorocaba: Amil Fácil S80 com cobertura regional. Planos nacionais Prata, Ouro e Platinum. MEI aceito. Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="Amil Sorocaba, plano de saúde Sorocaba, cotação Amil Sorocaba, Amil Fácil S80, plano saúde Votorantim" />
         <link rel="canonical" href="https://www.elevanceseguros.com/amil-sorocaba" />
 
         <script type="application/ld+json">{`${JSON.stringify({

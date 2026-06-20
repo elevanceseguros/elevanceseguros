@@ -13,19 +13,20 @@ const HapvidaSaoBernardoPage = () => {
   }, []);
 
   const benefits = [
-    "Maior rede própria do ABC Paulista — 8 unidades na cidade",
-    "Hospital São Bernardo: referência em Hemodinâmica",
-    "Maternidade NotreCare ABC com Medicina Fetal exclusiva",
-    "Mais de 350 leitos na rede própria local",
-    "Pronto-Socorro 24h e laboratórios próprios"
+    "8 unidades próprias no ABC — maior rede Hapvida do ABC Paulista",
+    "Hospital NotreCare ABC — única maternidade com Medicina Fetal do Brasil nessa rede",
+    "Hospital São Bernardo com Hemodinâmica — referência regional em cardiologia intervencionista",
+    "3 laboratórios próprios com funcionamento noturno para exames urgentes",
+    "PME/MEI a partir de R$ 88,94/mês — cidade industrial com alta demanda por plano empresarial",
+    "Volkswagen, Mercedes-Benz e demais montadoras do ABCD reconhecem a qualidade da rede",
   ];
 
   return (
     <>
       <Helmet>
         <title>Plano Hapvida em São Bernardo | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde Hapvida em São Bernardo do Campo. Maior rede própria do ABC: Hospital São Bernardo, Maternidade NotreCare ABC, mais de 350 leitos. Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="Hapvida São Bernardo do Campo, plano de saúde São Bernardo, Hospital São Bernardo Hapvida, cotação Hapvida ABC" />
+        <meta name="description" content="Plano Hapvida em São Bernardo do Campo: 8 unidades próprias, Hospital NotreCare ABC (Medicina Fetal), Hospital São Bernardo (Hemodinâmica). PME a partir de R$ 88,94/mês." />
+        <meta name="keywords" content="Hapvida São Bernardo do Campo, plano de saúde ABC, Hospital NotreCare, cotação Hapvida São Bernardo, plano empresarial ABCD" />
         <link rel="canonical" href="https://www.elevanceseguros.com/hapvida-sao-bernardo-do-campo" />
 
         <script type="application/ld+json">{`${JSON.stringify({

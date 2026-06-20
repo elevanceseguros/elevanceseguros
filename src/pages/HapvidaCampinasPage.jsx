@@ -13,19 +13,20 @@ const HapvidaCampinasPage = () => {
   }, []);
 
   const benefits = [
-    "Hospital Renascença — certificação máxima ONA Nível 3",
-    "Rede própria estruturada em Campinas",
-    "Cobertura em Cambuí, Barão Geraldo, Taquaral e Nova Campinas",
-    "Atendimento integrado em toda a região metropolitana",
-    "Telemedicina e app disponíveis 24h"
+    "Hospital Renascença Campinas — única unidade com certificação ONA Nível 3 no interior paulista",
+    "Rede própria em Cambuí, Barão Geraldo, Taquaral, Nova Campinas e Jardim Guanabara",
+    "PME/MEI a partir de R$ 84,53/mês — até 30% mais barato que o plano individual equivalente",
+    "Campinas é HUB regional: cobertura estende-se a Valinhos, Vinhedo, Paulínia e Hortolândia",
+    "Telemedicina 24h via Super App sem custo adicional",
+    "Aprovação em até 24h para planos empresariais com CNPJ ativo há 6 meses",
   ];
 
   return (
     <>
       <Helmet>
         <title>Plano Hapvida em Campinas | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde Hapvida em Campinas. Rede própria com o Hospital Renascença (certificação ONA Nível 3), cobertura em Cambuí, Barão Geraldo, Taquaral e região. Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="Hapvida Campinas, plano de saúde Campinas, Hospital Renascença Campinas, cotação Hapvida Campinas" />
+        <meta name="description" content="Plano Hapvida em Campinas: Hospital Renascença (ONA Nível 3), cobertura em Cambuí, Barão Geraldo, Taquaral. PME a partir de R$ 84,53/mês. Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="Hapvida Campinas, plano de saúde Campinas, Hospital Renascença Campinas, cotação Hapvida Campinas, plano saúde interior paulista" />
         <link rel="canonical" href="https://www.elevanceseguros.com/hapvida-campinas" />
 
         <script type="application/ld+json">{`${JSON.stringify({

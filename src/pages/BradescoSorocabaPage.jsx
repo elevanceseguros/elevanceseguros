@@ -13,19 +13,20 @@ const BradescoSorocabaPage = () => {
   }, []);
 
   const benefits = [
-    "Maior rede credenciada do país, presente em Sorocaba",
-    "Acesso ao Hospital e Maternidade Samaritano Sorocaba",
-    "Cobertura também na Fundação Santa Casa de Sorocaba",
-    "Atendimento de pronto-socorro e internação",
-    "Plano empresarial PME a partir de 3 vidas"
+    "Rede credenciada ampla em Sorocaba nas linhas Efetivo Plus e Nacional",
+    "Mais de 190 hospitais credenciados em SP — cobertura estende-se à região metropolitana",
+    "MEI e PME aceitos a partir de 2 vidas com CNPJ ativo há 6 meses",
+    "Linhas Nacional e Nacional Plus disponíveis com cobertura nacional completa",
+    "Cobertura para urgência em todo o Brasil independente da linha contratada",
+    "Gestão corporativa do plano via portal Bradesco Saúde para empresas",
   ];
 
   return (
     <>
       <Helmet>
         <title>Plano Bradesco Saúde em Sorocaba | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde Bradesco Saúde PME em Sorocaba. Rede credenciada com Hospital e Maternidade Samaritano Sorocaba e Fundação Santa Casa. Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="Bradesco Saúde Sorocaba, plano de saúde empresarial Sorocaba, Bradesco PME Sorocaba, cotação Bradesco Saúde Sorocaba" />
+        <meta name="description" content="Plano Bradesco Saúde em Sorocaba: rede credenciada premium, linhas Nacional e Nacional Plus. MEI aceito. Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="Bradesco Saúde Sorocaba, plano de saúde Sorocaba, cotação Bradesco Sorocaba, PME Sorocaba" />
         <link rel="canonical" href="https://www.elevanceseguros.com/bradescosaude-sorocaba" />
 
         <script type="application/ld+json">{`${JSON.stringify({

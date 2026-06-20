@@ -13,19 +13,20 @@ const HapvidaSorocabaPage = () => {
   }, []);
 
   const benefits = [
-    "Hospital Modelo: certificação máxima ONA Nível 3",
-    "Maternidade referência com Método Canguru",
-    "Hospital NotreCare com Pronto-Socorro 24h",
-    "Dois hospitais próprios na cidade",
-    "Centro Qualivida de medicina preventiva"
+    "Hospital Modelo (ONA Nível 3) — referência em maternidade e cirurgias de alta complexidade em Sorocaba",
+    "Hospital NotreCare Sorocaba — pronto-socorro 24h para urgências gerais",
+    "Método Canguru e Hospital Amigo da Criança no Hospital Modelo",
+    "2ª maior cidade do interior paulista com rede estruturada para a região metropolitana",
+    "PME/MEI aceito com CNPJ ativo há 6 meses — compra de carência disponível para quem já tem outro plano",
+    "Odonto Interodonto incluído em promoções para planos contratados na região",
   ];
 
   return (
     <>
       <Helmet>
         <title>Plano Hapvida em Sorocaba | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde Hapvida em Sorocaba. Rede própria com Hospital Modelo (ONA Nível 3, maternidade referência) e Hospital NotreCare (PS 24h). Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="Hapvida Sorocaba, plano de saúde Sorocaba, Hospital Modelo Sorocaba, NotreDame Sorocaba, cotação Hapvida Sorocaba" />
+        <meta name="description" content="Plano Hapvida em Sorocaba: Hospital Modelo (ONA Nível 3, Método Canguru) e Hospital NotreCare 24h. PME/MEI aceito. Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="Hapvida Sorocaba, plano de saúde Sorocaba, Hospital Modelo Sorocaba, Hospital NotreCare, cotação Hapvida Sorocaba" />
         <link rel="canonical" href="https://www.elevanceseguros.com/hapvida-sorocaba" />
 
         <script type="application/ld+json">{`${JSON.stringify({

@@ -13,19 +13,20 @@ const AmilSaoBernardoPage = () => {
   }, []);
 
   const benefits = [
-    "Cobertura nacional com rede credenciada no ABC Paulista",
-    "Atendimento em São Bernardo, Santo André e São Caetano",
-    "Telemedicina 24h com Amil Ligue Saúde",
-    "Amil Espaço Saúde com apoio do médico de família",
-    "Opção de reembolso para consultas e exames"
+    "Bronze SP Mais inclui São Bernardo do Campo — plano de entrada com rede regional",
+    "Rede de hospitais no ABCD: Santa Marcelina, Hospital SAMCI e credenciados parceiros",
+    "Planos nacionais (Prata ao Black) com acesso a hospitais de alta referência em SP",
+    "MEI e PME aceitos a partir de 2 vidas — CNPJ ativo há 6 meses",
+    "Amil Dental incluso 12 meses · BeepSaúde coleta domiciliar nos planos superiores",
+    "São Bernardo incluído no Bronze SP Mais — cobertura da capital até o ABCD",
   ];
 
   return (
     <>
       <Helmet>
         <title>Plano Amil em São Bernardo | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde Amil em São Bernardo do Campo. Rede credenciada com cobertura nacional, atendimento no ABC Paulista e telemedicina 24h. Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="Amil São Bernardo do Campo, plano de saúde Amil ABC, cotação Amil São Bernardo, convênio Amil ABC Paulista" />
+        <meta name="description" content="Plano Amil em São Bernardo do Campo: Bronze SP Mais cobre o ABC. Planos nacionais com Einstein e Sírio. MEI aceito. Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="Amil São Bernardo, plano de saúde ABC, cotação Amil São Bernardo, Amil Bronze SP Mais ABCD" />
         <link rel="canonical" href="https://www.elevanceseguros.com/amil-sao-bernardo-do-campo" />
 
         <script type="application/ld+json">{`${JSON.stringify({

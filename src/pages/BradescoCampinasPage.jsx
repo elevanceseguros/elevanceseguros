@@ -13,19 +13,20 @@ const BradescoCampinasPage = () => {
   }, []);
 
   const benefits = [
-    "Maior rede credenciada do país, presente em Campinas",
-    "Acesso ao Hospital Vera Cruz, São Luiz e Beneficência Portuguesa",
-    "Hospital Madre Theodora para maternidade e alta complexidade",
-    "Centro Infantil Boldrini, referência em oncologia pediátrica",
-    "Plano empresarial PME a partir de 3 vidas"
+    "Hospital São Luiz Campinas acessível nos planos Nacional Plus e superiores",
+    "Laboratório Fleury credenciado em Campinas nas linhas premium",
+    "Mais de 190 hospitais credenciados no estado de SP — maior rede do interior",
+    "MEI aceito a partir de 2 vidas com CNPJ ativo há 6 meses",
+    "Campinas incluída nas linhas Efetivo Plus, Nacional, Nacional Plus e Premium",
+    "Cobertura para área metropolitana: Valinhos, Vinhedo, Hortolândia, Sumaré e Paulínia",
   ];
 
   return (
     <>
       <Helmet>
         <title>Plano Bradesco Saúde em Campinas | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde Bradesco Saúde PME em Campinas. Rede credenciada com Hospital Vera Cruz, São Luiz Campinas, Beneficência Portuguesa e Madre Theodora. Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="Bradesco Saúde Campinas, plano de saúde empresarial Campinas, Bradesco PME Campinas, cotação Bradesco Saúde Campinas" />
+        <meta name="description" content="Plano Bradesco Saúde em Campinas: Hospital São Luiz, Fleury credenciado. Linhas Nacional Plus e Premium disponíveis. MEI aceito. Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="Bradesco Saúde Campinas, plano de saúde Campinas, Hospital São Luiz Campinas, cotação Bradesco Campinas" />
         <link rel="canonical" href="https://www.elevanceseguros.com/bradescosaude-campinas" />
 
         <script type="application/ld+json">{`${JSON.stringify({

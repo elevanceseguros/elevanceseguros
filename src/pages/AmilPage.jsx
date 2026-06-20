@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { CheckCircle2, ShieldCheck, Heart, MessageCircle, ArrowRight } from 'lucide-react';
+import { CheckCircle2, ShieldCheck, MessageCircle, ArrowRight } from 'lucide-react';
 import OperatorQuoteForm from '@/components/OperatorQuoteForm';
 import ScrollCTA from '@/components/ScrollCTA';
 import FAQ from '@/components/FAQ';
@@ -8,116 +8,118 @@ import CorretorHero from '@/components/CorretorHero';
 import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
 const AmilPage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
-  const benefits = ["Uma das maiores redes credenciadas do Brasil", "Hospitais de referência como Albert Einstein e Sírio-Libanês", "Planos individuais, familiares e empresariais", "Cobertura ambulatorial e hospitalar completa", "Serviço de pronto-atendimento 24h"];
+  const benefits = [
+    "PF/Individual disponível em regiões selecionadas · Adesão via entidade (OAB, CRM, CREA etc.) · PME a partir de 2 vidas",
+    "Bronze SP (regional SP+ABC), Bronze SP Mais (incluindo Campinas) até Black e One (nacionais)",
+    "Amil Dental incluso por 12 meses nos planos PME e Adesão sem custo adicional",
+    "BeepSaúde: coleta domiciliar de exames disponível nos planos superiores",
+    "Amil Resgate e telemedicina integrados com médicos do Einstein",
+    "Bronze SP MEI: R$ 150,46/mês · Adesão: R$ 223,04/mês · Empresarial: R$ 125,90/mês (faixa 0-18)",
+  ];
 
   return (
     <>
       <Helmet>
         <title>Plano Amil | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde Amil em São Paulo 2026. Tabela de preços atualizada, rede com Albert Einstein e Sírio-Libanês. Cotação gratuita com corretor especializado." />
-        <meta name="keywords" content="plano Amil São Paulo, Amil saúde SP, cotação Amil SP, plano Amil individual, Amil familiar São Paulo, tabela Amil 2026" />
+        <meta name="description" content="Plano Amil SP 2026: linhas Bronze SP, Prata, Ouro, Platinum, Black e One. PME a partir de R$ 125,90/mês. Amil Dental incluso 12 meses. Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="plano amil, amil saúde SP, amil bronze, amil PME, amil MEI, amil adesão, plano de saúde amil 2026" />
         <link rel="canonical" href="https://www.elevanceseguros.com/amil" />
-      
         <script type="application/ld+json">{`${JSON.stringify({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
-            {"@type": "ListItem", "position": 2, "name": "Plano Amil", "item": "https://www.elevanceseguros.com/amil"}
+            {"@type": "ListItem", "position": 2, "name": "Amil", "item": "https://www.elevanceseguros.com/amil"}
           ]
         })}`}</script>
-              <meta property="og:type" content="website" />
-        <meta property="og:title" content="Plano de Saúde Amil em São Paulo | Tabela 2026 - Elevance" />
-        <meta property="og:description" content="Plano Amil em SP com acesso ao Einstein e Sírio-Libanês. Tabela de preços 2026 e cotação gratuita." />
-        <meta property="og:image" content="https://www.elevanceseguros.com/logos/amil.webp" />
-        <meta property="og:url" content="https://www.elevanceseguros.com/amil" />
-        <meta property="og:site_name" content="Elevance Seguros" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Plano de Saúde Amil em São Paulo | Tabela 2026 - Elevance" />
-        <meta name="twitter:description" content="Plano Amil em SP com acesso ao Einstein e Sírio-Libanês. Tabela de preços 2026 e cotação gratuita." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/logos/amil.webp" />
+        <meta name="twitter:title" content="Plano Amil | Elevance Seguros" />
+        <meta name="twitter:description" content="Plano Amil com Amil Dental incluso 12 meses. PME a partir de R$ 125,90." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
       <CorretorHero operadora="Amil" />
 
-      {/* Logo Section */}
       <div className="pt-6 pb-4 flex justify-center items-center bg-white">
-        <img className="animate-fade-in"
-          src="/logos/amil.webp" 
-          alt="Logo Amil" 
-          className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}} loading="lazy" decoding="async"
-        />
+        <img src="/logos/amil.webp" alt="Logo Amil Saúde" className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}} loading="lazy" decoding="async" />
       </div>
 
-      {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-[#1e3a5f]">
-        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden bg-[#0066cc]">
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 80%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in"
-            >
-              <div className="inline-block bg-blue-100 text-yellow-300 px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4" /> Ampla rede credenciada
+            <div>
+              <div className="inline-block bg-blue-100 text-blue-900 px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4" /> Amil Dental incluso 12 meses
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
-                Plano de Saúde Amil em SP: <span className="text-[#0d1f3c]">veja tabela e cobertura 2026</span>
+                Plano Amil: do regional ao premium, com <span className="text-yellow-300">odonto incluso</span>
               </h1>
               <p className="text-xl text-white/80 mb-8 leading-relaxed">
-                A Amil é uma das maiores operadoras de saúde do Brasil, com ampla rede credenciada em São Paulo e em todo o país. Planos individuais, familiares e empresariais com cobertura completa.
+                A Amil oferece o portfólio mais flexível do mercado — do plano Bronze SP (mais econômico, rede regional) ao One (rede nacional com Sírio-Libanês e reembolso ilimitado). Para PME e adesão, o Amil Dental vem incluso por 12 meses sem custo adicional.
               </p>
-              
               <ul className="space-y-4 mb-8">
                 {benefits.map((item, idx) => (
                   <li key={idx} className="flex items-center gap-3 text-white/90 font-medium">
-                    <CheckCircle2 className="w-5 h-5 text-white/70 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-yellow-300 flex-shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
-
-            <div className="animate-fade-in"
-            >
-              <OperatorQuoteForm operatorName="Amil" />
-            </div>
+            <div><OperatorQuoteForm operatorName="Amil" /></div>
           </div>
         </div>
       </section>
 
       <OperadoraPlanoSection
         operadora="Amil"
-        cor="#4338ca"
+        cor="#0066cc"
         tabela={[
-          {idade: '00 a 18', enf: 'R$ 235,68', apto: 'R$ 328,50'},
-          {idade: '19 a 23', enf: 'R$ 279,80', apto: 'R$ 390,20'},
-          {idade: '24 a 28', enf: 'R$ 335,75', apto: 'R$ 468,20'}
+          {idade: '00 a 18', enf: 'R$ 125,90 (PME)', apto: 'R$ 223,04 (Adesão)'},
+          {idade: '19 a 23', enf: 'R$ 148,60', apto: 'R$ 263,20'},
+          {idade: '24 a 28', enf: 'R$ 178,30', apto: 'R$ 315,90'},
+          {idade: '29 a 33', enf: 'R$ 213,90', apto: 'R$ 379,00'},
+          {idade: '34 a 38', enf: 'R$ 249,50', apto: 'R$ 441,90'},
+          {idade: '39 a 43', enf: 'R$ 302,30', apto: 'R$ 535,80'},
+          {idade: '44 a 48', enf: 'R$ 389,50', apto: 'R$ 690,50'},
+          {idade: '49 a 53', enf: 'R$ 503,70', apto: 'R$ 892,30'},
+          {idade: '54 a 58', enf: 'R$ 698,00', apto: 'R$ 1.237,00'},
+          {idade: '59 em diante', enf: 'R$ 755,80', apto: 'R$ 1.339,30'},
         ]}
         hospitais={[
-          {nome: 'Hospital Samaritano Paulista', regiao: 'Bela Vista, SP', desc: 'Cirurgias, UTI e emergência 24h.'},
-          {nome: 'Hospital Paulistano', regiao: 'Bela Vista, SP', desc: 'Internações, exames e consultas.'},
-          {nome: 'Hospital Leforte Morumbi', regiao: 'Morumbi, SP', desc: 'Alta complexidade, UTI e maternidade.'},
-          {nome: 'Hospital Metropolitano', regiao: 'Barra Funda, SP', desc: 'Pronto-socorro, cirurgias e internações.'}
+          {nome: 'Hospital Israelita Albert Einstein', regiao: 'São Paulo — Morumbi', desc: 'Credenciado nas linhas Platinum, Black e One. Acesso com telemedicina Einstein inclusa em todos os planos.'},
+          {nome: 'Hospital Sírio-Libanês', regiao: 'São Paulo — Bela Vista', desc: 'Disponível nas linhas Black e One. Um dos três melhores hospitais da América Latina.'},
+          {nome: 'Hospital 9 de Julho', regiao: 'São Paulo — Jardim Paulista', desc: 'Disponível nas linhas Prata e superiores. Referência em cirurgias e internações na capital.'},
+          {nome: 'Hospital Beneficência Portuguesa', regiao: 'São Paulo — Higienópolis', desc: 'Um dos maiores hospitais de SP, credenciado nas linhas nacionais Amil.'},
+          {nome: 'Hospital Samaritano', regiao: 'São Paulo / São Bernardo do Campo', desc: 'Credenciado nas linhas Ouro e superiores. Presente também no ABC Paulista.'},
         ]}
         depoimento={{
           inicial: "C",
-          nome: "Carlos",
-          local: "Guarulhos, SP",
-          texto: "O Rodrigo me ajudou a encontrar o plano Amil ideal para minha família em menos de um dia. Atendimento incrível e sem burocracia!"
+          nome: "Camila",
+          local: "Campinas, SP",
+          texto: "O Rodrigo me ajudou a entender a diferença entre o Bronze SP e o Bronze SP Mais — a inclusão de Campinas na rede fez toda a diferença para mim. Ainda veio com Amil Dental incluso por um ano."
         }}
       />
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Como funciona o plano Amil?</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Linhas Amil: qual escolher para o seu perfil?</h2>
           <div className="prose prose-lg text-slate-600">
-            <p className="mb-4">A Amil oferece planos de saúde com ampla cobertura para consultas, exames, internações e cirurgias. Com mais de 40 anos de mercado, é referência em atendimento médico de qualidade em todo o Brasil.</p>
             <p className="mb-4">
-              Na Elevance Seguros, nosso corretor especializado analisa seu perfil e encontra a melhor opção de plano Amil para você e sua família, com o melhor custo-benefício do mercado.
+              <strong>Bronze SP</strong>: rede regional cobrindo São Paulo capital, ABC Paulista, Guarulhos, Osasco e Baixada Santista. O mais barato da linha Amil — PME a partir de R$ 125,90. Campinas não está incluída nessa linha.
+            </p>
+            <p className="mb-4">
+              <strong>Bronze SP Mais</strong>: amplia o Bronze SP para mais 53 municípios, incluindo Campinas, Hortolândia, Sumaré, Ribeirão Preto, Sorocaba, São Bernardo do Campo e outros. É a escolha para quem mora ou tem negócios no interior paulista.
+            </p>
+            <p className="mb-4">
+              <strong>Prata, Ouro, Platinum, Black e One</strong>: cobertura nacional com rede progressivamente maior e melhores hospitais. O Ouro já inclui o Hospital Samaritano; o Platinum e o Black adicionam Einstein e Sírio; o One tem reembolso ilimitado e acesso à Rede D'Or.
+            </p>
+            <p>
+              Um diferencial que pouca gente sabe: todos os planos Amil PME e Adesão vêm com <strong>Amil Dental incluso por 12 meses</strong>. Após esse período, o valor do dental (R$ 14,50/vida) é cobrado separadamente. É uma vantagem concreta que reduz o custo efetivo no primeiro ano.
             </p>
           </div>
           <div className="mt-10">
@@ -130,27 +132,29 @@ const AmilPage = () => {
         </div>
       </section>
 
-
-      {/* FAQ */}
       <FAQ perguntas={[
-    { pergunta: "A Amil aceita portabilidade de outro plano?", resposta: "Sim! A Amil aceita portabilidade de carências de outros planos, desde que você tenha cumprido o período mínimo de permanência no plano anterior (geralmente 2 anos) e o plano de destino seja compatível em segmentação e preço." },
-    { pergunta: "A Amil cobre o Hospital Albert Einstein?", resposta: "Depende do plano contratado. Os planos Amil One e planos premium têm acesso ao Einstein. Planos intermediários e básicos geralmente não cobrem hospitais de referência como Einstein e Sírio-Libanês. Consulte-nos para verificar qual plano inclui a rede que você precisa." },
-    { pergunta: "Plano Amil individual ainda existe em São Paulo?", resposta: "A Amil reduziu significativamente a oferta de planos individuais em SP. Atualmente, as opções mais acessíveis são os planos coletivos por adesão da Amil. Fale com nosso corretor para verificar as opções disponíveis para sua situação." },
-    { pergunta: "Qual o prazo de carência do plano Amil?", resposta: "As carências padrão da Amil seguem a ANS: 24h para urgência/emergência, 30 dias para consultas, 180 dias para cirurgias e 300 dias para parto normal e cesárea. Em casos de portabilidade, as carências podem ser reduzidas ou eliminadas." }
-  ]} />
+        { pergunta: "A Amil vende plano individual (CPF)?", resposta: "A Amil suspendeu as vendas de planos individuais e coletivos por adesão em 2024 em algumas regiões. Hoje, a contratação principal é via CNPJ (PME/MEI) ou por adesão vinculada a entidade de classe. Para verificar disponibilidade na sua cidade, entre em contato — a situação pode variar por região." },
+        { pergunta: "Campinas está na rede Amil Bronze SP?", resposta: "Não. Campinas está disponível apenas a partir do Bronze SP Mais, que inclui mais de 53 municípios do interior e da Grande SP. Se você mora ou trabalha em Campinas, o plano correto é o Bronze SP Mais ou qualquer linha nacional (Prata em diante)." },
+        { pergunta: "O Amil Dental realmente vem incluso?", resposta: "Sim. Todos os planos Amil PME e Adesão incluem o Amil Dental por 12 meses sem custo adicional. Após esse período, o valor de R$ 14,50 por beneficiário/mês passa a ser cobrado automaticamente. É possível cancelar o dental após os 12 meses gratuitos, se preferir." },
+        { pergunta: "Como funciona o Amil Resgate?", resposta: "O Amil Resgate é um serviço de transporte aeromédico e terrestre para casos de urgência grave. Disponível em todos os planos, o serviço coordena a remoção do paciente de hospitais sem estrutura para unidades de referência da rede Amil, com cobertura 24h em todo o Brasil." },
+        { pergunta: "MEI pode contratar plano Amil?", resposta: "Sim, a partir de 2 vidas (titular + 1 dependente ou 2 sócios). O CNPJ precisa estar ativo há pelo menos 6 meses. Você acessa a tabela PME que pode ser até 40% mais barata que o plano por adesão equivalente." },
+      ]} />
 
-
-
-      {/* Links internos — outras operadoras */}
       <section className="py-8 bg-blue-50 border-t border-blue-100">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Atendemos também em</p>
+          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Amil por cidade</p>
           <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2 mb-6">
-            <a href="/amil-campinas" className="text-[#0d1f3c] font-black hover:underline">Campinas</a> · <a href="/amil-sao-bernardo-do-campo" className="text-[#0d1f3c] font-black hover:underline">São Bernardo do Campo</a> · <a href="/amil-sorocaba" className="text-[#0d1f3c] font-black hover:underline">Sorocaba</a> · <a href="/amil-ribeirao-preto" className="text-[#0d1f3c] font-black hover:underline">Ribeirão Preto</a>
+            <a href="/amil-campinas" className="text-[#0d1f3c] font-black hover:underline">Campinas</a> ·
+            <a href="/amil-ribeirao-preto" className="text-[#0d1f3c] font-black hover:underline">Ribeirão Preto</a> ·
+            <a href="/amil-sao-bernardo-do-campo" className="text-[#0d1f3c] font-black hover:underline">São Bernardo do Campo</a> ·
+            <a href="/amil-sorocaba" className="text-[#0d1f3c] font-black hover:underline">Sorocaba</a>
           </p>
-          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Também trabalhamos com</p>
+          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Outras operadoras</p>
           <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
-            <a href="/bradescosaude" className="text-[#0d1f3c] font-black hover:underline">Bradesco Saúde</a> · <a href="/sulamerica" className="text-[#0d1f3c] font-black hover:underline">SulAmérica</a> · <a href="/hapvida" className="text-[#0d1f3c] font-black hover:underline">Hapvida</a> · <a href="/unimed" className="text-[#0d1f3c] font-black hover:underline">Unimed</a> · <a href="/alice" className="text-[#0d1f3c] font-black hover:underline">Alice</a>
+            <a href="/hapvida" className="text-[#0d1f3c] font-black hover:underline">Hapvida</a> ·
+            <a href="/bradescosaude" className="text-[#0d1f3c] font-black hover:underline">Bradesco Saúde</a> ·
+            <a href="/sulamerica" className="text-[#0d1f3c] font-black hover:underline">SulAmérica</a> ·
+            <a href="/alice" className="text-[#0d1f3c] font-black hover:underline">Alice</a>
           </p>
         </div>
       </section>

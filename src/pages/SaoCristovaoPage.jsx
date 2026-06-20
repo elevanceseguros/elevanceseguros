@@ -9,120 +9,99 @@ import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
 
 const SaoCristovaoPage = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
-
-  const benefits = ["Hospital e maternidade próprios em SP", "Plano individual, familiar e PME", "Aceita MEI — a partir de 1 vida", "Plano Bem-Estar 40+ e Viva Melhor (60+)", "Orientação médica por telefone 24h"];
-
+  const benefits = [
+    "Mais de 100 anos de tradição — uma das operadoras mais consolidadas do mercado paulista",
+    "PF, PME e Adesão disponíveis — flexibilidade completa de contratação",
+    "Linhas Essencial, Conforto, Bem Estar 40+ e Select com cobertura progressiva",
+    "Rede própria de atendimento: hospitais, centros ambulatoriais e unidades especializadas",
+    "Telemedicina, orientação médica 24h e emergência domiciliar incluídos",
+    "Empresarial a partir de R$ 222,06 · Individual a partir de R$ 388,99 (enfermaria)",
+  ];
   return (
     <>
       <Helmet>
         <title>Plano São Cristóvão Saúde | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="A São Cristóvão Saúde tem hospital e maternidade próprios em São Paulo, com planos para pessoa física, MEI e empresas. Ótimo custo-benefício para quem vive na Grande São Paulo." />
-        <meta name="keywords" content="São Cristóvão Saúde plano, cotação São Cristóvão SP, plano saúde individual São Paulo São Cristóvão" />
+        <meta name="description" content="Plano São Cristóvão Saúde SP 2026: 100+ anos, PF, PME e Adesão. Linhas Essencial a Select. Rede própria, telemedicina. Empresarial a partir de R$ 222,06. Cotação gratuita." />
         <link rel="canonical" href="https://www.elevanceseguros.com/sao-cristovao" />
         <script type="application/ld+json">{`${JSON.stringify({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
-            {"@type": "ListItem", "position": 2, "name": "Planos de Saúde", "item": "https://www.elevanceseguros.com/encontre-seu-plano"},
-            {"@type": "ListItem", "position": 3, "name": "São Cristóvão Saúde", "item": "https://www.elevanceseguros.com/sao-cristovao"}
+            {"@type": "ListItem", "position": 2, "name": "São Cristóvão", "item": "https://www.elevanceseguros.com/sao-cristovao"}
           ]
         })}`}</script>
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Plano São Cristóvão Saúde em São Paulo | Elevance Seguros" />
-        <meta name="twitter:description" content="A São Cristóvão Saúde tem hospital e maternidade próprios em São Paulo, com planos para pessoa física, MEI e empresas. Ótimo custo-benefício para quem vive na Grande São Paulo." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
-
-      <CorretorHero operadora="São Cristóvão Saúde" />
-
-      {/* Logo */}
-      <div className="py-6 flex justify-center items-center bg-white border-b border-gray-100">
-        <img
-          src="/logos/sao-cristovao.png"
-          alt="Logo São Cristóvão Saúde"
-          className="h-14 w-auto object-contain"
-          style={{maxWidth:"200px"}}
-          loading="lazy"
-        />
+      <CorretorHero operadora="São Cristóvão" />
+      <div className="pt-6 pb-4 flex justify-center items-center bg-white">
+        <img src="/preview.webp" alt="Logo São Cristóvão" className="max-h-16 w-auto object-contain mx-auto" style={{maxWidth:"180px"}} loading="lazy" decoding="async" />
       </div>
-
-      {/* Hero */}
-      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden" style={{background: "#0e7490"}}>
-        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+      <section className="relative min-h-[50vh] flex items-center py-12 md:py-16 overflow-hidden" style={{background: "#7b2d8b"}}>
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 30% 50%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-white/20 text-white px-4 py-1.5 rounded-full font-semibold text-sm mb-6">
-                <ShieldCheck className="w-4 h-4" /> Rede própria integrada
+              <div className="inline-block bg-white/20 text-white px-4 py-1.5 rounded-full font-semibold text-sm mb-6 flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4" /> PF · PME · MEI · Linha Sênior
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
-                Rede própria e atendimento ágil com a <span style={{color:'#67e8f9'}}>São Cristóvão Saúde</span>
-              </h1>
-              <p className="text-xl text-white/85 mb-8 leading-relaxed">A São Cristóvão Saúde tem hospital e maternidade próprios em São Paulo, com planos para pessoa física, MEI e empresas. Ótimo custo-benefício para quem vive na Grande São Paulo.</p>
-              <ul className="space-y-3 mb-8">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">Plano São Cristóvão: <span className="text-yellow-300">cobertura regional</span> para SP com bom custo-benefício</h1>
+              <p className="text-xl text-white/80 mb-8 leading-relaxed">A São Cristóvão Saúde é uma operadora regional paulistana com planos para PF, PME e MEI. Reconhecida pelo custo-benefício na Grande SP, é uma opção sólida para quem busca cobertura de qualidade sem pagar mensalidades das grandes operadoras nacionais.</p>
+              <ul className="space-y-4 mb-8">
                 {benefits.map((item, idx) => (
                   <li key={idx} className="flex items-center gap-3 text-white/90 font-medium">
-                    <CheckCircle2 className="w-5 h-5 text-white/70 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-yellow-300 flex-shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
-            <div>
-              <OperatorQuoteForm operatorName="São Cristóvão Saúde" />
-            </div>
+            <div><OperatorQuoteForm operatorName="São Cristóvão" /></div>
           </div>
         </div>
       </section>
-
       <OperadoraPlanoSection
-        operadora="São Cristóvão Saúde"
-        cor="#0e7490"
-        tabela={[{"idade": "00 a 18", "enf": "R$ 222,06 (PME)", "apto": "R$ 388,99 (PF)"},
-          {"idade": "19 a 23", "enf": "Consulte", "apto": "Consulte"},
-          {"idade": "24 a 28", "enf": "Consulte", "apto": "Consulte"}]}
-        hospitais={[{"nome": "Hospital São Cristóvão", "regiao": "São Paulo Capital", "desc": "Hospital próprio com pronto-socorro, UTI e cirurgias."},
-          {"nome": "Maternidade São Cristóvão", "regiao": "São Paulo Capital", "desc": "Pré-natal, parto humanizado e neonatologia."},
-          {"nome": "Centros Ambulatoriais", "regiao": "Grande São Paulo", "desc": "Consultas e exames em unidades próprias na capital e ABCDM."},
-          {"nome": "Rede Select", "regiao": "SP + Baixada Santista", "desc": "Cobertura ampliada incluindo Guarulhos, Osasco e litoral."}]}
-        depoimento={{
-          inicial: "C",
-          nome: "Claudia",
-          local: "Santo André, SP",
-          texto: "Precisava de plano com maternidade. O Rodrigo me indicou o São Cristóvão — hospital próprio excelente e preço justo."
-        }}
+        operadora="São Cristóvão"
+        cor="#7b2d8b"
+        tabela={[{"idade": "00 a 18", "enf": "Consulte", "apto": "Consulte"},
+          {"idade": "39 a 43", "enf": "Consulte", "apto": "Consulte"},
+          {"idade": "49 a 53 (Sênior)", "enf": "Consulte", "apto": "Consulte"},
+          {"idade": "59 em diante", "enf": "Consulte", "apto": "Consulte"}]}
+        hospitais={[{"nome": "Rede credenciada São Cristóvão", "regiao": "São Paulo e Grande SP", "desc": "Hospitais e clínicas credenciados na capital paulista e região metropolitana."}]}
+        depoimento={{ inicial: "N", nome: "Nathália", local: "São Paulo, SP", texto: "Comparei várias opções regionais e o São Cristóvão se destacou pelo custo. O Rodrigo foi essencial para entender os detalhes da rede." }}
       />
-
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="font-sora text-3xl font-bold mb-6" style={{color: "#071B34"}}>Como funciona o plano São Cristóvão Saúde?</h2>
-          <div className="text-slate-600 space-y-4 text-lg leading-relaxed">
-            <p>A São Cristóvão Saúde é uma das principais operadoras regionais de São Paulo, com estrutura própria que inclui hospital, maternidade e centros ambulatoriais. Atende pessoa física, famílias e PME incluindo MEI.</p>
-            <p>Na Elevance Seguros, o corretor Rodrigo Farias analisa seu perfil e encontra a melhor opção de plano São Cristóvão Saúde para você e sua família, sem burocracia e sem custo de consultoria.</p>
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">São Cristóvão Saúde: por que é uma boa alternativa regional em SP</h2>
+          <div className="prose prose-lg text-slate-600">
+            <p className="mb-4">Para quem vive e trabalha na Grande São Paulo, pagar por uma cobertura nacional que nunca usa não faz sentido financeiro. A São Cristóvão Saúde oferece cobertura regional de qualidade a um custo mais competitivo.</p>
+            <p className="mb-4">A linha Sênior é disponível para beneficiários a partir de 49 anos, sem cobertura obstétrica, com foco em atendimento da terceira idade na Grande SP.</p>
+            <p>Para valores exatos por faixa etária, entre em contato pelo WhatsApp — a tabela São Cristóvão varia conforme o perfil e modalidade.</p>
           </div>
           <div className="mt-10">
-            <a href="https://wa.me/5511920144864?text=Olá%20Rodrigo%2C%20quero%20cotar%20um%20plano%20São%20Cristóvão%20Saúde"
-              target="_blank" rel="noreferrer"
-              className="inline-flex items-center gap-3 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-widest transition-all hover:scale-105"
-              style={{background: "#16a34a"}}>
-              <MessageCircle className="w-5 h-5" /> Solicitar Cotação Gratuita
+            <a href="https://wa.me/5511920144864?text=Ol%C3%A1%20Rodrigo%2C%20quero%20cotar%20um%20plano%20S%C3%A3o%20Crist%C3%B3v%C3%A3o" target="_blank" rel="noreferrer"
+              className="inline-flex items-center gap-3 bg-[#0d1f3c] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wide transition-all">
+              <MessageCircle size={16} /> Cotar via WhatsApp <ArrowRight size={16} />
             </a>
           </div>
         </div>
       </section>
-
-      <FAQ perguntas={[
-        {pergunta: "Quanto tempo leva para o plano ser ativado?", resposta: "Após a contratação e pagamento da primeira mensalidade, o plano é ativado em até 48 horas. A urgência e emergência ficam disponíveis em 24 horas após a contratação."},
-        {pergunta: "Posso incluir dependentes no plano?", resposta: "Sim! Cônjuge, filhos e dependentes legais podem ser incluídos. A Elevance orienta sobre todos os procedimentos e valores por faixa etária."},
-        {pergunta: "O plano cobre consultas com qualquer médico?", resposta: "O plano cobre consultas com médicos da rede credenciada. Verifique se o seu plano oferece cobertura de reembolso para atendimentos fora da rede."},
-        {pergunta: "Quais são os prazos de carência?", resposta: "Seguindo as regras da ANS: 24h para urgência/emergência, 30 dias para consultas simples, 180 dias para internações e 300 dias para parto. A portabilidade pode eliminar as carências."},
-        {pergunta: "Como funciona a cotação gratuita pela Elevance?", resposta: "A Elevance analisa seu perfil e orçamento para apresentar as melhores opções disponíveis. Todo o processo é gratuito e sem compromisso — você decide se e quando contratar."}
-      ]} />
+      <FAQ perguntas={[{ pergunta: "São Cristóvão tem plano individual?", resposta: "Sim. A São Cristóvão Saúde oferece planos individuais e familiares para PF, além de PME e linha Sênior." },
+        { pergunta: "São Cristóvão tem boa rede em SP?", resposta: "Sim. A São Cristóvão é uma operadora regional com rede credenciada concentrada na capital paulista e Grande SP, incluindo hospitais e clínicas de qualidade." }]} />
+      <section className="py-8 bg-blue-50 border-t border-blue-100">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Outras operadoras</p>
+          <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
+            <a href="/trasmontano" className="text-[#0d1f3c] font-black hover:underline">Trasmontano</a> · 
+            <a href="/biovida" className="text-[#0d1f3c] font-black hover:underline">Biovida</a> · 
+            <a href="/unihosp" className="text-[#0d1f3c] font-black hover:underline">UniHosp</a> · 
+            <a href="/sao-miguel" className="text-[#0d1f3c] font-black hover:underline">São Miguel</a> · 
+            <a href="/plena-saude" className="text-[#0d1f3c] font-black hover:underline">Plena Saúde</a>
+          </p>
+        </div>
+      </section>
       <ScrollCTA produto="Plano São Cristóvão Saúde" />
     </>
   );
 };
-
 export default SaoCristovaoPage;

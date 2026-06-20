@@ -13,19 +13,20 @@ const BradescoSaoBernardoPage = () => {
   }, []);
 
   const benefits = [
-    "Maior rede credenciada do país, presente no ABC Paulista",
-    "Acesso ao Hospital ABC e Hospital São Bernardo",
-    "Hospital Itacolomy no Jardim do Mar",
-    "Cobertura também em Santo André e cidades vizinhas",
-    "Plano empresarial PME a partir de 3 vidas"
+    "Hospital Assunção, IFOR, Hospital São Bernardo e Neomater Santa Marcelina na rede",
+    "Fleury credenciado em São Bernardo do Campo nos planos superiores",
+    "Região industrial do ABCD com alta demanda por plano empresarial de qualidade",
+    "MEI aceito a partir de 2 vidas — ideal para empreendedores da Capital do Automóvel",
+    "Plano Efetivo IV com rede regional robusta no ABCD Paulista",
+    "Cobertura para Santo André, São Caetano, Diadema e Mauá",
   ];
 
   return (
     <>
       <Helmet>
         <title>Plano Bradesco em São Bernardo | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde Bradesco Saúde PME em São Bernardo do Campo. Rede credenciada com Hospital ABC, Hospital São Bernardo e Hospital Itacolomy. Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="Bradesco Saúde São Bernardo do Campo, plano de saúde empresarial ABC, Bradesco PME São Bernardo, cotação Bradesco Saúde ABC" />
+        <meta name="description" content="Plano Bradesco Saúde em São Bernardo do Campo: Hospital Assunção, IFOR, Fleury. Cobertura ABC completa. MEI aceito. Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="Bradesco Saúde São Bernardo, plano de saúde ABC, Hospital Assunção, cotação Bradesco ABCD" />
         <link rel="canonical" href="https://www.elevanceseguros.com/bradescosaude-sao-bernardo-do-campo" />
 
         <script type="application/ld+json">{`${JSON.stringify({

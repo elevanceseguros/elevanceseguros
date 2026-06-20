@@ -13,19 +13,20 @@ const MedSeniorSaoBernardoPage = () => {
   }, []);
 
   const benefits = [
-    "Área de atuação confirmada em São Bernardo do Campo",
-    "Atendimento especializado e humanizado para a terceira idade",
-    "Acesso ao Hospital São Bernardo na rede credenciada",
-    "Cobertura também em Santo André e cidades do ABC",
-    "Foco em medicina preventiva para o bem envelhecer"
+    "Plano sem coparticipação — ideal para aposentados e pensionistas do ABCD Paulista",
+    "Exclusivo para 49+ com rede credenciada preparada para alta complexidade geriátrica",
+    "Central de Inteligência: enfermeiro gestor + videochamada disponíveis em São Bernardo",
+    "PA Virtual 24h com teleconsulta e emissão de receitas sem deslocamento",
+    "Programa Bem Envelhecer com monitoramento de doenças crônicas (hipertensão, diabetes)",
+    "PME Corporate: opção para empresas com funcionários ou sócios acima de 49 anos",
   ];
 
   return (
     <>
       <Helmet>
         <title>Plano MedSênior em São Bernardo | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde MedSênior em São Bernardo do Campo, com rede credenciada incluindo o Hospital São Bernardo e cobertura no ABC Paulista. Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="MedSênior São Bernardo do Campo, plano de saúde idoso ABC, MedSênior melhor idade São Bernardo, cotação MedSênior ABC" />
+        <meta name="description" content="Plano MedSênior em São Bernardo do Campo: exclusivo para 49+, sem coparticipação, PA Virtual 24h, Programa Bem Envelhecer. Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="MedSênior São Bernardo, plano saúde idoso ABC, plano 49 anos São Bernardo, cotação MedSênior ABCD" />
         <link rel="canonical" href="https://www.elevanceseguros.com/medsenior-sao-bernardo-do-campo" />
 
         <script type="application/ld+json">{`${JSON.stringify({

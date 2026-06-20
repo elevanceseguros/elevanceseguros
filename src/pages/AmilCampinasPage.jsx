@@ -13,19 +13,20 @@ const AmilCampinasPage = () => {
   }, []);
 
   const benefits = [
-    "Cobertura nacional com rede credenciada em Campinas",
-    "Acesso a hospitais de referência como Beneficência Portuguesa",
-    "Telemedicina 24h com Amil Ligue Saúde",
-    "Amil Espaço Saúde com apoio do médico de família",
-    "Opção de reembolso para consultas e exames"
+    "Bronze SP Mais inclui Campinas — o plano mais acessível da Amil com cobertura na região",
+    "Planos Prata, Ouro, Platinum e Black com cobertura nacional a partir de Campinas",
+    "MEI aceito com CNPJ ativo há 6 meses, a partir de 2 vidas",
+    "Amil Dental incluso por 12 meses em planos PME — diferencial sem custo adicional",
+    "Telemedicina com profissionais do Einstein disponível nos planos superiores",
+    "Hospital Vera Cruz encerrou atividades (mar/2026) — confirme rede atualizada no cotação",
   ];
 
   return (
     <>
       <Helmet>
         <title>Plano Amil em Campinas | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde Amil em Campinas. Rede credenciada com cobertura nacional, hospitais de referência e telemedicina 24h. Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="Amil Campinas, plano de saúde Amil Campinas, cotação Amil Campinas, convênio Amil Campinas" />
+        <meta name="description" content="Plano Amil em Campinas: Bronze SP Mais cobre Campinas e região. Planos nacionais a partir de Prata. MEI aceito. Amil Dental incluso. Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="Amil Campinas, plano de saúde Campinas, cotação Amil Campinas, Amil Bronze SP Mais, plano saúde interior" />
         <link rel="canonical" href="https://www.elevanceseguros.com/amil-campinas" />
 
         <script type="application/ld+json">{`${JSON.stringify({

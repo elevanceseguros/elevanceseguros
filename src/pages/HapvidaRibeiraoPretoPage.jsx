@@ -13,19 +13,20 @@ const HapvidaRibeiraoPretoPage = () => {
   }, []);
 
   const benefits = [
-    "Hospital São Francisco — referência em Ribeirão Preto desde 1945",
-    "Mais de 600 leitos e 65 leitos de UTI",
-    "Maternidade Sinhá Junqueira na rede",
-    "Pronto Atendimento próprio na Ribeirânia",
-    "Cobertura para toda a região de Ribeirão Preto"
+    "Hospital São Francisco — maior complexo hospitalar de Ribeirão Preto, referência desde 1945",
+    "Maternidade Sinhá Junqueira — referência nacional em obstetrícia com UTI Neonatal completa",
+    "PA Mais Saúde (20+ especialidades, seg-sex 7h–21h) + PA Centro 24h sem fila hospitalar",
+    "PME/MEI a partir de R$ 104,67/mês — 35% mais barato que o plano PF equivalente",
+    "Diagnóstico Hapvida: Jardim Sumaré e Alto da Boa Vista com exames de imagem integrados",
+    "Cobertura para urgência em toda a rede própria nacional mesmo com plano regional",
   ];
 
   return (
     <>
       <Helmet>
         <title>Plano Hapvida em Ribeirão Preto | Cotação Gratuita | Elevance Seguros</title>
-        <meta name="description" content="Plano de saúde Hapvida (Hospital São Francisco) em Ribeirão Preto. Rede própria com mais de 600 leitos, Maternidade Sinhá Junqueira e PA na Ribeirânia. Cotação gratuita com a Elevance Seguros." />
-        <meta name="keywords" content="Hapvida Ribeirão Preto, plano de saúde Ribeirão Preto, Hospital São Francisco Ribeirão Preto, cotação Hapvida Ribeirão Preto" />
+        <meta name="description" content="Plano Hapvida em Ribeirão Preto: Hospital São Francisco, Maternidade Sinhá Junqueira, PA Mais Saúde. PME a partir de R$ 104,67/mês. Cotação gratuita com a Elevance Seguros." />
+        <meta name="keywords" content="Hapvida Ribeirão Preto, plano de saúde Ribeirão Preto, Hospital São Francisco, Maternidade Sinhá Junqueira, cotação Hapvida" />
         <link rel="canonical" href="https://www.elevanceseguros.com/hapvida-ribeirao-preto" />
 
         <script type="application/ld+json">{`${JSON.stringify({
