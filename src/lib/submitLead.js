@@ -1,10 +1,12 @@
 import { BUSINESS_CONFIG } from '@/config/business';
+import { TRACKED_PAYLOAD_FIELD } from '@/lib/leadRuntimeTracking';
 import { trackLeadSubmitError, trackLeadSubmitStart, trackLeadSubmitSuccess } from '@/lib/leadTracking';
 
 export async function submitLead(payload) {
   const lead = {
     ...payload,
     origem: payload.origem || (typeof window !== 'undefined' ? window.location.pathname : ''),
+    [TRACKED_PAYLOAD_FIELD]: true,
   };
 
   trackLeadSubmitStart({ produto: lead.produto, origem: lead.origem });
