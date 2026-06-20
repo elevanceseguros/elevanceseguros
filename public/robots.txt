@@ -8,4 +8,4 @@ Disallow: /saude
 Disallow: /sagrada-familia
 Disallow: /sagrada-familia/thank-you
 
-Sitemap: https://elevanceseguros.com/sitemap-index.html
+Sitemap: https://www.elevanceseguros.com/sitemap.xml
