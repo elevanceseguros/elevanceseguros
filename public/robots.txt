@@ -4,5 +4,7 @@ Allow: /
 Disallow: /admin-login
 Disallow: /admin-dashboard
 Disallow: /obrigado
+Disallow: /saude
+Disallow: /sagrada-familia/thank-you
 
 Sitemap: https://www.elevanceseguros.com/sitemap.xml

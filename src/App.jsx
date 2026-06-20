@@ -7,6 +7,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import ExitIntentModal from '@/components/ExitIntentModal';
+import CampaignLandingSeo from '@/components/CampaignLandingSeo';
 import { useGoogleAnalytics } from '@/hooks/useGoogleAnalytics';
 import PullToRefreshContainer from '@/components/PullToRefreshContainer';
 import { SagradaFamiliaAuthProvider } from '@/contexts/SagradaFamiliaContext';
@@ -218,12 +219,11 @@ const AppContent = () => {
                 <Route path="/planos-saude" element={<Navigate to="/encontre-seu-plano" replace />} />
                 <Route path="/health-plans" element={<Navigate to="/encontre-seu-plano" replace />} />
                 <Route path="/seguros-auto" element={<Navigate to="/seguro-auto" replace />} />
-                <Route path="/contato" element={<Navigate to="/" replace />} />
-                <Route path="/online-quote" element={<Navigate to="/encontre-seu-plano" replace />} />
                 <Route path="/customer-support" element={<Navigate to="/" replace />} />
                 <Route path="*" element={<HomePage />} />
               </Routes>
             </Suspense>
+            <CampaignLandingSeo />
     </ErrorBoundary>
           </main>
           {showHeaderFooter && <Footer />}
