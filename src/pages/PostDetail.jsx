@@ -209,7 +209,7 @@ const PostDetail = () => {
             <ArrowLeft size={16} /> Voltar ao Blog
           </Link>
           <Link to="/">
-            <img src="/logo.webp" alt="Elevance Seguros" className="h-8 object-contain" />
+            <img src="/logos/elevance-dark-horizontal-gold.png" alt="Elevance Seguros" className="h-8 w-auto object-contain" />
           </Link>
         </div>
 
