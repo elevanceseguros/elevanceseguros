@@ -9,6 +9,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import ExitIntentModal from '@/components/ExitIntentModal';
 import CampaignLandingSeo from '@/components/CampaignLandingSeo';
 import SocialMetaSync from '@/components/SocialMetaSync';
+import HealthInternalLinks from '@/components/HealthInternalLinks';
 import { useGoogleAnalytics } from '@/hooks/useGoogleAnalytics';
 import PullToRefreshContainer from '@/components/PullToRefreshContainer';
 import { SagradaFamiliaAuthProvider } from '@/contexts/SagradaFamiliaContext';
@@ -131,7 +132,7 @@ const AppContent = () => {
                   <Route path="/admin-login" element={<AdminLoginPage />} />
                   <Route path="/admin-dashboard" element={<ProtectedRoute><AdminDashboardPage /></ProtectedRoute>} />
 
-                  <Route path="/encontre-seu-plano" element={<EncontreSeuPlanoPage />} />
+                  <Route path="/encontre-seu-plano" element={<><EncontreSeuPlanoPage /><HealthInternalLinks pathname="/encontre-seu-plano" /></>} />
                   <Route path="/odontologico" element={<OdontologicoPage />} />
                   <Route path="/seguro-vida" element={<SeguroVidaPage />} />
                   <Route path="/seguro-residencial" element={<SeguroResidencialPage />} />
@@ -143,32 +144,32 @@ const AppContent = () => {
                   <Route path="/consorcios" element={<ConsorciosPage />} />
                   <Route path="/seguro-empresa" element={<SeguroEmpresaPage />} />
 
-                  <Route path="/hapvida" element={<HapvidaPage />} />
-                  <Route path="/hapvida-campinas" element={<HapvidaCampinasPage />} />
-                  <Route path="/hapvida-ribeirao-preto" element={<HapvidaRibeiraoPretoPage />} />
-                  <Route path="/hapvida-sao-bernardo-do-campo" element={<HapvidaSaoBernardoPage />} />
-                  <Route path="/hapvida-sorocaba" element={<HapvidaSorocabaPage />} />
-                  <Route path="/amil" element={<AmilPage />} />
-                  <Route path="/amil-campinas" element={<AmilCampinasPage />} />
-                  <Route path="/amil-ribeirao-preto" element={<AmilRibeiraoPretoPage />} />
-                  <Route path="/amil-sao-bernardo-do-campo" element={<AmilSaoBernardoPage />} />
-                  <Route path="/amil-sorocaba" element={<AmilSorocabaPage />} />
-                  <Route path="/bradescosaude" element={<BradescosaudePage />} />
-                  <Route path="/bradescosaude-campinas" element={<BradescoCampinasPage />} />
-                  <Route path="/bradescosaude-ribeirao-preto" element={<BradescoRibeiraoPretoPage />} />
-                  <Route path="/bradescosaude-sao-bernardo-do-campo" element={<BradescoSaoBernardoPage />} />
-                  <Route path="/bradescosaude-sorocaba" element={<BradescoSorocabaPage />} />
-                  <Route path="/medsenior" element={<MedSeniorPage />} />
-                  <Route path="/medsenior-campinas" element={<MedSeniorCampinasPage />} />
-                  <Route path="/medsenior-sao-bernardo-do-campo" element={<MedSeniorSaoBernardoPage />} />
-                  <Route path="/sulamerica" element={<SulamericaPage />} />
-                  <Route path="/sulamerica-campinas" element={<SulamericaCampinasPage />} />
-                  <Route path="/sulamerica-ribeirao-preto" element={<SulamericaRibeiraoPretoPage />} />
-                  <Route path="/sulamerica-sao-bernardo-do-campo" element={<SulamericaSaoBernardoPage />} />
-                  <Route path="/sulamerica-sorocaba" element={<SulamericaSorocabaPage />} />
-                  <Route path="/unimed" element={<UnimeduniplanPage />} />
-                  <Route path="/porto" element={<PortoPage />} />
-                  <Route path="/alice" element={<AlicePage />} />
+                  <Route path="/hapvida" element={<><HapvidaPage /><HealthInternalLinks pathname="/hapvida" /></>} />
+                  <Route path="/hapvida-campinas" element={<><HapvidaCampinasPage /><HealthInternalLinks pathname="/hapvida-campinas" /></>} />
+                  <Route path="/hapvida-ribeirao-preto" element={<><HapvidaRibeiraoPretoPage /><HealthInternalLinks pathname="/hapvida-ribeirao-preto" /></>} />
+                  <Route path="/hapvida-sao-bernardo-do-campo" element={<><HapvidaSaoBernardoPage /><HealthInternalLinks pathname="/hapvida-sao-bernardo-do-campo" /></>} />
+                  <Route path="/hapvida-sorocaba" element={<><HapvidaSorocabaPage /><HealthInternalLinks pathname="/hapvida-sorocaba" /></>} />
+                  <Route path="/amil" element={<><AmilPage /><HealthInternalLinks pathname="/amil" /></>} />
+                  <Route path="/amil-campinas" element={<><AmilCampinasPage /><HealthInternalLinks pathname="/amil-campinas" /></>} />
+                  <Route path="/amil-ribeirao-preto" element={<><AmilRibeiraoPretoPage /><HealthInternalLinks pathname="/amil-ribeirao-preto" /></>} />
+                  <Route path="/amil-sao-bernardo-do-campo" element={<><AmilSaoBernardoPage /><HealthInternalLinks pathname="/amil-sao-bernardo-do-campo" /></>} />
+                  <Route path="/amil-sorocaba" element={<><AmilSorocabaPage /><HealthInternalLinks pathname="/amil-sorocaba" /></>} />
+                  <Route path="/bradescosaude" element={<><BradescosaudePage /><HealthInternalLinks pathname="/bradescosaude" /></>} />
+                  <Route path="/bradescosaude-campinas" element={<><BradescoCampinasPage /><HealthInternalLinks pathname="/bradescosaude-campinas" /></>} />
+                  <Route path="/bradescosaude-ribeirao-preto" element={<><BradescoRibeiraoPretoPage /><HealthInternalLinks pathname="/bradescosaude-ribeirao-preto" /></>} />
+                  <Route path="/bradescosaude-sao-bernardo-do-campo" element={<><BradescoSaoBernardoPage /><HealthInternalLinks pathname="/bradescosaude-sao-bernardo-do-campo" /></>} />
+                  <Route path="/bradescosaude-sorocaba" element={<><BradescoSorocabaPage /><HealthInternalLinks pathname="/bradescosaude-sorocaba" /></>} />
+                  <Route path="/medsenior" element={<><MedSeniorPage /><HealthInternalLinks pathname="/medsenior" /></>} />
+                  <Route path="/medsenior-campinas" element={<><MedSeniorCampinasPage /><HealthInternalLinks pathname="/medsenior-campinas" /></>} />
+                  <Route path="/medsenior-sao-bernardo-do-campo" element={<><MedSeniorSaoBernardoPage /><HealthInternalLinks pathname="/medsenior-sao-bernardo-do-campo" /></>} />
+                  <Route path="/sulamerica" element={<><SulamericaPage /><HealthInternalLinks pathname="/sulamerica" /></>} />
+                  <Route path="/sulamerica-campinas" element={<><SulamericaCampinasPage /><HealthInternalLinks pathname="/sulamerica-campinas" /></>} />
+                  <Route path="/sulamerica-ribeirao-preto" element={<><SulamericaRibeiraoPretoPage /><HealthInternalLinks pathname="/sulamerica-ribeirao-preto" /></>} />
+                  <Route path="/sulamerica-sao-bernardo-do-campo" element={<><SulamericaSaoBernardoPage /><HealthInternalLinks pathname="/sulamerica-sao-bernardo-do-campo" /></>} />
+                  <Route path="/sulamerica-sorocaba" element={<><SulamericaSorocabaPage /><HealthInternalLinks pathname="/sulamerica-sorocaba" /></>} />
+                  <Route path="/unimed" element={<><UnimeduniplanPage /><HealthInternalLinks pathname="/unimed" /></>} />
+                  <Route path="/porto" element={<><PortoPage /><HealthInternalLinks pathname="/porto" /></>} />
+                  <Route path="/alice" element={<><AlicePage /><HealthInternalLinks pathname="/alice" /></>} />
 
                   <Route path="/garantia-saude" element={<GarantiaSaudePage />} />
                   <Route path="/sao-miguel" element={<SaoMiguelPage />} />
@@ -180,7 +181,7 @@ const AppContent = () => {
 
                   <Route path="/thank-you" element={<ThankYouPage />} />
                   <Route path="/obrigado" element={<ThankYouPage />} />
-                  <Route path="/blog" element={<BlogPage />} />
+                  <Route path="/blog" element={<><BlogPage /><HealthInternalLinks pathname="/blog" /></>} />
                   <Route path="/blog/:slug" element={<PostDetail />} />
                   <Route path="/planos-de-saude" element={<Navigate to="/encontre-seu-plano" replace />} />
                   <Route path="/planos-saude" element={<Navigate to="/encontre-seu-plano" replace />} />
