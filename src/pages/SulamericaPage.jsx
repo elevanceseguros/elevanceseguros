@@ -139,6 +139,13 @@ const SulamericaPage = () => {
 
       <section className="py-8 bg-blue-50 border-t border-blue-100">
         <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">SulAmérica por cidade</p>
+          <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2 mb-6">
+            <a href="/sulamerica-campinas" className="text-[#0d1f3c] font-black hover:underline">Campinas</a> ·
+            <a href="/sulamerica-ribeirao-preto" className="text-[#0d1f3c] font-black hover:underline">Ribeirão Preto</a> ·
+            <a href="/sulamerica-sao-bernardo-do-campo" className="text-[#0d1f3c] font-black hover:underline">São Bernardo do Campo</a> ·
+            <a href="/sulamerica-sorocaba" className="text-[#0d1f3c] font-black hover:underline">Sorocaba</a>
+          </p>
           <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-3">Outras operadoras</p>
           <p className="text-sm font-medium text-slate-600 flex flex-wrap justify-center gap-x-3 gap-y-2">
             <a href="/hapvida" className="text-[#0d1f3c] font-black hover:underline">Hapvida</a> ·

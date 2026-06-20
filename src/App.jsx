@@ -67,6 +67,10 @@ const AmilSaoBernardoPage = lazy(() => import('@/pages/AmilSaoBernardoPage'));
 const AmilSorocabaPage = lazy(() => import('@/pages/AmilSorocabaPage'));
 const AmilRibeiraoPretoPage = lazy(() => import('@/pages/AmilRibeiraoPretoPage'));
 const SulamericaPage = lazy(() => import('@/pages/SulamericaPage'));
+const SulamericaCampinasPage = lazy(() => import('@/pages/SulamericaCampinasPage'));
+const SulamericaRibeiraoPretoPage = lazy(() => import('@/pages/SulamericaRibeiraoPretoPage'));
+const SulamericaSaoBernardoPage = lazy(() => import('@/pages/SulamericaSaoBernardoPage'));
+const SulamericaSorocabaPage = lazy(() => import('@/pages/SulamericaSorocabaPage'));
 
 // Generic Pages
 const GenericHealthPlanPage = lazy(() => import('@/pages/GenericHealthPlanPage'));
@@ -164,6 +168,10 @@ const AppContent = () => {
 
                 {/* Generic Routes */}
                 <Route path="/sulamerica" element={<SulamericaPage />} />
+                <Route path="/sulamerica-campinas" element={<SulamericaCampinasPage />} />
+                <Route path="/sulamerica-ribeirao-preto" element={<SulamericaRibeiraoPretoPage />} />
+                <Route path="/sulamerica-sao-bernardo-do-campo" element={<SulamericaSaoBernardoPage />} />
+                <Route path="/sulamerica-sorocaba" element={<SulamericaSorocabaPage />} />
                 <Route path="/encontre-seu-plano" element={<EncontreSeuPlanoPage />} />
                 <Route path="/odontologico" element={<OdontologicoPage />} />
                 <Route path="/seguro-vida" element={<SeguroVidaPage />} />
