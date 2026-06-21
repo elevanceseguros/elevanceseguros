@@ -42,8 +42,29 @@ function setMeta(selector, attrs) {
   if (!element.parentElement) document.head.appendChild(element);
 }
 
+function replaceHomeTrustBadge() {
+  const elements = Array.from(document.querySelectorAll('div, span, p'));
+
+  elements.forEach((element) => {
+    element.childNodes.forEach((node) => {
+      if (node.nodeType === Node.TEXT_NODE && node.textContent?.includes('5 Estrelas no Google')) {
+        node.textContent = node.textContent.replace('5 Estrelas no Google', 'Comparação Personalizada');
+      }
+    });
+  });
+}
+
 export default function SocialMetaSync() {
   const { pathname } = useLocation();
+
+  useEffect(() => {
+    if (pathname !== '/') return;
+
+    replaceHomeTrustBadge();
+    const timer = window.setTimeout(replaceHomeTrustBadge, 300);
+
+    return () => window.clearTimeout(timer);
+  }, [pathname]);
 
   useEffect(() => {
     if (!SYNC_ROUTES.includes(pathname)) return;
