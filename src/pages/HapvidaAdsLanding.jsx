@@ -6,7 +6,7 @@ import { ArrowRight, Building2, CheckCircle2, HeartPulse, MessageCircle, ShieldC
 const WHATSAPP_NUMBER = '5511920144864';
 const WEBHOOK_URL = 'https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead';
 const HAPVIDA_LOGO = '/logos/hapvida.webp';
-const ELEVANCE_LOGO = '/logos/elevance.webp';
+const ELEVANCE_LOGO = '/logos/elevance-dark-horizontal-white.png';
 
 const benefits = [
   'Cotação gratuita e sem compromisso',
@@ -49,17 +49,18 @@ export default function HapvidaAdsLanding() {
     setLoading(true);
 
     const formData = new FormData(event.currentTarget);
+    const cidadeVal = formData.get('cidade') || '';
+    const vidasVal = formData.get('vidas') || '';
     const payload = {
       nome: formData.get('nome'),
       whatsapp: String(formData.get('whatsapp') || '').replace(/[^0-9]/g, ''),
-      cidade: formData.get('cidade'),
-      vidas: formData.get('vidas'),
-      tipo,
-      produto: 'Hapvida',
+      produto: `Plano de Saúde Hapvida`,
       origem: 'google_ads_hapvida_landing',
-      landing: 'hapvida_subdomain',
-      path: window.location.pathname,
-      hostname: window.location.hostname,
+      detalhes: {
+        plano: tipo,
+        cidade: cidadeVal,
+        pessoas: vidasVal,
+      },
     };
 
     try {
@@ -91,25 +92,17 @@ export default function HapvidaAdsLanding() {
           <div className="absolute inset-0 opacity-100" style={{ background: 'radial-gradient(circle at top right, rgba(255,155,0,.24), transparent 28%), radial-gradient(circle at bottom left, rgba(255,255,255,.10), transparent 28%)' }} />
           <div className="relative max-w-7xl mx-auto px-4 py-8 md:py-14">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between mb-10">
-              <div className="inline-flex items-center gap-4 rounded-2xl bg-white/10 border border-white/10 px-4 py-3 backdrop-blur-sm w-fit">
-                <img src={HAPVIDA_LOGO} alt="Hapvida" className="h-10 md:h-12 w-auto object-contain bg-white rounded-xl px-2 py-1" />
-                <div className="w-px h-12 bg-white/20" />
-                <div className="flex flex-col items-start gap-1 min-w-[145px] md:min-w-[210px]">
-                  {elevanceLogoOk ? (
-                    <img
-                      src={ELEVANCE_LOGO}
-                      alt="Elevance Seguros"
-                      onError={() => setElevanceLogoOk(false)}
-                      className="h-12 md:h-16 w-auto max-w-[220px] object-contain"
-                      style={{ background: 'transparent', mixBlendMode: 'screen' }}
-                    />
-                  ) : (
-                    <div className="leading-none py-1">
-                      <div className="text-xl md:text-3xl font-black tracking-[0.12em] text-white">ELEVANCE</div>
-                      <div className="mt-1 text-[9px] md:text-[10px] font-black uppercase tracking-[0.22em] text-white/70">Seguros</div>
-                    </div>
-                  )}
-                  <span className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.22em] text-[#FFD26E]">Corretora parceira</span>
+              <div className="flex items-center gap-5">
+                <img src={HAPVIDA_LOGO} alt="Hapvida" className="h-10 md:h-12 w-auto object-contain bg-white rounded-xl px-3 py-1.5" />
+                <div className="w-px h-10 bg-white/25" />
+                <div className="flex flex-col items-start gap-1">
+                  <img
+                    src={ELEVANCE_LOGO}
+                    alt="Elevance Seguros"
+                    className="h-7 md:h-9 w-auto object-contain"
+                    style={{ filter: 'brightness(0) invert(1)' }}
+                  />
+                  <span className="text-[9px] font-black uppercase tracking-[0.22em] text-[#FFD26E]">Corretora parceira</span>
                 </div>
               </div>
               <a href={whatsappHref} target="_blank" rel="noreferrer" className="hidden sm:inline-flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-5 py-3 rounded-2xl text-xs font-black uppercase tracking-widest transition-all shadow-xl">
@@ -166,12 +159,12 @@ export default function HapvidaAdsLanding() {
                         key={option}
                         type="button"
                         onClick={() => setTipo(option)}
-                        className={`min-h-[48px] rounded-2xl px-1.5 py-2 text-[8.5px] sm:text-[10px] leading-tight font-black uppercase tracking-[0.06em] sm:tracking-wide border transition-all flex items-center justify-center text-center ${tipo === option ? 'bg-[#0057B8] text-white border-[#0057B8]' : 'bg-white text-slate-500 border-slate-200'}`}
+                        className={`h-[48px] rounded-2xl px-1 py-2 text-[9px] leading-tight font-black uppercase tracking-tight border transition-all flex items-center justify-center text-center w-full ${tipo === option ? 'bg-[#0057B8] text-white border-[#0057B8]' : 'bg-white text-slate-500 border-slate-200'}`}
                       >
                         {option === 'Individual/Familiar' ? (
-                          <span className="flex flex-col leading-tight">
-                            <span>Individual</span>
-                            <span>/ Familiar</span>
+                          <span className="flex flex-col leading-[1.2]">
+                            <span>Individual/</span>
+                            <span>Familiar</span>
                           </span>
                         ) : option}
                       </button>
