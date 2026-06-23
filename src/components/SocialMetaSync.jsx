@@ -73,12 +73,12 @@ function applyHapvidaAdsBranding() {
     brandStrip.id = 'hapvida-brand-strip';
     brandStrip.className = 'flex flex-col gap-4 md:flex-row md:items-center md:justify-between mb-10';
     brandStrip.innerHTML = `
-      <div class="inline-flex items-center gap-3 rounded-2xl bg-white/10 border border-white/10 px-4 py-3 backdrop-blur-sm w-fit">
+      <div class="inline-flex items-center gap-4 rounded-2xl bg-white/10 border border-white/10 px-4 py-3 backdrop-blur-sm w-fit">
         <img src="/logos/hapvida.webp" alt="Hapvida" class="h-10 md:h-12 w-auto object-contain bg-white rounded-xl px-2 py-1" />
-        <div class="w-px h-9 bg-white/20"></div>
-        <div class="flex flex-col gap-1">
-          <img src="/logo.webp" alt="Elevance Seguros" class="h-7 md:h-8 w-auto object-contain brightness-0 invert" />
-          <span class="text-[9px] font-black uppercase tracking-[0.18em] text-white/55">Corretora parceira</span>
+        <div class="w-px h-10 bg-white/20"></div>
+        <div class="leading-none">
+          <div class="text-xl md:text-2xl font-black tracking-[0.12em] text-white">ELEVANCE</div>
+          <div class="mt-1 text-[9px] md:text-[10px] font-black uppercase tracking-[0.22em] text-[#FFD26E]">Corretora parceira</div>
         </div>
       </div>
       <a href="https://wa.me/5511920144864?text=Ol%C3%A1%20Rodrigo%2C%20vim%20pelo%20an%C3%BAncio%20da%20Hapvida%20e%20quero%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noreferrer" class="hidden sm:inline-flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-5 py-3 rounded-2xl text-xs font-black uppercase tracking-widest transition-all shadow-xl">WhatsApp</a>
