@@ -34,7 +34,7 @@ const faqs = [
   { q: 'A Elevance é a Hapvida?', a: 'Não. A Elevance é uma corretora parceira que ajuda você a comparar e contratar planos disponíveis.' },
 ];
 
-const typeOptions = ['Individual/Familiar', 'MEI', 'Empresa'];
+const typeOptions = ['Individual/Familiar', 'Empresa (com CNPJ)', 'Adesão/Profissão'];
 
 export default function HapvidaAdsLanding() {
   const navigate = useNavigate();
@@ -159,6 +159,16 @@ export default function HapvidaAdsLanding() {
                           <span className="flex flex-col leading-[1.2]">
                             <span>Individual/</span>
                             <span>Familiar</span>
+                          </span>
+                        ) : option === 'Empresa (com CNPJ)' ? (
+                          <span className="flex flex-col leading-[1.2]">
+                            <span>Empresa</span>
+                            <span className="text-[8px] opacity-70">(com CNPJ)</span>
+                          </span>
+                        ) : option === 'Adesão/Profissão' ? (
+                          <span className="flex flex-col leading-[1.2]">
+                            <span>Adesão/</span>
+                            <span>Profissão</span>
                           </span>
                         ) : option}
                       </button>
