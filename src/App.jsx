@@ -44,6 +44,7 @@ const LooviPage = lazy(() => import('@/pages/LooviPage'));
 const PortoPage = lazy(() => import('@/pages/PortoPage'));
 const BradescosaudePage = lazy(() => import('@/pages/BradescosaudePage'));
 const HapvidaPage = lazy(() => import('@/pages/HapvidaPage'));
+const HapvidaAdsLanding = lazy(() => import('@/pages/HapvidaAdsLanding'));
 const HapvidaRibeiraoPretoPage = lazy(() => import('@/pages/HapvidaRibeiraoPretoPage'));
 const HapvidaCampinasPage = lazy(() => import('@/pages/HapvidaCampinasPage'));
 const HapvidaSaoBernardoPage = lazy(() => import('@/pages/HapvidaSaoBernardoPage'));
@@ -106,11 +107,14 @@ const AppContent = () => {
     '/sagrada-familia',
     '/sagrada-familia/thank-you',
     '/saude',
+    '/hapvida-ads',
   ];
 
   const showHeaderFooter = !isSaudeSubdomain && !isSagradaSubdomain && !isHapvidaSubdomain && !noHeaderFooterRoutes.some((path) =>
     location.pathname === path || (path !== '/' && location.pathname.startsWith(`${path}/`))
   );
+
+  const hideGlobalConversionWidgets = isHapvidaAdsSubdomain || isHapvidaAdsRoute;
 
   return (
     <>
@@ -129,6 +133,7 @@ const AppContent = () => {
                 <Routes>
                   <Route path="/" element={isSaudeSubdomain ? <SaudeLanding /> : isSagradaSubdomain ? <SagradaFamiliaHomePage /> : isHapvidaSubdomain ? <HapvidaLandingPage /> : <HomePage />} />
                   <Route path="/saude" element={<SaudeLanding />} />
+                  <Route path="/hapvida-ads" element={<HapvidaAdsLanding />} />
                   <Route path="/sagrada-familia" element={<SagradaFamiliaHomePage />} />
                   <Route path="/sagrada-familia/thank-you" element={<SagradaFamiliaThankYouPage />} />
                   <Route path="/admin-login" element={<AdminLoginPage />} />
@@ -203,8 +208,8 @@ const AppContent = () => {
           {showHeaderFooter && <Footer />}
         </PullToRefreshContainer>
 
-        <FloatingWhatsApp />
-        <ExitIntentModal />
+        {!hideGlobalConversionWidgets && <FloatingWhatsApp />}
+        {!hideGlobalConversionWidgets && <ExitIntentModal />}
         <Toaster />
       </div>
     </>

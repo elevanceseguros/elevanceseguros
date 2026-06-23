@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 const DEFAULT_IMAGE = 'https://www.elevanceseguros.com/preview.webp';
 const BASE_URL = 'https://www.elevanceseguros.com';
 
-const SYNC_ROUTES = [
+const HEALTH_ROUTES = [
   '/encontre-seu-plano',
   '/hapvida',
   '/hapvida-campinas',
@@ -42,11 +42,30 @@ function setMeta(selector, attrs) {
   if (!element.parentElement) document.head.appendChild(element);
 }
 
+function replaceHomeTrustBadge() {
+  document.querySelectorAll('div, span, p').forEach((element) => {
+    element.childNodes.forEach((node) => {
+      if (node.nodeType === Node.TEXT_NODE && node.textContent?.includes('5 Estrelas no Google')) {
+        node.textContent = node.textContent.replace('5 Estrelas no Google', 'Comparação Personalizada');
+      }
+    });
+  });
+}
+
 export default function SocialMetaSync() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    if (!SYNC_ROUTES.includes(pathname)) return;
+    if (pathname !== '/') return;
+
+    replaceHomeTrustBadge();
+    const timer = window.setTimeout(replaceHomeTrustBadge, 300);
+
+    return () => window.clearTimeout(timer);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!HEALTH_ROUTES.includes(pathname)) return;
 
     const timer = window.setTimeout(() => {
       const title = document.title;
