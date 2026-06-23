@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { CheckCircle2, MessageCircle, Home, ArrowRight, Phone } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { CheckCircle2, MessageCircle, Home, Clock, Phone } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
 const ThankYouPage = () => {
@@ -9,100 +8,67 @@ const ThankYouPage = () => {
   const state = location.state || {};
   const { name } = state;
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
+  const primeiroNome = name ? name.split(' ')[0] : null;
 
   return (
     <>
       <Helmet>
         <title>Obrigado! | Elevance Seguros</title>
         <meta name="robots" content="noindex, nofollow" />
-              <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Elevance Seguros" />
-        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
-        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
       </Helmet>
 
-      <div className="min-h-screen pt-28 pb-20 bg-gradient-to-b from-blue-50 to-white flex items-center justify-center px-4">
-        <div>
-          {/* Header Section */}
-          <div className="bg-[#0d1f3c] p-8 text-center relative overflow-hidden">
-             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-            <div>
-              <CheckCircle2 className="w-12 h-12 text-white" />
-            </div>
-            
-            <h1 className="relative z-10 text-3xl md:text-4xl font-bold text-white mb-2">
-              Obrigado{name ? `, ${name}` : ''}!
-            </h1>
-            <p className="relative z-10 text-blue-100 text-lg font-medium">
-              Sua solicitação foi recebida com sucesso.
-            </p>
-          </div>
+      <div className="min-h-screen bg-[#071B34] flex flex-col items-center justify-center px-4 py-16 text-white">
 
-          {/* Body Section */}
-          <div className="p-8 md:p-10 space-y-8">
-            <div className="text-center space-y-4">
-              <h2 className="text-2xl font-bold text-gray-800">O que acontece agora?</h2>
-              <p className="text-slate-600 text-lg leading-relaxed max-w-lg mx-auto">
-                Nossa equipe de especialistas já está analisando seus dados. Em breve, entraremos em contato para apresentar as melhores opções personalizadas para você.
-              </p>
-            </div>
+        {/* Logo */}
+        <img src="/logos/elevance-dark-horizontal-white.png" alt="Elevance Seguros"
+          className="h-9 w-auto object-contain mb-14 opacity-80" />
 
-            {/* WhatsApp CTA Section */}
-            <div>
-               <div className="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-green-200 rounded-full blur-2xl opacity-50"></div>
-              
-              <h3 className="text-xl font-bold text-[#0d1f3c] mb-3 relative z-10">
-                Quer agilizar seu atendimento?
-              </h3>
-              <p className="text-slate-700 mb-6 relative z-10">
-                Fale agora mesmo com um consultor pelo WhatsApp e receba sua cotação mais rápido.
-              </p>
-              
-              <Button 
-                asChild
-                className="w-full sm:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-6 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 text-lg group relative z-10"
-              >
-                <a 
-                  href="https://wa.me/5511920144864?text=Ol%C3%A1%2C%20acabei%20de%20fazer%20uma%20cota%C3%A7%C3%A3o%20no%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <MessageCircle className="w-6 h-6 mr-2" />
-                  Chamar no WhatsApp
-                  <ArrowRight className="w-5 h-5 ml-2 opacity-70 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </Button>
-            </div>
-            
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-slate-500 text-sm">
-                <div className="flex items-center gap-2">
-                    <Phone className="w-4 h-4" />
-                    <span>(11) 92014-4864</span>
-                </div>
-                <div className="hidden md:block w-1 h-1 bg-slate-300 rounded-full"></div>
-                <div>
-                    Seg a Sex: 09h às 18h
-                </div>
-            </div>
-
-            {/* Return Home */}
-            <div className="text-center pt-2 border-t border-slate-100">
-              <Button 
-                asChild 
-                variant="ghost" 
-                className="text-slate-600 hover:text-[#0d1f3c] hover:bg-blue-50 mt-4"
-              >
-                <Link to="/">
-                  <Home className="w-4 h-4 mr-2" />
-                  Voltar para Início
-                </Link>
-              </Button>
-            </div>
-          </div>
+        {/* Ícone de sucesso */}
+        <div className="w-20 h-20 rounded-full bg-green-500/15 border border-green-500/30 flex items-center justify-center mb-6">
+          <CheckCircle2 size={40} className="text-green-400" />
         </div>
+
+        {/* Título */}
+        <h1 className="text-3xl md:text-4xl font-black italic text-center mb-3">
+          {primeiroNome ? `Recebemos, ${primeiroNome}!` : 'Recebemos seu pedido!'}
+        </h1>
+        <p className="text-white/55 text-center text-base max-w-sm leading-relaxed mb-10">
+          Rodrigo da Elevance Seguros vai entrar em contato no seu WhatsApp em instantes com a melhor proposta.
+        </p>
+
+        {/* Passos */}
+        <div className="w-full max-w-sm space-y-3 mb-10">
+          {[
+            { n: '1', texto: 'Seus dados foram enviados para o consultor' },
+            { n: '2', texto: 'Rodrigo analisa o seu perfil e monta a cotação' },
+            { n: '3', texto: 'Você recebe a proposta diretamente no WhatsApp' },
+          ].map(step => (
+            <div key={step.n} className="flex items-center gap-4 bg-white/5 border border-white/8 rounded-2xl px-5 py-4">
+              <div className="w-7 h-7 rounded-full bg-[#C9A84C] text-[#071B34] font-black text-xs flex items-center justify-center flex-shrink-0">{step.n}</div>
+              <p className="text-sm text-white/75 font-medium">{step.texto}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA WhatsApp */}
+        <a href="https://wa.me/5511920144864?text=Ol%C3%A1%20Rodrigo%2C%20acabei%20de%20preencher%20o%20formul%C3%A1rio%20no%20site%20e%20quero%20agilizar%20minha%20cota%C3%A7%C3%A3o."
+          target="_blank" rel="noreferrer"
+          className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white font-black text-sm px-8 py-4 rounded-2xl transition-all mb-4">
+          <MessageCircle size={18} /> Chamar agora no WhatsApp
+        </a>
+
+        {/* Horário */}
+        <div className="flex items-center gap-2 text-white/30 text-xs mb-10">
+          <Clock size={12} /> Atendimento seg–sex 9h às 18h · (11) 92014-4864
+        </div>
+
+        {/* Voltar */}
+        <Link to="/" className="flex items-center gap-2 text-white/30 hover:text-white/60 text-xs font-bold transition-colors">
+          <Home size={13} /> Voltar para o início
+        </Link>
+
       </div>
     </>
   );

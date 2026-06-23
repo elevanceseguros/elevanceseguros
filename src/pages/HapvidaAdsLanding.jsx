@@ -6,7 +6,7 @@ import { ArrowRight, Building2, CheckCircle2, HeartPulse, MessageCircle, ShieldC
 const WHATSAPP_NUMBER = '5511920144864';
 const WEBHOOK_URL = 'https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead';
 const HAPVIDA_LOGO = '/logos/hapvida.webp';
-const ELEVANCE_LOGO = '/logos/elevance-dark-horizontal-white.png';
+const ELEVANCE_LOGO = '/logos/elevance-logo-branco.png';
 
 const benefits = [
   'Cotação gratuita e sem compromisso',
@@ -91,22 +91,18 @@ export default function HapvidaAdsLanding() {
         <section id="top" className="relative overflow-hidden bg-[linear-gradient(135deg,#0057B8_0%,#0876D8_42%,#071B34_100%)] text-white">
           <div className="absolute inset-0 opacity-100" style={{ background: 'radial-gradient(circle at top right, rgba(255,155,0,.24), transparent 28%), radial-gradient(circle at bottom left, rgba(255,255,255,.10), transparent 28%)' }} />
           <div className="relative max-w-7xl mx-auto px-4 py-8 md:py-14">
-            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between mb-10">
-              <div className="flex items-center gap-5">
+            <div className="flex items-center justify-between mb-10">
+              <div className="flex items-center gap-4">
                 <img src={HAPVIDA_LOGO} alt="Hapvida" className="h-10 md:h-12 w-auto object-contain bg-white rounded-xl px-3 py-1.5" />
                 <div className="w-px h-10 bg-white/25" />
-                <div className="flex flex-col items-start gap-1">
-                  <img
-                    src={ELEVANCE_LOGO}
-                    alt="Elevance Seguros"
-                    className="h-7 md:h-9 w-auto object-contain"
-                    style={{ filter: 'brightness(0) invert(1)' }}
-                  />
-                  <span className="text-[9px] font-black uppercase tracking-[0.22em] text-[#FFD26E]">Corretora parceira</span>
+                <div className="flex flex-col items-start gap-0.5">
+                  <img src={ELEVANCE_LOGO} alt="Elevance Seguros" className="h-6 md:h-8 w-auto object-contain" />
+                  <span className="text-[9px] font-black uppercase tracking-[0.2em] text-[#FFD26E]">Corretora parceira</span>
                 </div>
               </div>
-              <a href={whatsappHref} target="_blank" rel="noreferrer" className="hidden sm:inline-flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-5 py-3 rounded-2xl text-xs font-black uppercase tracking-widest transition-all shadow-xl">
-                <MessageCircle size={15} /> WhatsApp
+              <a href={whatsappHref} target="_blank" rel="noreferrer"
+                className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-4 py-2.5 rounded-2xl text-[11px] font-black uppercase tracking-widest transition-all shadow-lg">
+                <MessageCircle size={14} /> WhatsApp
               </a>
             </div>
 
