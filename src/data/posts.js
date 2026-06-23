@@ -3292,6 +3292,58 @@ export const postsData = [
 
       <p class="mt-8 font-bold" style="color:#C8A96B">Tem mais de 49 anos e quer comparar a MedSênior com outras operadoras? A Elevance cota gratuitamente. Chama no WhatsApp!</p>
     `
+  }  ,
+  {
+    id: 63,
+    slug: "hapvida-vs-amil-qual-e-melhor-em-sp",
+    title: "Hapvida vs Amil: Qual é Melhor em São Paulo em 2026?",
+    date: "23 Jun, 2026",
+    category: "Planos de Saúde",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Hapvida tem rede própria gigante e preço mais acessível. Amil tem planos nacionais e acesso ao Einstein. Mas qual é a melhor escolha para quem mora em SP?",
+    content: `
+      <p class="mb-4">Essa é uma das perguntas que mais recebo aqui na Elevance Seguros: "Rodrigo, Hapvida ou Amil — qual você indicaria?" A resposta honesta é: depende do seu perfil. Mas vou te mostrar exatamente quando cada uma faz mais sentido.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Hapvida: o gigante da rede própria</h2>
+      <p class="mb-4">A Hapvida possui <strong>86 hospitais e 352 clínicas próprias</strong> no Brasil. O grande diferencial é que você usa a estrutura sem burocracia de autorização prévia — consulta, exame e emergência funcionam de forma integrada. Em São Paulo, o principal hospital é o <strong>Hospital Renascença</strong>, com UTI adulto e neonatal, maternidade e pronto-socorro 24h.</p>
+      <p class="mb-4">O preço é o ponto forte: PF a partir de <strong>R$ 133/mês</strong> e PME/MEI a partir de <strong>R$ 110/mês</strong>. Para quem busca cobertura de qualidade sem gastar muito, é difícil bater esse custo-benefício em SP.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Amil: flexibilidade e cobertura nacional</h2>
+      <p class="mb-4">A Amil funciona de forma diferente. Em SP, o plano de entrada é o <strong>Bronze SP</strong> (regional, mais barato) e o <strong>Bronze SP Mais</strong> (que inclui Campinas e ABC). A partir do plano <strong>Prata</strong>, a cobertura é nacional — você pode se tratar em qualquer cidade do Brasil.</p>
+      <p class="mb-4">Nos planos superiores (Ouro, Platinum, Black), o acesso ao <strong>Hospital Israelita Albert Einstein</strong> e ao <strong>Sírio-Libanês</strong> está incluído — um diferencial que a Hapvida não oferece. Para quem viaja com frequência ou valoriza a livre escolha de hospital premium, Amil pode compensar o custo maior.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparativo direto: Hapvida vs Amil</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#0d1f3c] text-white">
+              <th class="p-3 text-left rounded-tl-xl">Critério</th>
+              <th class="p-3 text-center">Hapvida</th>
+              <th class="p-3 text-center rounded-tr-xl">Amil</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Preço PF entrada</td><td class="p-3 text-center text-green-600 font-bold">R$ 133/mês</td><td class="p-3 text-center">R$ 150/mês</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Rede própria</td><td class="p-3 text-center text-green-600 font-bold">86 hospitais</td><td class="p-3 text-center">Credenciada</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Cobertura nacional</td><td class="p-3 text-center">Sim (rede própria)</td><td class="p-3 text-center text-green-600 font-bold">Sim (Prata+)</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Einstein / Sírio</td><td class="p-3 text-center text-slate-400">Não</td><td class="p-3 text-center text-green-600 font-bold">Sim (Ouro+)</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">MEI aceito</td><td class="p-3 text-center text-green-600 font-bold">Sim, 1 vida</td><td class="p-3 text-center text-green-600 font-bold">Sim, 2 vidas</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Telemedicina</td><td class="p-3 text-center text-green-600 font-bold">Super App</td><td class="p-3 text-center text-green-600 font-bold">App Amil</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher a Hapvida?</h2>
+      <p class="mb-4">Escolha Hapvida se você mora e trabalha em São Paulo ou nas cidades com rede própria forte (Campinas, São Bernardo, Sorocaba, Ribeirão Preto), quer o menor preço possível sem abrir mão de qualidade, e não precisa necessariamente de hospitais como Einstein ou Sírio. É a escolha certa para famílias, MEI e PME que querem proteger bem sem comprometer o orçamento.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher a Amil?</h2>
+      <p class="mb-4">Escolha Amil se você viaja com frequência e precisa de cobertura em qualquer cidade, quer acesso a hospitais de alto padrão como Einstein e Sírio nos planos superiores, ou precisa de portabilidade — a Amil aceita aproveitamento de carências de outros planos com mais de 2 anos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão: não existe o melhor, existe o certo para você</h2>
+      <p class="mb-4">Hapvida ganha em preço e rede própria integrada. Amil ganha em cobertura nacional ampla e acesso a hospitais premium. Para a maioria das famílias em SP que buscam custo-benefício, Hapvida é a escolha mais inteligente. Para quem prioriza liberdade de escolha e não se importa em pagar mais, Amil nos planos superiores entrega muito.</p>
+      <p class="mb-4">Na Elevance Seguros eu analiso seu perfil, cidade e orçamento antes de indicar qualquer plano. A cotação é gratuita e sem compromisso.</p>
+    `
   }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
