@@ -114,7 +114,7 @@ const AppContent = () => {
     location.pathname === path || (path !== '/' && location.pathname.startsWith(`${path}/`))
   );
 
-  const hideGlobalConversionWidgets = isHapvidaAdsSubdomain || isHapvidaAdsRoute;
+  const hideGlobalConversionWidgets = isHapvidaSubdomain;
 
   return (
     <>
