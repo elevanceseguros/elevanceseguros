@@ -171,7 +171,7 @@ export default function HapvidaAdsLanding() {
                 </form>
 
                 <a href={whatsappHref} target="_blank" rel="noreferrer" className="mt-3 w-full inline-flex items-center justify-center gap-2 rounded-2xl border border-green-200 bg-green-50 text-green-700 py-3 text-xs font-black uppercase tracking-widest">
-                  <MessageCircle size={15} /> Preferir WhatsApp agora
+                  <MessageCircle size={15} /> Falar direto no WhatsApp
                 </a>
               </div>
             </div>
