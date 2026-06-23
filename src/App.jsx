@@ -68,6 +68,7 @@ const SagradaFamiliaThankYouPage = lazy(() => import('@/pages/SagradaFamiliaThan
 const AdminLoginPage = lazy(() => import('@/pages/AdminLoginPage'));
 const AdminDashboardPage = lazy(() => import('@/pages/AdminDashboardPage'));
 const SaudeLanding = lazy(() => import('@/pages/SaudeLanding'));
+const HapvidaLandingPage = lazy(() => import('@/pages/HapvidaLandingPage'));
 
 const LoadingFallback = () => (
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100%' }}>
@@ -96,6 +97,7 @@ const AppContent = () => {
   const hostname = typeof window !== 'undefined' ? window.location.hostname : '';
   const isSaudeSubdomain = hostname.startsWith('saude.');
   const isSagradaSubdomain = hostname.startsWith('sagradafamilia.');
+  const isHapvidaSubdomain = hostname.startsWith('hapvida.');
 
   const noHeaderFooterRoutes = [
     '/obrigado',
@@ -106,7 +108,7 @@ const AppContent = () => {
     '/saude',
   ];
 
-  const showHeaderFooter = !isSaudeSubdomain && !isSagradaSubdomain && !noHeaderFooterRoutes.some((path) =>
+  const showHeaderFooter = !isSaudeSubdomain && !isSagradaSubdomain && !isHapvidaSubdomain && !noHeaderFooterRoutes.some((path) =>
     location.pathname === path || (path !== '/' && location.pathname.startsWith(`${path}/`))
   );
 
@@ -125,7 +127,7 @@ const AppContent = () => {
             <ErrorBoundary>
               <Suspense fallback={<LoadingFallback />}>
                 <Routes>
-                  <Route path="/" element={isSaudeSubdomain ? <SaudeLanding /> : isSagradaSubdomain ? <SagradaFamiliaHomePage /> : <HomePage />} />
+                  <Route path="/" element={isSaudeSubdomain ? <SaudeLanding /> : isSagradaSubdomain ? <SagradaFamiliaHomePage /> : isHapvidaSubdomain ? <HapvidaLandingPage /> : <HomePage />} />
                   <Route path="/saude" element={<SaudeLanding />} />
                   <Route path="/sagrada-familia" element={<SagradaFamiliaHomePage />} />
                   <Route path="/sagrada-familia/thank-you" element={<SagradaFamiliaThankYouPage />} />
@@ -145,6 +147,7 @@ const AppContent = () => {
                   <Route path="/seguro-empresa" element={<SeguroEmpresaPage />} />
 
                   <Route path="/hapvida" element={<><HapvidaPage /><HealthInternalLinks pathname="/hapvida" /></>} />
+                  <Route path="/hapvida-googleads" element={<HapvidaLandingPage />} />
                   <Route path="/hapvida-campinas" element={<><HapvidaCampinasPage /><HealthInternalLinks pathname="/hapvida-campinas" /></>} />
                   <Route path="/hapvida-ribeirao-preto" element={<><HapvidaRibeiraoPretoPage /><HealthInternalLinks pathname="/hapvida-ribeirao-preto" /></>} />
                   <Route path="/hapvida-sao-bernardo-do-campo" element={<><HapvidaSaoBernardoPage /><HealthInternalLinks pathname="/hapvida-sao-bernardo-do-campo" /></>} />
