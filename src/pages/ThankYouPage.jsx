@@ -35,13 +35,13 @@ const ThankYouPage = () => {
           {primeiroNome ? `Recebemos, ${primeiroNome}!` : 'Recebemos seu pedido!'}
         </h1>
         <p className="text-white/55 text-center text-base max-w-sm leading-relaxed mb-10">
-          Rodrigo da Elevance Seguros vai entrar em contato no seu WhatsApp em instantes com a melhor proposta.
+          Rodrigo da Elevance já recebeu seus dados e vai entrar em contato no WhatsApp em breve com a sua cotação.
         </p>
 
         {/* Passos */}
         <div className="w-full max-w-sm space-y-3 mb-10">
           {[
-            { n: '1', texto: 'Seus dados foram enviados para o consultor' },
+            { n: '1', texto: 'Rodrigo recebeu seu pedido de cotação' },
             { n: '2', texto: 'Rodrigo analisa o seu perfil e monta a cotação' },
             { n: '3', texto: 'Você recebe a proposta diretamente no WhatsApp' },
           ].map(step => (

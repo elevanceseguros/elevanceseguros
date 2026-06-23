@@ -6,7 +6,7 @@ import { ArrowRight, Building2, CheckCircle2, HeartPulse, MessageCircle, ShieldC
 const WHATSAPP_NUMBER = '5511920144864';
 const WEBHOOK_URL = 'https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead';
 const HAPVIDA_LOGO = '/logos/hapvida.webp';
-const ELEVANCE_LOGO = '/logos/elevance-logo-branco.png';
+const ELEVANCE_LOGO = '/logos/elevance-dark-horizontal-gold.png';
 
 const benefits = [
   'Cotação gratuita e sem compromisso',
@@ -22,9 +22,9 @@ const audience = [
 ];
 
 const valueCards = [
-  { label: 'Rede e atendimento', title: 'Confira a rede para sua região', text: 'A rede pode variar conforme cidade, plano e modalidade. Na cotação, você recebe orientação sobre pontos de atendimento disponíveis para seu perfil.' },
-  { label: 'Ideia de valores', title: 'Simulação personalizada', text: 'Valores mudam por idade, cidade, quantidade de vidas e tipo de contratação. A simulação certa é feita com os seus dados.' },
-  { label: 'Por que a Elevance?', title: 'Você entende antes de contratar', text: 'O atendimento é consultivo: carência, coparticipação, rede e melhor modalidade são explicados antes do fechamento.' },
+  { label: 'Rede Hapvida', title: '86 hospitais próprios no Brasil', text: 'A Hapvida tem uma das maiores redes próprias do país. Você usa a mesma estrutura sem burocracia de autorização — consultas, exames e emergências integrados.' },
+  { label: 'Valores reais', title: 'PF a partir de R$ 133/mês', text: 'PME e MEI têm tabela própria e costumam ser mais baratos. Na cotação você recebe o valor exato para o seu perfil, cidade e faixa etária.' },
+  { label: 'Por que a Elevance?', title: 'Rodrigo explica antes de você contratar', text: 'Carência, coparticipação, rede credenciada e melhor modalidade — você entende tudo antes de assinar. Sem surpresa depois.' },
 ];
 
 const faqs = [
@@ -40,8 +40,6 @@ export default function HapvidaAdsLanding() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [tipo, setTipo] = useState('Individual/Familiar');
-  const [elevanceLogoOk, setElevanceLogoOk] = useState(true);
-
   const whatsappHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Olá Rodrigo, vim pelo anúncio da Hapvida e quero uma cotação.')}`;
 
   async function handleSubmit(event) {
@@ -200,21 +198,7 @@ export default function HapvidaAdsLanding() {
           </div>
         </section>
 
-        <section className="max-w-6xl mx-auto px-4 py-14">
-          <div className="text-center mb-8">
-            <p className="text-[10px] uppercase tracking-[0.25em] font-black text-[#FF8A00] mb-2">Para quem é</p>
-            <h2 className="text-3xl font-black text-[#0057B8] italic">Esta cotação pode atender você se procura:</h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-4">
-            {audience.map((item) => (
-              <div key={item.title} className="bg-white rounded-[1.7rem] p-6 border border-slate-100 shadow-sm">
-                <div className="w-12 h-12 rounded-2xl bg-blue-50 text-[#0057B8] flex items-center justify-center mb-4">{item.icon}</div>
-                <h3 className="font-black text-[#071B34] italic mb-2">{item.title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+
 
         <section className="max-w-5xl mx-auto px-4 pb-16">
           <div className="text-center mb-8">
