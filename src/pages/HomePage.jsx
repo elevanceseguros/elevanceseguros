@@ -80,20 +80,10 @@ const HomePage = () => {
 
             {/* ESQUERDA */}
             <div className="w-full lg:w-[55%] space-y-8 text-center lg:text-left">
-              <div className="flex flex-row items-center justify-center lg:justify-start gap-4">
-                <div className="relative shrink-0">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden"
-                    style={{boxShadow: '0 0 0 2px rgba(200,169,107,0.5), 0 0 0 6px rgba(200,169,107,0.12), 0 0 30px rgba(200,169,107,0.15)'}}>
-                    <img src={fotoHero} alt="Rodrigo Farias" className="w-full h-full object-cover object-top" fetchpriority="high" width="96" height="96" />
-                  </div>
-                  <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-400 rounded-full border-[3px] border-[#071B34] animate-pulse"></div>
-                </div>
-                <div className="space-y-1 text-left">
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[9px] font-bold uppercase tracking-widest"
-                    style={{background: 'rgba(200,169,107,0.12)', border: '1px solid rgba(200,169,107,0.3)', color: '#E8C98A'}}>
-                    ✦ Consultoria Especializada
-                  </div>
-                  <p className="text-xs font-medium" style={{color: 'rgba(255,255,255,0.5)'}}>Elevance Seguros · Corretora Digital</p>
+              <div className="flex flex-row items-center justify-center lg:justify-start">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest"
+                  style={{background: 'rgba(200,169,107,0.12)', border: '1px solid rgba(200,169,107,0.3)', color: '#E8C98A'}}>
+                  <span>✦</span> Corretora Digital · Todo o Brasil
                 </div>
               </div>
 
