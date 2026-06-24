@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, Building2, CheckCircle2, HeartPulse, MessageCircle, ShieldCheck, Stethoscope, Users, WalletCards } from 'lucide-react';
@@ -51,6 +51,15 @@ export default function HapvidaAdsLanding() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [tipo, setTipo] = useState('Individual/Familiar');
+
+  useEffect(() => {
+    try {
+      if (typeof gtag !== 'undefined') {
+        gtag('config', 'G-0E0B48S28G', { page_path: window.location.pathname });
+        gtag('event', 'page_view', { page_location: window.location.href, page_title: 'Plano Hapvida | Cotação Gratuita' });
+      }
+    } catch (e) {}
+  }, []);
   const whatsappHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Olá Rodrigo, vim pelo anúncio da Hapvida e quero uma cotação.')}`;
 
   async function handleSubmit(event) {
