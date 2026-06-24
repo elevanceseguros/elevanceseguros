@@ -118,7 +118,7 @@ export default function HapvidaAdsLanding() {
                   </p>
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-3 max-w-2xl">
+                <div className="hidden md:grid md:grid-cols-2 gap-3 max-w-2xl">
                   {benefits.map((benefit) => (
                     <div key={benefit} className="flex items-center gap-2 rounded-2xl bg-white/10 border border-white/10 px-4 py-3 text-sm text-white/85 backdrop-blur-sm">
                       <CheckCircle2 size={16} className="text-[#FFD26E] shrink-0" /> {benefit}
