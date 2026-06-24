@@ -83,7 +83,7 @@ const HomePage = () => {
               <div className="flex flex-row items-center justify-center lg:justify-start">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest"
                   style={{background: 'rgba(200,169,107,0.12)', border: '1px solid rgba(200,169,107,0.3)', color: '#E8C98A'}}>
-                  <span>✦</span> Corretora Digital · 100% Online
+                  <span>✦</span> Corretora Digital · Atendimento Nacional
                 </div>
               </div>
 
