@@ -35,14 +35,14 @@ const ThankYouPage = () => {
           {primeiroNome ? `Recebemos, ${primeiroNome}!` : 'Recebemos seu pedido!'}
         </h1>
         <p className="text-white/55 text-center text-base max-w-sm leading-relaxed mb-10">
-          Rodrigo da Elevance já recebeu seus dados e vai entrar em contato no WhatsApp em breve com a sua cotação.
+          A Elevance já recebeu seus dados e um consultor vai entrar em contato no WhatsApp em breve com a sua cotação.
         </p>
 
         {/* Passos */}
         <div className="w-full max-w-sm space-y-3 mb-10">
           {[
-            { n: '1', texto: 'Rodrigo recebeu seu pedido de cotação' },
-            { n: '2', texto: 'Rodrigo analisa o seu perfil e monta a cotação' },
+            { n: '1', texto: 'Recebemos seu pedido de cotação' },
+            { n: '2', texto: 'Um consultor analisa seu perfil e monta a cotação' },
             { n: '3', texto: 'Você recebe a proposta diretamente no WhatsApp' },
           ].map(step => (
             <div key={step.n} className="flex items-center gap-4 bg-white/5 border border-white/8 rounded-2xl px-5 py-4">

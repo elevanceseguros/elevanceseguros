@@ -53,7 +53,7 @@ const HomePage = () => {
         <link rel="canonical" href="https://www.elevanceseguros.com" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Elevance Seguros | Corretora Digital em São Paulo" />
-        <meta property="og:description" content="Planos de saúde, seguro auto, vida, residencial, empresarial e consórcios em SP. Cotação gratuita com o corretor Rodrigo Farias." />
+        <meta property="og:description" content="Planos de saúde, seguro auto, vida, residencial, empresarial e consórcios em SP. Cotação gratuita com especialistas da Elevance Seguros." />
         <meta property="og:image" content="https://www.elevanceseguros.com/preview.webp" />
         <meta property="og:url" content="https://www.elevanceseguros.com" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -93,7 +93,7 @@ const HomePage = () => {
                     style={{background: 'rgba(200,169,107,0.12)', border: '1px solid rgba(200,169,107,0.3)', color: '#E8C98A'}}>
                     ✦ Consultoria Especializada
                   </div>
-                  <p className="text-xs font-medium" style={{color: 'rgba(255,255,255,0.5)'}}>Rodrigo Farias · Corretor · SP</p>
+                  <p className="text-xs font-medium" style={{color: 'rgba(255,255,255,0.5)'}}>Elevance Seguros · Corretora Digital</p>
                 </div>
               </div>
 
@@ -521,7 +521,7 @@ const HomePage = () => {
 
             {/* Foto */}
             <div className="lg:w-2/5 relative overflow-hidden min-h-[280px] lg:min-h-0">
-              <img src={fotoHero} alt="Rodrigo Farias" className="w-full h-full object-cover object-top opacity-80" loading="lazy"/>
+              <img src={fotoHero} alt="Rodrigo Farias — Fundador & CEO da Elevance Seguros" className="w-full h-full object-cover object-top opacity-80" loading="lazy"/>
               <div className="absolute inset-0" style={{background: 'linear-gradient(to right, transparent 60%, #0d2a55 100%)'}}></div>
               <div className="absolute inset-0" style={{background: 'linear-gradient(to top, #071B34 0%, transparent 40%)'}}></div>
             </div>
@@ -541,8 +541,18 @@ const HomePage = () => {
               </h2>
 
               <p className="text-base font-light leading-relaxed" style={{color: 'rgba(255,255,255,0.6)'}}>
-                Sou o Rodrigo Farias, corretor de seguros com atuação 100% digital. Não vendo produto — encontro a melhor proteção para o seu momento de vida, com transparência e sem pressão.
+                Rodrigo Farias fundou a Elevance Seguros com um propósito simples: oferecer consultoria de seguros 100% digital, sem pressão e sem letra miúda. Cada cliente recebe análise personalizada antes de qualquer contratação.
               </p>
+
+              <div className="inline-flex items-center gap-2 w-fit">
+                <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-[#C9A84C]/40 flex-shrink-0">
+                  <img src={fotoHero} alt="Rodrigo Farias" className="w-full h-full object-cover object-top" />
+                </div>
+                <div>
+                  <p className="text-white font-black text-xs">Rodrigo Farias</p>
+                  <p className="text-[#C9A84C] text-[10px] font-bold uppercase tracking-widest">Fundador & CEO · Elevance Seguros</p>
+                </div>
+              </div>
 
               <div className="grid grid-cols-2 gap-4">
                 {[
@@ -562,7 +572,7 @@ const HomePage = () => {
                 target="_blank" rel="noreferrer"
                 className="inline-flex items-center gap-2 w-fit text-white px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest transition-all hover:scale-105"
                 style={{background: '#16a34a', boxShadow: '0 4px 15px rgba(22,163,74,0.3)'}}>
-                <MessageCircle size={14}/> Falar com o Rodrigo
+                <MessageCircle size={14}/> Falar com a Elevance
               </a>
             </div>
           </div>
@@ -725,7 +735,7 @@ const HomePage = () => {
             <div className="lg:w-1/2 w-full z-10">
               <div className="rounded-[1.75rem] p-8 md:p-10 text-center space-y-4"
                 style={{background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(200,169,107,0.15)', backdropFilter: 'blur(12px)'}}>
-                <p className="font-sora text-white font-bold text-lg italic">Fale agora com o Rodrigo</p>
+                <p className="font-sora text-white font-bold text-lg italic">Fale agora com a Elevance</p>
                 <p className="text-sm font-light" style={{color: 'rgba(255,255,255,0.45)'}}>Sem formulário, sem espera. Direto no WhatsApp.</p>
                 <a href={`https://wa.me/${meuNumero}`} target="_blank" rel="noreferrer"
                   className="flex items-center justify-center gap-3 w-full py-4 rounded-xl font-bold text-xs uppercase tracking-widest text-white bg-green-500 hover:bg-green-400 transition-all hover:scale-105 shadow-lg">

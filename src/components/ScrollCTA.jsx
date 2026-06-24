@@ -41,7 +41,7 @@ const ScrollCTA = ({ produto }) => {
           <p className="text-white font-semibold text-sm leading-tight">
             Ainda tem dúvidas sobre <span className="text-gold-gradient font-bold">{produto}</span>?
           </p>
-          <p className="text-xs mt-0.5" style={{color: 'rgba(255,255,255,0.4)'}}>Rodrigo responde agora, sem compromisso.</p>
+          <p className="text-xs mt-0.5" style={{color: 'rgba(255,255,255,0.4)'}}>Nossa equipe responde em minutos, sem compromisso.</p>
         </div>
 
         <a href={whatsappHref}

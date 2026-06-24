@@ -183,7 +183,7 @@ const Footer = () => {
             © {currentYear} Elevance Seguros · Todos os direitos reservados
           </p>
           <p className="text-[10px] font-medium uppercase tracking-widest" style={{color: 'rgba(255,255,255,0.25)'}}>
-            Rodrigo Farias · Corretor de Seguros
+            Rodrigo Farias · Fundador & CEO
           </p>
         </div>
       </div>

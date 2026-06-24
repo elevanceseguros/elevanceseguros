@@ -21,6 +21,7 @@ const CorretorHero = ({ operadora = "" }) => {
           {/* Info */}
           <div>
             <div className="font-black text-[#0d1f3c] text-sm leading-tight">Rodrigo Farias</div>
+            <div className="text-[9px] font-bold text-[#C9A84C] uppercase tracking-widest mb-0.5">Fundador & CEO</div>
             <div className="flex gap-0.5 my-0.5">
               {[...Array(5)].map((_, i) => <Star key={i} size={9} className="text-yellow-400 fill-yellow-400" />)}
             </div>

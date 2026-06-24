@@ -24,7 +24,7 @@ const audience = [
 const valueCards = [
   { label: 'Rede Hapvida', title: '86 hospitais próprios no Brasil', text: 'A Hapvida tem uma das maiores redes próprias do país. Você usa a mesma estrutura sem burocracia de autorização — consultas, exames e emergências integrados.' },
   { label: 'Valores reais', title: 'PF a partir de R$ 133/mês', text: 'PME e MEI têm tabela própria e costumam ser mais baratos. Na cotação você recebe o valor exato para o seu perfil, cidade e faixa etária.' },
-  { label: 'Por que a Elevance?', title: 'Rodrigo explica antes de você contratar', text: 'Carência, coparticipação, rede credenciada e melhor modalidade — você entende tudo antes de assinar. Sem surpresa depois.' },
+  { label: 'Por que a Elevance?', title: 'Nosso consultor explica antes de você contratar', text: 'Carência, coparticipação, rede credenciada e melhor modalidade — você entende tudo antes de assinar. Sem surpresa depois.' },
 ];
 
 const faqs = [

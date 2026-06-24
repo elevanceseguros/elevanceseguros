@@ -162,7 +162,7 @@ const Header = () => {
           <a href="https://wa.me/5511920144864" target="_blank" rel="noreferrer"
             className="flex items-center gap-2 text-white px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all hover:opacity-90 hover:scale-105"
             style={{background: 'linear-gradient(135deg, #16a34a, #15803d)', boxShadow: '0 4px 15px rgba(22,163,74,0.3)'}}>
-            <Phone size={13} /> Falar com Rodrigo
+            <Phone size={13} /> Falar com um Especialista
           </a>
         </nav>
 
@@ -243,7 +243,7 @@ const Header = () => {
           <a href="https://wa.me/5511920144864"
             className="flex items-center justify-center gap-2 text-white py-4 rounded-xl font-bold text-xs uppercase tracking-widest mt-3"
             style={{background: 'linear-gradient(135deg, #16a34a, #15803d)', boxShadow: '0 4px 15px rgba(22,163,74,0.3)'}}>
-            <Phone size={15} /> Falar com Rodrigo
+            <Phone size={15} /> Falar com um Especialista
           </a>
         </div>
       </div>
