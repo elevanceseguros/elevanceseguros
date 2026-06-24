@@ -14,6 +14,7 @@ function dispararConversao() {
   try {
     if (typeof gtag !== 'undefined') {
       gtag('event', 'conversion', { send_to: CONVERSION_ID });
+      gtag('event', 'Chamou WhatsApp', { event_category: 'lead', event_label: 'hapvida_landing' });
     }
   } catch (e) {}
 }
