@@ -8,6 +8,16 @@ const WEBHOOK_URL = 'https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-le
 const HAPVIDA_LOGO = '/logos/hapvida.webp';
 const ELEVANCE_LOGO = '/logos/elevance-dark-horizontal-gold.png';
 
+const CONVERSION_ID = 'AW-17709329615/-c-xCN7N3e8bEM_Zu_xB';
+
+function dispararConversao() {
+  try {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'conversion', { send_to: CONVERSION_ID });
+    }
+  } catch (e) {}
+}
+
 const benefits = [
   'Cotação gratuita e sem compromisso',
   'Atendimento com corretor especializado',
@@ -69,6 +79,7 @@ export default function HapvidaAdsLanding() {
       });
     } catch (_) {}
 
+    dispararConversao();
     navigate('/obrigado');
   }
 
@@ -98,7 +109,7 @@ export default function HapvidaAdsLanding() {
                   <span className="text-[9px] font-black uppercase tracking-[0.2em] text-[#FFD26E]">Corretora parceira</span>
                 </div>
               </div>
-              <a href={whatsappHref} target="_blank" rel="noreferrer"
+              <a href={whatsappHref} target="_blank" rel="noreferrer" onClick={dispararConversao}
                 className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-4 py-2.5 rounded-2xl text-[11px] font-black uppercase tracking-widest transition-all shadow-lg">
                 <MessageCircle size={14} /> WhatsApp
               </a>
@@ -180,7 +191,7 @@ export default function HapvidaAdsLanding() {
                   </button>
                 </form>
 
-                <a href={whatsappHref} target="_blank" rel="noreferrer" className="mt-3 w-full inline-flex items-center justify-center gap-2 rounded-2xl border border-green-200 bg-green-50 text-green-700 py-3 text-xs font-black uppercase tracking-widest">
+                <a href={whatsappHref} target="_blank" rel="noreferrer" onClick={dispararConversao} className="mt-3 w-full inline-flex items-center justify-center gap-2 rounded-2xl border border-green-200 bg-green-50 text-green-700 py-3 text-xs font-black uppercase tracking-widest">
                   <MessageCircle size={15} /> Falar direto no WhatsApp
                 </a>
               </div>
@@ -226,7 +237,7 @@ export default function HapvidaAdsLanding() {
         </section>
 
         <div className="fixed bottom-4 left-4 right-4 sm:hidden z-40">
-          <a href={whatsappHref} target="_blank" rel="noreferrer" className="w-full inline-flex items-center justify-center gap-2 bg-green-500 text-white rounded-2xl py-4 font-black text-xs uppercase tracking-widest shadow-2xl">
+          <a href={whatsappHref} target="_blank" rel="noreferrer" onClick={dispararConversao} className="w-full inline-flex items-center justify-center gap-2 bg-green-500 text-white rounded-2xl py-4 font-black text-xs uppercase tracking-widest shadow-2xl">
             <MessageCircle size={16} /> Cotação Hapvida no WhatsApp
           </a>
         </div>
