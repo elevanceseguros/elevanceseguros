@@ -73,6 +73,16 @@
 		<link rel="preload" as="image" href="/logo-white.webp" />
 		<link rel="preconnect" href="https://www.googletagmanager.com" />
 		<link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+		<!-- Google Analytics GA4 direto -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0E0B48S28G"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			window.gtag = gtag;
+			gtag('js', new Date());
+			gtag('config', 'G-0E0B48S28G', { send_page_view: false });
+		</script>
 	</head>
 	<body>
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVV23QSX"
