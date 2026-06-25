@@ -22,14 +22,7 @@ const isHumanSession = () => {
   // 3. Browsers reais têm pelo menos 1 núcleo de CPU reportado
   if (navigator.hardwareConcurrency !== undefined && navigator.hardwareConcurrency < 1) return false;
 
-  // 4. Verifica se há plugins (bots headless geralmente têm 0)
-  // Nota: só bloqueia se explicitamente 0 — alguns browsers legítimos escondem plugins
-  if (navigator.plugins !== undefined && navigator.plugins.length === 0 && !navigator.userAgent.match(/Mobile|Android|iPhone/i)) {
-    // Mobile legítimo pode ter 0 plugins, então só bloqueia desktop com 0 plugins E sem touch
-    if (!('ontouchstart' in window) && navigator.maxTouchPoints === 0) return false;
-  }
-
-  // 5. Verifica dimensões de tela reais (bots às vezes reportam 0x0)
+  // 4. Verifica dimensões de tela reais (bots às vezes reportam 0x0)
   if (window.screen && (window.screen.width === 0 || window.screen.height === 0)) return false;
 
   return true;
