@@ -3344,6 +3344,197 @@ export const postsData = [
       <p class="mb-4">Hapvida ganha em preço e rede própria integrada. Amil ganha em cobertura nacional ampla e acesso a hospitais premium. Para a maioria das famílias em SP que buscam custo-benefício, Hapvida é a escolha mais inteligente. Para quem prioriza liberdade de escolha e não se importa em pagar mais, Amil nos planos superiores entrega muito.</p>
       <p class="mb-4">Na Elevance Seguros eu analiso seu perfil, cidade e orçamento antes de indicar qualquer plano. A cotação é gratuita e sem compromisso.</p>
     `
+  }  ,
+  {
+    id: 64,
+    slug: "plano-de-saude-para-mei-como-contratar",
+    title: "Plano de Saúde para MEI: Como Contratar em 2026",
+    date: "24 Jun, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
+    excerpt: "MEI pode contratar plano de saúde empresarial com tabela mais barata que o plano individual. Saiba quais operadoras aceitam, qual é o processo e quanto custa.",
+    content: `
+      <p class="mb-4">Uma dúvida muito comum entre microempreendedores individuais é: "MEI pode ter plano de saúde empresarial?" A resposta é sim — e isso faz uma diferença enorme no valor da mensalidade.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Por que o plano empresarial é mais barato para MEI?</h2>
+      <p class="mb-4">O plano de saúde empresarial tem tabela própria, separada do plano individual. Como o risco é diluído entre os beneficiários de uma empresa, as operadoras cobram menos por vida. Para o MEI, isso significa <strong>economia de 20% a 40%</strong> em relação ao mesmo plano contratado como pessoa física.</p>
+      <p class="mb-4">Um exemplo prático: o plano Hapvida para pessoa física na faixa de 30 a 33 anos custa em torno de R$ 183/mês. O mesmo plano via PME para MEI pode sair por R$ 110/mês — com a mesma cobertura.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quais operadoras aceitam MEI?</h2>
+      <p class="mb-4">Nem todas as operadoras aceitam MEI. As principais que aceitam em São Paulo:</p>
+      <ul class="mb-4 space-y-2 list-none">
+        <li class="flex gap-2"><span class="text-[#C9A84C] font-black">✓</span><span><strong>Hapvida</strong> — aceita a partir de 1 vida (só o titular MEI)</span></li>
+        <li class="flex gap-2"><span class="text-[#C9A84C] font-black">✓</span><span><strong>Amil</strong> — aceita a partir de 2 vidas (titular + dependente ou sócio)</span></li>
+        <li class="flex gap-2"><span class="text-[#C9A84C] font-black">✓</span><span><strong>SulAmérica</strong> — aceita a partir de 3 vidas</span></li>
+        <li class="flex gap-2"><span class="text-[#C9A84C] font-black">✓</span><span><strong>Alice</strong> — aceita a partir de 1 vida, 100% digital</span></li>
+        <li class="flex gap-2"><span class="text-[#C9A84C] font-black">✓</span><span><strong>Bradesco Saúde</strong> — aceita a partir de 2 vidas com CNPJ ativo há 6 meses</span></li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Requisitos para contratar como MEI</h2>
+      <p class="mb-4">Os requisitos variam por operadora, mas em geral são:</p>
+      <ul class="mb-4 space-y-1 list-disc pl-5">
+        <li>CNPJ ativo há pelo menos 6 meses</li>
+        <li>Certificado MEI atualizado (emitido pelo gov.br)</li>
+        <li>Documento de identidade do titular</li>
+        <li>Comprovante de endereço</li>
+      </ul>
+      <p class="mb-4">Não é necessário ter funcionários — o MEI pode contratar o plano apenas para si mesmo nas operadoras que aceitam 1 vida.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Posso incluir minha família no plano MEI?</h2>
+      <p class="mb-4">Sim. Cônjuge, filhos e outros dependentes podem ser incluídos no mesmo plano empresarial do MEI. Cada dependente paga a mensalidade da sua faixa etária, também na tabela empresarial — mais barata que o individual.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Vale a pena comparar antes de contratar</h2>
+      <p class="mb-4">Cada operadora tem rede credenciada, cobertura e preço diferentes. O que faz sentido para um MEI em Campinas pode não ser o melhor para um MEI na Zona Leste de SP. A Elevance Seguros compara as opções disponíveis para o seu perfil e cidade — sem custo.</p>
+    `
+  }
+  ,
+  {
+    id: 65,
+    slug: "seguro-de-vida-quanto-custa-e-o-que-cobre",
+    title: "Seguro de Vida: Quanto Custa e O Que Realmente Cobre em 2026",
+    date: "25 Jun, 2026",
+    category: "Seguro de Vida",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1511895426328-dc8714191011?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Seguro de vida pode custar menos de R$ 50 por mês. Mas o que ele cobre de verdade? Entenda as coberturas, o que faz sentido para cada fase da vida e como não pagar a mais.",
+    content: `
+      <p class="mb-4">Quando o assunto é seguro de vida, a maioria das pessoas tem duas reações: "é caro" ou "não preciso disso ainda". As duas costumam estar erradas. Um seguro de vida básico pode custar menos de R$ 50 por mês e cobrir situações que muita gente não imagina.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quanto custa um seguro de vida?</h2>
+      <p class="mb-4">O valor depende de três fatores principais: idade, capital segurado (o valor que seus beneficiários recebem) e coberturas contratadas. Uma referência para 2026:</p>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Perfil</th><th class="p-3 text-center">Capital R$ 100k</th><th class="p-3 text-center rounded-tr-xl">Capital R$ 300k</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">25 anos</td><td class="p-3 text-center text-green-600 font-bold">~R$ 35/mês</td><td class="p-3 text-center">~R$ 80/mês</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">35 anos</td><td class="p-3 text-center text-green-600 font-bold">~R$ 55/mês</td><td class="p-3 text-center">~R$ 130/mês</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">45 anos</td><td class="p-3 text-center">~R$ 120/mês</td><td class="p-3 text-center">~R$ 290/mês</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que o seguro de vida cobre?</h2>
+      <p class="mb-4">As coberturas variam por plano, mas as principais são:</p>
+      <ul class="mb-4 space-y-2 list-none">
+        <li class="flex gap-2"><span class="text-[#C9A84C] font-black">✓</span><span><strong>Morte natural ou acidental</strong> — indenização paga aos beneficiários</span></li>
+        <li class="flex gap-2"><span class="text-[#C9A84C] font-black">✓</span><span><strong>Invalidez permanente</strong> — você recebe ainda em vida se ficar inválido</span></li>
+        <li class="flex gap-2"><span class="text-[#C9A84C] font-black">✓</span><span><strong>Doenças graves</strong> — câncer, infarto, AVC — antecipação do capital</span></li>
+        <li class="flex gap-2"><span class="text-[#C9A84C] font-black">✓</span><span><strong>Diária por internação hospitalar (DIH)</strong> — renda extra durante internação</span></li>
+        <li class="flex gap-2"><span class="text-[#C9A84C] font-black">✓</span><span><strong>Assistência funeral</strong> — cobertura de despesas funerárias</span></li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Para quem faz mais sentido contratar?</h2>
+      <p class="mb-4">O seguro de vida é especialmente importante para quem tem <strong>dependentes financeiros</strong> — cônjuge, filhos, pais idosos. Se você é a principal renda da família e algo acontecer, o seguro garante que eles tenham tempo para se reorganizar sem aperto financeiro imediato.</p>
+      <p class="mb-4">Para quem não tem dependentes, coberturas como invalidez e doenças graves ainda fazem sentido — porque protegem você mesmo, não só quem depende de você.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando contratar mais barato?</h2>
+      <p class="mb-4">Quanto mais jovem, menor o prêmio. Contratar aos 30 anos é significativamente mais barato do que contratar aos 45 — e você fica segurado por mais tempo com o mesmo valor. Esperar "a hora certa" geralmente significa pagar mais caro.</p>
+    `
+  }
+  ,
+  {
+    id: 66,
+    slug: "plano-de-saude-com-reembolso-vale-a-pena",
+    title: "Plano de Saúde com Reembolso: Vale a Pena Pagar Mais?",
+    date: "26 Jun, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Plano com reembolso permite consultar qualquer médico e pedir ressarcimento depois. Mas vale o preço extra? Entenda quando faz sentido e quando é dinheiro jogado fora.",
+    content: `
+      <p class="mb-4">Plano de saúde com reembolso é aquele que permite você se consultar com qualquer médico — mesmo fora da rede credenciada — e depois solicitar o ressarcimento à operadora. É um diferencial importante, mas tem um custo. A pergunta é: quando ele realmente vale a pena?</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Como funciona o reembolso?</h2>
+      <p class="mb-4">O processo é simples: você consulta o médico de sua escolha, paga a consulta, guarda o recibo e solicita reembolso à operadora. A operadora ressarce um valor de referência — geralmente baseado na tabela AMB ou na CBHPM — que pode cobrir entre 30% e 100% do que você pagou, dependendo do plano.</p>
+      <p class="mb-4">O ponto de atenção: a tabela de referência da operadora quase sempre é inferior ao que os médicos cobram no mercado privado. Ou seja, mesmo com reembolso, você provavelmente vai pagar algo.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando o reembolso faz sentido?</h2>
+      <p class="mb-4">Faz sentido se você tem um <strong>médico de confiança</strong> que não está na rede do plano e não quer trocar. Também faz sentido para quem <strong>viaja com frequência</strong> e precisa de atendimento em diferentes cidades, ou para quem busca <strong>especialidades raras</strong> disponíveis apenas em clínicas particulares específicas.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando não vale a pena?</h2>
+      <p class="mb-4">Se você usa o plano principalmente para exames de rotina, consultas de clínica geral e emergências, a rede credenciada resolve. Nesses casos, pagar mais pelo reembolso é dinheiro a mais sem benefício real no dia a dia.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quais planos oferecem reembolso em SP?</h2>
+      <p class="mb-4">Em São Paulo, os principais planos com reembolso são:</p>
+      <ul class="mb-4 space-y-1 list-disc pl-5">
+        <li><strong>SulAmérica Exato</strong> — o mais vendido com reembolso, boa cobertura</li>
+        <li><strong>Amil Prata, Ouro e superiores</strong> — reembolso disponível nos planos acima do Bronze</li>
+        <li><strong>Bradesco Nacional Plus e Premium</strong> — reembolso premium com tabela mais generosa</li>
+        <li><strong>Alice Exclusivo</strong> — reembolso integrado ao app com fluxo digital</li>
+      </ul>
+      <p class="mb-4">A diferença de preço entre um plano sem reembolso e um com reembolso pode variar de R$ 80 a R$ 200 por mês. A Elevance compara as opções para o seu perfil e indica se o reembolso realmente vale para o seu caso.</p>
+    `
+  }
+  ,
+  {
+    id: 67,
+    slug: "consorcio-de-imovel-vale-a-pena-2026",
+    title: "Consórcio de Imóvel: Vale a Pena em 2026?",
+    date: "27 Jun, 2026",
+    category: "Consórcios",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Consórcio de imóvel não tem juros — mas tem taxa de administração e você não sabe quando vai ser contemplado. Entenda se vale mais que o financiamento em 2026.",
+    content: `
+      <p class="mb-4">Com a Selic em patamar elevado, o financiamento imobiliário ficou caro. Isso trouxe o consórcio de imóvel de volta ao radar de quem quer comprar sem pagar juros absurdos. Mas será que vale mesmo?</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que é e como funciona?</h2>
+      <p class="mb-4">No consórcio de imóvel, um grupo de pessoas paga mensalidades e todo mês uma carta de crédito é contemplada — seja por sorteio ou por lance. Quem recebe a carta compra o imóvel à vista (o vendedor recebe como se fosse dinheiro). Os demais continuam pagando até todos serem contemplados.</p>
+      <p class="mb-4">Não há juros. O custo real é a <strong>taxa de administração</strong> — que gira em torno de 18% a 22% do valor do crédito, diluída ao longo do plano (normalmente 120 a 200 meses).</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Consórcio vs Financiamento: comparação real</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left">Critério</th><th class="p-3 text-center">Consórcio</th><th class="p-3 text-center">Financiamento</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Juros</td><td class="p-3 text-center text-green-600 font-bold">Não tem</td><td class="p-3 text-center text-red-500">10%–13% a.a.</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Taxa de administração</td><td class="p-3 text-center">~20% total</td><td class="p-3 text-center text-green-600 font-bold">Não tem</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Imóvel imediato</td><td class="p-3 text-center text-red-500">Não garantido</td><td class="p-3 text-center text-green-600 font-bold">Sim</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Parcela mensal</td><td class="p-3 text-center text-green-600 font-bold">Menor</td><td class="p-3 text-center">Maior</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Custo total</td><td class="p-3 text-center text-green-600 font-bold">Menor</td><td class="p-3 text-center">Maior</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando consórcio é a melhor opção?</h2>
+      <p class="mb-4">Consórcio faz mais sentido quando você <strong>não precisa do imóvel imediatamente</strong> — está planejando para daqui 2 a 5 anos, quer investir em imóvel para renda futura, ou quer reduzir o valor total pago em relação ao financiamento.</p>
+      <p class="mb-4">Também é uma boa opção para quem tem <strong>recursos para dar um lance</strong> e pode antecipar a contemplação — aumentando muito as chances de receber a carta nos primeiros meses.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Lance embutido: como funciona?</h2>
+      <p class="mb-4">O lance embutido permite usar parte do próprio crédito como lance. Por exemplo: em um consórcio de R$ 400k com lance embutido de 25%, você dá R$ 100k de lance usando o próprio crédito e recebe R$ 300k para comprar o imóvel. É uma forma de ser contemplado mais cedo sem precisar ter o dinheiro do lance em mãos.</p>
+      <p class="mb-4">A Elevance Seguros trabalha com a Rodobens para consórcio de imóvel, veículo e outros bens. Simule gratuitamente pelo WhatsApp.</p>
+    `
+  }
+  ,
+  {
+    id: 68,
+    slug: "seguro-residencial-para-apartamento-alugado",
+    title: "Seguro Residencial para Apartamento Alugado: Quem Deve Contratar?",
+    date: "28 Jun, 2026",
+    category: "Seguro Residencial",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Inquilino ou proprietário: quem é responsável pelo seguro do apartamento alugado? A resposta não é simples — e depende do que está no contrato e do que cada um quer proteger.",
+    content: `
+      <p class="mb-4">Essa é uma das dúvidas mais comuns sobre seguro residencial: em apartamento alugado, quem precisa contratar o seguro — o inquilino ou o dono? A resposta certa é: depende. E frequentemente, os dois precisam de proteções diferentes.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que o proprietário precisa proteger?</h2>
+      <p class="mb-4">O proprietário tem interesse em proteger a <strong>estrutura do imóvel</strong> — paredes, teto, instalações elétricas e hidráulicas. Um seguro residencial do proprietário cobre danos estruturais causados por incêndio, explosão, fenômenos naturais e danos elétricos, independente de quem mora no imóvel.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que o inquilino precisa proteger?</h2>
+      <p class="mb-4">O inquilino tem interesse em proteger seus <strong>bens móveis</strong> — móveis, eletrodomésticos, roupas, eletrônicos — e também sua <strong>responsabilidade civil</strong>. Se um vazamento no seu apartamento causar dano ao vizinho de baixo, você pode ser responsabilizado. O seguro residencial do inquilino cobre essa situação.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que diz o contrato de locação?</h2>
+      <p class="mb-4">Muitos contratos de aluguel exigem que o inquilino contrate seguro de incêndio — é uma obrigação legal prevista na Lei do Inquilinato (Lei 8.245/91). Esse seguro básico protege o imóvel contra incêndio, raio e explosão. Mas não cobre os bens do inquilino nem responsabilidade civil — para isso é necessário um seguro mais completo.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quanto custa o seguro residencial para inquilino?</h2>
+      <p class="mb-4">Um seguro residencial completo para inquilino em SP custa entre <strong>R$ 25 e R$ 80 por mês</strong>, dependendo do valor dos bens segurados e das coberturas escolhidas. Coberturas como roubo, danos elétricos, responsabilidade civil e assistência 24h estão disponíveis na maioria dos planos.</p>
+      <p class="mb-4">Para apartamentos alugados até R$ 2.000/mês, um seguro básico com cobertura de bens pessoais e RC já resolve bem — e cabe no orçamento.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-4">O ideal é que tanto proprietário quanto inquilino tenham suas próprias proteções. O proprietário segura a estrutura. O inquilino segura seus bens e sua responsabilidade. A Elevance Seguros ajuda a encontrar a cobertura certa para cada situação — cotação gratuita pelo WhatsApp.</p>
+    `
   }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
