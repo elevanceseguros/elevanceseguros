@@ -3535,6 +3535,389 @@ export const postsData = [
       <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
       <p class="mb-4">O ideal é que tanto proprietário quanto inquilino tenham suas próprias proteções. O proprietário segura a estrutura. O inquilino segura seus bens e sua responsabilidade. A Elevance Seguros ajuda a encontrar a cobertura certa para cada situação — cotação gratuita pelo WhatsApp.</p>
     `
+  }  ,
+  {
+    id: 69,
+    slug: "prevent-senior-vs-medsenior-qual-e-melhor",
+    title: "Prevent Senior vs MedSênior: Qual é Melhor para Quem Tem 50+?",
+    date: "29 Jun, 2026",
+    category: "Planos de Saúde",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Prevent Senior e MedSênior são os dois planos mais buscados para quem tem 50 anos ou mais em SP. Mas eles têm propostas bem diferentes — e o preço pode surpreender.",
+    content: `
+      <p class="mb-4">Quem está na faixa dos 50+ em São Paulo inevitavelmente pesquisa Prevent Senior e MedSênior. São os dois planos mais associados à melhor idade na cidade. Mas ao contrário do que parece, eles não competem diretamente — têm propostas bem diferentes.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Prevent Senior: o que é e para quem é</h2>
+      <p class="mb-4">O Prevent Senior é uma operadora vertical — tem hospitais, clínicas e médicos próprios, todos focados no atendimento ao idoso. Opera exclusivamente em São Paulo e Grande SP. O diferencial histórico é o atendimento geriátrico especializado e a estrutura preparada para pacientes de maior complexidade.</p>
+      <p class="mb-4">O problema: é um dos planos mais caros do mercado para a faixa sênior. Um beneficiário de 60 anos paga em média <strong>R$ 1.800 a R$ 2.500/mês</strong> dependendo da cobertura. E a rede é restrita ao estado de São Paulo — sem cobertura nacional.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">MedSênior: o que é e para quem é</h2>
+      <p class="mb-4">O MedSênior é exclusivo para beneficiários a partir de 49 anos e opera em todo o estado de SP com rede credenciada própria. O grande diferencial é a <strong>ausência de coparticipação</strong> — você paga a mensalidade e usa sem custo adicional por consulta ou exame.</p>
+      <p class="mb-4">Os preços são mais acessíveis que o Prevent Senior para coberturas equivalentes. Um beneficiário de 60 anos paga em média <strong>R$ 900 a R$ 1.400/mês</strong> nas linhas SP1 e SP2.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Prevent Senior</th><th class="p-3 text-center rounded-tr-xl">MedSênior</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Faixa etária</td><td class="p-3 text-center">A partir de 0</td><td class="p-3 text-center text-green-600 font-bold">Exclusivo 49+</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Coparticipação</td><td class="p-3 text-center">Tem</td><td class="p-3 text-center text-green-600 font-bold">Não tem</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Preço 60 anos</td><td class="p-3 text-center text-red-500">R$ 1.800–2.500</td><td class="p-3 text-center text-green-600 font-bold">R$ 900–1.400</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Cobertura</td><td class="p-3 text-center">SP e Grande SP</td><td class="p-3 text-center text-green-600 font-bold">Estado de SP</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Foco geriátrico</td><td class="p-3 text-center text-green-600 font-bold">Alta especialização</td><td class="p-3 text-center">Boa cobertura</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Programa preventivo</td><td class="p-3 text-center">Sim</td><td class="p-3 text-center text-green-600 font-bold">Bem Envelhecer</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher o Prevent Senior?</h2>
+      <p class="mb-4">Faz sentido para quem mora na capital ou Grande SP, valoriza muito a especialização geriátrica e tem orçamento para o investimento. Pacientes com condições crônicas complexas que precisam de acompanhamento intensivo tendem a se beneficiar mais da estrutura verticalizada.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher o MedSênior?</h2>
+      <p class="mb-4">Faz sentido para quem quer mensalidade previsível sem surpresa de coparticipação, mora em qualquer cidade do estado de SP, e busca um plano com programa preventivo estruturado. A ausência de coparticipação é especialmente vantajosa para quem usa o plano com frequência — consultas, exames e retornos sem custo extra.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-4">Para a maioria das pessoas acima de 50 anos em SP, o MedSênior entrega mais valor pelo preço. O Prevent Senior é uma excelente opção para quem está disposto a pagar mais pela especialização geriátrica e não precisa de cobertura fora da capital. A Elevance Seguros faz a cotação dos dois para você comparar com os seus dados reais.</p>
+    `
+  }  ,
+  {
+    id: 70,
+    slug: "tokio-marine-vs-porto-seguro-auto-qual-escolher",
+    title: "Tokio Marine vs Porto Seguro Auto: Qual Escolher em 2026?",
+    date: "30 Jun, 2026",
+    category: "Seguro Auto",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Tokio Marine e Porto Seguro são duas das maiores seguradoras de auto do Brasil. Mas elas têm perfis diferentes de cliente e coberturas distintas. Saiba qual faz mais sentido para você.",
+    content: `
+      <p class="mb-4">Tokio Marine e Porto Seguro disputam o topo do mercado de seguro auto no Brasil há anos. Mas ao contrário do que parece, elas não são iguais com nomes diferentes — têm propostas, redes de assistência e perfis de cliente bem distintos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Porto Seguro: tradição e rede ampla</h2>
+      <p class="mb-4">A Porto Seguro é a maior seguradora de automóveis do Brasil em número de apólices. Sua vantagem principal é a <strong>rede de assistência 24h</strong> — uma das maiores do país, com guincho, chaveiro, troca de pneu e carro reserva disponíveis com agilidade na maioria das cidades.</p>
+      <p class="mb-4">A Porto também tem o Porto Seguro Auto com cobertura contra danos a terceiros bastante robusta e atendimento via app consolidado. Para carros populares e perfis de risco médio, tende a ser competitiva em preço.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Tokio Marine: premium e sinistro bem avaliado</h2>
+      <p class="mb-4">A Tokio Marine é reconhecida pelo atendimento de alta qualidade no momento do sinistro — que é o que realmente importa quando você precisa acionar o seguro. Tem nota consistentemente alta nas avaliações de satisfação pós-sinistro e é frequentemente recomendada para <strong>veículos de alto valor</strong>, importados e seminovos premium.</p>
+      <p class="mb-4">O preço tende a ser um pouco mais elevado que a Porto para o mesmo perfil, mas a experiência de atendimento justifica para quem tem carro de maior valor.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Porto Seguro</th><th class="p-3 text-center rounded-tr-xl">Tokio Marine</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Rede de assistência</td><td class="p-3 text-center text-green-600 font-bold">Maior do Brasil</td><td class="p-3 text-center">Muito boa</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Atendimento pós-sinistro</td><td class="p-3 text-center">Bom</td><td class="p-3 text-center text-green-600 font-bold">Excelente</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Preço carros populares</td><td class="p-3 text-center text-green-600 font-bold">Mais competitivo</td><td class="p-3 text-center">Um pouco maior</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Carros premium/importados</td><td class="p-3 text-center">Boa cobertura</td><td class="p-3 text-center text-green-600 font-bold">Referência</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">App e digital</td><td class="p-3 text-center text-green-600 font-bold">Muito bom</td><td class="p-3 text-center">Bom</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Carro reserva</td><td class="p-3 text-center text-green-600 font-bold">Ampla cobertura</td><td class="p-3 text-center">Disponível</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Porto Seguro?</h2>
+      <p class="mb-4">Para carros populares, perfil de risco médio, e quem valoriza muito a assistência 24h no dia a dia. A Porto tende a ser mais agressiva em preço para esse perfil e tem a maior rede de prestadores no Brasil.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Tokio Marine?</h2>
+      <p class="mb-4">Para carros acima de R$ 80 mil, importados, clássicos ou seminovos premium. Quem já teve experiência ruim com sinistro em outras seguradoras e quer priorizar a qualidade do atendimento no momento que realmente importa.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">E o preço afinal?</h2>
+      <p class="mb-4">O preço do seguro auto depende de mais de 20 variáveis — modelo do carro, ano, CEP de pernoite, perfil do condutor, histórico de sinistros. A única forma de saber qual é mais barato para o seu caso específico é cotar as duas. A Elevance Seguros faz essa comparação gratuitamente.</p>
+    `
+  }  ,
+  {
+    id: 71,
+    slug: "plano-odontologico-vale-a-pena-ou-pagar-particular",
+    title: "Plano Odontológico Vale a Pena ou É Melhor Pagar Particular?",
+    date: "01 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Plano odontológico pode custar R$ 30/mês, mas cobertura limitada e carências longas fazem muita gente questionar. Vale mais que pagar o dentista particular?",
+    content: `
+      <p class="mb-4">Com planos a partir de R$ 25/mês, parece óbvio que plano odontológico vale a pena. Mas a conta não é tão simples — e dependendo do seu perfil, pagar particular pode ser mais econômico e menos frustrante.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que o plano odontológico cobre?</h2>
+      <p class="mb-4">Os planos básicos cobrem: consultas de urgência, extrações simples, restaurações e limpeza (profilaxia). Planos intermediários e superiores adicionam: tratamento de canal, próteses, ortodontia e implantes — mas sempre com limitações, carências longas (6 a 24 meses) e coparticipação.</p>
+      <p class="mb-4">O que <strong>quase sempre fica de fora</strong> nos planos populares: clareamento, implantes completos, próteses de alto custo e procedimentos estéticos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">A conta do plano vs particular</h2>
+      <p class="mb-4">Plano básico: R$ 30/mês = R$ 360/ano. Se você faz uma limpeza semestral (R$ 150 cada = R$ 300/ano) e eventualmente uma restauração (R$ 150–300), o plano paga o custo em manutenção básica. Para quem tem mais necessidades, um plano intermediário de R$ 80–120/mês começa a valer mais.</p>
+      <p class="mb-4">Mas se você vai ao dentista raramente e não tem problemas crônicos, pagar R$ 360/ano por um plano que usa uma vez pode não fazer sentido.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando o plano claramente vale a pena</h2>
+      <p class="mb-4">Vale muito a pena quando: você tem filhos (ortodontia custa R$ 4.000–8.000 particular, o plano cobre após carência), precisa de tratamento de canal com frequência, ou quer incluir família inteira com custo por vida reduzido.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando pagar particular pode ser melhor</h2>
+      <p class="mb-4">Para quem vai ao dentista 1–2 vezes por ano apenas para manutenção, mora em cidade pequena com poucos dentistas credenciados, ou precisa de procedimentos que ficam de fora mesmo no plano intermediário.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Dica: plano odonto incluso no plano de saúde</h2>
+      <p class="mb-4">Algumas operadoras como a Amil incluem 12 meses de odonto gratuito para planos PME. Se você for contratar um plano de saúde empresarial, vale verificar se o odonto já vem incluso — é um diferencial que elimina a necessidade de contratar separado.</p>
+    `
+  }  ,
+  {
+    id: 72,
+    slug: "alice-vs-amil-pme-qual-escolher",
+    title: "Alice vs Amil PME: Healthtech ou Operadora Tradicional?",
+    date: "02 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Alice é a healthtech que promete reinventar o plano de saúde. Amil é a gigante tradicional com rede em todo o Brasil. Para PME, qual entrega mais valor em 2026?",
+    content: `
+      <p class="mb-4">A Alice chegou prometendo ser o plano de saúde que as pessoas merecem — digital, sem burocracia, com médico de cabeceira. A Amil responde com décadas de mercado, rede nacional e marca consolidada. Para quem tem uma pequena ou média empresa em SP, qual faz mais sentido contratar para o time?</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Alice: o modelo de saúde coordenada</h2>
+      <p class="mb-4">A Alice não é só um plano de saúde — é um modelo diferente de atenção à saúde. Cada beneficiário tem um <strong>Time de Saúde</strong>: médicos e enfermeiros dedicados disponíveis 24h pelo app, que acompanham o histórico, orientam antes de ir ao pronto-socorro e coordenam os cuidados.</p>
+      <p class="mb-4">O resultado prático: menos idas desnecessárias ao pronto-socorro, mais prevenção, e uma experiência de atendimento que as operadoras tradicionais não conseguem replicar. A atenção primária é isenta de coparticipação — você não paga por consulta no app.</p>
+      <p class="mb-4">O plano Equilíbrio começa em torno de R$ 310/mês para a faixa 0–18 anos. Aceita MEI a partir de 1 vida.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Amil: rede nacional e planos flexíveis</h2>
+      <p class="mb-4">A Amil tem uma das maiores redes credenciadas do Brasil. Em SP, oferece desde o Bronze SP (mais acessível, rede regional) até o Black (Einstein e Sírio-Libanês). Para PME, aceita a partir de 2 vidas e inclui Amil Dental gratuito por 12 meses.</p>
+      <p class="mb-4">Para empresas com funcionários em diferentes cidades ou que precisam de cobertura nacional, a Amil é mais versátil — a rede da Alice é concentrada em SP.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Alice</th><th class="p-3 text-center rounded-tr-xl">Amil</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Modelo de atenção</td><td class="p-3 text-center text-green-600 font-bold">Saúde coordenada 24h</td><td class="p-3 text-center">Tradicional credenciado</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Médico de cabeceira</td><td class="p-3 text-center text-green-600 font-bold">Incluso no plano</td><td class="p-3 text-center">Não tem</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Cobertura nacional</td><td class="p-3 text-center">SP e capitais</td><td class="p-3 text-center text-green-600 font-bold">Todo o Brasil</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Preço entrada PME</td><td class="p-3 text-center">~R$ 310/mês</td><td class="p-3 text-center text-green-600 font-bold">~R$ 150/mês</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Einstein/Sírio</td><td class="p-3 text-center text-green-600 font-bold">Plano Exclusivo</td><td class="p-3 text-center text-green-600 font-bold">Ouro+</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">MEI aceito</td><td class="p-3 text-center text-green-600 font-bold">1 vida</td><td class="p-3 text-center">2 vidas</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Odonto incluso</td><td class="p-3 text-center">Não</td><td class="p-3 text-center text-green-600 font-bold">12 meses grátis</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Alice?</h2>
+      <p class="mb-4">Para empresas de tecnologia, startups e times que valorizam experiência digital diferenciada. Especialmente bom para fundadores e times pequenos que querem saúde preventiva e acompanhamento médico contínuo — não só acesso a hospitais em emergências.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Amil?</h2>
+      <p class="mb-4">Para empresas com funcionários em diferentes estados, que precisam de cobertura nacional robusta, ou que buscam o menor custo de entrada para cumprir o benefício. O Bronze SP com Amil Dental incluso é uma proposta de valor difícil de bater no curto prazo.</p>
+    `
+  }  ,
+  {
+    id: 73,
+    slug: "unimed-vs-hapvida-sp-qual-tem-melhor-rede",
+    title: "Unimed vs Hapvida SP: Qual Tem Melhor Rede e Preço em 2026?",
+    date: "03 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Unimed e Hapvida são dois modelos completamente diferentes de plano de saúde. Um é cooperativa médica com rede credenciada ampla, o outro é rede própria verticalizada. Qual funciona melhor em SP?",
+    content: `
+      <p class="mb-4">Unimed e Hapvida aparecem juntos nas comparações, mas funcionam de formas completamente diferentes. Entender essa diferença é essencial para escolher o plano certo.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Como a Unimed funciona</h2>
+      <p class="mb-4">A Unimed é uma cooperativa de médicos — os próprios médicos são donos do negócio. Isso gera um atendimento mais humanizado e uma rede de especialistas de alto nível. Em SP, a Unimed Paulistana e a Unimed Seguros têm redes distintas, então é importante verificar qual plano cobre sua região.</p>
+      <p class="mb-4">A Unimed usa rede credenciada — você escolhe entre os médicos e hospitais da lista. Isso dá mais liberdade de escolha, mas pode gerar filas e dificuldades de agendamento em especialidades mais concorridas.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Como a Hapvida funciona</h2>
+      <p class="mb-4">A Hapvida é rede própria verticalizada — hospitais, clínicas e laboratórios são da própria operadora. Você não escolhe qualquer médico, mas a integração entre os serviços é maior. Consulta marcada hoje pode ter resultado de exame disponível amanhã no mesmo sistema.</p>
+      <p class="mb-4">Com 86 hospitais e 352 clínicas próprias, a Hapvida é a maior rede própria de saúde da América Latina.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta em SP</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Unimed SP</th><th class="p-3 text-center rounded-tr-xl">Hapvida</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Modelo</td><td class="p-3 text-center">Cooperativa credenciada</td><td class="p-3 text-center">Rede própria</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Liberdade de escolha</td><td class="p-3 text-center text-green-600 font-bold">Maior</td><td class="p-3 text-center">Rede própria</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Preço PF entrada</td><td class="p-3 text-center">R$ 350–600</td><td class="p-3 text-center text-green-600 font-bold">R$ 133–183</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">PME entrada</td><td class="p-3 text-center">R$ 280–450</td><td class="p-3 text-center text-green-600 font-bold">R$ 110–130</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Integração serviços</td><td class="p-3 text-center">Média</td><td class="p-3 text-center text-green-600 font-bold">Alta (sistema único)</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Qualidade médica</td><td class="p-3 text-center text-green-600 font-bold">Alta (cooperativa)</td><td class="p-3 text-center">Boa</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">MEI aceito</td><td class="p-3 text-center">Varia por regional</td><td class="p-3 text-center text-green-600 font-bold">Sim, 1 vida</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Unimed?</h2>
+      <p class="mb-4">Para quem valoriza liberdade de escolha médica, tem médicos de confiança na rede e está disposto a pagar mais por isso. Também para quem trabalha em empresas que já têm convênio Unimed e quer manter o mesmo plano ao sair para o MEI ou empresa própria.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Hapvida?</h2>
+      <p class="mb-4">Para quem quer o melhor custo-benefício em SP, não tem apego a médico específico fora da rede, e valoriza a praticidade de ter tudo integrado — consulta, exame e internação no mesmo sistema sem burocracia de autorização.</p>
+    `
+  }  ,
+  {
+    id: 74,
+    slug: "allianz-vs-yellum-seguro-de-vida-qual-escolher",
+    title: "Allianz vs Yell.um: Qual o Melhor Seguro de Vida em 2026?",
+    date: "04 Jul, 2026",
+    category: "Seguro de Vida",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Allianz é a gigante alemã com décadas no Brasil. Yell.um é a insurtech que promete simplificar o seguro de vida. Qual entrega mais para quem quer proteger a família em 2026?",
+    content: `
+      <p class="mb-4">Na hora de contratar seguro de vida, dois nomes aparecem com destaque em posicionamentos opostos: a Allianz, com solidez e tradição de uma das maiores seguradoras do mundo, e a Yell.um, insurtech brasileira que promete desburocratizar o processo. Qual escolher?</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Allianz: solidez global com produto robusto</h2>
+      <p class="mb-4">A Allianz é uma das maiores seguradoras do mundo, com presença em mais de 70 países. No Brasil, opera há décadas e tem rating de crédito elevado — o que significa solidez financeira para honrar sinistros mesmo os maiores.</p>
+      <p class="mb-4">Os planos Allianz oferecem coberturas abrangentes: morte natural e acidental, invalidez permanente, doenças graves, diária por internação e assistência funeral. A DPS (Declaração Pessoal de Saúde) é mais detalhada, mas garante cobertura mais clara e menos risco de negativa na hora do sinistro.</p>
+      <p class="mb-4">Preço de referência: a partir de <strong>R$ 45/mês</strong> para 35 anos com capital de R$ 100 mil.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Yell.um: digital, simples e acessível</h2>
+      <p class="mb-4">A Yell.um nasceu com o objetivo de tornar o seguro de vida simples como um aplicativo. Contratação 100% digital, sem médico, sem DPS extensa — responde algumas perguntas básicas e já tem o seguro ativo.</p>
+      <p class="mb-4">O produto é mais enxuto: foco em morte e invalidez, com coberturas adicionais opcionais. Para quem quer proteção básica sem burocracia e a menor mensalidade possível, é uma opção legítima. Preço de referência: a partir de <strong>R$ 29/mês</strong> para perfis jovens.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Allianz</th><th class="p-3 text-center rounded-tr-xl">Yell.um</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Tradição e solidez</td><td class="p-3 text-center text-green-600 font-bold">100+ anos global</td><td class="p-3 text-center">Insurtech nova</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Contratação</td><td class="p-3 text-center">Via corretor</td><td class="p-3 text-center text-green-600 font-bold">100% digital</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">DPS / análise</td><td class="p-3 text-center">Detalhada</td><td class="p-3 text-center text-green-600 font-bold">Simplificada</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Coberturas</td><td class="p-3 text-center text-green-600 font-bold">Mais completas</td><td class="p-3 text-center">Essenciais</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Preço entrada</td><td class="p-3 text-center">~R$ 45/mês</td><td class="p-3 text-center text-green-600 font-bold">~R$ 29/mês</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Doenças graves</td><td class="p-3 text-center text-green-600 font-bold">Inclusa</td><td class="p-3 text-center">Opcional</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Allianz?</h2>
+      <p class="mb-4">Para quem quer a proteção mais completa, tem dependentes financeiros e valoriza a segurança de uma seguradora com décadas de histórico de pagamento de sinistros. Ideal para quem tem capital segurado alto (acima de R$ 200 mil) ou precisa de cobertura de doenças graves.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Yell.um?</h2>
+      <p class="mb-4">Para quem quer começar com proteção básica no menor custo possível, é jovem e saudável, e prefere a praticidade digital acima de tudo. Também para quem teve dificuldade em passar pela DPS de seguradoras tradicionais.</p>
+
+      <p class="mb-4">A Elevance Seguros trabalha com Allianz e Yell.um e pode ajudar a definir qual se encaixa melhor no seu momento de vida — cotação gratuita pelo WhatsApp.</p>
+    `
+  }  ,
+  {
+    id: 75,
+    slug: "plano-adesao-oab-crm-crea-vale-mais-que-individual",
+    title: "Plano de Saúde por Adesão (OAB, CRM, CREA): Vale Mais que o Individual?",
+    date: "05 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Advogados, médicos e engenheiros têm acesso a planos de saúde por adesão via entidade de classe. Mas esse plano é realmente mais barato que o individual? Entenda antes de contratar.",
+    content: `
+      <p class="mb-4">Se você é advogado, médico, engenheiro ou membro de outra entidade de classe, tem acesso a uma modalidade de plano de saúde que poucos profissionais exploram: o plano por <strong>adesão</strong>. E ele pode ser significativamente mais barato que o plano individual.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que é o plano por adesão?</h2>
+      <p class="mb-4">O plano de saúde coletivo por adesão é contratado através de uma entidade de classe (OAB, CFM, CREA, CRC, CRA e outras). Como o risco é diluído entre muitos profissionais, a tabela de preços é coletiva — mais barata que o individual e, em muitos casos, mais barata até que o PME.</p>
+      <p class="mb-4">Você precisa estar ativo na entidade para contratar. A entidade funciona como "intermediária" mas não paga nada — você paga diretamente à operadora.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quais operadoras têm plano por adesão em SP?</h2>
+      <p class="mb-4">As principais em São Paulo:</p>
+      <ul class="mb-4 space-y-1 list-disc pl-5">
+        <li><strong>Amil</strong> — via OAB-SP, CFM, CREA e diversas outras entidades</li>
+        <li><strong>Hapvida</strong> — via entidades conveniadas (consulte disponibilidade)</li>
+        <li><strong>SulAmérica</strong> — via COREN, CRA e outras</li>
+        <li><strong>São Cristóvão</strong> — via entidades de classe em SP</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação: adesão vs individual vs PME</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Modalidade</th><th class="p-3 text-center">Preço</th><th class="p-3 text-center">Reajuste</th><th class="p-3 text-center rounded-tr-xl">Cancelamento</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Individual</td><td class="p-3 text-center text-red-500">Mais caro</td><td class="p-3 text-center text-green-600 font-bold">ANS limita</td><td class="p-3 text-center text-green-600 font-bold">Operadora não pode</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">PME/Empresarial</td><td class="p-3 text-center text-green-600 font-bold">Mais barato</td><td class="p-3 text-center">Negociado</td><td class="p-3 text-center">Pode ser cancelado</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Adesão</td><td class="p-3 text-center text-green-600 font-bold">Intermediário</td><td class="p-3 text-center">Negociado</td><td class="p-3 text-center">Pode ser cancelado</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O risco do plano coletivo por adesão</h2>
+      <p class="mb-4">A principal desvantagem é que planos coletivos (PME e adesão) podem ser cancelados pela operadora com 30 dias de aviso. O individual não pode ser cancelado enquanto você pagar — é uma proteção que o coletivo não tem. Para quem tem condição pré-existente e depende muito do plano, isso é um risco relevante.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Vale contratar?</h2>
+      <p class="mb-4">Para a maioria dos profissionais liberais, sim — a economia em relação ao individual compensa. Advogados vinculados à OAB-SP, por exemplo, têm acesso ao plano Amil S750 com cobertura robusta a preços de coletivo. A Elevance Seguros verifica a elegibilidade e faz a cotação pelo WhatsApp.</p>
+    `
+  }  ,
+  {
+    id: 76,
+    slug: "bradesco-saude-vs-sulamerica-empresarial-qual-e-melhor",
+    title: "Bradesco Saúde vs SulAmérica Empresarial: Qual é Melhor para sua Empresa?",
+    date: "06 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Bradesco Saúde e SulAmérica são os dois planos empresariais premium mais contratados em SP. Para PME e MEI, qual entrega mais rede, mais cobertura e melhor custo em 2026?",
+    content: `
+      <p class="mb-4">Para empresas que querem oferecer um plano de saúde de qualidade ao time — e não apenas cumprir tabela — Bradesco Saúde e SulAmérica são frequentemente as finalistas. As duas são premium, aceitam MEI e têm redes robustas em SP. Mas têm diferenças importantes.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Bradesco Saúde: exclusivo para empresas</h2>
+      <p class="mb-4">O Bradesco Saúde é 100% empresarial — não existe plano individual Bradesco Saúde. Isso significa que toda a estrutura foi desenhada para atender empresas, com processos, gestão e rede pensados para esse perfil.</p>
+      <p class="mb-4">As linhas vão do Efetivo (regional, mais acessível) até o Premium (Einstein VIP, Sírio-Libanês). A rede credenciada tem mais de 37.000 médicos e 2.300 hospitais em 1.300 municípios. O Concierge Bradesco oferece salas VIP em hospitais parceiros nas capitais.</p>
+      <p class="mb-4">MEI: aceito a partir de 2 vidas com CNPJ ativo há 6 meses.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">SulAmérica: rede D'Or e gestão preventiva</h2>
+      <p class="mb-4">A SulAmérica tem o maior acesso à <strong>Rede D'Or</strong> de todas as operadoras — o que é um diferencial relevante em SP, onde os hospitais D'Or (São Luiz, Copa Star, etc.) são referência. O plano Exato, o mais vendido, combina cobertura nacional com reembolso por livre escolha.</p>
+      <p class="mb-4">O diferencial corporativo da SulAmérica é o programa de <strong>gestão preventiva</strong> — redução documentada de 18–25% na sinistralidade para empresas que aderem ao programa. Para PMEs que controlam o custo do plano, isso é relevante no médio prazo.</p>
+      <p class="mb-4">MEI: aceito a partir de 3 vidas com CNPJ ativo há 6 meses.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Bradesco Saúde</th><th class="p-3 text-center rounded-tr-xl">SulAmérica</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Individual disponível</td><td class="p-3 text-center text-red-500">Não</td><td class="p-3 text-center text-green-600 font-bold">Sim (adesão)</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Rede D'Or</td><td class="p-3 text-center">Alguns hospitais</td><td class="p-3 text-center text-green-600 font-bold">Maior acesso</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Einstein/Sírio</td><td class="p-3 text-center text-green-600 font-bold">Linha Premium</td><td class="p-3 text-center text-green-600 font-bold">Especial/Prestige</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Gestão preventiva</td><td class="p-3 text-center">Básica</td><td class="p-3 text-center text-green-600 font-bold">Programa robusto</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Reembolso</td><td class="p-3 text-center">Nacional Plus+</td><td class="p-3 text-center text-green-600 font-bold">Exato+</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">MEI mínimo</td><td class="p-3 text-center">2 vidas</td><td class="p-3 text-center">3 vidas</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Concierge/VIP</td><td class="p-3 text-center text-green-600 font-bold">Salas VIP capitais</td><td class="p-3 text-center">Não tem</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Bradesco Saúde?</h2>
+      <p class="mb-4">Para empresas que querem oferecer um benefício premium com o nome Bradesco — que tem forte reconhecimento de marca entre colaboradores. Especialmente para planos superiores com Einstein e Sírio, o Bradesco Premium é uma das melhores entregas do mercado.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher SulAmérica?</h2>
+      <p class="mb-4">Para empresas que querem acesso à Rede D'Or, reembolso no plano de entrada (Exato) e que se beneficiam do programa de gestão preventiva para controlar sinistralidade no médio prazo. Também para MEI com apenas 1 dependente que não atinge o mínimo Bradesco.</p>
+    `
+  }  ,
+  {
+    id: 77,
+    slug: "rc-profissional-medico-engenheiro-advogado-precisa",
+    title: "RC Profissional: Médico, Engenheiro ou Advogado Precisa Contratar?",
+    date: "07 Jul, 2026",
+    category: "Seguros Empresariais",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Responsabilidade Civil Profissional protege quando um erro no trabalho gera prejuízo ao cliente. Médico, engenheiro, advogado, contador — quem realmente precisa e quanto custa?",
+    content: `
+      <p class="mb-4">Um erro médico que causa dano ao paciente. Um projeto de engenharia com falha estrutural. Uma orientação jurídica que prejudica o cliente. Esses casos geram processos milionários — e sem seguro de Responsabilidade Civil Profissional, o profissional paga do próprio bolso.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que é RC Profissional?</h2>
+      <p class="mb-4">O Seguro de Responsabilidade Civil Profissional (RCP) cobre os danos causados a terceiros em decorrência de <strong>erros, omissões ou negligências</strong> no exercício da profissão. Ele paga a indenização ao cliente prejudicado e cobre os custos de defesa judicial do profissional.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quem precisa mais?</h2>
+
+      <h3 class="text-[#0d1f3c] font-bold mt-6 mb-2 text-lg">Médicos e profissionais de saúde</h3>
+      <p class="mb-4">É o grupo com maior exposição. Processos por erro médico no Brasil cresceram mais de 300% na última década. O valor médio das indenizações em SP supera R$ 100 mil. Para médicos autônomos e clínicas, o RCP é praticamente obrigatório — o CFM recomenda fortemente a contratação.</p>
+
+      <h3 class="text-[#0d1f3c] font-bold mt-6 mb-2 text-lg">Engenheiros e arquitetos</h3>
+      <p class="mb-4">Projetos com falha estrutural, laudos equivocados, obras com problemas — a responsabilidade pode ser do profissional por décadas. O CREA e o CAU não exigem formalmente, mas o risco de processo por vício construtivo justifica a contratação.</p>
+
+      <h3 class="text-[#0d1f3c] font-bold mt-6 mb-2 text-lg">Advogados</h3>
+      <p class="mb-4">Perda de prazo processual, orientação equivocada que causa prejuízo financeiro, representação inadequada — a OAB não exige o seguro mas processos disciplinares e cíveis contra advogados são cada vez mais comuns.</p>
+
+      <h3 class="text-[#0d1f3c] font-bold mt-6 mb-2 text-lg">Contadores e consultores</h3>
+      <p class="mb-4">Erros em declarações fiscais, orientações tributárias equivocadas e relatórios contábeis com falhas podem gerar passivos tributários milionários para o cliente — e ação regressiva contra o profissional.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quanto custa?</h2>
+      <p class="mb-4">O prêmio varia pela profissão, faturamento e limite de cobertura desejado. Referências em 2026:</p>
+      <ul class="mb-4 space-y-1 list-disc pl-5">
+        <li><strong>Médico clínico geral autônomo</strong> — R$ 150–400/mês para cobertura de R$ 500k</li>
+        <li><strong>Engenheiro civil</strong> — R$ 80–200/mês para cobertura de R$ 300k</li>
+        <li><strong>Advogado</strong> — R$ 60–150/mês para cobertura de R$ 200k</li>
+        <li><strong>Contador</strong> — R$ 50–120/mês para cobertura de R$ 200k</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Vale a pena?</h2>
+      <p class="mb-4">Um único processo sem seguro pode custar mais que décadas de prêmio. Para profissionais que atendem clientes e emitem laudos, pareceres ou realizam procedimentos, o RC Profissional é uma das proteções com melhor custo-benefício do mercado. A Elevance Seguros cota para sua profissão — consulte pelo WhatsApp.</p>
+    `
   }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
