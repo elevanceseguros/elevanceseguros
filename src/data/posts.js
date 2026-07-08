@@ -3918,6 +3918,65 @@ export const postsData = [
       <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Vale a pena?</h2>
       <p class="mb-4">Um único processo sem seguro pode custar mais que décadas de prêmio. Para profissionais que atendem clientes e emitem laudos, pareceres ou realizam procedimentos, o RC Profissional é uma das proteções com melhor custo-benefício do mercado. A Elevance Seguros cota para sua profissão — consulte pelo WhatsApp.</p>
     `
+  }  ,
+  {
+    id: 78,
+    slug: "loovi-vs-seguro-tradicional-motorista-aplicativo",
+    title: "Loovi vs Seguro Tradicional: Qual é Melhor para Motorista de Aplicativo?",
+    date: "08 Jul, 2026",
+    category: "Seguro Auto",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Motorista de Uber, 99 e iFood tem dificuldade em contratar seguro tradicional. A Loovi aceita esse perfil — mas como ela se compara às seguradoras convencionais em cobertura e preço?",
+    content: `
+      <p class="mb-4">Motorista de aplicativo tem um dos perfis mais difíceis de segurar no Brasil. Quilometragem alta, uso intenso do veículo e risco elevado fazem a maioria das seguradoras tradicionais recusar ou cobrar valores proibitivos. A Loovi surgiu exatamente para preencher esse espaço — mas vale mesmo a pena?</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Por que seguradoras tradicionais recusam motoristas de app?</h2>
+      <p class="mb-4">O seguro auto tradicional é calculado para uso particular — ida ao trabalho, fins de semana, uso moderado. Motorista de aplicativo roda em média 5.000–8.000 km por mês, contra 1.000–1.500 km do motorista comum. Isso representa exposição a risco muito maior, e as seguradoras precificam isso — quando aceitam.</p>
+      <p class="mb-4">Além disso, a maioria dos contratos de seguro tradicional tem cláusula de <strong>exclusão para uso comercial</strong>. Se você bate o carro enquanto está em corrida e a seguradora descobre que usa para aplicativo, o sinistro pode ser negado.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que é a Loovi?</h2>
+      <p class="mb-4">A Loovi é uma insurtech 100% digital regulamentada pela SUSEP via LTI Seguros. Foi desenhada especificamente para aceitar perfis que as seguradoras tradicionais recusam: motoristas de aplicativo, carros com GNV, veículos de leilão, carros mais antigos e outros perfis de maior risco.</p>
+      <p class="mb-4">O processo é 100% digital — contratação em 5 minutos pelo app, sem vistoria presencial obrigatória. Não exige rastreador.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Cobertura Loovi: o que está incluso?</h2>
+      <p class="mb-4">A Loovi oferece:</p>
+      <ul class="mb-4 space-y-1 list-disc pl-5">
+        <li>Cobertura contra roubo e furto (100% da FIPE)</li>
+        <li>Colisão e danos ao veículo</li>
+        <li>Danos a terceiros (responsabilidade civil)</li>
+        <li>Assistência 24h — guincho, pane seca, chaveiro</li>
+        <li>Aceita uso para aplicativo declarado</li>
+        <li>Aceita GNV, leilão e carros até 20 anos</li>
+      </ul>
+      <p class="mb-4">O que não está incluso: carro reserva e algumas coberturas adicionais que seguradoras maiores oferecem.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta: Loovi vs Seguro Tradicional</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Loovi</th><th class="p-3 text-center rounded-tr-xl">Seguro Tradicional</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Aceita motorista de app</td><td class="p-3 text-center text-green-600 font-bold">Sim</td><td class="p-3 text-center text-red-500">Maioria recusa</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Aceita GNV</td><td class="p-3 text-center text-green-600 font-bold">Sim</td><td class="p-3 text-center text-red-500">Maioria recusa</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Aceita leilão</td><td class="p-3 text-center text-green-600 font-bold">Sim</td><td class="p-3 text-center text-red-500">Maioria recusa</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Cobertura FIPE</td><td class="p-3 text-center text-green-600 font-bold">100%</td><td class="p-3 text-center text-green-600 font-bold">100%</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Carro reserva</td><td class="p-3 text-center text-red-500">Não</td><td class="p-3 text-center text-green-600 font-bold">Geralmente sim</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Contratação digital</td><td class="p-3 text-center text-green-600 font-bold">100% app</td><td class="p-3 text-center">Varia</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Rastreador obrigatório</td><td class="p-3 text-center text-green-600 font-bold">Não</td><td class="p-3 text-center">Às vezes</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Preço para app driver</td><td class="p-3 text-center text-green-600 font-bold">Acessível</td><td class="p-3 text-center text-red-500">Alto ou indisponível</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando a Loovi é a melhor opção?</h2>
+      <p class="mb-4">Para motoristas de Uber, 99, iFood e outros aplicativos que já foram recusados por seguradoras tradicionais, a Loovi é frequentemente a única opção viável com custo razoável. Também é excelente para carros com GNV, leilão, ou perfis que o mercado tradicional não atende bem.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando o seguro tradicional pode ser melhor?</h2>
+      <p class="mb-4">Se você tem um carro relativamente novo, uso misto (particular + eventual aplicativo) e consegue aprovação numa seguradora tradicional como Porto Seguro ou Tokio Marine, pode ter coberturas mais completas — especialmente carro reserva, que faz muita diferença para quem usa o carro como fonte de renda.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-4">Para a maioria dos motoristas de aplicativo, a Loovi resolve o problema que o mercado tradicional não consegue — e faz isso com cobertura sólida e processo simples. A Elevance Seguros é parceira Loovi e faz a cotação gratuitamente pelo WhatsApp.</p>
+    `
   }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
