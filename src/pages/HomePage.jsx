@@ -275,35 +275,43 @@ const HomePage = () => {
       ═══════════════════════════════ */}
       <section className="py-20" style={{background: '#F5F7FA'}}>
         <div className="max-w-7xl mx-auto px-4">
-          <div className="rounded-[2rem] overflow-hidden" style={{background: '#0033a0'}}>
-            <div className="flex items-center justify-center gap-8 px-8 pt-10 pb-6 border-b border-white/10">
-              <img src="/logos/apvs_brasil.webp" alt="APVS Brasil" className="h-10" />
-              <div className="w-px h-8 bg-white/20"/>
-              <img src="/logos/apvs_truck.webp" alt="APVS Truck" className="h-12" />
+          <div className="rounded-[2rem] overflow-hidden" style={{background: 'linear-gradient(135deg, #0033a0 0%, #0033a0 55%, #1e5c1e 100%)'}}>
+            {/* Logos */}
+            <div className="flex items-center justify-center gap-6 px-8 pt-8 pb-5 border-b border-white/10">
+              <img src="/logos/apvs_brasil.webp" alt="APVS Brasil" className="h-8 object-contain" />
+              <img src="/logos/apvs_truck.webp" alt="APVS Truck" className="h-9 object-contain" />
+              <div className="w-px h-8 bg-white/25 mx-2"/>
+              <img src="/logos/facility-branco.svg" alt="Facility" className="h-7 object-contain" />
             </div>
             <div className="flex flex-col lg:flex-row items-center gap-10 p-8 md:p-12">
               <div className="lg:w-1/2 space-y-5 text-white">
                 <Link to="/protecao-veicular" className="block font-sora text-3xl md:text-4xl font-bold italic hover:opacity-80 transition-opacity leading-tight">
-                  Proteção Veicular<br/>sem burocracia
+                  Tem Facility, tá tranquilo.<br/>
+                  <span className="text-yellow-300">Tem APVS, tá protegido.</span>
                 </Link>
-                <p className="font-light leading-relaxed" style={{color: 'rgba(255,255,255,0.6)'}}>Seu carro pode ser roubado ainda hoje — e sem proteção, o prejuízo é 100% seu.</p>
+                <p className="font-light leading-relaxed" style={{color: 'rgba(255,255,255,0.65)'}}>A Elevance trabalha com as duas maiores redes de proteção veicular do Brasil. Comparamos e indicamos a melhor para o seu perfil.</p>
                 <div className="flex flex-wrap gap-2 pt-1">
-                  {["Sem consulta SPC/Serasa", "Rastreador Grátis", "Carro, moto e caminhão"].map(item => (
+                  {["Sem consulta SPC/Serasa", "Carro, moto e caminhão", "Mensalidade até 50% menor"].map(item => (
                     <span key={item} className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-semibold uppercase bg-white/10">
-                      <CheckCircle2 size={11} className="text-yellow-400"/>{item}
+                      <CheckCircle2 size={11} className="text-green-400"/>{item}
                     </span>
                   ))}
                 </div>
               </div>
               <div className="lg:w-1/2 w-full">
-                <div className="rounded-2xl p-8 text-center" style={{background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)'}}>
-                  <p className="text-xs mb-2 uppercase tracking-widest font-semibold" style={{color: 'rgba(255,255,255,0.4)'}}>Simule agora</p>
-                  <h4 className="font-sora text-white text-xl font-bold italic mb-6">Quanto custa proteger seu veículo?</h4>
-                  <a href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero cotar Proteção Veicular APVS`}
-                    target="_blank" rel="noreferrer"
-                    className="block w-full font-bold py-4 rounded-xl transition-all uppercase text-xs tracking-widest hover:opacity-90"
+                <div className="rounded-2xl p-8 text-center" style={{background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)'}}>
+                  <p className="text-xs mb-2 uppercase tracking-widest font-semibold" style={{color: 'rgba(255,255,255,0.4)'}}>APVS + Facility</p>
+                  <h4 className="font-sora text-white text-xl font-bold italic mb-6">Compare as duas e escolha a melhor para você</h4>
+                  <Link to="/protecao-veicular"
+                    className="block w-full font-bold py-4 rounded-xl transition-all uppercase text-xs tracking-widest hover:opacity-90 mb-3"
                     style={{background: '#C8A96B', color: '#071B34'}}>
-                    Solicitar Cotação via WhatsApp
+                    Ver comparativo completo
+                  </Link>
+                  <a href={`https://wa.me/${meuNumero}?text=Olá Rodrigo, quero cotar Proteção Veicular`}
+                    target="_blank" rel="noreferrer"
+                    className="block w-full font-bold py-3 rounded-xl transition-all uppercase text-xs tracking-widest hover:opacity-90"
+                    style={{background: 'rgba(255,255,255,0.1)', color: '#fff', border: '1px solid rgba(255,255,255,0.2)'}}>
+                    Cotação via WhatsApp
                   </a>
                 </div>
               </div>
