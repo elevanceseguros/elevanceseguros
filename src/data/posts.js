@@ -3977,6 +3977,98 @@ export const postsData = [
       <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
       <p class="mb-4">Para a maioria dos motoristas de aplicativo, a Loovi resolve o problema que o mercado tradicional não consegue — e faz isso com cobertura sólida e processo simples. A Elevance Seguros é parceira Loovi e faz a cotação gratuitamente pelo WhatsApp.</p>
     `
+  }  ,
+  {
+    id: 79,
+    slug: "hapvida-vs-bradesco-saude-qual-escolher-empresa-sp",
+    title: "Hapvida vs Bradesco Saúde: Qual Escolher para sua Empresa em SP?",
+    date: "09 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Hapvida é a rede própria mais acessível. Bradesco Saúde é o premium corporativo sem plano individual. Para PME em SP, qual entrega mais valor em 2026?",
+    content: `
+      <p class="mb-4">Hapvida e Bradesco Saúde aparecem frequentemente na comparação de planos empresariais em São Paulo — mas são propósitos completamente diferentes. Entender essa diferença é essencial para não pagar mais do que precisa ou contratar menos do que deveria.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Hapvida: rede própria e menor custo</h2>
+      <p class="mb-4">A Hapvida é uma operadora verticalizada — hospitais, clínicas e laboratórios próprios integrados num único sistema. Em São Paulo, isso se traduz em acesso ao Hospital Renascença, NotreCare ABC, Hospital Modelo Sorocaba e dezenas de clínicas e pontos de diagnóstico.</p>
+      <p class="mb-4">Para PME, o custo é o grande diferencial. MEI é aceito a partir de 1 vida, e a faixa de 0–18 anos começa em torno de <strong>R$ 110/mês</strong>. Para empresa com equipe jovem, é difícil bater essa relação custo-cobertura no mercado paulistano.</p>
+      <p class="mb-4">O lado B: a rede é da própria Hapvida, sem flexibilidade de escolha de médico. Quem tem especialista de confiança fora da rede fica sem reembolso.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Bradesco Saúde: premium sem plano individual</h2>
+      <p class="mb-4">O Bradesco Saúde opera exclusivamente no segmento empresarial — não existe plano individual Bradesco Saúde. Isso significa estrutura inteiramente voltada para empresas: portal corporativo, gestão de beneficiários, concierge em hospitais parceiros.</p>
+      <p class="mb-4">A rede credenciada tem mais de <strong>37 mil médicos e 2.300 hospitais</strong> em 1.300 municípios. Os planos superiores (Nacional Plus e Premium) dão acesso ao Einstein e Sírio-Libanês — o nível mais alto do mercado. MEI aceito a partir de 2 vidas.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta para PME em SP</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Hapvida PME</th><th class="p-3 text-center rounded-tr-xl">Bradesco Saúde PME</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Preço entrada (0-18)</td><td class="p-3 text-center text-green-600 font-bold">~R$ 110/mês</td><td class="p-3 text-center">~R$ 180/mês</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">MEI mínimo</td><td class="p-3 text-center text-green-600 font-bold">1 vida</td><td class="p-3 text-center">2 vidas</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Modelo de rede</td><td class="p-3 text-center">Própria integrada</td><td class="p-3 text-center text-green-600 font-bold">Credenciada ampla</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Einstein/Sírio</td><td class="p-3 text-center text-slate-400">Não</td><td class="p-3 text-center text-green-600 font-bold">Sim (Nacional Plus+)</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Reembolso</td><td class="p-3 text-center text-slate-400">Não</td><td class="p-3 text-center text-green-600 font-bold">Sim (planos superiores)</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Telemedicina</td><td class="p-3 text-center text-green-600 font-bold">Super App Hapvida</td><td class="p-3 text-center">Portal corporativo</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Cancela contrato</td><td class="p-3 text-center">Sim (coletivo)</td><td class="p-3 text-center">Sim (coletivo)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Hapvida para sua empresa?</h2>
+      <p class="mb-4">Para empresas que querem o menor custo por vida com boa cobertura, time jovem, e colaboradores que vivem e trabalham em São Paulo ou nas cidades com rede própria Hapvida. Também é a escolha certa para MEI que precisa contratar a partir de 1 vida — o Bradesco não aceita.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Bradesco Saúde para sua empresa?</h2>
+      <p class="mb-4">Para empresas que querem oferecer um plano premium como diferencial de atração e retenção de talentos. Especialmente para cargos de liderança que valorizam acesso ao Einstein, reembolso por livre escolha e a marca Bradesco como sinal de qualidade do benefício.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Estratégia: usar os dois?</h2>
+      <p class="mb-4">Algumas empresas adotam uma estratégia híbrida: Hapvida para a equipe operacional (menor custo) e Bradesco para diretores e gerentes (benefício diferenciado). A Elevance Seguros pode estruturar esse modelo e fazer a cotação dos dois simultaneamente.</p>
+    `
+  }
+  ,
+  {
+    id: 80,
+    slug: "seguro-garantia-o-que-e-e-quando-sua-empresa-precisa",
+    title: "Seguro Garantia: O Que É e Quando Sua Empresa Precisa?",
+    date: "10 Jul, 2026",
+    category: "Seguros Empresariais",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Seguro garantia é exigido em licitações públicas e contratos privados de grande porte. Mas o que ele cobre, quanto custa e quando vale a pena contratar mesmo sem exigência?",
+    content: `
+      <p class="mb-4">Se sua empresa participa de licitações ou fecha contratos de prestação de serviços de maior valor, provavelmente já ouviu falar em seguro garantia — ou já foi solicitado a apresentar um. Mas o que ele é exatamente e quando faz sentido além da obrigação contratual?</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que é o seguro garantia?</h2>
+      <p class="mb-4">O seguro garantia é uma apólice que garante ao contratante (beneficiário) que o contratado (tomador) vai cumprir as obrigações assumidas no contrato. Se a empresa contratada não cumprir o combinado — por inadimplência, falência ou má execução — a seguradora indeniza o contratante até o limite garantido.</p>
+      <p class="mb-4">É diferente do seguro de RC Profissional: o RC cobre danos causados por erro ou negligência. O seguro garantia cobre o <strong>descumprimento contratual</strong> em si.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Principais modalidades</h2>
+      <ul class="mb-4 space-y-3 list-none">
+        <li class="p-3 bg-slate-50 rounded-xl"><strong>Garantia de Proposta (Bid Bond)</strong> — garante que o licitante vencedor vai assinar o contrato. Exigido em licitações públicas. Valor: 1% a 3% do valor do contrato.</li>
+        <li class="p-3 bg-slate-50 rounded-xl"><strong>Garantia de Execução (Performance Bond)</strong> — garante o cumprimento das obrigações contratuais durante a execução. O mais comum. Valor: 5% a 30% do valor do contrato.</li>
+        <li class="p-3 bg-slate-50 rounded-xl"><strong>Garantia de Adiantamento</strong> — garante a devolução de valores adiantados ao contratado caso não execute. Exigido quando há pagamento antecipado.</li>
+        <li class="p-3 bg-slate-50 rounded-xl"><strong>Garantia Judicial</strong> — substitui depósito em dinheiro em processos judiciais. Libera capital de giro ao evitar imobilização de recursos em garantia.</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando é obrigatório?</h2>
+      <p class="mb-4">A Nova Lei de Licitações (Lei 14.133/21) tornou o seguro garantia a modalidade preferencial de garantia em contratos públicos acima de R$ 200 mil. Para contratos privados, é uma cláusula negociada — cada vez mais comum em contratos de construção civil, TI e prestação de serviços continuados.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quanto custa?</h2>
+      <p class="mb-4">O prêmio varia por modalidade, valor garantido e perfil da empresa tomadora:</p>
+      <ul class="mb-4 space-y-1 list-disc pl-5">
+        <li>Garantia de proposta: <strong>0,5% a 1%</strong> do valor garantido ao ano</li>
+        <li>Garantia de execução: <strong>1% a 3%</strong> do valor garantido ao ano</li>
+        <li>Garantia judicial: <strong>1,5% a 3%</strong> do valor ao ano</li>
+      </ul>
+      <p class="mb-4">Para um contrato de R$ 500 mil com garantia de execução de 10% (R$ 50 mil garantidos), o prêmio anual fica entre R$ 500 e R$ 1.500. Um custo baixo para viabilizar um contrato que de outra forma exigiria depósito em dinheiro ou carta de fiança bancária.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Seguro garantia vs carta de fiança bancária</h2>
+      <p class="mb-4">A carta de fiança bancária imobiliza limite de crédito da empresa — cada R$ 50 mil de fiança "trava" R$ 50 mil de crédito no banco. O seguro garantia preserva o capital de giro e o limite bancário, com custo geralmente menor. Para empresas com contratos simultâneos, a diferença no fluxo de caixa é significativa.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando vale mesmo sem obrigação contratual?</h2>
+      <p class="mb-4">Para empresas que querem transmitir credibilidade a novos clientes, entrar em novos mercados ou negociar contratos de maior porte com contrapartes que exigem garantia mesmo sem ser público. É uma ferramenta de crescimento comercial além de obrigação legal.</p>
+      <p class="mb-4">A Elevance Seguros cota seguro garantia para empresas de todos os portes — fale pelo WhatsApp.</p>
+    `
   }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
