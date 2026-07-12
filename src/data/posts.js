@@ -4069,6 +4069,105 @@ export const postsData = [
       <p class="mb-4">Para empresas que querem transmitir credibilidade a novos clientes, entrar em novos mercados ou negociar contratos de maior porte com contrapartes que exigem garantia mesmo sem ser público. É uma ferramenta de crescimento comercial além de obrigação legal.</p>
       <p class="mb-4">A Elevance Seguros cota seguro garantia para empresas de todos os portes — fale pelo WhatsApp.</p>
     `
+  }  ,
+  {
+    id: 81,
+    slug: "porto-saude-vs-alice-qual-melhor-mei-autonomo",
+    title: "Porto Saúde vs Alice: Qual é Melhor para MEI e Autônomo em 2026?",
+    date: "11 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Porto Saúde e Alice são duas das opções mais buscadas por MEI e autônomos em SP. Uma é operadora tradicional do grupo Porto, a outra é healthtech. Qual entrega mais valor?",
+    content: `
+      <p class="mb-4">MEI e autônomos têm um desafio específico na hora de contratar plano de saúde: precisam de opções que aceitem poucos beneficiários, tenham bom custo-benefício e não exijam burocracia excessiva de empresa. Porto Saúde e Alice são dois caminhos bem diferentes para esse perfil.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Porto Saúde: tradição com Proteção Combinada</h2>
+      <p class="mb-4">A Porto Saúde faz parte do grupo Porto — mesma marca do seguro auto e residencial. Seu diferencial mais comentado é a <strong>Proteção Combinada Turbinada</strong>: nos planos superiores, odonto, seguro de vida e cobertura ocupacional vêm incluídos sem custo adicional.</p>
+      <p class="mb-4">Para MEI, aceita a partir de 3 vidas com CNPJ ativo há 6 meses. As linhas disponíveis em SP vão da Bairros (econômica, rede regional) até a Tradicional (premium). Coleta domiciliar de exames disponível nas categorias superiores.</p>
+      <p class="mb-4">Um diferencial real: dependentes indiretos como pais, sogros, sobrinhos e netos são aceitos — algo raro no mercado empresarial.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Alice: healthtech com Time de Saúde 24h</h2>
+      <p class="mb-4">A Alice é uma healthtech que reinventou o modelo de atenção à saúde. Em vez de só dar acesso a uma rede credenciada, ela oferece um <strong>Time de Saúde dedicado</strong> — médicos e enfermeiros disponíveis 24h pelo app, que conhecem seu histórico, orientam antes de ir ao pronto-socorro e coordenam os cuidados.</p>
+      <p class="mb-4">Para MEI, aceita a partir de 1 vida — o menor mínimo do mercado. A atenção primária (consultas no app) é isenta de coparticipação. O plano Equilíbrio começa em torno de R$ 310/mês para a faixa 0–18 anos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Porto Saúde</th><th class="p-3 text-center rounded-tr-xl">Alice</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">MEI mínimo</td><td class="p-3 text-center">3 vidas</td><td class="p-3 text-center text-green-600 font-bold">1 vida</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Preço entrada</td><td class="p-3 text-center text-green-600 font-bold">~R$ 180/mês</td><td class="p-3 text-center">~R$ 310/mês</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Médico 24h no app</td><td class="p-3 text-center text-slate-400">Não</td><td class="p-3 text-center text-green-600 font-bold">Time de Saúde</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Odonto incluso</td><td class="p-3 text-center text-green-600 font-bold">Planos superiores</td><td class="p-3 text-center text-slate-400">Não</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Dependentes indiretos</td><td class="p-3 text-center text-green-600 font-bold">Aceita</td><td class="p-3 text-center text-slate-400">Não aceita</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Coleta domiciliar</td><td class="p-3 text-center text-green-600 font-bold">Planos superiores</td><td class="p-3 text-center text-slate-400">Não</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Cobertura nacional</td><td class="p-3 text-center text-green-600 font-bold">SP, Campinas, BSB, RJ</td><td class="p-3 text-center">SP e capitais</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Einstein/Sírio</td><td class="p-3 text-center">Tradicional+</td><td class="p-3 text-center text-green-600 font-bold">Plano Exclusivo</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Porto Saúde?</h2>
+      <p class="mb-4">Para MEI que precisa de pelo menos 3 vidas (titular + 2 dependentes) e quer o menor custo de entrada com boa cobertura. Também é a melhor opção para quem quer incluir pais ou sogros no plano — a Porto aceita dependentes indiretos, o que a Alice não faz.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Alice?</h2>
+      <p class="mb-4">Para MEI solo — 1 vida só — que não tem como atingir o mínimo de outras operadoras. Também para autônomos que viajam pouco, ficam em SP e valorizam muito o atendimento preventivo e o médico disponível no app. Se você usa o plano frequentemente para orientação e consultas, a Alice pode reduzir sinistros e entregar mais valor real.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-4">Porto Saúde vence em custo, dependentes e benefícios agregados. Alice vence em modelo de atenção e flexibilidade de mínimo. A Elevance Seguros cota as duas simultaneamente e apresenta a comparação para você decidir.</p>
+    `
+  }
+  ,
+  {
+    id: 82,
+    slug: "seguro-auto-para-carro-de-leilao-quem-aceita",
+    title: "Seguro Auto para Carro de Leilão: Quem Aceita e Quanto Custa?",
+    date: "12 Jul, 2026",
+    category: "Seguro Auto",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Carro de leilão é mais barato na compra, mas segurar é complicado. A maioria das seguradoras recusa. Saiba quem aceita, quais as condições e quanto custa em 2026.",
+    content: `
+      <p class="mb-4">Comprar carro de leilão pode gerar uma economia de 20% a 40% em relação ao mercado. Mas na hora de segurar, a maioria das seguradoras recusa ou cobra um prêmio tão alto que elimina a vantagem. Entenda por que isso acontece e quais são as alternativas reais.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Por que seguradoras recusam carro de leilão?</h2>
+      <p class="mb-4">Carros de leilão têm histórico incerto — podem ter sido roubados e recuperados, sinistrados com perda parcial ou total, ou usados em operações policiais. Esse histórico aumenta a percepção de risco das seguradoras, que não conseguem avaliar adequadamente o estado real do veículo e seu histórico completo.</p>
+      <p class="mb-4">Além disso, a tabela FIPE de referência nem sempre reflete o valor real de um carro de leilão — o que complica o cálculo de indenização em caso de sinistro total.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quem aceita segurar carro de leilão?</h2>
+      <p class="mb-4">O mercado tradicional quase sempre recusa. As alternativas reais:</p>
+      <ul class="mb-4 space-y-3 list-none">
+        <li class="p-4 bg-slate-50 rounded-xl"><strong>Loovi</strong> — aceita carros de leilão sem análise de perfil. Cobertura contra roubo, furto e colisão, assistência 24h. Processo 100% digital pelo app. É a opção mais acessível e sem burocracia.</li>
+        <li class="p-4 bg-slate-50 rounded-xl"><strong>APVS Brasil / Facility</strong> — proteção veicular que aceita leilão. Sem consulta ao SPC/Serasa, mensalidade menor que seguro tradicional, cobertura roubo e colisão. Boa opção para quem quer o menor custo.</li>
+        <li class="p-4 bg-slate-50 rounded-xl"><strong>Seguradoras nicho</strong> — algumas seguradoras menores aceitam mediante vistoria presencial e pagamento de prêmio mais alto. Vale cotar, mas espere recusas frequentes.</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quanto custa?</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Opção</th><th class="p-3 text-center">Mensalidade</th><th class="p-3 text-center rounded-tr-xl">Cobertura principal</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Loovi</td><td class="p-3 text-center font-bold text-green-600">R$ 99 – R$ 199</td><td class="p-3 text-center">Roubo, furto, colisão</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Proteção Veicular (APVS/Facility)</td><td class="p-3 text-center font-bold text-green-600">R$ 99 – R$ 159</td><td class="p-3 text-center">Roubo, furto, colisão</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Seguradora nicho (com vistoria)</td><td class="p-3 text-center">R$ 200 – R$ 400</td><td class="p-3 text-center">Cobertura completa</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que verificar antes de contratar</h2>
+      <p class="mb-4">Independente da opção escolhida, certifique-se de que:</p>
+      <ul class="mb-4 space-y-1 list-disc pl-5">
+        <li>O veículo está regularizado — emplacado e com documentação transferida no seu nome</li>
+        <li>Não há restrições ou bloqueios no DETRAN</li>
+        <li>A origem do leilão está documentada (leilão judicial, policial ou de empresa)</li>
+        <li>A cobertura contratada inclui o histórico do veículo — leia o contrato com atenção</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Loovi vs Proteção Veicular para leilão</h2>
+      <p class="mb-4">Para carro de leilão, a Loovi tem a vantagem de ser um seguro regulamentado pela SUSEP — com mais proteção jurídica em caso de disputa de sinistro. A proteção veicular (APVS/Facility) tende a ter mensalidade menor e aceita ainda mais perfis, mas é regulamentada pela Lei Complementar 213/2025, mais recente e com menos histórico de precedentes.</p>
+      <p class="mb-4">A Elevance Seguros trabalha com Loovi, APVS e Facility — cota as três e apresenta a melhor opção para o seu carro de leilão.</p>
+    `
   }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
