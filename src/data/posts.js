@@ -4168,6 +4168,376 @@ export const postsData = [
       <p class="mb-4">Para carro de leilão, a Loovi tem a vantagem de ser um seguro regulamentado pela SUSEP — com mais proteção jurídica em caso de disputa de sinistro. A proteção veicular (APVS/Facility) tende a ter mensalidade menor e aceita ainda mais perfis, mas é regulamentada pela Lei Complementar 213/2025, mais recente e com menos histórico de precedentes.</p>
       <p class="mb-4">A Elevance Seguros trabalha com Loovi, APVS e Facility — cota as três e apresenta a melhor opção para o seu carro de leilão.</p>
     `
+  }  ,
+  {
+    id: 83,
+    slug: "amil-vs-sulamerica-pf-qual-melhor-sp",
+    title: "Amil vs SulAmérica Pessoa Física: Qual é Melhor em SP?",
+    date: "13 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Amil e SulAmérica são duas das maiores operadoras de plano individual em SP. Mas elas funcionam de formas bem diferentes — e o perfil de quem se beneficia mais de cada uma é distinto.",
+    content: `
+      <p class="mb-4">Para quem busca plano de saúde individual em São Paulo — sem CNPJ, sem entidade de classe — as opções se estreitam bastante. Amil e SulAmérica são duas das poucas grandes operadoras que ainda oferecem plano individual na capital paulista. Mas têm propostas bem diferentes.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Amil Individual em SP</h2>
+      <p class="mb-4">A Amil oferece planos individuais em regiões selecionadas de SP. O Bronze SP é a linha de entrada — rede regional com hospitais credenciados na capital e ABC. A partir do Prata, a cobertura se torna nacional. Nos planos superiores (Ouro, Platinum, Black), Einstein e Sírio-Libanês estão incluídos.</p>
+      <p class="mb-4">O diferencial: a Amil Dental vem inclusa por 12 meses nos planos PME — mas para o individual, precisa ser contratada separado. O reembolso está disponível a partir do Prata.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">SulAmérica Individual em SP</h2>
+      <p class="mb-4">A SulAmérica tem disponibilidade de plano individual via modalidade de adesão (por entidades de classe) e em algumas regiões diretamente. A linha Exato — a mais vendida — combina cobertura nacional com reembolso por livre escolha de médico, o que é raro em planos individuais acessíveis.</p>
+      <p class="mb-4">O maior diferencial da SulAmérica é o acesso à <strong>Rede D'Or</strong> nos planos superiores — o São Luiz, Copa Star e outros hospitais da rede são referência em São Paulo.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Amil PF</th><th class="p-3 text-center rounded-tr-xl">SulAmérica PF</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Disponibilidade SP</td><td class="p-3 text-center text-green-600 font-bold">Boa</td><td class="p-3 text-center">Via adesão/regional</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Rede D'Or</td><td class="p-3 text-center text-slate-400">Não</td><td class="p-3 text-center text-green-600 font-bold">Exato+</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Reembolso</td><td class="p-3 text-center">Prata+</td><td class="p-3 text-center text-green-600 font-bold">Exato+</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Einstein/Sírio</td><td class="p-3 text-center text-green-600 font-bold">Ouro+</td><td class="p-3 text-center">Especial+</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Proteção contra cancelamento</td><td class="p-3 text-center text-green-600 font-bold">Individual: não pode</td><td class="p-3 text-center">Varia por modalidade</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O ponto mais importante: proteção legal</h2>
+      <p class="mb-4">Planos individuais têm uma vantagem fundamental sobre coletivos: a operadora <strong>não pode cancelar o contrato</strong> enquanto você paga em dia. Para quem tem condição pré-existente, histórico de doenças ou simplesmente quer segurança de longo prazo, isso pesa muito na decisão.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher cada uma</h2>
+      <p class="mb-4">Prefira Amil se você quer um plano individual com Einstein acessível nos planos superiores e está em SP capital. Prefira SulAmérica se valoriza acesso à Rede D'Or e reembolso já no plano de entrada. A Elevance cota os dois para o seu perfil.</p>
+   `
+  }  ,
+  {
+    id: 84,
+    slug: "plano-de-saude-para-servidor-publico-como-funciona",
+    title: "Plano de Saúde para Servidor Público: Como Funciona em 2026?",
+    date: "14 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1568992688065-536aad8a12f6?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Servidor público federal, estadual e municipal tem acesso a planos de saúde com subsidio do governo. Mas quando vale complementar ou trocar por um plano privado?",
+    content: `
+      <p class="mb-4">Servidor público tem um benefício valioso: acesso a planos de saúde com subsídio do governo. No caso federal, o GEAP e outros planos credenciados pelo governo oferecem cobertura com custo menor que o mercado. Mas nem sempre isso é suficiente — e entender quando complementar ou trocar é importante.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Como funciona o plano do servidor federal</h2>
+      <p class="mb-4">Servidores federais têm direito ao auxílio-saúde: o governo paga uma parte do custo do plano credenciado ao GEAP ou outras operadoras conveniadas. O valor do subsídio varia por cargo e nível salarial. O servidor paga a diferença via desconto em folha.</p>
+      <p class="mb-4">As operadoras credenciadas variam por estado, mas geralmente incluem GEAP, Bradesco Saúde, Amil e outras. A cobertura segue as regras da ANS para planos coletivos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Servidores estaduais e municipais</h2>
+      <p class="mb-4">Cada estado e município tem sua política própria. Em SP, servidores estaduais têm acesso ao IAMSPE (Instituto de Assistência Médica ao Servidor Público Estadual) — com hospitais próprios e rede credenciada. Municipais de SP têm acesso a planos via PMSP com condições diferenciadas.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando vale contratar um plano complementar ou trocar?</h2>
+      <p class="mb-4">Considere um plano complementar ou substituição quando: a rede do plano do governo não tem o especialista que você precisa, você quer acesso a hospitais premium como Einstein ou Sírio-Libanês, a rede credenciada na sua cidade é fraca, ou você quer cobrir dependentes com condições específicas de saúde.</p>
+      <p class="mb-4">Um plano de saúde por adesão (OAB, CRM, CREA) pode ser mais barato que a parte que o servidor paga no plano do governo — especialmente para quem não usa o subsídio máximo ou tem dependentes com necessidades específicas.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que verificar antes de trocar</h2>
+      <p class="mb-4">Nunca cancele o plano do governo antes de ter o novo contratado e com carências cumpridas. Portabilidade de carências pode ajudar na transição — consulte um corretor para planejar a mudança sem ficar desprotegido.</p>
+      <p class="mb-4">A Elevance Seguros analisa seu plano atual e compara com as melhores opções do mercado para o seu perfil de servidor.</p>
+   `
+  }  ,
+  {
+    id: 85,
+    slug: "consorcio-de-moto-como-funciona-e-vale-a-pena",
+    title: "Consórcio de Moto: Como Funciona e Vale a Pena em 2026?",
+    date: "15 Jul, 2026",
+    category: "Consórcios",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Consórcio de moto é uma das modalidades mais acessíveis do mercado — parcelas menores e sem juros. Mas quando vale mais que o financiamento?",
+    content: `
+      <p class="mb-4">Consórcio de moto é uma das modalidades com menor ticket de entrada no mercado de consórcios — e por isso muito procurado. Com parcelas menores que o financiamento e sem juros, é uma alternativa real para quem quer uma moto nova ou seminova sem comprometer o orçamento.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Como funciona o consórcio de moto</h2>
+      <p class="mb-4">Você entra em um grupo de pessoas com o mesmo objetivo. Mensalmente, todos pagam e uma ou mais cartas de crédito são contempladas por sorteio ou lance. Quem recebe a carta compra a moto à vista. Os demais continuam pagando até serem contemplados.</p>
+      <p class="mb-4">Não há juros — o custo real é a taxa de administração, que gira em torno de 15% a 22% do valor total, diluída ao longo do plano (geralmente 36 a 84 meses).</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quanto fica a parcela?</h2>
+      <p class="mb-4">Para uma carta de crédito de R$ 15.000 em 60 meses, a parcela fica em torno de R$ 280 a R$ 320/mês. Para R$ 25.000 em 60 meses, entre R$ 450 e R$ 520/mês. Compare com um financiamento da mesma moto: a parcela seria menor nominalmente, mas o custo total seria 30% a 50% maior pelos juros.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Posso usar a carta para moto seminova?</h2>
+      <p class="mb-4">Sim. A carta de crédito pode ser usada para comprar moto nova ou usada de qualquer vendedor — pessoa física, concessionária ou revendedora. O vendedor recebe como se fosse dinheiro à vista, o que geralmente dá poder de negociação.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Como ser contemplado mais rápido</h2>
+      <p class="mb-4">O lance é a forma mais eficaz. Você oferta um percentual do crédito como lance — geralmente 20% a 30%. Quem oferta maior percentual é contemplado. O <strong>lance embutido</strong> permite usar parte do próprio crédito como lance, sem precisar ter o dinheiro em mãos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando consórcio de moto vale mais que financiamento</h2>
+      <p class="mb-4">Vale mais quando você não precisa da moto imediatamente, tem disciplina financeira para pagar mensalmente mesmo sem a moto em mãos, e quer pagar menos no total. Para quem precisa da moto agora para trabalho ou deslocamento urgente, o financiamento ainda é a opção certa — apesar do custo maior.</p>
+      <p class="mb-4">A Elevance Seguros é parceira Rodobens para consórcio de moto. Simule gratuitamente pelo WhatsApp.</p>
+   `
+  }  ,
+  {
+    id: 86,
+    slug: "plano-de-saude-coparticipacao-o-que-e-e-como-funciona",
+    title: "Coparticipação no Plano de Saúde: O Que É e Quando Pesa no Bolso?",
+    date: "16 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Coparticipação é um valor cobrado cada vez que você usa o plano. Pode parecer pequeno, mas para quem usa o plano com frequência, muda bastante a conta no fim do mês.",
+    content: `
+      <p class="mb-4">Na hora de contratar um plano de saúde, muita gente foca só na mensalidade — e esquece de verificar se tem coparticipação. Esse detalhe pode fazer uma diferença enorme no custo real para famílias que usam o plano com frequência.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que é coparticipação?</h2>
+      <p class="mb-4">Coparticipação é um valor fixo ou percentual que você paga cada vez que utiliza o plano — consulta, exame, internação. É cobrada além da mensalidade e funciona como um "co-pagamento" pelo uso dos serviços.</p>
+      <p class="mb-4">Exemplos práticos: R$ 30 por consulta, R$ 15 por exame simples, 10% do valor de uma internação. Parece pouco isolado, mas uma família que faz 4 consultas e 6 exames por mês já paga R$ 210 extra.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Por que os planos têm coparticipação?</h2>
+      <p class="mb-4">A coparticipação reduz o uso excessivo — quem paga algo por cada uso tende a usar de forma mais criteriosa. Isso reduz a sinistralidade da operadora, que consegue oferecer mensalidade mais baixa em troca.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Plano com vs sem coparticipação: qual sai mais barato?</h2>
+      <p class="mb-4">Depende do seu perfil de uso. Quem vai ao médico raramente — 2 a 3 vezes por ano — se beneficia do plano com coparticipação: mensalidade menor e paga pouco quando usa. Quem tem filhos pequenos, doenças crônicas ou usa o plano com frequência se beneficia do plano sem coparticipação — mensalidade maior, mas sem surpresas no uso.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quais operadoras não têm coparticipação?</h2>
+      <p class="mb-4">O <strong>MedSênior</strong> é o caso mais conhecido — nenhum dos planos tem coparticipação, o que é um diferencial importante para o público 49+, que usa o plano com mais frequência. A <strong>Alice</strong> isenta de coparticipação as consultas de atenção primária feitas pelo app. A maioria das outras operadoras cobra coparticipação ao menos em alguns procedimentos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que verificar antes de contratar</h2>
+      <p class="mb-4">Peça sempre o contrato ou a tabela de coparticipação antes de assinar. Verifique: quais procedimentos têm coparticipação, qual o valor ou percentual, se há limite máximo mensal, e se consultas de pronto-socorro têm coparticipação diferente.</p>
+      <p class="mb-4">A Elevance Seguros explica a coparticipação de cada plano antes da contratação — sem letra miúda.</p>
+   `
+  }  ,
+  {
+    id: 87,
+    slug: "seguro-de-vida-para-autonomo-e-freelancer-vale-a-pena",
+    title: "Seguro de Vida para Autônomo e Freelancer: Vale a Pena?",
+    date: "17 Jul, 2026",
+    category: "Seguro de Vida",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Autônomo não tem FGTS, 13º nem benefícios do CLT. Seguro de vida é uma das poucas proteções que pode contratar por conta própria — e custa menos do que muitos imaginam.",
+    content: `
+      <p class="mb-4">Autônomo e freelancer vivem sem a rede de proteção do emprego formal: sem FGTS, sem 13º, sem auxílio-doença pelo INSS nos primeiros 12 meses de contribuição, sem seguro de vida em grupo do empregador. Isso torna o seguro de vida individual ainda mais relevante para esse perfil.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O risco real de não ter proteção</h2>
+      <p class="mb-4">Para um autônomo, qualquer evento grave — acidente, doença grave, invalidez — significa parada de renda imediata sem colchão institucional. Enquanto um CLT conta com auxílio-doença do INSS após 15 dias afastado (se contribui há mais de 12 meses), o autônomo que contribui como MEI ou autônomo tem carências e limitações que precisam ser verificadas.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Coberturas mais importantes para autônomo</h2>
+      <ul class="mb-4 space-y-3 list-none">
+        <li class="p-4 bg-slate-50 rounded-xl"><strong>Invalidez permanente total ou parcial</strong> — você recebe ainda em vida se ficar impossibilitado de trabalhar. Para autônomo, essa é muitas vezes mais importante que a cobertura de morte.</li>
+        <li class="p-4 bg-slate-50 rounded-xl"><strong>Doenças graves</strong> — câncer, infarto, AVC. Recebe o capital segurado antecipado para cobrir tratamento e manutenção da família durante o período de recuperação.</li>
+        <li class="p-4 bg-slate-50 rounded-xl"><strong>Diária por Incapacidade Temporária (DIT)</strong> — valor diário durante afastamento por doença ou acidente. Substitui parcialmente a renda perdida.</li>
+        <li class="p-4 bg-slate-50 rounded-xl"><strong>Morte</strong> — proteção para dependentes financeiros.</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quanto custa para autônomo?</h2>
+      <p class="mb-4">Um seguro com capital de R$ 200 mil (morte + invalidez) para autônomo de 35 anos sem histórico de doenças custa entre <strong>R$ 60 e R$ 120/mês</strong> dependendo das coberturas adicionais escolhidas. Com cobertura de doenças graves incluída, pode chegar a R$ 150/mês.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Allianz ou Yell.um para autônomo?</h2>
+      <p class="mb-4">A <strong>Allianz</strong> oferece coberturas mais completas e DIT bem estruturada — mais adequada para autônomos que querem proteção de renda durante afastamento. A <strong>Yell.um</strong> tem contratação mais simples e menor custo de entrada — adequada para quem quer proteção essencial sem burocracia. A Elevance trabalha com as duas e orienta qual se encaixa melhor no seu momento.</p>
+   `
+  }  ,
+  {
+    id: 88,
+    slug: "hapvida-notredame-intermédica-diferença",
+    title: "Hapvida e NotreDame Intermédica: Ainda São Empresas Separadas?",
+    date: "18 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Em 2022, Hapvida e NotreDame Intermédica se fundiram. Mas os planos continuam separados? O que mudou para o beneficiário e o que esperar daqui para frente.",
+    content: `
+      <p class="mb-4">Em abril de 2022, Hapvida e NotreDame Intermédica concluíram sua fusão, criando o maior grupo de saúde suplementar da América Latina. Mas na prática, para quem contrata ou já tem um dos planos, o que isso significa?</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O grupo hoje</h2>
+      <p class="mb-4">O grupo Hapvida NotreDame Intermédica (GNDI) tem mais de 8 milhões de beneficiários, 86 hospitais, 352 clínicas e mais de 290 unidades de diagnóstico próprias. É a maior rede própria verticalizada da América Latina.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Os planos ainda são separados?</h2>
+      <p class="mb-4">Sim. Comercialmente, Hapvida e NotreDame Intermédica continuam operando como marcas separadas com redes distintas. Quem tem plano Hapvida usa a rede Hapvida. Quem tem NotreDame usa a rede NotreDame. A integração está acontecendo gradualmente nos bastidores — sistemas, processos e algumas unidades já compartilhadas — mas para o beneficiário, por enquanto, são planos com redes diferentes.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">NotreDame Intermédica em SP</h2>
+      <p class="mb-4">A NotreDame tem rede forte em São Paulo, especialmente nos hospitais NotreCare. Em São Bernardo do Campo, o Hospital NotreCare ABC é referência com Medicina Fetal e maternidade de alto risco. Em São Paulo capital, tem unidades em várias regiões com pronto-socorro 24h.</p>
+      <p class="mb-4">Para PME e MEI, a NotreDame tem tabelas competitivas similares à Hapvida, aceita MEI e oferece cobertura integrada na rede do grupo.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que esperar da integração futura</h2>
+      <p class="mb-4">A tendência é que as redes se complementem gradualmente — permitindo que beneficiários Hapvida acessem unidades NotreDame e vice-versa. Isso aumentaria significativamente a cobertura de ambos. Por enquanto, consulte sempre a rede credenciada do plano específico que você tem ou vai contratar.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Qual escolher: Hapvida ou NotreDame?</h2>
+      <p class="mb-4">Em SP capital, a Hapvida tem o Hospital Renascença como principal unidade. A NotreDame tem mais presença no ABC com o NotreCare. A escolha depende de onde você mora e trabalha. A Elevance verifica qual tem melhor rede no seu CEP e faz a cotação das duas.</p>
+   `
+  }  ,
+  {
+    id: 89,
+    slug: "consorcio-de-servicos-o-que-e-e-para-que-usar",
+    title: "Consórcio de Serviços: O Que É e Para Que Usar?",
+    date: "19 Jul, 2026",
+    category: "Consórcios",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Consórcio de serviços é menos conhecido que imóvel e veículo, mas serve para reforma, viagem, educação e muito mais. Entenda como funciona e quando faz sentido.",
+    content: `
+      <p class="mb-4">Quando falamos em consórcio, a maioria pensa em imóvel ou veículo. Mas existe uma terceira modalidade menos conhecida e muito versátil: o <strong>consórcio de serviços</strong>. Ele funciona da mesma forma — sem juros, com taxa de administração — mas a carta de crédito pode ser usada para fins muito variados.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que dá para usar no consórcio de serviços?</h2>
+      <p class="mb-4">A regulamentação do Banco Central permite usar a carta de serviços para:</p>
+      <ul class="mb-4 space-y-1 list-disc pl-5">
+        <li>Reforma e construção civil (não inclui compra do imóvel)</li>
+        <li>Viagens e turismo</li>
+        <li>Educação — cursos, faculdade, MBA, pós-graduação</li>
+        <li>Saúde — cirurgias eletivas, tratamentos, procedimentos estéticos</li>
+        <li>Festas e eventos — casamento, formaturas</li>
+        <li>Equipamentos e móveis planejados</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quanto custa e quais os créditos disponíveis?</h2>
+      <p class="mb-4">O consórcio de serviços geralmente oferece cartas de crédito de R$ 5.000 a R$ 100.000, com prazos de 24 a 84 meses. Para uma reforma de R$ 30.000 em 60 meses, a parcela fica em torno de R$ 560 a R$ 650/mês — sem juros, só taxa de administração.</p>
+      <p class="mb-4">Compare com um crédito pessoal ou financiamento para o mesmo valor: você pagaria facilmente 2x mais no total pelos juros.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quem mais usa consórcio de serviços?</h2>
+      <p class="mb-4">Os três usos mais comuns são reforma de imóvel (quem já tem a casa mas quer reformar sem financiar), viagem de lua de mel ou intercâmbio, e cirurgia eletiva ou tratamento de saúde sem plano ou fora da cobertura. Em todos esses casos, o consórcio elimina os juros que o crédito pessoal cobraria.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Cuidados importantes</h2>
+      <p class="mb-4">A carta de crédito é liberada apenas quando você é contemplado — por sorteio ou lance. Se você precisa do serviço com urgência, o consórcio pode não ser a melhor opção. Planejamento com antecedência de 12 a 24 meses é o cenário ideal.</p>
+      <p class="mb-4">A Elevance Seguros simula consórcio de serviços pela Rodobens. Fale pelo WhatsApp para ver os planos disponíveis.</p>
+   `
+  }  ,
+  {
+    id: 90,
+    slug: "plena-saude-vs-biovida-qual-melhor-abc-zona-leste",
+    title: "Plena Saúde vs Biovida: Qual é Melhor no ABC e Zona Leste de SP?",
+    date: "20 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Plena Saúde e Biovida são duas operadoras regionais com forte presença no ABC e Zona Leste de SP. Preço competitivo, mas com diferenças importantes de rede e cobertura.",
+    content: `
+      <p class="mb-4">Para quem mora ou trabalha no ABC Paulista ou na Zona Leste de São Paulo, Plena Saúde e Biovida aparecem como alternativas regionais mais acessíveis às grandes operadoras. As duas têm preços competitivos, mas funcionam de formas diferentes.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Plena Saúde: tradição no ABC e Leste</h2>
+      <p class="mb-4">A Plena Saúde opera há mais de 30 anos com foco nas Zonas Norte e Leste de SP e Grande ABC. Tem 22 unidades ambulatoriais próprias e 2 hospitais 24h com pronto-socorro completo. Disponível para PF sem necessidade de CNPJ — diferencial raro entre operadoras regionais.</p>
+      <p class="mb-4">Em 2024, absorveu a carteira do plano Cuidar-me, ampliando sua estrutura. Telemedicina 24h incluída sem custo adicional em todas as linhas.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Biovida: tabela agressiva e linha sênior</h2>
+      <p class="mb-4">A Biovida tem uma das tabelas PME mais agressivas do mercado no ABC e Zona Leste. PF disponível até 81 anos — aceita beneficiários em faixas etárias que muitas operadoras rejeitam. Linha Sênior Biovida (54+) tem programa "Alô Sênior" de bem-estar sem custo adicional.</p>
+      <p class="mb-4">Hospitais credenciados incluem Serra Mayor, Santa Rita e Hospital Jardins entre outros na região.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Plena Saúde</th><th class="p-3 text-center rounded-tr-xl">Biovida</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Anos de mercado</td><td class="p-3 text-center text-green-600 font-bold">30+</td><td class="p-3 text-center">Consolidada</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">PF sem CNPJ</td><td class="p-3 text-center text-green-600 font-bold">Sim</td><td class="p-3 text-center text-green-600 font-bold">Sim</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Hospitais próprios</td><td class="p-3 text-center text-green-600 font-bold">2 hospitais 24h</td><td class="p-3 text-center">Credenciada</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Aceita até</td><td class="p-3 text-center">Faixa padrão ANS</td><td class="p-3 text-center text-green-600 font-bold">81 anos (PF)</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Linha sênior</td><td class="p-3 text-center text-slate-400">Não específica</td><td class="p-3 text-center text-green-600 font-bold">54+ com Alô Sênior</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">MEI aceito</td><td class="p-3 text-center text-green-600 font-bold">A partir 2 vidas</td><td class="p-3 text-center text-green-600 font-bold">Sim</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher cada uma</h2>
+      <p class="mb-4">Prefira Plena Saúde se você valoriza hospitais próprios com pronto-socorro 24h e quer PF sem precisar de CNPJ. Prefira Biovida se você tem 54+ e quer a linha sênior com benefícios específicos, ou se quer a tabela PME mais barata da região. A Elevance cota as duas.</p>
+   `
+  }  ,
+  {
+    id: 91,
+    slug: "seguro-auto-para-carro-gnv-quem-aceita-2026",
+    title: "Seguro Auto para Carro com GNV: Quem Aceita em 2026?",
+    date: "21 Jul, 2026",
+    category: "Seguro Auto",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Carro com GNV é mais econômico no dia a dia, mas segurar fica complicado — a maioria das seguradoras recusa ou cobra caro. Saiba quem aceita e quais as condições.",
+    content: `
+      <p class="mb-4">GNV (Gás Natural Veicular) reduz o custo por quilômetro em 50% a 60% comparado à gasolina. Para quem roda muito — motoristas de aplicativo, vendedores, profissionais que dependem do carro — é uma economia relevante. O problema: segurar um carro com GNV é difícil.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Por que seguradoras recusam GNV?</h2>
+      <p class="mb-4">O cilindro de GNV ocupa espaço no porta-malas e adiciona peso ao veículo, o que as seguradoras consideram fator de risco adicional. Instalações inadequadas ou kits não certificados aumentam o risco de incêndio. A maioria das seguradoras tradicionais simplesmente não tem precificação para esse risco e opta por recusar.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que garante cobertura para GNV instalado</h2>
+      <p class="mb-4">Para ter qualquer possibilidade de cobertura, o kit GNV precisa: ser homologado pelo INMETRO, ter nota fiscal de instalação em oficina autorizada, e estar declarado à seguradora ou associação no momento da contratação. Ocultar o GNV na contratação é o caminho mais certo para ter o sinistro negado.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quem aceita carro com GNV?</h2>
+      <ul class="mb-4 space-y-3 list-none">
+        <li class="p-4 bg-slate-50 rounded-xl"><strong>Loovi</strong> — aceita GNV sem análise de perfil. Processo 100% digital, sem vistoria presencial obrigatória. É a opção mais acessível e direta para quem tem GNV.</li>
+        <li class="p-4 bg-slate-50 rounded-xl"><strong>APVS Brasil / Facility</strong> — proteção veicular que aceita GNV. Mensalidade menor que seguro tradicional, cobertura roubo e colisão, sem consulta ao SPC.</li>
+        <li class="p-4 bg-slate-50 rounded-xl"><strong>Porto Seguro</strong> — aceita GNV homologado com declaração prévia e vistoria. Cobertura completa mas com prêmio mais alto que o normal.</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Loovi vs Proteção Veicular para GNV</h2>
+      <p class="mb-4">A Loovi tem a vantagem de ser SUSEP-regulamentada, com maior proteção jurídica em disputas de sinistro. A proteção veicular (APVS/Facility) tende a ser mais barata e aceita ainda mais perfis. Para GNV, os dois caminhos são válidos — a escolha depende do valor do veículo e do orçamento.</p>
+      <p class="mb-4">A Elevance Seguros trabalha com Loovi, APVS e Facility — cota as três para seu carro com GNV.</p>
+   `
+  }  ,
+  {
+    id: 92,
+    slug: "plano-de-saude-carencia-como-funciona-e-como-reduzir",
+    title: "Carência no Plano de Saúde: Como Funciona e Como Reduzir?",
+    date: "22 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Carência é o período de espera após contratar o plano. Pode ser de 24 horas para urgência até 300 dias para doenças pré-existentes. Saiba como funcionam as regras e como reduzir ou eliminar.",
+    content: `
+      <p class="mb-4">Carência é um dos temas que mais geram frustração em novos beneficiários de plano de saúde. Você contrata, paga a primeira mensalidade — e descobre que não pode usar para aquele procedimento que precisava. Entender as regras da ANS pode evitar surpresas desagradáveis.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que é carência?</h2>
+      <p class="mb-4">Carência é o período após a contratação durante o qual alguns serviços não estão cobertos. A ANS regulamenta os prazos máximos que as operadoras podem cobrar — as operadoras podem cobrar menos, mas não mais.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Prazos máximos de carência pela ANS</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Tipo de atendimento</th><th class="p-3 text-center rounded-tr-xl">Carência máxima</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Urgência e emergência</td><td class="p-3 text-center text-green-600 font-bold">24 horas</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Consultas e exames de rotina</td><td class="p-3 text-center">30 dias</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Internações e cirurgias eletivas</td><td class="p-3 text-center">180 dias</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Parto (planejado)</td><td class="p-3 text-center">300 dias</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Doenças e lesões pré-existentes (DLP)</td><td class="p-3 text-center">24 meses</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Como reduzir ou eliminar a carência</h2>
+      <p class="mb-4"><strong>Portabilidade de carências</strong> — se você já tem plano há mais de 2 anos, pode portar para outro plano da mesma ou maior segmentação eliminando as carências já cumpridas. É o caminho mais eficaz para trocar de plano sem esperar.</p>
+      <p class="mb-4"><strong>Compra de carência</strong> — algumas operadoras permitem pagar um valor adicional para reduzir ou eliminar carências específicas. Consulte a operadora antes de contratar.</p>
+      <p class="mb-4"><strong>Negociação em coletivos</strong> — planos empresariais frequentemente negociam carências menores. Em PME com CNPJ ativo há mais de 6 meses, é possível negociar carências reduzidas.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Doença pré-existente: o caso mais crítico</h2>
+      <p class="mb-4">Se você tem uma doença diagnosticada antes da contratação, pode haver carência de até 24 meses especificamente para procedimentos relacionados a ela. Isso não impede a contratação — mas exige planejamento. A portabilidade é a forma mais eficaz de evitar essa carência em uma troca de plano.</p>
+      <p class="mb-4">A Elevance Seguros orienta sobre portabilidade e negociação de carências antes de qualquer mudança de plano.</p>
+   `
+  }  ,
+  {
+    id: 93,
+    slug: "sao-cristovao-saude-vs-trasmontano-qual-escolher-sp",
+    title: "São Cristóvão vs Trasmontano: Qual Escolher em São Paulo?",
+    date: "23 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "São Cristóvão Saúde e Trasmontano são duas operadoras tradicionais de SP com mais de 100 anos de mercado cada. Para PF e PME, qual entrega mais hoje?",
+    content: `
+      <p class="mb-4">São Cristóvão Saúde e Trasmontano Saúde são duas das operadoras mais antigas de São Paulo — ambas com mais de 100 anos de história. Para quem busca plano individual, familiar ou PME em SP, são opções legítimas com rede regional sólida. Mas têm diferenças importantes.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">São Cristóvão Saúde</h2>
+      <p class="mb-4">Com mais de 100 anos de tradição, a São Cristóvão oferece PF, PME e Adesão — uma flexibilidade rara entre operadoras regionais. As linhas vão do Essencial ao Select, com cobertura progressiva. Tem rede própria de atendimento com hospitais, centros ambulatoriais e unidades especializadas.</p>
+      <p class="mb-4">Telemedicina e orientação médica 24h incluídos. Empresarial a partir de R$ 222/mês e individual a partir de R$ 388/mês (enfermaria).</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Trasmontano Saúde</h2>
+      <p class="mb-4">O Trasmontano tem um diferencial único: a <strong>TrasFarma</strong>, farmácia própria com desconto de até 70% em medicamentos para beneficiários. PF e PME disponíveis com cobertura em SP capital e litoral paulista (linha Care Litoral).</p>
+      <p class="mb-4">A linha Care para 44+ é um diferencial — opção para a faixa madura sem pagar o custo de um plano sênior especializado. PME a partir de R$ 128/mês e PF a partir de R$ 294/mês.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">São Cristóvão</th><th class="p-3 text-center rounded-tr-xl">Trasmontano</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Modalidades</td><td class="p-3 text-center text-green-600 font-bold">PF, PME, Adesão</td><td class="p-3 text-center">PF, PME</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Preço PME entrada</td><td class="p-3 text-center">~R$ 222/mês</td><td class="p-3 text-center text-green-600 font-bold">~R$ 128/mês</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Farmácia própria</td><td class="p-3 text-center text-slate-400">Não</td><td class="p-3 text-center text-green-600 font-bold">TrasFarma 70% desc.</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Linha 44+</td><td class="p-3 text-center text-slate-400">Não específica</td><td class="p-3 text-center text-green-600 font-bold">Care 44+</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Cobertura litoral SP</td><td class="p-3 text-center text-slate-400">Capital</td><td class="p-3 text-center text-green-600 font-bold">Care Litoral incluso</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Telemedicina 24h</td><td class="p-3 text-center text-green-600 font-bold">Inclusa</td><td class="p-3 text-center text-green-600 font-bold">Inclusa</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher cada uma</h2>
+      <p class="mb-4">Prefira São Cristóvão se você quer Adesão por entidade de classe ou precisa de plano com rede própria mais estruturada. Prefira Trasmontano se o preço PME é prioridade, você usa muito medicamento (TrasFarma vale muito) ou mora entre SP e o litoral paulista. A Elevance cota as duas com os dados reais do seu perfil.</p>
+   `
   }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
