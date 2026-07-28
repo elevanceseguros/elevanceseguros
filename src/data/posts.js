@@ -4538,6 +4538,208 @@ export const postsData = [
       <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher cada uma</h2>
       <p class="mb-4">Prefira São Cristóvão se você quer Adesão por entidade de classe ou precisa de plano com rede própria mais estruturada. Prefira Trasmontano se o preço PME é prioridade, você usa muito medicamento (TrasFarma vale muito) ou mora entre SP e o litoral paulista. A Elevance cota as duas com os dados reais do seu perfil.</p>
    `
+  }  ,
+  {
+    id: 94,
+    slug: "amil-vs-bradesco-saude-pme-qual-custa-menos",
+    title: "Amil vs Bradesco Saúde PME: Qual Custa Menos para Empresa Pequena?",
+    date: "24 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Amil e Bradesco Saúde são dois gigantes do mercado empresarial. Para PME com 2 a 10 funcionários em SP, qual entrega o melhor custo-benefício em 2026?",
+    content: `
+      <p class="mb-4">Para empresas pequenas — entre 2 e 10 vidas — a escolha entre Amil e Bradesco Saúde vai muito além do preço da mensalidade. Rede, coberturas, odonto incluso e regras de elegibilidade podem mudar completamente a equação.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Amil PME: entrada mais acessível com odonto incluso</h2>
+      <p class="mb-4">A Amil aceita PME a partir de 2 vidas com CNPJ ativo há 6 meses. O plano Bronze SP — linha de entrada — cobre SP capital e Grande ABC com hospitais credenciados. O grande diferencial é que o <strong>Amil Dental vem incluso gratuitamente por 12 meses</strong> nos planos empresariais, o que elimina um custo adicional que outras operadoras cobram separado.</p>
+      <p class="mb-4">A partir do plano Prata, a cobertura se expande para nacional. Nos planos superiores (Ouro, Platinum, Black), Einstein e Sírio-Libanês entram na rede — o nível mais alto disponível no mercado.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Bradesco Saúde PME: premium sem plano individual</h2>
+      <p class="mb-4">O Bradesco Saúde opera apenas no segmento empresarial — toda a estrutura foi desenhada para atender empresas. Aceita PME a partir de 2 vidas com CNPJ ativo há 6 meses. A rede credenciada tem mais de 37 mil médicos e 2.300 hospitais em 1.300 municípios — uma das maiores do Brasil.</p>
+      <p class="mb-4">O <strong>Bradesco Efetivo</strong> é a linha de entrada: cobertura regional em SP com hospitais credenciados. Os planos superiores (Nacional Plus, Premium) incluem Einstein, Sírio e concierge em hospitais parceiros. O Premium oferece salas VIP exclusivas nas principais capitais.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta para PME pequena</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Amil PME</th><th class="p-3 text-center rounded-tr-xl">Bradesco Saúde PME</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Mínimo de vidas</td><td class="p-3 text-center text-green-600 font-bold">2 vidas</td><td class="p-3 text-center">2 vidas</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Preço entrada (faixa 0-18)</td><td class="p-3 text-center text-green-600 font-bold">~R$ 140/mês</td><td class="p-3 text-center">~R$ 180/mês</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Odonto incluso</td><td class="p-3 text-center text-green-600 font-bold">12 meses grátis</td><td class="p-3 text-center text-slate-400">Separado</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Einstein/Sírio</td><td class="p-3 text-center text-green-600 font-bold">Ouro+</td><td class="p-3 text-center text-green-600 font-bold">Nacional Plus+</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Cobertura nacional entrada</td><td class="p-3 text-center">Prata+</td><td class="p-3 text-center">Efetivo (regional)</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Concierge/VIP</td><td class="p-3 text-center text-slate-400">Não</td><td class="p-3 text-center text-green-600 font-bold">Salas VIP capitais</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Marca no mercado</td><td class="p-3 text-center">Forte</td><td class="p-3 text-center text-green-600 font-bold">Muito forte</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Qual custa menos no total?</h2>
+      <p class="mb-4">A Amil tem mensalidade de entrada menor — mas considere que os 12 meses de Amil Dental inclusos têm valor real de R$ 30-50 por vida por mês. Se você fosse contratar odonto separado, a diferença de custo entre Amil e Bradesco praticamente desaparece ou até inverte nos primeiros 12 meses.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher cada uma</h2>
+      <p class="mb-4">Prefira Amil se você quer o menor custo de entrada com odonto incluso e sua equipe está concentrada em SP. Prefira Bradesco Saúde se quer oferecer uma marca premium como diferencial de atração de talentos, ou se planeja crescer e precisa de rede nacional robusta desde o início. A Elevance cota as duas simultaneamente.</p>
+   `
+  }  ,
+  {
+    id: 95,
+    slug: "consorcio-de-imovel-vs-poupanca-qual-rende-mais-2026",
+    title: "Consórcio de Imóvel vs Poupança: Qual é Melhor Para Comprar a Casa Própria?",
+    date: "25 Jul, 2026",
+    category: "Consórcios",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Guardar na poupança para comprar à vista ou entrar num consórcio? A matemática de 2026 favorece um deles de forma clara — dependendo da sua disciplina e prazo.",
+    content: `
+      <p class="mb-4">A dúvida clássica de quem quer a casa própria sem pagar os juros do financiamento: guardo dinheiro na poupança e compro à vista, ou faço consórcio? A matemática de 2026 tem uma resposta mais clara do que parece.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O problema da poupança em 2026</h2>
+      <p class="mb-4">A poupança rende 70% da Selic quando a Selic está abaixo de 8,5% ao ano — e rendimento limitado a 6,17% a.a. + TR quando a Selic está acima disso. Com a Selic em patamar elevado, a poupança rende no teto de 6,17% a.a. + TR.</p>
+      <p class="mb-4">O problema: a inflação em 2026 corrói parte desse rendimento. O ganho real da poupança em cenário de inflação de 4-5% fica em torno de 1-2% ao ano — positivo, mas insuficiente para quem quer acumular patrimônio imobiliário com velocidade.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Como o consórcio se compara</h2>
+      <p class="mb-4">No consórcio, você paga taxa de administração (15-22% do crédito total) mas não paga juros. A carta de crédito é reajustada pelo INCC (Índice Nacional de Custo da Construção) ou pelo índice do contrato — protegendo o poder de compra do crédito contra a inflação imobiliária.</p>
+      <p class="mb-4">O consórcio de imóvel de R$ 400.000 em 180 meses tem parcela de aproximadamente R$ 2.600/mês. O custo total pago será em torno de R$ 468.000 (taxa de administração de 17% incluída). No financiamento, com juros de 11% a.a., você pagaria perto de R$ 750.000 pelo mesmo imóvel.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação: poupança vs consórcio</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Poupança</th><th class="p-3 text-center rounded-tr-xl">Consórcio</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Liquidez</td><td class="p-3 text-center text-green-600 font-bold">Total</td><td class="p-3 text-center text-red-500">Baixa (multa se sair)</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Rendimento real</td><td class="p-3 text-center">~1-2% a.a.</td><td class="p-3 text-center">N/A (economia de juros)</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Protege da inflação imobiliária</td><td class="p-3 text-center text-red-500">Parcialmente</td><td class="p-3 text-center text-green-600 font-bold">Sim (INCC)</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Possibilidade de antecipar</td><td class="p-3 text-center text-slate-400">Depende da disciplina</td><td class="p-3 text-center text-green-600 font-bold">Lance antecipa</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Disciplina forçada</td><td class="p-3 text-center text-red-500">Não</td><td class="p-3 text-center text-green-600 font-bold">Sim (parcela mensal)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quem deve escolher a poupança?</h2>
+      <p class="mb-4">Quem já tem disciplina financeira comprovada, prefere investir em Tesouro IPCA+ ou CDB (que rendem mais que a poupança) enquanto acumula, e não tem urgência de 5-7 anos para a compra. A poupança pura raramente é a melhor opção.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quem deve escolher o consórcio?</h2>
+      <p class="mb-4">Quem tem disciplina para pagar parcela mensal mas dificuldade de não gastar o dinheiro acumulado em conta, quer proteção contra a inflação imobiliária, e está planejando para o médio prazo (5-15 anos). O consórcio força a disciplina que a poupança não força. A Elevance simula consórcio de imóvel pela Rodobens.</p>
+   `
+  }  ,
+  {
+    id: 96,
+    slug: "seguro-auto-para-uber-e-99-como-contratar",
+    title: "Seguro Auto para Uber e 99: Como Contratar em 2026?",
+    date: "26 Jul, 2026",
+    category: "Seguro Auto",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Motorista de Uber e 99 tem dificuldade em contratar seguro. As plataformas oferecem cobertura durante a corrida — mas e entre corridas? Entenda o que está coberto e o que não está.",
+    content: `
+      <p class="mb-4">Uber e 99 oferecem algum seguro durante as corridas — mas essa cobertura tem limitações importantes e não cobre o período em que o motorista está com o app aberto mas sem passageiro. Entender essas lacunas é essencial para não ficar desprotegido.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que a Uber cobre (e o que não cobre)</h2>
+      <p class="mb-4">A Uber tem seguro próprio via Chubb que cobre:</p>
+      <ul class="mb-4 space-y-1 list-disc pl-5">
+        <li>Acidentes com passageiros a bordo — cobertura de responsabilidade civil</li>
+        <li>Danos a terceiros durante a corrida</li>
+        <li>Invalidez permanente e morte acidental do motorista durante corrida</li>
+      </ul>
+      <p class="mb-4">O que <strong>não cobre</strong>: danos ao próprio veículo (colisão, roubo), período entre corridas (app aberto sem passageiro), e qualquer uso fora da plataforma. Se o carro for roubado no estacionamento após uma corrida, a Uber não cobre nada.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">As opções para cobrir o veículo</h2>
+
+      <h3 class="text-[#0d1f3c] font-bold mt-6 mb-2 text-lg">Loovi — a mais acessível</h3>
+      <p class="mb-4">A Loovi aceita motoristas de aplicativo explicitamente. Cobertura contra roubo, furto e colisão, assistência 24h, processo 100% digital. Não exige análise de perfil nem rastreador. Mensalidade entre R$ 99 e R$ 199/mês dependendo do veículo.</p>
+
+      <h3 class="text-[#0d1f3c] font-bold mt-6 mb-2 text-lg">APVS Brasil / Facility — proteção veicular</h3>
+      <p class="mb-4">Aceita uso para aplicativo. Mensalidade menor que seguro, sem consulta ao SPC/Serasa. Boa opção para quem quer o menor custo mensal com cobertura de roubo e colisão.</p>
+
+      <h3 class="text-[#0d1f3c] font-bold mt-6 mb-2 text-lg">Porto Seguro — para quem consegue aprovação</h3>
+      <p class="mb-4">Aceita motoristas de app com declaração de uso comercial. Exige vistoria e cobra prêmio mais alto. Vantagem: carro reserva incluso — importante para quem depende do carro para trabalhar.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Qual escolher?</h2>
+      <p class="mb-4">Para carros populares até R$ 60 mil: Loovi ou proteção veicular (APVS/Facility) oferecem o melhor custo-benefício. Para carros acima de R$ 60 mil: Porto Seguro com declaração de uso app pode valer o prêmio maior pela cobertura mais completa e carro reserva. A Elevance cota as três opções.</p>
+   `
+  }  ,
+  {
+    id: 97,
+    slug: "plano-saude-adesao-vs-pme-qual-mais-barato-mei",
+    title: "Plano de Saúde Adesão vs PME: Qual é Mais Barato para MEI?",
+    date: "27 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800",
+    excerpt: "MEI tem acesso a dois tipos de plano coletivo: adesão (via entidade de classe) e PME (via CNPJ). Os preços são parecidos — mas as regras e proteções são bem diferentes.",
+    content: `
+      <p class="mb-4">MEI tem uma vantagem que muitos desconhecem: pode contratar plano de saúde empresarial (PME) com tabela coletiva — mais barata que o individual. Mas além do PME, dependendo da sua profissão, pode ter acesso a plano de adesão via entidade de classe. Qual vale mais?</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Plano PME para MEI</h2>
+      <p class="mb-4">Com o CNPJ do MEI ativo há pelo menos 6 meses, você pode contratar um plano empresarial — tabela coletiva, mais barata que individual. Algumas operadoras aceitam 1 vida (Hapvida, Alice). Outras exigem 2 ou 3 vidas mínimas.</p>
+      <p class="mb-4">Vantagem do PME: livre negociação de coberturas, ampla oferta de operadoras e planos, e dependentes podem ser incluídos na tabela coletiva.</p>
+      <p class="mb-4">Desvantagem: plano coletivo pode ser cancelado pela operadora com 30 dias de aviso — sem a proteção do plano individual.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Plano de Adesão para MEI</h2>
+      <p class="mb-4">Se você é advogado (OAB), médico (CFM/CRM), engenheiro (CREA/CAU), contador (CRC) ou membro de outra entidade de classe, pode contratar plano de adesão. A tabela é coletiva — geralmente similar ao PME ou um pouco mais barata por conta do volume do grupo.</p>
+      <p class="mb-4">Vantagem da adesão: em alguns casos, o preço é menor por causa do volume de associados. Algumas entidades negociam carências menores com as operadoras.</p>
+      <p class="mb-4">Desvantagem: você precisa ser membro ativo da entidade. Se a anuidade for alta, o custo total pode superar o PME.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">PME (MEI)</th><th class="p-3 text-center rounded-tr-xl">Adesão (entidade)</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Quem pode</td><td class="p-3 text-center text-green-600 font-bold">Todo MEI</td><td class="p-3 text-center">Membros da entidade</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Preço</td><td class="p-3 text-center">Tabela coletiva</td><td class="p-3 text-center">Tabela coletiva</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Carências</td><td class="p-3 text-center">Padrão ANS</td><td class="p-3 text-center text-green-600 font-bold">Às vezes menores</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Proteção cancelamento</td><td class="p-3 text-center text-red-500">30 dias aviso</td><td class="p-3 text-center text-red-500">30 dias aviso</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Exige anuidade extra</td><td class="p-3 text-center text-green-600 font-bold">Não</td><td class="p-3 text-center">Depende da entidade</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Variedade de operadoras</td><td class="p-3 text-center text-green-600 font-bold">Maior</td><td class="p-3 text-center">Limitada à entidade</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Qual escolher?</h2>
+      <p class="mb-4">Para a maioria dos MEIs: o plano PME é mais flexível e acessível. Se você tem entidade de classe ativa com anuidade baixa e a operadora conveniada tem boa rede, vale comparar. A Elevance Seguros analisa os dois cenários e apresenta o mais vantajoso para o seu perfil.</p>
+   `
+  }  ,
+  {
+    id: 98,
+    slug: "porto-seguro-vs-tokio-marine-assistencia-24h",
+    title: "Porto Seguro vs Tokio Marine: Qual Tem Melhor Assistência 24h?",
+    date: "28 Jul, 2026",
+    category: "Seguro Auto",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=800",
+    excerpt: "No papel, as duas oferecem assistência 24h. Mas na prática, guincho, chaveiro, pane seca e carro reserva funcionam diferente. Quem sai na frente quando você mais precisa?",
+    content: `
+      <p class="mb-4">Quando o carro quebra às 23h numa estrada estadual, a seguradora que você escolheu vai mostrar seu valor real. Porto Seguro e Tokio Marine são as duas seguradoras mais lembradas em termos de assistência — mas como elas se comparam quando mais importa?</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Porto Seguro: a maior rede de assistência do Brasil</h2>
+      <p class="mb-4">A Porto Seguro tem a maior rede própria de assistência do país — mais de 15 mil prestadores cadastrados em todo o Brasil. O tempo médio de atendimento para guincho em capitais é de 35 a 50 minutos, segundo dados da própria seguradora. Em cidades menores, o tempo pode variar mais.</p>
+      <p class="mb-4">O Porto Auto oferece: guincho por pane mecânica, elétrica e colisão; chaveiro 24h; troca de pneu; pane seca; carro reserva (geralmente a partir de 24h de imobilização); hotel em viagem em caso de acidente; e translado de passageiros.</p>
+      <p class="mb-4">O app Porto é bem avaliado — permite acionar a assistência diretamente pelo celular com rastreamento do prestador em tempo real.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Tokio Marine: qualidade no atendimento pós-sinistro</h2>
+      <p class="mb-4">A Tokio Marine não é a maior em rede de assistência — mas consistentemente aparece no topo das pesquisas de satisfação pós-sinistro. O diferencial não é a velocidade do guincho, mas a experiência completa: da abertura do boletim ao reparo do veículo, o processo é mais fluido e com menos atrito.</p>
+      <p class="mb-4">A assistência inclui guincho, chaveiro, pane seca, troca de pneu e carro reserva. Para veículos premium e importados, a Tokio tem prestadores especializados que a Porto às vezes não alcança.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Porto Seguro</th><th class="p-3 text-center rounded-tr-xl">Tokio Marine</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Tamanho da rede</td><td class="p-3 text-center text-green-600 font-bold">Maior do Brasil</td><td class="p-3 text-center">Menor, mais seletiva</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Tempo médio guincho (capital)</td><td class="p-3 text-center text-green-600 font-bold">35-50 min</td><td class="p-3 text-center">40-60 min</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Satisfação pós-sinistro</td><td class="p-3 text-center">Boa</td><td class="p-3 text-center text-green-600 font-bold">Excelente</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">App de acionamento</td><td class="p-3 text-center text-green-600 font-bold">Muito bom</td><td class="p-3 text-center">Bom</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Veículos premium/importados</td><td class="p-3 text-center">Boa cobertura</td><td class="p-3 text-center text-green-600 font-bold">Especialistas disponíveis</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Carro reserva</td><td class="p-3 text-center text-green-600 font-bold">Ampla rede</td><td class="p-3 text-center">Disponível</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Interior e estradas</td><td class="p-3 text-center text-green-600 font-bold">Cobertura maior</td><td class="p-3 text-center">Concentrada em capitais</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão: qual escolher?</h2>
+      <p class="mb-4">Se você viaja muito para o interior e cidades menores, a Porto Seguro tem vantagem clara em amplitude de rede. Se você está em São Paulo ou capitais e tem carro de valor mais alto, a Tokio Marine entrega experiência superior pós-sinistro. Para o dia a dia em SP, as duas são boas — o preço para o seu perfil específico pode ser o desempate. A Elevance cota as duas.</p>
+   `
   }
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
