@@ -4741,6 +4741,161 @@ export const postsData = [
       <p class="mb-4">Se você viaja muito para o interior e cidades menores, a Porto Seguro tem vantagem clara em amplitude de rede. Se você está em São Paulo ou capitais e tem carro de valor mais alto, a Tokio Marine entrega experiência superior pós-sinistro. Para o dia a dia em SP, as duas são boas — o preço para o seu perfil específico pode ser o desempate. A Elevance cota as duas.</p>
    `
   }
+
+  ,
+  {
+    id: 99,
+    slug: "portabilidade-plano-de-saude-sem-carencia-como-fazer-2026",
+    title: "Portabilidade de Plano de Saúde sem Carência: Como Fazer em 2026",
+    date: "29 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Veja quem tem direito à portabilidade de carências, quais documentos separar e como trocar de plano sem começar todos os prazos novamente.",
+    content: `
+      <p class="mb-4">Trocar de plano de saúde não significa necessariamente cumprir todas as carências outra vez. A <strong>portabilidade de carências</strong> permite migrar para outro plano compatível, na mesma operadora ou em outra, aproveitando os períodos já cumpridos. O ponto decisivo é fazer a troca pelo procedimento correto — cancelar primeiro e tentar contratar depois pode colocar o benefício em risco.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que é portabilidade de carências?</h2>
+      <p class="mb-4">É um direito individual regulamentado pela ANS. Quando os requisitos são atendidos, o beneficiário entra no plano de destino sem cumprir novamente as carências já cumpridas no plano de origem e sem nova Cobertura Parcial Temporária para condições preexistentes. A análise é feita para cada pessoa, inclusive quando o contrato atual é empresarial ou coletivo por adesão.</p>
+      <p class="mb-4">Portabilidade não é a mesma coisa que simples redução de carência oferecida comercialmente. Na portabilidade, a compatibilidade é verificada pelo <strong>Guia ANS de Planos de Saúde</strong> e documentada por um protocolo.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Requisitos que precisam ser conferidos</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black">→</span><span><strong>Plano ativo:</strong> o vínculo com o plano atual deve estar regular no momento do pedido.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black">→</span><span><strong>Mensalidades em dia:</strong> a operadora de destino pode pedir comprovantes.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black">→</span><span><strong>Prazo de permanência:</strong> em regra, é necessário comprovar o tempo mínimo aplicável ao caso; trocas posteriores costumam exigir prazo menor que a primeira portabilidade.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black">→</span><span><strong>Compatibilidade:</strong> o plano de destino deve aparecer como compatível no Guia ANS, considerando faixa de preço e demais critérios regulatórios.</span></li>
+        <li class="flex items-start gap-2"><span class="text-blue-600 font-black">→</span><span><strong>Elegibilidade:</strong> se o destino for empresarial ou por adesão, também é preciso comprovar o vínculo exigido.</span></li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Portabilidade x contratação nova</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Portabilidade</th><th class="p-3 text-center rounded-tr-xl">Contrato novo</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Carências já cumpridas</td><td class="p-3 text-center text-green-600 font-bold">Podem ser aproveitadas ✓</td><td class="p-3 text-center">Podem recomeçar</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Consulta ao Guia ANS</td><td class="p-3 text-center text-green-600 font-bold">Necessária ✓</td><td class="p-3 text-center">Não é requisito</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Compatibilidade de preço</td><td class="p-3 text-center">Deve ser observada</td><td class="p-3 text-center">Livre conforme oferta</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Documentos do plano atual</td><td class="p-3 text-center">Obrigatórios</td><td class="p-3 text-center">Normalmente não</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Melhor para</td><td class="p-3 text-center">Quem já cumpriu carências</td><td class="p-3 text-center">Quem aceita novas condições</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Passo a passo para não errar</h2>
+      <p class="mb-4"><strong>1.</strong> Separe contrato ou proposta de adesão, comprovantes de pagamento e declaração de permanência. <strong>2.</strong> Consulte o Guia ANS e gere o relatório de compatibilidade. <strong>3.</strong> Apresente o protocolo e os documentos à operadora de destino dentro da validade indicada no relatório. <strong>4.</strong> Aguarde a aceitação formal. <strong>5.</strong> Somente depois solicite o cancelamento do plano anterior no prazo regulamentar informado.</p>
+      <p class="mb-4">A declaração para portabilidade deve ser fornecida pela operadora de origem quando solicitada. Se não aparecer opção compatível, isso pode refletir preço, localidade ou disponibilidade comercial — não significa automaticamente que a pessoa perdeu o direito.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando a portabilidade costuma valer a pena?</h2>
+      <p class="mb-4">Ela merece análise quando a mensalidade aumentou, a rede deixou de atender a região, a empresa mudou de operadora ou a família procura um produto mais adequado sem perder o tempo já cumprido. Porém, a nova rede, acomodação, coparticipação e abrangência devem ser avaliadas junto com o preço.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-4">A melhor troca não é apenas a que reduz a mensalidade: é a que preserva carências e mantém uma rede útil para o seu perfil. A Elevance Seguros verifica a compatibilidade, compara as opções disponíveis e orienta a documentação gratuitamente. <a href="https://wa.me/5511920144864?text=Quero%20analisar%20a%20portabilidade%20do%20meu%20plano" class="font-bold text-blue-600">Fale com a Elevance pelo WhatsApp</a>.</p>
+    `
+  }
+  ,
+  {
+    id: 100,
+    slug: "bradesco-saude-vs-hapvida-empresa-5-a-20-funcionarios",
+    title: "Bradesco Saúde vs Hapvida para Empresa com 5 a 20 Funcionários",
+    date: "30 Jul, 2026",
+    category: "Planos de Saúde",
+    readTime: "8 min",
+    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Compare Bradesco Saúde e Hapvida para pequenas empresas: rede, abrangência, reembolso, coparticipação e perfil de contratação.",
+    content: `
+      <p class="mb-4">Para uma empresa com 5 a 20 funcionários, escolher entre <strong>Bradesco Saúde e Hapvida</strong> é decidir entre propostas bastante diferentes. A Bradesco costuma entrar na conversa quando a prioridade é abrangência, rede referenciada e possibilidades de reembolso. A Hapvida tende a ganhar espaço quando a empresa valoriza custo previsível e uso coordenado de rede própria nas regiões atendidas.</p>
+      <p class="mb-4">Não existe vencedora universal. Cidade dos colaboradores, composição por idade, inclusão de dependentes e frequência de uso podem mudar totalmente a cotação.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Bradesco Saúde: para quem faz sentido?</h2>
+      <p class="mb-4">O segmento SPG da Bradesco atende grupos de <strong>3 a 199 pessoas</strong>, portanto se encaixa em empresas pequenas. Há linhas com abrangência nacional e diferentes combinações de acomodação, coparticipação, rede e reembolso, conforme produto e região.</p>
+      <p class="mb-4">Costuma fazer mais sentido para empresas com colaboradores que viajam, equipes distribuídas em cidades diferentes ou negócios que usam o plano de saúde como benefício de atração e retenção. O preço tende a refletir essa amplitude e deve ser comparado com o uso real esperado.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Hapvida: para quem faz sentido?</h2>
+      <p class="mb-4">A Hapvida trabalha com soluções empresariais para diferentes tamanhos de grupo, inclusive opções de pequena empresa. Sua proposta é fortemente apoiada em rede própria e atendimento integrado, com condições que variam por praça e produto.</p>
+      <p class="mb-4">Pode ser especialmente competitiva quando a equipe está concentrada em uma região onde a rede própria é conveniente. Antes de escolher, é essencial mapear onde os funcionários moram e trabalham e verificar unidades, laboratórios, pronto atendimento e hospitais realmente disponíveis no plano cotado.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Comparação direta para pequenas empresas</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Critério</th><th class="p-3 text-center">Bradesco Saúde</th><th class="p-3 text-center rounded-tr-xl">Hapvida</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Perfil de rede</td><td class="p-3 text-center">Rede referenciada ampla</td><td class="p-3 text-center">Forte presença de rede própria</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Abrangência</td><td class="p-3 text-center text-green-600 font-bold">Opções nacionais ✓</td><td class="p-3 text-center">Depende do produto e região</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Reembolso</td><td class="p-3 text-center text-green-600 font-bold">Disponível em linhas elegíveis ✓</td><td class="p-3 text-center">Verificar produto contratado</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Custo inicial</td><td class="p-3 text-center">Geralmente mais alto</td><td class="p-3 text-center text-green-600 font-bold">Tende a ser competitivo ✓</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Coparticipação</td><td class="p-3 text-center">Há opções conforme linha</td><td class="p-3 text-center">Há opções conforme linha</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Equipe em várias cidades</td><td class="p-3 text-center text-green-600 font-bold">Maior flexibilidade ✓</td><td class="p-3 text-center">Exige checagem regional</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Equipe concentrada</td><td class="p-3 text-center">Boa opção, conforme orçamento</td><td class="p-3 text-center text-green-600 font-bold">Rede própria pode favorecer ✓</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">Características variam por produto, município, composição do grupo e condições comerciais vigentes. Confirme a proposta e a rede credenciada antes da contratação.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">E as carências?</h2>
+      <p class="mb-4">Nos contratos empresariais com até 29 beneficiários, pode haver aplicação de carências. A regra de isenção prevista pela ANS para contratos empresariais com 30 ou mais beneficiários depende de ingresso no prazo regulamentar. Por isso, uma empresa com 5 a 20 vidas não deve presumir isenção: é preciso conferir a tabela de carências e eventuais condições comerciais da proposta.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Bradesco Saúde?</h2>
+      <p class="mb-4">A Bradesco tende a ser a escolha mais coerente quando a empresa aceita investir mais para oferecer abrangência, rede referenciada e flexibilidade a uma equipe que circula por diferentes cidades. Também pode fortalecer a percepção do benefício em processos de contratação.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando escolher Hapvida?</h2>
+      <p class="mb-4">A Hapvida tende a fazer mais sentido quando o orçamento pesa mais e a equipe está bem atendida pela rede disponível na região. A economia só é real se hospitais, laboratórios e pronto atendimento forem convenientes para os colaboradores.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-4">Para 5 a 20 funcionários, compare o custo anual estimado, não apenas a primeira mensalidade: inclua coparticipação, dependentes, reajustes e facilidade de uso. A Elevance Seguros cota Bradesco Saúde e Hapvida e apresenta a alternativa mais adequada ao perfil da empresa. <a href="https://wa.me/5511920144864?text=Quero%20comparar%20Bradesco%20Saude%20e%20Hapvida%20para%20minha%20empresa" class="font-bold text-blue-600">Solicite uma comparação gratuita</a>.</p>
+    `
+  }
+  ,
+  {
+    id: 101,
+    slug: "seguro-auto-carro-acima-de-100-mil-coberturas",
+    title: "Seguro Auto para Carro Acima de R$ 100 Mil: Quais Coberturas Contratar?",
+    date: "31 Jul, 2026",
+    category: "Seguro Auto",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Entenda quais coberturas merecem atenção em veículos acima de R$ 100 mil e por que a franquia mais barata nem sempre representa o melhor seguro.",
+    content: `
+      <p class="mb-4">Quando o carro ultrapassa R$ 100 mil, comparar seguro apenas pela mensalidade ou pelo valor da franquia pode sair caro. O patrimônio exposto é maior, peças e sensores podem encarecer reparos e um acidente com terceiros pode gerar uma despesa muito superior ao dano do próprio veículo.</p>
+      <p class="mb-4">O melhor seguro não é necessariamente o mais completo do mercado, mas aquele que protege os riscos financeiros relevantes para o seu uso: cidade, garagem, viagens, condutores, quilometragem e custo de reposição.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Cobertura compreensiva: o ponto de partida</h2>
+      <p class="mb-4">A cobertura compreensiva normalmente reúne colisão, incêndio, roubo e furto, conforme as condições da apólice. Em veículos de maior valor, vale conferir o percentual da tabela de referência usado na indenização e se acessórios não originais precisam ser declarados separadamente.</p>
+      <p class="mb-4">Também verifique exclusões, regras para condutores, uso profissional e instalação de itens como blindagem ou GNV. Uma informação incorreta no perfil pode comprometer a análise do sinistro.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Responsabilidade civil merece limite maior</h2>
+      <p class="mb-4">Danos materiais e corporais causados a terceiros podem superar rapidamente o reparo do carro segurado. Veículos, muros, postes, despesas médicas e indenizações podem estar envolvidos no mesmo evento. Por isso, escolher um limite de responsabilidade civil apenas para reduzir o prêmio cria uma economia pequena diante de uma exposição grande.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Coberturas que devem entrar na comparação</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Cobertura</th><th class="p-3 text-center">Por que importa</th><th class="p-3 text-center rounded-tr-xl">O que conferir</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Compreensiva</td><td class="p-3 text-center">Protege o próprio veículo</td><td class="p-3 text-center">Riscos, exclusões e indenização</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Danos materiais a terceiros</td><td class="p-3 text-center text-green-600 font-bold">Evita grande impacto financeiro ✓</td><td class="p-3 text-center">Limite máximo contratado</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Danos corporais a terceiros</td><td class="p-3 text-center text-green-600 font-bold">Proteção em acidentes graves ✓</td><td class="p-3 text-center">Limite e condições</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Vidros, faróis e retrovisores</td><td class="p-3 text-center">Peças podem ter alto custo</td><td class="p-3 text-center">Franquias por item</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Carro reserva</td><td class="p-3 text-center">Mantém a mobilidade</td><td class="p-3 text-center">Dias, categoria e gatilho</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Assistência 24h</td><td class="p-3 text-center">Importante em viagens</td><td class="p-3 text-center">Quilometragem e serviços</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Acessórios e blindagem</td><td class="p-3 text-center">Podem não estar automáticos</td><td class="p-3 text-center">Declaração e limite específico</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Franquia normal ou reduzida?</h2>
+      <p class="mb-4">A franquia reduzida diminui o desembolso em um reparo coberto, mas costuma aumentar o prêmio. A franquia normal pode ser melhor para quem consegue absorver um gasto eventual e busca baixar o custo anual. Compare o valor que economiza no seguro com a diferença que pagaria em caso de sinistro — não escolha isoladamente.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Porto Seguro ou Tokio Marine?</h2>
+      <p class="mb-4">As duas podem oferecer soluções competitivas para veículos de maior valor, mas aceitação, assistência, oficinas, franquias e preço variam por CEP e perfil. A Porto Seguro costuma ser lembrada pela capilaridade de serviços; a Tokio Marine pode apresentar boa relação entre cobertura e preço em determinados perfis. A decisão deve partir da proposta concreta, não apenas da marca.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">E quando o carro tem GNV, leilão ou uso em aplicativo?</h2>
+      <p class="mb-4">Essas características precisam ser informadas desde a cotação e podem restringir a aceitação no seguro tradicional. Para perfis específicos, a Elevance também analisa alternativas como a Loovi e soluções de proteção veicular por meio de grandes associações parceiras, sempre explicando a diferença jurídica e operacional entre os produtos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão: compare proteção, não apenas preço</h2>
+      <p class="mb-4">Em um carro acima de R$ 100 mil, uma apólice barata com limite baixo para terceiros, franquias altas em vidros ou assistência curta pode não entregar a economia esperada. A Elevance Seguros compara seguradoras e coberturas para montar uma proposta coerente com o veículo e o uso. <a href="https://wa.me/5511920144864?text=Quero%20cotar%20seguro%20para%20meu%20carro%20acima%20de%20100%20mil" class="font-bold text-blue-600">Peça sua cotação gratuita pelo WhatsApp</a>.</p>
+    `
+  }
+
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
 
