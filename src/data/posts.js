@@ -4896,6 +4896,66 @@ export const postsData = [
     `
   }
 
+
+  ,
+  {
+    id: 102,
+    slug: "plano-de-saude-para-gestante-carencia-parto-2026",
+    title: "Plano de Saúde para Gestante: Carência, Parto e Cobertura em 2026",
+    date: "01 Ago, 2026",
+    category: "Planos de Saúde",
+    readTime: "8 min",
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Descubra o que um plano para gestante precisa cobrir, como funciona a carência de 300 dias para parto e quais cuidados tomar antes de contratar.",
+    content: `
+      <p class="mb-4">Quem descobre a gravidez e começa a procurar um plano de saúde costuma ter três dúvidas urgentes: o pré-natal será coberto, o parto entrará no plano e o bebê poderá ser incluído depois do nascimento? A resposta depende da <strong>segmentação do produto, da data de contratação e das carências previstas</strong>.</p>
+      <p class="mb-4">Contratar durante a gestação ainda pode ser útil para consultas, exames e assistência futura, mas não existe garantia automática de cobertura do parto a termo. Entender os prazos antes de assinar evita comprar um plano esperando uma proteção que o contrato ainda não oferece.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Qual plano cobre parto?</h2>
+      <p class="mb-4">Para ter cobertura obstétrica, procure um plano <strong>hospitalar com obstetrícia</strong> ou uma combinação que inclua essa segmentação. Um plano apenas ambulatorial pode cobrir consultas e exames previstos no contrato após as carências aplicáveis, mas não garante internação para o parto. Já o hospitalar sem obstetrícia cobre internações previstas, porém exclui a atenção ao parto.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Carência para parto: por que são 300 dias?</h2>
+      <p class="mb-4">A ANS estabelece prazo máximo de <strong>300 dias para parto a termo</strong>. Na prática, quem contrata um plano depois de engravidar normalmente dará à luz antes de completar esse período. Por isso, não é correto anunciar que qualquer plano novo “cobre o parto” apenas porque possui obstetrícia.</p>
+      <p class="mb-4">Consultas, exames e demais procedimentos podem ter outros prazos, geralmente limitados a até 180 dias, conforme o tipo de atendimento e o contrato. Algumas operadoras oferecem redução comercial de carências, mas a condição precisa aparecer formalmente na proposta.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Prazos que precisam ser separados</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Situação</th><th class="p-3 text-center">Prazo máximo geral</th><th class="p-3 text-center rounded-tr-xl">Atenção</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Urgência e emergência</td><td class="p-3 text-center text-green-600 font-bold">24 horas ✓</td><td class="p-3 text-center">Cobertura e limites dependem da segmentação e das regras aplicáveis</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Consultas e exames</td><td class="p-3 text-center">Até 180 dias</td><td class="p-3 text-center">Pode haver redução contratual</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Internações eletivas</td><td class="p-3 text-center">Até 180 dias</td><td class="p-3 text-center">Exige cobertura hospitalar</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Parto a termo</td><td class="p-3 text-center text-red-500 font-bold">Até 300 dias</td><td class="p-3 text-center">Exige obstetrícia</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Cobertura inicial do recém-nascido</td><td class="p-3 text-center text-green-600 font-bold">Primeiros 30 dias ✓</td><td class="p-3 text-center">Relacionada ao plano hospitalar com obstetrícia do responsável</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-400 italic mb-6">Os prazos são máximos regulatórios. Condições específicas, reduções e extensão da cobertura devem ser confirmadas na proposta e no contrato.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Urgência na gravidez elimina a carência do parto?</h2>
+      <p class="mb-4">Não automaticamente. A carência máxima para urgência e emergência é de 24 horas, mas isso não transforma todo parto ocorrido antes dos 300 dias em parto a termo coberto. A natureza do atendimento, a segmentação contratada e as regras assistenciais precisam ser analisadas. Promessas genéricas de “quebra de carência” são um sinal de alerta.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">E o bebê depois do nascimento?</h2>
+      <p class="mb-4">Nos planos hospitalares com obstetrícia, a cobertura assistencial ao recém-nascido é garantida durante os primeiros 30 dias após o parto nas condições previstas pela regulação. A solicitação de inclusão como dependente também deve ser feita dentro desse prazo para preservar os direitos aplicáveis. Não deixe para resolver no último dia: reúna os documentos e protocole o pedido formalmente.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando contratar antes de engravidar?</h2>
+      <p class="mb-4">Para planejar uma gestação com cobertura do parto a termo, o caminho mais seguro é contratar com antecedência suficiente para cumprir os 300 dias. Além da carência, compare maternidades, obstetras da rede, acomodação, abrangência, coparticipação e atendimento pediátrico. Uma mensalidade menor perde valor se a maternidade desejada não fizer parte do produto específico.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Checklist antes de assinar</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span>Confirmar que o produto possui cobertura hospitalar com obstetrícia.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span>Consultar a rede do plano exato, não apenas a rede geral da operadora.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span>Ler a tabela de carências e registrar qualquer redução na proposta.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span>Verificar coparticipação em consultas, exames e terapias.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span>Entender o procedimento para inclusão do bebê após o nascimento.</span></li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-4">O melhor plano para gestante não é simplesmente o mais barato: é aquele cuja segmentação, rede e carências correspondem ao momento da família. A Elevance Seguros compara as opções disponíveis, confere maternidades e explica os prazos antes da contratação. <a href="https://wa.me/5511920144864?text=Quero%20cotar%20um%20plano%20de%20saude%20para%20gestante" class="font-bold text-blue-600">Solicite sua cotação gratuita pelo WhatsApp</a>.</p>
+    `
+  }
+
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
 
