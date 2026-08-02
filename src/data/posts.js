@@ -4956,6 +4956,74 @@ export const postsData = [
     `
   }
 
+
+  ,
+  {
+    id: 103,
+    slug: "plano-de-saude-para-bebe-sem-carencia-30-dias",
+    title: "Plano de Saúde para Bebê: Como Incluir Sem Carência nos Primeiros 30 Dias",
+    date: "02 Ago, 2026",
+    category: "Planos de Saúde",
+    readTime: "8 min",
+    image: "https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Entenda quando o recém-nascido pode entrar no plano sem novas carências, qual é o prazo de 30 dias e o que comparar antes de escolher.",
+    content: `
+      <p class="mb-4">O nascimento do bebê traz uma decisão com prazo curto: pedir a inclusão no plano existente ou contratar uma nova opção? Em muitos casos, solicitar a entrada do recém-nascido <strong>nos primeiros 30 dias</strong> preserva direitos importantes. Mas isso depende da cobertura do plano do responsável e do cumprimento das condições previstas na legislação e no contrato.</p>
+      <p class="mb-4">O ponto mais importante é não confundir a cobertura assistencial dos primeiros dias de vida com a inscrição permanente do bebê. A primeira decorre da cobertura obstétrica nas condições aplicáveis; a segunda exige uma solicitação formal dentro do prazo.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando o bebê pode entrar sem novas carências?</h2>
+      <p class="mb-4">Segundo as regras da ANS, o recém-nascido, filho natural ou adotivo, pode ser inscrito como dependente sem cumprir novos períodos de carência quando o plano do pai, da mãe ou do responsável possui <strong>cobertura hospitalar com obstetrícia</strong> e a inclusão é solicitada em até 30 dias do nascimento ou da adoção, observadas as condições legais e contratuais.</p>
+      <p class="mb-4">Se o pedido for feito depois do prazo, a operadora poderá aplicar as carências previstas para uma nova inclusão. Por isso, vale protocolar a solicitação assim que os documentos estiverem disponíveis e guardar o comprovante.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Cobertura por 30 dias não é inclusão automática</h2>
+      <p class="mb-4">Um plano hospitalar com obstetrícia oferece a cobertura assistencial prevista ao recém-nascido durante os primeiros 30 dias após o parto. Isso não significa que o bebê permanecerá automaticamente no contrato depois desse período. Para continuar como beneficiário, é necessário pedir a inclusão e verificar a elegibilidade como dependente.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Três cenários que mudam a decisão</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Cenário</th><th class="p-3 text-center">Caminho usual</th><th class="p-3 text-center rounded-tr-xl">Principal cuidado</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Responsável já tem plano com obstetrícia</td><td class="p-3 text-center text-green-600 font-bold">Pedir inclusão em até 30 dias ✓</td><td class="p-3 text-center">Protocolar e confirmar a elegibilidade</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Plano não tem obstetrícia</td><td class="p-3 text-center">Analisar regra do contrato e nova contratação</td><td class="p-3 text-center">Não presumir isenção de carência</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Prazo de 30 dias já passou</td><td class="p-3 text-center">Cotar inclusão ou plano novo</td><td class="p-3 text-center">Comparar carências e rede pediátrica</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Pai e mãe têm planos diferentes</td><td class="p-3 text-center">Comparar os dois antes de incluir</td><td class="p-3 text-center">Rede, mensalidade e regras de dependência</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que comparar além da mensalidade?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Rede pediátrica:</strong> pronto atendimento infantil, pediatras, laboratórios e hospitais próximos.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Abrangência:</strong> municipal, grupo de municípios, estadual ou nacional, conforme a rotina da família.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Coparticipação:</strong> consultas e exames frequentes no primeiro ano podem alterar bastante o custo total.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Acomodação:</strong> enfermaria ou apartamento em eventual internação.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Reajuste:</strong> entenda o tipo de contratação e como os reajustes são definidos.</span></li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Documentos que costumam ser solicitados</h2>
+      <p class="mb-4">A lista varia por operadora, mas normalmente inclui certidão de nascimento, CPF do bebê quando disponível, documento do responsável e formulário de movimentação cadastral. A falta de um documento não deve virar motivo para esperar sem orientação: peça por escrito a lista completa e o canal correto para protocolo.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Vale colocar no plano do pai ou da mãe?</h2>
+      <p class="mb-4">Quando os responsáveis têm contratos diferentes, compare o <strong>produto específico</strong>, não apenas o nome da operadora. Um plano pode ter melhor hospital infantil perto de casa; o outro, mensalidade menor ou abrangência nacional. Confirme também se o bebê é elegível como dependente e qual será o valor na faixa etária inicial.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">E se o bebê precisar de atendimento antes da inclusão?</h2>
+      <p class="mb-4">A cobertura nos primeiros 30 dias está vinculada às condições do plano hospitalar com obstetrícia e ao vínculo do responsável. Em uma necessidade de atendimento, contate imediatamente a operadora pelos canais oficiais e registre os protocolos. Para continuidade depois desse período, faça a inclusão formal dentro do prazo.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Checklist para não perder o prazo</h2>
+      <ol class="list-decimal pl-6 space-y-2 mb-6">
+        <li>Confirme se o plano do responsável inclui cobertura hospitalar com obstetrícia.</li>
+        <li>Solicite por escrito as regras e os documentos para inclusão.</li>
+        <li>Compare a rede pediátrica dos contratos disponíveis na família.</li>
+        <li>Protocole o pedido antes de completar 30 dias e guarde o comprovante.</li>
+        <li>Confira a carteirinha e a vigência após a confirmação da operadora.</li>
+      </ol>
+      <p class="mb-4">Se a contratação ainda está sendo planejada durante a gravidez, veja também nosso guia sobre <a href="/blog/plano-de-saude-para-gestante-carencia-parto-2026" class="font-bold text-blue-600">plano de saúde para gestante, carência e parto</a>.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-4">Para o bebê, prazo e rede importam tanto quanto preço. A Elevance Seguros confere a elegibilidade, compara os planos disponíveis para a família e ajuda a organizar a inclusão sem promessas incompatíveis com o contrato. <a href="https://wa.me/5511920144864?text=Quero%20comparar%20plano%20de%20saude%20para%20meu%20bebe" class="font-bold text-blue-600">Fale com a Elevance pelo WhatsApp e solicite uma análise gratuita</a>.</p>
+    `
+  }
+
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
 
