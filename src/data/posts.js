@@ -5024,6 +5024,75 @@ export const postsData = [
     `
   }
 
+
+  ,
+  {
+    id: 104,
+    slug: "seguro-empresarial-para-farmacia-coberturas",
+    title: "Seguro Empresarial para Farmácia: Estoque, Equipamentos e Coberturas Essenciais",
+    date: "03 Ago, 2026",
+    category: "Seguro Empresarial",
+    readTime: "9 min",
+    image: "https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Veja quais riscos uma farmácia precisa avaliar, como proteger estoque e equipamentos e quais limites comparar antes de contratar.",
+    content: `
+      <p class="mb-4">Farmácias reúnem riscos que não aparecem da mesma forma em um escritório comum: estoque de alto valor, equipamentos eletrônicos, medicamentos que exigem conservação adequada, atendimento constante ao público e dependência direta do ponto comercial. Por isso, contratar um seguro empresarial genérico apenas pelo menor preço pode deixar justamente a parte mais importante sem proteção suficiente.</p>
+      <p class="mb-4">A cotação correta começa com um inventário real do estabelecimento e uma comparação entre <strong>limites, franquias, riscos cobertos e exclusões</strong>. O nome da cobertura, sozinho, não garante que qualquer prejuízo relacionado a ela será indenizado.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que o seguro empresarial básico costuma cobrir?</h2>
+      <p class="mb-4">A cobertura básica normalmente contempla eventos como incêndio, queda de raio dentro do local segurado e explosão, conforme as condições do produto. A partir dela, podem ser contratadas coberturas adicionais para danos elétricos, roubo ou furto qualificado, vendaval, quebra de vidros, equipamentos e outros riscos.</p>
+      <p class="mb-4">Cada seguradora define condições, limites e exclusões. A apólice precisa identificar corretamente o endereço, a atividade exercida e os bens segurados.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quais coberturas uma farmácia deve comparar?</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Cobertura</th><th class="p-3 text-center">Risco observado</th><th class="p-3 text-center rounded-tr-xl">O que conferir</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Incêndio, raio e explosão</td><td class="p-3 text-center">Danos ao imóvel, móveis e estoque</td><td class="p-3 text-center">Valor em risco e bens incluídos</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Danos elétricos</td><td class="p-3 text-center">Computadores, geladeiras e equipamentos</td><td class="p-3 text-center">Franquia, depreciação e exclusões</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Roubo e furto qualificado</td><td class="p-3 text-center">Mercadorias e equipamentos</td><td class="p-3 text-center">Definição do evento e vestígios exigidos</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Quebra de vidros</td><td class="p-3 text-center">Fachadas, portas e vitrines</td><td class="p-3 text-center">Itens, instalação e limite</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Lucros cessantes</td><td class="p-3 text-center">Paralisação após evento coberto</td><td class="p-3 text-center">Período indenitário e despesas fixas</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Responsabilidade civil</td><td class="p-3 text-center">Danos involuntários a terceiros</td><td class="p-3 text-center">Atividades, limites e exclusões profissionais</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O estoque está automaticamente protegido?</h2>
+      <p class="mb-4">Não se deve presumir. A proposta precisa indicar que as mercadorias fazem parte dos bens segurados e atribuir um valor compatível com o estoque máximo. Farmácias podem ter grande variação em datas promocionais ou períodos de reposição; declarar somente a média mais baixa aumenta o risco de insuficiência do limite.</p>
+      <p class="mb-4">Medicamentos sujeitos a controle especial, itens de alto valor, produtos de terceiros ou bens mantidos em locais diferentes podem possuir regras próprias. Confirme tudo antes da emissão.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">E medicamentos que precisam de refrigeração?</h2>
+      <p class="mb-4">Danos elétricos ao equipamento não significam, automaticamente, cobertura do conteúdo perdido por alteração de temperatura. A geladeira e o estoque refrigerado são interesses diferentes. Se esse risco é relevante, procure previsão específica para deterioração de mercadorias, falha de equipamento ou variação de temperatura e leia os gatilhos, prazos e exclusões.</p>
+      <p class="mb-4">Também é importante manter registros de temperatura, manutenção e boas práticas exigidas para a atividade. O seguro não substitui os controles operacionais.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Danos elétricos: o limite barato pode não resolver</h2>
+      <p class="mb-4">Some computadores, servidores, geladeiras, climatização, sistemas de segurança, impressoras, equipamentos laboratoriais e demais aparelhos existentes. Depois compare esse total ao limite oferecido e à franquia. Uma cobertura de valor muito baixo pode servir apenas para um equipamento pequeno e não acompanhar uma ocorrência mais ampla.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Roubo, furto simples e desaparecimento são iguais?</h2>
+      <p class="mb-4">Não. As condições contratuais normalmente distinguem roubo, furto qualificado e furto simples. Desaparecimento sem vestígios, diferenças de inventário ou apropriação por pessoas ligadas ao negócio podem estar excluídos. Verifique a definição usada pela seguradora e as medidas de proteção exigidas.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Responsabilidade civil empresarial ou profissional?</h2>
+      <p class="mb-4">A responsabilidade civil de operações pode abranger determinados danos involuntários a terceiros relacionados ao funcionamento do estabelecimento, dentro das condições contratadas. Ela não deve ser confundida com uma cobertura profissional específica para atos técnicos. Se há prestação de serviços farmacêuticos, aplicação, manipulação ou outra atividade especializada, informe-a na cotação para avaliar a solução adequada.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Farmácia alugada também precisa de seguro?</h2>
+      <p class="mb-4">Sim, porque o locatário possui estoque, móveis, equipamentos, benfeitorias e responsabilidade pela operação. O proprietário pode segurar a estrutura do imóvel, mas isso não protege automaticamente o patrimônio da empresa. O contrato de locação ainda pode exigir coberturas específicas.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Checklist para pedir uma cotação comparável</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span>Endereço, área construída e tipo de imóvel.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span>Atividades efetivamente realizadas no local.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span>Valor máximo do estoque, incluindo itens refrigerados.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span>Relação e valor de equipamentos e benfeitorias.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span>Sistemas de alarme, câmeras, portas e demais proteções.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span>Faturamento e despesas fixas para avaliar lucros cessantes.</span></li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão: compare o limite que realmente seria usado</h2>
+      <p class="mb-4">O melhor seguro para farmácia não é a proposta com mais nomes de coberturas, mas aquela que descreve corretamente a atividade e oferece limites coerentes com estoque, equipamentos e tempo de recuperação. A Elevance Seguros compara condições e franquias para evitar decisões baseadas apenas no prêmio. <a href="https://wa.me/5511920144864?text=Quero%20cotar%20seguro%20empresarial%20para%20minha%20farmacia" class="font-bold text-blue-600">Peça uma cotação gratuita para sua farmácia pelo WhatsApp</a>.</p>
+    `
+  }
+
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
 
