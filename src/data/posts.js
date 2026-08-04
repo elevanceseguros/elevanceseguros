@@ -5093,6 +5093,81 @@ export const postsData = [
     `
   }
 
+
+  ,
+  {
+    id: 105,
+    slug: "seguro-empresarial-para-restaurante-coberturas",
+    title: "Seguro Empresarial para Restaurante: Incêndio, Equipamentos e Responsabilidade Civil",
+    date: "04 Ago, 2026",
+    category: "Seguro Empresarial",
+    readTime: "9 min",
+    image: "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Entenda quais coberturas fazem sentido para restaurantes, bares e lanchonetes e como comparar limites, franquias e lucros cessantes.",
+    content: `
+      <p class="mb-4">Restaurantes trabalham com calor, gás, instalações elétricas exigidas por equipamentos potentes, estoque perecível e circulação constante de clientes e entregadores. Essa combinação torna insuficiente escolher um seguro empresarial apenas pelo preço ou repetir a apólice de uma loja comum.</p>
+      <p class="mb-4">A proteção precisa considerar <strong>cozinha, salão, estoque, máquinas, responsabilidade perante terceiros e o tempo necessário para retomar a operação</strong>. As coberturas variam por seguradora e só valem nos eventos, limites e condições descritos na apólice.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Restaurante, bar e lanchonete usam o mesmo seguro?</h2>
+      <p class="mb-4">Todos podem contratar seguro empresarial, mas a atividade exata altera a análise do risco. Tipo de cozinha, presença de fritadeiras e fornos, uso de gás, atendimento no local, delivery, música ao vivo, horário de funcionamento e valor dos equipamentos devem ser declarados corretamente. O enquadramento errado pode comprometer a aceitação ou a análise de um sinistro.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Coberturas que merecem comparação</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Cobertura</th><th class="p-3 text-center">Risco no restaurante</th><th class="p-3 text-center rounded-tr-xl">O que conferir</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Incêndio, raio e explosão</td><td class="p-3 text-center">Cozinha, gás, instalações e conteúdo</td><td class="p-3 text-center">Bens incluídos e valor em risco</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Danos elétricos</td><td class="p-3 text-center">Freezers, geladeiras, coifas e eletrônicos</td><td class="p-3 text-center">Franquia, depreciação e limite</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Deterioração de mercadorias</td><td class="p-3 text-center">Perda de estoque refrigerado</td><td class="p-3 text-center">Gatilho coberto e tempo de paralisação</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Responsabilidade civil</td><td class="p-3 text-center">Danos involuntários a clientes e terceiros</td><td class="p-3 text-center">Atividades abrangidas e exclusões</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Lucros cessantes</td><td class="p-3 text-center">Fechamento após evento coberto</td><td class="p-3 text-center">Período indenitário e despesas fixas</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Roubo e furto qualificado</td><td class="p-3 text-center">Equipamentos, valores e mercadorias</td><td class="p-3 text-center">Definições, vestígios e sublimites</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O seguro cobre incêndio iniciado na cozinha?</h2>
+      <p class="mb-4">A cobertura básica empresarial costuma incluir incêndio, queda de raio e explosão, mas o estabelecimento deve estar corretamente enquadrado e atender às exigências da seguradora. Sistemas de gás, coifas, exaustão, instalações elétricas e equipamentos precisam ser informados e mantidos conforme as normas aplicáveis.</p>
+      <p class="mb-4">Multas, falhas de manutenção ou eventos expressamente excluídos não se tornam cobertos apenas porque houve fogo. Leia as condições e cumpra as medidas de prevenção exigidas.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Danos elétricos ou quebra de máquinas?</h2>
+      <p class="mb-4">Danos elétricos geralmente se relacionam a eventos elétricos cobertos, enquanto quebra de máquinas pode ter objeto e causas diferentes. Um compressor que para por desgaste, por exemplo, não deve ser automaticamente tratado como dano elétrico. Compare as duas coberturas conforme os equipamentos existentes e verifique franquias e exclusões de desgaste, manutenção e vício próprio.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Estoque perdido por falta de energia está coberto?</h2>
+      <p class="mb-4">Não necessariamente. Cobrir o freezer danificado e cobrir os alimentos deteriorados são situações distintas. A deterioração de mercadorias em ambiente refrigerado pode exigir cobertura específica e um evento gerador previsto. Falta de energia externa, falha interna, defeito mecânico e erro operacional podem receber tratamentos diferentes.</p>
+      <p class="mb-4">Mantenha inventário, notas fiscais e registros de temperatura quando aplicáveis. Esses controles ajudam a dimensionar o limite e comprovar a perda.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Responsabilidade civil: o que analisar?</h2>
+      <p class="mb-4">A cobertura pode proteger o patrimônio do estabelecimento diante de determinados danos involuntários causados a terceiros, dentro das condições contratadas. Confira se as operações de restaurante, circulação de clientes, delivery próprio, eventos e outras atividades estão contempladas. Obrigações trabalhistas e responsabilidade de entregadores terceirizados podem não integrar a mesma cobertura.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Lucros cessantes vale a pena para restaurante?</h2>
+      <p class="mb-4">Restaurantes costumam depender diretamente do endereço e dos equipamentos. Mesmo depois de um incêndio coberto, pode ser necessário reparar instalações, substituir máquinas e obter liberações antes de reabrir. A cobertura de lucros cessantes pode indenizar prejuízos financeiros previstos após um evento coberto, respeitando o período e o critério contratados.</p>
+      <p class="mb-4">Para dimensioná-la, organize faturamento, margem, folha, aluguel e demais despesas fixas. Escolher um período curto apenas para reduzir o prêmio pode não acompanhar o tempo real de recuperação.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Perfis que exigem atenção adicional</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Delivery com frota própria:</strong> veículos e circulação não são automaticamente cobertos pela apólice do imóvel.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Restaurante em imóvel alugado:</strong> diferencie estrutura, benfeitorias, conteúdo e obrigações do contrato de locação.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Operação 24 horas:</strong> exposição, estoque e tempo sem funcionamento podem ser maiores.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Música ao vivo ou eventos:</strong> declare a atividade e a capacidade de público.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Cozinha industrial:</strong> relacione máquinas, potência instalada e sistemas de prevenção.</span></li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Checklist para uma cotação correta</h2>
+      <ol class="list-decimal pl-6 space-y-2 mb-6">
+        <li>Informe a atividade completa e todos os usos do local.</li>
+        <li>Some móveis, utensílios, máquinas, eletrônicos e estoque máximo.</li>
+        <li>Descreva gás, coifa, exaustão e sistemas de prevenção.</li>
+        <li>Separe o valor de mercadorias refrigeradas.</li>
+        <li>Calcule despesas fixas e tempo estimado de recuperação.</li>
+        <li>Compare limites e franquias, não somente a mensalidade ou o prêmio anual.</li>
+      </ol>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-4">Um restaurante precisa de uma apólice desenhada para sua operação real. Incêndio, equipamentos, mercadorias refrigeradas, responsabilidade civil e lucros cessantes devem ser avaliados separadamente. A Elevance Seguros compara propostas e explica os limites antes da contratação. <a href="https://wa.me/5511920144864?text=Quero%20cotar%20seguro%20empresarial%20para%20meu%20restaurante" class="font-bold text-blue-600">Solicite sua cotação gratuita pelo WhatsApp</a>.</p>
+    `
+  }
+
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
 
