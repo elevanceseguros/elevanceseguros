@@ -5168,6 +5168,80 @@ export const postsData = [
     `
   }
 
+  ,
+  {
+    id: 106,
+    slug: "seguro-auto-para-carro-financiado-indenizacao",
+    title: "Seguro Auto para Carro Financiado: Como Funciona a Indenização Integral?",
+    date: "05 Ago, 2026",
+    category: "Seguro Auto",
+    readTime: "9 min",
+    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Entenda como o gravame, o saldo do financiamento e o tipo de valor contratado influenciam a indenização do seguro auto.",
+    content: \`
+      <p class="mb-4">Carro financiado pode — e normalmente deve — ter seguro auto. O financiamento, porém, cria uma garantia vinculada ao veículo, conhecida como gravame. Isso muda os documentos e a forma de regularizar uma indenização integral, mas não substitui a proteção contra colisão, roubo, furto, incêndio e danos a terceiros.</p>
+      <p class="mb-4">Na contratação, o ponto decisivo é comparar <strong>coberturas, valor de indenização, franquias, assistências e regras para o veículo alienado</strong>. O procedimento exato depende da apólice, da seguradora e do contrato com a instituição financeira.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Carro financiado pode contratar seguro auto?</h2>
+      <p class="mb-4">Sim. A seguradora analisa o risco do veículo e do perfil informado, enquanto o banco ou a financeira mantém a garantia até a quitação. Na proposta, declare corretamente que o automóvel está financiado e confira quem aparece como segurado, proprietário e beneficiário, quando aplicável.</p>
+      <p class="mb-4">O seguro deve refletir o uso real: particular, deslocamento profissional, aplicativo, entregas ou outra atividade. Omissões podem afetar a análise da proposta ou do sinistro.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O financiamento já inclui seguro do carro?</h2>
+      <p class="mb-4">Não presuma que sim. Produtos vinculados ao crédito, como proteção financeira, não equivalem automaticamente a uma apólice de automóvel. Confirme no contrato o que foi efetivamente contratado, quem é protegido e quais eventos estão cobertos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Como funciona a indenização integral?</h2>
+      <p class="mb-4">Depois da caracterização da indenização integral e da entrega dos documentos exigidos, a seguradora verifica a existência do gravame. A dívida e a restrição financeira precisam ser regularizadas conforme o procedimento da seguradora e da instituição credora antes da transferência ou baixa do veículo.</p>
+      <p class="mb-4">Se a indenização for maior que o saldo devedor, pode existir diferença após a quitação. Se for menor, pode permanecer saldo a pagar. A destinação dos valores e os documentos necessários variam; por isso, peça à seguradora e ao banco uma memória de cálculo antes de concluir o processo.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Valor de mercado referenciado ou valor determinado?</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Modalidade</th><th class="p-3 text-center">Como é definida</th><th class="p-3 text-center rounded-tr-xl">O que comparar</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Valor de mercado referenciado</td><td class="p-3 text-center">Tabela indicada na apólice × fator de ajuste</td><td class="p-3 text-center">Tabela, percentual e data de referência</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Valor determinado</td><td class="p-3 text-center">Quantia fixa acordada na contratação</td><td class="p-3 text-center">Limite contratado e condições</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-4">A Susep explica que, no valor de mercado referenciado, a indenização varia de acordo com a tabela expressamente indicada e o fator de ajuste contratado. No valor determinado, a quantia é fixada entre as partes. Nenhuma modalidade garante, por si só, que a indenização será igual ao saldo do financiamento.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Cobertura compreensiva, terceiros ou proteção parcial?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Casco compreensivo:</strong> reúne os eventos definidos na apólice, normalmente com proteção mais ampla para o próprio veículo.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Roubo e furto:</strong> pode ser alternativa mais enxuta, mas não cobre automaticamente colisões.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Responsabilidade civil:</strong> cobre determinados danos causados a terceiros, dentro dos limites contratados, mas não quita o carro financiado.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Assistência e carro reserva:</strong> ajudam na rotina, porém possuem limites de uso, dias e eventos elegíveis.</span></li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">As parcelas continuam após o sinistro?</h2>
+      <p class="mb-4">Até que o credor confirme a quitação ou outra solução prevista no contrato, não interrompa pagamentos por conta própria. O aviso de sinistro não encerra automaticamente o financiamento. Acompanhe banco e seguradora em paralelo e guarde protocolos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Perfis que exigem atenção</h2>
+      <ul class="list-disc pl-6 space-y-2 mb-6">
+        <li>Financiamento recente, com saldo devedor elevado.</li>
+        <li>Veículo usado para aplicativo, entregas ou atividade comercial.</li>
+        <li>Carro com acessórios, adaptações ou blindagem.</li>
+        <li>Troca de banco, refinanciamento ou portabilidade durante a vigência.</li>
+        <li>Veículo com valor de mercado próximo ou abaixo do saldo devedor.</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Checklist antes de contratar</h2>
+      <ol class="list-decimal pl-6 space-y-2 mb-6">
+        <li>Informe o financiamento e o uso correto do carro.</li>
+        <li>Compare valor de mercado referenciado e valor determinado.</li>
+        <li>Confira limites para terceiros, assistência e carro reserva.</li>
+        <li>Verifique franquias, exclusões e documentos para veículo alienado.</li>
+        <li>Mantenha apólice, contrato e dados cadastrais atualizados.</li>
+        <li>Compare proteção e procedimento de sinistro, não apenas o preço.</li>
+      </ol>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-4">Seguro auto para carro financiado exige compatibilidade entre a apólice, o valor do veículo e a situação do contrato de crédito. A Elevance Seguros ajuda a comparar coberturas, franquias e condições para encontrar uma proposta adequada ao seu perfil. <a href="https://wa.me/5511920144864?text=Quero%20cotar%20seguro%20para%20meu%20carro%20financiado" class="font-bold text-blue-600">Solicite sua cotação gratuita pelo WhatsApp</a>.</p>
+      <p class="mb-4 text-sm text-slate-500">As condições, limites, riscos excluídos e procedimentos de indenização variam conforme a seguradora e o produto contratado. Consulte a proposta e a apólice.</p>
+    \`
+  }
+
+
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
 
