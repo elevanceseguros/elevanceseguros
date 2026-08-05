@@ -5178,7 +5178,7 @@ export const postsData = [
     readTime: "9 min",
     image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800",
     excerpt: "Entenda como o gravame, o saldo do financiamento e o tipo de valor contratado influenciam a indenização do seguro auto.",
-    content: \`
+    content: `
       <p class="mb-4">Carro financiado pode — e normalmente deve — ter seguro auto. O financiamento, porém, cria uma garantia vinculada ao veículo, conhecida como gravame. Isso muda os documentos e a forma de regularizar uma indenização integral, mas não substitui a proteção contra colisão, roubo, furto, incêndio e danos a terceiros.</p>
       <p class="mb-4">Na contratação, o ponto decisivo é comparar <strong>coberturas, valor de indenização, franquias, assistências e regras para o veículo alienado</strong>. O procedimento exato depende da apólice, da seguradora e do contrato com a instituição financeira.</p>
 
@@ -5238,9 +5238,8 @@ export const postsData = [
       <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
       <p class="mb-4">Seguro auto para carro financiado exige compatibilidade entre a apólice, o valor do veículo e a situação do contrato de crédito. A Elevance Seguros ajuda a comparar coberturas, franquias e condições para encontrar uma proposta adequada ao seu perfil. <a href="https://wa.me/5511920144864?text=Quero%20cotar%20seguro%20para%20meu%20carro%20financiado" class="font-bold text-blue-600">Solicite sua cotação gratuita pelo WhatsApp</a>.</p>
       <p class="mb-4 text-sm text-slate-500">As condições, limites, riscos excluídos e procedimentos de indenização variam conforme a seguradora e o produto contratado. Consulte a proposta e a apólice.</p>
-    \`
+    `
   }
-
 
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
