@@ -5241,6 +5241,86 @@ export const postsData = [
     `
   }
 
+  ,
+  {
+    id: 107,
+    slug: "seguro-cibernetico-para-pequenas-empresas-coberturas",
+    title: "Seguro Cibernético para Pequenas Empresas: Coberturas, Exclusões e Como Contratar",
+    date: "06 Ago, 2026",
+    category: "Seguro Empresarial",
+    readTime: "10 min",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Entenda o que um seguro cibernético pode cobrir, quais empresas mais precisam e como comparar limites, franquias e exigências de segurança.",
+    content: `
+      <p class="mb-4">Pequenas empresas também dependem de sistemas, e-mail, WhatsApp, lojas virtuais, meios de pagamento e dados de clientes. Uma invasão, fraude digital ou indisponibilidade pode interromper vendas e gerar despesas técnicas, jurídicas e de comunicação.</p>
+      <p class="mb-4">O seguro cibernético pode transferir parte desses riscos, mas <strong>não substitui controles de segurança</strong> e não cobre qualquer incidente. A contratação exige comparar coberturas, limites, franquias, serviços de resposta e requisitos da seguradora.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que é seguro cibernético?</h2>
+      <p class="mb-4">É uma proteção voltada a determinadas perdas próprias e responsabilidades perante terceiros decorrentes de eventos digitais previstos na apólice. A Susep destaca o papel do seguro na resiliência cibernética, inclusive para pequenas e médias empresas, mas cada produto possui condições, exclusões e critérios de aceitação próprios.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quais coberturas podem aparecer?</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Cobertura</th><th class="p-3 text-center">Situação possível</th><th class="p-3 text-center rounded-tr-xl">O que conferir</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Resposta a incidente</td><td class="p-3 text-center">Investigação e contenção</td><td class="p-3 text-center">Serviços, fornecedores e limite</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Responsabilidade por dados</td><td class="p-3 text-center">Reclamações de terceiros</td><td class="p-3 text-center">Dados abrangidos e custos de defesa</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Interrupção de negócio</td><td class="p-3 text-center">Sistema indisponível após evento coberto</td><td class="p-3 text-center">Carência, período e cálculo da perda</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Restauração de dados</td><td class="p-3 text-center">Recuperação de arquivos e sistemas</td><td class="p-3 text-center">Backups, custos e causas aceitas</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Fraude ou engenharia social</td><td class="p-3 text-center">Transferência induzida por fraude</td><td class="p-3 text-center">Se é cobertura adicional e seus sublimites</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Extorsão cibernética</td><td class="p-3 text-center">Ameaça digital coberta</td><td class="p-3 text-center">Assistência, legalidade e autorização prévia</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-4">Essas coberturas não são automáticas. Algumas apólices protegem apenas responsabilidade civil; outras incluem despesas próprias. Compare a definição do evento coberto, não somente o nome comercial.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quem deve considerar essa proteção?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>E-commerce:</strong> depende da loja, meios de pagamento e cadastro de clientes.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Clínicas e consultórios:</strong> tratam dados pessoais e informações sensíveis.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Escritórios contábeis e jurídicos:</strong> armazenam documentos e acessam sistemas de terceiros.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Farmácias e varejo:</strong> utilizam cadastros, sistemas de venda, delivery e pagamentos.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Prestadores B2B:</strong> podem assumir obrigações contratuais de segurança perante clientes.</span></li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Seguro empresarial comum cobre ataque digital?</h2>
+      <p class="mb-4">Não presuma que sim. A apólice patrimonial protege bens e eventos definidos no contrato, enquanto riscos digitais podem exigir cobertura específica. Também não se deve confundir seguro cibernético com seguro de equipamentos eletrônicos: um protege determinados eventos e responsabilidades digitais; o outro pode se concentrar em danos físicos aos aparelhos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quais exclusões merecem atenção?</h2>
+      <p class="mb-4">Atos intencionais, fatos conhecidos antes da contratação, falhas não corrigidas, ausência de controles declarados, interrupções não vinculadas a evento coberto, multas não seguráveis e determinados tipos de fraude podem ser excluídos. Pagamentos, acordos e contratação de fornecedores após um incidente normalmente exigem comunicação e autorização conforme a apólice.</p>
+      <p class="mb-4">Confira ainda retroatividade, território, legislação aplicável, cobertura de fornecedores de tecnologia e diferença entre limite total e sublimites.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que a seguradora pode exigir?</h2>
+      <ul class="list-disc pl-6 space-y-2 mb-6">
+        <li>Autenticação em dois fatores em acessos críticos.</li>
+        <li>Backups separados, testados e atualizados.</li>
+        <li>Antivírus, firewall e correções de segurança.</li>
+        <li>Controle de acessos e desligamento de usuários antigos.</li>
+        <li>Treinamento contra e-mails e mensagens fraudulentas.</li>
+        <li>Plano de resposta e inventário dos sistemas essenciais.</li>
+      </ul>
+      <p class="mb-4">Responda ao questionário de risco com precisão. Declarar um controle inexistente pode comprometer a aceitação ou a regulação do sinistro.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Como definir o limite?</h2>
+      <p class="mb-4">Considere faturamento dependente dos sistemas, tempo provável de paralisação, volume e sensibilidade dos dados, contratos com clientes, custos de especialistas e capacidade financeira para absorver despesas. Uma pequena empresa pode precisar mais de resposta rápida e interrupção de negócio do que de um limite elevado em uma cobertura pouco aderente.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Checklist para comparar propostas</h2>
+      <ol class="list-decimal pl-6 space-y-2 mb-6">
+        <li>Liste sistemas, dados e fornecedores essenciais.</li>
+        <li>Separe perdas próprias de responsabilidade perante terceiros.</li>
+        <li>Compare limites, sublimites, franquias e períodos de espera.</li>
+        <li>Confira fraude, engenharia social e interrupção por fornecedor.</li>
+        <li>Entenda quais serviços de resposta estão incluídos.</li>
+        <li>Valide todos os controles declarados no questionário.</li>
+      </ol>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-4">O melhor seguro cibernético não é o que reúne mais nomes de coberturas, mas o que responde aos sistemas, dados e contratos que sustentam a empresa. A Elevance Seguros ajuda a comparar propostas, limites, franquias e exigências antes da contratação. <a href="https://wa.me/5511920144864?text=Quero%20cotar%20seguro%20cibernetico%20para%20minha%20empresa" class="font-bold text-blue-600">Solicite uma análise pelo WhatsApp</a>.</p>
+      <p class="mb-4 text-sm text-slate-500">Coberturas, exclusões, serviços e critérios de aceitação variam conforme a seguradora e o produto. Consulte as condições contratuais.</p>
+    `
+  }
+
+
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
 
