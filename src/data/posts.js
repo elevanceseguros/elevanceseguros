@@ -5321,6 +5321,97 @@ export const postsData = [
   }
 
 
+  ,
+  {
+    id: 108,
+    slug: "seguro-de-vida-para-socios-empresa-capital-sucessao",
+    title: "Seguro de Vida para Sócios: Capital, Continuidade da Empresa e Como Contratar",
+    date: "07 Ago, 2026",
+    category: "Seguro de Vida",
+    readTime: "10 min",
+    image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Entenda como proteger sócios, famílias e a continuidade financeira da empresa, além de calcular capital e escolher beneficiários.",
+    content: `
+      <p class="mb-4">Quando um sócio concentra relacionamento com clientes, conhecimento técnico, decisões ou garantias financeiras, sua ausência pode afetar caixa, contratos e continuidade da empresa. O seguro de vida pode fornecer capital em eventos cobertos, mas precisa ser estruturado de acordo com o objetivo real da contratação.</p>
+      <p class="mb-4">Proteção familiar, recomposição de caixa, compra de participação societária e pagamento de dívidas são necessidades diferentes. <strong>Beneficiário, capital segurado e coberturas devem conversar com o contrato social e o planejamento sucessório</strong>.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que é seguro de vida para sócios?</h2>
+      <p class="mb-4">É um seguro de pessoas contratado sobre a vida dos sócios ou profissionais essenciais, com coberturas e beneficiários definidos na proposta. Em caso de evento coberto, o capital segurado é pago conforme as condições do plano e a documentação exigida.</p>
+      <p class="mb-4">A apólice não transfere quotas automaticamente, não substitui acordo de sócios e não resolve sozinha questões tributárias, familiares ou societárias.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quais objetivos podem ser protegidos?</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Objetivo</th><th class="p-3 text-center">Risco financeiro</th><th class="p-3 text-center rounded-tr-xl">Estrutura a conferir</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Proteção familiar</td><td class="p-3 text-center">Perda de renda do sócio</td><td class="p-3 text-center">Familiares como beneficiários</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Pessoa-chave</td><td class="p-3 text-center">Queda de receita e custo de substituição</td><td class="p-3 text-center">Interesse da empresa e regras do produto</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Compra de quotas</td><td class="p-3 text-center">Falta de recursos para reorganização societária</td><td class="p-3 text-center">Acordo de sócios alinhado à apólice</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Dívidas e garantias</td><td class="p-3 text-center">Compromissos que permanecem</td><td class="p-3 text-center">Seguro de vida ou prestamista adequado</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Invalidez ou doença grave</td><td class="p-3 text-center">Afastamento e reorganização</td><td class="p-3 text-center">Definições, carências e eventos cobertos</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Seguro individual, coletivo ou prestamista?</h2>
+      <p class="mb-4"><strong>Seguro de vida individual</strong> pode ser contratado para cada sócio com coberturas e capital definidos. <strong>Seguro coletivo</strong> segue as regras da apólice estipulada para o grupo. Já o <strong>seguro prestamista</strong> é direcionado à quitação, amortização ou pagamento de parcelas de uma dívida ou compromisso coberto.</p>
+      <p class="mb-4">Um produto não substitui automaticamente o outro. Se a empresa precisa proteger família, caixa e financiamento, pode ser necessário separar objetivos e capitais.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quem deve ser o beneficiário?</h2>
+      <p class="mb-4">Depende do propósito e das regras do produto. Para proteção familiar, normalmente são indicadas pessoas físicas. Em uma estrutura de pessoa-chave ou continuidade empresarial, a possibilidade de indicação da empresa deve ser validada com a seguradora, além de assessoria jurídica e contábil.</p>
+      <p class="mb-4">A indicação precisa permanecer atualizada. Mudanças familiares, societárias ou contratuais podem exigir revisão da apólice e dos documentos relacionados.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Como calcular o capital segurado?</h2>
+      <p class="mb-4">Evite escolher um valor apenas porque a parcela cabe no orçamento. Faça contas separadas para cada necessidade:</p>
+      <ul class="list-disc pl-6 space-y-2 mb-6">
+        <li>Renda que a família precisaria repor por determinado período.</li>
+        <li>Dívidas pessoais e empresariais vinculadas ao sócio.</li>
+        <li>Despesas fixas durante a reorganização da empresa.</li>
+        <li>Custo para contratar, treinar ou substituir uma pessoa-chave.</li>
+        <li>Valor econômico das quotas previsto no acordo societário.</li>
+        <li>Margem para impostos, assessorias e custos de transição, quando aplicáveis.</li>
+      </ul>
+      <p class="mb-4">O capital aceito depende da análise da seguradora, das informações financeiras e do processo de subscrição.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quais coberturas comparar?</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Morte por causas cobertas:</strong> confirme abrangência, exclusões e capital.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Invalidez:</strong> verifique se é funcional, laborativa ou por acidente e como é caracterizada.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Doenças graves:</strong> confira lista, estágio, critérios clínicos e carência.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Diárias por incapacidade:</strong> avalie franquia temporal, profissão e limite de dias.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Assistências:</strong> trate serviços adicionais separadamente do capital principal.</span></li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Seguro resolve a sucessão da empresa?</h2>
+      <p class="mb-4">Não sozinho. O seguro pode fornecer liquidez, mas a transferência, avaliação e compra de quotas dependem dos instrumentos societários e das regras legais. A apólice deve ser coordenada com contrato social, acordo de sócios, testamento quando existente e orientação profissional.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Erros comuns na contratação</h2>
+      <ol class="list-decimal pl-6 space-y-2 mb-6">
+        <li>Usar o mesmo capital para sócios com funções e participações diferentes.</li>
+        <li>Confundir proteção da família com proteção do caixa empresarial.</li>
+        <li>Não informar corretamente profissão, saúde e atividades de risco.</li>
+        <li>Ignorar carências, exclusões e critérios de invalidez.</li>
+        <li>Deixar beneficiários e acordo societário desatualizados.</li>
+        <li>Contratar seguro sem definir como o recurso será usado.</li>
+      </ol>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Checklist para cotar</h2>
+      <ul class="list-disc pl-6 space-y-2 mb-6">
+        <li>Quantidade, idade e função dos sócios.</li>
+        <li>Participação societária e valor estimado das quotas.</li>
+        <li>Faturamento, despesas fixas e dívidas relevantes.</li>
+        <li>Pessoas-chave e tempo necessário para substituição.</li>
+        <li>Objetivo de cada capital e beneficiários pretendidos.</li>
+        <li>Coberturas desejadas e orçamento disponível.</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-4">Seguro de vida para sócios precisa ser desenhado como parte da continuidade empresarial, não como uma apólice genérica. A Elevance Seguros ajuda a separar proteção familiar, pessoa-chave, dívidas e reorganização societária para comparar propostas adequadas. <a href="https://wa.me/5511920144864?text=Quero%20cotar%20seguro%20de%20vida%20para%20os%20socios%20da%20empresa" class="font-bold text-blue-600">Solicite uma análise pelo WhatsApp</a>.</p>
+      <p class="mb-4 text-sm text-slate-500">Coberturas, beneficiários elegíveis, capitais, carências, exclusões e critérios de aceitação variam conforme o produto e a seguradora. Questões societárias, tributárias e sucessórias exigem orientação especializada.</p>
+    `
+  }
+
+
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
 
