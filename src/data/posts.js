@@ -5412,6 +5412,82 @@ export const postsData = [
   }
 
 
+  ,
+  {
+    id: 109,
+    slug: "seguro-para-notebook-celular-equipamentos-portateis-empresa",
+    title: "Seguro para Notebook e Celular da Empresa: Roubo, Danos e Como Contratar",
+    date: "08 Ago, 2026",
+    category: "Seguro Empresarial",
+    readTime: "9 min",
+    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Compare seguro específico, cobertura empresarial, roubo, danos acidentais e proteção fora do endereço para equipamentos de trabalho.",
+    content: `
+      <p class="mb-4">Notebook, celular, tablet e câmera podem concentrar trabalho, atendimento, vendas e acesso a sistemas da empresa. Quando um equipamento é roubado ou danificado, o prejuízo não se limita ao preço de reposição: a operação também pode parar.</p>
+      <p class="mb-4">A proteção correta depende de <strong>quem é o proprietário, onde o bem é usado, quais eventos estão cobertos e como o valor será indenizado</strong>. Seguro empresarial do endereço e seguro específico para equipamento portátil não são necessariamente equivalentes.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quais equipamentos podem ser segurados?</h2>
+      <p class="mb-4">Produtos disponíveis no mercado podem aceitar smartphones, notebooks, tablets, câmeras, filmadoras, relógios, drones e outros equipamentos portáteis. A aceitação varia por seguradora, idade do aparelho, nota fiscal, estado de conservação, finalidade de uso e território.</p>
+      <p class="mb-4">Antes de cotar, confirme se o equipamento pertence à empresa, ao sócio ou ao funcionário. A apólice precisa refletir corretamente o interesse segurável e o uso profissional.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Seguro empresarial ou seguro específico?</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-[#0d1f3c] text-white"><th class="p-3 text-left rounded-tl-xl">Opção</th><th class="p-3 text-center">Foco</th><th class="p-3 text-center rounded-tr-xl">Ponto decisivo</th></tr></thead>
+          <tbody>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Seguro empresarial</td><td class="p-3 text-center">Bens e riscos no estabelecimento</td><td class="p-3 text-center">Se cobre equipamentos e saída do endereço</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Equipamento portátil</td><td class="p-3 text-center">Bem identificado, inclusive em mobilidade</td><td class="p-3 text-center">Território, eventos e forma de indenização</td></tr>
+            <tr class="bg-slate-50"><td class="p-3 font-semibold">Garantia estendida</td><td class="p-3 text-center">Extensão ou complementação da garantia</td><td class="p-3 text-center">Não presumir cobertura para roubo ou acidentes</td></tr>
+            <tr class="bg-white"><td class="p-3 font-semibold">Seguro cibernético</td><td class="p-3 text-center">Dados, incidentes e responsabilidades digitais</td><td class="p-3 text-center">Não substitui proteção física do aparelho</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Roubo, furto qualificado e furto simples são iguais?</h2>
+      <p class="mb-4">Não. As definições contratuais e a comprovação do evento determinam a cobertura. Uma apólice que anuncia roubo pode não cobrir toda modalidade de desaparecimento do bem. Confira expressamente roubo, furto qualificado, furto simples e subtração sem vestígios, além dos documentos exigidos.</p>
+      <p class="mb-4">Boletim de ocorrência registra os fatos informados, mas não transforma um evento excluído em coberto.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Queda, líquido e dano elétrico estão incluídos?</h2>
+      <p class="mb-4">Somente quando previstos. Danos acidentais, contato com líquido, curto-circuito, oscilação elétrica e quebra de tela podem aparecer juntos ou como coberturas separadas. Desgaste, vício do produto, defeito gradual e falha de manutenção costumam receber tratamento diferente.</p>
+      <p class="mb-4">Compare também franquia por evento. Em equipamentos de menor valor, uma franquia alta pode reduzir bastante a utilidade prática da cobertura.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O seguro vale fora do escritório?</h2>
+      <p class="mb-4">Essa é uma das perguntas mais importantes. A cobertura do conteúdo de um estabelecimento pode ficar limitada ao endereço segurado. Para equipamentos usados em reuniões, viagens, home office, obras ou atendimento externo, verifique se existe cobertura fora do local e qual é o território.</p>
+      <p class="mb-4">Uso no exterior, permanência dentro de veículo, transporte e entrega a terceiros podem ter regras e exclusões próprias.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Valor de novo ou valor atual?</h2>
+      <p class="mb-4">A indenização pode considerar limite contratado, valor atual, depreciação, reposição por bem equivalente ou outro critério descrito na apólice. Não presuma que o pagamento será igual ao preço de um modelo novo no dia do sinistro.</p>
+      <p class="mb-4">Informe marca, modelo, número de série, data e valor de aquisição. Guarde nota fiscal e fotos do equipamento.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Perfis com maior necessidade de análise</h2>
+      <ul class="list-none space-y-3 mb-6">
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Equipe comercial externa:</strong> notebooks e celulares circulam diariamente.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Fotógrafos e produtores:</strong> câmeras, lentes e acessórios podem exigir relação detalhada.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Arquitetos e engenheiros:</strong> uso em obras altera exposição a quedas, poeira e transporte.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Home office híbrido:</strong> é necessário definir endereço e responsabilidade pelos bens.</span></li>
+        <li class="flex items-start gap-2"><span class="text-green-600 font-black">✓</span><span><strong>Equipamentos cedidos:</strong> termo de responsabilidade não substitui a análise da apólice.</span></li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Seguro físico protege os dados?</h2>
+      <p class="mb-4">Não necessariamente. A indenização do aparelho não recupera arquivos nem cobre automaticamente vazamento, fraude ou responsabilidade perante clientes. Backups, autenticação em dois fatores, controle de acesso e seguro cibernético são camadas diferentes de proteção.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Checklist para cotar corretamente</h2>
+      <ol class="list-decimal pl-6 space-y-2 mb-6">
+        <li>Relacione proprietário, usuário, marca, modelo e número de série.</li>
+        <li>Separe equipamentos fixos dos que saem do endereço.</li>
+        <li>Informe valor, idade, nota fiscal e finalidade profissional.</li>
+        <li>Compare roubo, modalidades de furto, danos e líquido.</li>
+        <li>Confira território, franquia, depreciação e limite.</li>
+        <li>Verifique exclusões para veículo, terceiros e viagens.</li>
+      </ol>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-4">Seguro para notebook e celular da empresa precisa acompanhar a circulação real dos equipamentos. A Elevance Seguros ajuda a comparar cobertura no endereço, proteção portátil, franquias e critérios de indenização. <a href="https://wa.me/5511920144864?text=Quero%20cotar%20seguro%20para%20equipamentos%20da%20empresa" class="font-bold text-blue-600">Solicite uma análise pelo WhatsApp</a>.</p>
+      <p class="mb-4 text-sm text-slate-500">Bens aceitos, coberturas, franquias, limites, territórios e documentos variam conforme a seguradora e o produto. Consulte as condições contratuais.</p>
+    `
+  }
+
+
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
 
