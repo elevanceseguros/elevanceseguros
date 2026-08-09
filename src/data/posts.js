@@ -2369,7 +2369,7 @@ export const postsData = [
   },
   {
     id: 40,
-    slug: "seguro-viagem-quando-contratar-e-o-que-cobre",
+    slug: "seguro-viagem-obrigatorio-destinos-coberturas",
     title: "Seguro Viagem: Quando Contratar, O Que Cobre e Por Que É Obrigatório em Alguns Destinos",
     date: "31 Mai, 2026",
     category: "Seguros",
@@ -3391,7 +3391,7 @@ export const postsData = [
   ,
   {
     id: 65,
-    slug: "seguro-de-vida-quanto-custa-e-o-que-cobre",
+    slug: "seguro-de-vida-coberturas-por-fase-da-vida-2026",
     title: "Seguro de Vida: Quanto Custa e O Que Realmente Cobre em 2026",
     date: "25 Jun, 2026",
     category: "Seguro de Vida",
@@ -4028,7 +4028,7 @@ export const postsData = [
   ,
   {
     id: 80,
-    slug: "seguro-garantia-o-que-e-e-quando-sua-empresa-precisa",
+    slug: "seguro-garantia-licitacoes-contratos-privados",
     title: "Seguro Garantia: O Que É e Quando Sua Empresa Precisa?",
     date: "10 Jul, 2026",
     category: "Seguros Empresariais",
