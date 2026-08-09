@@ -5487,6 +5487,107 @@ export const postsData = [
     `
   }
 
+  {
+    id: 110,
+    slug: "seguro-fianca-locaticia-vs-caucao-fiador",
+    title: "Seguro Fiança Locatícia vs Caução e Fiador: Qual Garantia Escolher?",
+    date: "09 Ago, 2026",
+    category: "Seguro Fiança",
+    readTime: "10 min",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Compare seguro fiança, caução e fiador em custo, aprovação, proteção e praticidade para escolher a garantia do aluguel.",
+    content: `
+      <p class="mb-4">Ao alugar um imóvel, a garantia locatícia influencia a aprovação do contrato, o dinheiro que fica comprometido e a segurança do proprietário. Seguro fiança, caução e fiador resolvem o mesmo problema por caminhos diferentes — e a melhor opção depende do perfil do locatário, das exigências do locador e das condições negociadas.</p>
+
+      <p class="mb-4">Neste guia, você compara as três alternativas sem olhar apenas para o preço inicial. O objetivo é entender quem precisa ser aprovado, quem fica protegido e quais custos ou obrigações podem surgir durante a locação.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Resumo rápido: seguro fiança, caução ou fiador?</h2>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100">
+              <th class="border border-slate-200 p-3 text-left">Critério</th>
+              <th class="border border-slate-200 p-3 text-left">Seguro fiança</th>
+              <th class="border border-slate-200 p-3 text-left">Caução</th>
+              <th class="border border-slate-200 p-3 text-left">Fiador</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-slate-200 p-3 font-bold">Desembolso</td>
+              <td class="border border-slate-200 p-3">Prêmio do seguro, conforme análise e coberturas</td>
+              <td class="border border-slate-200 p-3">Valor fica vinculado à garantia, conforme contrato e legislação</td>
+              <td class="border border-slate-200 p-3">Pode não haver pagamento direto, mas há exigências documentais</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 p-3 font-bold">Aprovação</td>
+              <td class="border border-slate-200 p-3">Análise da seguradora</td>
+              <td class="border border-slate-200 p-3">Negociação e aceitação do locador</td>
+              <td class="border border-slate-200 p-3">Análise do fiador e de seu patrimônio</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 p-3 font-bold">Proteção do locador</td>
+              <td class="border border-slate-200 p-3">Cobertura prevista na apólice</td>
+              <td class="border border-slate-200 p-3">Limitada ao valor e às regras da garantia</td>
+              <td class="border border-slate-200 p-3">Depende da capacidade e responsabilização do fiador</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 p-3 font-bold">Praticidade</td>
+              <td class="border border-slate-200 p-3">Dispensa pedir ajuda a terceiros</td>
+              <td class="border border-slate-200 p-3">Processo geralmente simples, mas imobiliza recursos</td>
+              <td class="border border-slate-200 p-3">Exige um terceiro disposto e elegível</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Como funciona o seguro fiança locatícia?</h2>
+      <p class="mb-4">No seguro fiança, o <strong>locador é o segurado</strong> e o <strong>locatário é o garantido</strong>. Segundo a SUSEP, a cobertura básica obrigatória protege contra a falta de pagamento dos aluguéis. A apólice também pode incluir, quando contratadas, coberturas adicionais para encargos, tributos, contas, danos ao imóvel ou outras obrigações previstas nas condições do produto.</p>
+
+      <p class="mb-4">O locatário passa por análise de risco da seguradora e paga o prêmio. Esse valor remunera a cobertura e, em regra, não funciona como uma reserva devolvida ao final. A apólice é vinculada ao contrato de locação; renovação e continuidade dependem das regras do produto e de nova análise quando aplicável.</p>
+
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-5 my-6 rounded-r-xl">
+        <p class="font-bold text-[#0d1f3c] mb-2">Para quem costuma fazer sentido?</p>
+        <p class="text-slate-700">Para quem não tem fiador disponível, prefere preservar recursos para mudança e instalação ou precisa apresentar ao proprietário uma garantia formal com coberturas claramente definidas.</p>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quando a caução pode ser mais interessante?</h2>
+      <p class="mb-4">A caução pode ser atraente quando o locatário dispõe do valor solicitado e aceita mantê-lo comprometido durante a locação. O tratamento, a guarda e a eventual devolução dependem da modalidade, do contrato e da legislação aplicável. Por isso, é importante registrar com clareza o valor, a forma de correção e as condições para utilização ou restituição.</p>
+
+      <p class="mb-4">O ponto de atenção é o custo de oportunidade: o dinheiro deixa de estar disponível para despesas da mudança, mobiliário ou capital de giro. Além disso, a proteção do proprietário fica limitada à estrutura da garantia negociada.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">E o fiador?</h2>
+      <p class="mb-4">O fiador pode evitar um prêmio de seguro, mas transfere a responsabilidade para uma pessoa próxima. Imobiliárias e proprietários costumam analisar renda, documentos e patrimônio, e os critérios variam. Também existe um componente pessoal: o fiador assume uma obrigação relevante e precisa compreender exatamente o contrato.</p>
+
+      <p class="mb-4">Essa alternativa tende a funcionar melhor quando já existe alguém elegível, informado e disposto a assumir a garantia. Se a documentação não atender às exigências ou se ninguém quiser assumir o compromisso, o seguro fiança pode tornar a negociação mais objetiva.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O seguro fiança cobre tudo?</h2>
+      <p class="mb-4">Não. A cobertura básica e as adicionais têm limites, franquias, riscos excluídos, procedimentos e documentos definidos nas condições contratuais. Multas, encargos, pintura, danos e contas de consumo não devem ser presumidos: precisam aparecer expressamente na proposta e na apólice para que sejam avaliados conforme o contrato.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Checklist antes de escolher</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Confirme quais garantias o proprietário ou a imobiliária aceita.</li>
+        <li>Compare o custo total durante o prazo do aluguel, não apenas o desembolso inicial.</li>
+        <li>Veja se a caução comprometeria uma reserva necessária para a mudança.</li>
+        <li>Leia coberturas, limites, exclusões e regras de renovação do seguro.</li>
+        <li>Entenda quais documentos serão exigidos do locatário ou do fiador.</li>
+        <li>Registre no contrato como cada obrigação será tratada ao fim da locação.</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Qual opção escolher?</h2>
+      <p class="mb-4"><strong>Seguro fiança</strong> costuma favorecer praticidade e preservação de caixa; <strong>caução</strong> pode ser conveniente para quem tem o recurso disponível e quer uma estrutura mais direta; <strong>fiador</strong> pode reduzir o desembolso imediato quando há uma pessoa elegível e confortável com a obrigação.</p>
+
+      <p class="mb-6">A decisão final deve considerar o contrato de locação e as condições efetivamente oferecidas. Uma cotação ajuda a comparar o prêmio do seguro com o valor que ficaria imobilizado e com as exigências documentais das demais alternativas.</p>
+
+      <div class="bg-[#0d1f3c] text-white p-7 rounded-2xl mt-8">
+        <h3 class="text-xl font-black mb-3">Compare o seguro fiança antes de fechar o aluguel</h3>
+        <p class="mb-5 text-slate-200">A Elevance analisa seu perfil, as exigências da locação e as coberturas disponíveis para apresentar uma comparação clara, sem compromisso.</p>
+        <a href="https://wa.me/5511920144864?text=Olá%2C%20quero%20cotar%20seguro%20fiança%20locatícia" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#22c55e] hover:bg-[#16a34a] text-white font-black px-6 py-3 rounded-xl transition-colors">Falar com a Elevance no WhatsApp</a>
+      </div>
+
+      <p class="text-xs text-slate-500 mt-6">Este conteúdo é informativo. Coberturas, aceitação, preço, limites e procedimentos variam conforme seguradora, análise de risco, contrato e condições gerais do produto.</p>
+    `
+  },
 
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
