@@ -5485,7 +5485,7 @@ export const postsData = [
       <p class="mb-4">Seguro para notebook e celular da empresa precisa acompanhar a circulação real dos equipamentos. A Elevance Seguros ajuda a comparar cobertura no endereço, proteção portátil, franquias e critérios de indenização. <a href="https://wa.me/5511920144864?text=Quero%20cotar%20seguro%20para%20equipamentos%20da%20empresa" class="font-bold text-blue-600">Solicite uma análise pelo WhatsApp</a>.</p>
       <p class="mb-4 text-sm text-slate-500">Bens aceitos, coberturas, franquias, limites, territórios e documentos variam conforme a seguradora e o produto. Consulte as condições contratuais.</p>
     `
-  }
+  },
 
   {
     id: 110,
