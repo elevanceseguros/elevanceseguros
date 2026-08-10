@@ -5588,6 +5588,122 @@ export const postsData = [
       <p class="text-xs text-slate-500 mt-6">Este conteúdo é informativo. Coberturas, aceitação, preço, limites e procedimentos variam conforme seguradora, análise de risco, contrato e condições gerais do produto.</p>
     `
   },
+  {
+    id: 111,
+    slug: "seguro-transporte-carga-embarcador-vs-transportadora",
+    title: "Seguro de Transporte de Carga: Embarcador vs Transportadora — Quem Contrata?",
+    date: "10 Ago, 2026",
+    category: "Seguro de Transportes",
+    readTime: "11 min",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Entenda a diferença entre o seguro da mercadoria e os seguros de responsabilidade da transportadora antes de contratar um frete.",
+    content: `
+      <p class="mb-4">Uma mercadoria pode sair do estoque com nota fiscal, transportadora regular e rastreamento — e ainda assim existir uma lacuna de proteção. Isso acontece porque o <strong>seguro contratado pelo dono da carga</strong> e os <strong>seguros de responsabilidade do transportador</strong> não têm exatamente o mesmo objeto.</p>
+
+      <p class="mb-4">Para indústrias, distribuidores, e-commerces, farmácias e varejistas, entender essa diferença evita duas decisões caras: acreditar que o seguro da transportadora cobre qualquer prejuízo ou pagar por uma apólice sem alinhar mercadorias, rotas e operação real.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Resumo: quem protege o quê?</h2>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100">
+              <th class="border border-slate-200 p-3 text-left">Proteção</th>
+              <th class="border border-slate-200 p-3 text-left">Quem normalmente contrata</th>
+              <th class="border border-slate-200 p-3 text-left">Interesse protegido</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-slate-200 p-3 font-bold">Seguro de transporte da mercadoria</td>
+              <td class="border border-slate-200 p-3">Embarcador ou proprietário dos bens</td>
+              <td class="border border-slate-200 p-3">Prejuízos aos bens segurados durante o transporte, conforme coberturas</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 p-3 font-bold">RCTR-C</td>
+              <td class="border border-slate-200 p-3">Transportador rodoviário</td>
+              <td class="border border-slate-200 p-3">Responsabilidade do transportador por danos à carga decorrentes dos eventos cobertos</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 p-3 font-bold">RC-DC</td>
+              <td class="border border-slate-200 p-3">Transportador rodoviário</td>
+              <td class="border border-slate-200 p-3">Responsabilidade por desaparecimento da carga em situações cobertas</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 p-3 font-bold">RC-V</td>
+              <td class="border border-slate-200 p-3">Transportador rodoviário</td>
+              <td class="border border-slate-200 p-3">Danos corporais e materiais causados a terceiros pelo veículo de carga</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que é o seguro de transporte do embarcador?</h2>
+      <p class="mb-4">Segundo a SUSEP, o seguro de transportes indeniza prejuízos causados aos bens segurados durante viagens terrestres, aéreas ou aquaviárias, nacionais ou internacionais, dentro das condições contratadas. A proteção também pode ser estendida à permanência em armazéns quando isso estiver previsto.</p>
+
+      <p class="mb-4">Na prática, essa apólice acompanha o interesse de quem vende, compra ou possui a mercadoria. O contrato deve refletir o tipo de produto, valor por embarque, frequência, origem, destino, meio de transporte, armazenagem intermediária e histórico da operação.</p>
+
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-5 my-6 rounded-r-xl">
+        <p class="font-bold text-[#0d1f3c] mb-2">Exemplo prático</p>
+        <p class="text-slate-700">Um distribuidor que envia mercadorias diariamente pode estruturar uma apólice para os próprios embarques. Já a transportadora precisa manter os seguros de responsabilidade aplicáveis à sua atividade. As duas proteções podem atuar na mesma operação, mas não são substitutas automáticas.</p>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O seguro da transportadora cobre toda a mercadoria?</h2>
+      <p class="mb-4">Não se deve presumir isso. O seguro de responsabilidade responde dentro das hipóteses em que a transportadora é responsabilizada e conforme riscos, limites, averbações, gerenciamento e exclusões da apólice. A ocorrência de um prejuízo na carga não significa, por si só, que haverá cobertura integral pelo contrato do transportador.</p>
+
+      <p class="mb-4">Por isso, o embarcador deve solicitar certificados e informações da operação, mas também avaliar a própria exposição. Valor elevado, produtos sensíveis, múltiplos embarques e rotas críticas tornam essa análise especialmente importante.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quais seguros são obrigatórios para o transportador rodoviário?</h2>
+      <p class="mb-4">A regulamentação consolidada pela SUSEP trata do RCTR-C e do RC-DC sob responsabilidade do transportador rodoviário e prevê gerenciamento de riscos. O RC-V cobre danos corporais e materiais causados a terceiros pelo veículo utilizado no transporte de cargas. Em março de 2026, o CNSP esclareceu que a cobertura obrigatória do RC-V se aplica aos eventos ocorridos durante a efetiva prestação do serviço de transporte.</p>
+
+      <p class="mb-4">Obrigatoriedade legal não significa cobertura ilimitada. A empresa precisa observar atividade, frota, RNTR-C quando aplicável, averbações, limites, mercadorias aceitas e exigências do plano de gerenciamento de riscos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Embarcador ainda precisa de seguro próprio?</h2>
+      <p class="mb-4">Pode precisar, mesmo quando a transportadora apresenta apólices válidas. O seguro próprio permite alinhar a proteção ao valor e à natureza dos bens, considerar diferentes transportadores e organizar os embarques sob uma visão única. A decisão depende do contrato de compra e venda, responsabilidade sobre a mercadoria e tolerância financeira ao risco.</p>
+
+      <p class="mb-4">Para operações esporádicas, pode existir contratação por viagem. Para fluxos recorrentes, uma apólice aberta com declarações ou averbações pode ser mais adequada. A forma correta depende do produto disponível e da rotina real do segurado.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O que costuma alterar o preço?</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Tipo, valor e atratividade da mercadoria.</li>
+        <li>Quantidade e frequência dos embarques.</li>
+        <li>Rotas, distância e áreas de circulação.</li>
+        <li>Veículos, transportadores e modalidades utilizadas.</li>
+        <li>Armazenagem intermediária e operações de carga e descarga.</li>
+        <li>Histórico de ocorrências e medidas de gerenciamento de riscos.</li>
+        <li>Franquias, limites, coberturas adicionais e participação do segurado.</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Perfis que devem cotar antes do próximo embarque</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>E-commerce:</strong> alto volume de envios com valores e destinos variados.</li>
+        <li><strong>Indústria e distribuidor:</strong> carga própria circulando entre fábricas, centros e clientes.</li>
+        <li><strong>Farmácia e saúde:</strong> produtos sensíveis, equipamentos e exigências específicas de transporte.</li>
+        <li><strong>Importador ou exportador:</strong> operação com diferentes modais e responsabilidades contratuais.</li>
+        <li><strong>Transportadora:</strong> necessidade de revisar responsabilidade, frota, averbação e gerenciamento de riscos.</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Checklist para pedir uma cotação comparável</h2>
+      <ol class="list-decimal pl-6 mb-6 space-y-2">
+        <li>Informe quem é o dono da carga e quem contrata o frete.</li>
+        <li>Liste mercadorias, embalagens e valores máximos por viagem.</li>
+        <li>Descreva rotas, frequência, modais e armazenagens.</li>
+        <li>Apresente transportadores utilizados e documentos da operação.</li>
+        <li>Compare riscos cobertos, exclusões, franquias e limites.</li>
+        <li>Confirme regras de averbação e gerenciamento antes do embarque.</li>
+      </ol>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-6">O seguro da mercadoria e os seguros da transportadora têm funções diferentes. Uma análise bem feita cruza contrato comercial, propriedade dos bens, responsabilidade do transportador e exposição financeira para evitar proteção incompleta ou duplicada.</p>
+
+      <div class="bg-[#0d1f3c] text-white p-7 rounded-2xl mt-8">
+        <h3 class="text-xl font-black mb-3">Sua empresa envia ou transporta cargas?</h3>
+        <p class="mb-5 text-slate-200">A Elevance compara a operação, os seguros existentes e as coberturas disponíveis para estruturar uma cotação coerente com suas mercadorias e rotas.</p>
+        <a href="https://wa.me/5511920144864?text=Olá%2C%20quero%20cotar%20seguro%20de%20transporte%20de%20cargas" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#22c55e] hover:bg-[#16a34a] text-white font-black px-6 py-3 rounded-xl transition-colors">Solicitar análise no WhatsApp</a>
+      </div>
+
+      <p class="text-xs text-slate-500 mt-6">Conteúdo informativo. Coberturas, obrigatoriedade, aceitação, limites, averbações e gerenciamento de riscos dependem da atividade, legislação vigente e condições contratuais de cada produto.</p>
+    `
+  },
 
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
