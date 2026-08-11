@@ -5704,6 +5704,122 @@ export const postsData = [
       <p class="text-xs text-slate-500 mt-6">Conteúdo informativo. Coberturas, obrigatoriedade, aceitação, limites, averbações e gerenciamento de riscos dependem da atividade, legislação vigente e condições contratuais de cada produto.</p>
     `
   },
+  {
+    id: 112,
+    slug: "seguro-salao-de-beleza-equipamentos-responsabilidade-civil",
+    title: "Seguro para Salão de Beleza: Equipamentos, Danos e Responsabilidade Civil",
+    date: "11 Ago, 2026",
+    category: "Seguro Empresarial",
+    readTime: "10 min",
+    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Veja quais coberturas comparar para proteger o imóvel, equipamentos, faturamento e atendimento do seu salão.",
+    content: `
+      <p class="mb-4">Um salão de beleza concentra equipamentos elétricos, produtos, mobiliário, circulação de clientes e serviços realizados diretamente em terceiros. Um seguro empresarial genérico pode proteger parte dessa operação, mas deixar lacunas justamente nos riscos mais ligados ao atendimento.</p>
+
+      <p class="mb-4">Antes de contratar, é importante separar quatro frentes: <strong>estrutura e conteúdo</strong>, <strong>equipamentos</strong>, <strong>paralisação</strong> e <strong>responsabilidade civil</strong>. A combinação adequada muda conforme o salão é próprio ou alugado, trabalha com profissionais parceiros, oferece procedimentos específicos ou vende produtos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quais riscos devem entrar na comparação?</h2>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100">
+              <th class="border border-slate-200 p-3 text-left">Situação</th>
+              <th class="border border-slate-200 p-3 text-left">Cobertura a avaliar</th>
+              <th class="border border-slate-200 p-3 text-left">Ponto de atenção</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-slate-200 p-3">Incêndio, raio ou explosão</td>
+              <td class="border border-slate-200 p-3">Cobertura básica empresarial</td>
+              <td class="border border-slate-200 p-3">Valor do prédio, benfeitorias e conteúdo</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 p-3">Queima de secadores, autoclaves ou aparelhos</td>
+              <td class="border border-slate-200 p-3">Danos elétricos e, quando disponível, equipamentos</td>
+              <td class="border border-slate-200 p-3">Depreciação, franquia e itens aceitos</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 p-3">Subtração de bens</td>
+              <td class="border border-slate-200 p-3">Roubo e modalidades de furto previstas</td>
+              <td class="border border-slate-200 p-3">Definições contratuais e comprovação</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 p-3">Reclamação de cliente</td>
+              <td class="border border-slate-200 p-3">Responsabilidade civil operacional ou profissional</td>
+              <td class="border border-slate-200 p-3">Atividades declaradas, exclusões e custos de defesa</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-200 p-3">Salão fechado após sinistro coberto</td>
+              <td class="border border-slate-200 p-3">Lucros cessantes ou despesas fixas</td>
+              <td class="border border-slate-200 p-3">Período indenitário e comprovação financeira</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Seguro empresarial cobre os equipamentos?</h2>
+      <p class="mb-4">Pode cobrir, desde que os bens estejam incluídos no conteúdo segurado e o evento esteja previsto. Incêndio e danos elétricos são riscos diferentes: a cobertura básica não deve ser interpretada automaticamente como proteção para qualquer defeito, desgaste ou quebra interna.</p>
+
+      <p class="mb-4">Liste secadores, pranchas, lavatórios, cadeiras, computadores, autoclaves, aparelhos de estética e demais itens relevantes. Para equipamentos de maior valor, confirme se a seguradora exige relação específica, notas fiscais, número de série ou cobertura própria.</p>
+
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-5 my-6 rounded-r-xl">
+        <p class="font-bold text-[#0d1f3c] mb-2">Salão em imóvel alugado</p>
+        <p class="text-slate-700">Separe o que pertence ao proprietário do imóvel, as benfeitorias realizadas pelo salão e o conteúdo da empresa. O contrato de locação também pode atribuir responsabilidades que precisam ser consideradas na proposta.</p>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Roubo, furto e bens levados para fora do salão</h2>
+      <p class="mb-4">As apólices diferenciam roubo, furto qualificado e outras formas de desaparecimento. Nem toda subtração está coberta. Além disso, itens usados em atendimento externo ou cursos podem precisar de proteção específica para circulação fora do endereço segurado.</p>
+
+      <p class="mb-4">A cotação deve informar fechaduras, alarmes, câmeras, horário de funcionamento, localização e valores máximos expostos. O objetivo não é apenas reduzir preço, mas evitar uma proposta incompatível com a segurança real do estabelecimento.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Responsabilidade civil operacional ou profissional?</h2>
+      <p class="mb-4">A responsabilidade civil operacional costuma tratar danos a terceiros relacionados à existência e ao funcionamento do estabelecimento, conforme as condições contratadas. Já a responsabilidade civil profissional pode abranger reclamações decorrentes da prestação de serviços declarados.</p>
+
+      <p class="mb-4">Para salão, barbearia ou espaço de estética, é essencial descrever todas as atividades: cabelo, unhas, maquiagem, depilação, procedimentos permitidos, cursos e venda de produtos. Uma atividade omitida ou excluída pode não ser analisada como se fizesse parte da operação informada.</p>
+
+      <p class="mb-4">Segundo a SUSEP, o seguro de responsabilidade civil busca proteger o patrimônio diante de reclamações por danos causados a terceiros, podendo haver coberturas relacionadas a custos de defesa. A abrangência depende da apólice, dos limites e das exclusões.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Profissionais parceiros estão automaticamente cobertos?</h2>
+      <p class="mb-4">Não se deve presumir. Contratação, vínculo, espaço compartilhado e responsabilidade por cada serviço precisam ser apresentados à seguradora. Confirme quem aparece como segurado, quais profissionais e atividades estão incluídos e como a apólice trata atos de terceiros ou prestadores.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Por que avaliar lucros cessantes?</h2>
+      <p class="mb-4">Consertar o espaço não resolve sozinho o período sem faturamento. Se um evento coberto interromper a operação, a cobertura de lucros cessantes ou despesas fixas pode ajudar dentro do limite e do período contratados. Para isso, organização financeira e comprovação de resultados são fundamentais.</p>
+
+      <p class="mb-4">Essa proteção não responde a qualquer queda de movimento. Ela normalmente depende de um dano material coberto que cause a paralisação, conforme as condições do produto.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quem deve considerar uma apólice mais completa?</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Salões com aparelhos ou mobiliário de alto valor.</li>
+        <li>Espaços que realizam diversas modalidades de atendimento.</li>
+        <li>Empresas com profissionais parceiros ou várias estações.</li>
+        <li>Operações que dependem integralmente do endereço para faturar.</li>
+        <li>Salões que levam equipamentos para eventos ou atendimento externo.</li>
+        <li>Estabelecimentos que mantêm estoque relevante de cosméticos.</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Checklist para cotar corretamente</h2>
+      <ol class="list-decimal pl-6 mb-6 space-y-2">
+        <li>Informe endereço, área, construção e ocupação do imóvel.</li>
+        <li>Separe valores de prédio, benfeitorias, móveis, equipamentos e estoque.</li>
+        <li>Descreva todos os serviços e os profissionais envolvidos.</li>
+        <li>Indique aparelhos de maior valor e uso fora do endereço.</li>
+        <li>Compare franquias, limites, exclusões e documentos exigidos.</li>
+        <li>Avalie o impacto financeiro de ficar dias ou semanas sem operar.</li>
+      </ol>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-6">O melhor seguro para salão de beleza não é o que apresenta a maior lista de coberturas, mas o que corresponde às atividades, aos equipamentos e à dependência financeira do estabelecimento. Comparar propostas exige usar os mesmos valores e riscos em todas elas.</p>
+
+      <div class="bg-[#0d1f3c] text-white p-7 rounded-2xl mt-8">
+        <h3 class="text-xl font-black mb-3">Quer proteger seu salão sem pagar por coberturas desconectadas?</h3>
+        <p class="mb-5 text-slate-200">A Elevance analisa equipamentos, serviços, imóvel e faturamento para comparar alternativas adequadas ao perfil do estabelecimento.</p>
+        <a href="https://wa.me/5511920144864?text=Olá%2C%20quero%20cotar%20seguro%20para%20meu%20salão%20de%20beleza" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#22c55e] hover:bg-[#16a34a] text-white font-black px-6 py-3 rounded-xl transition-colors">Solicitar cotação no WhatsApp</a>
+      </div>
+
+      <p class="text-xs text-slate-500 mt-6">Conteúdo informativo. Coberturas, atividades aceitas, franquias, limites, documentos e critérios de indenização variam conforme seguradora e condições contratuais.</p>
+    `
+  },
 
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
