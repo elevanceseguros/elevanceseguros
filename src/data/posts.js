@@ -5820,6 +5820,89 @@ export const postsData = [
       <p class="text-xs text-slate-500 mt-6">Conteúdo informativo. Coberturas, atividades aceitas, franquias, limites, documentos e critérios de indenização variam conforme seguradora e condições contratuais.</p>
     `
   },
+  {
+    id: 113,
+    slug: "seguro-para-academia-equipamentos-responsabilidade-civil",
+    title: "Seguro para Academia: Equipamentos, Acidentes e Responsabilidade Civil",
+    date: "12 Ago, 2026",
+    category: "Seguro Empresarial",
+    readTime: "10 min",
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Compare coberturas para máquinas, danos elétricos, paralisação e reclamações de alunos antes de proteger sua academia.",
+    content: `
+      <p class="mb-4">Academias, estúdios e boxes dependem de equipamentos caros, instalações elétricas, circulação constante de alunos e orientação profissional. Um seguro empresarial básico pode proteger incêndio, mas não deve ser confundido com uma solução automática para qualquer quebra de máquina ou acidente durante o treino.</p>
+
+      <p class="mb-4">A contratação correta separa três grupos de risco: <strong>patrimônio e equipamentos</strong>, <strong>interrupção da operação</strong> e <strong>responsabilidade por danos a terceiros</strong>. Cada cobertura tem limites, franquias e exclusões próprios.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Quais coberturas uma academia deve comparar?</h2>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse text-sm">
+          <thead><tr class="bg-slate-100"><th class="border border-slate-200 p-3 text-left">Risco</th><th class="border border-slate-200 p-3 text-left">Cobertura a avaliar</th><th class="border border-slate-200 p-3 text-left">Atenção</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-slate-200 p-3">Incêndio, raio ou explosão</td><td class="border border-slate-200 p-3">Cobertura básica empresarial</td><td class="border border-slate-200 p-3">Prédio, benfeitorias e conteúdo têm valores diferentes</td></tr>
+            <tr><td class="border border-slate-200 p-3">Queima de esteiras ou aparelhos</td><td class="border border-slate-200 p-3">Danos elétricos e equipamentos</td><td class="border border-slate-200 p-3">Desgaste e defeito interno podem estar excluídos</td></tr>
+            <tr><td class="border border-slate-200 p-3">Subtração de bens</td><td class="border border-slate-200 p-3">Roubo e modalidades de furto contratadas</td><td class="border border-slate-200 p-3">Definições e provas exigidas variam</td></tr>
+            <tr><td class="border border-slate-200 p-3">Reclamação de aluno ou visitante</td><td class="border border-slate-200 p-3">Responsabilidade civil operacional ou profissional</td><td class="border border-slate-200 p-3">Atividades, profissionais e exclusões devem ser declarados</td></tr>
+            <tr><td class="border border-slate-200 p-3">Fechamento após sinistro coberto</td><td class="border border-slate-200 p-3">Lucros cessantes ou despesas fixas</td><td class="border border-slate-200 p-3">Exige gatilho e comprovação previstos na apólice</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Máquinas e aparelhos estão automaticamente cobertos?</h2>
+      <p class="mb-4">Não. Esteiras, bicicletas, aparelhos de musculação, computadores, catracas e equipamentos de climatização precisam estar dentro do conteúdo segurado e sofrer um evento coberto. Danos elétricos não equivalem a manutenção, desgaste, falta de lubrificação ou quebra mecânica comum.</p>
+
+      <p class="mb-4">Para máquinas de alto valor, informe marca, modelo, idade, valor de reposição e documentos disponíveis. Confirme como a seguradora trata depreciação, franquia, peças importadas e equipamentos arrendados ou financiados.</p>
+
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-5 my-6 rounded-r-xl">
+        <p class="font-bold text-[#0d1f3c] mb-2">Imóvel alugado</p>
+        <p class="text-slate-700">Separe estrutura do proprietário, benfeitorias feitas pela academia e bens da empresa. O contrato de locação pode atribuir responsabilidades adicionais e deve entrar na análise.</p>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Responsabilidade civil cobre acidente de aluno?</h2>
+      <p class="mb-4">Pode haver cobertura para responsabilizações decorrentes de eventos involuntários previstos, mas não para todo acidente automaticamente. A SUSEP explica que o seguro de responsabilidade civil protege o segurado até o limite contratado quando ele é obrigado a reparar danos a terceiros, respeitando o contrato e a anuência da seguradora nos acordos.</p>
+
+      <p class="mb-4">É necessário declarar musculação, aulas coletivas, lutas, piscina, treino funcional, atendimento individual, eventos e demais atividades. Academias, estúdios de pilates e boxes apresentam riscos diferentes. Atos intencionais, atividades excluídas e obrigações assumidas fora das condições não devem ser presumidos como cobertos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">RC operacional e RC profissional são iguais?</h2>
+      <p class="mb-4">Não necessariamente. A cobertura operacional pode tratar danos associados à existência e ao funcionamento do local. A profissional pode alcançar reclamações ligadas à orientação ou prestação de serviços por profissionais declarados. A empresa deve confirmar quem aparece como segurado: academia, sócios, empregados, professores e prestadores.</p>
+
+      <p class="mb-4">Nunca reconheça responsabilidade, prometa pagamento ou faça acordo sem comunicar a seguradora, pois isso pode contrariar as condições da apólice.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Por que lucros cessantes importam?</h2>
+      <p class="mb-4">Mesmo após um evento coberto, aluguel, folha, sistemas e financiamentos continuam. Lucros cessantes ou despesas fixas podem ajudar durante a interrupção dentro do período e do limite contratados. A proteção costuma depender de dano material coberto e documentação financeira consistente.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Perfis que precisam de análise mais detalhada</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Academias com grande quantidade de aparelhos eletrônicos.</li>
+        <li>Boxes de treinamento funcional ou modalidades de maior intensidade.</li>
+        <li>Estúdios com atendimento individual e profissionais parceiros.</li>
+        <li>Operações com piscina, sauna ou áreas molhadas.</li>
+        <li>Unidades que funcionam em condomínio ou imóvel alugado.</li>
+        <li>Empresas dependentes de um único endereço para faturar.</li>
+      </ul>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Checklist para uma cotação comparável</h2>
+      <ol class="list-decimal pl-6 mb-6 space-y-2">
+        <li>Informe todas as modalidades oferecidas e horários.</li>
+        <li>Separe valores de imóvel, benfeitorias, máquinas e demais bens.</li>
+        <li>Liste equipamentos de alto valor e documentação disponível.</li>
+        <li>Descreva empregados, professores e prestadores parceiros.</li>
+        <li>Compare franquias, limites, exclusões e custos de defesa.</li>
+        <li>Calcule o impacto de permanecer sem operar após um sinistro.</li>
+      </ol>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Conclusão</h2>
+      <p class="mb-6">Seguro para academia precisa acompanhar as modalidades, os equipamentos e a estrutura jurídica da operação. Comparar apenas o preço pode deixar justamente as máquinas mais caras, a paralisação ou as reclamações de terceiros fora da proteção esperada.</p>
+
+      <div class="bg-[#0d1f3c] text-white p-7 rounded-2xl mt-8">
+        <h3 class="text-xl font-black mb-3">Quer comparar o seguro da sua academia?</h3>
+        <p class="mb-5 text-slate-200">A Elevance analisa atividades, máquinas, imóvel e faturamento para buscar uma proposta compatível com a operação real.</p>
+        <a href="https://wa.me/5511920144864?text=Olá%2C%20quero%20cotar%20seguro%20para%20minha%20academia" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#22c55e] hover:bg-[#16a34a] text-white font-black px-6 py-3 rounded-xl transition-colors">Solicitar cotação no WhatsApp</a>
+      </div>
+
+      <p class="text-xs text-slate-500 mt-6">Conteúdo informativo. Coberturas, atividades aceitas, limites, franquias e critérios de indenização variam conforme seguradora e condições contratuais.</p>
+    `
+  },
 
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
