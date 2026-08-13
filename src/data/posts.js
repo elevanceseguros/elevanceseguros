@@ -5903,6 +5903,83 @@ export const postsData = [
       <p class="text-xs text-slate-500 mt-6">Conteúdo informativo. Coberturas, atividades aceitas, limites, franquias e critérios de indenização variam conforme seguradora e condições contratuais.</p>
     `
   },
+  {
+    id: 114,
+    slug: "seguro-condominio-cobertura-simples-vs-ampla",
+    title: "Seguro Condomínio: Cobertura Básica Simples vs Ampla — Qual Escolher?",
+    date: "13 Ago, 2026",
+    category: "Seguro Condomínio",
+    readTime: "11 min",
+    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=800",
+    excerpt: "Compare cobertura básica simples, ampla, danos elétricos, responsabilidade civil e áreas comuns antes da renovação.",
+    content: `
+      <p class="mb-4">Na renovação do seguro do condomínio, comparar somente o prêmio pode esconder diferenças importantes. Duas propostas com o mesmo nome podem usar cobertura básica simples ou ampla, limites distintos e proteções adicionais muito diferentes para elevadores, portões, bombas, vidros e responsabilidade civil.</p>
+
+      <p class="mb-4">A escolha precisa acompanhar a construção, as áreas comuns, os equipamentos, o número de unidades e os riscos reais do local. Este guia mostra o que síndico, administradora e conselho devem colocar lado a lado antes de aprovar a apólice.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Cobertura básica simples ou ampla?</h2>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse text-sm">
+          <thead><tr class="bg-slate-100"><th class="border border-slate-200 p-3 text-left">Critério</th><th class="border border-slate-200 p-3 text-left">Básica simples</th><th class="border border-slate-200 p-3 text-left">Básica ampla</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-slate-200 p-3 font-bold">Estrutura</td><td class="border border-slate-200 p-3">Reúne incêndio, queda de raio dentro do terreno e explosão, conforme contrato</td><td class="border border-slate-200 p-3">Adota proteção mais abrangente para danos físicos, ressalvadas exclusões</td></tr>
+            <tr><td class="border border-slate-200 p-3 font-bold">Coberturas adicionais</td><td class="border border-slate-200 p-3">Precisam ser escolhidas e limitadas separadamente</td><td class="border border-slate-200 p-3">Alguns eventos integram a base ampla, mas outros continuam adicionais</td></tr>
+            <tr><td class="border border-slate-200 p-3 font-bold">Comparação</td><td class="border border-slate-200 p-3">Exige conferir cada risco e limite</td><td class="border border-slate-200 p-3">Exige atenção especial às exclusões e franquias</td></tr>
+            <tr><td class="border border-slate-200 p-3 font-bold">Perfil</td><td class="border border-slate-200 p-3">Pode funcionar quando adicionais são bem dimensionadas</td><td class="border border-slate-200 p-3">Pode ser adequada a operações mais complexas, após análise</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-4">A SUSEP relaciona, na cobertura simples, incêndio, queda de raio dentro do terreno segurado e explosão. A modalidade ampla trabalha com eventos que causem danos físicos ao imóvel, exceto os expressamente excluídos. “Ampla” não significa ausência de limites, franquias ou exclusões.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">O seguro cobre apartamentos e áreas comuns?</h2>
+      <p class="mb-4">O seguro condominial considera a edificação e as partes comuns dentro do interesse segurado e das condições contratadas. Isso não significa que os bens particulares de cada morador estejam automaticamente incluídos. Móveis, eletrônicos e responsabilidade familiar podem exigir seguro residencial próprio.</p>
+
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-5 my-6 rounded-r-xl">
+        <p class="font-bold text-[#0d1f3c] mb-2">Evite somar valores sem critério</p>
+        <p class="text-slate-700">O valor segurado da edificação não é simplesmente o preço de venda dos apartamentos. A cotação deve considerar reconstrução, características construtivas, áreas comuns e bens que efetivamente pertencem ao condomínio.</p>
+      </div>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Danos elétricos: elevador queimado está coberto?</h2>
+      <p class="mb-4">Pode estar, se houver cobertura compatível e o dano decorrer de evento previsto. Elevadores, portões, interfones, bombas, motores, sistemas de segurança e equipamentos de lazer precisam ser declarados e dimensionados. Desgaste, manutenção inadequada e defeito mecânico não devem ser confundidos com dano elétrico coberto.</p>
+
+      <p class="mb-4">Compare limite por evento, franquia, depreciação, peças aceitas e exigências de manutenção. Um limite baixo pode não acompanhar o custo de equipamentos modernos.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Vidros, vendaval, alagamento e impacto de veículos</h2>
+      <p class="mb-4">Esses riscos podem aparecer como coberturas adicionais ou integrar estruturas específicas de produto. Portarias envidraçadas, fachadas, coberturas, muros, jardins e garagens têm exposições diferentes. O endereço, histórico climático, topografia e circulação de veículos ajudam a definir prioridades.</p>
+
+      <p class="mb-4">Alagamento não é sinônimo de qualquer dano por água. Vazamento, infiltração, ruptura de tubulação e entrada de água externa podem receber tratamentos diferentes na apólice.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Responsabilidade civil do condomínio e do síndico</h2>
+      <p class="mb-4">A responsabilidade civil do condomínio pode proteger contra reclamações de terceiros decorrentes de eventos involuntários ligados às áreas e operações declaradas. Já a responsabilidade civil do síndico trata de sua atuação na administração, dentro dos riscos e limites contratados.</p>
+
+      <p class="mb-4">Funcionários, prestadores, obras, garagens, piscinas, academias e salões de festas criam exposições próprias. Não reconheça responsabilidade ou faça acordo sem comunicar a seguradora e observar o procedimento contratual.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Condomínio comercial, residencial ou misto</h2>
+      <p class="mb-4">A ocupação altera o risco. Restaurantes, lojas, clínicas, depósitos, carregadores de veículos elétricos e grande circulação de visitantes precisam ser informados. Condomínios mistos ou com atividades específicas não devem ser cotados como um residencial simples apenas para reduzir o prêmio.</p>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Checklist antes da assembleia</h2>
+      <ol class="list-decimal pl-6 mb-6 space-y-2">
+        <li>Atualize área construída, ocupação e padrão da edificação.</li>
+        <li>Liste elevadores, bombas, portões, sistemas e áreas de lazer.</li>
+        <li>Revise reformas, placas solares e carregadores elétricos.</li>
+        <li>Compare propostas com os mesmos limites e franquias.</li>
+        <li>Leia exclusões para água, equipamentos, obras e responsabilidade civil.</li>
+        <li>Registre a decisão e guarde proposta, apólice e inventário atualizado.</li>
+      </ol>
+
+      <h2 class="text-[#0d1f3c] font-black mt-8 mb-4 text-2xl">Qual modalidade escolher?</h2>
+      <p class="mb-4">A cobertura simples pode ser suficiente quando recebe adicionais coerentes e limites bem dimensionados. A ampla pode reduzir algumas lacunas, mas precisa ser examinada pelas exclusões. A decisão deve comparar o custo total e o cenário de sinistro, não apenas o nome da modalidade.</p>
+
+      <div class="bg-[#0d1f3c] text-white p-7 rounded-2xl mt-8">
+        <h3 class="text-xl font-black mb-3">A renovação do condomínio está próxima?</h3>
+        <p class="mb-5 text-slate-200">A Elevance compara modalidades, limites e franquias usando as características reais do prédio, para que síndico e conselho decidam com clareza.</p>
+        <a href="https://wa.me/5511920144864?text=Olá%2C%20quero%20cotar%20seguro%20para%20condomínio" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#22c55e] hover:bg-[#16a34a] text-white font-black px-6 py-3 rounded-xl transition-colors">Solicitar cotação no WhatsApp</a>
+      </div>
+
+      <p class="text-xs text-slate-500 mt-6">Conteúdo informativo. Coberturas, limites, franquias, exclusões, bens aceitos e critérios de indenização variam conforme seguradora e condições contratuais.</p>
+    `
+  },
 
   // Para adicionar novo post: copie o bloco acima, incremente o id e altere slug, title, date, category, image, excerpt e content.
 ];
