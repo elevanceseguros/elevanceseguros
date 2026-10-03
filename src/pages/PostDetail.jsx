@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { postsData } from '@/data/posts';
+import { postsData } from '@/data/allPosts';
 import { ArrowLeft, MessageCircle, Clock, Tag, ArrowRight, Shield, Heart, Car, Building2, Home, Coins } from 'lucide-react';
 
 const ctaConfig = {

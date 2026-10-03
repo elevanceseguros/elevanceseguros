@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { postsData } from '@/data/posts';
+import { postsData } from '@/data/allPosts';
 import { ChevronRight, Clock, Tag } from 'lucide-react';
 
 const BLOG_SLUG_ALIASES = {

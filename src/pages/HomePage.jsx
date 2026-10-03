@@ -1,4 +1,4 @@
-import { postsData } from '@/data/posts';
+import { postsData } from '@/data/allPosts';
 import ScrollCTA from '@/components/ScrollCTA';
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
