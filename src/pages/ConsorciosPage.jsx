@@ -1,0 +1,362 @@
+import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
+import { Home, Car, Briefcase, Zap, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, TrendingUp, Shield, Star , LayoutList} from 'lucide-react';
+import FAQ from '@/components/FAQ';
+import ScrollCTA from '@/components/ScrollCTA';
+import CorretorHero from '@/components/CorretorHero';
+
+const MEU_NUMERO = "5511920144864";
+
+const tipos = [
+  { icon: <Home size={32} className="text-[#0d1f3c]" />, titulo: "Consórcio Imóvel", desc: "Realize o sonho da casa própria sem juros abusivos. Parcelas que cabem no seu bolso.", tag: "Imóvel" },
+  { icon: <Car size={32} className="text-[#0d1f3c]" />, titulo: "Consórcio Veículo", desc: "Troque de carro ou moto com planejamento inteligente e zero juros.", tag: "Veículo" },
+  { icon: <Briefcase size={32} className="text-[#0d1f3c]" />, titulo: "Consórcio Serviços", desc: "Financie reformas, viagens, festas e muito mais sem comprometer o orçamento.", tag: "Serviços" },
+];
+
+const vantagens = [
+  { icon: <TrendingUp size={28} className="text-blue-600" />, titulo: "0% de Juros", desc: "Sem juros bancários. Você paga apenas a taxa de administração." },
+  { icon: <Shield size={28} className="text-blue-600" />, titulo: "100% Seguro", desc: "Regulamentado pelo Banco Central do Brasil." },
+  { icon: <Star size={28} className="text-blue-600" />, titulo: "Contemplação Rápida", desc: "Possibilidade de ser contemplado a qualquer momento por lance ou sorteio." },
+  { icon: <Zap size={28} className="text-blue-600" />, titulo: "Planejamento Inteligente", desc: "Ideal para quem quer conquistar bens com organização financeira." },
+];
+
+export default function ConsorciосPage() {
+  const [sent, setSent] = useState(false);
+  const [tipoSelecionado, setTipoSelecionado] = useState("Imóvel");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const nome = formData.get('nome');
+    const whatsapp = (formData.get('whatsapp') || '').replace(/[^0-9]/g, '');
+    const valor = (formData.get('valor') || '').trim();
+    try {
+      await fetch('https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nome, whatsapp, produto: `Consórcio de ${tipoSelecionado}`, origem: window.location.pathname, detalhes: valor ? { valor } : null }),
+      });
+    } catch (_) {}
+    setSent(true);
+  };
+
+  return (
+    <>
+      <Helmet>
+        <title>Consórcios | Imóvel, Veículo e Serviços | Elevance Seguros</title>
+        <meta name="description" content="Consórcios sem juros para imóvel, veículo e serviços. Planeje suas conquistas com inteligência. Simulação gratuita via WhatsApp." />
+        <meta name="keywords" content="consórcio imóvel SP, consórcio carro São Paulo, consórcio sem juros, consórcio serviços" />
+        <link rel="canonical" href="https://www.elevanceseguros.com/consorcios" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Consórcios", "item": "https://www.elevanceseguros.com/consorcios"}
+          ]
+        })}`}</script>
+              <meta property="og:type" content="website" />
+        <meta property="og:title" content="Consórcio em São Paulo | Imóvel e Veículo Sem Juros - Elevance" />
+        <meta property="og:description" content="Consórcio de imóvel e veículo sem juros em SP. Parceria Rodobens. Simule agora com a Elevance Seguros." />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80" />
+        <meta property="og:url" content="https://www.elevanceseguros.com/consorcios" />
+        <meta property="og:site_name" content="Elevance Seguros" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Consórcio em São Paulo | Imóvel e Veículo Sem Juros - Elevance" />
+        <meta name="twitter:description" content="Consórcio de imóvel e veículo sem juros em SP. Parceria Rodobens. Simule agora com a Elevance Seguros." />
+        <meta name="twitter:image" content="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80" />
+      </Helmet>
+
+      <CorretorHero operadora="um Consórcio" />
+
+      {/* HERO */}
+      <section className="relative pt-16 pb-12 md:pt-20 md:pb-16 bg-[#0a3018] overflow-hidden">
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
+              <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest backdrop-blur-sm">Realize seus Sonhos</span>
+              <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
+                Compre seu imóvel ou carro <br className="hidden md:block" />
+                <span className="text-blue-600">sem pagar juros abusivos.</span>
+              </h1>
+              <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
+                Consórcio é a forma mais <span className="text-gold-gradient font-black uppercase">inteligente</span> de conquistar imóveis, veículos e serviços sem pagar juros bancários abusivos.
+              </p>
+              <div className="flex flex-row justify-center lg:justify-start gap-4">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
+                  <Star size={14} className="text-yellow-500 fill-yellow-500" /> 0% de Juros
+                </div>
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
+                  <Shield size={14} className="text-blue-600" /> Regulado pelo Banco Central
+                </div>
+              </div>
+              {/* Logos parceiras no hero */}
+              <div className="flex items-center gap-5 justify-center lg:justify-start pt-2">
+                <span className="text-white/30 text-[10px] uppercase tracking-widest font-bold">Parceiros:</span>
+                <img src="/logos/rodobens_white.webp" alt="Rodobens" className="h-6 opacity-70" />
+                <div className="w-px h-4 bg-white/20"/>
+                <img src="/logos/embracon_white.webp" alt="Embracon" className="h-8 opacity-70" />
+              </div>
+            </div>
+
+            {/* FORMULÁRIO */}
+            <div className="w-full lg:w-2/5">
+              <div className="bg-white rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 p-8 md:p-10 relative min-h-[380px] flex flex-col justify-center">
+                
+                  {!sent ? (
+                    <div>
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d1f3c] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                        <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Simulação Gratuita
+                      </div>
+                      <form onSubmit={handleSubmit} className="space-y-4 mt-4">
+                        <div className="grid grid-cols-3 gap-2">
+                          {["Imóvel", "Veículo", "Serviços"].map((tipo) => (
+                            <button key={tipo} type="button" onClick={() => setTipoSelecionado(tipo)}
+                              className={`py-2 rounded-xl text-xs font-black uppercase transition-all ${tipoSelecionado === tipo ? 'bg-[#0d1f3c] text-white' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}>
+                              {tipo}
+                            </button>
+                          ))}
+                        </div>
+                        <input name="nome" type="text" required placeholder="Ex: João Silva" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
+                        <input name="whatsapp" type="tel" required placeholder="Ex: 11 99999-9999" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
+                        <input name="valor" type="text" placeholder="Valor de crédito desejado (opcional)" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-blue-600 transition-all" />
+                        <div className="flex items-center justify-center gap-1.5 bg-orange-50 border border-orange-100 rounded-xl py-2 px-3">
+                          <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse inline-block"></span>
+                          <span className="text-[10px] font-black text-orange-600">⚡ Cotação gratuita · Sem compromisso</span>
+                        </div>
+                        <button type="submit" className="w-full bg-[#0d1f3c] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                          SIMULAR VIA WHATSAPP <MessageCircle size={16} />
+                        </button>
+                        <div className="flex items-center justify-center gap-3 flex-wrap">
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🔒 Dados sigilosos</span>
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">⚡ Resposta em até 2h</span>
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🚫 Sem spam</span>
+                        </div>
+                      </form>
+                    </div>
+                  ) : (
+                    <div>
+                      <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto"><PartyPopper size={40} /></div>
+                      <h3 className="text-2xl font-black text-[#0d1f3c] italic">Solicitação Enviada!</h3>
+                      <p className="text-slate-500 text-sm">Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊</p>
+                    </div>
+                  )}
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PARCEIRAS */}
+      <section className="py-14 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <p className="text-center text-slate-400 text-xs uppercase tracking-widest font-bold mb-10">Parceiros das maiores administradoras de consórcio do Brasil</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            {/* Rodobens */}
+            <div className="rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all">
+              <div className="bg-[#00441f] px-8 py-6 flex items-center justify-center">
+                <img src="/logos/rodobens_white.webp" alt="Rodobens" className="h-10" />
+              </div>
+              <div className="p-6">
+                <p className="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">Rodobens Consórcio</p>
+                <p className="text-slate-600 text-sm leading-relaxed">Maior administradora independente do Brasil. Mais de 180 mil consorciados ativos, cartas de crédito para imóvel, veículo e serviços.</p>
+                <div className="flex gap-2 mt-4 flex-wrap">
+                  {[
+                    { label: "Imóvel", icon: <Home size={10}/> },
+                    { label: "Veículo", icon: <Car size={10}/> },
+                    { label: "Serviços", icon: <Briefcase size={10}/> },
+                  ].map(t => (
+                    <span key={t.label} className="flex items-center gap-1 bg-[#00441f]/10 text-[#00441f] text-xs font-bold px-3 py-1 rounded-full">{t.icon}{t.label}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+            {/* Embracon */}
+            <div className="rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all">
+              <div className="bg-[#cc0000] px-8 py-6 flex items-center justify-center">
+                <img src="/logos/embracon.webp" alt="Embracon" className="h-10 brightness-0 invert" />
+              </div>
+              <div className="p-6">
+                <p className="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">Embracon Consórcio</p>
+                <p className="text-slate-600 text-sm leading-relaxed">Uma das maiores administradoras do país. Ampla variedade de cartas de crédito com flexibilidade de prazos e valores para todos os perfis.</p>
+                <div className="flex gap-2 mt-4 flex-wrap">
+                  {[
+                    { label: "Imóvel", icon: <Home size={10}/> },
+                    { label: "Veículo", icon: <Car size={10}/> },
+                    { label: "Serviços", icon: <Briefcase size={10}/> },
+                  ].map(t => (
+                    <span key={t.label} className="flex items-center gap-1 bg-red-50 text-red-600 text-xs font-bold px-3 py-1 rounded-full">{t.icon}{t.label}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TIPOS */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-black text-[#0d1f3c] italic text-center mb-3">Tipos de Consórcio</h2>
+          <p className="text-slate-500 text-center font-medium mb-12">Escolha o que faz mais sentido para você</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {tipos.map((t, i) => (
+              <div key={i} className="bg-white rounded-3xl p-8 border border-slate-100 hover:shadow-lg transition-all">
+                <div className="mb-4">{t.icon}</div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-[#0d1f3c] bg-blue-50 px-3 py-1 rounded-full">{t.tag}</span>
+                <h3 className="font-black text-[#0d1f3c] text-xl italic mt-4 mb-2">{t.titulo}</h3>
+                <p className="text-slate-500 text-sm font-medium leading-relaxed">{t.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* VANTAGENS */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="bg-slate-900 rounded-[50px] p-8 md:p-16 text-white">
+            <h2 className="text-3xl md:text-4xl font-black italic text-center mb-12">Por que escolher Consórcio?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {vantagens.map((v, i) => (
+                <div>
+                  <div className="mb-3">{v.icon}</div>
+                  <div className="font-black text-white text-sm uppercase tracking-wide italic mb-2">{v.titulo}</div>
+                  <div className="text-slate-400 text-sm font-medium leading-relaxed">{v.desc}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* COMO FUNCIONA */}
+      <section className="py-20 bg-white">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-black text-[#0d1f3c] italic mb-12">Como funciona?</h2>
+          <div className="space-y-6 text-left">
+            {[
+              { n: "01", titulo: "Escolha o seu consórcio", desc: "Imóvel, veículo ou serviço — defina o valor da carta de crédito que precisa." },
+              { n: "02", titulo: "Ingresse no grupo", desc: "Você passa a fazer parte de um grupo de consorciados com o mesmo objetivo." },
+              { n: "03", titulo: "Seja contemplado", desc: "Todo mês há contemplações por sorteio ou lance. Quando contemplado, você usa o crédito para adquirir o bem." },
+              { n: "04", titulo: "Conquiste seu sonho", desc: "Com o crédito em mãos, compre seu imóvel, carro ou invista no serviço desejado." },
+            ].map((p, i) => (
+              <div key={i} className="flex items-start gap-4">
+                <div className="min-w-10 h-10 rounded-2xl bg-blue-600 flex items-center justify-center text-white font-black text-xs flex-shrink-0">{p.n}</div>
+                <div>
+                  <div className="font-black text-[#0d1f3c] text-sm uppercase tracking-wide italic mb-1">{p.titulo}</div>
+                  <div className="text-slate-500 text-sm font-medium leading-relaxed">{p.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      {/* Tabela + Depoimento */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+            {/* Tabela de valores */}
+            <div className="bg-white rounded-[40px] shadow-xl overflow-hidden border border-slate-100">
+              <div className="bg-[#0d1f3c] p-6 text-white flex items-center gap-3">
+                <LayoutList className="w-5 h-5 opacity-80" />
+                <div>
+                  <h2 className="text-lg font-black uppercase tracking-tight">Simulação de Parcelas</h2>
+                  <p className="text-white/70 text-xs mt-0.5">SP 2026 · Valores aproximados</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b-2 border-slate-50 text-left">
+                      <th className="py-3 font-bold text-slate-400 text-xs uppercase">Bem / Carta</th>
+                      <th className="py-3 font-bold text-slate-600 text-xs uppercase">Prazo</th>
+                      <th className="py-3 font-bold text-[#0d1f3c] text-xs uppercase">Parcela aprox.</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-50">
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">Imóvel R$ 200k</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">200 meses</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">R$ 1.200 – R$ 1.400</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">Imóvel R$ 400k</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">200 meses</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">R$ 2.200 – R$ 2.600</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">Veículo R$ 60k</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">80 meses</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">R$ 820 – R$ 980</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">Veículo R$ 120k</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">80 meses</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">R$ 1.500 – R$ 1.800</td>
+                      </tr>
+                  </tbody>
+                </table>
+                <p className="text-[10px] text-slate-400 italic mt-3">*Valores referenciais. Variam por administradora e prazo escolhido.</p>
+                <a
+                  href={`https://wa.me/5511920144864?text=Ol%C3%A1+Rodrigo%2C+quero+simular+um+cons%C3%B3rcio`}
+                  target="_blank" rel="noreferrer"
+                  className="w-full mt-5 bg-[#0d1f3c] hover:bg-blue-700 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2">
+                  Simular Meu Consórcio <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Depoimento */}
+            <div className="bg-white p-6 rounded-[30px] shadow-xl border border-slate-100 flex flex-col justify-center">
+              <div className="flex gap-0.5 mb-4">
+                {[...Array(5)].map((_, i) => <Star key={i} size={14} className="text-yellow-400 fill-yellow-400" />)}
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed mb-5 italic font-medium">&ldquo;Nunca imaginei que seria tão simples adquirir meu imóvel. O Rodrigo explicou tudo com clareza e me ajudou a escolher o consórcio ideal para meu perfil.&rdquo;</p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-2xl bg-[#0d1f3c] flex items-center justify-center text-white font-black text-sm shrink-0">
+                  F
+                </div>
+                <div>
+                  <div className="font-black text-[#0d1f3c] text-sm">Fernanda</div>
+                  <div className="text-slate-400 text-xs font-medium">São Paulo, SP · Consórcio de Imóvel</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="bg-[#0d1f3c] rounded-[50px] p-12 text-center">
+            <h2 className="text-3xl font-black text-white italic mb-3">Pronto para conquistar seu sonho?</h2>
+            <p className="text-slate-300 font-medium mb-8">Simulação gratuita e sem compromisso</p>
+            <a href={`https://wa.me/${MEU_NUMERO}?text=Olá, quero simular um Consórcio`} target="_blank" rel="noreferrer"
+              className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg hover:scale-105">
+              <MessageCircle size={18} /> Simular no WhatsApp <ArrowRight size={16} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "Consórcio tem juros?", resposta: "Não! O consórcio não cobra juros — apenas uma taxa de administração que varia entre 15% e 20% do valor total, diluída nas parcelas. Em comparação, um financiamento pode cobrar mais de 100% do valor do bem em juros ao longo do prazo." },
+    { pergunta: "Como funciona a contemplação no consórcio?", resposta: "A contemplação acontece de duas formas: sorteio mensal entre todos os participantes adimplentes, ou lance — onde você oferta um valor adicional (percentual do crédito) para antecipar a contemplação. Quem oferta o maior lance percentual é contemplado. É possível usar o FGTS como lance em consórcios imobiliários." },
+    { pergunta: "Posso usar a carta de crédito do consórcio para qualquer imóvel?", resposta: "Sim! A carta de crédito imobiliária pode ser usada para comprar imóvel novo ou usado, terreno, ou para construção/reforma. O imóvel precisa estar regularizado e ter matrícula no cartório de registro de imóveis." },
+    { pergunta: "O que acontece se eu não pagar as parcelas do consórcio?", resposta: "Em caso de inadimplência, você fica suspenso dos sorteios e pode ser excluído do grupo. O valor pago pode ser resgatado (com desconto de multa e taxa de administração) após o encerramento do grupo. Por isso, é importante calcular bem o valor da parcela antes de entrar." },
+    { pergunta: "Consórcio é seguro? Quem fiscaliza?", resposta: "Sim! Os consórcios no Brasil são fiscalizados pelo Banco Central (BACEN), que autoriza e supervisiona as administradoras. A ABAC (Associação Brasileira de Administradoras de Consórcios) também regula o setor. Sempre verifique se a administradora tem autorização ativa no site do Banco Central." }
+  ]} />
+      <ScrollCTA produto="Consórcio" />
+    </>
+  );
+}

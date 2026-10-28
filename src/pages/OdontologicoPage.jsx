@@ -1,0 +1,214 @@
+import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
+import { Smile, ShieldCheck, Zap, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star, Heart } from 'lucide-react';
+import FAQ from '@/components/FAQ';
+import ScrollCTA from '@/components/ScrollCTA';
+import CorretorHero from '@/components/CorretorHero';
+import OperadoraPlanoSection from '@/components/OperadoraPlanoSection';
+
+const MEU_NUMERO = "5511920144864";
+
+const beneficios = [
+  { icon: <Smile size={28} className="text-sky-200" />, titulo: "Consultas e Limpeza", desc: "Consultas, limpeza e radiografias com custo acessível." },
+  { icon: <ShieldCheck size={28} className="text-sky-600" />, titulo: "Sem Carência", desc: "Planos com carência reduzida ou zero para urgências." },
+  { icon: <Heart size={28} className="text-sky-600" />, titulo: "Toda a Família", desc: "Planos individuais e familiares que cabem no orçamento." },
+  { icon: <Star size={28} className="text-sky-600" />, titulo: "Rede Credenciada", desc: "Acesso a dentistas e clínicas em São Paulo e em todo o Brasil." },
+];
+
+export default function OdontologicoPage() {
+  const [sent, setSent] = useState(false);
+  const [pessoas, setPessoas] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const nome = formData.get('nome');
+    const whatsapp = (formData.get('whatsapp') || '').replace(/[^0-9]/g, '');
+    try {
+      await fetch('https://n8n.srv1570723.hstgr.cloud/webhook/elevance-site-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nome, whatsapp, produto: 'Plano Odontológico', origem: window.location.pathname, detalhes: pessoas ? { pessoas } : null }),
+      });
+    } catch (_) {}
+    setSent(true);
+  };
+
+  return (
+    <>
+      <Helmet>
+        <title>Plano Odontológico | Cotação Gratuita | Elevance Seguros</title>
+        <meta name="description" content="Planos odontológicos individuais e familiares em São Paulo. Consultas, tratamentos e urgências com a melhor rede credenciada. Cotação gratuita." />
+        <meta name="keywords" content="plano odontológico SP, plano dental São Paulo, cotação plano odontológico" />
+              <link rel="canonical" href="https://www.elevanceseguros.com/odontologico" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Plano Odontológico", "item": "https://www.elevanceseguros.com/odontologico"}
+          ]
+        })}`}</script>
+              <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Elevance Seguros" />
+        <meta name="twitter:description" content="Corretora de seguros 100% digital em São Paulo." />
+        <meta name="twitter:image" content="https://www.elevanceseguros.com/preview.webp" />
+      </Helmet>
+
+      <CorretorHero operadora="um Plano Odontológico" />
+
+      {/* HERO */}
+      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-[#075985] overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
+
+            <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
+              <span className="inline-block bg-sky-100 text-sky-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Saúde Bucal Completa</span>
+              <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
+                Sorria com <br className="hidden md:block" />
+                <span className="text-sky-600">tranquilidade.</span>
+              </h1>
+              <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
+                Planos odontológicos <span className="text-sky-600 font-black uppercase">acessíveis</span> para você e sua família. Consultas, tratamentos, urgências e muito mais.
+              </p>
+              <ul className="space-y-3 text-left max-w-xl mx-auto lg:mx-0">
+                {[
+                  "Consultas e limpeza sem custo adicional",
+                  "Tratamento de canal, extrações e restaurações",
+                  "Ortodontia disponível em planos selecionados",
+                  "Urgências e emergências cobertas",
+                  "Rede credenciada em todo o Brasil",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-white/90 font-medium text-sm">
+                    <CheckCircle2 className="w-5 h-5 text-sky-500 flex-shrink-0" /> {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-row justify-center lg:justify-start gap-4">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
+                  <Star size={14} className="text-yellow-500 fill-yellow-500" /> Atendimento 5 estrelas
+                </div>
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
+                  <ShieldCheck size={14} className="text-sky-600" /> 100% Gratuito
+                </div>
+              </div>
+            </div>
+
+            {/* FORMULÁRIO */}
+            <div className="w-full lg:w-2/5">
+              <div className="bg-white rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 p-8 md:p-10 relative min-h-[320px] flex flex-col justify-center">
+                
+                  {!sent ? (
+                    <div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d1f3c] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                        <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Cotação Gratuita
+                      </div>
+                      <form onSubmit={handleSubmit} className="space-y-4 mt-4">
+                        <input name="nome" type="text" required placeholder="Ex: João Silva"
+                          className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-sky-500 transition-all" />
+                        <input name="whatsapp" type="tel" required placeholder="Ex: 11 99999-9999"
+                          className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-sky-500 transition-all" />
+                        <div>
+                          <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 px-1">Quantas pessoas no plano? (opcional)</p>
+                          <div className="grid grid-cols-3 gap-2">
+                            {['1', '2-4', '5+'].map((opt) => (
+                              <button key={opt} type="button" onClick={() => setPessoas(pessoas === opt ? null : opt)}
+                                className={`py-3 rounded-xl text-xs font-black uppercase transition-all ${pessoas === opt ? 'bg-[#0d1f3c] text-white' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}>
+                                {opt}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                        <button type="submit"
+                          className="w-full bg-[#0d1f3c] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                          QUERO MINHA COTAÇÃO GRÁTIS <MessageCircle size={16} />
+                        </button>
+                        <div className="flex items-center justify-center gap-3 flex-wrap">
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🔒 Dados sigilosos</span>
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">⚡ Resposta em até 2h</span>
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🚫 Sem spam</span>
+                        </div>
+                      </form>
+                    </div>
+                  ) : (
+                    <div key="success" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="text-center space-y-6">
+                      <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto"><PartyPopper size={40} /></div>
+                      <h3 className="text-2xl font-black text-[#0d1f3c] italic">Solicitação Enviada!</h3>
+                      <p className="text-slate-500 text-sm">Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊</p>
+                    </div>
+                  )}
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BENEFÍCIOS */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-black text-[#0d1f3c] italic text-center mb-12">O que está incluso?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {beneficios.map((b, i) => (
+              <div
+                className="bg-sky-50 rounded-[30px] p-8 border border-sky-100 hover:shadow-md transition-shadow">
+                <div className="mb-4">{b.icon}</div>
+                <div className="font-black text-[#0d1f3c] text-sm uppercase tracking-wide mb-2 italic">{b.titulo}</div>
+                <div className="text-slate-500 text-sm font-medium leading-relaxed">{b.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <OperadoraPlanoSection
+        operadora="Plano Odontológico SulAmérica"
+        cor="#0ea5e9"
+        labelEnf="Plano Básico"
+        labelApto="Plano Completo"
+        tabela={[
+          {idade: 'Individual', enf: 'R$ 49,90', apto: 'R$ 79,90'},
+          {idade: 'Familiar (2 vidas)', enf: 'R$ 89,80', apto: 'R$ 143,80'},
+          {idade: 'Familiar (3+ vidas)', enf: 'R$ 42,90/vida', apto: 'R$ 68,90/vida'},
+        ]}
+        hospitais={[
+          {nome: 'OdontoCompany', regiao: 'Todo SP', desc: 'Maior rede odontológica do Brasil com mais de 800 clínicas em SP.'},
+          {nome: 'OdontoPrev', regiao: 'Todo SP', desc: 'Rede credenciada com clínicas em todos os bairros de SP.'},
+          {nome: 'Sorridents', regiao: 'Grande SP', desc: 'Franquia odontológica com alta capilaridade na região.'},
+          {nome: 'Clínicas Privadas Credenciadas', regiao: 'São Paulo, SP', desc: 'Ampla rede de dentistas particulares conveniados.'},
+        ]}
+        depoimento={{
+          inicial: 'J',
+          nome: 'Juliana',
+          local: 'Mooca, SP',
+          texto: 'Finalmente tenho plano odontológico com preço justo. O Rodrigo me ajudou a escolher o SulAmérica Dental e cobre tudo que preciso!'
+        }}
+      />
+
+      {/* CTA */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="bg-[#0d1f3c] rounded-[50px] p-12 text-center">
+            <h2 className="text-3xl font-black text-white italic mb-3">Pronto para cuidar do seu sorriso?</h2>
+            <p className="text-slate-300 font-medium mb-8">Cotação gratuita e sem compromisso</p>
+            <a href={`https://wa.me/${MEU_NUMERO}?text=Olá, quero cotar um Plano Odontológico`} target="_blank" rel="noreferrer"
+              className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg hover:scale-105">
+              <MessageCircle size={18} /> Chamar no WhatsApp <ArrowRight size={16} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "Plano odontológico individual tem carência?", resposta: "Sim. A maioria dos planos odontológicos tem carência de 30 dias para consultas, 90 dias para procedimentos simples (limpeza, extração) e 180 dias para procedimentos mais complexos como canal, próteses e ortodontia. Urgências como dor intensa e hemorragia são atendidas imediatamente." },
+    { pergunta: "Implante dentário é coberto pelo plano odontológico?", resposta: "Depende do plano. Implantes não são obrigatórios pela ANS, mas alguns planos premium oferecem cobertura parcial ou total. A maioria cobre a prótese sobre implante, mas não o implante (o pino de titânio) em si. Verifique sempre o rol de cobertura antes de contratar." },
+    { pergunta: "Qual a diferença entre plano odontológico e dental?", resposta: "São a mesma coisa — dental e odontológico são termos sinônimos para planos de assistência odontológica. Os planos variam conforme a rede credenciada, cobertura de procedimentos e valor. Na Elevance, comparamos as melhores opções disponíveis em São Paulo." },
+    { pergunta: "Plano odontológico cobre ortodontia (aparelho)?", resposta: "Nem todos cobrem. Ortodontia é um item opcional e os planos que oferecem cobrem geralmente aparelhos metálicos convencionais com carência de 180 dias. Aparelhos estéticos (invisalign, cerâmico) raramente são cobertos. Sempre confirme antes de contratar." }
+  ]} />
+      <ScrollCTA produto="Plano Odontológico" />
+    </>
+  );
+}

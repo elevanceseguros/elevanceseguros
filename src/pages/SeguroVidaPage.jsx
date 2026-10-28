@@ -1,0 +1,263 @@
+import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
+import { Heart, ShieldCheck, Zap, Users, CheckCircle2, MessageCircle, PartyPopper, ArrowRight, Star , LayoutList} from 'lucide-react';
+import FAQ from '@/components/FAQ';
+import ScrollCTA from '@/components/ScrollCTA';
+import CorretorHero from '@/components/CorretorHero';
+import { buildWhatsAppUrl } from '@/config/business';
+import { submitLead } from '@/lib/submitLead';
+
+const coberturas = [
+  { icon: <Heart size={28} className="text-yellow-300" />, titulo: "Morte", desc: "Capital segurado pago aos beneficiários em caso de falecimento por qualquer causa." },
+  { icon: <ShieldCheck size={28} className="text-rose-600" />, titulo: "Invalidez", desc: "Indenização em caso de invalidez permanente total ou parcial por acidente." },
+  { icon: <Zap size={28} className="text-rose-600" />, titulo: "Doenças Graves", desc: "Cobertura para câncer, infarto, AVC e outras doenças graves especificadas." },
+  { icon: <Users size={28} className="text-rose-600" />, titulo: "Diária Hospitalar", desc: "Valor diário pago enquanto estiver internado por acidente ou doença." },
+];
+
+export default function SeguroVidaPage() {
+  const [sent, setSent] = useState(false);
+  const [dependentes, setDependentes] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const nome = formData.get('nome');
+    const whatsapp = (formData.get('whatsapp') || '').replace(/[^0-9]/g, '');
+
+    await submitLead({
+      nome,
+      whatsapp,
+      produto: 'Seguro de Vida',
+      origem: window.location.pathname,
+      detalhes: dependentes ? { dependentes } : null,
+    });
+
+    setSent(true);
+  };
+
+  return (
+    <>
+      <Helmet>
+        <title>Seguro de Vida | Cotação Gratuita | Elevance Seguros</title>
+        <meta name="description" content="Seguro de vida com cobertura completa para você e sua família. Morte, invalidez, doenças graves e diária hospitalar. Cotação gratuita via WhatsApp." />
+        <meta name="keywords" content="seguro de vida SP, seguro vida São Paulo, cotação seguro vida, seguro vida família" />
+        <link rel="canonical" href="https://www.elevanceseguros.com/seguro-vida" />
+      
+        <script type="application/ld+json">{`${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.elevanceseguros.com"},
+            {"@type": "ListItem", "position": 2, "name": "Seguro de Vida", "item": "https://www.elevanceseguros.com/seguro-vida"}
+          ]
+        })}`}</script>
+              <meta property="og:type" content="website" />
+        <meta property="og:title" content="Seguro de Vida em São Paulo | Cotação Gratuita - Elevance" />
+        <meta property="og:description" content="Proteja sua família com o seguro de vida ideal. A partir de R$ 35/mês. Cotação gratuita com a Elevance Seguros." />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80" />
+        <meta property="og:url" content="https://www.elevanceseguros.com/seguro-vida" />
+        <meta property="og:site_name" content="Elevance Seguros" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Seguro de Vida em São Paulo | Cotação Gratuita - Elevance" />
+        <meta name="twitter:description" content="Proteja sua família com o seguro de vida ideal. A partir de R$ 35/mês. Cotação gratuita com a Elevance Seguros." />
+        <meta name="twitter:image" content="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80" />
+      </Helmet>
+
+      <CorretorHero operadora="um Seguro de Vida" />
+
+      <section className="relative pt-10 pb-12 md:pt-14 md:pb-16 bg-[#7f1d1d] overflow-hidden">
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: "radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px"}}></div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
+              <span className="inline-block bg-rose-100 text-rose-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Proteção para quem você ama</span>
+              <h1 className="text-3xl md:text-5xl font-black text-white leading-tight italic">
+                E se você faltar amanhã, <br className="hidden md:block" />
+                <span className="text-rose-600">sua família está protegida?</span>
+              </h1>
+              <p className="text-white/80 text-base md:text-lg max-w-xl mx-auto lg:mx-0 font-medium italic">
+                O seguro de vida garante que as pessoas que você ama estarão <span className="text-rose-600 font-black uppercase">financeiramente protegidas</span>, independente do que aconteça.
+              </p>
+              <ul className="space-y-3 text-left max-w-xl mx-auto lg:mx-0">
+                {["Cobertura para morte por qualquer causa", "Invalidez permanente total ou parcial", "Doenças graves: câncer, infarto, AVC", "Diária de internação hospitalar", "Assistência funeral para toda a família"].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-white/90 font-medium text-sm">
+                    <CheckCircle2 className="w-5 h-5 text-rose-500 flex-shrink-0" /> {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-row justify-center lg:justify-start gap-4">
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
+                  <Star size={14} className="text-yellow-500 fill-yellow-500" /> A partir de R$ 30/mês
+                </div>
+                <div className="flex items-center gap-2 text-[10px] font-black uppercase text-white bg-white/15 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-sm">
+                  <ShieldCheck size={14} className="text-rose-600" /> Regulado pela SUSEP
+                </div>
+              </div>
+            </div>
+            <div className="w-full lg:w-2/5">
+              <div className="bg-white rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 p-8 md:p-10 relative min-h-[320px] flex flex-col justify-center">
+                
+                  {!sent ? (
+                    <div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d1f3c] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2 whitespace-nowrap z-10">
+                        <Zap size={14} className="text-yellow-400 fill-yellow-400" /> Simulação Gratuita
+                      </div>
+                      <form onSubmit={handleSubmit} className="space-y-4 mt-4">
+                        <input name="nome" type="text" required placeholder="Ex: João Silva" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-rose-500 transition-all" />
+                        <input name="whatsapp" type="tel" required placeholder="Ex: 11 99999-9999" className="w-full bg-slate-50 border-none rounded-2xl py-4 px-6 text-sm outline-none focus:ring-2 focus:ring-rose-500 transition-all" />
+                        <div>
+                          <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 px-1">Tem dependentes? (opcional)</p>
+                          <div className="grid grid-cols-2 gap-2">
+                            {['Sim', 'Não'].map((opt) => (
+                              <button key={opt} type="button" onClick={() => setDependentes(dependentes === opt ? null : opt)}
+                                className={`py-3 rounded-xl text-xs font-black uppercase transition-all ${dependentes === opt ? 'bg-[#0d1f3c] text-white' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}>
+                                {opt}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-center gap-1.5 bg-orange-50 border border-orange-100 rounded-xl py-2 px-3">
+                          <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse inline-block"></span>
+                          <span className="text-[10px] font-black text-orange-600">⚡ Cotação gratuita · Sem compromisso</span>
+                        </div>
+                        <button type="submit" className="w-full bg-[#0d1f3c] hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                          SIMULAR VIA WHATSAPP <MessageCircle size={16} />
+                        </button>
+                        <div className="flex items-center justify-center gap-3 flex-wrap">
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🔒 Dados sigilosos</span>
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">⚡ Resposta em até 2h</span>
+                          <span className="text-[9px] text-slate-400 font-bold flex items-center gap-1">🚫 Sem spam</span>
+                        </div>
+                      </form>
+                    </div>
+                  ) : (
+                    <div key="success" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="text-center space-y-6">
+                      <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto"><PartyPopper size={40} /></div>
+                      <h3 className="text-2xl font-black text-[#0d1f3c] italic">Solicitação Enviada!</h3>
+                      <p className="text-slate-500 text-sm">Fique atento ao seu WhatsApp, entraremos em contato em instantes. 😊</p>
+                    </div>
+                  )}
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-black text-[#0d1f3c] italic text-center mb-12">O que está coberto?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {coberturas.map((b, i) => (
+              <div
+                className="bg-rose-50 rounded-[30px] p-8 border border-rose-100 hover:shadow-md transition-shadow">
+                <div className="mb-4">{b.icon}</div>
+                <div className="font-black text-[#0d1f3c] text-sm uppercase tracking-wide mb-2 italic">{b.titulo}</div>
+                <div className="text-slate-500 text-sm font-medium leading-relaxed">{b.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+            {/* Tabela de valores */}
+            <div className="bg-white rounded-[40px] shadow-xl overflow-hidden border border-slate-100">
+              <div className="bg-[#0d1f3c] p-6 text-white flex items-center gap-3">
+                <LayoutList className="w-5 h-5 opacity-80" />
+                <div>
+                  <h2 className="text-lg font-black uppercase tracking-tight">Valores Referenciais</h2>
+                  <p className="text-white/70 text-xs mt-0.5">SP 2026 · Varia por idade e cobertura</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b-2 border-slate-50 text-left">
+                      <th className="py-3 font-bold text-slate-400 text-xs uppercase">Perfil</th>
+                      <th className="py-3 font-bold text-slate-600 text-xs uppercase">Capital Segurado</th>
+                      <th className="py-3 font-bold text-[#0d1f3c] text-xs uppercase">Mensalidade aprox.</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-50">
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">30 anos · Sem fumante</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">R$ 100.000</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">R$ 35 – R$ 55</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">40 anos · Sem fumante</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">R$ 200.000</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">R$ 80 – R$ 120</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">50 anos · Sem fumante</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">R$ 300.000</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">R$ 180 – R$ 260</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 text-slate-600 font-medium text-xs">Vida em Grupo (empresa)</td>
+                        <td className="py-3 text-slate-700 font-semibold text-sm">Conforme folha</td>
+                        <td className="py-3 font-black text-sm text-[#0d1f3c]">A partir de R$ 15/vida</td>
+                      </tr>
+                  </tbody>
+                </table>
+                <p className="text-[10px] text-slate-400 italic mt-3">*Valores referenciais. Variam por seguradora, idade e coberturas contratadas.</p>
+                <a
+                  href={buildWhatsAppUrl('Olá Rodrigo, quero cotar Seguro de Vida')}
+                  target="_blank" rel="noreferrer"
+                  className="w-full mt-5 bg-[#0d1f3c] hover:bg-blue-700 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg flex items-center justify-center gap-2">
+                  Cotar Seguro de Vida <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Depoimento */}
+            <div className="bg-white p-6 rounded-[30px] shadow-xl border border-slate-100 flex flex-col justify-center">
+              <div className="flex gap-0.5 mb-4">
+                {[...Array(5)].map((_, i) => <Star key={i} size={14} className="text-yellow-400 fill-yellow-400" />)}
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed mb-5 italic font-medium">&ldquo;Sempre deixei o seguro de vida de lado achando que era caro. O Rodrigo me mostrou um plano perfeito dentro do meu orçamento. Hoje durmo tranquilo sabendo que minha família está protegida.&rdquo;</p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-2xl bg-[#0d1f3c] flex items-center justify-center text-white font-black text-sm shrink-0">
+                  M
+                </div>
+                <div>
+                  <div className="font-black text-[#0d1f3c] text-sm">Marcos</div>
+                  <div className="text-slate-400 text-xs font-medium">São Paulo, SP · Seguro de Vida</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="bg-[#0d1f3c] rounded-[50px] p-12 text-center">
+            <h2 className="text-3xl font-black text-white italic mb-3">Proteja quem você ama hoje</h2>
+            <p className="text-slate-300 font-medium mb-8">Simulação gratuita e sem compromisso</p>
+            <a href={buildWhatsAppUrl('Olá Rodrigo, quero simular um Seguro de Vida')} target="_blank" rel="noreferrer"
+              className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all shadow-lg hover:scale-105">
+              <MessageCircle size={18} /> Chamar no WhatsApp <ArrowRight size={16} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      
+      {/* FAQ */}
+      <FAQ perguntas={[
+    { pergunta: "Quanto custa um seguro de vida em 2026?", resposta: "Um seguro de vida básico com capital segurado de R$ 100.000 para uma pessoa de 30 anos sem comorbidades custa entre R$ 35 e R$ 70 por mês. O valor aumenta com a idade, coberturas adicionais e histórico de saúde." },
+    { pergunta: "O que é capital segurado no seguro de vida?", resposta: "O capital segurado é o valor que será pago aos beneficiários em caso de morte do segurado, ou ao próprio segurado em caso de invalidez permanente. É o principal parâmetro para definir o valor do seguro — recomenda-se no mínimo 5 vezes a renda anual do segurado." },
+    { pergunta: "Seguro de vida tem carência?", resposta: "Sim. Para morte natural, a maioria dos seguros tem carência de 2 anos. Já para morte acidental, cobertura é imediata. Doenças graves (DIT) e invalidez por acidente também costumam ter cobertura imediata ou carência menor." },
+    { pergunta: "Posso incluir minha família no mesmo seguro de vida?", resposta: "Sim! Existem seguros de vida familiares que incluem cônjuge e filhos com capital segurado individual para cada membro. É uma opção mais econômica do que contratar apólices separadas." },
+    { pergunta: "O seguro de vida é dedutível no Imposto de Renda?", resposta: "Não — o prêmio pago pelo seguro de vida não é dedutível no IR. Porém, o capital recebido pelos beneficiários em caso de sinistro é totalmente isento de Imposto de Renda, independentemente do valor." }
+  ]} />
+      <ScrollCTA produto="Seguro de Vida" />
+    </>
+  );
+}
